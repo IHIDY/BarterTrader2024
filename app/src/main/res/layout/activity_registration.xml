@@ -16,6 +16,22 @@
         android:layout_height="wrap_content"
         android:text="@string/register"/>
 
+    <!-- Edit text for First Name -->
+    <EditText
+        android:id="@+id/fName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your First Name"
+        android:inputType="textPersonName" />
+
+    <!-- Edit text for Last Name -->
+    <EditText
+        android:id="@+id/lName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Last Name"
+        android:inputType="textPersonName" />
+
     <!-- Edit text for email -->
     <EditText
         android:id="@+id/email"
