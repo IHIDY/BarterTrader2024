@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
@@ -57,6 +58,27 @@ public class RegistrationActivity extends AppCompatActivity {
         });
     }
 
+    public static boolean isEmpty(String text){
+        return text == null || text.trim().isEmpty();
+    }
+    public static boolean isValidEmail(String email){
+        if (email == null || email.isEmpty()){
+            return false;
+        }
+        String regex = "[a-zA-Z0-9._%+-]" + //local username
+                "+@[a-zA-Z0-9.-]" + // @domain
+                "+\\.[a-zA-Z]{2,6}$"; // top level domain (.com, .ca, etc)
+        return email.matches(regex);
+    }
+
+    public static boolean isValidPass(String pass){
+        return !isEmpty(pass) && pass.length() >= 6;
+    }
+
+    public static boolean isValidRole(String role){
+        return role != null && !role.equals("Select your role");
+    }
+
     private void regNewUser() {
 
         String email = emailTextView.getText().toString();
@@ -65,21 +87,21 @@ public class RegistrationActivity extends AppCompatActivity {
 
         if (TextUtils.isEmpty(email)) {
             Toast.makeText(getApplicationContext(),
-                    "Please enter your Email!",
+                    "Please enter a valid Email!",
                     Toast.LENGTH_LONG).show();
             return;
         }
 
-        if (TextUtils.isEmpty(pass)) {
+        if (TextUtils.isEmpty(pass) || pass.length() < 6) {
             Toast.makeText(getApplicationContext(),
-                    "Please enter your Password!",
+                    "Passwords must be at least 6 characters",
                     Toast.LENGTH_LONG).show();
             return;
         }
 
         if (roleSelect.equals("Select your Role")) {
             Toast.makeText(getApplicationContext(),
-                    "Please select your Role!",
+                    "Please select a valid Role!",
                     Toast.LENGTH_LONG).show();
             return;
         }
@@ -97,12 +119,12 @@ public class RegistrationActivity extends AppCompatActivity {
                                     = new Intent(RegistrationActivity.this,
                                     MainActivity.class);
                             startActivity(intent);
+                            finish(); //So users cannot nav back to registration page
                         } else {
                             Toast.makeText(
                                     getApplicationContext(),
-                                    "Registration failed!"
-                                    + "Please try again later",
-                                    Toast.LENGTH_LONG).show();
+                                    "Registration failed! "
+                                    + task.getException().getMessage(),Toast.LENGTH_LONG).show(); //Shows error message
                         }
                     }
                 });
