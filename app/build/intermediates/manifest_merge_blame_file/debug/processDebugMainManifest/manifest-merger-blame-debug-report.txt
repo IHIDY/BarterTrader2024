@@ -45,60 +45,60 @@
 24-->[androidx.core:core:1.13.0] C:\Users\ellaj\.gradle\caches\8.10.2\transforms\a2dbb4fe97e5c58342f4c354d3e9ee75\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 25
 26    <application
-26-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:5:5-33:19
+26-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:5:5-33:19
 27        android:allowBackup="true"
-27-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:6:9-35
+27-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:6:9-35
 28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 28-->[androidx.core:core:1.13.0] C:\Users\ellaj\.gradle\caches\8.10.2\transforms\a2dbb4fe97e5c58342f4c354d3e9ee75\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 29        android:dataExtractionRules="@xml/data_extraction_rules"
-29-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:7:9-65
+29-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:7:9-65
 30        android:debuggable="true"
 31        android:extractNativeLibs="false"
 32        android:fullBackupContent="@xml/backup_rules"
-32-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:8:9-54
+32-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:8:9-54
 33        android:icon="@mipmap/ic_launcher"
-33-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:9:9-43
+33-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:9:9-43
 34        android:label="@string/app_name"
-34-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:10:9-41
+34-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:10:9-41
 35        android:roundIcon="@mipmap/ic_launcher_round"
-35-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:11:9-54
+35-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:11:9-54
 36        android:supportsRtl="true"
-36-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:12:9-35
+36-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:12:9-35
 37        android:testOnly="true"
 38        android:theme="@style/Theme.Group8_bartertrader" >
-38-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:13:9-57
+38-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:13:9-57
 39        <activity
-39-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:15:9-23:20
+39-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:15:9-23:20
 40            android:name="com.example.group8_bartertrader.RegistrationActivity"
-40-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:16:13-49
+40-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:16:13-49
 41            android:exported="true" >
-41-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:17:13-36
+41-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:17:13-36
 42            <intent-filter>
-42-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:18:13-22:29
+42-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:18:13-22:29
 43                <action android:name="android.intent.action.MAIN" />
-43-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:19:17-69
-43-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:19:25-66
+43-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:19:17-69
+43-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:19:25-66
 44
 45                <category android:name="android.intent.category.LAUNCHER" />
-45-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:21:17-77
-45-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:21:27-74
+45-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:21:17-77
+45-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:21:27-74
 46            </intent-filter>
 47        </activity>
 48        <activity
-48-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:24:9-32:20
+48-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:24:9-32:20
 49            android:name="com.example.group8_bartertrader.MainActivity"
-49-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:25:13-41
+49-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:25:13-41
 50            android:exported="true" >
-50-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:26:13-36
+50-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:26:13-36
 51            <intent-filter>
-51-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:18:13-22:29
+51-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:18:13-22:29
 52                <action android:name="android.intent.action.MAIN" />
-52-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:19:17-69
-52-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:19:25-66
+52-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:19:17-69
+52-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:19:25-66
 53
 54                <category android:name="android.intent.category.LAUNCHER" />
-54-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:21:17-77
-54-->C:\group8_bartertrader\app\src\main\AndroidManifest.xml:21:27-74
+54-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:21:17-77
+54-->C:\Users\ellaj\group8_bartertrader\app\src\main\AndroidManifest.xml:21:27-74
 55            </intent-filter>
 56        </activity>
 57        <activity
