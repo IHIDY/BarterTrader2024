@@ -10,7 +10,7 @@
     tools:context=".RegistrationActivity">
 
 
-    <!-- TextView for heading -->
+    <!-- TextView for Register heading -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

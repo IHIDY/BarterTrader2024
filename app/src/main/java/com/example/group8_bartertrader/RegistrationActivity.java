@@ -65,6 +65,7 @@ public class RegistrationActivity extends AppCompatActivity {
         });
     }
 
+    //checking empty input
     public void errorMessage(String x, String y) {
         if (TextUtils.isEmpty(x)) {
             Toast.makeText(getApplicationContext(),
