@@ -3349,6 +3349,7 @@ int id escape 0x7f0800bf
 int id exitUntilCollapsed 0x7f0800c0
 int id expand_activities_button 0x7f0800c1
 int id expanded_menu 0x7f0800c2
+int id fName 0x7f080209
 int id fade 0x7f0800c3
 int id fill 0x7f0800c4
 int id fill_horizontal 0x7f0800c5
@@ -3399,6 +3400,7 @@ int id italic 0x7f0800f1
 int id item_touch_helper_previous_elevation 0x7f0800f2
 int id jumpToEnd 0x7f0800f3
 int id jumpToStart 0x7f0800f4
+int id lName 0x7f08020a
 int id labeled 0x7f0800f5
 int id layout 0x7f0800f6
 int id left 0x7f0800f7

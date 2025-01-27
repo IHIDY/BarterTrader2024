@@ -5,6 +5,8 @@ color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 id email
+id fName
+id lName
 id main
 id pass
 id regBtn
