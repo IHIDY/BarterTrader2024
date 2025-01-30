@@ -7,7 +7,9 @@
     android:gravity="center_vertical"
     android:orientation="vertical"
     android:padding="15dp"
-    tools:context=".RegistrationActivity">
+    tools:context=".RegistrationActivity"
+    android:textSize="20sp">
+
 
 
     <!-- TextView for heading -->
@@ -22,7 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your Email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"/>
 
     <!-- Edit text for password -->
     <EditText
@@ -30,7 +33,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textSize="20sp"/>
+
+    <!-- Edit text for firstName -->
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your First Name"
+        android:inputType="textPersonName"
+        android:textSize="20sp"/>
+
+    <!-- Edit text for lastname -->
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Last Name"
+        android:inputType="textPersonName"
+        android:textSize="20sp"/>
 
     <!-- Spinner for role selection -->
     <Spinner
