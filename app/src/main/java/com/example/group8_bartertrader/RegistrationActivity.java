@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -22,9 +23,13 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.AuthResult;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
+import java.util.Objects;
 import java.util.regex.Pattern;
 
 public class RegistrationActivity extends AppCompatActivity {
@@ -44,6 +49,7 @@ public class RegistrationActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_registration);
 
+        //initialize firebase authentication
         mAuth = FirebaseAuth.getInstance();
         //initialize database reference
         databaseRef = FirebaseDatabase.getInstance().getReference("Users");
@@ -110,22 +116,6 @@ public class RegistrationActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
     }
 
-    //stores user data in firebase
-    public static class User {
-        public String firstName, lastName, email, role;
-
-        //constructor
-        public User() {}
-
-        public User(String firstName, String lastName, String email, String role) {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.email = email;
-            this.role = role;
-        }
-
-    }
-
     //Method to register a new user
     private void regNewUser() {
 
@@ -160,28 +150,40 @@ public class RegistrationActivity extends AppCompatActivity {
             return;
         }
         //Firebase authentication for email and password
-        mAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful()) {
-                    //get the userID from the firebase
-                    String userId = mAuth.getCurrentUser().getUid();
-                    //create a new user with the userID details
-                    User user = new User(firstName, lastName, email, roleSelect);
-                    //save the new user to the firebase
-                    databaseRef.child("Users").child(userId).setValue(user).addOnCompleteListener(userTask -> {
-                        if (task.isSuccessful()) {
-                            showToast("Registration successful!");
-                            startActivity(new Intent(RegistrationActivity.this, MainActivity.class));
-                            finish(); //So users cannot nav back to registration page
-                        } else {
-                            showToast("Failed to save users data");
-                        }
-                    });
-                } else {
-                    showToast("Registration failed! " + task.getException().getMessage()); //Shows error message
-                }
+        mAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(task -> {
+            if (task.isSuccessful()) {
+                //get the userID from the firebase
+                String userId = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
+                //create a new user with the userID details
+                User user = new User(firstName, lastName, email, roleSelect);
+                //save the new user to the firebase
+                databaseRef.child(userId).setValue(user).addOnCompleteListener(userTask -> {
+                    if (userTask.isSuccessful()) {
+                        showToast("Registration successful!");
+                        startActivity(new Intent(RegistrationActivity.this, MainActivity.class));
+                        finish(); //So users cannot nav back to registration page
+                    } else {
+                        showToast("Failed to save users data");
+                    }
+                });
+            } else {
+                showToast("Registration failed! " + task.getException().getMessage()); //Shows error message
             }
         });
+    }
+    //stores user data in firebase
+    public static class User {
+        public String firstName, lastName, email, role;
+
+        //constructor
+        public User() {} //has to be empty
+
+        public User(String firstName, String lastName, String email, String role) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.email = email;
+            this.role = role;
+        }
+
     }
 }
