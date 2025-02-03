@@ -101,6 +101,20 @@ public class RegistrationActivity extends AppCompatActivity {
             return;
         }
 
+        //password length too short error message
+        if (pass.length() <= 3) {
+            Toast.makeText(getApplicationContext(),
+                    "Password must be over 3 characters!",
+                    Toast.LENGTH_LONG).show();
+        }
+
+        //password length too long error message
+        if (pass.length() >= 4096) {
+            Toast.makeText(getApplicationContext(),
+                    "Password must be less than 4096 characters!",
+                    Toast.LENGTH_LONG).show();
+        }
+
         //create user with email and password
         mAuth.createUserWithEmailAndPassword(email, pass)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
