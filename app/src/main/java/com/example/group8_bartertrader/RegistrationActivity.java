@@ -24,6 +24,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
+import org.w3c.dom.Text;
+
 public class RegistrationActivity extends AppCompatActivity {
 
     private EditText fNameView; //first name
@@ -66,53 +68,110 @@ public class RegistrationActivity extends AppCompatActivity {
         });
     }
 
-    //checking empty input
-    public void emptyMessage(String x, String y) {
-        if (TextUtils.isEmpty(x)) {
-            Toast.makeText(getApplicationContext(),
-                    "Please enter your " + y + "!",
-                    Toast.LENGTH_LONG).show();
-
-            return;
+    //checking valid email
+    public static int isValidEmail(String email) {
+        if (email == null || email.isEmpty()) {
+            return 1; //email not input
         }
+
+        String regex = "[a-zA-Z0-9._%+-]" + //local username
+                "+@[a-zA-Z0-9.-]" + // @domain
+                "+\\.[a-zA-Z]{2,6}$"; // top level domain: .com, .ca, etc
+
+        if (email.matches(regex)) {
+            return 0; //email matches structure
+        } else {
+            return 2; //email does not match structure
+        }
+    }
+
+    public static int isValidPass(String pass) {
+        if (pass == null || pass.isEmpty()) {
+            return 1; //no password entered
+        }
+        if (pass.length() < 6) {
+            return 2; //password too short
+        }
+        if (pass.length() > 4096) {
+            return 3; //password too long
+        }
+
+        //at least one letter
+        //at least one uppercase letter
+        //at least one number
+        //at least one special char out of these: @ # $ % ^ & + = !
+        //length at least 6 chars
+        String regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@#$%^&+=!]).{6,}$";
+
+        if (pass.matches(regex)) {
+            return 0;  //the password does follow the necessary structure
+        } else {
+            return 4; //password does not follow the correct structure
+        }
+    }
+
+    //check if role is selected
+    public static boolean isValidRole(String role) {
+        return (role != null) && (!role.equals("Select your role"));
+    }
+
+    private void showToast(String msg) {
+        Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
     }
 
     //creating a new user
     private void regNewUser() {
 
         //getting all user input as strings
-        String email = emailTextView.getText().toString();
-        String pass = passwordTextView.getText().toString();
-        String fName = fNameView.getText().toString();
-        String lName = lNameView.getText().toString();
-        String roleSelect = role.getSelectedItem().toString();
+        String email = emailTextView.getText().toString().trim();
+        String pass = passwordTextView.getText().toString().trim();
+        String fName = fNameView.getText().toString().trim();
+        String lName = lNameView.getText().toString().trim();
+        String roleSelect = role.getSelectedItem().toString().trim();
 
-        //validate non empty input
-        emptyMessage(email, "Email");
-        emptyMessage(pass, "Pass");
-        emptyMessage(fName, "First Name");
-        emptyMessage(lName, "Last name");
-
-        //ensure user selected a role
-        if (roleSelect.equals("Select your Role")) {
-            Toast.makeText(getApplicationContext(),
-                    "Please select a valid Role!",
-                    Toast.LENGTH_LONG).show();
+        //email validation and message sender
+        if (isValidEmail(email) == 1) {
+            showToast(" Please enter your email!");
+            return;
+        } else if (isValidEmail(email) == 2) {
+            showToast(" Please enter a valid email!");
             return;
         }
 
-        //password length too short error message
-        if (pass.length() <= 3) {
-            Toast.makeText(getApplicationContext(),
-                    "Password must be over 3 characters!",
-                    Toast.LENGTH_LONG).show();
+        //password validation and message sender
+        if (isValidPass(pass) == 1) {
+            showToast(" Please enter your password!");
+            return;
+        } else if (isValidPass(pass) == 2) {
+            showToast(" Password must be longer than 6 characters!");
+            return;
+        } else if (isValidPass(pass) == 3) {
+            showToast(" Password must be shorter than 4096 characters!");
+            return;
+        } else if (isValidPass(pass) == 4) {
+            showToast(" Password must have " +
+                    "\n1 uppercase character" +
+                    "\n1 lowercase character" +
+                    "\n1 number" +
+                    "\n1 special character (@ # $ % ^ & + = !)");
+            return;
         }
 
-        //password length too long error message
-        if (pass.length() >= 4096) {
-            Toast.makeText(getApplicationContext(),
-                    "Password must be less than 4096 characters!",
-                    Toast.LENGTH_LONG).show();
+        //name validation and message sender
+        if (TextUtils.isEmpty(fName)) {
+            showToast("Enter your first name!");
+            return;
+        }
+
+        if (TextUtils.isEmpty(lName)) {
+            showToast("Enter your last name!");
+            return;
+        }
+
+        //role validation and message sender
+        if (!isValidRole(roleSelect)) {
+            showToast("Select your role!");
+            return;
         }
 
         //create user with email and password
