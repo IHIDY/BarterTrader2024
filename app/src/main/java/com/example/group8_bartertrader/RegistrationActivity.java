@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
@@ -66,7 +67,7 @@ public class RegistrationActivity extends AppCompatActivity {
     }
 
     //checking empty input
-    public void errorMessage(String x, String y) {
+    public void emptyMessage(String x, String y) {
         if (TextUtils.isEmpty(x)) {
             Toast.makeText(getApplicationContext(),
                     "Please enter your " + y + "!",
@@ -87,15 +88,15 @@ public class RegistrationActivity extends AppCompatActivity {
         String roleSelect = role.getSelectedItem().toString();
 
         //validate non empty input
-        errorMessage(email, "Email");
-        errorMessage(pass, "Pass");
-        errorMessage(fName, "First Name");
-        errorMessage(lName, "Last name");
+        emptyMessage(email, "Email");
+        emptyMessage(pass, "Pass");
+        emptyMessage(fName, "First Name");
+        emptyMessage(lName, "Last name");
 
         //ensure user selected a role
         if (roleSelect.equals("Select your Role")) {
             Toast.makeText(getApplicationContext(),
-                    "Please select your Role!",
+                    "Please select a valid Role!",
                     Toast.LENGTH_LONG).show();
             return;
         }
