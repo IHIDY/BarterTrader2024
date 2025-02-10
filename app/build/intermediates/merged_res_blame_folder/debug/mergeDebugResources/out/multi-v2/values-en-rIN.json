@@ -4,24 +4,7 @@
             "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-40:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ellaj\\.gradle\\caches\\8.10.2\\transforms\\a2dbb4fe97e5c58342f4c354d3e9ee75\\transformed\\core-1.13.0\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,151,253,352,451,555,658,774",
-                        "endColumns": "95,101,98,98,103,102,115,100",
-                        "endOffsets": "146,248,347,446,550,653,769,870"
-                    },
-                    "to": {
-                        "startLines": "31,32,33,34,35,36,37,43",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "2988,3084,3186,3285,3384,3488,3591,4193",
-                        "endColumns": "95,101,98,98,103,102,115,100",
-                        "endOffsets": "3079,3181,3280,3379,3483,3586,3702,4289"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ellaj\\.gradle\\caches\\8.10.2\\transforms\\11274c176f337121193900b0e188a5ca\\transformed\\browser-1.4.0\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "/Users/jae/.gradle/caches/8.10.2/transforms/4c55e98a1c92796536e2d5a244ef5bd1/transformed/browser-1.4.0/res/values-en-rIN/values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ellaj\\.gradle\\caches\\8.10.2\\transforms\\054feaf42ccc456c16e7539cc01753c0\\transformed\\credentials-1.2.0-rc01\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "/Users/jae/.gradle/caches/8.10.2/transforms/70c715b1a8e281d28922e9ddf7770ced/transformed/jetified-credentials-1.2.0-rc01/res/values-en-rIN/values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -55,7 +38,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ellaj\\.gradle\\caches\\8.10.2\\transforms\\94a3538f3aa12ce3bbea2d1dfe45eb16\\transformed\\appcompat-1.7.0\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "/Users/jae/.gradle/caches/8.10.2/transforms/5d4a7a371b67477d06eb8c60c026850f/transformed/core-1.13.0/res/values-en-rIN/values-en-rIN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,151,253,352,451,555,658,774",
+                        "endColumns": "95,101,98,98,103,102,115,100",
+                        "endOffsets": "146,248,347,446,550,653,769,870"
+                    },
+                    "to": {
+                        "startLines": "31,32,33,34,35,36,37,43",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "2988,3084,3186,3285,3384,3488,3591,4193",
+                        "endColumns": "95,101,98,98,103,102,115,100",
+                        "endOffsets": "3079,3181,3280,3379,3483,3586,3702,4289"
+                    }
+                },
+                {
+                    "source": "/Users/jae/.gradle/caches/8.10.2/transforms/05cae50f227f6b0f176309e750a370f1/transformed/appcompat-1.7.0/res/values-en-rIN/values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

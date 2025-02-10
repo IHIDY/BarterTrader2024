@@ -4,7 +4,7 @@
             "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-40:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ellaj\\.gradle\\caches\\8.10.2\\transforms\\94a3538f3aa12ce3bbea2d1dfe45eb16\\transformed\\appcompat-1.7.0\\res\\values-v24\\values-v24.xml",
+                    "source": "/Users/jae/.gradle/caches/8.10.2/transforms/05cae50f227f6b0f176309e750a370f1/transformed/appcompat-1.7.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ellaj\\.gradle\\caches\\8.10.2\\transforms\\abc9bec9b646191b66fdbfebdefc43d8\\transformed\\material-1.12.0\\res\\values-v24\\values-v24.xml",
+                    "source": "/Users/jae/.gradle/caches/8.10.2/transforms/00083cb495ed11a3c3ca0c27388cec48/transformed/material-1.12.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",

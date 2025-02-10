@@ -3287,6 +3287,7 @@ id clockwise
 id closest
 id collapseActionView
 id compress
+id confirmPasswordEditText
 id confirm_button
 id constraint
 id container
@@ -3341,6 +3342,7 @@ id edit_query
 id edit_text_id
 id elastic
 id email
+id emailEditText
 id embed
 id end
 id endToStart
@@ -3484,6 +3486,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id newPasswordEditText
 id noScroll
 id noState
 id none
@@ -3535,6 +3538,7 @@ id ratio
 id rectangles
 id regBtn
 id report_drawn
+id resetPasswordButton
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3602,6 +3606,7 @@ id staticPostLayout
 id stop
 id stretch
 id submenuarrow
+id submitEmailButton
 id submit_area
 id supportScrollUp
 id tabMode
@@ -3866,15 +3871,18 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout mtrl_search_bar
 layout mtrl_search_view
+layout new_password_form_page
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout reset_password
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout setting_page
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
