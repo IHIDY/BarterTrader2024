@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -23,6 +24,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.AuthResult;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import org.w3c.dom.Text;
 
@@ -33,8 +36,10 @@ public class RegistrationActivity extends AppCompatActivity {
     private EditText emailTextView; //email
     private EditText passwordTextView; //password
     private Button btn; //registration button
+    private Button loginBtn; // Login Button
     private FirebaseAuth mAuth; //authentication
     private Spinner role; //role selection
+    private DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +48,7 @@ public class RegistrationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_registration);
 
         mAuth = FirebaseAuth.getInstance();
+        databaseReference = FirebaseDatabase.getInstance().getReference("Users");
 
         //get all user input into usable variables
         fNameView = (findViewById(R.id.fName));
@@ -51,6 +57,8 @@ public class RegistrationActivity extends AppCompatActivity {
         passwordTextView = findViewById(R.id.pass);
         btn = findViewById(R.id.regBtn);
         role = findViewById(R.id.roleSelect);
+
+        loginBtn = findViewById(R.id.loginBtn);
 
         //dropdown list for role selection
         String[] items = new String[]{"Select your Role", "Provider", "Receiver"};
@@ -66,6 +74,11 @@ public class RegistrationActivity extends AppCompatActivity {
                 regNewUser();
             }
         });
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RegistrationActivity.this, LoginActivity.class);
+                startActivity(intent);    }});
     }
 
     //checking valid email
@@ -195,6 +208,41 @@ public class RegistrationActivity extends AppCompatActivity {
                                     "Registration failed!"
                                     + "Please try again later",
                                     Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
+        // Generate a random userId
+        String userId = generateRandomUserId();
+
+        // Save user data to Firebase Realtime Database
+        saveUserDataToDatabase(userId, fName, lName, email, roleSelect);
+    }
+    private String generateRandomUserId() {
+        // Define the range for the random number (e.g., 100000 to 999999)
+        int min = 10000000;
+        int max = 99999999;
+
+        // Generate a random number within the range
+        int randomNumber = (int) (Math.random() * (max - min + 1)) + min;
+
+        // Convert the number to a String and return it
+        return String.valueOf(randomNumber);
+    }
+    private void saveUserDataToDatabase(String userId, String fName, String lName, String email, String role) {
+        // Create a User object or use a HashMap to store the data
+        User user = new User(fName, lName, email, role);
+
+        // Save the user data under the "users" node with the user's UID as the key
+        databaseReference.child(userId).setValue(user)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            Log.d("Success", "User Saved to Database");
+//                            Toast.makeText(getApplicationContext(), "User data saved to database!", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Log.d("Error", "User not saved to Database");
+//                            Toast.makeText(getApplicationContext(), "Failed to save user data!", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
