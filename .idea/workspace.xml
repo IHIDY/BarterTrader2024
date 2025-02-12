@@ -36,9 +36,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb758ab1-1104-45f3-8618-25349e59be1e" name="Changes" comment="UI for reset password and reset password form">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/group8_bartertrader/ResetPasswordFormActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="bb758ab1-1104-45f3-8618-25349e59be1e" name="Changes" comment="ResetPasswordFormActivity added">
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/group8_bartertrader/ResetPasswordActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/group8_bartertrader/ResetPasswordActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738850888510</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ResetPasswordFormActivity added">
+      <option name="closed" value="true" />
+      <created>1739382785383</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739382785383</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,7 +265,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added fname and lname" />
     <MESSAGE value="UI for reset password and reset password form" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI for reset password and reset password form" />
+    <MESSAGE value="ResetPasswordFormActivity added" />
+    <option name="LAST_COMMIT_MESSAGE" value="ResetPasswordFormActivity added" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">

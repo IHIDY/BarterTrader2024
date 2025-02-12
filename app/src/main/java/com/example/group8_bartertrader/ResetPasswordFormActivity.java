@@ -26,7 +26,6 @@ public class ResetPasswordFormActivity extends AppCompatActivity {
         confirmPasswordEditText = findViewById(R.id.confirmPasswordEditText);
         resetPasswordButton = findViewById(R.id.resetPasswordButton);
 
-        // Set click listener for reset button
         resetPasswordButton.setOnClickListener(v -> {
             String newPassword = newPasswordEditText.getText().toString().trim();
             String confirmPassword = confirmPasswordEditText.getText().toString().trim();
