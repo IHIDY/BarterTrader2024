@@ -4,7 +4,7 @@
             "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-40:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/a5b57c10ed4dfc87aaa786c095173954/transformed/play-services-auth-20.7.0/res/values-watch-v20/values.xml",
+                    "source": "C:\\Users\\ellaj\\.gradle\\caches\\8.10.2\\transforms\\0c97ddb15b2601e7ef1b118d9f9f3231\\transformed\\jetified-play-services-auth-20.7.0\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/e9bb921a7111936fc0add5e6df5ae15b/transformed/appcompat-1.7.0/res/values-watch-v20/values-watch-v20.xml",
+                    "source": "C:\\Users\\ellaj\\.gradle\\caches\\8.10.2\\transforms\\e9bb921a7111936fc0add5e6df5ae15b\\transformed\\appcompat-1.7.0\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

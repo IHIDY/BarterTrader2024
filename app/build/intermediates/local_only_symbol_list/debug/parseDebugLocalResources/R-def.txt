@@ -12,6 +12,7 @@ id main
 id pass
 id regBtn
 id roleSelect
+id statusLabel
 layout activity_login
 layout activity_main
 layout activity_registration

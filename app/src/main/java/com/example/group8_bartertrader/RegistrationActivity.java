@@ -4,81 +4,69 @@
 //importing necessary packages and libraries
 package com.example.group8_bartertrader;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
 import android.content.Intent;
-import android.text.TextUtils;
-import android.util.Log;
-import android.util.Patterns;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Spinner;
-import android.widget.Toast;
-import android.widget.EditText;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.AuthResult;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import org.w3c.dom.Text;
+import java.util.ArrayList;
+import java.util.List;
 
-public class RegistrationActivity extends AppCompatActivity {
+import com.example.group8_bartertrader.FirebaseCRUD;
+import com.example.group8_bartertrader.R;
+//add this import com.example.group8_bartertrader.PasswordUtility;
+//add this import com.example.group8_bartertrader.CredentialValidator
 
-    private EditText fNameView; //first name
-    private EditText lNameView; //last name
-    private EditText emailTextView; //email
-    private EditText passwordTextView; //password
-    private Button btn; //registration button
+public class RegistrationActivity extends AppCompatActivity implements View.OnClickListener {
     private Button loginBtn; // Login Button
-    private FirebaseAuth mAuth; //authentication
-    private Spinner role; //role selection
-    private DatabaseReference databaseReference;
+    FirebaseCRUD crud; //crud
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_registration);
 
-        mAuth = FirebaseAuth.getInstance();
-        databaseReference = FirebaseDatabase.getInstance().getReference("Users");
+        this.loadRoleSpin();
+        this.setRegBtn();
+        this.setLogBtn();
 
-        //get all user input into usable variables
-        fNameView = (findViewById(R.id.fName));
-        lNameView = (findViewById(R.id.lName));
-        emailTextView = findViewById(R.id.email);
-        passwordTextView = findViewById(R.id.pass);
-        btn = findViewById(R.id.regBtn);
-        role = findViewById(R.id.roleSelect);
+        this.crud = new FirebaseCRUD(getDatabase());
+    }
 
-        loginBtn = findViewById(R.id.loginBtn);
+    protected FirebaseDatabase getDatabase() {
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://group-8-barter-trader-default-rtdb.firebaseio.com/");
 
-        //dropdown list for role selection
+        return database;
+    }
+
+    public void loadRoleSpin() {
+        Spinner role = findViewById(R.id.roleSelect);
+
         String[] items = new String[]{"Select your Role", "Provider", "Receiver"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_dropdown_item,
                 items);
-        role.setAdapter(adapter);
 
-        //when user registers/tries to
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                regNewUser();
-            }
-        });
-        loginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(RegistrationActivity.this, LoginActivity.class);
-                startActivity(intent);    }});
+        role.setAdapter(adapter);
+    }
+
+    public void setRegBtn() {
+        Button regBtn = findViewById(R.id.regBtn);
+        regBtn.setOnClickListener(this);
+    }
+
+    public void setLogBtn() {
+        Button logBtn = findViewById(R.id.loginBtn);
+        logBtn.setOnClickListener(this);
     }
 
     //checking valid email
@@ -132,119 +120,68 @@ public class RegistrationActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
     }
 
+    protected String getEmail() {
+        EditText emailBox = findViewById(R.id.email);
+        return emailBox.getText().toString().trim();
+    }
+
+    protected String getPassword() {
+        EditText passBox = findViewById(R.id.pass);
+        return passBox.getText().toString().trim();
+    }
+
+    protected String getRole() {
+        Spinner roleBox = findViewById(R.id.roleSelect);
+        return roleBox.getSelectedItem().toString().trim();
+    }
+
+    protected String getFname() {
+        EditText fnameBox = findViewById(R.id.fName);
+        return fnameBox.getText().toString().trim();
+    }
+
+    protected String getLname() {
+        EditText lnameBox = findViewById(R.id.lName);
+        return lnameBox.getText().toString().trim();
+    }
+
+    protected void move2Login() {
+        Intent intent = new Intent(RegistrationActivity.this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    protected void saveCred(String email, String pass, String role, String fname, String lname) {
+        crud.registerUser(email, pass, role, fname, lname);
+    }
+
+    protected void setStatusMessage(String message) {
+        TextView statusLabel = findViewById(R.id.statusLabel);
+        statusLabel.setText(message.trim());
+    }
+
     //creating a new user
-    private void regNewUser() {
+    @Override
+    public void onClick(View view) {
+        //if login was clicked instead
+        if (view.getId() == R.id.loginBtn) {
+            move2Login();
+        }
 
         //getting all user input as strings
-        String email = emailTextView.getText().toString().trim();
-        String pass = passwordTextView.getText().toString().trim();
-        String fName = fNameView.getText().toString().trim();
-        String lName = lNameView.getText().toString().trim();
-        String roleSelect = role.getSelectedItem().toString().trim();
+        String email = getEmail();
+        String pass = getPassword();
+        String role = getRole();
+        String fName = getFname();
+        String lName = getLname();
 
-        //email validation and message sender
-        if (isValidEmail(email) == 1) {
-            showToast(" Please enter your email!");
-            return;
-        } else if (isValidEmail(email) == 2) {
-            showToast(" Please enter a valid email!");
-            return;
+        String errorMess = "";
+
+        //if statements to check if credentials are valid INSERT HERE
+        //utilize a new credentials page
+
+        if (errorMess.isEmpty()) {
+            saveCred(email, pass, role, fName, lName);
+            move2Login();
         }
-
-        //password validation and message sender
-        if (isValidPass(pass) == 1) {
-            showToast(" Please enter your password!");
-            return;
-        } else if (isValidPass(pass) == 2) {
-            showToast(" Password must be longer than 6 characters!");
-            return;
-        } else if (isValidPass(pass) == 3) {
-            showToast(" Password must be shorter than 4096 characters!");
-            return;
-        } else if (isValidPass(pass) == 4) {
-            showToast(" Password must have " +
-                    "\n1 uppercase character" +
-                    "\n1 lowercase character" +
-                    "\n1 number" +
-                    "\n1 special character (@ # $ % ^ & + = !)");
-            return;
-        }
-
-        //name validation and message sender
-        if (TextUtils.isEmpty(fName)) {
-            showToast("Enter your first name!");
-            return;
-        }
-
-        if (TextUtils.isEmpty(lName)) {
-            showToast("Enter your last name!");
-            return;
-        }
-
-        //role validation and message sender
-        if (!isValidRole(roleSelect)) {
-            showToast("Select your role!");
-            return;
-        }
-
-        //create user with email and password
-        mAuth.createUserWithEmailAndPassword(email, pass)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        //if registration is successful show success message
-                        if (task.isSuccessful()) {
-                            Toast.makeText(getApplicationContext(),
-                                    "Registration successful!",
-                                    Toast.LENGTH_LONG).show();
-
-                            Intent intent
-                                    = new Intent(RegistrationActivity.this,
-                                    MainActivity.class);
-                            startActivity(intent);
-                        } else { //if registration fails show failure message
-                            Toast.makeText(
-                                    getApplicationContext(),
-                                    "Registration failed!"
-                                    + "Please try again later",
-                                    Toast.LENGTH_LONG).show();
-                        }
-                    }
-                });
-        // Generate a random userId
-        String userId = generateRandomUserId();
-
-        // Save user data to Firebase Realtime Database
-        saveUserDataToDatabase(userId, fName, lName, email, roleSelect);
-    }
-    private String generateRandomUserId() {
-        // Define the range for the random number (e.g., 100000 to 999999)
-        int min = 10000000;
-        int max = 99999999;
-
-        // Generate a random number within the range
-        int randomNumber = (int) (Math.random() * (max - min + 1)) + min;
-
-        // Convert the number to a String and return it
-        return String.valueOf(randomNumber);
-    }
-    private void saveUserDataToDatabase(String userId, String fName, String lName, String email, String role) {
-        // Create a User object or use a HashMap to store the data
-        User user = new User(fName, lName, email, role);
-
-        // Save the user data under the "users" node with the user's UID as the key
-        databaseReference.child(userId).setValue(user)
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()) {
-                            Log.d("Success", "User Saved to Database");
-//                            Toast.makeText(getApplicationContext(), "User data saved to database!", Toast.LENGTH_SHORT).show();
-                        } else {
-                            Log.d("Error", "User not saved to Database");
-//                            Toast.makeText(getApplicationContext(), "Failed to save user data!", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
     }
 }
