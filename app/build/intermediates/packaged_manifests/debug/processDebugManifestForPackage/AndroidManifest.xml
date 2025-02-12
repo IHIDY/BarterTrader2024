@@ -37,6 +37,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Group8_bartertrader" >
         <activity
+            android:name="com.example.group8_bartertrader.LoginActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.group8_bartertrader.RegistrationActivity"
             android:exported="true" >
             <intent-filter>
