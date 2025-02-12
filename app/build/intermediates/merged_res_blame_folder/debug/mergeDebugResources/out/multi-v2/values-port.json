@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-40:/values-port/values-port.xml",
+            "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-42:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "/Users/jae/.gradle/caches/8.10.2/transforms/05cae50f227f6b0f176309e750a370f1/transformed/appcompat-1.7.0/res/values-port/values-port.xml",
+                    "source": "C:\\Users\\William\\.gradle\\caches\\8.10.2\\transforms\\2c1e91240e912b56da1eba8526a09bd1\\transformed\\appcompat-1.7.0\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

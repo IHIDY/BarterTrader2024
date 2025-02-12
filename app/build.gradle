@@ -41,6 +41,7 @@ dependencies {
     implementation(libs.google.firebase.auth)
     implementation(libs.firebase.firestore)
     implementation libs.firebase.database
+    implementation libs.uiautomator
     testImplementation libs.junit
     testImplementation libs.core
     testImplementation libs.ext.junit
