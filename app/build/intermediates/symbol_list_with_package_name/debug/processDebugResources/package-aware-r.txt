@@ -3160,6 +3160,7 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
+id LogOutButton
 id META
 id NO_DEBUG
 id SHIFT
@@ -3567,6 +3568,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id settings_title
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3798,6 +3800,7 @@ layout abc_tooltip
 layout activity_login
 layout activity_main
 layout activity_registration
+layout activity_settings
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog

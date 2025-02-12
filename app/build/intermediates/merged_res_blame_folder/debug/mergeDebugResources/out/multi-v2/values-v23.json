@@ -4,7 +4,7 @@
             "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-40:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ellaj\\.gradle\\caches\\8.10.2\\transforms\\e9bb921a7111936fc0add5e6df5ae15b\\transformed\\appcompat-1.7.0\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/junfali/.gradle/caches/8.10.2/transforms/e9bb921a7111936fc0add5e6df5ae15b/transformed/appcompat-1.7.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,26 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ellaj\\.gradle\\caches\\8.10.2\\transforms\\5659c02b7be44d690d92cae7de54609b\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/junfali/.gradle/caches/8.10.2/transforms/ef481b8c65b13e325001d82d66b6b6f4/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    },
+                    "to": {
+                        "startLines": "50",
+                        "startColumns": "4",
+                        "startOffsets": "3232",
+                        "endLines": "52",
+                        "endColumns": "12",
+                        "endOffsets": "3377"
+                    }
+                },
+                {
+                    "source": "/Users/junfali/.gradle/caches/8.10.2/transforms/5659c02b7be44d690d92cae7de54609b/transformed/material-1.12.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,5,9,13,16,19,22,25,28,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
