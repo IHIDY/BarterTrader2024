@@ -14,6 +14,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.FirebaseDatabase;
@@ -33,6 +34,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_registration);
 
         this.loadRoleSpin();
@@ -182,6 +184,8 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         if (errorMess.isEmpty()) {
             saveCred(email, pass, role, fName, lName);
             move2Login();
+
+            //add successful or non successful registration message back
         }
     }
 }
