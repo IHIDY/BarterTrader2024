@@ -3,5 +3,14 @@
     <string name="enter_your_email">Enter your Email</string>
     <string name="register">Register</string>
     <string name="enter_your_password">Enter your Password</string>
-
+    <string name="EMPTY_EMAIL_ADDRESS">Empty email address</string>
+    <string name="INVALID_EMAIL_ADDRESS">Invalid email address</string>
+    <string name="EMAIL_IS_DUPLICATE">Duplicate email address</string>
+    <string name="EMPTY_PASSWORD">Empty password</string>
+    <string name="INVALID_PASSWORD">Invalid password</string>
+    <string name="INVALID_ROLE">Invalid user role</string>
+    <string name="EMPTY_FNAME">Empty first name</string>
+    <string name="EMPTY_LNAME">Empty last name</string>
+    <string name="REGISTRATION_SUCCESSFUL">Registration successful</string>
+    <string name="REGISTRATION_FAILED">Registration failed</string>
 </resources>

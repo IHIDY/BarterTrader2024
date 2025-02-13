@@ -3883,6 +3883,16 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw firebase_common_keep
+string EMAIL_IS_DUPLICATE
+string EMPTY_EMAIL_ADDRESS
+string EMPTY_FNAME
+string EMPTY_LNAME
+string EMPTY_PASSWORD
+string INVALID_EMAIL_ADDRESS
+string INVALID_PASSWORD
+string INVALID_ROLE
+string REGISTRATION_FAILED
+string REGISTRATION_SUCCESSFUL
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

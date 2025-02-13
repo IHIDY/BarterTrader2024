@@ -6,6 +6,7 @@ package com.example.group8_bartertrader;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -15,21 +16,21 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import com.example.group8_bartertrader.FirebaseCRUD;
-import com.example.group8_bartertrader.R;
-//add this import com.example.group8_bartertrader.PasswordUtility;
-//add this import com.example.group8_bartertrader.CredentialValidator
 
 public class RegistrationActivity extends AppCompatActivity implements View.OnClickListener {
     private Button loginBtn; // Login Button
-    FirebaseCRUD crud; //crud
+    private FirebaseAuth mAuth;
+    private DatabaseReference databaseReference;
+    CredentialsValidator cred;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,13 +42,10 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         this.setRegBtn();
         this.setLogBtn();
 
-        this.crud = new FirebaseCRUD(getDatabase());
-    }
+        mAuth = FirebaseAuth.getInstance();
+        databaseReference = FirebaseDatabase.getInstance().getReference("Users");
 
-    protected FirebaseDatabase getDatabase() {
-        FirebaseDatabase database = FirebaseDatabase.getInstance("https://group-8-barter-trader-default-rtdb.firebaseio.com/");
-
-        return database;
+        this.cred = new CredentialsValidator();
     }
 
     public void loadRoleSpin() {
@@ -69,53 +67,6 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
     public void setLogBtn() {
         Button logBtn = findViewById(R.id.loginBtn);
         logBtn.setOnClickListener(this);
-    }
-
-    //checking valid email
-    public static int isValidEmail(String email) {
-        if (email == null || email.isEmpty()) {
-            return 1; //email not input
-        }
-
-        String regex = "[a-zA-Z0-9._%+-]" + //local username
-                "+@[a-zA-Z0-9.-]" + // @domain
-                "+\\.[a-zA-Z]{2,6}$"; // top level domain: .com, .ca, etc
-
-        if (email.matches(regex)) {
-            return 0; //email matches structure
-        } else {
-            return 2; //email does not match structure
-        }
-    }
-
-    public static int isValidPass(String pass) {
-        if (pass == null || pass.isEmpty()) {
-            return 1; //no password entered
-        }
-        if (pass.length() < 6) {
-            return 2; //password too short
-        }
-        if (pass.length() > 4096) {
-            return 3; //password too long
-        }
-
-        //at least one letter
-        //at least one uppercase letter
-        //at least one number
-        //at least one special char out of these: @ # $ % ^ & + = !
-        //length at least 6 chars
-        String regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@#$%^&+=!]).{6,}$";
-
-        if (pass.matches(regex)) {
-            return 0;  //the password does follow the necessary structure
-        } else {
-            return 4; //password does not follow the correct structure
-        }
-    }
-
-    //check if role is selected
-    public static boolean isValidRole(String role) {
-        return (role != null) && (!role.equals("Select your role"));
     }
 
     private void showToast(String msg) {
@@ -152,13 +103,27 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         startActivity(intent);
     }
 
-    protected void saveCred(String email, String pass, String role, String fname, String lname) {
-        crud.registerUser(email, pass, role, fname, lname);
-    }
-
     protected void setStatusMessage(String message) {
         TextView statusLabel = findViewById(R.id.statusLabel);
         statusLabel.setText(message.trim());
+    }
+
+    protected void saveCreds(String uid, String email, String pass, String role, String fname, String lname) {
+        User user = new User(email, pass, role, fname, lname);
+
+        databaseReference.child(uid).setValue(user)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            Log.d("Success", "User Saved to Database");
+                            Toast.makeText(getApplicationContext(), "User data saved to database!", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Log.d("Error", "User not saved to database");
+                            Toast.makeText(getApplicationContext(), "User data failed to save!", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
     }
 
     //creating a new user
@@ -176,16 +141,37 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         String fName = getFname();
         String lName = getLname();
 
-        String errorMess = "";
+        if (email.isEmpty()) {
+            showToast(getResources().getString(R.string.EMPTY_EMAIL_ADDRESS));
+        } else if (!cred.isValidEmail(email)) {
+            showToast(getResources().getString(R.string.INVALID_EMAIL_ADDRESS));
+        } else if (pass.isEmpty()) {
+            showToast(getResources().getString(R.string.EMPTY_PASSWORD));
+        } else if (!cred.isValidPass(pass)) {
+            showToast(getResources().getString(R.string.INVALID_PASSWORD));
+        } else if (!cred.isValidRole(role)) {
+            showToast(getResources().getString(R.string.INVALID_ROLE));
+        } else if (cred.isFnameEmpty(fName)) {
+            showToast(getResources().getString(R.string.EMPTY_FNAME));
+        } else if (cred.isLnameEmpty(lName)) {
+            showToast(getResources().getString(R.string.EMPTY_LNAME));
+        } else {
+            mAuth.createUserWithEmailAndPassword(email, pass)
+                    .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                showToast("Registration Successful!");
 
-        //if statements to check if credentials are valid INSERT HERE
-        //utilize a new credentials page
+                                String uid = task.getResult().getUser().getUid();
+                                saveCreds(uid, email, pass, role, fName, lName);
 
-        if (errorMess.isEmpty()) {
-            saveCred(email, pass, role, fName, lName);
-            move2Login();
-
-            //add successful or non successful registration message back
+                                move2Login();
+                            } else {
+                                showToast("Registration Failed!\n");
+                            }
+                        }
+                    });
         }
     }
 }
