@@ -29,6 +29,8 @@ public class SettingsActivity extends AppCompatActivity {
         // Find the logout button in the layout
         Button logoutButton = findViewById(R.id.LogOutButton);
 
+        Button resetPasswordButton = findViewById(R.id.resetPasswordButton);
+
         // Set a click listener for the logout button
         logoutButton.setOnClickListener(view -> {
             // Confirm the logout action
@@ -41,5 +43,13 @@ public class SettingsActivity extends AppCompatActivity {
             startActivity(intent);
             finish(); // Finish the current activity
         });
+
+        resetPasswordButton.setOnClickListener(v -> {
+            Intent intent = new Intent(SettingsActivity.this, ResetPasswordActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+            finish();
+        });
+
     }
 }
