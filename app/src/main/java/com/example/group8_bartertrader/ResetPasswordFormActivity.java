@@ -21,7 +21,6 @@ public class ResetPasswordFormActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.new_password_form_page);
 
-        // Initialize UI elements
         newPasswordEditText = findViewById(R.id.newPasswordEditText);
         confirmPasswordEditText = findViewById(R.id.confirmPasswordEditText);
         resetPasswordButton = findViewById(R.id.resetPasswordButton);

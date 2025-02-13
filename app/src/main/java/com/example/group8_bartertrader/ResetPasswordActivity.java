@@ -30,14 +30,11 @@ public class ResetPasswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.reset_password);
 
-        // Initialize FirebaseAuth
         auth = FirebaseAuth.getInstance();
 
-        // Initialize UI elements
         emailEditText = findViewById(R.id.emailEditText);
         submitEmailButton = findViewById(R.id.submitEmailButton);
 
-        // Set click listener for submit button
         submitEmailButton.setOnClickListener(v -> {
             String email = emailEditText.getText().toString().trim();
 
