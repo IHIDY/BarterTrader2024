@@ -4,35 +4,33 @@
 //importing necessary packages and libraries
 package com.example.group8_bartertrader;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
 import android.content.Intent;
-import android.text.TextUtils;
-import android.util.Patterns;
+import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Spinner;
-import android.widget.Toast;
-import android.widget.EditText;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.AuthResult;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
-public class RegistrationActivity extends AppCompatActivity {
-
-    private EditText fNameView; //first name
-    private EditText lNameView; //last name
-    private EditText emailTextView; //email
-    private EditText passwordTextView; //password
-    private Button btn; //registration button
-    private FirebaseAuth mAuth; //authentication
-    private Spinner role; //role selection
+public class RegistrationActivity extends AppCompatActivity implements View.OnClickListener {
+    private Button loginBtn; // Login Button
+    private FirebaseAuth mAuth;
+    private DatabaseReference databaseReference;
+    CredentialsValidator cred;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,104 +38,140 @@ public class RegistrationActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_registration);
 
+        this.loadRoleSpin();
+        this.setRegBtn();
+        this.setLogBtn();
+
         mAuth = FirebaseAuth.getInstance();
+        databaseReference = FirebaseDatabase.getInstance().getReference("Users");
 
-        //get all user input into usable variables
-        fNameView = (findViewById(R.id.fName));
-        lNameView = (findViewById(R.id.lName));
-        emailTextView = findViewById(R.id.email);
-        passwordTextView = findViewById(R.id.pass);
-        btn = findViewById(R.id.regBtn);
-        role = findViewById(R.id.roleSelect);
+        this.cred = new CredentialsValidator();
+    }
 
-        //dropdown list for role selection
+    public void loadRoleSpin() {
+        Spinner role = findViewById(R.id.roleSelect);
+
         String[] items = new String[]{"Select your Role", "Provider", "Receiver"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_dropdown_item,
                 items);
+
         role.setAdapter(adapter);
-
-        //when user registers/tries to
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                regNewUser();
-            }
-        });
     }
 
-    //checking empty input
-    public void emptyMessage(String x, String y) {
-        if (TextUtils.isEmpty(x)) {
-            Toast.makeText(getApplicationContext(),
-                    "Please enter your " + y + "!",
-                    Toast.LENGTH_LONG).show();
-
-            return;
-        }
+    public void setRegBtn() {
+        Button regBtn = findViewById(R.id.regBtn);
+        regBtn.setOnClickListener(this);
     }
 
-    //creating a new user
-    private void regNewUser() {
+    public void setLogBtn() {
+        Button logBtn = findViewById(R.id.loginBtn);
+        logBtn.setOnClickListener(this);
+    }
 
-        //getting all user input as strings
-        String email = emailTextView.getText().toString();
-        String pass = passwordTextView.getText().toString();
-        String fName = fNameView.getText().toString();
-        String lName = lNameView.getText().toString();
-        String roleSelect = role.getSelectedItem().toString();
+    private void showToast(String msg) {
+        Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
+    }
 
-        //validate non empty input
-        emptyMessage(email, "Email");
-        emptyMessage(pass, "Pass");
-        emptyMessage(fName, "First Name");
-        emptyMessage(lName, "Last name");
+    protected String getEmail() {
+        EditText emailBox = findViewById(R.id.email);
+        return emailBox.getText().toString().trim();
+    }
 
-        //ensure user selected a role
-        if (roleSelect.equals("Select your Role")) {
-            Toast.makeText(getApplicationContext(),
-                    "Please select a valid Role!",
-                    Toast.LENGTH_LONG).show();
-            return;
-        }
+    protected String getPassword() {
+        EditText passBox = findViewById(R.id.pass);
+        return passBox.getText().toString().trim();
+    }
 
-        //password length too short error message
-        if (pass.length() <= 3) {
-            Toast.makeText(getApplicationContext(),
-                    "Password must be over 3 characters!",
-                    Toast.LENGTH_LONG).show();
-        }
+    protected String getRole() {
+        Spinner roleBox = findViewById(R.id.roleSelect);
+        return roleBox.getSelectedItem().toString().trim();
+    }
 
-        //password length too long error message
-        if (pass.length() >= 4096) {
-            Toast.makeText(getApplicationContext(),
-                    "Password must be less than 4096 characters!",
-                    Toast.LENGTH_LONG).show();
-        }
+    protected String getFname() {
+        EditText fnameBox = findViewById(R.id.fName);
+        return fnameBox.getText().toString().trim();
+    }
 
-        //create user with email and password
-        mAuth.createUserWithEmailAndPassword(email, pass)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+    protected String getLname() {
+        EditText lnameBox = findViewById(R.id.lName);
+        return lnameBox.getText().toString().trim();
+    }
+
+    protected void move2Login() {
+        Intent intent = new Intent(RegistrationActivity.this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    protected void setStatusMessage(String message) {
+        TextView statusLabel = findViewById(R.id.statusLabel);
+        statusLabel.setText(message.trim());
+    }
+
+    protected void saveCreds(String uid, String email, String pass, String role, String fname, String lname) {
+        User user = new User(email, pass, role, fname, lname);
+
+        databaseReference.child(uid).setValue(user)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        //if registration is successful show success message
+                    public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
-                            Toast.makeText(getApplicationContext(),
-                                    "Registration successful!",
-                                    Toast.LENGTH_LONG).show();
-
-                            Intent intent
-                                    = new Intent(RegistrationActivity.this,
-                                    MainActivity.class);
-                            startActivity(intent);
-                        } else { //if registration fails show failure message
-                            Toast.makeText(
-                                    getApplicationContext(),
-                                    "Registration failed!"
-                                    + "Please try again later",
-                                    Toast.LENGTH_LONG).show();
+                            Log.d("Success", "User Saved to Database");
+                            Toast.makeText(getApplicationContext(), "User data saved to database!", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Log.d("Error", "User not saved to database");
+                            Toast.makeText(getApplicationContext(), "User data failed to save!", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
+    }
+
+    //creating a new user
+    @Override
+    public void onClick(View view) {
+        //if login was clicked instead
+        if (view.getId() == R.id.loginBtn) {
+            move2Login();
+        }
+
+        //getting all user input as strings
+        String email = getEmail();
+        String pass = getPassword();
+        String role = getRole();
+        String fName = getFname();
+        String lName = getLname();
+
+        if (email.isEmpty()) {
+            showToast(getResources().getString(R.string.EMPTY_EMAIL_ADDRESS));
+        } else if (!cred.isValidEmail(email)) {
+            showToast(getResources().getString(R.string.INVALID_EMAIL_ADDRESS));
+        } else if (pass.isEmpty()) {
+            showToast(getResources().getString(R.string.EMPTY_PASSWORD));
+        } else if (!cred.isValidPass(pass)) {
+            showToast(getResources().getString(R.string.INVALID_PASSWORD));
+        } else if (!cred.isValidRole(role)) {
+            showToast(getResources().getString(R.string.INVALID_ROLE));
+        } else if (cred.isFnameEmpty(fName)) {
+            showToast(getResources().getString(R.string.EMPTY_FNAME));
+        } else if (cred.isLnameEmpty(lName)) {
+            showToast(getResources().getString(R.string.EMPTY_LNAME));
+        } else {
+            mAuth.createUserWithEmailAndPassword(email, pass)
+                    .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                showToast("Registration Successful!");
+
+                                String uid = task.getResult().getUser().getUid();
+                                saveCreds(uid, email, pass, role, fName, lName);
+
+                                move2Login();
+                            } else {
+                                showToast("Registration Failed!\n");
+                            }
+                        }
+                    });
+        }
     }
 }

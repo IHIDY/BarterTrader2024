@@ -3160,6 +3160,7 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
+id LogOutButton
 id META
 id NO_DEBUG
 id SHIFT
@@ -3415,6 +3416,7 @@ id line3
 id linear
 id listMode
 id list_item
+id loginBtn
 id m3_side_sheet
 id main
 id marquee
@@ -3570,6 +3572,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id settings_title
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3603,6 +3606,7 @@ id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
+id statusLabel
 id stop
 id stretch
 id submenuarrow
@@ -3798,8 +3802,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_login
 layout activity_main
 layout activity_registration
+layout activity_settings
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -3888,6 +3894,16 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw firebase_common_keep
+string EMAIL_IS_DUPLICATE
+string EMPTY_EMAIL_ADDRESS
+string EMPTY_FNAME
+string EMPTY_LNAME
+string EMPTY_PASSWORD
+string INVALID_EMAIL_ADDRESS
+string INVALID_PASSWORD
+string INVALID_ROLE
+string REGISTRATION_FAILED
+string REGISTRATION_SUCCESSFUL
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

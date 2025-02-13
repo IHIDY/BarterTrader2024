@@ -43,14 +43,7 @@ dependencies {
     implementation libs.firebase.database
     implementation libs.uiautomator
     testImplementation libs.junit
-    testImplementation libs.core
-    testImplementation libs.ext.junit
+
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
-
-    androidTestImplementation libs.core.v150
-    androidTestImplementation libs.junit.v115
-
-    testImplementation libs.junit
-
 }

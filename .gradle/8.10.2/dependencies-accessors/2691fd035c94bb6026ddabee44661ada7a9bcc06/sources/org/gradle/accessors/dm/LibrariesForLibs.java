@@ -257,7 +257,7 @@ public class LibrariesForLibs extends AbstractExternalDependencyFactory {
         public VersionAccessors(ProviderFactory providers, DefaultVersionCatalog config) { super(providers, config); }
 
         /**
-         * Version alias <b>activity</b> with value <b>1.9.3</b>
+         * Version alias <b>activity</b> with value <b>1.10.0</b>
          * <p>
          * If the version is a rich version and cannot be represented as a
          * single version string, an empty string is returned.
@@ -267,7 +267,7 @@ public class LibrariesForLibs extends AbstractExternalDependencyFactory {
         public Provider<String> getActivity() { return getVersion("activity"); }
 
         /**
-         * Version alias <b>agp</b> with value <b>8.8.0</b>
+         * Version alias <b>agp</b> with value <b>8.7.3</b>
          * <p>
          * If the version is a rich version and cannot be represented as a
          * single version string, an empty string is returned.

@@ -12,21 +12,23 @@ public class RegistrationActivityTest {
         String missingEndEmail = "user@email";
         String validEmail = "user@email.com";
 
-        assertFalse(RegistrationActivity.isValidEmail(noEmail));
-        assertFalse(RegistrationActivity.isValidEmail(invalidEmail));
-        assertFalse(RegistrationActivity.isValidEmail(missingEndEmail));
-        assertTrue(RegistrationActivity.isValidEmail(validEmail));
+        assertEquals(1, RegistrationActivity.isValidEmail(noEmail));
+        assertEquals(2, RegistrationActivity.isValidEmail(invalidEmail));
+        assertEquals(2, RegistrationActivity.isValidEmail(missingEndEmail));
+        assertEquals(0, RegistrationActivity.isValidEmail(validEmail));
     }
 
     @Test
     public void testPassword(){
         String noPass = "";
         String tooShortPass = "123";
-        String validPass = "password123";
+        String invalidPass = "12345678";
+        String validPass = "Password123!";
 
-        assertFalse(RegistrationActivity.isValidPass(noPass));
-        assertFalse(RegistrationActivity.isValidPass(tooShortPass));
-        assertTrue(RegistrationActivity.isValidPass(validPass));
+        assertEquals(1, RegistrationActivity.isValidPass(noPass));
+        assertEquals(2, RegistrationActivity.isValidPass(tooShortPass));
+        assertEquals(4, RegistrationActivity.isValidPass(invalidPass));
+        assertEquals(0, RegistrationActivity.isValidPass(validPass));
     }
 
     @Test
