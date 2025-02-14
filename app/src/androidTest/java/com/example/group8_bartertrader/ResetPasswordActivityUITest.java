@@ -39,7 +39,6 @@ public class ResetPasswordActivityUITest {
 
     @Test
     public void checkIfLandingPageIsDisplayed() {
-//        updatePassword
-//                checkEmailExists
+
     }
 }
