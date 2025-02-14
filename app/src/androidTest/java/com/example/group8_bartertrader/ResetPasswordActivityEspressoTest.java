@@ -57,13 +57,13 @@ public class ResetPasswordActivityEspressoTest {
         onView(withId(R.id.resetPasswordButton)).perform(click());
         onView(withId(R.id.emailEditText)).perform(typeText("DO_NOT_Register@dal.ca"));
         onView(withId(R.id.submitEmailButton)).perform(click());
-        checkToastMessage("Invalid email format",scenario);
+        checkToastMessage("Email not registered",scenario);
     }
 
     @Test
     public void checkValidEmail() {
         onView(withId(R.id.resetPasswordButton)).perform(click());
-        onView(withId(R.id.emailEditText)).perform(typeText("DO_NOT_Register@dal.ca"));
+        onView(withId(R.id.emailEditText)).perform(typeText("test@email.com"));
         onView(withId(R.id.submitEmailButton)).perform(click());
         onView(withId(R.id.resetPasswordButton)).check(matches(isDisplayed()));
     }

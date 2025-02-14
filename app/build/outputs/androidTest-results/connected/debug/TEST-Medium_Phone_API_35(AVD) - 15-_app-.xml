@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<testsuite name="com.example.group8_bartertrader.ResetPasswordActivityEspressoTest" tests="1" failures="1" errors="0" skipped="0" time="11.376" timestamp="2025-02-14T03:08:25" hostname="localhost">
+<testsuite name="com.example.group8_bartertrader.ResetPasswordActivityUITest" tests="1" failures="1" errors="0" skipped="0" time="12.929" timestamp="2025-02-14T19:20:47" hostname="localhost">
   <properties>
     <property name="device" value="Medium_Phone_API_35(AVD) - 15" />
     <property name="flavor" value="" />
     <property name="project" value=":app" />
   </properties>
-  <testcase name="checkIfPageDisplayed" classname="com.example.group8_bartertrader.ResetPasswordActivityEspressoTest" time="0.617">
+  <testcase name="checkIfLandingPageIsDisplayed" classname="com.example.group8_bartertrader.ResetPasswordActivityUITest" time="1.4">
     <failure>java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
 at com.example.group8_bartertrader.SettingsActivity.onCreate(SettingsActivity.java:47)
 at android.app.Activity.performCreate(Activity.java:9002)
@@ -30,7 +30,7 @@ at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
   </testcase>
   <system-err>Test run failed to complete. Instrumentation run failed due to Process crashed.
 Logcat of last crash: 
-Process: com.example.group8_bartertrader, PID: 27876
+Process: com.example.group8_bartertrader, PID: 31267
 java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.group8_bartertrader/com.example.group8_bartertrader.SettingsActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4048)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4235)

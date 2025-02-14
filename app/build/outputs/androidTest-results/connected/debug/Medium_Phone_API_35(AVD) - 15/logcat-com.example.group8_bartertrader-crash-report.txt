@@ -1,4 +1,4 @@
-Process: com.example.group8_bartertrader, PID: 27876
+Process: com.example.group8_bartertrader, PID: 31267
 java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.group8_bartertrader/com.example.group8_bartertrader.SettingsActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4048)
 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4235)

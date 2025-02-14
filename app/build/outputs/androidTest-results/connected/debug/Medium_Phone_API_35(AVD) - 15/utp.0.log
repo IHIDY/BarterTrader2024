@@ -12,7 +12,7 @@ INFO: Configuring Android Instrumentation driver: android_instrumentation_runtim
     }
     args_map {
       key: "class"
-      value: "com.example.group8_bartertrader.ResetPasswordActivityEspressoTest#checkIfPageDisplayed"
+      value: "com.example.group8_bartertrader.ResetPasswordActivityUITest#checkIfLandingPageIsDisplayed"
     }
   }
 }
@@ -41,7 +41,7 @@ WARNING: Failed to retrieve logcat for some test cases. We retrieved logcat for 
 INFO: Stop logcat streaming.
 INFO: Uninstalling com.example.group8_bartertrader for device emulator-5554.
 INFO: Uninstalling com.example.group8_bartertrader.test for device emulator-5554.
-SEVERE: Execute com.example.group8_bartertrader.ResetPasswordActivityEspressoTest.checkIfPageDisplayed: FAILED
+SEVERE: Execute com.example.group8_bartertrader.ResetPasswordActivityUITest.checkIfLandingPageIsDisplayed: FAILED
 java.lang.NullPointerException: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
 at com.example.group8_bartertrader.SettingsActivity.onCreate(SettingsActivity.java:47)
 at android.app.Activity.performCreate(Activity.java:9002)

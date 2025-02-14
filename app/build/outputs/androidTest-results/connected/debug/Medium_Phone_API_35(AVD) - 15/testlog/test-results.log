@@ -1,12 +1,12 @@
-INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.ResetPasswordActivityEspressoTest
+INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.ResetPasswordActivityUITest
 INSTRUMENTATION_STATUS: current=1
 INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
 INSTRUMENTATION_STATUS: numtests=1
 INSTRUMENTATION_STATUS: stream=
-com.example.group8_bartertrader.ResetPasswordActivityEspressoTest:
-INSTRUMENTATION_STATUS: test=checkIfPageDisplayed
+com.example.group8_bartertrader.ResetPasswordActivityUITest:
+INSTRUMENTATION_STATUS: test=checkIfLandingPageIsDisplayed
 INSTRUMENTATION_STATUS_CODE: 1
-INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.ResetPasswordActivityEspressoTest
+INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.ResetPasswordActivityUITest
 INSTRUMENTATION_STATUS: current=1
 INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
 INSTRUMENTATION_STATUS: numtests=1
@@ -32,7 +32,7 @@ at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:
 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
 
 INSTRUMENTATION_STATUS: stream=
-Process crashed while executing checkIfPageDisplayed(com.example.group8_bartertrader.ResetPasswordActivityEspressoTest):
+Process crashed while executing checkIfLandingPageIsDisplayed(com.example.group8_bartertrader.ResetPasswordActivityUITest):
 java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
 at com.example.group8_bartertrader.SettingsActivity.onCreate(SettingsActivity.java:47)
 at android.app.Activity.performCreate(Activity.java:9002)
@@ -54,7 +54,7 @@ at java.lang.reflect.Method.invoke(Native Method)
 at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
 
-INSTRUMENTATION_STATUS: test=checkIfPageDisplayed
+INSTRUMENTATION_STATUS: test=checkIfLandingPageIsDisplayed
 INSTRUMENTATION_STATUS_CODE: -2
 INSTRUMENTATION_RESULT: shortMsg=Process crashed.
 INSTRUMENTATION_CODE: 0
