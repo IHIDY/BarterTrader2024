@@ -1,44 +1,55 @@
 package com.example.group8_bartertrader;
-
+import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+
+
 public class RegistrationActivityTest {
+
+    CredentialsValidator validator;
+
+    @Before
+    public void setup(){
+        validator = new CredentialsValidator();
+    }
+
+    @Test
+    public void testFname(){
+        assertTrue(validator.isFnameEmpty(""));
+        assertFalse(validator.isFnameEmpty("fName"));
+    }
+
+    @Test
+    public void testLname(){
+        assertTrue(validator.isLnameEmpty(""));
+        assertFalse(validator.isLnameEmpty("lName"));
+    }
 
     @Test
     public void testEmail(){
-        String noEmail = "";
-        String invalidEmail = "user@";
-        String missingEndEmail = "user@email";
-        String validEmail = "user@email.com";
-
-        assertEquals(1, RegistrationActivity.isValidEmail(noEmail));
-        assertEquals(2, RegistrationActivity.isValidEmail(invalidEmail));
-        assertEquals(2, RegistrationActivity.isValidEmail(missingEndEmail));
-        assertEquals(0, RegistrationActivity.isValidEmail(validEmail));
+        assertFalse(validator.isValidEmail("")); //empty
+        assertFalse(validator.isValidEmail("User@")); //missing the domain
+        assertFalse(validator.isValidEmail("User@email")); //missing TLD (.com, .ca, etc)
+        assertFalse(validator.isValidEmail("user.email@com")); //wrong format
+        assertTrue(validator.isValidEmail("User@email.com")); //Valid
     }
 
     @Test
     public void testPassword(){
-        String noPass = "";
-        String tooShortPass = "123";
-        String invalidPass = "12345678";
-        String validPass = "Password123!";
-
-        assertEquals(1, RegistrationActivity.isValidPass(noPass));
-        assertEquals(2, RegistrationActivity.isValidPass(tooShortPass));
-        assertEquals(4, RegistrationActivity.isValidPass(invalidPass));
-        assertEquals(0, RegistrationActivity.isValidPass(validPass));
+        assertFalse(validator.isValidPass(""));//empty
+        assertFalse(validator.isValidPass("pass"));//too short
+        assertFalse(validator.isValidPass("password"));//missing numbers, etc...
+        assertFalse(validator.isValidPass("password123"));//missing uppercase letter + special character
+        assertFalse(validator.isValidPass("Password123"));//missing special character
+        assertTrue(validator.isValidPass("Password123!")); //Valid
     }
 
     @Test
     public void testRole(){
-        String role = "Select your role";
-        String roleProvider = "Provider";
-        String roleReceiver = "Receiver";
-
-        assertFalse(RegistrationActivity.isValidRole(role));
-        assertTrue(RegistrationActivity.isValidRole(roleProvider));
-        assertTrue(RegistrationActivity.isValidRole(roleReceiver));
+        assertFalse(validator.isValidRole("Select your role"));//invalid
+        assertTrue(validator.isValidRole("Receiver"));//valid
+        assertTrue(validator.isValidRole("Provider"));//valid
     }
 }
