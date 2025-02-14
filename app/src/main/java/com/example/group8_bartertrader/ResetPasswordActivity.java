@@ -17,11 +17,15 @@ import android.widget.Button;
 import androidx.activity.EdgeToEdge;
 
 import com.example.group8_bartertrader.R;
+import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 import com.google.firebase.firestore.FirebaseFirestore;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.List;
+
 
 
 public class ResetPasswordActivity extends AppCompatActivity {
@@ -34,7 +38,6 @@ public class ResetPasswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.reset_password);
 
-        // Ensure Firebase Auth is initialized correctly
         mAuth = FirebaseAuth.getInstance();
 
         emailEditText = findViewById(R.id.emailEditText);
@@ -58,29 +61,40 @@ public class ResetPasswordActivity extends AppCompatActivity {
     }
 
 
+    /*
+    * using signInWithEmailAndPassword, use the invalid user exception to return email not registered,
+    * else continue and reset password*/
+
+
     private void checkEmailExists(String email) {
-        mAuth.fetchSignInMethodsForEmail(email)
+        mAuth = FirebaseAuth.getInstance();
+
+        mAuth.signInWithEmailAndPassword(email, "dummyPassword123")
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
-                        List<String> signInMethods = task.getResult().getSignInMethods();
-                        if (signInMethods != null && !signInMethods.isEmpty()) {
-                            // Email exists in Firebase Authentication
-                            Intent intent = new Intent(ResetPasswordActivity.this, ResetPasswordFormActivity.class);
-                            intent.putExtra("email", email);
-                            startActivity(intent);
-                        } else {
-                            // Email does NOT exist
-                            Toast.makeText(ResetPasswordActivity.this, "Email not registered", Toast.LENGTH_SHORT).show();
-                        }
-                    } else {
-                        // Error in fetching sign-in methods
-                        Toast.makeText(ResetPasswordActivity.this, "Error checking email", Toast.LENGTH_SHORT).show();
+                        // Email exists, proceed to reset password
+                        Intent intent = new Intent(ResetPasswordActivity.this, ResetPasswordFormActivity.class);
+                        intent.putExtra("email", email);
+                        startActivity(intent);
                     }
                 })
                 .addOnFailureListener(e -> {
-                    // Handle specific errors (e.g., network issues)
-                    Toast.makeText(ResetPasswordActivity.this, "Failed: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                    if (e instanceof FirebaseAuthInvalidUserException) {
+                        //Email does NOT exist
+                        Toast.makeText(ResetPasswordActivity.this, "Email not registered", Toast.LENGTH_SHORT).show();
+                    } else if (e instanceof FirebaseAuthInvalidCredentialsException) {
+                        // Email exists but incorrect password → Still means email is registered
+                        Intent intent = new Intent(ResetPasswordActivity.this, ResetPasswordFormActivity.class);
+                        intent.putExtra("email", email);
+                        startActivity(intent);
+                    } else {
+                        //Other errors (network issues, etc.)
+                        Toast.makeText(ResetPasswordActivity.this, "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                    }
                 });
     }
+
+
+
 
 }
