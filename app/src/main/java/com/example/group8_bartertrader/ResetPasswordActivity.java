@@ -17,31 +17,36 @@ import android.widget.Button;
 import androidx.activity.EdgeToEdge;
 
 import com.example.group8_bartertrader.R;
+import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthInvalidUserException;
+import com.google.firebase.firestore.FirebaseFirestore;
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.List;
+
 
 
 public class ResetPasswordActivity extends AppCompatActivity {
     private EditText emailEditText;
     private Button submitEmailButton;
-    private FirebaseAuth auth;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.reset_password);
 
-        // Initialize FirebaseAuth
-        auth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
 
-        // Initialize UI elements
         emailEditText = findViewById(R.id.emailEditText);
         submitEmailButton = findViewById(R.id.submitEmailButton);
 
-        // Set click listener for submit button
         submitEmailButton.setOnClickListener(v -> {
             String email = emailEditText.getText().toString().trim();
 
-            if (email.isEmpty()) {
+            if (TextUtils.isEmpty(email)) {
                 Toast.makeText(ResetPasswordActivity.this, "Please enter an email", Toast.LENGTH_SHORT).show();
                 return;
             }
@@ -55,21 +60,41 @@ public class ResetPasswordActivity extends AppCompatActivity {
         });
     }
 
-    private void checkEmailExists(String email) {
-        auth.fetchSignInMethodsForEmail(email).addOnCompleteListener(task -> {
-            if (task.isSuccessful() && task.getResult() != null) {
-                boolean emailExists = !task.getResult().getSignInMethods().isEmpty();
-                if (emailExists) {
-                    Intent intent = new Intent(ResetPasswordActivity.this, ResetPasswordFormActivity.class);
-                    intent.putExtra("email", email);
-                    startActivity(intent);
-                } else {
-                    Toast.makeText(ResetPasswordActivity.this, "Email not registered", Toast.LENGTH_SHORT).show();
-                }
-            } else {
-                Toast.makeText(ResetPasswordActivity.this, "Error checking email", Toast.LENGTH_SHORT).show();
-            }
-        });
 
+    /*
+    * using signInWithEmailAndPassword, use the invalid user exception to return email not registered,
+    * else continue and reset password*/
+
+
+    private void checkEmailExists(String email) {
+        mAuth = FirebaseAuth.getInstance();
+
+        mAuth.signInWithEmailAndPassword(email, "dummyPassword123")
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        // Email exists, proceed to reset password
+                        Intent intent = new Intent(ResetPasswordActivity.this, ResetPasswordFormActivity.class);
+                        intent.putExtra("email", email);
+                        startActivity(intent);
+                    }
+                })
+                .addOnFailureListener(e -> {
+                    if (e instanceof FirebaseAuthInvalidUserException) {
+                        //Email does NOT exist
+                        Toast.makeText(ResetPasswordActivity.this, "Email not registered", Toast.LENGTH_SHORT).show();
+                    } else if (e instanceof FirebaseAuthInvalidCredentialsException) {
+                        // Email exists but incorrect password → Still means email is registered
+                        Intent intent = new Intent(ResetPasswordActivity.this, ResetPasswordFormActivity.class);
+                        intent.putExtra("email", email);
+                        startActivity(intent);
+                    } else {
+                        //Other errors (network issues, etc.)
+                        Toast.makeText(ResetPasswordActivity.this, "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                    }
+                });
     }
+
+
+
+
 }
