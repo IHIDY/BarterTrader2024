@@ -77,6 +77,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array spinner_items
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -3264,6 +3265,9 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id button
+id button2
+id button3
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3277,6 +3281,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id changeRoleBtn
 id checkbox
 id checked
 id chronometer
@@ -3288,6 +3293,9 @@ id clockwise
 id closest
 id collapseActionView
 id compress
+id confirmEmail
+id confirmEmailBtn
+id confirmEmailTextView
 id confirmPasswordEditText
 id confirm_button
 id constraint
@@ -3478,6 +3486,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id mySpinner
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3517,6 +3526,7 @@ id open_search_view_toolbar_container
 id outline
 id outward
 id overshoot
+id pBtn
 id packed
 id parallax
 id parent
@@ -3537,6 +3547,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id recsettingbutton
 id rectangles
 id regBtn
 id report_drawn
@@ -3547,6 +3558,7 @@ id rightToLeft
 id right_icon
 id right_side
 id roleSelect
+id roleSelectSpinner
 id rounded
 id row_index_key
 id save_non_transition_alpha
@@ -3634,6 +3646,8 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3802,8 +3816,11 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_confirmation_page
 layout activity_login
 layout activity_main
+layout activity_provider_dash
+layout activity_receiver_dash
 layout activity_registration
 layout activity_settings
 layout browser_actions_context_menu_page

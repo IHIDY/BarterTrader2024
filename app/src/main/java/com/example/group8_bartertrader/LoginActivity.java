@@ -23,6 +23,10 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.regex.Pattern;
 
@@ -102,20 +106,94 @@ public class LoginActivity extends AppCompatActivity {
         mAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
+                Log.d("DEBUG", "Attempting to sign in with email: " + email);
+
                 if (task.isSuccessful()) {
-                    Log.d("TAG", "Sign In Email Success");
-                    Toast.makeText(LoginActivity.this, "Successful Login.",
-                            Toast.LENGTH_SHORT).show();
-                    // Redirect to the dashboard page.
-                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                    startActivity(intent);
+                    Log.d("DEBUG", "Sign In Successful.");
+                    Toast.makeText(LoginActivity.this, "Successful Login.", Toast.LENGTH_SHORT).show();
+
+                    // Get the authenticated user's email
+                    FirebaseUser user = mAuth.getCurrentUser();
+                    if (user == null) {
+                        Log.e("ERROR", "User authentication failed, user object is null.");
+                        return;
+                    }
+
+                    String currentUserEmail = user.getEmail();
+                    Log.d("DEBUG", "Authenticated user email: " + currentUserEmail);
+
+                    // Reference to the Users node in the database
+                    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Users");
+                    Log.d("DEBUG", "Querying database for user details...");
+
+                    // Query the database for the user by email
+                    databaseReference.orderByChild("email").equalTo(currentUserEmail)
+                            .addListenerForSingleValueEvent(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                    Log.d("DEBUG", "Database query completed. Checking results...");
+
+                                    if (dataSnapshot.exists()) {
+                                        Log.d("DEBUG", "User data found for email: " + currentUserEmail);
+
+                                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                                            // Retrieve user role
+                                            String role = snapshot.child("role").getValue(String.class);
+                                            String firstName = snapshot.child("firstName").getValue(String.class);
+                                            String lastName = snapshot.child("lastName").getValue(String.class);
+                                            String pass = snapshot.child("pass").getValue(String.class);
+
+                                            // Log user details
+                                            Log.d("User Details", "Email: " + currentUserEmail);
+                                            Log.d("User Details", "First Name: " + firstName);
+                                            Log.d("User Details", "Last Name: " + lastName);
+                                            Log.d("User Details", "Password: " + pass);
+                                            Log.d("User Details", "Role: " + role);
+
+                                            Toast.makeText(LoginActivity.this, "User details retrieved.", Toast.LENGTH_SHORT).show();
+
+//
+
+                                            // Determine redirection
+                                            Intent intent;
+                                            if (role.equals("Provider")) {
+                                                Log.d("DEBUG", "User is a Provider. Redirecting to ProviderDash.");
+                                                intent = new Intent(LoginActivity.this, ProviderDash.class);
+                                            } else if (role.equals("Receiver")) {
+                                                Log.d("DEBUG", "User is a Receiver. Redirecting to ReceiverDash.");
+                                                intent = new Intent(LoginActivity.this, ReceiverDash.class);
+                                            } else {
+                                                Log.w("WARNING", "Unknown role: " + role);
+                                                Toast.makeText(LoginActivity.this, "Invalid user role.", Toast.LENGTH_SHORT).show();
+                                                return;
+                                            }
+
+                                            startActivity(intent);
+                                            Log.d("DEBUG", "Redirection successful. Closing LoginActivity.");
+//                                            finish();
+                                        }
+                                    } else {
+                                        Log.d("DEBUG", "No user data found for this email.");
+                                        Toast.makeText(LoginActivity.this, "User data not found.", Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError databaseError) {
+                                    Log.e("ERROR", "Database error: " + databaseError.getMessage());
+                                    Toast.makeText(LoginActivity.this, "Database error: " + databaseError.getMessage(), Toast.LENGTH_SHORT).show();
+                                }
+                            });
+
                 } else {
-                    Log.w("TAG", "signInWithEmail:failure", task.getException());
-                    Toast.makeText(LoginActivity.this, "Authentication failed.",
-                            Toast.LENGTH_SHORT).show();
+                    Log.w("WARNING", "signInWithEmail:failure", task.getException());
+                    Toast.makeText(LoginActivity.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+
+
+
 
     }
 

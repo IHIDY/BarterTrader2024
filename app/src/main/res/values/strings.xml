@@ -13,4 +13,5 @@
     <string name="EMPTY_LNAME">Empty last name</string>
     <string name="REGISTRATION_SUCCESSFUL">Registration successful</string>
     <string name="REGISTRATION_FAILED">Registration failed</string>
+
 </resources>
