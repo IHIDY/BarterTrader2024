@@ -105,7 +105,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
 
     protected void setStatusMessage(String message) {
         TextView statusLabel = findViewById(R.id.statusLabel);
-        statusLabel.setText(message.trim());
+        statusLabel.post(()-> statusLabel.setText(message.trim()));
     }
 
     protected void saveCreds(String uid, String email, String pass, String role, String fname, String lname) {
@@ -142,20 +142,28 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         String lName = getLname();
 
         if (email.isEmpty()) {
+            setStatusMessage(getResources().getString(R.string.EMPTY_EMAIL_ADDRESS));
             showToast(getResources().getString(R.string.EMPTY_EMAIL_ADDRESS));
         } else if (!cred.isValidEmail(email)) {
+            setStatusMessage(getResources().getString(R.string.INVALID_EMAIL_ADDRESS));
             showToast(getResources().getString(R.string.INVALID_EMAIL_ADDRESS));
         } else if (pass.isEmpty()) {
+            setStatusMessage(getResources().getString(R.string.EMPTY_PASSWORD));
             showToast(getResources().getString(R.string.EMPTY_PASSWORD));
         } else if (!cred.isValidPass(pass)) {
+            setStatusMessage(getResources().getString(R.string.INVALID_PASSWORD));
             showToast(getResources().getString(R.string.INVALID_PASSWORD));
-        } else if (!cred.isValidRole(role)) {
+        } else if (!cred.isValidRole(role) || role.equals("Select your Role")) {
+            setStatusMessage(getResources().getString(R.string.INVALID_ROLE));
             showToast(getResources().getString(R.string.INVALID_ROLE));
         } else if (cred.isFnameEmpty(fName)) {
+            setStatusMessage(getResources().getString(R.string.EMPTY_FNAME));
             showToast(getResources().getString(R.string.EMPTY_FNAME));
         } else if (cred.isLnameEmpty(lName)) {
+            setStatusMessage(getResources().getString(R.string.EMPTY_LNAME));
             showToast(getResources().getString(R.string.EMPTY_LNAME));
         } else {
+            setStatusMessage(getResources().getString(R.string.REGISTRATION_SUCCESSFUL));
             mAuth.createUserWithEmailAndPassword(email, pass)
                     .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
@@ -169,6 +177,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
                                 move2Login();
                             } else {
                                 showToast("Registration Failed!\n");
+                                setStatusMessage(getResources().getString(R.string.REGISTRATION_FAILED));
                             }
                         }
                     });

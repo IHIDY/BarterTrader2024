@@ -1,16 +1,9 @@
 package com.example.group8_bartertrader;
 
-import android.util.Log;
-
-import com.google.android.gms.tasks.Task;
-import com.google.android.gms.tasks.Tasks;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class CredentialsValidator {
@@ -19,7 +12,13 @@ public class CredentialsValidator {
     private DatabaseReference databaseReference;
 
     public CredentialsValidator() {
-        this.mAuth = FirebaseAuth.getInstance();
+        if (!unitTestRunning()) {
+            this.mAuth = FirebaseAuth.getInstance();
+        }
+    }
+
+    private boolean unitTestRunning() {
+        return "true".equals(System.getProperty("isUnitTest"));
     }
 
     public boolean isEmptyEmail(String email) {
@@ -27,7 +26,7 @@ public class CredentialsValidator {
     }
 
     public boolean isValidEmail(String email) {
-        if (email == null || email.isEmpty()) {
+        if (email == null || email.trim().isEmpty()) {
             return false;
         }
 
@@ -35,34 +34,36 @@ public class CredentialsValidator {
                 "+@[a-zA-Z0-9.-]" + // @domain
                 "+\\.[a-zA-Z]{2,6}$"; // top level domain: .com, .ca, etc
         Pattern p = Pattern.compile(regex);
+        Matcher m = p.matcher(email);
 
-        return p.matcher(email).matches();
+        return m.matches();
     }
 
-    public boolean isEmptyPassword(String pass) {
+    public boolean isEmptyPass(String pass) {
         return pass.trim().isEmpty();
     }
 
     public boolean isValidPass(String pass) {
-        if (pass == null || pass.isEmpty()) {
+        if (pass == null || pass.trim().isEmpty()) {
             return false;
         }
 
         String regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@#$%^&+=!])[A-Za-z\\d@#$%^&+=!]{6,30}$";
         Pattern p = Pattern.compile(regex);
+        Matcher m = p.matcher(pass);
 
-        return p.matcher(pass).matches();
+        return m.matches();
     }
 
     public boolean isValidRole(String role) {
-        return (role != null) && (!role.equals("Select your role"));
+        return role.equals("Provider") || role.equals("Receiver");
     }
 
     public boolean isFnameEmpty(String fname) {
-        return fname.trim().isEmpty();
+        return fname == null || fname.trim().isEmpty();
     }
 
     public boolean isLnameEmpty(String lname) {
-        return lname.trim().isEmpty();
+        return lname == null || lname.trim().isEmpty();
     }
 }

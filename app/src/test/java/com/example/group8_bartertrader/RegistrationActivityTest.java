@@ -1,44 +1,65 @@
 package com.example.group8_bartertrader;
-
+import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
 
 public class RegistrationActivityTest {
 
-    @Test
-    public void testEmail(){
-        String noEmail = "";
-        String invalidEmail = "user@";
-        String missingEndEmail = "user@email";
-        String validEmail = "user@email.com";
+    CredentialsValidator validator;
 
-        assertEquals(1, RegistrationActivity.isValidEmail(noEmail));
-        assertEquals(2, RegistrationActivity.isValidEmail(invalidEmail));
-        assertEquals(2, RegistrationActivity.isValidEmail(missingEndEmail));
-        assertEquals(0, RegistrationActivity.isValidEmail(validEmail));
+    @Before
+    public void setup(){
+        System.setProperty("isUnitTest", "true");
+        validator = new CredentialsValidator();
     }
 
     @Test
-    public void testPassword(){
-        String noPass = "";
-        String tooShortPass = "123";
-        String invalidPass = "12345678";
-        String validPass = "Password123!";
-
-        assertEquals(1, RegistrationActivity.isValidPass(noPass));
-        assertEquals(2, RegistrationActivity.isValidPass(tooShortPass));
-        assertEquals(4, RegistrationActivity.isValidPass(invalidPass));
-        assertEquals(0, RegistrationActivity.isValidPass(validPass));
+    public void isFnameEmptyTest(){
+        assertTrue(validator.isFnameEmpty(""));
+        assertFalse(validator.isFnameEmpty("fName"));
     }
 
     @Test
-    public void testRole(){
-        String role = "Select your role";
-        String roleProvider = "Provider";
-        String roleReceiver = "Receiver";
+    public void isLnameEmptyTest(){
+        assertTrue(validator.isLnameEmpty(""));
+        assertFalse(validator.isLnameEmpty("lName"));
+    }
 
-        assertFalse(RegistrationActivity.isValidRole(role));
-        assertTrue(RegistrationActivity.isValidRole(roleProvider));
-        assertTrue(RegistrationActivity.isValidRole(roleReceiver));
+    @Test
+    public void isEmptyEmailTest(){
+        assertTrue(validator.isEmptyEmail("")); //empty
+        assertFalse(validator.isEmptyEmail("User@email.com")); //Valid email
+    }
+
+    @Test
+    public void isValidEmailTest(){
+        assertFalse(validator.isValidEmail("")); //empty
+        assertFalse(validator.isValidEmail("User@")); //missing the domain
+        assertFalse(validator.isValidEmail("User@email")); //missing TLD (.com, .ca, etc)
+        assertFalse(validator.isValidEmail("user.email@com")); //wrong format
+        assertTrue(validator.isValidEmail("User@email.com")); //Valid
+    }
+
+    @Test
+    public void isEmptyPasswordTest(){
+        assertTrue(validator.isEmptyPass(""));//empty
+        assertFalse(validator.isEmptyPass("Password123!")); //Valid
+    }
+    @Test
+    public void isValidPasswordTest(){
+        assertFalse(validator.isValidPass(""));//empty
+        assertFalse(validator.isValidPass("pass"));//too short
+        assertFalse(validator.isValidPass("password"));//missing numbers, etc...
+        assertFalse(validator.isValidPass("password123"));//missing uppercase letter + special character
+        assertFalse(validator.isValidPass("Password123"));//missing special character
+        assertTrue(validator.isValidPass("Password123!")); //Valid
+    }
+    @Test
+    public void isValidRoleTest(){
+        assertFalse(validator.isValidRole("Select your role"));//invalid
+        assertTrue(validator.isValidRole("Receiver"));//valid
+        assertTrue(validator.isValidRole("Provider"));//valid
     }
 }
