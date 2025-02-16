@@ -1,9 +1,9 @@
-#Sun Feb 16 11:59:00 EST 2025
-base.0=/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
-base.3=/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
-base.4=/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
+#Sun Feb 16 15:35:51 AST 2025
+base.0=/Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
+base.3=/Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+base.4=/Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=10/classes.dex

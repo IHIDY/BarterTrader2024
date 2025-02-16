@@ -37,11 +37,25 @@
         android:testOnly="true"
         android:theme="@style/Theme.Group8_bartertrader" >
         <activity
+            android:name="com.example.group8_bartertrader.ConfirmationPage"
+            android:exported="true" />
+        <activity
+            android:name="com.example.group8_bartertrader.ReceiverDash"
+            android:exported="false" />
+        <activity
+            android:name="com.example.group8_bartertrader.ProviderDash"
+            android:exported="false" />
+        <activity
             android:name="com.example.group8_bartertrader.LoginActivity"
             android:exported="false" />
         <activity
             android:name="com.example.group8_bartertrader.RegistrationActivity"
             android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.example.group8_bartertrader.MainActivity"
@@ -57,11 +71,13 @@
         <activity
             android:name="com.example.group8_bartertrader.SettingsActivity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"

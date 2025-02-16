@@ -35,13 +35,14 @@ public class SettingsActivity extends AppCompatActivity {
         Button logoutButton = findViewById(R.id.LogOutButton);
 
         Button resetPasswordButton = findViewById(R.id.resetPasswordButton);
+        Button changeRoleBtn = findViewById(R.id.changeRoleBtn);
 
-        Spinner mySpinner = findViewById(R.id.mySpinner);
+//        Spinner mySpinner = findViewById(R.id.mySpinner);
 
         List<String> items = new ArrayList<>();
-        items.add("Option A");
-        items.add("Option B");
-        items.add("Option C");
+        items.add("Select a role");
+        items.add("Provider");
+        items.add("Receiver");
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
                 this,
@@ -50,7 +51,12 @@ public class SettingsActivity extends AppCompatActivity {
         );
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        mySpinner.setAdapter(adapter);
+//        mySpinner.setAdapter(adapter);
+
+        changeRoleBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(SettingsActivity.this, ConfirmationPage.class);
+            startActivity(intent);
+        });
 
 
         // Set a click listener for the logout button
