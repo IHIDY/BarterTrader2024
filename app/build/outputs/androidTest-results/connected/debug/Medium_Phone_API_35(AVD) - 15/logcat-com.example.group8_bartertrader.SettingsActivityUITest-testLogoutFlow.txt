@@ -1,0 +1,552 @@
+02-16 12:31:02.651 23952 23975 I TestRunner: started: testLogoutFlow(com.example.group8_bartertrader.SettingsActivityUITest)
+02-16 12:31:02.677  1053  1053 D StatsLog: LAUNCHER_ALLAPPS_COUNT
+02-16 12:31:02.680 23952 23975 I UiDevice: Creating a new instance, old instance exists: false
+02-16 12:31:02.684 23952 23975 I UiAutomation: Initialized for user 0 on display 0
+02-16 12:31:02.750   532   532 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:02.753   532   532 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:02.767   532   532 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:02.838 21678 21745 I akvy    : NGA disabled due to not being eligible.
+02-16 12:31:02.874 23952 23975 D UiDevice: Setting accessibility service flags: 65618
+02-16 12:31:02.904 20538 20546 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+02-16 12:31:02.912   532   532 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:02.917   532   532 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:02.920   532   679 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+02-16 12:31:02.923   532   679 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+02-16 12:31:02.923   532   679 D InetDiagMessage: Destroyed live tcp sockets for uids={10136} in 4ms
+02-16 12:31:02.925 20538 20555 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+02-16 12:31:02.925   532   679 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+02-16 12:31:02.926 20538 20555 I AiAiEcho: EchoTargets:
+02-16 12:31:02.926 20538 20555 I AiAiEcho: Filtered by AiAi flag check:
+02-16 12:31:02.926 20538 20555 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+02-16 12:31:02.934 20538 20555 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+02-16 12:31:02.935 20538 20722 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+02-16 12:31:02.936   532   679 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+02-16 12:31:02.937   532   679 D InetDiagMessage: Destroyed live tcp sockets for uids={20136} in 14ms
+02-16 12:31:02.947 20538 20555 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+02-16 12:31:02.954 20538 20555 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+02-16 12:31:02.954 20538 20555 I AiAiEcho: EchoTargets:
+02-16 12:31:02.954 20538 20555 I AiAiEcho: Filtered by AiAi flag check:
+02-16 12:31:02.954 20538 20555 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+02-16 12:31:02.954 20538 20555 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+02-16 12:31:02.955 20538 20555 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+02-16 12:31:02.955 20538 20555 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+02-16 12:31:02.963 20538 20555 I AiAiEcho: EchoTargets:
+02-16 12:31:02.963 20538 20555 I AiAiEcho: Filtered by AiAi flag check:
+02-16 12:31:02.963 20538 20555 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+02-16 12:31:02.963 20538 20555 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+02-16 12:31:02.964 20538 20555 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+02-16 12:31:02.964 20538 20555 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+02-16 12:31:02.964 20538 20555 I AiAiEcho: EchoTargets:
+02-16 12:31:02.964 20538 20555 I AiAiEcho: Filtered by AiAi flag check:
+02-16 12:31:02.964 20538 20555 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+02-16 12:31:02.964 20538 20555 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+02-16 12:31:02.964 20538 20555 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+02-16 12:31:02.964 20538 20555 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+02-16 12:31:02.965 20538 20555 I AiAiEcho: EchoTargets:
+02-16 12:31:02.965 20538 20555 I AiAiEcho: Filtered by AiAi flag check:
+02-16 12:31:02.965 20538 20555 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+02-16 12:31:02.965 20538 20555 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+02-16 12:31:02.965 20538 20555 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+02-16 12:31:02.966 20538 20555 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+02-16 12:31:02.966 20538 20555 I AiAiEcho: EchoTargets:
+02-16 12:31:02.966 20538 20555 I AiAiEcho: Filtered by AiAi flag check:
+02-16 12:31:02.966 20538 20555 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+02-16 12:31:02.966 20538 20555 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+02-16 12:31:02.966 20538 20555 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+02-16 12:31:02.966 20538 20555 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+02-16 12:31:02.967 20538 20555 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+02-16 12:31:02.967 20538 20555 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+02-16 12:31:02.968  1053  1053 D SsBaseTemplateCard: No text view can be set up
+02-16 12:31:02.968  1053  1053 D SsBaseTemplateCard: Passed-in item info is null
+02-16 12:31:02.968  1053  1053 D SsBaseTemplateCard: Passed-in item info is null
+02-16 12:31:02.968  1053  1053 D SsBaseTemplateCard: Passed-in item info is null
+02-16 12:31:02.968  1053  1053 I SsBaseTemplateCard: Secondary card pane is null
+02-16 12:31:02.969 20538 20555 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+02-16 12:31:02.969 20538 20555 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+02-16 12:31:02.970 20538 20555 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+02-16 12:31:02.971   774   774 D SsMediaDataProvider: Forwarding Smartspace updates []
+02-16 12:31:02.971   774   774 D SsMediaDataProvider: Forwarding Smartspace updates []
+02-16 12:31:02.973   774   774 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+02-16 12:31:02.973   774   774 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+02-16 12:31:02.978 23952 23971 D SharedPreferencesImpl: Time required to fsync /data/user/0/com.example.group8_bartertrader/shared_prefs/FirebaseHeartBeatW0RFRkFVTFRd+MTo5NzgxNjE5MTg0MTU6YW5kcm9pZDo1ZDAyN2RmMGQzZmVlZDIxMjliMmJh.xml: [<1: 0, <2: 0, <4: 0, <8: 0, <16: 0, <32: 0, <64: 0, <128: 0, <256: 0, <512: 1, <1024: 0, <2048: 0, <4096: 0, <8192: 0, <16384: 0, >=16384: 0]
+02-16 12:31:02.981  1053  1053 D SsBaseTemplateCard: No text view can be set up
+02-16 12:31:02.981  1053  1053 D SsBaseTemplateCard: Passed-in item info is null
+02-16 12:31:02.981  1053  1053 D SsBaseTemplateCard: Passed-in item info is null
+02-16 12:31:02.981  1053  1053 D SsBaseTemplateCard: Passed-in item info is null
+02-16 12:31:02.981  1053  1053 I SsBaseTemplateCard: Secondary card pane is null
+02-16 12:31:02.995  9475  9492 D AccessibilitySourceService: enabled a11y services count 0
+02-16 12:31:02.996  9475  9492 D AccessibilitySourceService: a11y source sending 0 issue to sc
+02-16 12:31:02.999   532  1979 D SafetySourceDataValidat: No cert check requested for package com.google.android.permissioncontroller
+02-16 12:31:03.006 17158 23651 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+02-16 12:31:03.007 17158 23651 I Icing   : Indexing done com.google.android.gms-apps
+02-16 12:31:03.151   532   532 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:03.162  1053  1084 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.example.group8_bartertrader]
+02-16 12:31:03.169 20538 20538 I AiAiEcho: AppFetcherImpl onPackageChanged com.example.group8_bartertrader.
+02-16 12:31:03.171 20538 23973 I AiAiEcho: AppIndexer Package:[com.example.group8_bartertrader] UserProfile:[0] Enabled:[true].
+02-16 12:31:03.171 20538 23973 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.example.group8_bartertrader], userId:[0], reason:[package is updated.].
+02-16 12:31:03.195  1053  1053 D StatsLog: LAUNCHER_ALLAPPS_COUNT
+02-16 12:31:03.206   532   679 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+02-16 12:31:03.208   532   679 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+02-16 12:31:03.208   532   679 D InetDiagMessage: Destroyed live tcp sockets for uids={10164} in 2ms
+02-16 12:31:03.209   532   679 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+02-16 12:31:03.209   532   679 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+02-16 12:31:03.209   532   679 D InetDiagMessage: Destroyed live tcp sockets for uids={20164} in 0ms
+02-16 12:31:03.348   532   544 I system_server: Background concurrent mark compact GC freed 63MB AllocSpace bytes, 62(1576KB) LOS objects, 38% free, 37MB/61MB, paused 19.137ms,42.357ms total 10.703s
+02-16 12:31:03.358 20538 20538 I AiAiTextClassifier: onDestroyTextClassificationSession = TextClassificationSessionId {87194c24-91a3-4159-8072-89e03837af72}
+02-16 12:31:03.385   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~BkSVlE_yTTm14ccWQDlzbA==/com.google.android.gms-QTyEppjMIE-X5A2Qnq4jyg==/base.apk' with 1 weak references
+02-16 12:31:03.385   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~BkSVlE_yTTm14ccWQDlzbA==/com.google.android.gms-QTyEppjMIE-X5A2Qnq4jyg==/split_CronetDynamite_installtime.apk' with 1 weak references
+02-16 12:31:03.386   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~BkSVlE_yTTm14ccWQDlzbA==/com.google.android.gms-QTyEppjMIE-X5A2Qnq4jyg==/split_DynamiteLoader_installtime.apk' with 1 weak references
+02-16 12:31:03.386   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~BkSVlE_yTTm14ccWQDlzbA==/com.google.android.gms-QTyEppjMIE-X5A2Qnq4jyg==/split_DynamiteModulesA_installtime.apk' with 1 weak references
+02-16 12:31:03.386   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~BkSVlE_yTTm14ccWQDlzbA==/com.google.android.gms-QTyEppjMIE-X5A2Qnq4jyg==/split_DynamiteModulesC_installtime.apk' with 1 weak references
+02-16 12:31:03.386   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~BkSVlE_yTTm14ccWQDlzbA==/com.google.android.gms-QTyEppjMIE-X5A2Qnq4jyg==/split_GoogleCertificates_installtime.apk' with 1 weak references
+02-16 12:31:03.386   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~BkSVlE_yTTm14ccWQDlzbA==/com.google.android.gms-QTyEppjMIE-X5A2Qnq4jyg==/split_MapsDynamite_installtime.apk' with 1 weak references
+02-16 12:31:03.386   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~BkSVlE_yTTm14ccWQDlzbA==/com.google.android.gms-QTyEppjMIE-X5A2Qnq4jyg==/split_MeasurementDynamite_installtime.apk' with 1 weak references
+02-16 12:31:03.386   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~BkSVlE_yTTm14ccWQDlzbA==/com.google.android.gms-QTyEppjMIE-X5A2Qnq4jyg==/split_config.en.apk' with 1 weak references
+02-16 12:31:03.386   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~BkSVlE_yTTm14ccWQDlzbA==/com.google.android.gms-QTyEppjMIE-X5A2Qnq4jyg==/split_config.xxhdpi.apk' with 1 weak references
+02-16 12:31:03.391   532   546 W System  : A resource failed to call close.
+02-16 12:31:03.393 23952 23974 I FA      : App measurement initialized, version: 114010
+02-16 12:31:03.400   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/InputDevices/InputDevices.apk' with 1 weak references
+02-16 12:31:03.402 23952 23974 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+02-16 12:31:03.403 23952 23974 I FA      : To enable faster debug mode event logging run:
+02-16 12:31:03.403 23952 23974 I FA      :   adb shell setprop debug.firebase.analytics.app com.example.group8_bartertrader
+02-16 12:31:03.406   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~KhI-aDfrfOjtHV8FsX4s8g==/com.google.android.inputmethod.latin-CNBSVfHxAQPE2YUcrY-Lbw==/base.apk' with 1 weak references
+02-16 12:31:03.414   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~KhI-aDfrfOjtHV8FsX4s8g==/com.google.android.inputmethod.latin-CNBSVfHxAQPE2YUcrY-Lbw==/split_brella_feature_split.apk' with 1 weak references
+02-16 12:31:03.414   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~KhI-aDfrfOjtHV8FsX4s8g==/com.google.android.inputmethod.latin-CNBSVfHxAQPE2YUcrY-Lbw==/split_config.xxhdpi.apk' with 1 weak references
+02-16 12:31:03.414   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~KhI-aDfrfOjtHV8FsX4s8g==/com.google.android.inputmethod.latin-CNBSVfHxAQPE2YUcrY-Lbw==/split_tenoranimation_feature_split.apk' with 1 weak references
+02-16 12:31:03.414   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~mk4iDR6Ry_D50RIKSGZaWQ==/com.google.android.tts-jNw-3Ue1VxoR2ahzpbmYaw==/base.apk' with 1 weak references
+02-16 12:31:03.415   532   546 W System  : A resource failed to call close.
+02-16 12:31:03.416   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lazapnZO4d7Hs39LxMD2fw==/com.google.android.gm-AwgvuYUPUDphUh1n1AsoVA==/base.apk' with 1 weak references
+02-16 12:31:03.421   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~JEQm_G10b_Hc-C0ZmWP_Tw==/com.google.android.googlequicksearchbox-6ij9xBTYPB3xHPUvSu82rg==/base.apk' with 1 weak references
+02-16 12:31:03.422   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~JEQm_G10b_Hc-C0ZmWP_Tw==/com.google.android.googlequicksearchbox-6ij9xBTYPB3xHPUvSu82rg==/split_config.xxhdpi.apk' with 1 weak references
+02-16 12:31:03.422   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~JEQm_G10b_Hc-C0ZmWP_Tw==/com.google.android.googlequicksearchbox-6ij9xBTYPB3xHPUvSu82rg==/split_lens_ondevice_engine_play_ml_module.apk' with 1 weak references
+02-16 12:31:03.423   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lazapnZO4d7Hs39LxMD2fw==/com.google.android.gm-AwgvuYUPUDphUh1n1AsoVA==/split_config.arm64_v8a.apk' with 1 weak references
+02-16 12:31:03.425 23952 23974 D MeasurementManager: AdServicesInfo.version=13
+02-16 12:31:03.425   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lazapnZO4d7Hs39LxMD2fw==/com.google.android.gm-AwgvuYUPUDphUh1n1AsoVA==/split_config.en.apk' with 1 weak references
+02-16 12:31:03.427   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lazapnZO4d7Hs39LxMD2fw==/com.google.android.gm-AwgvuYUPUDphUh1n1AsoVA==/split_config.xxhdpi.apk' with 1 weak references
+02-16 12:31:03.428   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~OusFUKnzwC4HaIoZYjYv4g==/com.google.android.apps.docs-Kd1tQdTZ4kt3eyECzKwmTQ==/base.apk' with 1 weak references
+02-16 12:31:03.430   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~OusFUKnzwC4HaIoZYjYv4g==/com.google.android.apps.docs-Kd1tQdTZ4kt3eyECzKwmTQ==/split_config.arm64_v8a.apk' with 1 weak references
+02-16 12:31:03.430   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~OusFUKnzwC4HaIoZYjYv4g==/com.google.android.apps.docs-Kd1tQdTZ4kt3eyECzKwmTQ==/split_config.en.apk' with 1 weak references
+02-16 12:31:03.430   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~OusFUKnzwC4HaIoZYjYv4g==/com.google.android.apps.docs-Kd1tQdTZ4kt3eyECzKwmTQ==/split_config.xxhdpi.apk' with 1 weak references
+02-16 12:31:03.431   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~cv3rkYNYkg5sr8plnoaxCg==/com.google.android.calendar--eYENp1y5iugM0iSJyyFpA==/base.apk' with 1 weak references
+02-16 12:31:03.432   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~cv3rkYNYkg5sr8plnoaxCg==/com.google.android.calendar--eYENp1y5iugM0iSJyyFpA==/split_config.en.apk' with 1 weak references
+02-16 12:31:03.432   532   546 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~cv3rkYNYkg5sr8plnoaxCg==/com.google.android.calendar--eYENp1y5iugM0iSJyyFpA==/split_config.xxhdpi.apk' with 1 weak references
+02-16 12:31:03.478   532   532 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:03.484  1053  1084 D PackageUpdatedTask: Package updated: mOp=ADD packages=[com.example.group8_bartertrader.test]
+02-16 12:31:03.497  1053  1084 D BaseIconCache: Default icon returned for com.example.group8_bartertrader.test
+02-16 12:31:03.520   532   532 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:03.522  1053  1084 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.example.group8_bartertrader.test]
+02-16 12:31:03.525  1053  1084 W AllAppsList: updatePromiseInstallInfo: no Activities matched updated package, removing all apps from package=com.example.group8_bartertrader.test
+02-16 12:31:03.546 19382 19382 E adservices.measurement: DeleteUninstalledJobService is disabled, skip scheduling
+02-16 12:31:03.552 19382 19382 E adservices: Encryption key fetch job is disabled, skip scheduling.
+02-16 12:31:03.568 19382 19395 W adservices: Skip logging because Cobalt logger is null
+02-16 12:31:03.589 20538 20538 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.example.group8_bartertrader.test], userId:[0], reason:[package is added.].
+02-16 12:31:03.596 20538 20538 I AiAiEcho: AppFetcherImpl onPackageChanged com.example.group8_bartertrader.test.
+02-16 12:31:03.597 20538 23979 I AiAiEcho: AppIndexer Package:[com.example.group8_bartertrader.test] UserProfile:[0] Enabled:[true].
+02-16 12:31:03.597 20538 23979 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.example.group8_bartertrader.test], userId:[0], reason:[package is updated.].
+02-16 12:31:03.622   532  1979 W ParceledListSlice: Element #26 is 20356 bytes.
+02-16 12:31:03.623   532  1979 W ParceledListSlice: Element #27 is 20392 bytes.
+02-16 12:31:03.623   532  1979 W ParceledListSlice: Element #28 is 20532 bytes.
+02-16 12:31:03.624   532  1979 W ParceledListSlice: Element #29 is 20520 bytes.
+02-16 12:31:03.624   532  1979 W ParceledListSlice: Element #30 is 20256 bytes.
+02-16 12:31:03.626 20538 20566 W PackageManager: Failure retrieving text 0x7f130786 in package com.android.systemui
+02-16 12:31:03.626 20538 20566 W PackageManager: android.content.res.Resources$NotFoundException: String resource ID #0x7f130786
+02-16 12:31:03.626 20538 20566 W PackageManager: 	at android.content.res.Resources.getText(Resources.java:466)
+02-16 12:31:03.626 20538 20566 W PackageManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2405)
+02-16 12:31:03.626 20538 20566 W PackageManager: 	at android.appwidget.AppWidgetProviderInfo.loadDescription(AppWidgetProviderInfo.java:484)
+02-16 12:31:03.626 20538 20566 W PackageManager: 	at kml.a(PG:341)
+02-16 12:31:03.626 20538 20566 W PackageManager: 	at kmg.b(PG:39)
+02-16 12:31:03.626 20538 20566 W PackageManager: 	at aaer.g(PG:13)
+02-16 12:31:03.626 20538 20566 W PackageManager: 	at kotlinx.coroutines.DispatchedTask.run(PG:114)
+02-16 12:31:03.626 20538 20566 W PackageManager: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+02-16 12:31:03.626 20538 20566 W PackageManager: 	at wqm.a(PG:3)
+02-16 12:31:03.626 20538 20566 W PackageManager: 	at wpo.run(PG:21)
+02-16 12:31:03.626 20538 20566 W PackageManager: 	at wqn.run(PG:5)
+02-16 12:31:03.626 20538 20566 W PackageManager: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+02-16 12:31:03.626 20538 20566 W PackageManager: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+02-16 12:31:03.626 20538 20566 W PackageManager: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
+02-16 12:31:03.626 20538 20566 W PackageManager: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+02-16 12:31:03.626 20538 20566 W PackageManager: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+02-16 12:31:03.626 20538 20566 W PackageManager: 	at hqv.run(PG:221)
+02-16 12:31:03.626 20538 20566 W PackageManager: 	at java.lang.Thread.run(Thread.java:1012)
+02-16 12:31:03.629 20538 20566 I AiAiEcho: EchoSearch: WidgetFetcherImpl is initialized with [34] widgets [reason=package added for userId: 0]
+02-16 12:31:03.690 20538 20619 I AiAiTextClassifier: [VisualCortexAdapter]: provideRegistration: Registered Prominent Screen Entities for updates.
+02-16 12:31:03.768 17158 17158 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+02-16 12:31:03.768 17158 17158 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+02-16 12:31:03.810 20538 20619 I AiAiTextClassifier: [VisualCortexAdapter]: provideRegistration: Registered Prominent Screen Entities for updates.
+02-16 12:31:03.817 23952 23975 D UiDevice: Pressing home button.
+02-16 12:31:03.846   532   553 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@5af81274 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+02-16 12:31:03.851   774   774 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:3
+02-16 12:31:03.854  1053  1053 W SplitSelectStateCtor: Missing session instanceIds
+02-16 12:31:03.855  1053  1053 D StatsLog: LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
+02-16 12:31:03.855   774  1332 D KeyguardService: setOccluded(false)
+02-16 12:31:03.856   774  1332 D KeyguardViewMediator: setOccluded(false)
+02-16 12:31:03.856   774   774 D KeyguardViewMediator: handleSetOccluded(false)
+02-16 12:31:03.857   774   774 D KeyguardViewMediator: KeyguardViewMediator queue processing message: SET_OCCLUDED
+02-16 12:31:03.858  1053  1053 D OverviewCommandHelper: clearing pending commands - size: 0
+02-16 12:31:03.860  1053  1053 D StatsLog: LAUNCHER_ONRESUME
+02-16 12:31:03.870  1053  1084 D QuickstepModelDelegate: notifyAppTargetEvent action=1 launchLocation=workspace/0/[-1,-1]/[1,1]
+02-16 12:31:03.879   532  1386 W AppSearchIcing: icing-search-engine.cc:321: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: AppSearch 0-state cache not available, fallback to AGA
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: java.util.concurrent.CompletionException: java.util.NoSuchElementException: No value present
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:308)
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:323)
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:684)
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:486)
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2138)
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: 	at com.google.android.apps.nexuslauncher.allapps.E0.onResult(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:67)
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: 	at android.app.appsearch.SearchSessionUtil$1.lambda$onResult$0(go/retraceme 64eee9e9f568ff45978879ad2ff83146f2618ee8a88278736fbdf5fae931976e:144)
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: 	at android.app.appsearch.SearchSessionUtil$1.$r8$lambda$CEk3q8sDAQVhU3rQwVueB8FAj_M(go/retraceme 64eee9e9f568ff45978879ad2ff83146f2618ee8a88278736fbdf5fae931976e:1)
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: 	at android.app.appsearch.SearchSessionUtil$1$$ExternalSyntheticLambda0.run(go/retraceme 64eee9e9f568ff45978879ad2ff83146f2618ee8a88278736fbdf5fae931976e:22)
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: 	at android.os.Handler.handleCallback(Handler.java:959)
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: 	at android.os.Looper.loopOnce(Looper.java:232)
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: 	at android.os.Looper.loop(Looper.java:317)
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: 	at android.os.HandlerThread.run(HandlerThread.java:85)
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: Caused by: java.util.NoSuchElementException: No value present
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: 	at java.util.Optional.get(Optional.java:143)
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: 	at com.google.android.apps.nexuslauncher.allapps.E0.onResult(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:28)
+02-16 12:31:03.898  1053  1614 D OneSearchSuggestProvider: 	... 8 more
+02-16 12:31:03.901  1053  1614 D OneSearchSuggestProvider: Established or reuse existing binder channel authority=com.google.android.googlequicksearchbox
+02-16 12:31:03.935 21678 21678 I fmec    : (REDACTED) Created gRPC endpoint for service %s
+02-16 12:31:03.942 20538 20555 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+02-16 12:31:03.942 20538 20555 I AiAiEcho: EchoTargets:
+02-16 12:31:03.942 20538 20555 I AiAiEcho: Filtered by AiAi flag check:
+02-16 12:31:03.942 20538 20555 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+02-16 12:31:03.942 20538 20555 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+02-16 12:31:03.943 20538 20555 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+02-16 12:31:03.944 20538 20555 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+02-16 12:31:03.945  1053  1053 D SsBaseTemplateCard: No text view can be set up
+02-16 12:31:03.945 17158 23991 D AdvertisingIdClient: AdvertisingIdClient already created.
+02-16 12:31:03.945 17158 23991 D AdvertisingIdClient: AdvertisingIdClient is not bounded. Starting to bind it...
+02-16 12:31:03.946  1053  1053 D SsBaseTemplateCard: Passed-in item info is null
+02-16 12:31:03.946  1053  1053 D SsBaseTemplateCard: Passed-in item info is null
+02-16 12:31:03.946  1053  1053 D SsBaseTemplateCard: Passed-in item info is null
+02-16 12:31:03.946  1053  1053 I SsBaseTemplateCard: Secondary card pane is null
+02-16 12:31:03.977 17158 23991 D AdvertisingIdClient: AdvertisingIdClient is bounded
+02-16 12:31:03.979  1053  1534 D EGL_emulation: app_time_stats: avg=57.05ms min=2.68ms max=746.59ms count=24
+02-16 12:31:04.015 17158 23991 I AdvertisingIdClient: shouldSendLog 272346617
+02-16 12:31:04.015 17158 23991 I AdvertisingIdClient: GetInfoInternal elapse 69ms
+02-16 12:31:04.142  1053  1053 D SearchTargetUtil: queryLength=0 size=15
+02-16 12:31:04.142  1053  1053 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=mike turner house intelligence committee,input_query=android.app.search.Query@f309af8,group_id=web272760286,response_id=e132559b-2616-413a-9920-a9918779bc95,support_query_builder=false,} searchAction=mike turner house intelligence committee searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: f8da6bc3-2021-48c1-a563-13a74e5064d9
+02-16 12:31:04.142  1053  1053 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=christopher renstrom horoscope today,input_query=android.app.search.Query@f309af8,group_id=web272760286,response_id=e132559b-2616-413a-9920-a9918779bc95,support_query_builder=false,} searchAction=christopher renstrom horoscope today searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: e2167013-a7d2-444b-9a48-0ef8d33a18fb
+02-16 12:31:04.142  1053  1053 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=monopoly go down under wonders rewards,input_query=android.app.search.Query@f309af8,group_id=web272760286,response_id=e132559b-2616-413a-9920-a9918779bc95,support_query_builder=false,} searchAction=monopoly go down under wonders rewards searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 821adb6a-a2f8-46a5-8cb7-5e7ddb7331d7
+02-16 12:31:04.143  1053  1053 D SearchTargetUtil: layoutType=extra_tall_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{bitmap_url=data:image/png;base64,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,suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=true,is_personal=false,suggest_raw_text=san francisco 49ers,input_query=android.app.search.Query@f309af8,group_id=web272760286,response_id=e132559b-2616-413a-9920-a9918779bc95,support_query_builder=false,} searchAction=San Francisco 49ers searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 1e053c43-b6cd-4327-a04d-a4d6ee0cdc1f
+02-16 12:31:04.143  1053  1053 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=anduril arsenal 1 columbus ohio,input_query=android.app.search.Query@f309af8,group_id=web272760286,response_id=e132559b-2616-413a-9920-a9918779bc95,support_query_builder=false,} searchAction=anduril arsenal 1 columbus ohio searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 72934b69-5848-4177-a7d0-40170e9d097d
+02-16 12:31:04.143  1053  1053 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=daily horoscope for january 17,input_query=android.app.search.Query@f309af8,group_id=web272760286,response_id=e132559b-2616-413a-9920-a9918779bc95,support_query_builder=false,} searchAction=daily horoscope for january 17 searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 3db328b7-3229-4874-ab5d-4f96321dc1e4
+02-16 12:31:04.143  1053  1053 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=the traitors season 3 episode 4,input_query=android.app.search.Query@f309af8,group_id=web272760286,response_id=e132559b-2616-413a-9920-a9918779bc95,support_query_builder=false,} searchAction=the traitors season 3 episode 4 searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 60238573-1c92-421a-8a62-9676fe048221
+02-16 12:31:04.143  1053  1053 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=dogecoin price prediction,input_query=android.app.search.Query@f309af8,group_id=web272760286,response_id=e132559b-2616-413a-9920-a9918779bc95,support_query_builder=false,} searchAction=dogecoin price prediction searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 863a355f-41d0-4971-8938-2264129d3cf6
+02-16 12:31:04.143  1053  1053 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=disney cruise line dry dock update,input_query=android.app.search.Query@f309af8,group_id=web272760286,response_id=e132559b-2616-413a-9920-a9918779bc95,support_query_builder=false,} searchAction=disney cruise line dry dock update searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 2ded61f0-0d8b-4ab8-88dd-c0a91104944c
+02-16 12:31:04.143  1053  1053 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=walmart recalled chicken broth,input_query=android.app.search.Query@f309af8,group_id=web272760286,response_id=e132559b-2616-413a-9920-a9918779bc95,support_query_builder=false,} searchAction=walmart recalled chicken broth searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 467daa6c-0f66-4b6c-b228-add622aeb4c7
+02-16 12:31:04.144  1053  1053 D SearchTargetUtil: layoutType=extra_tall_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{bitmap_url=data:image/png;base64,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,suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=true,is_personal=false,suggest_raw_text=green bay packers,input_query=android.app.search.Query@f309af8,group_id=web272760286,response_id=e132559b-2616-413a-9920-a9918779bc95,support_query_builder=false,} searchAction=Green Bay Packers searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: e91a5718-28fe-4294-8152-821d2ca0b064
+02-16 12:31:04.144  1053  1053 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=transformers one new adventures series,input_query=android.app.search.Query@f309af8,group_id=web272760286,response_id=e132559b-2616-413a-9920-a9918779bc95,support_query_builder=false,} searchAction=transformers one new adventures series searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 8ee76c97-4b63-4e58-a7aa-404eb1971e41
+02-16 12:31:04.144  1053  1053 D SearchTargetUtil: layoutType=extra_tall_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{bitmap_url=data:image/png;base64,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,suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=true,is_personal=false,suggest_raw_text=chicag
+02-16 12:31:04.151  1053  1053 D SearchTargetUtil: layoutType=extra_tall_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{bitmap_url=data:image/jpeg;base64,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
+02-16 12:31:04.151  1053  1053 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=irs stimulus checks 2025,input_query=android.app.search.Query@f309af8,group_id=web272760286,response_id=e132559b-2616-413a-9920-a9918779bc95,support_query_builder=false,} searchAction=irs stimulus checks 2025 searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: bab76672-49fd-47b0-a576-40e995442e5b
+02-16 12:31:04.197 20538 20619 I AiAiTextClassifier: [VisualCortexAdapter]: provideRegistration: Registered Prominent Screen Entities for updates.
+02-16 12:31:04.234 21410 21712 I Finsky  : [222] atya.I(184): Package com.google.android.gms is verified.
+02-16 12:31:04.273 17158 23991 W FA-SVC  : Service response is missing Install Referrer install timestamp
+02-16 12:31:04.277 21410 21410 I Finsky  : [2] yli.onTrimMemory(11): Memory trim requested to level 40
+02-16 12:31:04.277 21410 21410 I Finsky  : [2] acvg.accept(139): Flushing in-memory image cache
+02-16 12:31:04.362   532  1985 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@3dec9d0f does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+02-16 12:31:04.392  1053  1053 W SplitSelectStateCtor: Missing session instanceIds
+02-16 12:31:04.392  1053  1053 D StatsLog: LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
+02-16 12:31:04.430  1053  1053 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=174, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 pkg=com.example.group8_bartertrader cmp=com.example.group8_bartertrader/.SettingsActivity }
+02-16 12:31:04.439   382   382 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+02-16 12:31:04.464 23952 23974 W p8_bartertrader: Verification of boolean com.google.android.gms.measurement.internal.zzgd.zza(int, android.os.Parcel, android.os.Parcel, int) took 109.382ms (182.85 bytecodes/s) (2728B approximate peak alloc)
+02-16 12:31:04.586 27622 27772 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=30000Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 1Mbps, Tx Link speed: 1Mbps, Max Supported Tx Link speed: 11Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 11Mbps, Frequency: 2447MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -50 UnderlyingNetworks: Null]
+02-16 12:31:04.597 23952 23952 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+02-16 12:31:04.600 27713 27763 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=152 ]
+02-16 12:31:04.600 27713 27770 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[9b897d14-3be2]>Handler" thread_id=159 ]
+02-16 12:31:04.632 23952 23952 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@dc4843c in: PRE_ON_CREATE
+02-16 12:31:04.666 27713 27770 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=159 ]
+02-16 12:31:04.669  1053  1534 D EGL_emulation: app_time_stats: avg=32146.64ms min=31.08ms max=256564.56ms count=8
+02-16 12:31:04.682 20538 20619 I AiAiTextClassifier: [VisualCortexAdapter]: provideRegistration: Registered Prominent Screen Entities for updates.
+02-16 12:31:04.700 21715 21728 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+02-16 12:31:04.700 21715 21728 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+02-16 12:31:04.710   774   945 D EGL_emulation: app_time_stats: avg=4387.44ms min=4387.44ms max=4387.44ms count=1
+02-16 12:31:04.729 23952 23952 D CompatChangeReporter: Compat change id reported: 309578419; UID 10309; state: ENABLED
+02-16 12:31:04.782 23952 23952 W p8_bartertrader: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+02-16 12:31:04.867 23952 23952 D CompatChangeReporter: Compat change id reported: 63938206; UID 10309; state: ENABLED
+02-16 12:31:04.883 20538 20619 I AiAiTextClassifier: [VisualCortexAdapter]: provideRegistration: Registered Prominent Screen Entities for updates.
+02-16 12:31:04.919 20538 20619 I AiAiTextClassifier: [VisualCortexAdapter]: provideRegistration: Registered Prominent Screen Entities for updates.
+02-16 12:31:04.989 23952 23952 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@dc4843c in: CREATED
+02-16 12:31:04.994 23952 23952 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@dc4843c in: STARTED
+02-16 12:31:05.009  1053  1053 D VRI[NexusLauncherActivity]: visibilityChanged oldVisibility=true newVisibility=false
+02-16 12:31:05.010  1053  1053 D NexusLauncherModelDelegate: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+02-16 12:31:05.013 23952 23952 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@dc4843c in: RESUMED
+02-16 12:31:05.029 23952 23952 W HWUI    : Unknown dataspace 0
+02-16 12:31:05.136   382   508 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10309 pid=23952
+02-16 12:31:05.136   382   508 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10309 => denied (183 us)
+02-16 12:31:05.136   382   462 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10309 pid=0
+02-16 12:31:05.136   382   462 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10309 => denied (1088 us)
+02-16 12:31:05.137   382   462 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10309 pid=0
+02-16 12:31:05.137   382   462 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10309 => denied (284 us)
+02-16 12:31:05.137   382   462 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10309 pid=0
+02-16 12:31:05.137   382   462 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10309 => denied (163 us)
+02-16 12:31:05.137   382   508 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10309 pid=23952
+02-16 12:31:05.137   382   508 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10309 => denied (1539 us)
+02-16 12:31:05.141 23952 23998 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+02-16 12:31:05.142 23952 23998 I EGL_emulation: Opening libGLESv2_emulation.so
+02-16 12:31:05.195 23952 23998 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+02-16 12:31:05.195 23952 23998 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+02-16 12:31:05.235   126   126 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+02-16 12:31:05.239 23952 23998 I Gralloc4: mapper 4.x is not supported
+02-16 12:31:05.379   532  1979 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10309 pid=0
+02-16 12:31:05.380   532  1979 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10309 => denied (1274 us)
+02-16 12:31:05.380   532  1979 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10309 pid=0
+02-16 12:31:05.380   532  1979 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10309 => denied (33 us)
+02-16 12:31:05.380   532  1979 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10309 pid=0
+02-16 12:31:05.380   532  1979 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10309 => denied (8 us)
+02-16 12:31:05.410   532   552 W ziparchive: Unable to open '/data/app/~~FHQ1PCqYQQzkdXxPI6y6LA==/com.example.group8_bartertrader-gATuNl-AYxrXJ5NGCWJ7dg==/base.dm': No such file or directory
+02-16 12:31:05.425   532   552 I ActivityTaskManager: Displayed com.example.group8_bartertrader/.SettingsActivity for user 0: +1s66ms
+02-16 12:31:05.476   532   640 I ImeTracker: com.example.group8_bartertrader:3fd585fe: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+02-16 12:31:05.476   532   640 I ImeTracker: com.example.group8_bartertrader:3fd585fe: onCancelled at PHASE_SERVER_SHOULD_HIDE
+02-16 12:31:05.511  1053  1053 D BaseDepthController: setSurface:
+02-16 12:31:05.511  1053  1053 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+02-16 12:31:05.511  1053  1053 D BaseDepthController: 	mSurface: null
+02-16 12:31:05.513  1053  1053 D BaseDepthController: mSurface is null and mCurrentBlur is: 0
+02-16 12:31:05.515  1053  1053 D StateManager: goToState - fromState: Normal, toState: Normal, partial trace:
+02-16 12:31:05.515  1053  1053 D StateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:4)
+02-16 12:31:05.515  1053  1053 D StateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:1)
+02-16 12:31:05.515  1053  1053 D StateManager: 	at com.android.launcher3.statemanager.StatefulActivity.onStop(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:34)
+02-16 12:31:05.518  1053  1053 D StatsLog: LAUNCHER_ONSTOP
+02-16 12:31:05.533  1053  1614 D OneSearchSuggestProvider: Shut down the binder channel
+02-16 12:31:05.547 26620 26620 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2589
+02-16 12:31:05.551  1053  1062 I IPCThreadState: oneway function results for code 2 on binder at 0xb400006fded2bcb0 will be dropped but finished with status UNKNOWN_TRANSACTION
+02-16 12:31:05.564 26620 26620 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 0, locked = false
+02-16 12:31:05.568 26620 26620 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1568 onStartInput(EditorInfo{EditorInfo{packageName=com.example.group8_bartertrader, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+02-16 12:31:05.569  1053  1053 D StatsLog: LAUNCHER_GOOGLE_SEARCH_RESTORE_LIST_SIZE_AFTER_ACTIVITY_RESTART
+02-16 12:31:05.586 26620 26620 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 1, locked = false
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: EmojiCompatManager.getEmojiCompatIfLoaded():342 EmojiCompat.init() was never called.
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: java.lang.IllegalStateException: EmojiCompat is not initialized. Please call EmojiCompat.init() first
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at asu.p(PG:6)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at awu.b(PG:13)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at jgy.b(PG:2)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at jgy.c(PG:4)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at jgy.f(PG:3)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at jhe.c(PG:3)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at kbg.cl(PG:47)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at kpc.run(PG:239)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at iue.execute(PG:12)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at mvh.v(PG:14)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at lat.m(PG:95)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at lat.k(PG:25)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at jzn.onStartInput(PG:336)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at android.inputmethodservice.InputMethodService.doStartInput(InputMethodService.java:3390)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.startInput(InputMethodService.java:863)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.dispatchStartInput(InputMethodService.java:892)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at android.inputmethodservice.IInputMethodWrapper.executeMessage(IInputMethodWrapper.java:201)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at android.os.Looper.loopOnce(Looper.java:232)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at android.os.Looper.loop(Looper.java:317)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at android.app.ActivityThread.main(ActivityThread.java:8705)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at java.lang.reflect.Method.invoke(Native Method)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+02-16 12:31:05.612 26620 26620 I EmojiCompatManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+02-16 12:31:05.616 26620 26620 W NotificationCenter: NotificationCenter$NotificationQueue.notifyPendingNotificationsOnExecutor():877 Heavy notify work detected on UI thread: [kbh->igv, kbh->igv, kbh->jzx, kbh->igv, kbh->kab, kbh->fcx, kbh->igv, kbh->igv, kbh->jhe, kbh->ihv, kbh->lnz, kbh->fpm, kbh->igv, kbh->igv, kbh->fau, kbh->ier, kbh->igv, kbh->igv, kbh->igv, kbh->igv, kbh->igv] takes 34ms
+02-16 12:31:05.636 21715 21728 I FontLog : (REDACTED) Received query %s, URI %s
+02-16 12:31:05.633 26620 26620 I AndroidIME: InputBundleManager.loadActiveInputBundleId():407 loadActiveInputBundleId: und-Latn-x-password, password
+02-16 12:31:05.640 21715 21728 I FontLog : (REDACTED) Query [%s] resolved to %s
+02-16 12:31:05.664 21715 21728 I FontLog : (REDACTED) Fetch %s end status %s
+02-16 12:31:05.680 21715 23645 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+02-16 12:31:05.687 21715 21728 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+02-16 12:31:05.707   774   887 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@3e24f97
+02-16 12:31:05.713   532  1985 W InputManager-JNI: Input channel object 'a85cdbe Splash Screen com.example.group8_bartertrader (client)' was disposed without first being removed with the input manager!
+02-16 12:31:05.871 23952 23974 I FA      : Tag Manager is not found and thus will not be used
+02-16 12:31:05.911   774   945 D EGL_emulation: app_time_stats: avg=114.94ms min=2.38ms max=1067.99ms count=10
+02-16 12:31:06.384   866 23843 D NetworkMonitor/110: PROBE_DNS www.google.com 12761ms FAIL in type ADDRCONFIG Timeout
+02-16 12:31:06.403   866 23844 D NetworkMonitor/110: PROBE_DNS connectivitycheck.gstatic.com 12777ms FAIL in type ADDRCONFIG Timeout
+02-16 12:31:06.530 23952 23956 I p8_bartertrader: Compiler allocated 4206KB to compile void android.widget.TextView.<init>(android.content.Context, android.util.AttributeSet, int, int)
+02-16 12:31:06.653 23952 23956 I p8_bartertrader: Compiler allocated 5250KB to compile void android.view.ViewRootImpl.performTraversals()
+02-16 12:31:07.162   532   679 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+02-16 12:31:07.162   532   679 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+02-16 12:31:07.162   532   679 D InetDiagMessage: Destroyed live tcp sockets for uids={10101} in 1ms
+02-16 12:31:07.722 23952 24021 D ProfileInstaller: Installing profile for com.example.group8_bartertrader
+02-16 12:31:07.881   532   679 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+02-16 12:31:07.881   532   679 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+02-16 12:31:07.881   532   679 D InetDiagMessage: Destroyed live tcp sockets for uids={10136} in 1ms
+02-16 12:31:08.195   532   679 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+02-16 12:31:08.195   532   679 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+02-16 12:31:08.195   532   679 D InetDiagMessage: Destroyed live tcp sockets for uids={10164} in 1ms
+02-16 12:31:08.821 17158 23651 I GCM-GMS : Registering GMS for direct boot.
+02-16 12:31:08.828 21715 23543 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+02-16 12:31:08.862 21715 23872 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+02-16 12:31:08.878 21715 24023 W TapAndPay: NfcAdapter is null while obtaining CardEmulation instance. [CONTEXT service_id=79 ]
+02-16 12:31:08.878 21715 24023 W TapAndPay: java.lang.NullPointerException: NfcAdapter is null
+02-16 12:31:08.878 21715 24023 W TapAndPay: 	at android.nfc.cardemulation.CardEmulation.getInstance(CardEmulation.java:170)
+02-16 12:31:08.878 21715 24023 W TapAndPay: 	at dvrh.<init>(:com.google.android.gms@250335035@25.03.35 (260400-720971461):15)
+02-16 12:31:08.878 21715 24023 W TapAndPay: 	at com.google.android.gms.tapandpay.hce.task.TapAndPayAidRegistrationTaskOperation.a(:com.google.android.gms@250335035@25.03.35 (260400-720971461):68)
+02-16 12:31:08.878 21715 24023 W TapAndPay: 	at com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskChimeraService.a(:com.google.android.gms@250335035@25.03.35 (260400-720971461):32)
+02-16 12:31:08.878 21715 24023 W TapAndPay: 	at byke.call(:com.google.android.gms@250335035@25.03.35 (260400-720971461):32)
+02-16 12:31:08.878 21715 24023 W TapAndPay: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+02-16 12:31:08.878 21715 24023 W TapAndPay: 	at ashx.c(:com.google.android.gms@250335035@25.03.35 (260400-720971461):50)
+02-16 12:31:08.878 21715 24023 W TapAndPay: 	at ashx.run(:com.google.android.gms@250335035@25.03.35 (260400-720971461):76)
+02-16 12:31:08.878 21715 24023 W TapAndPay: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+02-16 12:31:08.878 21715 24023 W TapAndPay: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+02-16 12:31:08.878 21715 24023 W TapAndPay: 	at asng.run(:com.google.android.gms@250335035@25.03.35 (260400-720971461):8)
+02-16 12:31:08.878 21715 24023 W TapAndPay: 	at java.lang.Thread.run(Thread.java:1012)
+02-16 12:31:08.906 21715 24023 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+02-16 12:31:09.012 21715 21724 I .gms.persistent: Background concurrent mark compact GC freed 12MB AllocSpace bytes, 0(0B) LOS objects, 49% free, 11MB/23MB, paused 387us,3.417ms total 166.319ms
+02-16 12:31:09.019 21715 21726 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~Fjhnkkod7OnztObAb7dTFw==/com.google.android.apps.restore-6DoS71MWKVT6mLMkEN9xUg==/base.apk' with 1 weak references
+02-16 12:31:09.021 21715 21726 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~ItM0OVD1QWCVjA44LKw3jQ==/com.google.android.apps.photos-R0SFtTvOhz2oUdv0fnqruQ==/base.apk' with 1 weak references
+02-16 12:31:09.021 21715 21726 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~ItM0OVD1QWCVjA44LKw3jQ==/com.google.android.apps.photos-R0SFtTvOhz2oUdv0fnqruQ==/split_config.arm64_v8a.apk' with 1 weak references
+02-16 12:31:09.022 21715 21726 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~ItM0OVD1QWCVjA44LKw3jQ==/com.google.android.apps.photos-R0SFtTvOhz2oUdv0fnqruQ==/split_config.en.apk' with 1 weak references
+02-16 12:31:09.022 21715 21726 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~ItM0OVD1QWCVjA44LKw3jQ==/com.google.android.apps.photos-R0SFtTvOhz2oUdv0fnqruQ==/split_config.xxhdpi.apk' with 1 weak references
+02-16 12:31:09.023 21715 21726 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~FHQ1PCqYQQzkdXxPI6y6LA==/com.example.group8_bartertrader-gATuNl-AYxrXJ5NGCWJ7dg==/base.apk' with 1 weak references
+02-16 12:31:10.544   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:10.544   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:10.544   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:10.544   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:10.545 27622 27772 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=30000Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 11Mbps, Tx Link speed: 11Mbps, Max Supported Tx Link speed: 11Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 11Mbps, Frequency: 2447MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -50 UnderlyingNetworks: Null]
+02-16 12:31:10.553   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:10.557 27713 27763 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=152 ]
+02-16 12:31:10.558 27713 27770 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[9b897d14-3be2]>Handler" thread_id=159 ]
+02-16 12:31:10.564 27713 27770 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=159 ]
+02-16 12:31:10.566 21715 23645 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+02-16 12:31:10.566 21715 23645 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+02-16 12:31:13.550 27622 27772 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=30000Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 2Mbps, Tx Link speed: 2Mbps, Max Supported Tx Link speed: 11Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 11Mbps, Frequency: 2447MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -50 UnderlyingNetworks: Null]
+02-16 12:31:13.554   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:13.555   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:13.556   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:13.557   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:13.560 27713 27763 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=152 ]
+02-16 12:31:13.560 27713 27770 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[9b897d14-3be2]>Handler" thread_id=159 ]
+02-16 12:31:13.564   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:13.566 27713 27770 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=159 ]
+02-16 12:31:13.568 21715 23645 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+02-16 12:31:13.568 21715 23645 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+02-16 12:31:13.918   866   866 W DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+02-16 12:31:13.918   866   866 W DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+02-16 12:31:13.918   866   866 W DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+02-16 12:31:13.926   866   866 W DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+02-16 12:31:14.297   532   679 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+02-16 12:31:14.299   532   679 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+02-16 12:31:14.300   532   679 D InetDiagMessage: Destroyed live tcp sockets for uids={10142} in 3ms
+02-16 12:31:14.522 17158 17158 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+02-16 12:31:16.088 17158 17158 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+02-16 12:31:16.555   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:16.558 27622 27772 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=30000Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 1Mbps, Tx Link speed: 1Mbps, Max Supported Tx Link speed: 11Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 11Mbps, Frequency: 2447MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -50 UnderlyingNetworks: Null]
+02-16 12:31:16.559   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:16.559   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:16.559   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:16.559   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:16.559   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:16.561   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:16.561   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:16.564 27713 27763 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=152 ]
+02-16 12:31:16.565   532   679 W IPCThreadState: Sending oneway calls to frozen process.
+02-16 12:31:16.566 27713 27770 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[9b897d14-3be2]>Handler" thread_id=159 ]
+02-16 12:31:16.569 27713 27770 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=159 ]
+02-16 12:31:16.571 21715 23645 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+02-16 12:31:16.571 21715 23645 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+02-16 12:31:17.811   532   679 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+02-16 12:31:17.811   532   679 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+02-16 12:31:17.811   532   679 D InetDiagMessage: Destroyed live tcp sockets for uids={10199} in 1ms
+02-16 12:31:18.301   532  1968 D WifiNl80211Manager: Scan result ready event
+02-16 12:31:18.301   532  1968 D WifiNative: Scan result ready event
+02-16 12:31:18.318   532   672 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+02-16 12:31:19.418 23952 23975 D UiObject: Waiting 0ms for UiSelector[RESOURCE_ID=com.example.group8_bartertrader:id/LogOutButton].
+02-16 12:31:19.460 23952 23975 I QueryController: Matched selector: UiSelector[RESOURCE_ID=com.example.group8_bartertrader:id/LogOutButton] <<==>> [android.view.accessibility.AccessibilityNodeInfo@9375; boundsInParent: Rect(0, 0 - 253, 126); boundsInScreen: Rect(412, 1785 - 665, 1911); boundsInWindow: Rect(412, 1785 - 665, 1911); packageName: com.example.group8_bartertrader; className: android.widget.Button; text: Log out; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: com.example.group8_bartertrader:id/LogOutButton; uniqueId: null; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: true; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: true; visible: true; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_FOCUS - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null, AccessibilityAction: ACTION_NEXT_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_SET_SELECTION - null]; isTextSelectable: false]
+02-16 12:31:19.463 23952 23975 I QueryController: Matched selector: UiSelector[RESOURCE_ID=com.example.group8_bartertrader:id/LogOutButton] <<==>> [android.view.accessibility.AccessibilityNodeInfo@9375; boundsInParent: Rect(0, 0 - 253, 126); boundsInScreen: Rect(412, 1785 - 665, 1911); boundsInWindow: Rect(412, 1785 - 665, 1911); packageName: com.example.group8_bartertrader; className: android.widget.Button; text: Log out; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: com.example.group8_bartertrader:id/LogOutButton; uniqueId: null; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: true; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: true; visible: true; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_FOCUS - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null, AccessibilityAction: ACTION_NEXT_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_SET_SELECTION - null]; isTextSelectable: false]
+02-16 12:31:19.465 23952 23975 D UiObject: Clicking on (538, 1848).
+02-16 12:31:19.609 23952 23998 D EGL_emulation: app_time_stats: avg=1286.41ms min=0.98ms max=14000.02ms count=11
+02-16 12:31:19.646 23952 23957 I p8_bartertrader: Background concurrent mark compact GC freed 6648KB AllocSpace bytes, 25(1012KB) LOS objects, 49% free, 4445KB/8890KB, paused 106us,4.842ms total 249.495ms
+02-16 12:31:19.679 23952 23952 D FirebaseAuth: Notifying id token listeners about a sign-out event.
+02-16 12:31:19.680 23952 23952 D FirebaseAuth: Notifying auth state listeners about a sign-out event.
+02-16 12:31:19.723   373  4250 D audioserver: logFgsApiBegin: FGS Logger Transaction failed, -129
+02-16 12:31:19.742   532  1985 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 15
+02-16 12:31:19.745   373   509 D AudioFlinger: mixer(0xb4000078482da8e0) throttle end: throttle time(37)
+02-16 12:31:19.760   532  1968 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@3dec9d0f does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+02-16 12:31:19.792   373   509 D AudioFlinger: mixer(0xb4000078482da8e0) throttle end: throttle time(31)
+02-16 12:31:19.816 23952 23952 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@dc4843c in: PAUSED
+02-16 12:31:19.838   382   382 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+02-16 12:31:19.846 23952 23952 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.LoginActivity@4a107aa in: PRE_ON_CREATE
+02-16 12:31:19.898 23952 23952 D CompatChangeReporter: Compat change id reported: 303326708; UID 10309; state: ENABLED
+02-16 12:31:19.905   373   509 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+02-16 12:31:19.924 23952 23952 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.LoginActivity@4a107aa in: CREATED
+02-16 12:31:19.928 23952 23952 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.LoginActivity@4a107aa in: STARTED
+02-16 12:31:19.930 23952 23952 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.LoginActivity@4a107aa in: RESUMED
+02-16 12:31:19.967   329 24040 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+02-16 12:31:19.967   329 24040 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+02-16 12:31:20.037 23952 23975 D UiDevice: Waiting 3000ms for SearchCondition[hasObject=BySelector [RES='\Qcom.example.group8_bartertrader:id/loginBtn\E']].
+02-16 12:31:20.039 23952 23975 D UiDevice: Searching for node with selector: BySelector [RES='\Qcom.example.group8_bartertrader:id/loginBtn\E'].
+02-16 12:31:20.068   329 24040 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+02-16 12:31:20.068   329 24040 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+02-16 12:31:20.136   532   552 I ActivityTaskManager: Displayed com.example.group8_bartertrader/.LoginActivity for user 0: +387ms
+02-16 12:31:20.169 23952 23952 I AssistStructure: Flattened final assist data: 1532 bytes, containing 1 windows, 7 views
+02-16 12:31:20.174   329 24040 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+02-16 12:31:20.174   329 24040 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+02-16 12:31:20.241 17158 17158 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+02-16 12:31:20.241 17158 17158 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+02-16 12:31:20.264   774   945 D EGL_emulation: app_time_stats: avg=1425.22ms min=2.02ms max=14207.42ms count=10
+02-16 12:31:20.277   329 24040 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+02-16 12:31:20.277   329 24040 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+02-16 12:31:20.386   329 24040 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+02-16 12:31:20.386   329 24040 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+02-16 12:31:20.415 17158 17158 D BoundBrokerSvc: onBind: Intent { act=com.google.android.mdd.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+02-16 12:31:20.415 17158 17158 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.mdd.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+02-16 12:31:20.442 17158 23991 D AdvertisingIdClient: AdvertisingIdClient already created.
+02-16 12:31:20.451   532   640 I ImeTracker: com.example.group8_bartertrader:3617c4c: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+02-16 12:31:20.452   532   640 I ImeTracker: com.example.group8_bartertrader:3617c4c: onCancelled at PHASE_SERVER_SHOULD_HIDE
+02-16 12:31:20.462 26620 26620 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2589
+02-16 12:31:20.465 26620 26620 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 0, locked = false
+02-16 12:31:20.469 26620 26620 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1568 onStartInput(EditorInfo{EditorInfo{packageName=com.example.group8_bartertrader, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+02-16 12:31:20.474 26620 26620 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 1, locked = false
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: EmojiCompatManager.getEmojiCompatIfLoaded():342 EmojiCompat.init() was never called.
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: java.lang.IllegalStateException: EmojiCompat is not initialized. Please call EmojiCompat.init() first
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at asu.p(PG:6)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at awu.b(PG:13)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at jgy.b(PG:2)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at jgy.c(PG:4)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at jgy.f(PG:3)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at jhe.c(PG:3)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at kbg.cl(PG:47)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at kpc.run(PG:239)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at iue.execute(PG:12)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at mvh.v(PG:14)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at lat.m(PG:95)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at lat.k(PG:25)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at jzn.onStartInput(PG:336)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at android.inputmethodservice.InputMethodService.doStartInput(InputMethodService.java:3390)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.startInput(InputMethodService.java:863)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.dispatchStartInput(InputMethodService.java:892)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at android.inputmethodservice.IInputMethodWrapper.executeMessage(IInputMethodWrapper.java:201)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at android.os.Looper.loopOnce(Looper.java:232)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at android.os.Looper.loop(Looper.java:317)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at android.app.ActivityThread.main(ActivityThread.java:8705)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at java.lang.reflect.Method.invoke(Native Method)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+02-16 12:31:20.475 26620 26620 I EmojiCompatManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+02-16 12:31:20.487 26620 26620 I AndroidIME: InputBundleManager.loadActiveInputBundleId():407 loadActiveInputBundleId: und-Latn-x-password, password
+02-16 12:31:20.490   329 24040 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+02-16 12:31:20.490   329 24040 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+02-16 12:31:20.508   961   961 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:283738347
+02-16 12:31:20.542 17158 23991 I AdvertisingIdClient: shouldSendLog 272346617
+02-16 12:31:20.552 17158 23991 I AdvertisingIdClient: GetInfoInternal elapse 99ms
+02-16 12:31:20.596   329 24040 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+02-16 12:31:20.596   329 24040 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+02-16 12:31:20.700   329 24040 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+02-16 12:31:20.700   329 24040 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+02-16 12:31:20.804   329 24040 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+02-16 12:31:20.806   329 24040 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+02-16 12:31:20.813 23952 23952 D VRI[SettingsActivity]: visibilityChanged oldVisibility=true newVisibility=false
+02-16 12:31:20.828 23952 23952 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@dc4843c in: STOPPED
+02-16 12:31:20.833 23952 23952 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@dc4843c in: DESTROYED
+02-16 12:31:20.834 23952 23952 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@46f3192
+02-16 12:31:20.837   532  1985 W InputManager-JNI: Input channel object 'dae6b59 com.example.group8_bartertrader/com.example.group8_bartertrader.SettingsActivity (client)' was disposed without first being removed with the input manager!
+02-16 12:31:20.909   329 24040 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+02-16 12:31:20.909   329 24040 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+02-16 12:31:21.014   329 24040 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+02-16 12:31:21.014   329 24040 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+02-16 12:31:21.118   329 24040 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+02-16 12:31:21.118   329 24040 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+02-16 12:31:21.221   329 24040 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+02-16 12:31:21.221   329 24040 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+02-16 12:31:21.325   329 24040 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+02-16 12:31:21.325   329 24040 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+02-16 12:31:21.428   329 24040 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+02-16 12:31:21.428   329 24040 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+02-16 12:31:21.444 23952 23975 I TestRunner: finished: testLogoutFlow(com.example.group8_bartertrader.SettingsActivityUITest)
