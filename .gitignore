@@ -13,4 +13,5 @@ local.properties
 .externalNativeBuild
 .cxx
 #.idea/
-#/app/build/
+/app/build/
+.idea/shelf/
