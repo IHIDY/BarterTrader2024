@@ -1,0 +1,86 @@
+Index: app/src/main/java/com/example/group8_bartertrader/ResetPasswordFormActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.group8_bartertrader;\n\nimport androidx.appcompat.app.AppCompatActivity;\nimport android.os.Bundle;\nimport android.content.Intent;\nimport android.view.View;\nimport android.widget.EditText;\nimport android.widget.Button;\nimport android.widget.Toast;\n\nimport com.google.android.material.snackbar.Snackbar;\nimport com.google.firebase.auth.FirebaseAuth;\nimport com.google.firebase.auth.FirebaseUser;\n\npublic class ResetPasswordFormActivity extends AppCompatActivity {\n    private EditText newPasswordEditText;\n    private EditText confirmPasswordEditText;\n    private Button resetPasswordButton;\n\n    @Override\n    protected void onCreate(Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n        setContentView(R.layout.new_password_form_page);\n\n        // Initialize UI elements\n        newPasswordEditText = findViewById(R.id.newPasswordEditText);\n        confirmPasswordEditText = findViewById(R.id.confirmPasswordEditText);\n        resetPasswordButton = findViewById(R.id.resetPasswordButton);\n\n        resetPasswordButton.setOnClickListener(v -> {\n            String newPassword = newPasswordEditText.getText().toString().trim();\n            String confirmPassword = confirmPasswordEditText.getText().toString().trim();\n\n            if (newPassword.isEmpty() || confirmPassword.isEmpty()) {\n//                Toast.makeText(ResetPasswordFormActivity.this, \"Please fill in both fields\", Toast.LENGTH_SHORT).show();\n                Snackbar.make(getWindow().getDecorView().getRootView(), \"Please fill in both fields\", Snackbar.LENGTH_SHORT).show();\n                return;\n            }\n\n            if (newPassword.length() < 6) {\n//                Toast.makeText(ResetPasswordFormActivity.this, \"Password must be at least 6 characters\", Toast.LENGTH_SHORT).show();\n                Snackbar.make(getWindow().getDecorView().getRootView(), \"Password must be at least 6 characters\", Snackbar.LENGTH_SHORT).show();\n                return;\n            }\n\n            if (!newPassword.equals(confirmPassword)) {\n//                Toast.makeText(ResetPasswordFormActivity.this, \"Passwords do not match\", Toast.LENGTH_SHORT).show();\n                Snackbar.make(getWindow().getDecorView().getRootView(), \"Passwords do not match\", Snackbar.LENGTH_SHORT).show();\n                return;\n            }\n\n            updatePassword(newPassword);\n        });\n    }\n\n    private void updatePassword(String newPassword) {\n        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();\n\n        if (user != null) {\n            user.updatePassword(newPassword).addOnCompleteListener(task -> {\n                if (task.isSuccessful()) {\n//                    Toast.makeText(ResetPasswordFormActivity.this, \"Password updated successfully\", Toast.LENGTH_SHORT).show();\n                    Snackbar.make(getWindow().getDecorView().getRootView(), \"Password updated successfully\", Snackbar.LENGTH_SHORT).show();\n                    startActivity(new Intent(ResetPasswordFormActivity.this, LoginActivity.class));\n                    finish();\n                } else {\n//                    Toast.makeText(ResetPasswordFormActivity.this, \"Error updating password\", Toast.LENGTH_SHORT).show();\n                    Snackbar.make(getWindow().getDecorView().getRootView(), \"Error updating password\", Snackbar.LENGTH_SHORT).show();\n                }\n            });\n        } else {\n//            Toast.makeText(this, \"No authenticated user found. Please log in again.\", Toast.LENGTH_SHORT).show();\n            Snackbar.make(getWindow().getDecorView().getRootView(), \"No authenticated user found. Please log in again.\", Snackbar.LENGTH_SHORT).show();\n            startActivity(new Intent(this, LoginActivity.class));\n            finish();\n        }\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/group8_bartertrader/ResetPasswordFormActivity.java b/app/src/main/java/com/example/group8_bartertrader/ResetPasswordFormActivity.java
+--- a/app/src/main/java/com/example/group8_bartertrader/ResetPasswordFormActivity.java	(revision 720981b613aad80fcc45177e5c5308da5f053560)
++++ b/app/src/main/java/com/example/group8_bartertrader/ResetPasswordFormActivity.java	(date 1739734054463)
+@@ -22,7 +22,6 @@
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.new_password_form_page);
+ 
+-        // Initialize UI elements
+         newPasswordEditText = findViewById(R.id.newPasswordEditText);
+         confirmPasswordEditText = findViewById(R.id.confirmPasswordEditText);
+         resetPasswordButton = findViewById(R.id.resetPasswordButton);
+@@ -32,19 +31,16 @@
+             String confirmPassword = confirmPasswordEditText.getText().toString().trim();
+ 
+             if (newPassword.isEmpty() || confirmPassword.isEmpty()) {
+-//                Toast.makeText(ResetPasswordFormActivity.this, "Please fill in both fields", Toast.LENGTH_SHORT).show();
+                 Snackbar.make(getWindow().getDecorView().getRootView(), "Please fill in both fields", Snackbar.LENGTH_SHORT).show();
+                 return;
+             }
+ 
+             if (newPassword.length() < 6) {
+-//                Toast.makeText(ResetPasswordFormActivity.this, "Password must be at least 6 characters", Toast.LENGTH_SHORT).show();
+                 Snackbar.make(getWindow().getDecorView().getRootView(), "Password must be at least 6 characters", Snackbar.LENGTH_SHORT).show();
+                 return;
+             }
+ 
+             if (!newPassword.equals(confirmPassword)) {
+-//                Toast.makeText(ResetPasswordFormActivity.this, "Passwords do not match", Toast.LENGTH_SHORT).show();
+                 Snackbar.make(getWindow().getDecorView().getRootView(), "Passwords do not match", Snackbar.LENGTH_SHORT).show();
+                 return;
+             }
+@@ -59,17 +55,14 @@
+         if (user != null) {
+             user.updatePassword(newPassword).addOnCompleteListener(task -> {
+                 if (task.isSuccessful()) {
+-//                    Toast.makeText(ResetPasswordFormActivity.this, "Password updated successfully", Toast.LENGTH_SHORT).show();
+                     Snackbar.make(getWindow().getDecorView().getRootView(), "Password updated successfully", Snackbar.LENGTH_SHORT).show();
+                     startActivity(new Intent(ResetPasswordFormActivity.this, LoginActivity.class));
+                     finish();
+                 } else {
+-//                    Toast.makeText(ResetPasswordFormActivity.this, "Error updating password", Toast.LENGTH_SHORT).show();
+                     Snackbar.make(getWindow().getDecorView().getRootView(), "Error updating password", Snackbar.LENGTH_SHORT).show();
+                 }
+             });
+         } else {
+-//            Toast.makeText(this, "No authenticated user found. Please log in again.", Toast.LENGTH_SHORT).show();
+             Snackbar.make(getWindow().getDecorView().getRootView(), "No authenticated user found. Please log in again.", Snackbar.LENGTH_SHORT).show();
+             startActivity(new Intent(this, LoginActivity.class));
+             finish();
+Index: .idea/androidTestResultsUserPreferences.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AndroidTestResultsUserPreferences\">\n    <option name=\"androidTestResultsTableState\">\n      <map>\n        <entry key=\"1908110083\">\n          <value>\n            <AndroidTestResultsTableState>\n              <option name=\"preferredColumnWidths\">\n                <map>\n                  <entry key=\"Duration\" value=\"90\" />\n                  <entry key=\"Medium_Phone_API_35\" value=\"120\" />\n                  <entry key=\"Tests\" value=\"360\" />\n                </map>\n              </option>\n            </AndroidTestResultsTableState>\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/androidTestResultsUserPreferences.xml b/.idea/androidTestResultsUserPreferences.xml
+--- a/.idea/androidTestResultsUserPreferences.xml	(revision 720981b613aad80fcc45177e5c5308da5f053560)
++++ b/.idea/androidTestResultsUserPreferences.xml	(date 1739724928046)
+@@ -16,6 +16,19 @@
+             </AndroidTestResultsTableState>
+           </value>
+         </entry>
++        <entry key="2124288457">
++          <value>
++            <AndroidTestResultsTableState>
++              <option name="preferredColumnWidths">
++                <map>
++                  <entry key="Duration" value="90" />
++                  <entry key="Medium_Phone_API_35" value="120" />
++                  <entry key="Tests" value="360" />
++                </map>
++              </option>
++            </AndroidTestResultsTableState>
++          </value>
++        </entry>
+       </map>
+     </option>
+   </component>
