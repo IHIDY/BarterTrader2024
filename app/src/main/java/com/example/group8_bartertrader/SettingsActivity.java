@@ -7,12 +7,17 @@ package com.example.group8_bartertrader;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class SettingsActivity extends AppCompatActivity {
     // Firebase authentication instance
@@ -30,6 +35,23 @@ public class SettingsActivity extends AppCompatActivity {
         Button logoutButton = findViewById(R.id.LogOutButton);
 
         Button resetPasswordButton = findViewById(R.id.resetPasswordButton);
+
+        Spinner mySpinner = findViewById(R.id.mySpinner);
+
+        List<String> items = new ArrayList<>();
+        items.add("Option A");
+        items.add("Option B");
+        items.add("Option C");
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(
+                this,
+                android.R.layout.simple_spinner_item,
+                items
+        );
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        mySpinner.setAdapter(adapter);
+
 
         // Set a click listener for the logout button
         logoutButton.setOnClickListener(view -> {
