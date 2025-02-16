@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.example.group8_bartertrader.SettingsActivityUITest" tests="1" failures="0" errors="0" skipped="0" time="20.718" timestamp="2025-02-16T16:31:24" hostname="localhost">
+  <properties>
+    <property name="device" value="Medium_Phone_API_35(AVD) - 15" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="testLogoutFlow" classname="com.example.group8_bartertrader.SettingsActivityUITest" time="18.755" />
+</testsuite>

@@ -1,23 +1,34 @@
 R_DEF: Internal format may change without notice
 local
+array spinner_items
 color black
 color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 id LogOutButton
+id confirmPasswordEditText
 id email
+id emailEditText
 id fName
 id lName
 id loginBtn
 id main
+id mySpinner
+id newPasswordEditText
 id pass
 id regBtn
+id resetPasswordButton
 id roleSelect
 id settings_title
+id statusLabel
+id submitEmailButton
 layout activity_login
 layout activity_main
 layout activity_registration
 layout activity_settings
+layout new_password_form_page
+layout reset_password
+layout setting_page
 mipmap ic_launcher
 mipmap ic_launcher_round
 string EMAIL_IS_DUPLICATE
