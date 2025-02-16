@@ -72,7 +72,6 @@ public class ResetPasswordActivity extends AppCompatActivity {
         mAuth.signInWithEmailAndPassword(email, "dummyPassword123")
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
-                        // Email exists, proceed to reset password
                         Intent intent = new Intent(ResetPasswordActivity.this, ResetPasswordFormActivity.class);
                         intent.putExtra("email", email);
                         startActivity(intent);
@@ -80,7 +79,6 @@ public class ResetPasswordActivity extends AppCompatActivity {
                 })
                 .addOnFailureListener(e -> {
                     if (e instanceof FirebaseAuthInvalidUserException) {
-                        //Email does NOT exist
                         Toast.makeText(ResetPasswordActivity.this, "Email not registered", Toast.LENGTH_SHORT).show();
                     } else if (e instanceof FirebaseAuthInvalidCredentialsException) {
                         // Email exists but incorrect password → Still means email is registered
@@ -88,7 +86,6 @@ public class ResetPasswordActivity extends AppCompatActivity {
                         intent.putExtra("email", email);
                         startActivity(intent);
                     } else {
-                        //Other errors (network issues, etc.)
                         Toast.makeText(ResetPasswordActivity.this, "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                     }
                 });

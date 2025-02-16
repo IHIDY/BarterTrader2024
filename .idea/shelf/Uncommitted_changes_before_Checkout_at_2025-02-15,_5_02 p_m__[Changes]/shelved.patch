@@ -1,0 +1,33 @@
+Index: .idea/deploymentTargetSelector.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"deploymentTargetSelector\">\n    <selectionStates>\n      <SelectionState runConfigName=\"SettingsActivity\">\n        <option name=\"selectionMode\" value=\"DROPDOWN\" />\n      </SelectionState>\n      <SelectionState runConfigName=\"LoginActivity\">\n        <option name=\"selectionMode\" value=\"DROPDOWN\" />\n      </SelectionState>\n      <SelectionState runConfigName=\"LoginActivity (1)\">\n        <option name=\"selectionMode\" value=\"DROPDOWN\" />\n      </SelectionState>\n      <SelectionState runConfigName=\"MainActivity (1)\">\n        <option name=\"selectionMode\" value=\"DROPDOWN\" />\n      </SelectionState>\n      <SelectionState runConfigName=\"ResetPasswordActivity\">\n        <option name=\"selectionMode\" value=\"DROPDOWN\" />\n      </SelectionState>\n    </selectionStates>\n  </component>\n</project>
+===================================================================
+diff --git a/.idea/deploymentTargetSelector.xml b/.idea/deploymentTargetSelector.xml
+--- a/.idea/deploymentTargetSelector.xml	(revision 2222fa32d2d619623b40ad0cbfab9562c770c3df)
++++ b/.idea/deploymentTargetSelector.xml	(date 1739641348016)
+@@ -2,19 +2,19 @@
+ <project version="4">
+   <component name="deploymentTargetSelector">
+     <selectionStates>
+-      <SelectionState runConfigName="SettingsActivity">
++      <SelectionState runConfigName="LoginActivity (1)">
+         <option name="selectionMode" value="DROPDOWN" />
+       </SelectionState>
+-      <SelectionState runConfigName="LoginActivity">
++      <SelectionState runConfigName="MainActivity (1)">
+         <option name="selectionMode" value="DROPDOWN" />
+       </SelectionState>
+-      <SelectionState runConfigName="LoginActivity (1)">
++      <SelectionState runConfigName="ResetPasswordActivity">
+         <option name="selectionMode" value="DROPDOWN" />
+       </SelectionState>
+-      <SelectionState runConfigName="MainActivity (1)">
++      <SelectionState runConfigName="LoginActivity (2)">
+         <option name="selectionMode" value="DROPDOWN" />
+       </SelectionState>
+-      <SelectionState runConfigName="ResetPasswordActivity">
++      <SelectionState runConfigName="LoginActivity (3)">
+         <option name="selectionMode" value="DROPDOWN" />
+       </SelectionState>
+     </selectionStates>
