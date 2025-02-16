@@ -37,16 +37,30 @@
         tools:layout_editor_absoluteX="130dp"
         tools:layout_editor_absoluteY="215dp" />
 
-    <Spinner
-        android:id="@+id/mySpinner"
-        android:layout_width="164dp"
-        android:layout_height="51dp"
-        android:entries="@array/spinner_items"
-        app:layout_constraintBottom_toBottomOf="parent"
+<!--    <Spinner-->
+<!--        android:id="@+id/mySpinner"-->
+<!--        android:layout_width="164dp"-->
+<!--        android:layout_height="51dp"-->
+<!--        android:entries="@array/spinner_items"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+    <Button
+        android:id="@+id/changeRoleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="216dp"
+        android:text="Change Role"
+        app:layout_constraintBottom_toTopOf="@+id/LogOutButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/mySpinner" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
