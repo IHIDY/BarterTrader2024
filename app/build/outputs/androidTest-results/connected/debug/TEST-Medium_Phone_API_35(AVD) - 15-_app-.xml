@@ -1,59 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<testsuite name="com.example.group8_bartertrader.ResetPasswordActivityEspressoTest" tests="1" failures="1" errors="0" skipped="0" time="11.376" timestamp="2025-02-14T03:08:25" hostname="localhost">
+<testsuite name="com.example.group8_bartertrader.ResetPasswordActivityEspressoTest" tests="1" failures="0" errors="0" skipped="0" time="10.61" timestamp="2025-02-16T15:55:00" hostname="localhost">
   <properties>
     <property name="device" value="Medium_Phone_API_35(AVD) - 15" />
     <property name="flavor" value="" />
     <property name="project" value=":app" />
   </properties>
-  <testcase name="checkIfPageDisplayed" classname="com.example.group8_bartertrader.ResetPasswordActivityEspressoTest" time="0.617">
-    <failure>java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
-at com.example.group8_bartertrader.SettingsActivity.onCreate(SettingsActivity.java:47)
-at android.app.Activity.performCreate(Activity.java:9002)
-at android.app.Activity.performCreate(Activity.java:8980)
-at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1526)
-at androidx.test.runner.MonitoringInstrumentation.callActivityOnCreate(MonitoringInstrumentation.java:766)
-at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4030)
-at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4235)
-at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:112)
-at android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:174)
-at android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:109)
-at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:81)
-at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2636)
-at android.os.Handler.dispatchMessage(Handler.java:107)
-at android.os.Looper.loopOnce(Looper.java:232)
-at android.os.Looper.loop(Looper.java:317)
-at android.app.ActivityThread.main(ActivityThread.java:8705)
-at java.lang.reflect.Method.invoke(Native Method)
-at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
-at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
-</failure>
-  </testcase>
-  <system-err>Test run failed to complete. Instrumentation run failed due to Process crashed.
-Logcat of last crash: 
-Process: com.example.group8_bartertrader, PID: 27876
-java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.group8_bartertrader/com.example.group8_bartertrader.SettingsActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
-	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4048)
-	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4235)
-	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:112)
-	at android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:174)
-	at android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:109)
-	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:81)
-	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2636)
-	at android.os.Handler.dispatchMessage(Handler.java:107)
-	at android.os.Looper.loopOnce(Looper.java:232)
-	at android.os.Looper.loop(Looper.java:317)
-	at android.app.ActivityThread.main(ActivityThread.java:8705)
-	at java.lang.reflect.Method.invoke(Native Method)
-	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
-	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
-Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
-	at com.example.group8_bartertrader.SettingsActivity.onCreate(SettingsActivity.java:47)
-	at android.app.Activity.performCreate(Activity.java:9002)
-	at android.app.Activity.performCreate(Activity.java:8980)
-	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1526)
-	at androidx.test.runner.MonitoringInstrumentation.callActivityOnCreate(MonitoringInstrumentation.java:766)
-	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4030)
-	... 13 more
-
-</system-err>
+  <testcase name="checkNotRegisteredEmail" classname="com.example.group8_bartertrader.ResetPasswordActivityEspressoTest" time="8.239" />
 </testsuite>

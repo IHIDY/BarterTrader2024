@@ -1,35 +1,30 @@
-# 2025-02-14T03:08:25.583144200Z:
+# 2025-02-16T15:55:00.346096200Z:
 test_suite_meta_data {
   scheduled_test_case_count: 1
 }
-test_status: FAILED
+test_status: PASSED
 test_result {
   test_case {
     test_class: "ResetPasswordActivityEspressoTest"
     test_package: "com.example.group8_bartertrader"
-    test_method: "checkIfPageDisplayed"
+    test_method: "checkNotRegisteredEmail"
     start_time {
-      seconds: 1739502494
-      nanos: 168000000
+      seconds: 1739721289
+      nanos: 696000000
     }
     end_time {
-      seconds: 1739502494
-      nanos: 788000000
+      seconds: 1739721297
+      nanos: 949000000
     }
   }
-  test_status: FAILED
-  error {
-    error_message: "java.lang.NullPointerException: Attempt to invoke virtual method \'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)\' on a null object reference\nat com.example.group8_bartertrader.SettingsActivity.onCreate(SettingsActivity.java:47)\nat android.app.Activity.performCreate(Activity.java:9002)\nat android.app.Activity.performCreate(Activity.java:8980)\nat android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1526)\nat androidx.test.runner.MonitoringInstrumentation.callActivityOnCreate(MonitoringInstrumentation.java:766)\nat android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4030)\nat android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4235)\nat android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:112)\nat android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:174)\nat android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:109)\nat android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:81)\nat android.app.ActivityThread$H.handleMessage(ActivityThread.java:2636)\nat android.os.Handler.dispatchMessage(Handler.java:107)\nat android.os.Looper.loopOnce(Looper.java:232)\nat android.os.Looper.loop(Looper.java:317)\nat android.app.ActivityThread.main(ActivityThread.java:8705)\nat java.lang.reflect.Method.invoke(Native Method)\nat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)\nat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)\n"
-    error_type: "java.lang.NullPointerException"
-    stack_trace: "java.lang.NullPointerException: Attempt to invoke virtual method \'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)\' on a null object reference\nat com.example.group8_bartertrader.SettingsActivity.onCreate(SettingsActivity.java:47)\nat android.app.Activity.performCreate(Activity.java:9002)\nat android.app.Activity.performCreate(Activity.java:8980)\nat android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1526)\nat androidx.test.runner.MonitoringInstrumentation.callActivityOnCreate(MonitoringInstrumentation.java:766)\nat android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4030)\nat android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4235)\nat android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:112)\nat android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:174)\nat android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:109)\nat android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:81)\nat android.app.ActivityThread$H.handleMessage(ActivityThread.java:2636)\nat android.os.Handler.dispatchMessage(Handler.java:107)\nat android.os.Looper.loopOnce(Looper.java:232)\nat android.os.Looper.loop(Looper.java:317)\nat android.app.ActivityThread.main(ActivityThread.java:8705)\nat java.lang.reflect.Method.invoke(Native Method)\nat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)\nat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)\n"
-  }
+  test_status: PASSED
   output_artifact {
     label {
       label: "logcat"
       namespace: "android"
     }
     source_path {
-      path: "C:\\Users\\William\\Desktop\\csci3130\\project2\\group_8_csci_3130_winter\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Medium_Phone_API_35(AVD) - 15\\logcat-com.example.group8_bartertrader.ResetPasswordActivityEspressoTest-checkIfPageDisplayed.txt"
+      path: "C:\\Users\\William\\Desktop\\csci3130\\project3\\group_8_csci_3130_winter\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Medium_Phone_API_35(AVD) - 15\\logcat-com.example.group8_bartertrader.ResetPasswordActivityEspressoTest-checkNotRegisteredEmail.txt"
     }
   }
   output_artifact {
@@ -38,7 +33,7 @@ test_result {
       namespace: "android"
     }
     source_path {
-      path: "C:\\Users\\William\\Desktop\\csci3130\\project2\\group_8_csci_3130_winter\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Medium_Phone_API_35(AVD) - 15\\device-info.pb"
+      path: "C:\\Users\\William\\Desktop\\csci3130\\project3\\group_8_csci_3130_winter\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Medium_Phone_API_35(AVD) - 15\\device-info.pb"
     }
   }
   output_artifact {
@@ -47,7 +42,7 @@ test_result {
       namespace: "android"
     }
     source_path {
-      path: "C:\\Users\\William\\Desktop\\csci3130\\project2\\group_8_csci_3130_winter\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Medium_Phone_API_35(AVD) - 15\\meminfo"
+      path: "C:\\Users\\William\\Desktop\\csci3130\\project3\\group_8_csci_3130_winter\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Medium_Phone_API_35(AVD) - 15\\meminfo"
     }
   }
   output_artifact {
@@ -56,7 +51,7 @@ test_result {
       namespace: "android"
     }
     source_path {
-      path: "C:\\Users\\William\\Desktop\\csci3130\\project2\\group_8_csci_3130_winter\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Medium_Phone_API_35(AVD) - 15\\cpuinfo"
+      path: "C:\\Users\\William\\Desktop\\csci3130\\project3\\group_8_csci_3130_winter\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Medium_Phone_API_35(AVD) - 15\\cpuinfo"
     }
   }
 }
@@ -66,21 +61,8 @@ output_artifact {
     namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
   }
   source_path {
-    path: "C:\\Users\\William\\Desktop\\csci3130\\project2\\group_8_csci_3130_winter\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Medium_Phone_API_35(AVD) - 15\\testlog\\test-results.log"
+    path: "C:\\Users\\William\\Desktop\\csci3130\\project3\\group_8_csci_3130_winter\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Medium_Phone_API_35(AVD) - 15\\testlog\\test-results.log"
   }
   type: TEST_DATA
   mime_type: "text/plain"
-}
-issue {
-  namespace {
-    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
-  }
-  severity: SEVERE
-  code: 1
-  name: "INSTRUMENTATION_FAILED"
-  message: "Test run failed to complete. Instrumentation run failed due to Process crashed."
-}
-issue {
-  severity: SEVERE
-  message: "Logcat of last crash: \nProcess: com.example.group8_bartertrader, PID: 27876\r\njava.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.group8_bartertrader/com.example.group8_bartertrader.SettingsActivity}: java.lang.NullPointerException: Attempt to invoke virtual method \'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)\' on a null object reference\r\n\tat android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4048)\r\n\tat android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4235)\r\n\tat android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:112)\r\n\tat android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:174)\r\n\tat android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:109)\r\n\tat android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:81)\r\n\tat android.app.ActivityThread$H.handleMessage(ActivityThread.java:2636)\r\n\tat android.os.Handler.dispatchMessage(Handler.java:107)\r\n\tat android.os.Looper.loopOnce(Looper.java:232)\r\n\tat android.os.Looper.loop(Looper.java:317)\r\n\tat android.app.ActivityThread.main(ActivityThread.java:8705)\r\n\tat java.lang.reflect.Method.invoke(Native Method)\r\n\tat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)\r\n\tat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)\r\nCaused by: java.lang.NullPointerException: Attempt to invoke virtual method \'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)\' on a null object reference\r\n\tat com.example.group8_bartertrader.SettingsActivity.onCreate(SettingsActivity.java:47)\r\n\tat android.app.Activity.performCreate(Activity.java:9002)\r\n\tat android.app.Activity.performCreate(Activity.java:8980)\r\n\tat android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1526)\r\n\tat androidx.test.runner.MonitoringInstrumentation.callActivityOnCreate(MonitoringInstrumentation.java:766)\r\n\tat android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4030)\r\n\t... 13 more\r\n"
 }

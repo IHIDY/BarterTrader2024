@@ -4,58 +4,21 @@ INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
 INSTRUMENTATION_STATUS: numtests=1
 INSTRUMENTATION_STATUS: stream=
 com.example.group8_bartertrader.ResetPasswordActivityEspressoTest:
-INSTRUMENTATION_STATUS: test=checkIfPageDisplayed
+INSTRUMENTATION_STATUS: test=checkNotRegisteredEmail
 INSTRUMENTATION_STATUS_CODE: 1
 INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.ResetPasswordActivityEspressoTest
 INSTRUMENTATION_STATUS: current=1
 INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
 INSTRUMENTATION_STATUS: numtests=1
-INSTRUMENTATION_STATUS: stack=java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
-at com.example.group8_bartertrader.SettingsActivity.onCreate(SettingsActivity.java:47)
-at android.app.Activity.performCreate(Activity.java:9002)
-at android.app.Activity.performCreate(Activity.java:8980)
-at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1526)
-at androidx.test.runner.MonitoringInstrumentation.callActivityOnCreate(MonitoringInstrumentation.java:766)
-at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4030)
-at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4235)
-at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:112)
-at android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:174)
-at android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:109)
-at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:81)
-at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2636)
-at android.os.Handler.dispatchMessage(Handler.java:107)
-at android.os.Looper.loopOnce(Looper.java:232)
-at android.os.Looper.loop(Looper.java:317)
-at android.app.ActivityThread.main(ActivityThread.java:8705)
-at java.lang.reflect.Method.invoke(Native Method)
-at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
-at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=checkNotRegisteredEmail
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
 
-INSTRUMENTATION_STATUS: stream=
-Process crashed while executing checkIfPageDisplayed(com.example.group8_bartertrader.ResetPasswordActivityEspressoTest):
-java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
-at com.example.group8_bartertrader.SettingsActivity.onCreate(SettingsActivity.java:47)
-at android.app.Activity.performCreate(Activity.java:9002)
-at android.app.Activity.performCreate(Activity.java:8980)
-at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1526)
-at androidx.test.runner.MonitoringInstrumentation.callActivityOnCreate(MonitoringInstrumentation.java:766)
-at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4030)
-at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4235)
-at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:112)
-at android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:174)
-at android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:109)
-at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:81)
-at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2636)
-at android.os.Handler.dispatchMessage(Handler.java:107)
-at android.os.Looper.loopOnce(Looper.java:232)
-at android.os.Looper.loop(Looper.java:317)
-at android.app.ActivityThread.main(ActivityThread.java:8705)
-at java.lang.reflect.Method.invoke(Native Method)
-at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
-at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+Time: 9.857
 
-INSTRUMENTATION_STATUS: test=checkIfPageDisplayed
-INSTRUMENTATION_STATUS_CODE: -2
-INSTRUMENTATION_RESULT: shortMsg=Process crashed.
-INSTRUMENTATION_CODE: 0
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
 

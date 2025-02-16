@@ -1,9 +1,9 @@
-#Fri Feb 14 16:46:45 AST 2025
-base.0=/Users/jae/Desktop/W25/3130/group8/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/jae/Desktop/W25/3130/group8/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/jae/Desktop/W25/3130/group8/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
-base.3=/Users/jae/Desktop/W25/3130/group8/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
-base.4=/Users/jae/Desktop/W25/3130/group8/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
+#Sun Feb 16 11:53:13 AST 2025
+base.0=C\:\\Users\\William\\Desktop\\csci3130\\project3\\group_8_csci_3130_winter\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\William\\Desktop\\csci3130\\project3\\group_8_csci_3130_winter\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\William\\Desktop\\csci3130\\project3\\group_8_csci_3130_winter\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
+base.3=C\:\\Users\\William\\Desktop\\csci3130\\project3\\group_8_csci_3130_winter\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.4=C\:\\Users\\William\\Desktop\\csci3130\\project3\\group_8_csci_3130_winter\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=10/classes.dex

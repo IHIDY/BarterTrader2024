@@ -41,7 +41,7 @@ public class ResetPasswordActivityEspressoTest {
         onView(withId(R.id.resetPasswordButton)).perform(click());
         onView(withId(R.id.emailEditText)).perform(typeText(""));
         onView(withId(R.id.submitEmailButton)).perform(click());
-        checkToastMessage("Please enter an email",scenario);
+        onView(withText("Please enter an email")).check(matches(isDisplayed()));
     }
 
     @Test
@@ -49,7 +49,7 @@ public class ResetPasswordActivityEspressoTest {
         onView(withId(R.id.resetPasswordButton)).perform(click());
         onView(withId(R.id.emailEditText)).perform(typeText("akweuhfcbfuy"));
         onView(withId(R.id.submitEmailButton)).perform(click());
-        checkToastMessage("Invalid email format",scenario);
+        onView(withText("Invalid email format")).check(matches(isDisplayed()));
     }
 
     @Test
@@ -57,23 +57,17 @@ public class ResetPasswordActivityEspressoTest {
         onView(withId(R.id.resetPasswordButton)).perform(click());
         onView(withId(R.id.emailEditText)).perform(typeText("DO_NOT_Register@dal.ca"));
         onView(withId(R.id.submitEmailButton)).perform(click());
-        checkToastMessage("Invalid email format",scenario);
+//        onView(withId(R.id.statusLabel)).check(matches(withText("Email not registered")));
+        onView(withText("Email not registered")).check(matches(isDisplayed()));
     }
 
     @Test
     public void checkValidEmail() {
         onView(withId(R.id.resetPasswordButton)).perform(click());
-        onView(withId(R.id.emailEditText)).perform(typeText("DO_NOT_Register@dal.ca"));
+        onView(withId(R.id.emailEditText)).perform(typeText("testReset@gmail.com"));
         onView(withId(R.id.submitEmailButton)).perform(click());
         onView(withId(R.id.resetPasswordButton)).check(matches(isDisplayed()));
     }
 
-    public void checkToastMessage(String expectedMessage, ActivityScenario<?> scenario) {
-        scenario.onActivity(activity -> {
-            onView(withText(expectedMessage))
-                    .inRoot(withDecorView(not(activity.getWindow().getDecorView())))
-                    .check(matches(isDisplayed()));
-        });
-    }
 
 }
