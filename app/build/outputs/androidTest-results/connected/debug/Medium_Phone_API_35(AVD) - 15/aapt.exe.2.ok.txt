@@ -1,7 +1,7 @@
-EXECUTING: C:\Users\William\AppData\Local\Android\Sdk\build-tools\34.0.0\aapt.exe dump badging C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\build\intermediates\apk\androidTest\debug\app-debug-androidTest.apk
-CURRENT_WORKING_DIRECTORY: C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter
-START_TIME: 2025-02-14 15:20:47.310
-START_TIME-NANOS: 2025-02-14 15:20:47.310383900
+EXECUTING: C:\Users\William\AppData\Local\Android\Sdk\build-tools\34.0.0\aapt.exe dump badging C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\build\intermediates\apk\androidTest\debug\app-debug-androidTest.apk
+CURRENT_WORKING_DIRECTORY: C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter
+START_TIME: 2025-02-16 11:55:00.015
+START_TIME-NANOS: 2025-02-16 11:55:00.015187500
 ENVIRONMENT:
 
 *****************************************
@@ -23,7 +23,7 @@ supports-any-density: 'true'
 locales: '--_--'
 densities: '160'
 ===================
-END_TIME: 2025-02-14 15:20:47.351
-END_TIME-NANOS: 2025-02-14 15:20:47.351183700
-DURATION: 40ms
+END_TIME: 2025-02-16 11:55:00.040
+END_TIME-NANOS: 2025-02-16 11:55:00.040246500
+DURATION: 25ms
 EXIT CODE: 0

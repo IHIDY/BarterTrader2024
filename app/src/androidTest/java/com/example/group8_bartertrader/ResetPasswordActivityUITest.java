@@ -49,18 +49,18 @@ public class ResetPasswordActivityUITest {
     public void checkIfMoveToResetPasswordForm() throws UiObjectNotFoundException {
         enterResetPasswordPage();
         UiObject emailBox = device.findObject(new UiSelector().text("Enter your registered email"));
-        emailBox.setText("test@email.com");                                             //valid email check later
+        emailBox.setText("testReset@gmail.com");                                             //valid email check later
         UiObject emailSubmitButton = device.findObject(new UiSelector().text("Submit"));
         emailSubmitButton.clickAndWaitForNewWindow();
         UiObject PasswordSubmitButton = device.findObject(new UiSelector().text("Reset Password"));
         assertTrue(PasswordSubmitButton.exists());
     }
 
-    @Test///////////////////
+    @Test
     public void checkResetDifferentPassword() throws UiObjectNotFoundException {
         enterResetPasswordPage();
         UiObject emailBox = device.findObject(new UiSelector().text("Enter your registered email"));
-        emailBox.setText("test@email.com");                                             //valid email check later
+        emailBox.setText("testReset@gmail.com");                                             //valid email check later
         UiObject emailSubmitButton = device.findObject(new UiSelector().text("Submit"));
         emailSubmitButton.clickAndWaitForNewWindow();
         UiObject passwordBox = device.findObject(new UiSelector().text("Enter your registered email"));
@@ -78,7 +78,7 @@ public class ResetPasswordActivityUITest {
     public void checkResetInvalidPassword() throws UiObjectNotFoundException {
         enterResetPasswordPage();
         UiObject emailBox = device.findObject(new UiSelector().text("Enter your registered email"));
-        emailBox.setText("test@email.com");                                             //valid email check later
+        emailBox.setText("testReset@gmail.com");                                             //valid email check later
         UiObject emailSubmitButton = device.findObject(new UiSelector().text("Submit"));
         emailSubmitButton.clickAndWaitForNewWindow();
         UiObject passwordBox = device.findObject(new UiSelector().text("Enter your registered email"));
@@ -96,7 +96,7 @@ public class ResetPasswordActivityUITest {
     public void checkPasswordReset() throws UiObjectNotFoundException {
         enterResetPasswordPage();
         UiObject emailBox = device.findObject(new UiSelector().text("Enter your registered email"));
-        emailBox.setText("test@email.com");                                             //valid email check later
+        emailBox.setText("testReset@gmail.com");                                             //valid email check later
         UiObject emailSubmitButton = device.findObject(new UiSelector().text("Submit"));
         emailSubmitButton.clickAndWaitForNewWindow();
         UiObject passwordBox = device.findObject(new UiSelector().text("Enter your registered email"));
@@ -108,7 +108,7 @@ public class ResetPasswordActivityUITest {
         UiObject emailBox1 = device.findObject(new UiSelector().text("Enter your Email"));
         emailBox1.setText("test@email.com");
         UiObject passwordBox1 = device.findObject(new UiSelector().text("Enter your Password"));
-        passwordBox1.setText("Password1!");
+        passwordBox1.setText("Password2!");
         UiObject Login = device.findObject(new UiSelector().text("Login"));
         Login.clickAndWaitForNewWindow();
         UiObject SettingsButton = device.findObject(new UiSelector().text("Settings"));
@@ -119,7 +119,7 @@ public class ResetPasswordActivityUITest {
         UiObject LoginButton = device.findObject(new UiSelector().text("Login"));
         LoginButton.clickAndWaitForNewWindow();
         UiObject emailBox = device.findObject(new UiSelector().text("Enter your Email"));
-        emailBox.setText("test@email.com");
+        emailBox.setText("testReset@gmail.com");
         UiObject passwordBox = device.findObject(new UiSelector().text("Enter your Password"));
         passwordBox.setText("Password1!");
         UiObject Login = device.findObject(new UiSelector().text("Login"));

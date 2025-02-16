@@ -19,7 +19,7 @@ cpuid level	: 4
 wp		: yes
 flags		: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pse36 clflush mmx fxsr sse sse2 ht syscall nx lm rep_good nopl cpuid pni ssse3 cx16 sse4_1 sse4_2 popcnt hypervisor lahf_lm abm pti
 bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit mmio_unknown bhi
-bogomips	: 4838.41
+bogomips	: 4838.54
 clflush size	: 64
 cache_alignment	: 64
 address sizes	: 40 bits physical, 48 bits virtual
@@ -46,7 +46,7 @@ cpuid level	: 4
 wp		: yes
 flags		: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pse36 clflush mmx fxsr sse sse2 ht syscall nx lm rep_good nopl cpuid pni ssse3 cx16 sse4_1 sse4_2 popcnt hypervisor lahf_lm abm pti
 bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit mmio_unknown bhi
-bogomips	: 4901.34
+bogomips	: 5283.23
 clflush size	: 64
 cache_alignment	: 64
 address sizes	: 40 bits physical, 48 bits virtual
@@ -73,7 +73,7 @@ cpuid level	: 4
 wp		: yes
 flags		: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pse36 clflush mmx fxsr sse sse2 ht syscall nx lm rep_good nopl cpuid pni ssse3 cx16 sse4_1 sse4_2 popcnt hypervisor lahf_lm abm pti
 bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit mmio_unknown bhi
-bogomips	: 5208.21
+bogomips	: 4160.53
 clflush size	: 64
 cache_alignment	: 64
 address sizes	: 40 bits physical, 48 bits virtual
@@ -100,7 +100,7 @@ cpuid level	: 4
 wp		: yes
 flags		: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pse36 clflush mmx fxsr sse sse2 ht syscall nx lm rep_good nopl cpuid pni ssse3 cx16 sse4_1 sse4_2 popcnt hypervisor lahf_lm abm pti
 bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit mmio_unknown bhi
-bogomips	: 4294.66
+bogomips	: 5157.65
 clflush size	: 64
 cache_alignment	: 64
 address sizes	: 40 bits physical, 48 bits virtual
@@ -127,7 +127,7 @@ cpuid level	: 4
 wp		: yes
 flags		: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pse36 clflush mmx fxsr sse sse2 ht syscall nx lm rep_good nopl cpuid pni ssse3 cx16 sse4_1 sse4_2 popcnt hypervisor lahf_lm abm pti
 bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit mmio_unknown bhi
-bogomips	: 4809.62
+bogomips	: 5059.09
 clflush size	: 64
 cache_alignment	: 64
 address sizes	: 40 bits physical, 48 bits virtual
@@ -154,7 +154,7 @@ cpuid level	: 4
 wp		: yes
 flags		: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pse36 clflush mmx fxsr sse sse2 ht syscall nx lm rep_good nopl cpuid pni ssse3 cx16 sse4_1 sse4_2 popcnt hypervisor lahf_lm abm pti
 bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit mmio_unknown bhi
-bogomips	: 4909.43
+bogomips	: 4750.16
 clflush size	: 64
 cache_alignment	: 64
 address sizes	: 40 bits physical, 48 bits virtual

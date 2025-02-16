@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:2:1-53:12
+ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:2:1-53:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\William\.gradle\caches\8.10.2\transforms\ec8b646f5d3ee4729cc1d940a6c0b48b\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\William\.gradle\caches\8.10.2\transforms\d9b1fb194bbb5d68d7939b6f34c2df50\transformed\constraintlayout-2.2.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\William\.gradle\caches\8.10.2\transforms\b6969c50a450cfd68e40f955d779c34b\transformed\jetified-appcompat-resources-1.7.0\AndroidManifest.xml:2:1-7:12
@@ -86,18 +86,18 @@ MERGED from [io.grpc:grpc-android:1.62.2] C:\Users\William\.gradle\caches\8.10.2
 MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\William\.gradle\caches\8.10.2\transforms\6e96f30c0b3851649b8ccec89bc2c911\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:2:1-21:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\William\.gradle\caches\8.10.2\transforms\115a668f622a58c99d7c43f86c1fed98\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 	package
-		INJECTED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:5:5-51:19
-INJECTED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:5:5-51:19
+ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:5:5-51:19
+INJECTED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:5:5-51:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\William\.gradle\caches\8.10.2\transforms\ec8b646f5d3ee4729cc1d940a6c0b48b\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\William\.gradle\caches\8.10.2\transforms\ec8b646f5d3ee4729cc1d940a6c0b48b\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\William\.gradle\caches\8.10.2\transforms\d9b1fb194bbb5d68d7939b6f34c2df50\transformed\constraintlayout-2.2.0\AndroidManifest.xml:7:5-20
@@ -167,77 +167,77 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Wi
 MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\William\.gradle\caches\8.10.2\transforms\6e96f30c0b3851649b8ccec89bc2c911\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:11:5-19:19
 MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\William\.gradle\caches\8.10.2\transforms\6e96f30c0b3851649b8ccec89bc2c911\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:11:5-19:19
 	android:extractNativeLibs
-		INJECTED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] C:\Users\William\.gradle\caches\8.10.2\transforms\c3610cc26d8b9a134a9d73672d96e5f3\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:10:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:8:9-54
 	android:roundIcon
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:11:9-54
 	tools:targetApi
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:14:9-29
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:14:9-29
 	android:icon
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:13:9-57
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:13:9-57
 	android:dataExtractionRules
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:7:9-65
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:7:9-65
 activity#com.example.group8_bartertrader.LoginActivity
-ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:16:9-18:40
+ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:16:9-18:40
 	android:exported
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:18:13-37
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:18:13-37
 	android:name
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:17:13-42
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:17:13-42
 activity#com.example.group8_bartertrader.RegistrationActivity
-ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:20:9-23:20
+ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:20:9-23:20
 	android:exported
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:22:13-36
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:22:13-36
 	android:name
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:21:13-49
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:21:13-49
 activity#com.example.group8_bartertrader.MainActivity
-ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:25:9-33:20
+ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:25:9-33:20
 	android:exported
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:27:13-36
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:27:13-36
 	android:name
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:26:13-41
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:26:13-41
 activity#com.example.group8_bartertrader.SettingsActivity
-ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:35:9-41:20
+ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:35:9-41:20
 	android:exported
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:36:13-36
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:36:13-36
 	android:name
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:35:19-51
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:35:19-51
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:37:13-40:29
+ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:37:13-40:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:38:17-68
+ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:38:17-68
 	android:name
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:38:25-66
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:38:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:39:17-76
+ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:39:17-76
 	android:name
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:39:27-74
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:39:27-74
 activity#com.example.group8_bartertrader.ResetPasswordActivity
-ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:43:9-45:20
+ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:43:9-45:20
 	android:exported
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:44:13-36
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:44:13-36
 	android:name
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:43:19-56
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:43:19-56
 activity#com.example.group8_bartertrader.ResetPasswordFormActivity
-ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:47:9-49:20
+ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:47:9-49:20
 	android:exported
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:48:13-36
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:48:13-36
 	android:name
-		ADDED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:47:19-60
+		ADDED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml:47:19-60
 uses-sdk
-INJECTED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\William\.gradle\caches\8.10.2\transforms\ec8b646f5d3ee4729cc1d940a6c0b48b\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\William\.gradle\caches\8.10.2\transforms\ec8b646f5d3ee4729cc1d940a6c0b48b\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\William\.gradle\caches\8.10.2\transforms\d9b1fb194bbb5d68d7939b6f34c2df50\transformed\constraintlayout-2.2.0\AndroidManifest.xml:5:5-44
@@ -403,9 +403,9 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Wil
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:23.1.0] C:\Users\William\.gradle\caches\8.10.2\transforms\7f1e9e11a8b08d54f7a885398894ce1f\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:23:9-148
 	android:targetSdkVersion
-		INJECTED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\William\Desktop\csci3130\project2\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\William\Desktop\csci3130\project3\group_8_csci_3130_winter\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from [com.google.firebase:firebase-auth:23.1.0] C:\Users\William\.gradle\caches\8.10.2\transforms\7f1e9e11a8b08d54f7a885398894ce1f\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-database:21.0.0] C:\Users\William\.gradle\caches\8.10.2\transforms\b86d7b9c432a8585039fb7f6dce32164\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:23:5-67

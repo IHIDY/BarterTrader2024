@@ -17,6 +17,7 @@ import android.widget.Button;
 import androidx.activity.EdgeToEdge;
 
 import com.example.group8_bartertrader.R;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
@@ -47,12 +48,12 @@ public class ResetPasswordActivity extends AppCompatActivity {
             String email = emailEditText.getText().toString().trim();
 
             if (TextUtils.isEmpty(email)) {
-                Toast.makeText(ResetPasswordActivity.this, "Please enter an email", Toast.LENGTH_SHORT).show();
+                Snackbar.make(getWindow().getDecorView().getRootView(), "Please enter an email", Snackbar.LENGTH_SHORT).show();
                 return;
             }
 
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                Toast.makeText(ResetPasswordActivity.this, "Invalid email format", Toast.LENGTH_SHORT).show();
+                Snackbar.make(getWindow().getDecorView().getRootView(), "Invalid email format", Snackbar.LENGTH_SHORT).show();
                 return;
             }
 
@@ -81,7 +82,8 @@ public class ResetPasswordActivity extends AppCompatActivity {
                 .addOnFailureListener(e -> {
                     if (e instanceof FirebaseAuthInvalidUserException) {
                         //Email does NOT exist
-                        Toast.makeText(ResetPasswordActivity.this, "Email not registered", Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(ResetPasswordActivity.this, "Email not registered", Toast.LENGTH_SHORT).show();
+                        Snackbar.make(getWindow().getDecorView().getRootView(), "Email not registered", Snackbar.LENGTH_SHORT).show();
                     } else if (e instanceof FirebaseAuthInvalidCredentialsException) {
                         // Email exists but incorrect password → Still means email is registered
                         Intent intent = new Intent(ResetPasswordActivity.this, ResetPasswordFormActivity.class);
@@ -89,7 +91,8 @@ public class ResetPasswordActivity extends AppCompatActivity {
                         startActivity(intent);
                     } else {
                         //Other errors (network issues, etc.)
-                        Toast.makeText(ResetPasswordActivity.this, "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+//                        Toast.makeText(ResetPasswordActivity.this, "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                        Snackbar.make(getWindow().getDecorView().getRootView(), "Error: " + e.getMessage(), Snackbar.LENGTH_LONG).show();
                     }
                 });
     }
