@@ -41,8 +41,10 @@ dependencies {
     implementation(libs.google.firebase.auth)
     implementation(libs.firebase.firestore)
     implementation libs.firebase.database
-    implementation libs.uiautomator
+//    implementation libs.uiautomator
+
     testImplementation libs.junit
+    androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.3.0'
 
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core

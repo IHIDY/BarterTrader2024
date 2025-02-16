@@ -22,11 +22,11 @@ public class CredentialsValidator {
         this.mAuth = FirebaseAuth.getInstance();
     }
 
-    public boolean isEmptyEmail(String email) {
+    public static boolean isEmptyEmail(String email) {
         return email.trim().isEmpty();
     }
 
-    public boolean isValidEmail(String email) {
+    public static boolean isValidEmail(String email) {
         if (email == null || email.isEmpty()) {
             return false;
         }
@@ -39,11 +39,11 @@ public class CredentialsValidator {
         return p.matcher(email).matches();
     }
 
-    public boolean isEmptyPassword(String pass) {
+    public static boolean isEmptyPassword(String pass) {
         return pass.trim().isEmpty();
     }
 
-    public boolean isValidPass(String pass) {
+    public static boolean isValidPass(String pass) {
         if (pass == null || pass.isEmpty()) {
             return false;
         }
@@ -54,15 +54,15 @@ public class CredentialsValidator {
         return p.matcher(pass).matches();
     }
 
-    public boolean isValidRole(String role) {
+    public static boolean isValidRole(String role) {
         return (role != null) && (!role.equals("Select your role"));
     }
 
-    public boolean isFnameEmpty(String fname) {
+    public static boolean isFnameEmpty(String fname) {
         return fname.trim().isEmpty();
     }
 
-    public boolean isLnameEmpty(String lname) {
+    public static boolean isLnameEmpty(String lname) {
         return lname.trim().isEmpty();
     }
 }

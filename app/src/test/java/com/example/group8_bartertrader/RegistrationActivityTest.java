@@ -12,10 +12,11 @@ public class RegistrationActivityTest {
         String missingEndEmail = "user@email";
         String validEmail = "user@email.com";
 
-        assertEquals(1, RegistrationActivity.isValidEmail(noEmail));
-        assertEquals(2, RegistrationActivity.isValidEmail(invalidEmail));
-        assertEquals(2, RegistrationActivity.isValidEmail(missingEndEmail));
-        assertEquals(0, RegistrationActivity.isValidEmail(validEmail));
+        assertFalse(CredentialsValidator.isValidEmail(invalidEmail));
+        assertFalse(CredentialsValidator.isValidEmail(missingEndEmail));
+        assertFalse(CredentialsValidator.isValidEmail(noEmail));
+        assertTrue(CredentialsValidator.isValidEmail(validEmail));
+
     }
 
     @Test
@@ -25,10 +26,10 @@ public class RegistrationActivityTest {
         String invalidPass = "12345678";
         String validPass = "Password123!";
 
-        assertEquals(1, RegistrationActivity.isValidPass(noPass));
-        assertEquals(2, RegistrationActivity.isValidPass(tooShortPass));
-        assertEquals(4, RegistrationActivity.isValidPass(invalidPass));
-        assertEquals(0, RegistrationActivity.isValidPass(validPass));
+        assertFalse(CredentialsValidator.isValidPass(noPass));
+        assertFalse(CredentialsValidator.isValidPass(tooShortPass));
+        assertFalse(CredentialsValidator.isValidPass(invalidPass));
+        assertTrue(CredentialsValidator.isValidPass(validPass));
     }
 
     @Test
@@ -37,8 +38,8 @@ public class RegistrationActivityTest {
         String roleProvider = "Provider";
         String roleReceiver = "Receiver";
 
-        assertFalse(RegistrationActivity.isValidRole(role));
-        assertTrue(RegistrationActivity.isValidRole(roleProvider));
-        assertTrue(RegistrationActivity.isValidRole(roleReceiver));
+        assertFalse(CredentialsValidator.isValidRole(role));
+        assertTrue(CredentialsValidator.isValidRole(roleProvider));
+        assertTrue(CredentialsValidator.isValidRole(roleReceiver));
     }
 }
