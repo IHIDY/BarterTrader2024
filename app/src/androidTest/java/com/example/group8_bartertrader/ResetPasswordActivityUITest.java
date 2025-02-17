@@ -16,6 +16,7 @@ import androidx.test.uiautomator.UiObjectNotFoundException;
 import androidx.test.uiautomator.UiSelector;
 import androidx.test.uiautomator.Until;
 
+import org.checkerframework.checker.guieffect.qual.UI;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -38,8 +39,94 @@ public class ResetPasswordActivityUITest {
     }
 
     @Test
-    public void checkIfLandingPageIsDisplayed() {
-//        updatePassword
-//                checkEmailExists
+    public void checkIfPageIsDisplayed() throws UiObjectNotFoundException {
+        enterResetPasswordPage();
+        UiObject emailSubmitButton = device.findObject(new UiSelector().text("Submit"));
+        assertTrue(emailSubmitButton.exists());
+    }
+
+    @Test
+    public void checkIfMoveToResetPasswordForm() throws UiObjectNotFoundException {
+        enterResetPasswordPage();
+        UiObject emailBox = device.findObject(new UiSelector().text("Enter your registered email"));
+        emailBox.setText("testReset@gmail.com");                                             //valid email check later
+        UiObject emailSubmitButton = device.findObject(new UiSelector().text("Submit"));
+        emailSubmitButton.clickAndWaitForNewWindow();
+        UiObject PasswordSubmitButton = device.findObject(new UiSelector().text("Reset Password"));
+        assertTrue(PasswordSubmitButton.exists());
+    }
+
+    @Test
+    public void checkResetDifferentPassword() throws UiObjectNotFoundException {
+        enterResetPasswordPage();
+        UiObject emailBox = device.findObject(new UiSelector().text("Enter your registered email"));
+        emailBox.setText("testReset@gmail.com");                                             //valid email check later
+        UiObject emailSubmitButton = device.findObject(new UiSelector().text("Submit"));
+        emailSubmitButton.clickAndWaitForNewWindow();
+        UiObject passwordBox = device.findObject(new UiSelector().text("Enter your registered email"));
+        passwordBox.setText("Password1!");
+        UiObject confirmBox = device.findObject(new UiSelector().text("Enter your registered email"));
+        confirmBox.setText("NotPassword");
+        UiObject PasswordSubmitButton = device.findObject(new UiSelector().text("Reset Password"));
+        PasswordSubmitButton.click();
+        UiObject toast = device.findObject(new UiSelector().className("android.widget.TextView").textStartsWith("Passwords do not match"));
+        boolean exist = toast.waitForExists(5000);
+        assertTrue(exist);
+    }
+
+    @Test
+    public void checkResetInvalidPassword() throws UiObjectNotFoundException {
+        enterResetPasswordPage();
+        UiObject emailBox = device.findObject(new UiSelector().text("Enter your registered email"));
+        emailBox.setText("testReset@gmail.com");                                             //valid email check later
+        UiObject emailSubmitButton = device.findObject(new UiSelector().text("Submit"));
+        emailSubmitButton.clickAndWaitForNewWindow();
+        UiObject passwordBox = device.findObject(new UiSelector().text("Enter your registered email"));
+        passwordBox.setText("12345");
+        UiObject confirmBox = device.findObject(new UiSelector().text("Enter your registered email"));
+        confirmBox.setText("12345");
+        UiObject PasswordSubmitButton = device.findObject(new UiSelector().text("Reset Password"));
+        PasswordSubmitButton.click();
+        UiObject toast = device.findObject(new UiSelector().className("android.widget.TextView").textStartsWith("Password must be at least 6 characters"));
+        boolean exist = toast.waitForExists(5000);
+        assertTrue(exist);
+    }
+
+    @Test
+    public void checkPasswordReset() throws UiObjectNotFoundException {
+        enterResetPasswordPage();
+        UiObject emailBox = device.findObject(new UiSelector().text("Enter your registered email"));
+        emailBox.setText("testReset@gmail.com");                                             //valid email check later
+        UiObject emailSubmitButton = device.findObject(new UiSelector().text("Submit"));
+        emailSubmitButton.clickAndWaitForNewWindow();
+        UiObject passwordBox = device.findObject(new UiSelector().text("Enter your registered email"));
+        passwordBox.setText("Password2!");
+        UiObject confirmBox = device.findObject(new UiSelector().text("Enter your registered email"));
+        confirmBox.setText("Password2!");
+        UiObject PasswordSubmitButton = device.findObject(new UiSelector().text("Reset Password"));
+        PasswordSubmitButton.clickAndWaitForNewWindow();
+        UiObject emailBox1 = device.findObject(new UiSelector().text("Enter your Email"));
+        emailBox1.setText("test@email.com");
+        UiObject passwordBox1 = device.findObject(new UiSelector().text("Enter your Password"));
+        passwordBox1.setText("Password2!");
+        UiObject Login = device.findObject(new UiSelector().text("Login"));
+        Login.clickAndWaitForNewWindow();
+        UiObject SettingsButton = device.findObject(new UiSelector().text("Settings"));
+        assertTrue(SettingsButton.exists());
+    }
+
+    private void enterResetPasswordPage() throws UiObjectNotFoundException {
+        UiObject LoginButton = device.findObject(new UiSelector().text("Login"));
+        LoginButton.clickAndWaitForNewWindow();
+        UiObject emailBox = device.findObject(new UiSelector().text("Enter your Email"));
+        emailBox.setText("testReset@gmail.com");
+        UiObject passwordBox = device.findObject(new UiSelector().text("Enter your Password"));
+        passwordBox.setText("Password1!");
+        UiObject Login = device.findObject(new UiSelector().text("Login"));
+        Login.clickAndWaitForNewWindow();
+        UiObject SettingsButton = device.findObject(new UiSelector().text("Settings"));
+        SettingsButton.clickAndWaitForNewWindow();
+        UiObject ResetPasswordButton = device.findObject(new UiSelector().text("Reset Password"));
+        ResetPasswordButton.clickAndWaitForNewWindow();
     }
 }
