@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +16,10 @@
         android:theme="@style/Theme.Group8_bartertrader"
         tools:targetApi="31">
         <activity
+            android:name=".ProductForm"
+            android:exported="false" />
+
+        <activity
             android:name=".ConfirmationPage"
             android:exported="true" />
         <activity
@@ -20,7 +27,7 @@
             android:exported="false" />
         <activity
             android:name=".ProviderDash"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
@@ -55,14 +62,12 @@
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
         </activity>
-        <activity android:name=".ResetPasswordActivity"
-            android:exported="true">
-        </activity>
-
-        <activity android:name=".ResetPasswordFormActivity"
-            android:exported="true">
-        </activity>
-
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ResetPasswordFormActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

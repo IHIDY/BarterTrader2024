@@ -37,6 +37,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.Group8_bartertrader" >
         <activity
+            android:name="com.example.group8_bartertrader.ProductForm"
+            android:exported="false" />
+        <activity
+            android:name="com.example.group8_bartertrader.ProductFormActivty"
+            android:exported="false" />
+        <activity
             android:name="com.example.group8_bartertrader.ConfirmationPage"
             android:exported="true" />
         <activity
@@ -44,7 +50,7 @@
             android:exported="false" />
         <activity
             android:name="com.example.group8_bartertrader.ProviderDash"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name="com.example.group8_bartertrader.LoginActivity"
             android:exported="false" />
@@ -79,6 +85,12 @@
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
         </activity>
+        <activity
+            android:name="com.example.group8_bartertrader.ResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.group8_bartertrader.ResetPasswordFormActivity"
+            android:exported="true" />
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"

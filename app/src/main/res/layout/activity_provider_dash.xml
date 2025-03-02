@@ -26,4 +26,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Go to Settings" />
+
+    <Button
+        android:id="@+id/postButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="122dp"
+        android:text="Post Used Products"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
