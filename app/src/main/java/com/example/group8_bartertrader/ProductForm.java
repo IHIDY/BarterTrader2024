@@ -33,7 +33,7 @@ public class ProductForm extends AppCompatActivity {
     private EditText productName, productLocation, productDescription;
     private Spinner productCategory;
     private Button submitButton, backButton, getLocationButton;
-    private DatabaseReference databaseReference;
+    public DatabaseReference databaseReference;
     private String selectedCategory;
 
     // Declare the location client
@@ -111,7 +111,7 @@ public class ProductForm extends AppCompatActivity {
         }));
     }
 
-    private void submitProduct() {
+    public void submitProduct() {
         String name = productName.getText().toString().trim();
         String category = selectedCategory; // Use selected category from Spinner
         String description = productDescription.getText().toString().trim();

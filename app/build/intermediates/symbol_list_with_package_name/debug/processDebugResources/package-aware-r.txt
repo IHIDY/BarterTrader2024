@@ -3266,7 +3266,6 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
-id button
 id button2
 id button3
 id buttonPanel
@@ -3546,10 +3545,12 @@ id position
 id postButton
 id postLayout
 id pressed
+id productAvailability
 id productCategory
 id productDescription
 id productLocation
 id productName
+id productRecyclerView
 id progress_circular
 id progress_horizontal
 id radio
@@ -3656,6 +3657,7 @@ id textStart
 id textTop
 id textView
 id textView2
+id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3910,6 +3912,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout product_item
 layout reset_password
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
