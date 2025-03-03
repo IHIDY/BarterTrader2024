@@ -3379,6 +3379,7 @@ int id forever 0x7f0900db
 int id fragment_container_view_tag 0x7f0900dc
 int id frost 0x7f0900dd
 int id fullscreen_header 0x7f0900de
+int id getLocationButton 0x7f090228
 int id ghost_view 0x7f0900df
 int id ghost_view_holder 0x7f0900e0
 int id gone 0x7f0900e1

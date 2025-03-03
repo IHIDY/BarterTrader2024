@@ -18,6 +18,7 @@ id confirmPasswordEditText
 id email
 id emailEditText
 id fName
+id getLocationButton
 id lName
 id loginBtn
 id main

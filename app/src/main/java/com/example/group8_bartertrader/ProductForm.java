@@ -1,5 +1,10 @@
 package com.example.group8_bartertrader;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
+import android.location.Location;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -12,19 +17,31 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class ProductForm extends AppCompatActivity {
     private EditText productName, productLocation, productDescription;
-    private Spinner productCategory; // Changed to Spinner
-    private Button submitButton, backButton;
+    private Spinner productCategory;
+    private Button submitButton, backButton, getLocationButton;
     private DatabaseReference databaseReference;
     private String selectedCategory;
+
+    // Declare the location client
+    private FusedLocationProviderClient fusedLocationClient;
+
+    // Variables to store location data
+    private String address = ""; // For geocoded address (street name)
+    private String latLng = "";  // For latitude and longitude
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,14 +49,18 @@ public class ProductForm extends AppCompatActivity {
         setContentView(R.layout.activity_product_form);
 
         productName = findViewById(R.id.productName);
-        productCategory = findViewById(R.id.productCategory); // Spinner
+        productCategory = findViewById(R.id.productCategory);
         productLocation = findViewById(R.id.productLocation);
         productDescription = findViewById(R.id.productDescription);
         submitButton = findViewById(R.id.submitProduct);
         backButton = findViewById(R.id.backButton);
+        getLocationButton = findViewById(R.id.getLocationButton);
+
+        // Initialize the fused location client
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
         // List of categories for the Spinner
-        String[] categories = {"Select Category","Electronics", "Furniture", "Clothing & Accessories", "Books", "Toys & Games",
+        String[] categories = {"Select Category", "Electronics", "Furniture", "Clothing & Accessories", "Books", "Toys & Games",
                 "Sports & Outdoors", "Baby & Kids", "Home Improvement", "Vehicles", "Health & Beauty",
                 "Pet Supplies", "Collectibles", "Home Decor", "Office Supplies"};
 
@@ -63,28 +84,39 @@ public class ProductForm extends AppCompatActivity {
         // Firebase setup
         databaseReference = FirebaseDatabase.getInstance().getReference("Products");
 
-        submitButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                submitProduct();
-            }
-        });
+        submitButton.setOnClickListener(v -> submitProduct());
 
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
+        backButton.setOnClickListener(v -> onBackPressed());
+
+        // Get Current Location when the button is pressed
+        getLocationButton.setOnClickListener(v -> getCurrentLocation(location -> {
+            if (location != null) {
+                // Use Geocoder to get the address from the location
+                Geocoder geocoder = new Geocoder(this);
+                try {
+                    List<Address> addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
+                    if (!addresses.isEmpty()) {
+                        // Get the address and display it
+                        address = addresses.get(0).getAddressLine(0); // Store the address
+                        productLocation.setText(address); // Show the address in the EditText
+
+                        // Store latitude and longitude as a string
+                        latLng = location.getLatitude() + "," + location.getLongitude();
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    Toast.makeText(ProductForm.this, "Unable to get address", Toast.LENGTH_SHORT).show();
+                }
             }
-        });
+        }));
     }
 
     private void submitProduct() {
         String name = productName.getText().toString().trim();
         String category = selectedCategory; // Use selected category from Spinner
-        String location = productLocation.getText().toString().trim();
         String description = productDescription.getText().toString().trim();
 
-        if (TextUtils.isEmpty(name) || TextUtils.isEmpty(category) || TextUtils.isEmpty(location) || TextUtils.isEmpty(description)) {
+        if (TextUtils.isEmpty(name) || TextUtils.isEmpty(category) || TextUtils.isEmpty(description) || TextUtils.isEmpty(address)) {
             Toast.makeText(this, "All fields are required", Toast.LENGTH_SHORT).show();
             return;
         }
@@ -94,11 +126,10 @@ public class ProductForm extends AppCompatActivity {
         productData.put("id", productId);
         productData.put("name", name);
         productData.put("category", category);
-        productData.put("locationString", location);
-        productData.put("location", null);
+        productData.put("location", address); // Save the geocoded address
+        productData.put("latLngLocation", latLng); // Save the latitude and longitude
         productData.put("description", description);
         productData.put("isAvailable", true);
-//        productData.put("SellerEmail")
 
         databaseReference.child(productId).setValue(productData).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
@@ -110,5 +141,45 @@ public class ProductForm extends AppCompatActivity {
                 Toast.makeText(ProductForm.this, "Failed to post product", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    private void getCurrentLocation(LocationCallback callback) {
+        // Check if the app has permission to access location
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // Request location permissions if not granted
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 100);
+            return;
+        }
+
+        // Get the last known location
+        fusedLocationClient.getLastLocation()
+                .addOnSuccessListener(this, location -> {
+                    if (location != null) {
+                        callback.onLocationReceived(location);
+                    } else {
+                        Toast.makeText(ProductForm.this, "Unable to get location", Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == 100) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // Permissions granted, try to get location again
+                getCurrentLocation(location -> {
+                    // Handle location data here
+                });
+            } else {
+                Toast.makeText(this, "Location permission is required", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
+    // Callback interface for passing the location
+    interface LocationCallback {
+        void onLocationReceived(Location location);
     }
 }
