@@ -3248,6 +3248,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id axisRelative
+id backButton
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3265,7 +3266,6 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
-id button
 id button2
 id button3
 id buttonPanel
@@ -3379,6 +3379,7 @@ id forever
 id fragment_container_view_tag
 id frost
 id fullscreen_header
+id getLocationButton
 id ghost_view
 id ghost_view_holder
 id gone
@@ -3541,8 +3542,15 @@ id peekHeight
 id percent
 id pin
 id position
+id postButton
 id postLayout
 id pressed
+id productAvailability
+id productCategory
+id productDescription
+id productLocation
+id productName
+id productRecyclerView
 id progress_circular
 id progress_horizontal
 id radio
@@ -3623,6 +3631,7 @@ id stop
 id stretch
 id submenuarrow
 id submitEmailButton
+id submitProduct
 id submit_area
 id supportScrollUp
 id tabMode
@@ -3648,6 +3657,7 @@ id textStart
 id textTop
 id textView
 id textView2
+id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3819,6 +3829,7 @@ layout abc_tooltip
 layout activity_confirmation_page
 layout activity_login
 layout activity_main
+layout activity_product_form
 layout activity_provider_dash
 layout activity_receiver_dash
 layout activity_registration
@@ -3901,11 +3912,11 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout product_item
 layout reset_password
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
-layout setting_page
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
