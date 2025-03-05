@@ -26,16 +26,18 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/settings_title" />
-
     <Button
         android:id="@+id/resetPasswordButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+
         android:text="Reset Password"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="215dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_title" />
+
 
 <!--    <Spinner-->
 <!--        android:id="@+id/mySpinner"-->
