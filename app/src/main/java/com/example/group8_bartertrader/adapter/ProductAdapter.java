@@ -42,7 +42,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         holder.productLocation.setText("Location: " + product.getLocation());
 
         // You can also add logic for availability if needed
-        String availability = product.isAvailable();
+        boolean availability = product.isAvailable();
 //        holder.productAvailability.setText("Status: " + availability);
         holder.productAvailability.setText("Status: " + "Available");
 

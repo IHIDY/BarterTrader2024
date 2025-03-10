@@ -7,7 +7,7 @@ public class Product {
     private String name;
     private String description;
     private String category;
-    private String isAvailable;
+    private boolean isAvailable;
     private String latLngLocation;
     private String location;
 
@@ -16,7 +16,7 @@ public class Product {
     public Product() {}
 
     // Constructor to initialize all fields
-    public Product(String id, String name, String description, String category, String isAvailable, String latLngLocation, String location) {
+    public Product(String id, String name, String description, String category, boolean isAvailable, String latLngLocation, String location) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -61,12 +61,12 @@ public class Product {
     }
 
 
-    public String isAvailable() {
+    public boolean isAvailable() {
         return isAvailable;
     }
 
 
-    public void setAvailable(String available) {
+    public void setAvailable(boolean available) {
         isAvailable = available;
     }
 
