@@ -7,7 +7,6 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 id LogOutButton
 id backButton
-id button2
 id button3
 id changeRoleBtn
 id confirmEmail
@@ -19,6 +18,7 @@ id emailEditText
 id fName
 id getLocationButton
 id lName
+id locationTextView
 id loginBtn
 id main
 id mySpinner
