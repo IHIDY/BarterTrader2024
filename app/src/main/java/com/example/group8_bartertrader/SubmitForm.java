@@ -145,22 +145,21 @@ public class SubmitForm extends AppCompatActivity {
         }
 
         String OfferId = databaseReference.push().getKey();
-        Map<String, Object> productData = new HashMap<>();
-        productData.put("ProviderEmail", providerEmail);
-        productData.put("ReceiverEmail", currentUserEmail);
-        productData.put("OfferedItemName", name);
-        productData.put("OfferedItemCategory", category);
-        productData.put("OfferedItemLocation", address);
-        productData.put("OfferedItemLatLngLocation", latLng);
-        productData.put("OfferedItemDescription", description);
-        productData.put("TargetItemId", targetProductId);
-        productData.put("TargetItemName", targetProductName);
-        productData.put("TargetItemCategory", targetProductCategory);
-        productData.put("TargetItemLocation", targetProductLocation);
-        productData.put("TargetItemDescription", targetProductDescription);
-        productData.put("Status", "pending");
+        Map<String, Object> offerData = new HashMap<>();
+        offerData.put("ProviderEmail", providerEmail);
+        offerData.put("ReceiverEmail", currentUserEmail);
+        offerData.put("OfferedItemName", name);
+        offerData.put("OfferedItemCategory", category);
+        offerData.put("OfferedItemLocation", address);
+        offerData.put("OfferedItemDescription", description);
+        offerData.put("TargetItemId", targetProductId);
+        offerData.put("TargetItemName", targetProductName);
+        offerData.put("TargetItemCategory", targetProductCategory);
+        offerData.put("TargetItemLocation", targetProductLocation);
+        offerData.put("TargetItemDescription", targetProductDescription);
+        offerData.put("Status", "pending");
 
-        databaseReference.child(OfferId).setValue(productData).addOnCompleteListener(task -> {
+        databaseReference.child(OfferId).setValue(offerData).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
                 Log.d("Product Form", "Product posted successfully");
                 Toast.makeText(SubmitForm.this, "Product posted successfully", Toast.LENGTH_SHORT).show();

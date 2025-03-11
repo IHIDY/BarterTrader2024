@@ -10,6 +10,11 @@
           <theme>@style/Theme.Group8_bartertrader</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_my_offers.xml">
+        <config>
+          <theme>@style/Theme.Group8_bartertrader</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_product_form.xml">
         <config>
           <theme>@style/Theme.Group8_bartertrader</theme>
@@ -40,6 +45,11 @@
           <theme>@style/Theme.Group8_bartertrader</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/offer_item.xml">
+        <config>
+          <theme>@style/Theme.Group8_bartertrader</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/product_item.xml">
         <config>
           <theme>@style/Theme.Group8_bartertrader</theme>
@@ -52,8 +62,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb758ab1-1104-45f3-8618-25349e59be1e" name="Changes" comment="Updated as well">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/group8_bartertrader/SubmitForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/group8_bartertrader/MyOffersActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/group8_bartertrader/adapter/OfferAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/group8_bartertrader/model/Offer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_offers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/offer_item.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/group8_bartertrader/SubmitForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/group8_bartertrader/SubmitForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
