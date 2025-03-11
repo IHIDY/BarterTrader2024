@@ -55,6 +55,10 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         return productList.size();
     }
 
+    public void setProductList(List<Product> productList) {
+        this.productList = productList;
+    }
+
     // ViewHolder class to hold references to views in the layout
     public static class ProductViewHolder extends RecyclerView.ViewHolder {
         TextView productName, productDescription, productCategory, productLocation, productAvailability;
