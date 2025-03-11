@@ -17,7 +17,10 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.group8_bartertrader.adapter.ProductAdapter;
 import com.example.group8_bartertrader.model.Product;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -35,6 +38,8 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
     private LocationHelper locationHelper;
     private DatabaseReference productsRef;
     private List<Product> productList;
+    private RecyclerView productRecyclerView;
+    private ProductAdapter productAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,11 +49,18 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
 
         receiverSettingBtn = findViewById(R.id.recsettingbutton);
         locationTextView = findViewById(R.id.locationTextView);
+        productRecyclerView = findViewById(R.id.productRecyclerView);
+
+        productList = new ArrayList<>();
+        productAdapter = new ProductAdapter(productList);
+        productRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        productRecyclerView.setAdapter(productAdapter);
 
         productsRef = FirebaseDatabase.getInstance().getReference("Products");
 
         locationHelper = new LocationHelper(this);
 
+        // Check and request location permissions
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
         } else {
@@ -92,11 +104,10 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         productsRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                productList = new ArrayList<>();
+                productList.clear();
                 for (DataSnapshot productSnapshot : dataSnapshot.getChildren()) {
                     Product product = productSnapshot.getValue(Product.class);
                     if (product != null) {
-                        // Parse latLngLocation from the product
                         double[] productLatLng = LocationHelper.parseLatLngLocation(product.getLatLngLocation());
                         if (productLatLng != null && isWithinRange(latitude, longitude, productLatLng[0], productLatLng[1])) {
                             productList.add(product);
@@ -115,7 +126,7 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
     }
 
     private boolean isWithinRange(double userLat, double userLong, double productLat, double productLong) {
-        final int RADIUS = 10;
+        final int RADIUS = 10; // Radius in kilometers
         double distance = calculateDistance(userLat, userLong, productLat, productLong);
         return distance <= RADIUS;
     }
@@ -133,7 +144,7 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
     }
 
     private void updateProductList(List<Product> productList) {
-        // Update the UI with the filtered product list
-        // use a RecyclerView to display the products
+        productAdapter.setProductList(productList);
+        productAdapter.notifyDataSetChanged();
     }
 }
