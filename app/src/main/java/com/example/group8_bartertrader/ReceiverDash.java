@@ -6,7 +6,11 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,6 +39,13 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
     private LocationHelper locationHelper;
     private DatabaseReference productsRef;
     private List<Product> productList;
+    private Spinner category;
+    private Button searchButton;
+    private EditText Distance;
+    private int distance;
+    private final int RADIUS = 10;
+    private final int Radius_E = 6371; // Radius of the Earth in km
+    private String selectedCategory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +55,9 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
 
         receiverSettingBtn = findViewById(R.id.recsettingbutton);
         locationTextView = findViewById(R.id.locationTextView);
+        category = findViewById(R.id.filterSpinner);
+        Distance = findViewById(R.id.filterEditText);
+        searchButton = findViewById(R.id.filterButton);
 
         productsRef = FirebaseDatabase.getInstance().getReference("Products");
 
@@ -69,6 +83,43 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
                 startActivity(intent);
             }
         });
+
+        String[] categories = {"Select Category", "Electronics", "Furniture", "Clothing & Accessories", "Books", "Toys & Games",
+                "Sports & Outdoors", "Baby & Kids", "Home Improvement", "Vehicles", "Health & Beauty",
+                "Pet Supplies", "Collectibles", "Home Decor", "Office Supplies"};
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, categories);
+        category.setAdapter(adapter);
+
+        category.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+                selectedCategory = parentView.getItemAtPosition(position).toString();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parentView) {
+                selectedCategory = null;
+            }
+        });
+        searchButton.setOnClickListener(v -> search());
+    }
+
+    public void search(){
+        try {
+            distance = Integer.parseInt(Distance.getText().toString().trim());
+        } catch (NumberFormatException e) {
+            Toast.makeText(this,"Must be number "+e.getMessage(),Toast.LENGTH_SHORT).show();
+        }
+        if(distance<=0){
+            distance=RADIUS;
+        }
+        if(selectedCategory==null){
+            //select all in dis
+        }
+        else {
+            //select only in dis
+        }
     }
 
     @Override
@@ -115,21 +166,19 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
     }
 
     private boolean isWithinRange(double userLat, double userLong, double productLat, double productLong) {
-        final int RADIUS = 10;
         double distance = calculateDistance(userLat, userLong, productLat, productLong);
         return distance <= RADIUS;
     }
 
     private double calculateDistance(double lat1, double lon1, double lat2, double lon2) {
         // Haversine formula to calculate distance between two coordinates
-        final int R = 6371; // Radius of the Earth in km
         double latDistance = Math.toRadians(lat2 - lat1);
         double lonDistance = Math.toRadians(lon2 - lon1);
         double a = Math.sin(latDistance / 2) * Math.sin(latDistance / 2)
                 + Math.cos(Math.toRadians(lat1)) * Math.cos(Math.toRadians(lat2))
                 * Math.sin(lonDistance / 2) * Math.sin(lonDistance / 2);
         double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-        return R * c;
+        return Radius_E * c;
     }
 
     private void updateProductList(List<Product> productList) {

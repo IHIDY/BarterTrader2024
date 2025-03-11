@@ -63,10 +63,10 @@
         <!-- Confirm Button -->
         <Button
             android:id="@+id/filterButton"
-            android:layout_width="60dp"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Filter" />
+            android:text="Search" />
     </LinearLayout>
 
     <!-- RecyclerView to Display Products -->
