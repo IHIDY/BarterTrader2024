@@ -1,5 +1,6 @@
 package com.example.group8_bartertrader;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -68,7 +69,14 @@ public class DetailsActivity extends AppCompatActivity {
         exitButton.setOnClickListener(view -> move2RecieverDash());
     }
 
-    protected void move2OfferExchange() {}
+    protected void move2OfferExchange() {
+        Intent offerIntent = new Intent(this, SubmitForm.class); //pass this product through the intent
+        startActivity(offerIntent);
+    }
 
-    protected void move2RecieverDash() {}
+    protected void move2RecieverDash() {
+        //potentially fix to go back to the same spot
+        Intent exitIntent = new Intent(this, ReceiverDash.class);
+        startActivity(exitIntent);
+    }
 }
