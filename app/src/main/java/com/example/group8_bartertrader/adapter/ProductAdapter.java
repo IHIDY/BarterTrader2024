@@ -1,10 +1,17 @@
 package com.example.group8_bartertrader.adapter;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -45,6 +52,25 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
 //        holder.productAvailability.setText("Status: " + availability);
         holder.productAvailability.setText("Status: " + "Available");
 
+        holder.mapButton.setOnClickListener(v -> {
+            String location = product.getLocation();
+            Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+            mapIntent.setPackage("com.google.android.apps.maps");
+
+            if (v.getContext().getPackageManager().resolveActivity(mapIntent, 0) != null) {
+                v.getContext().startActivity(mapIntent);
+            } else {
+                Toast.makeText(v.getContext(), "No Map App Found", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        holder.detailButton.setOnClickListener(v -> {
+            Context context = v.getContext();
+            Intent detailIntent = new Intent(context, DetailsActivity.class);
+            detailIntent.putExtra("Product",product);
+            context.startActivity(detailIntent);
+        });
         // Log the isAvailable value
         Log.d("From Product Adapter", "Product ID: " + product.getId() + ", Availability: " + product.isAvailable());
 
@@ -58,7 +84,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
     // ViewHolder class to hold references to views in the layout
     public static class ProductViewHolder extends RecyclerView.ViewHolder {
         TextView productName, productDescription, productCategory, productLocation, productAvailability;
-
+        Button mapButton, detailButton;
         public ProductViewHolder(View itemView) {
             super(itemView);
             productName = itemView.findViewById(R.id.productName);
@@ -66,6 +92,8 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
             productCategory = itemView.findViewById(R.id.productCategory);
             productLocation = itemView.findViewById(R.id.productLocation);
             productAvailability = itemView.findViewById(R.id.productAvailability);
+            mapButton = itemView.findViewById(R.id.mapButton);
+            detailButton = itemView.findViewById(R.id.detailButton);
         }
     }
 }

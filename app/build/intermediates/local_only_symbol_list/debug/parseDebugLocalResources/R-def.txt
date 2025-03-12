@@ -16,6 +16,10 @@ id confirmPasswordEditText
 id email
 id emailEditText
 id fName
+id filterButton
+id filterEditText
+id filterLayout
+id filterSpinner
 id getLocationButton
 id lName
 id locationTextView

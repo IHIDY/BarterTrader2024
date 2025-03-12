@@ -21,7 +21,10 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.group8_bartertrader.adapter.ProductAdapter;
 import com.example.group8_bartertrader.model.Product;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -46,6 +49,9 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
     private final int RADIUS = 10;
     private final int Radius_E = 6371; // Radius of the Earth in km
     private String selectedCategory;
+    private RecyclerView productRecyclerView;
+    private ProductAdapter productAdapter;
+    private double latitude, longitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +74,8 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         } else {
             locationHelper.getCurrentLocation(this);
         }
+
+        filterItems(RADIUS,null);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -116,10 +124,22 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         }
         if(selectedCategory==null){
             //select all in dis
+            filterItems(distance,null);
         }
         else {
             //select only in dis
+            filterItems(distance,selectedCategory);
         }
+    }
+
+    private void filterItems(int maxDistance, String category) {
+        //incomplete
+        productRecyclerView = findViewById(R.id.productRecyclerView);
+        productRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        productList = new ArrayList<>();
+        productAdapter = new ProductAdapter(productList);
+        productRecyclerView.setAdapter(productAdapter);
+        fetchProductsFromFirebase(latitude,longitude,maxDistance,category);
     }
 
     @Override
@@ -130,8 +150,10 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
 
     @Override
     public void onLocationFetched(double latitude, double longitude) {
+        this.latitude=latitude;
+        this.longitude=longitude;
         locationTextView.setText("Lat: " + latitude + ", Long: " + longitude);
-        fetchProductsFromFirebase(latitude, longitude);
+        fetchProductsFromFirebase(latitude, longitude,RADIUS,null);
     }
 
     @Override
@@ -139,7 +161,7 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
     }
 
-    private void fetchProductsFromFirebase(double latitude, double longitude) {
+    private void fetchProductsFromFirebase(double latitude, double longitude,int distance,String category) {
         productsRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -149,8 +171,15 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
                     if (product != null) {
                         // Parse latLngLocation from the product
                         double[] productLatLng = LocationHelper.parseLatLngLocation(product.getLatLngLocation());
-                        if (productLatLng != null && isWithinRange(latitude, longitude, productLatLng[0], productLatLng[1])) {
-                            productList.add(product);
+                        if(category==null){
+                            if (productLatLng != null && isWithinRange(latitude, longitude, productLatLng[0], productLatLng[1],distance)) {
+                                productList.add(product);
+                            }
+                        }
+                        else {
+                            if (productLatLng != null && isWithinRange(latitude, longitude, productLatLng[0], productLatLng[1],distance)&&product.getCategory().equals(category)) {
+                                productList.add(product);
+                            }
                         }
                     }
                 }
@@ -165,9 +194,9 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         });
     }
 
-    private boolean isWithinRange(double userLat, double userLong, double productLat, double productLong) {
+    private boolean isWithinRange(double userLat, double userLong, double productLat, double productLong,int maxDistance) {
         double distance = calculateDistance(userLat, userLong, productLat, productLong);
-        return distance <= RADIUS;
+        return distance <= maxDistance;
     }
 
     private double calculateDistance(double lat1, double lon1, double lat2, double lon2) {
@@ -184,5 +213,9 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
     private void updateProductList(List<Product> productList) {
         // Update the UI with the filtered product list
         // use a RecyclerView to display the products
+        productRecyclerView = findViewById(R.id.productRecyclerView);
+        productRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        productAdapter = new ProductAdapter(productList);
+        productRecyclerView.setAdapter(productAdapter);
     }
 }
