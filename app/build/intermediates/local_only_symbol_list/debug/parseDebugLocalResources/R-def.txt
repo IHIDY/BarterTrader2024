@@ -49,7 +49,6 @@ id targetProductCategory
 id targetProductDescription
 id targetProductLocation
 id targetProductName
-id textView
 id textView2
 id textView3
 layout activity_confirmation_page

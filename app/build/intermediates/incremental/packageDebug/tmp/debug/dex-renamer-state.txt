@@ -1,12 +1,12 @@
-#Wed Mar 12 10:08:54 ADT 2025
-base.0=/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
-base.3=/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
-base.4=/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/dex/debug/mergeProjectDexDebug/2/classes.dex
-base.5=/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex
-base.6=/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
-base.7=/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
+#Wed Mar 12 15:38:27 ADT 2025
+base.0=C\:\\Users\\fredv\\AndroidStudioProjects\\group_8_csci_3130_winter\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\fredv\\AndroidStudioProjects\\group_8_csci_3130_winter\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\fredv\\AndroidStudioProjects\\group_8_csci_3130_winter\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
+base.3=C\:\\Users\\fredv\\AndroidStudioProjects\\group_8_csci_3130_winter\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+base.4=C\:\\Users\\fredv\\AndroidStudioProjects\\group_8_csci_3130_winter\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.5=C\:\\Users\\fredv\\AndroidStudioProjects\\group_8_csci_3130_winter\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
+base.6=C\:\\Users\\fredv\\AndroidStudioProjects\\group_8_csci_3130_winter\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.7=C\:\\Users\\fredv\\AndroidStudioProjects\\group_8_csci_3130_winter\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=10/classes.dex
