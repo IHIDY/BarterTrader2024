@@ -1,0 +1,597 @@
+03-12 10:05:18.406  8804  8903 I TestRunner: started: testSubmitOffer(com.example.group8_bartertrader.SubmitFormUITest)
+03-12 10:05:18.411  1070  3039 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+03-12 10:05:18.449  1152  1206 W AllAppsList: updatePromiseInstallInfo: no Activities matched updated package, removing all apps from package=com.example.group8_bartertrader.test
+03-12 10:05:18.455  8804  8903 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+03-12 10:05:18.469  8583  8706 I Finsky  : [51] acmn.h(12): Triggered update for experiment package com.google.android.finsky.stable.
+03-12 10:05:18.495  8583  8779 I PhClient: Unable to retrieve flag snapshot for com.google.android.gms.phenotype, using defaults.
+03-12 10:05:18.500   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:18.540   578   614 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@e95d0744 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+03-12 10:05:18.583  1479  2468 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[eeb3e96e-c936]>Handler" thread_id=63 ]
+03-12 10:05:18.593  1070  1089 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+03-12 10:05:18.593  1070  1089 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+03-12 10:05:18.593  8583  8719 W RegistrationCommon: Failed to create storageInfo for com.google.android.finsky.stable.
+03-12 10:05:18.593  8583  8719 W RegistrationCommon: com.google.android.gms.phenotype.core.common.PhenotypeException: 29514: Storage info not created for Play Store.
+03-12 10:05:18.593  8583  8719 W RegistrationCommon: 	at awbp.L(PG:1085)
+03-12 10:05:18.593  8583  8719 W RegistrationCommon: 	at asss.b(PG:91)
+03-12 10:05:18.593  8583  8719 W RegistrationCommon: 	at avwf.call(PG:225)
+03-12 10:05:18.593  8583  8719 W RegistrationCommon: 	at azzr.a(PG:3)
+03-12 10:05:18.593  8583  8719 W RegistrationCommon: 	at azyw.run(PG:19)
+03-12 10:05:18.593  8583  8719 W RegistrationCommon: 	at azzs.run(PG:5)
+03-12 10:05:18.593  8583  8719 W RegistrationCommon: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+03-12 10:05:18.593  8583  8719 W RegistrationCommon: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+03-12 10:05:18.593  8583  8719 W RegistrationCommon: 	at bavl.run(PG:59)
+03-12 10:05:18.593  8583  8719 W RegistrationCommon: 	at java.lang.Thread.run(Thread.java:1012)
+03-12 10:05:18.606  1479  2037 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=56 ]
+03-12 10:05:18.619  1152  1152 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=54, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }
+03-12 10:05:18.625  1479  2468 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=63 ]
+03-12 10:05:18.681   406   406 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+03-12 10:05:18.746  8583  8706 I Finsky  : [51] acmn.h(67): Already at the latest configurations for experiment package com.google.android.finsky.stable.
+03-12 10:05:18.747  8583  8706 I Finsky  : [51] acmn.h(12): Triggered update for experiment package com.google.android.finsky.regular.
+03-12 10:05:18.752  8583  8719 W RegistrationCommon: Failed to create storageInfo for com.google.android.finsky.regular.
+03-12 10:05:18.752  8583  8719 W RegistrationCommon: com.google.android.gms.phenotype.core.common.PhenotypeException: 29514: Storage info not created for Play Store.
+03-12 10:05:18.752  8583  8719 W RegistrationCommon: 	at awbp.L(PG:1085)
+03-12 10:05:18.752  8583  8719 W RegistrationCommon: 	at asss.b(PG:91)
+03-12 10:05:18.752  8583  8719 W RegistrationCommon: 	at avwf.call(PG:225)
+03-12 10:05:18.752  8583  8719 W RegistrationCommon: 	at azzr.a(PG:3)
+03-12 10:05:18.752  8583  8719 W RegistrationCommon: 	at azyw.run(PG:19)
+03-12 10:05:18.752  8583  8719 W RegistrationCommon: 	at azzs.run(PG:5)
+03-12 10:05:18.752  8583  8719 W RegistrationCommon: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+03-12 10:05:18.752  8583  8719 W RegistrationCommon: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+03-12 10:05:18.752  8583  8719 W RegistrationCommon: 	at bavl.run(PG:59)
+03-12 10:05:18.752  8583  8719 W RegistrationCommon: 	at java.lang.Thread.run(Thread.java:1012)
+03-12 10:05:18.781  8804  8804 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+03-12 10:05:18.793  8583  8718 I Finsky  : [63] luv.run(660): Initializing the instant apps module.
+03-12 10:05:18.811  1562  1569 W earchbox:search: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~JM8OWaVuNv5Lj4epjj6v4A==/com.android.chrome-a2J98Nnm_WUiNq3-s3-dFg==/Chrome.apk' with 1 weak references
+03-12 10:05:18.812  1562  1569 W earchbox:search: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~60BvoNWJfGPUUTfplqz7zA==/com.google.android.trichromelibrary_636771932-6Luxj_1PQiKoCS9Ya1Oa2w==/TrichromeLibrary.apk' with 1 weak references
+03-12 10:05:18.813  1562  1569 W earchbox:search: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk' with 1 weak references
+03-12 10:05:18.819  8804  8804 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@d2ee4da in: PRE_ON_CREATE
+03-12 10:05:18.819  8804  8804 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+03-12 10:05:18.831  1562  1569 W earchbox:search: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+03-12 10:05:18.872  8804  8804 D CompatChangeReporter: Compat change id reported: 309578419; UID 10220; state: ENABLED
+03-12 10:05:18.945  8804  8804 W p8_bartertrader: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+03-12 10:05:18.950   891  8380 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+03-12 10:05:18.953   891  8380 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=62
+03-12 10:05:18.953   891  8380 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+03-12 10:05:18.953   891  8380 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:333
+03-12 10:05:18.958  1070  1651 I FusedLocation: (REDACTED) location delivery to %s blocked - too close
+03-12 10:05:19.007  8804  8804 D CompatChangeReporter: Compat change id reported: 63938206; UID 10220; state: ENABLED
+03-12 10:05:19.123  7972  8008 D EGL_emulation: app_time_stats: avg=114208.88ms min=114208.88ms max=114208.88ms count=1
+03-12 10:05:19.130  8804  8804 D CompatChangeReporter: Compat change id reported: 303326708; UID 10220; state: ENABLED
+03-12 10:05:19.204  8583  8706 I Finsky  : [51] acmv.c(16): Regular flags synced
+03-12 10:05:19.207  8583  8706 I Finsky  : [51] acmi.i(61): Writing flags config, size 1.
+03-12 10:05:19.208  8583  8706 I Finsky  : [51] acmi.i(74): Started writing experiment flags into file [aSucwCtxtJ6lITygbDRR565BvzWpUAwL0xxdL_0XDRk].
+03-12 10:05:19.212  8583  8706 I Finsky  : [51] acmi.i(404): Finished writing experiment flags into file [aSucwCtxtJ6lITygbDRR565BvzWpUAwL0xxdL_0XDRk], numFlags=2288.
+03-12 10:05:19.219  8583  8706 I Finsky  : [51] acmn.g(63): Successfully applied new configurations for package com.google.android.finsky.regular.
+03-12 10:05:19.220  8583  8706 I Finsky  : [51] acmn.g(133): [EExp] Exporting experiments for package com.google.android.finsky.regular.
+03-12 10:05:19.220  8583  8706 I Finsky  : [51] aekq.i(25): [EExp] Exporting experiments for namespace com.google.android.finsky.regular.
+03-12 10:05:19.223  1070  3323 I cn_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@b753ca
+03-12 10:05:19.235  1070  8502 I FrewleTileCacheManagerV: (REDACTED) Fetched %d AP models from cache
+03-12 10:05:19.244  1070  2339 I ActivityScheduler: nextTriggerTime: 3498318, in 41133ms, detectorType: 39, FULL_TYPE alarmWindowMillis: 333
+03-12 10:05:19.254  7972  7972 D VRI[MapsActivity]: visibilityChanged oldVisibility=true newVisibility=false
+03-12 10:05:19.260  1423  2169 I AiAiTextClassifier: [VisualCortexAdapter]: provideRegistration: Registered Prominent Screen Entities for updates.
+03-12 10:05:19.280  1750  1750 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+03-12 10:05:19.284  8583  8706 I Finsky  : [51] acmn.g(187): [EExp] Successfully exported experiments for package com.google.android.finsky.regular.
+03-12 10:05:19.285  8583  8706 I Finsky  : [51] acmn.h(12): Triggered update for experiment package com.google.android.finsky.regular.
+03-12 10:05:19.287  8583  8720 W RegistrationCommon: Failed to create storageInfo for com.google.android.finsky.regular.
+03-12 10:05:19.287  8583  8720 W RegistrationCommon: com.google.android.gms.phenotype.core.common.PhenotypeException: 29514: Storage info not created for Play Store.
+03-12 10:05:19.287  8583  8720 W RegistrationCommon: 	at awbp.L(PG:1085)
+03-12 10:05:19.287  8583  8720 W RegistrationCommon: 	at asss.b(PG:91)
+03-12 10:05:19.287  8583  8720 W RegistrationCommon: 	at avwf.call(PG:225)
+03-12 10:05:19.287  8583  8720 W RegistrationCommon: 	at azzr.a(PG:3)
+03-12 10:05:19.287  8583  8720 W RegistrationCommon: 	at azyw.run(PG:19)
+03-12 10:05:19.287  8583  8720 W RegistrationCommon: 	at azzs.run(PG:5)
+03-12 10:05:19.287  8583  8720 W RegistrationCommon: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+03-12 10:05:19.287  8583  8720 W RegistrationCommon: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+03-12 10:05:19.287  8583  8720 W RegistrationCommon: 	at bavl.run(PG:59)
+03-12 10:05:19.287  8583  8720 W RegistrationCommon: 	at java.lang.Thread.run(Thread.java:1012)
+03-12 10:05:19.298  1750  1750 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+03-12 10:05:19.327  7972  8062 D EGL_emulation: app_time_stats: avg=1343.09ms min=1343.09ms max=1343.09ms count=1
+03-12 10:05:19.357  8583  8706 I Finsky  : [51] acmv.c(16): Regular flags synced
+03-12 10:05:19.363  8583  8706 I Finsky  : [51] acmi.i(61): Writing flags config, size 1.
+03-12 10:05:19.363  8583  8706 I Finsky  : [51] acmi.i(74): Started writing experiment flags into file [4dEVOh7DlClE42ly_19Hs7FqnnFOj9O0dm-zzWqGxeo].
+03-12 10:05:19.365  8583  8706 I Finsky  : [51] acmi.i(404): Finished writing experiment flags into file [4dEVOh7DlClE42ly_19Hs7FqnnFOj9O0dm-zzWqGxeo], numFlags=2280.
+03-12 10:05:19.365  8804  8804 D FirebaseAuth: Notifying id token listeners about user ( TXImQm98VlUgP7vwEb6X5K6gyju2 ).
+03-12 10:05:19.392  8583  8592 I android.vending: Compiler allocated 4970KB to compile asqr asso.b(android.content.Context, asrt)
+03-12 10:05:19.409  8804  8804 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@d2ee4da in: CREATED
+03-12 10:05:19.410  8804  8804 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.group8_bartertrader.SubmitForm@d2ee4da
+03-12 10:05:19.412  8583  8706 I Finsky  : [51] acmn.g(63): Successfully applied new configurations for package com.google.android.finsky.regular.
+03-12 10:05:19.446  8804  8804 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@d2ee4da in: STARTED
+03-12 10:05:19.446  8804  8804 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.group8_bartertrader.SubmitForm@d2ee4da
+03-12 10:05:19.462  8804  8804 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@d2ee4da in: RESUMED
+03-12 10:05:19.463  8804  8804 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.group8_bartertrader.SubmitForm@d2ee4da
+03-12 10:05:19.506  8804  8804 W HWUI    : Unknown dataspace 0
+03-12 10:05:19.512  8804  8916 W p8_bartertrader: Verification of android.content.Intent com.google.android.gms.common.internal.zzo.zzb(android.content.Context) took 141.770ms (1340.19 bytecodes/s) (6544B approximate peak alloc)
+03-12 10:05:19.569  8804  8913 E p8_bartertrader: No package ID 76 found for resource ID 0x760b000f.
+03-12 10:05:19.570  8804  8913 E p8_bartertrader: No package ID 76 found for resource ID 0x760b000f.
+03-12 10:05:19.634  8804  8913 I FA      : App measurement initialized, version: 118001
+03-12 10:05:19.638  8804  8913 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+03-12 10:05:19.638  8804  8913 I FA      : To enable faster debug mode event logging run:
+03-12 10:05:19.638  8804  8913 I FA      :   adb shell setprop debug.firebase.analytics.app com.example.group8_bartertrader
+03-12 10:05:19.644  8804  8907 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+03-12 10:05:19.645  8804  8907 I EGL_emulation: Opening libGLESv2_emulation.so
+03-12 10:05:19.741  8804  8907 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+03-12 10:05:19.742  8804  8907 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+03-12 10:05:19.773   363   363 I Zygote  : Process 7408 exited due to signal 9 (Killed)
+03-12 10:05:19.777  1423  1943 I AiAiEcho: EchoSearch: WidgetFetcherImpl is initialized with [33] widgets [reason=package added for userId: 0]
+03-12 10:05:19.804   578   640 I libprocessgroup: Removed cgroup /sys/fs/cgroup/uid_10146/pid_7408
+03-12 10:05:19.811  8804  8924 D TrafficStats: tagSocket(127) with statsTag=0xffffffff, statsUid=-1
+03-12 10:05:19.864   161   161 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+03-12 10:05:19.866  8804  8907 I Gralloc4: mapper 4.x is not supported
+03-12 10:05:19.873  8583  8713 I Finsky  : [58] luv.run(183): Component class com.google.android.finsky.wearsupport.WearSupportService disabled via PackageManager.
+03-12 10:05:19.873  8583  8713 I Finsky  : [58] luv.run(183): Component class com.google.android.finsky.wearsupport.WearChangeListenerService disabled via PackageManager.
+03-12 10:05:19.949   891  8380 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+03-12 10:05:19.953   891  8380 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=62
+03-12 10:05:19.953   891  8380 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+03-12 10:05:19.953   891  8380 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:333
+03-12 10:05:19.958  1070  1651 I FusedLocation: (REDACTED) location delivery to %s blocked - too close
+03-12 10:05:19.969  1070  8640 E ctxmgr  : [WorkManager] Ongoing task not found: SingletonLocationProducer_onLocationChanged [CONTEXT service_id=47 ]
+03-12 10:05:20.078  2433  3725 E adservices.measurement: Consent notification has not been displayed.
+03-12 10:05:20.089  8804  8804 I Choreographer: Skipped 31 frames!  The application may be doing too much work on its main thread.
+03-12 10:05:20.098  2433  3729 W adservices: Skip logging because Cobalt logger is null
+03-12 10:05:20.131   578   628 W ziparchive: Unable to open '/data/app/~~oS_njde5K7Oc0SDHjGyumw==/com.example.group8_bartertrader-HBgp_eRoRNG1J8_jk48deg==/base.dm': No such file or directory
+03-12 10:05:20.176   858   943 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@f93167b
+03-12 10:05:20.192   578  1820 W InputManager-JNI: Input channel object '9ebb333 Splash Screen com.example.group8_bartertrader (client)' was disposed without first being removed with the input manager!
+03-12 10:05:20.192   578   628 I ActivityTaskManager: Displayed com.example.group8_bartertrader/.SubmitForm for user 0: +1s601ms
+03-12 10:05:20.221  1070  2628 I FontLog : (REDACTED) Received query %s, URI %s
+03-12 10:05:20.255  1070  2628 I FontLog : (REDACTED) Query [%s] resolved to %s
+03-12 10:05:20.264   578   721 I ImeTracker: com.example.group8_bartertrader:ef8c6194: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+03-12 10:05:20.264   578   721 I ImeTracker: com.example.group8_bartertrader:ef8c6194: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-12 10:05:20.307  8804  8903 I FirebaseAuth: Logging in as testreset@gmail.com with empty reCAPTCHA token
+03-12 10:05:20.329  1070  2628 I FontLog : (REDACTED) Fetch %s end status %s
+03-12 10:05:20.381  1070  2628 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+03-12 10:05:20.473  1070  3039 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+03-12 10:05:20.474   891  8380 D android.hardware.gnss-service.ranchu: GnssHwConn:workerThread:119
+03-12 10:05:20.484   578   628 W AlarmManager: Unrecognized alarm listener com.android.server.location.gnss.GnssLocationProvider$$ExternalSyntheticLambda14@1f4d059
+03-12 10:05:20.485   578   628 W AlarmManager: Unrecognized alarm listener com.android.server.location.gnss.GnssLocationProvider$$ExternalSyntheticLambda13@a8e041e
+03-12 10:05:20.552   891  8942 D android.hardware.gnss-service.ranchu: GnssHwConn:workerThread:70
+03-12 10:05:20.552   891  8942 D android.hardware.gnss-service.ranchu: GnssHwConn:workerThread:119
+03-12 10:05:20.554   578   628 W AlarmManager: Unrecognized alarm listener com.android.server.location.gnss.GnssLocationProvider$$ExternalSyntheticLambda14@1f4d059
+03-12 10:05:20.554   578   628 W AlarmManager: Unrecognized alarm listener com.android.server.location.gnss.GnssLocationProvider$$ExternalSyntheticLambda13@a8e041e
+03-12 10:05:20.556   891  8943 D android.hardware.gnss-service.ranchu: GnssHwConn:workerThread:70
+03-12 10:05:20.564  1339  1339 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157
+03-12 10:05:20.623  8804  8939 W System  : Ignoring header X-Firebase-Locale because its value was null.
+03-12 10:05:20.632  1070  8608 I FusedLocation: (REDACTED) stationary throttling engaged @%s
+03-12 10:05:20.721  1339  1339 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+03-12 10:05:20.729  1339  1339 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.example.group8_bartertrader, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+03-12 10:05:20.736  1339  1339 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+03-12 10:05:20.795   858  1002 D EGL_emulation: app_time_stats: avg=18094.39ms min=18094.39ms max=18094.39ms count=1
+03-12 10:05:20.805  1339  1339 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password, password
+03-12 10:05:20.814  1070  8612 I FusedOrientationManager: Unregistering orientation client. [CONTEXT service_id=6 ]
+03-12 10:05:20.837  1070  8500 I FusedOrientationManager: Unregistering orientation client. [CONTEXT service_id=6 ]
+03-12 10:05:20.954   891  8943 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+03-12 10:05:20.955   891  8943 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=62
+03-12 10:05:20.955   891  8943 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+03-12 10:05:20.955   891  8943 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+03-12 10:05:21.031  7972  7977 W droid.apps.maps: Suspending all threads took: 8.407ms
+03-12 10:05:21.040  1070  8640 I FrewleTileCacheManagerV: (REDACTED) Fetched %d AP models from cache
+03-12 10:05:21.084  1070  1981 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+03-12 10:05:21.084  1070  1981 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+03-12 10:05:21.089  8804  8939 D TrafficStats: tagSocket(152) with statsTag=0xffffffff, statsUid=-1
+03-12 10:05:21.094  8804  8913 I FA      : Tag Manager is not found and thus will not be used
+03-12 10:05:21.151  1750  8922 D AdvertisingIdClient: AdvertisingIdClient already created.
+03-12 10:05:21.151  1750  8922 D AdvertisingIdClient: AdvertisingIdClient is not bounded. Starting to bind it...
+03-12 10:05:21.174  1750  8922 D AdvertisingIdClient: AdvertisingIdClient is bounded
+03-12 10:05:21.204   578  1658 D FileUtils: Rounded bytes from 7597248512 to 8000000000
+03-12 10:05:21.213  1070  3323 I cn_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@dea8006
+03-12 10:05:21.231  1070  8383 I FrewleTileCacheManagerV: (REDACTED) Fetched %d AP models from cache
+03-12 10:05:21.233  1750  8922 I AdvertisingIdClient: shouldSendLog 2566071
+03-12 10:05:21.233  1750  8922 I AdvertisingIdClient: GetInfoInternal elapse 82ms
+03-12 10:05:21.249  1070  2339 I ActivityScheduler: nextTriggerTime: 3556418, in 97228ms, detectorType: 39, FULL_TYPE alarmWindowMillis: 80000
+03-12 10:05:21.285   891  8943 D android.hardware.gnss-service.ranchu: GnssHwConn:workerThread:119
+03-12 10:05:21.287   578   628 W AlarmManager: Unrecognized alarm listener com.android.server.location.gnss.GnssLocationProvider$$ExternalSyntheticLambda14@1f4d059
+03-12 10:05:21.287   578   628 W AlarmManager: Unrecognized alarm listener com.android.server.location.gnss.GnssLocationProvider$$ExternalSyntheticLambda13@a8e041e
+03-12 10:05:21.323  7972  8908 I FA      : Application backgrounded at: timestamp_millis: 1741784719280
+03-12 10:05:21.326  1070  8383 I FrewleTileCacheManagerV: (REDACTED) Fetched %d AP models from cache
+03-12 10:05:21.363  1070  3039 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+03-12 10:05:21.364  1070  3039 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+03-12 10:05:21.438  8804  8939 W System  : Ignoring header X-Firebase-Locale because its value was null.
+03-12 10:05:21.479  1070  3323 I cn_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@7f552bc
+03-12 10:05:21.484  1070  8640 I FrewleTileCacheManagerV: (REDACTED) Fetched %d AP models from cache
+03-12 10:05:21.504  1070  2339 I ActivityScheduler: nextTriggerTime: 3556418, in 96972ms, detectorType: 39, FULL_TYPE alarmWindowMillis: 80000
+03-12 10:05:21.535   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:21.566  1479  2037 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=56 ]
+03-12 10:05:21.576  1479  2468 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[eeb3e96e-c936]>Handler" thread_id=63 ]
+03-12 10:05:21.616  8804  8939 D FirebaseAuth: Notifying id token listeners about user ( TXImQm98VlUgP7vwEb6X5K6gyju2 ).
+03-12 10:05:21.618  1479  2468 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=63 ]
+03-12 10:05:21.627  8804  8804 D FirebaseTest: Test user signed in: testreset@gmail.com
+03-12 10:05:21.642  8804  8813 I p8_bartertrader: Compiler allocated 4206KB to compile void android.widget.TextView.<init>(android.content.Context, android.util.AttributeSet, int, int)
+03-12 10:05:21.796  1070  3039 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+03-12 10:05:21.797  1070  3039 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+03-12 10:05:21.871  8804  8813 I p8_bartertrader: Compiler allocated 5250KB to compile void android.view.ViewRootImpl.performTraversals()
+03-12 10:05:22.323  7972  7977 I droid.apps.maps: Background concurrent mark compact GC freed 13MB AllocSpace bytes, 246(12MB) LOS objects, 44% free, 29MB/53MB, paused 15.243ms,31.968ms total 3.440s
+03-12 10:05:22.785  1362  1405 I .apps.wellbeing: Waiting for a blocking GC ProfileSaver
+03-12 10:05:22.824  1362  1405 I .apps.wellbeing: WaitForGcToComplete blocked ProfileSaver on Background for 39.232ms
+03-12 10:05:22.825  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+03-12 10:05:22.826  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationCorner/DisplayCutoutEmulationCornerOverlay.apk' with 1 weak references
+03-12 10:05:22.826  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.extservices/priv-app/GoogleExtServices@350820300/GoogleExtServices.apk' with 1 weak references
+03-12 10:05:22.826  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationDouble/DisplayCutoutEmulationDoubleOverlay.apk' with 1 weak references
+03-12 10:05:22.826  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/TelephonyProvider/TelephonyProvider.apk' with 1 weak references
+03-12 10:05:22.827  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/TelephonyProvider__sdk_gphone64_arm64__auto_generated_rro_product.apk' with 1 weak references
+03-12 10:05:22.827  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DynamicSystemInstallationService/DynamicSystemInstallationService.apk' with 1 weak references
+03-12 10:05:22.827  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+03-12 10:05:22.829  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/CalendarProvider/CalendarProvider.apk' with 1 weak references
+03-12 10:05:22.829  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk' with 1 weak references
+03-12 10:05:22.829  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/GoogleExtShared/GoogleExtShared.apk' with 1 weak references
+03-12 10:05:22.829  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/ExternalStorageProvider/ExternalStorageProvider.apk' with 1 weak references
+03-12 10:05:22.829  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/HTMLViewer/HTMLViewer.apk' with 1 weak references
+03-12 10:05:22.830  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CompanionDeviceManager/CompanionDeviceManager.apk' with 1 weak references
+03-12 10:05:22.830  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DownloadProvider/DownloadProvider.apk' with 1 weak references
+03-12 10:05:22.830  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+03-12 10:05:22.831  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+03-12 10:05:22.831  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.mediaprovider/priv-app/MediaProviderGoogle@350820300/MediaProviderGoogle.apk' with 1 weak references
+03-12 10:05:22.832  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+03-12 10:05:22.832  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DownloadProviderUi/DownloadProviderUi.apk' with 1 weak references
+03-12 10:05:22.832  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.wifi/app/OsuLoginGoogle@350820300/OsuLoginGoogle.apk' with 1 weak references
+03-12 10:05:22.832  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~i5KSTgIddrlwE5vM6hyDPQ==/com.android.vending--5lHrfQ3k_vPIINMpbiY4w==/base.apk' with 1 weak references
+03-12 10:05:22.833  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~i5KSTgIddrlwE5vM6hyDPQ==/com.android.vending--5lHrfQ3k_vPIINMpbiY4w==/split_config.arm64_v8a.apk' with 1 weak references
+03-12 10:05:22.833  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~i5KSTgIddrlwE5vM6hyDPQ==/com.android.vending--5lHrfQ3k_vPIINMpbiY4w==/split_config.en.apk' with 1 weak references
+03-12 10:05:22.833  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~i5KSTgIddrlwE5vM6hyDPQ==/com.android.vending--5lHrfQ3k_vPIINMpbiY4w==/split_phonesky_data_loader.apk' with 1 weak references
+03-12 10:05:22.833  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~i5KSTgIddrlwE5vM6hyDPQ==/com.android.vending--5lHrfQ3k_vPIINMpbiY4w==/split_phonesky_data_loader.config.arm64_v8a.apk' with 1 weak references
+03-12 10:05:22.833  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/PacProcessor/PacProcessor.apk' with 1 weak references
+03-12 10:05:22.833  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/SimAppDialog/SimAppDialog.apk' with 1 weak references
+03-12 10:05:22.833  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/SimAppDialog__sdk_gphone64_arm64__auto_generated_rro_product.apk' with 1 weak references
+03-12 10:05:22.834  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.adservices/priv-app/AdServicesApkGoogle@350820260/AdServicesApkGoogle.apk' with 1 weak references
+03-12 10:05:22.835  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationHole/DisplayCutoutEmulationHoleOverlay.apk' with 1 weak references
+03-12 10:05:22.836  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationTall/DisplayCutoutEmulationTallOverlay.apk' with 1 weak references
+03-12 10:05:22.836  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CertInstaller/CertInstaller.apk' with 1 weak references
+03-12 10:05:22.836  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+03-12 10:05:22.837  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+03-12 10:05:22.837  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk' with 1 weak references
+03-12 10:05:22.837  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Camera2/Camera2.apk' with 1 weak references
+03-12 10:05:22.837  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/EasterEgg/EasterEgg.apk' with 1 weak references
+03-12 10:05:22.837  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/MtpService/MtpService.apk' with 1 weak references
+03-12 10:05:22.837  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.nfcservices/priv-app/NfcNciApexGoogle@AE3A.240806.036/NfcNciApexGoogle.apk' with 1 weak references
+03-12 10:05:22.838  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/Stk/Stk.apk' with 1 weak references
+03-12 10:05:22.838  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+03-12 10:05:22.838  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/NavigationBarMode2Button/NavigationBarMode2ButtonOverlay.apk' with 1 weak references
+03-12 10:05:22.838  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+03-12 10:05:22.839  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+03-12 10:05:22.840  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.permission/priv-app/GooglePermissionController@350820360/GooglePermissionController.apk' with 1 weak references
+03-12 10:05:22.840  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/GooglePermissionControllerOverlay.apk' with 1 weak references
+03-12 10:05:22.841  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.btservices/app/BluetoothGoogle@342010060/BluetoothGoogle.apk' with 1 weak references
+03-12 10:05:22.841  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/SettingsProvider/SettingsProvider.apk' with 1 weak references
+03-12 10:05:22.841  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/LargeScreenSettingsProviderOverlay.apk' with 1 weak references
+03-12 10:05:22.841  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/SettingsProvider__sdk_gphone64_arm64__auto_generated_rro_product.apk' with 1 weak references
+03-12 10:05:22.841  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/PrintSpooler/PrintSpooler.apk' with 1 weak references
+03-12 10:05:22.841  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/BasicDreams/BasicDreams.apk' with 1 weak references
+03-12 10:05:22.841  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02/DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02.apk' with 1 weak references
+03-12 10:05:22.841  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/InputDevices/InputDevices.apk' with 1 weak references
+03-12 10:05:22.841  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.devicelock/priv-app/DeviceLockControllerGoogle@AE3A.240806.036/DeviceLockControllerGoogle.apk' with 1 weak references
+03-12 10:05:22.842  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+03-12 10:05:22.842  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/BuiltInPrintService/BuiltInPrintService.apk' with 1 weak references
+03-12 10:05:22.842  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/BuiltInPrintService__sdk_gphone64_arm64__auto_generated_rro_product.apk' with 1 weak references
+03-12 10:05:22.842  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk' with 1 weak references
+03-12 10:05:22.842  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/MusicFX/MusicFX.apk' with 1 weak references
+03-12 10:05:22.842  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+03-12 10:05:22.842  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+03-12 10:05:22.843  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/ModuleMetadataGoogle/ModuleMetadataGoogle.apk' with 1 weak references
+03-12 10:05:22.843  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationEmu01/DisplayCutoutEmulationEmu01Overlay.apk' with 1 weak references
+03-12 10:05:22.843  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/AvatarPickerGoogle/AvatarPickerGoogle.apk' with 1 weak references
+03-12 10:05:22.843  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/MarkupGoogle_v2/MarkupGoogle_v2.apk' with 1 weak references
+03-12 10:05:22.843  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk' with 1 weak references
+03-12 10:05:22.843  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.rkpd/priv-app/rkpdapp.google@350820300/rkpdapp.google.apk' with 1 weak references
+03-12 10:05:22.843  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~wk07ODJeaZ2txtBFKZEEAA==/com.google.android.contactkeys-qanOnZlLjNSSVK7wyQSoEQ==/base.apk' with 1 weak references
+03-12 10:05:22.844  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleContacts/GoogleContacts.apk' with 1 weak references
+03-12 10:05:22.844  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/Telecom/Telecom.apk' with 1 weak references
+03-12 10:05:22.844  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/Telecom__sdk_gphone64_arm64__auto_generated_rro_product.apk' with 1 weak references
+03-12 10:05:22.844  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/KeyChain/KeyChain.apk' with 1 weak references
+03-12 10:05:22.844  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~JM8OWaVuNv5Lj4epjj6v4A==/com.android.chrome-a2J98Nnm_WUiNq3-s3-dFg==/Chrome.apk' with 1 weak references
+03-12 10:05:22.845  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~60BvoNWJfGPUUTfplqz7zA==/com.google.android.trichromelibrary_636771932-6Luxj_1PQiKoCS9Ya1Oa2w==/TrichromeLibrary.apk' with 1 weak references
+03-12 10:05:22.845  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk' with 1 weak references
+03-12 10:05:22.845  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PixelThemesStub/PixelThemesStub.apk' with 1 weak references
+03-12 10:05:22.845  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk' with 1 weak references
+03-12 10:05:22.845  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/TagGoogle/TagGoogle.apk' with 1 weak references
+03-12 10:05:22.845  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+03-12 10:05:22.846  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/CallLogBackup/CallLogBackup.apk' with 1 weak references
+03-12 10:05:22.846  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk' with 1 weak references
+03-12 10:05:22.846  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CameraExtensionsProxy/CameraExtensionsProxy.apk' with 1 weak references
+03-12 10:05:22.846  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/NexusWallpapersStubPrebuilt2018/NexusWallpapersStubPrebuilt2018.apk' with 1 weak references
+03-12 10:05:22.846  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk' with 1 weak references
+03-12 10:05:22.847  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CarrierDefaultApp/CarrierDefaultApp.apk' with 1 weak references
+03-12 10:05:22.847  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/CredentialManager/CredentialManager.apk' with 1 weak references
+03-12 10:05:22.847  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/FontNotoSerifSource/FontNotoSerifSourceOverlay.apk' with 1 weak references
+03-12 10:05:22.847  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DeviceAsWebcam/DeviceAsWebcam.apk' with 1 weak references
+03-12 10:05:22.847  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/ProxyHandler/ProxyHandler.apk' with 1 weak references
+03-12 10:05:22.847  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.permission/priv-app/GoogleSafetyCenterResources@350820360/GoogleSafetyCenterResources.apk' with 1 weak references
+03-12 10:05:22.847  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationWaterfall/DisplayCutoutEmulationWaterfallOverlay.apk' with 1 weak references
+03-12 10:05:22.847  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/IntentResolver/IntentResolver.apk' with 1 weak references
+03-12 10:05:22.848  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/TransparentNavigationBar/TransparentNavigationBarOverlay.apk' with 1 weak references
+03-12 10:05:22.848  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/E2eeContactKeysProvider/E2eeContactKeysProvider.apk' with 1 weak references
+03-12 10:05:22.848  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.tethering/priv-app/ServiceConnectivityResourcesGoogle@350820300/ServiceConnectivityResourcesGoogle.apk' with 1 weak references
+03-12 10:05:22.848  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/goldfish_overlay_connectivity_google.apk' with 1 weak references
+03-12 10:05:22.848  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk' with 1 weak references
+03-12 10:05:22.848  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk' with 1 weak references
+03-12 10:05:22.848  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+03-12 10:05:22.849  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+03-12 10:05:22.849  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/ManagedProvisioning/ManagedProvisioning.apk' with 1 weak references
+03-12 10:05:22.849  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/SoundPicker/SoundPicker.apk' with 1 weak references
+03-12 10:05:22.849  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk' with 1 weak references
+03-12 10:05:22.849  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~oS_njde5K7Oc0SDHjGyumw==/com.example.group8_bartertrader-HBgp_eRoRNG1J8_jk48deg==/base.apk' with 1 weak references
+03-12 10:05:22.850  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGoogleTelemetryTvp/PrebuiltGoogleTelemetryTvp.apk' with 1 weak references
+03-12 10:05:22.850  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/MultiDisplayProvider/MultiDisplayProvider.apk' with 1 weak references
+03-12 10:05:22.850  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DeviceDiagnostics/DeviceDiagnostics.apk' with 1 weak references
+03-12 10:05:22.850  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/DeviceDiagnostics__sdk_gphone64_arm64__auto_generated_rro_product.apk' with 1 weak references
+03-12 10:05:22.850  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/NotesRoleEnabled/NotesRoleEnabledOverlay.apk' with 1 weak references
+03-12 10:05:22.850  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/LiveWallpapersPicker/LiveWallpapersPicker.apk' with 1 weak references
+03-12 10:05:22.850  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGoogleAdservicesTvp/PrebuiltGoogleAdservicesTvp.apk' with 1 weak references
+03-12 10:05:22.850  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.healthfitness/priv-app/HealthConnectControllerGoogle@350820300/HealthConnectControllerGoogle.apk' with 1 weak references
+03-12 10:05:22.851  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/KidsSupervisionStub/KidsSupervisionStub.apk' with 1 weak references
+03-12 10:05:22.851  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/StorageManager/StorageManager.apk' with 1 weak references
+03-12 10:05:22.851  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/StorageManager__sdk_gphone64_arm64__auto_generated_rro_product.apk' with 1 weak references
+03-12 10:05:22.851  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/BookmarkProvider/BookmarkProvider.apk' with 1 weak references
+03-12 10:05:22.851  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/SettingsGoogle/SettingsGoogle.apk' with 1 weak references
+03-12 10:05:22.853  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/SettingsGoogle__sdk_gphone64_arm64__auto_generated_rro_product.apk' with 1 weak references
+03-12 10:05:22.853  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~YjQbkJP4U12Yq9kyX2Vetg==/com.google.android.safetycore-T-qniTQHwY3Qd8Tz2HxmpA==/base.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.uwb/priv-app/ServiceUwbResourcesGoogle@350820300/ServiceUwbResourcesGoogle.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.wifi/priv-app/ServiceWifiResourcesGoogle@350820300/ServiceWifiResourcesGoogle.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/ThemePicker/ThemePicker.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/WallpaperPickerGoogleRelease/WallpaperPickerGoogleRelease.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/OdadPrebuilt/OdadPrebuilt.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/TeleService/TeleService.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/TeleService__sdk_gphone64_arm64__auto_generated_rro_vendor.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/TeleService__sdk_gphone64_arm64__auto_generated_rro_product.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/Shell/Shell.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/BlockedNumberProvider/BlockedNumberProvider.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/UserDictionaryProvider/UserDictionaryProvider.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/app/EmergencyInfoGoogleNoUi/EmergencyInfoGoogleNoUi.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/FusedLocation/FusedLocation.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/SystemUIGoogle__sdk_gphone64_arm64__auto_generated_rro_vendor.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/SystemUIGoogle__sdk_gphone64_arm64__auto_generated_rro_product.apk' with 1 weak references
+03-12 10:05:22.854  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/SystemUIEmulationPixel9/SystemUIEmulationPixel9Overlay.apk' with 1 weak references
+03-12 10:05:22.855  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk' with 1 weak references
+03-12 10:05:22.855  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/BluetoothMidiService/BluetoothMidiService.apk' with 1 weak references
+03-12 10:05:22.855  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/Traceur/Traceur.apk' with 1 weak references
+03-12 10:05:22.855  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.cellbroadcast/priv-app/GoogleCellBroadcastApp@350820300/GoogleCellBroadcastApp.apk' with 1 weak references
+03-12 10:05:22.855  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/ContactsProvider/ContactsProvider.apk' with 1 weak references
+03-12 10:05:22.855  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/ContactsProvider__sdk_gphone64_arm64__auto_generated_rro_product.apk' with 1 weak references
+03-12 10:05:22.855  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+03-12 10:05:22.855  1362  1377 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleRestorePrebuilt-v526684/GoogleRestorePrebuilt-v526684.apk' with 1 weak references
+03-12 10:05:23.381  8804  8903 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+03-12 10:05:23.391   578   835 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@e95d0744 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+03-12 10:05:23.428  8804  8804 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@d2ee4da in: PAUSED
+03-12 10:05:23.428  8804  8804 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.group8_bartertrader.SubmitForm@d2ee4da
+03-12 10:05:23.428  8804  8804 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity=com.example.group8_bartertrader.SubmitForm@d2ee4da
+03-12 10:05:23.447   406   406 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+03-12 10:05:23.475  8804  8804 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@23c09a7 in: PRE_ON_CREATE
+03-12 10:05:23.475  8804  8804 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity.getIntent()=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity=com.example.group8_bartertrader.SubmitForm@23c09a7
+03-12 10:05:23.475  8804  8804 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+03-12 10:05:23.476   578   762 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-12 10:05:23.476   578   762 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-12 10:05:23.477   578   762 D InetDiagMessage: Destroyed live tcp sockets for uids={10143} in 1ms
+03-12 10:05:23.477   578   762 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-12 10:05:23.477   578   762 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-12 10:05:23.477   578   762 D InetDiagMessage: Destroyed live tcp sockets for uids={20143} in 1ms
+03-12 10:05:23.523  8804  8814 I p8_bartertrader: Background concurrent mark compact GC freed 4782KB AllocSpace bytes, 27(796KB) LOS objects, 49% free, 5307KB/10MB, paused 209us,5.959ms total 82.561ms
+03-12 10:05:23.544  8804  8804 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@23c09a7 in: CREATED
+03-12 10:05:23.544  8804  8804 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity.getIntent()=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity=com.example.group8_bartertrader.SubmitForm@23c09a7
+03-12 10:05:23.544  8804  8804 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.group8_bartertrader.SubmitForm@23c09a7
+03-12 10:05:23.546  8804  8804 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@23c09a7 in: STARTED
+03-12 10:05:23.546  8804  8804 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity.getIntent()=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity=com.example.group8_bartertrader.SubmitForm@23c09a7
+03-12 10:05:23.546  8804  8804 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.group8_bartertrader.SubmitForm@23c09a7
+03-12 10:05:23.548  8804  8804 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@23c09a7 in: RESUMED
+03-12 10:05:23.549  8804  8804 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity.getIntent()=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity=com.example.group8_bartertrader.SubmitForm@23c09a7
+03-12 10:05:23.549  8804  8804 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.group8_bartertrader.SubmitForm@23c09a7
+03-12 10:05:23.557  8804  8804 D VRI[SubmitForm]: visibilityChanged oldVisibility=true newVisibility=false
+03-12 10:05:23.595   858  1002 D EGL_emulation: app_time_stats: avg=933.14ms min=10.79ms max=2573.64ms count=3
+03-12 10:05:23.616   578   628 I ActivityTaskManager: Displayed com.example.group8_bartertrader/.SubmitForm for user 0: +227ms
+03-12 10:05:23.629  8804  8804 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@d2ee4da in: STOPPED
+03-12 10:05:23.630  8804  8804 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.example.group8_bartertrader.SubmitForm@d2ee4da
+03-12 10:05:23.630  8804  8804 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity=com.example.group8_bartertrader.SubmitForm@d2ee4da
+03-12 10:05:23.632  8804  8903 W SurfaceComposerClient: Sync transaction timed out waiting for commit callback.
+03-12 10:05:23.639   858   943 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@c501b04
+03-12 10:05:23.640   578   835 W InputManager-JNI: Input channel object '3d6d88 Splash Screen com.example.group8_bartertrader (client)' was disposed without first being removed with the input manager!
+03-12 10:05:23.642  8804  8804 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@d2ee4da in: DESTROYED
+03-12 10:05:23.642  8804  8804 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+03-12 10:05:23.643  8804  8804 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity=com.example.group8_bartertrader.SubmitForm@d2ee4da
+03-12 10:05:23.643  8804  8804 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@e4de809
+03-12 10:05:23.646   578  1658 W InputManager-JNI: Input channel object '18c78b9 com.example.group8_bartertrader/com.example.group8_bartertrader.SubmitForm (client)' was disposed without first being removed with the input manager!
+03-12 10:05:23.654   578   721 I ImeTracker: com.example.group8_bartertrader:fa6618ab: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+03-12 10:05:23.654   578   721 I ImeTracker: com.example.group8_bartertrader:fa6618ab: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-12 10:05:23.670  1339  1339 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157
+03-12 10:05:23.678  1339  1339 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+03-12 10:05:23.678  1339  1339 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.example.group8_bartertrader, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+03-12 10:05:23.678  1339  1339 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+03-12 10:05:23.679  1339  1339 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password, password
+03-12 10:05:23.684  8804  8903 I UiAutomation: Initialized for user 0 on display 0
+03-12 10:05:23.742   578   578 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:23.742   578   578 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:23.742   578   578 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:23.746   578   578 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:23.746   578   578 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:23.746   578   578 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:23.751   578   578 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:23.751   578   578 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:23.751   578   578 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:23.753  1423  4347 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+03-12 10:05:23.788  1423  1675 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+03-12 10:05:23.789  1423  1675 I AiAiEcho: EchoTargets:
+03-12 10:05:23.789  1423  1675 I AiAiEcho: Filtered by AiAi flag check:
+03-12 10:05:23.789  1423  1675 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+03-12 10:05:23.789  1423  1675 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+03-12 10:05:23.789  1423  1675 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+03-12 10:05:23.789  1423  1675 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+03-12 10:05:23.789  1423  1675 I AiAiEcho: EchoTargets:
+03-12 10:05:23.789  1423  1675 I AiAiEcho: Filtered by AiAi flag check:
+03-12 10:05:23.789  1423  1675 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+03-12 10:05:23.789  1423  1675 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+03-12 10:05:23.789  1423  1675 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+03-12 10:05:23.789  1423  1675 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+03-12 10:05:23.789  1423  1675 I AiAiEcho: EchoTargets:
+03-12 10:05:23.789  1423  1675 I AiAiEcho: Filtered by AiAi flag check:
+03-12 10:05:23.789  1423  1675 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+03-12 10:05:23.789  1423  1675 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+03-12 10:05:23.789  1423  1675 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+03-12 10:05:23.823  1423  1675 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+03-12 10:05:23.823  1423  1675 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+03-12 10:05:23.823  1423  1675 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+03-12 10:05:23.850  8804  8965 D ProfileInstaller: Installing profile for com.example.group8_bartertrader
+03-12 10:05:23.930   858   858 D SsMediaDataProvider: Forwarding Smartspace updates []
+03-12 10:05:23.930   858   858 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+03-12 10:05:23.945  8804  8903 W FileTestStorage: Output properties is not supported.
+03-12 10:05:23.959  8804  8903 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+03-12 10:05:23.963  8804  8903 D EventInjectionStrategy: Creating injection strategy with input manager.
+03-12 10:05:23.963  8804  8903 W p8_bartertrader: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (unsupported, reflection, allowed)
+03-12 10:05:23.972  8804  8903 W p8_bartertrader: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (unsupported, reflection, allowed)
+03-12 10:05:23.972  8804  8903 W p8_bartertrader: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (unsupported, reflection, allowed)
+03-12 10:05:23.979  8804  8804 W p8_bartertrader: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (unsupported, reflection, allowed)
+03-12 10:05:23.979  8804  8804 W p8_bartertrader: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (unsupported, reflection, allowed)
+03-12 10:05:23.979  8804  8804 W p8_bartertrader: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (unsupported, reflection, allowed)
+03-12 10:05:23.982  8804  8804 I ViewInteraction: Performing 'replace text(Test Offer Item)' action on view view.getId() is <2131296652/com.example.group8_bartertrader:id/productName>
+03-12 10:05:24.037  8724  8834 I Finsky:background: [52] pfw.d(124): playLoggingServerUrl: https://play.googleapis.com/play/log
+03-12 10:05:24.037  8724  8834 I Finsky:background: [52] pfw.d(143): playLoggingServerTimestampUrl: https://play.googleapis.com/play/log/timestamp
+03-12 10:05:24.047  8804  8804 I ViewInteraction: Performing 'close keyboard' action on view view.getId() is <2131296652/com.example.group8_bartertrader:id/productName>
+03-12 10:05:24.048  8804  8804 D IdlingRegistry: Registering idling resources: [androidx.test.espresso.action.CloseKeyboardAction$CloseKeyboardIdlingResult@420dc85]
+03-12 10:05:24.048  8804  8804 I ImeTracker: com.example.group8_bartertrader:e74422f9: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+03-12 10:05:24.062   578   721 I ImeTracker: com.example.group8_bartertrader:e74422f9: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-12 10:05:24.074  1070  8500 W GetConfigSnapshotOp: Succeeded but not registered: com.google.android.libraries.performance.primes#com.android.vending [CONTEXT service_id=51 ]
+03-12 10:05:24.112  1024  1024 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:352274728
+03-12 10:05:24.160  8804  8804 I AssistStructure: Flattened final assist data: 2508 bytes, containing 1 windows, 11 views
+03-12 10:05:24.166  1024  1024 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:360145281
+03-12 10:05:24.197  1339  1339 W AndroidSpellCheckerService: AndroidSpellCheckerService.initialize():73 initialize...
+03-12 10:05:24.207  1339  1339 I ShortcutsDataManager: ShortcutsDataManager.onContentChanged():72 onContentChanged()
+03-12 10:05:24.210  1339  1339 I ContactsDataManager: ContactsDataManager.onContentChanged():159 onContentChanged()
+03-12 10:05:24.316  1339  1339 W AndroidSpellCheckerService: AndroidSpellCheckerService.initialize():83 initialize...done
+03-12 10:05:24.346  1339  2155 I AndroidSpellCheckerService: AndroidSpellCheckerService.createSession():139 com.google.android.keyboard.client.delight5.LanguageIdentifier@b81792b is created
+03-12 10:05:24.466  8804  8804 D IdlingRegistry: Unregistering idling resources: [androidx.test.espresso.action.CloseKeyboardAction$CloseKeyboardIdlingResult@420dc85]
+03-12 10:05:24.469  8804  8804 I ViewInteraction: Performing 'replace text(Test Offer Description)' action on view view.getId() is <2131296650/com.example.group8_bartertrader:id/productDescription>
+03-12 10:05:24.476  1339  2155 I AndroidSpellCheckerService: AndroidSpellCheckerService.createSession():139 com.google.android.keyboard.client.delight5.LanguageIdentifier@52f945d is created
+03-12 10:05:24.482  8804  8804 I ViewInteraction: Performing 'close keyboard' action on view view.getId() is <2131296650/com.example.group8_bartertrader:id/productDescription>
+03-12 10:05:24.483  8804  8804 D IdlingRegistry: Registering idling resources: [androidx.test.espresso.action.CloseKeyboardAction$CloseKeyboardIdlingResult@252cce7]
+03-12 10:05:24.483  8804  8804 I ImeTracker: com.example.group8_bartertrader:2e4f6162: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+03-12 10:05:24.484   578   721 I ImeTracker: com.example.group8_bartertrader:2e4f6162: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-12 10:05:24.538   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:24.539   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:24.540   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:24.540   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:24.540   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:24.541   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:24.543  1070  1505 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+03-12 10:05:24.543  1070  1505 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+03-12 10:05:24.543   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:24.544   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:24.544   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:24.545   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:24.545  1479  2468 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[eeb3e96e-c936]>Handler" thread_id=63 ]
+03-12 10:05:24.546  1479  2037 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=56 ]
+03-12 10:05:24.560  1479  2468 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=63 ]
+03-12 10:05:24.787  8804  8804 D IdlingRegistry: Unregistering idling resources: [androidx.test.espresso.action.CloseKeyboardAction$CloseKeyboardIdlingResult@252cce7]
+03-12 10:05:24.788  8804  8903 W p8_bartertrader: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (unsupported, reflection, allowed)
+03-12 10:05:24.790  8804  8804 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296649/com.example.group8_bartertrader:id/productCategory>
+03-12 10:05:24.834  8804  8907 D EGL_emulation: app_time_stats: avg=204.47ms min=8.50ms max=434.84ms count=6
+03-12 10:05:25.169  8804  8804 I ViewInteraction: Performing 'single click' action on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Electronics"
+03-12 10:05:25.321  8804  8804 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@8aaf0f5
+03-12 10:05:25.324   578  1721 W InputManager-JNI: Input channel object '87372a7 PopupWindow:b8d487e (client)' was disposed without first being removed with the input manager!
+03-12 10:05:25.326   578   721 I ImeTracker: com.example.group8_bartertrader:1fff8d84: onRequestHide at ORIGIN_SERVER reason HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR fromUser false
+03-12 10:05:25.326   578   721 I ImeTracker: com.example.group8_bartertrader:1fff8d84: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-12 10:05:25.327  1339  1339 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157
+03-12 10:05:25.328  1339  1339 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+03-12 10:05:25.334  1339  1339 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.example.group8_bartertrader, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+03-12 10:05:25.334  1339  1339 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+03-12 10:05:25.335  1339  1339 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password, password
+03-12 10:05:25.337  1339  1339 I ShortcutsDataManager: AbstractContentDataManager.startImportContentTask():240 startImportContentTask()
+03-12 10:05:25.347  1339  2214 I ShortcutsDataManager: AbstractContentDataManager$ImportContentTask.doInBackground():255 doInBackground()
+03-12 10:05:25.355  1339  2214 I PersonalDictionaryDataHandler: PersonalDictionaryDataHandler.beginProcess():114 LanguageTags = [en-US]
+03-12 10:05:25.359   578   988 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@d3bdf25 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+03-12 10:05:25.420   401   794 D audioserver: logFgsApiBegin: FGS Logger Transaction failed, -129
+03-12 10:05:25.425   363   363 D Zygote  : Forked child process 8993
+03-12 10:05:25.428   578   988 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 15
+03-12 10:05:25.468  8804  8804 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296479/com.example.group8_bartertrader:id/getLocationButton>
+03-12 10:05:25.485  8993  8993 I d.process.acore: Using CollectorTypeCMC GC.
+03-12 10:05:25.489  8993  8993 E d.process.acore: Not starting debugger since process cannot load the jdwp agent.
+03-12 10:05:25.495  8993  8993 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+03-12 10:05:25.514   401   794 D audioserver: logFgsApiBegin: FGS Logger Transaction failed, -129
+03-12 10:05:25.515   578   988 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 16
+03-12 10:05:25.525  8993  8993 D nativeloader: Configuring clns-shared-7 for other apk /system/priv-app/UserDictionaryProvider/UserDictionaryProvider.apk. target_sdk_version=35, uses_libraries=, library_path=/system/priv-app/UserDictionaryProvider/lib/arm64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.android.providers.userdictionary:/system/priv-app/UserDictionaryProvider:/system/lib64:/system_ext/lib64
+03-12 10:05:25.526  8993  8993 D CompatChangeReporter: Compat change id reported: 202956589; UID 10091; state: ENABLED
+03-12 10:05:25.539  8993  8993 V GraphicsEnvironment: Currently set values for:
+03-12 10:05:25.539  8993  8993 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+03-12 10:05:25.539  8993  8993 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+03-12 10:05:25.539  8993  8993 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+03-12 10:05:25.539  8993  8993 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+03-12 10:05:25.557  8993  8993 D nativeloader: Configuring clns-shared-8 for other apk /system/priv-app/BlockedNumberProvider/BlockedNumberProvider.apk. target_sdk_version=35, uses_libraries=, library_path=/system/priv-app/BlockedNumberProvider/lib/arm64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user_de/0/com.android.providers.blockednumber:/system/priv-app/BlockedNumberProvider:/system/lib64:/system_ext/lib64
+03-12 10:05:26.345   401   544 W AudioFlinger: write blocked for 836 msecs, 3 delayed writes, thread 13
+03-12 10:05:26.404  1070  8639 I GmsCoreXrpcWrapper: (REDACTED) Returning a channel provider with trafficStatsTag=%d trafficStatsUid=%d
+03-12 10:05:26.407  8993  8993 D nativeloader: Configuring clns-shared-9 for other apk /system/priv-app/ContactsProvider/ContactsProvider.apk. target_sdk_version=35, uses_libraries=, library_path=/system/priv-app/ContactsProvider/lib/arm64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.android.providers.contacts:/system/priv-app/ContactsProvider:/system/lib64:/system_ext/lib64
+03-12 10:05:26.425   401   544 D AudioFlinger: mixer(0xb40000792211d8e0) throttle end: throttle time(27)
+03-12 10:05:26.436  8993  8993 I ContactsPerf: VoicemailContentProvider.onCreate start
+03-12 10:05:26.442   578   762 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-12 10:05:26.442   578   762 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-12 10:05:26.442   578   762 D InetDiagMessage: Destroyed live tcp sockets for uids={10194} in 1ms
+03-12 10:05:26.450  1750  1750 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+03-12 10:05:26.460  8993  8993 I ContactsPerf: VoicemailContentProvider.onCreate finish
+03-12 10:05:26.476  8993  8993 D nativeloader: Configuring clns-shared-10 for other apk /system/priv-app/E2eeContactKeysProvider/E2eeContactKeysProvider.apk. target_sdk_version=35, uses_libraries=, library_path=/system/priv-app/E2eeContactKeysProvider/lib/arm64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.android.providers.contactkeys:/system/priv-app/E2eeContactKeysProvider:/system/lib64:/system_ext/lib64
+03-12 10:05:26.483  8993  9008 I PhoneAccountHandleMigrationUtils_CallLogDatabaseHelper: updatePhoneAccountHandleMigrationPendingStatus false
+03-12 10:05:26.512   401   544 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+03-12 10:05:26.535   401   544 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+03-12 10:05:26.545  1070  3039 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+03-12 10:05:26.545  1070  3039 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+03-12 10:05:26.551  8993  8993 I ContactsDatabaseHelper: updateUseStrictPhoneNumberComparison: US
+03-12 10:05:26.564  8993  8993 I ContactsDatabaseHelper: updateUseStrictPhoneNumberComparison: US
+03-12 10:05:26.648  8993  9011 I PhoneAccountHandleMigrationUtils_CallLogDatabaseHelper: updatePhoneAccountHandleMigrationPendingStatus false
+03-12 10:05:26.649  8993  9009 I PhoneAccountHandleMigrationUtils_CallLogDatabaseHelper: updatePhoneAccountHandleMigrationPendingStatus false
+03-12 10:05:26.652  1339  2214 I ShortcutsDataManager: AbstractContentDataManager.importRecords():345 importRecords() : Success : Count = 0
+03-12 10:05:26.662  8993  9012 D ContactsDatabaseHelper: WAL enabled for contacts2.db: true
+03-12 10:05:26.672  8993  9008 I CallLogProvider: syncEntriesFrom: fromUserId=0, srcIsShadow=true, forAllUsers=false; previousTimeStamp=0, newTimeStamp=0, entries=0
+03-12 10:05:26.674  8993  9008 I CallLogProvider: delete uid/pid=10091/8993, uri=content://call_log_shadow/calls, numChanged=0
+03-12 10:05:26.708  8993  9008 I CallLogProvider: Syncing call composer pics -- source user=0, isShadow=true, forAllUser=false
+03-12 10:05:26.708  8993  9008 I CallLogProvider: Fetching list of Uris to sync
+03-12 10:05:26.710  8993  9008 I CallLogProvider: Will sync following Uris:[]
+03-12 10:05:26.710  8993  9008 I CallLogProvider: Syncing call composer pics -- got []
+03-12 10:05:26.738  1070  3323 D TrafficStats: tagSocket(123) with statsTag=0x2c000608, statsUid=10220
+03-12 10:05:26.856  1339  2214 I ShortcutsDataManager: AbstractContentDataManager.importContentData():295 importContentData() : Ending import process
+03-12 10:05:26.870  8993  9012 I PhoneAccountHandleMigrationUtils_ContactsDatabaseHelper: updatePhoneAccountHandleMigrationPendingStatus false
+03-12 10:05:26.875  8993  9012 D CompatChangeReporter: Compat change id reported: 291868760; UID 10091; state: ENABLED
+03-12 10:05:26.875  1339  2194 I Delight5Decoder: Delight5DecoderWrapper.unloadLanguageModel():943 unloadLanguageModel() : 4, version [n/a]
+03-12 10:05:26.918  1070  3323 I cn_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@5cd449e
+03-12 10:05:26.958  8993  9012 I ContactLocale: AddressBook Labels [[en_US]]: […, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, Α, Β, Γ, Δ, Ε, Ζ, Η, Θ, Ι, Κ, Λ, Μ, Ν, Ξ, Ο, Π, Ρ, Σ, Τ, Υ, Φ, Χ, Ψ, Ω, …, А, Б, В, Г, Д, Ђ, Е, Є, Ж, З, И, І, Й, Ј, К, Л, Љ, М, Н, Њ, О, П, Р, С, Т, Ћ, У, Ф, Х, Ц, Ч, Џ, Ш, Щ, Ю, Я, …, א, ב, ג, ד, ה, ו, ז, ח, ט, י, כ, ל, מ, נ, ס, ע, פ, צ, ק, ר, ש, ת, …, ا, ب, ت, ث, ج, ح, خ, د, ذ, ر, ز, س, ش, ص, ض, ط, ظ, ع, غ, ف, ق, ك, ل, م, ن, ه, و, ي, …, ก, ข, ฃ, ค, ฅ, ฆ, ง, จ, ฉ, ช, ซ, ฌ, ญ, ฎ, ฏ, ฐ, ฑ, ฒ, ณ, ด, ต, ถ, ท, ธ, น, บ, ป, ผ, ฝ, พ, ฟ, ภ, ม, ย, ร, ฤ, ล, ฦ, ว, ศ, ษ, ส, ห, ฬ, อ, ฮ, …, ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ, ㅈ, ㅊ, ㅋ, ㅌ, ㅍ, ㅎ, …, あ, か, さ, た, な, は, ま, や, ら, わ, #, …]
+03-12 10:05:26.968  8993  9012 D ContactsDatabaseHelper: WAL enabled for profile.db: false
+03-12 10:05:26.990  1339  2155 I AndroidSpellCheckerService: AndroidSpellCheckerService.createSession():139 com.google.android.keyboard.client.delight5.LanguageIdentifier@938191e is created
+03-12 10:05:27.008  8804  8907 D EGL_emulation: app_time_stats: avg=161.35ms min=1.91ms max=1460.26ms count=13
+03-12 10:05:27.065  8804  8804 I ViewInteraction: Performing 'Wait for 2000 milliseconds.' action on view view.getRootView() to equal view
+03-12 10:05:27.544   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:27.544   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:27.544   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:27.544   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:27.544   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:27.549   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:27.551   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:27.551   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:27.551  1479  2468 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[eeb3e96e-c936]>Handler" thread_id=63 ]
+03-12 10:05:27.552   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:27.552   578   762 W IPCThreadState: Sending oneway calls to frozen process.
+03-12 10:05:27.554  1479  2037 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=56 ]
+03-12 10:05:27.571  1070  1505 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+03-12 10:05:27.571  1070  1505 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+03-12 10:05:27.575  1479  2468 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=63 ]
+03-12 10:05:27.646   578   762 D InetDiagMessage: Destroyed 1 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-12 10:05:27.647   578   762 D InetDiagMessage: Destroyed 2 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-12 10:05:27.647   578   762 D InetDiagMessage: Destroyed live tcp sockets for uids={10142} in 2ms
+03-12 10:05:27.658  8993  9012 D CompatChangeReporter: Compat change id reported: 279646685; UID 10091; state: ENABLED
+03-12 10:05:27.684  8993  9012 V ContactsProvider: 0 Dangling Contacts have been cleaned up.
+03-12 10:05:27.687  1339  2214 I PersonalLanguageModelUpdater: PersonalLanguageModelUpdater$UpdateOperation.performInternal():165 run() : Added 0 words and 0 shortcuts
+03-12 10:05:27.687  1339  2214 I DynamicLanguageModelOperation: DynamicLanguageModelOperation.perform():43 perform() : 4 : dxm : Completed
+03-12 10:05:27.690  1339  2194 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():730 loadLanguageModel() : 4, version [n/a]
+03-12 10:05:27.693  1339  1339 I ShortcutsDataManager: AbstractContentDataManager$ImportContentTask.onPostExecute():266 onPostExecute() : Result = [2,0]
+03-12 10:05:27.693  1339  1339 I ShortcutsDataManager: ShortcutsDataManager.onImportFinished():82 onImportFinished() : Result = 2 : Count = 0
+03-12 10:05:27.698  1339  2194 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():771 Loaded dynamic LM 4.en
+03-12 10:05:27.994   578   762 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-12 10:05:27.994   578   762 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-12 10:05:27.994   578   762 D InetDiagMessage: Destroyed live tcp sockets for uids={10101} in 2ms
+03-12 10:05:29.075  8804  8804 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296735/com.example.group8_bartertrader:id/submitProduct>
+03-12 10:05:29.116  8804  8907 D EGL_emulation: app_time_stats: avg=2108.04ms min=2108.04ms max=2108.04ms count=1
+03-12 10:05:29.139   401   794 D audioserver: logFgsApiBegin: FGS Logger Transaction failed, -129
+03-12 10:05:29.141   578   988 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 16
+03-12 10:05:29.198  8804  8804 D Product Form: Product offered successfully
+03-12 10:05:29.231  8804  8804 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@23c09a7 in: PAUSED
+03-12 10:05:29.232  8804  8804 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity.getIntent()=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity=com.example.group8_bartertrader.SubmitForm@23c09a7
+03-12 10:05:29.232  8804  8804 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.group8_bartertrader.SubmitForm@23c09a7
+03-12 10:05:29.233   406   406 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+03-12 10:05:29.257  1152  1152 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=44, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.google.android.apps.maps/com.google.android.maps.MapsActivity }
+03-12 10:05:29.313  8724  8738 W ding:background: Suspending all threads took: 23.237ms
+03-12 10:05:29.324  8583  8594 W android.vending: Suspending all threads took: 15.456ms
+03-12 10:05:29.367   578   835 D FileUtils: Rounded bytes from 7597248512 to 8000000000
+03-12 10:05:29.373   401   544 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+03-12 10:05:29.422  8804  8903 I TestRunner: finished: testSubmitOffer(com.example.group8_bartertrader.SubmitFormUITest)
