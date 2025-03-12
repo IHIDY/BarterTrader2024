@@ -24,7 +24,15 @@ public class DetailsActivity extends AppCompatActivity {
         this.setupExitButton();
     }
 
-    protected Product getSelectedProduct() {}
+    protected Product getSelectedProduct() {
+        Intent intent = getIntent();
+
+        if (intent != null && intent.hasExtra("Product")) {
+            return (Product) intent.getSerializableExtra("Product");
+        } else {
+            return null;
+        }
+    }
 
     public void showProductDetails(Product product) {
         this.showProductName(product.getName());
@@ -70,7 +78,10 @@ public class DetailsActivity extends AppCompatActivity {
     }
 
     protected void move2OfferExchange() {
-        Intent offerIntent = new Intent(this, SubmitForm.class); //pass this product through the intent
+        Intent offerIntent = new Intent(this, SubmitForm.class);
+
+        offerIntent.putExtra("Product", this.selectedProduct);
+
         startActivity(offerIntent);
     }
 

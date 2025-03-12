@@ -20,6 +20,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
+import com.example.group8_bartertrader.model.Product;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.firebase.auth.FirebaseAuth;
@@ -69,12 +70,14 @@ public class SubmitForm extends AppCompatActivity {
         // Get the info of the target product and provider
         Intent intent = getIntent();
         if (intent != null) {
-            targetProductId = intent.getStringExtra("productId");
-            targetProductName = intent.getStringExtra("productName");
-            targetProductCategory = intent.getStringExtra("productCategory");
-            targetProductLocation = intent.getStringExtra("productLocation");
-            targetProductDescription = intent.getStringExtra("productDescription");
-            providerEmail = intent.getStringExtra("providerEmail");
+            Product selectedProduct = (Product) intent.getSerializableExtra("Product");
+
+            targetProductId = selectedProduct.getId();
+            targetProductName = selectedProduct.getName();
+            targetProductCategory = selectedProduct.getCategory();
+            targetProductLocation = selectedProduct.getLocation();
+            targetProductDescription = selectedProduct.getDescription();
+            providerEmail = intent.getStringExtra("providerEmail"); //fix this
         }
 
         // Initialize the fused location client
