@@ -26,20 +26,9 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/settings_title" />
-    <Button
-        android:id="@+id/resetPasswordButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
-
-        android:text="Reset Password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_title" />
 
 
-<!--    <Spinner-->
+    <!--    <Spinner-->
 <!--        android:id="@+id/mySpinner"-->
 <!--        android:layout_width="164dp"-->
 <!--        android:layout_height="51dp"-->
@@ -51,18 +40,31 @@
 <!--        tools:ignore="MissingConstraints" />-->
 
     <Button
-        android:id="@+id/changeRoleBtn"
+        android:id="@+id/resetPasswordButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="151dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="131dp"
-        android:layout_marginBottom="216dp"
-        android:text="Change Role"
+
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="379dp"
+        android:text="Reset Password"
         app:layout_constraintBottom_toTopOf="@+id/LogOutButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mySpinner" />
+        app:layout_constraintTop_toBottomOf="@+id/changeRoleBtn" />
+
+    <Button
+        android:id="@+id/changeRoleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="13dp"
+        android:text="Change Role"
+        app:layout_constraintBottom_toTopOf="@+id/resetPasswordButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_title" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
