@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.group8_bartertrader.adapter.ProductAdapter;
 import com.example.group8_bartertrader.model.Product;
 
+import java.io.Serializable;
+
 public class DetailsActivity extends AppCompatActivity {
     public Product selectedProduct;
 
@@ -17,6 +19,8 @@ public class DetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
+
+        //get intent extra from receiver dash
 
         this.selectedProduct = getSelectedProduct();
         this.showProductDetails(this.selectedProduct);
@@ -40,6 +44,8 @@ public class DetailsActivity extends AppCompatActivity {
         this.showProductCategory(product.getCategory());
         this.showProductLocation(product.getLocation());
         this.showProductDetails(product.getDescription());
+        this.showProviderEmail(product.getEmail());
+        this.showPostDate(product.getFormattedPostDate());
     }
 
     protected void showProductName(String name) {
@@ -67,6 +73,16 @@ public class DetailsActivity extends AppCompatActivity {
         productDetails.setText(details);
     }
 
+    protected void showProviderEmail(String email) {
+        TextView providerEmail = findViewById(R.id.providerEmail);
+        providerEmail.setText(email);
+    }
+
+    protected void showPostDate(String date) {
+        TextView postedDate = findViewById(R.id.productDatePosted);
+        postedDate.setText(date);
+    }
+
     protected void setupOfferExchangeButton() {
         Button offerExchangeButton = findViewById(R.id.OfferExchangeButton);
         offerExchangeButton.setOnClickListener(view -> move2OfferExchange());
@@ -80,7 +96,7 @@ public class DetailsActivity extends AppCompatActivity {
     protected void move2OfferExchange() {
         Intent offerIntent = new Intent(this, SubmitForm.class);
 
-        offerIntent.putExtra("Product", this.selectedProduct);
+        offerIntent.putExtra("Product", (Serializable) this.selectedProduct);
 
         startActivity(offerIntent);
     }
