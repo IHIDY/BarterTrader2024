@@ -58,9 +58,15 @@ public class DetailsActivity extends AppCompatActivity {
         productDetails.setText(details);
     }
 
-    protected void setupOfferExchangeButton() {}
+    protected void setupOfferExchangeButton() {
+        Button offerExchangeButton = findViewById(R.id.OfferExchangeButton);
+        offerExchangeButton.setOnClickListener(view -> move2OfferExchange());
+    }
 
-    protected void setupExitButton() {}
+    protected void setupExitButton() {
+        Button exitButton = findViewById(R.id.ExitButton);
+        exitButton.setOnClickListener(view -> move2RecieverDash());
+    }
 
     protected void move2OfferExchange() {}
 
