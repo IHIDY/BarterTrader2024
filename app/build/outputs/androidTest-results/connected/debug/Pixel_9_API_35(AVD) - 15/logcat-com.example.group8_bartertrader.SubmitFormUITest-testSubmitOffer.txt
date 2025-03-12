@@ -1,0 +1,866 @@
+03-11 21:10:29.056  9301  9319 I TestRunner: started: testSubmitOffer(com.example.group8_bartertrader.SubmitFormUITest)
+03-11 21:10:29.066  9301  9319 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+03-11 21:10:29.072  9301  9321 E p8_bartertrader: No package ID 76 found for resource ID 0x760b000f.
+03-11 21:10:29.073  9301  9321 E p8_bartertrader: No package ID 76 found for resource ID 0x760b000f.
+03-11 21:10:29.076  9301  9321 I FA      : App measurement initialized, version: 118001
+03-11 21:10:29.076  9301  9321 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+03-11 21:10:29.077  9301  9321 I FA      : To enable faster debug mode event logging run:
+03-11 21:10:29.077  9301  9321 I FA      :   adb shell setprop debug.firebase.analytics.app com.example.group8_bartertrader
+03-11 21:10:29.095   598  1607 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@19434f67 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+03-11 21:10:29.139  2507  4468 E adservices.measurement: Consent notification has not been displayed.
+03-11 21:10:29.146   408   408 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+03-11 21:10:29.153  2507  4470 W adservices: Skip logging because Cobalt logger is null
+03-11 21:10:29.162  1184  1184 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=41, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }
+03-11 21:10:29.377  1386  1386 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+03-11 21:10:29.377  1386  1386 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+03-11 21:10:29.401  9301  9301 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+03-11 21:10:29.406   925  8693 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+03-11 21:10:29.414   925  8693 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=62
+03-11 21:10:29.414   925  8693 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+03-11 21:10:29.414   925  8693 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:333
+03-11 21:10:29.422  9301  9301 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@ac239b0 in: PRE_ON_CREATE
+03-11 21:10:29.423  9301  9301 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+03-11 21:10:29.446  5511  5546 D EGL_emulation: app_time_stats: avg=10283.21ms min=10283.21ms max=10283.21ms count=1
+03-11 21:10:29.491  1157  1576 I FusedLocation: (REDACTED) location delivery to %s blocked - too close
+03-11 21:10:29.506   388   388 I RanchuHwc: logCompositionFallbackIfChanged: layer 119 CompositionType fallback from 3 to 1
+03-11 21:10:29.526  5511  5511 D VRI[MapsActivity]: visibilityChanged oldVisibility=true newVisibility=false
+03-11 21:10:29.580  9301  9301 D CompatChangeReporter: Compat change id reported: 309578419; UID 10218; state: ENABLED
+03-11 21:10:29.592  1157  9063 I FrewleTileCacheManagerV: (REDACTED) Fetched %d AP models from cache
+03-11 21:10:29.599  9301  9330 D TrafficStats: tagSocket(117) with statsTag=0x8001, statsUid=-1
+03-11 21:10:29.602  5511  5625 D EGL_emulation: app_time_stats: avg=2107.22ms min=2107.22ms max=2107.22ms count=1
+03-11 21:10:29.651  9301  9301 W p8_bartertrader: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+03-11 21:10:29.695  9301  9301 D CompatChangeReporter: Compat change id reported: 63938206; UID 10218; state: ENABLED
+03-11 21:10:29.702  1157  4061 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+03-11 21:10:29.702  1157  4061 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+03-11 21:10:29.761  9301  9321 I FA      : Tag Manager is not found and thus will not be used
+03-11 21:10:29.809  9301  9301 D CompatChangeReporter: Compat change id reported: 303326708; UID 10218; state: ENABLED
+03-11 21:10:29.832  1157  3009 I cn_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@61c17f0
+03-11 21:10:29.843  1157  9194 I FrewleTileCacheManagerV: (REDACTED) Fetched %d AP models from cache
+03-11 21:10:29.849  1157  1683 I ActivityScheduler: nextTriggerTime: 2334392, in 139923ms, detectorType: 39, FULL_TYPE alarmWindowMillis: 333
+03-11 21:10:29.923  1390  2138 I AiAiTextClassifier: [VisualCortexAdapter]: provideRegistration: Registered Prominent Screen Entities for updates.
+03-11 21:10:29.927  9301  9301 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@ac239b0 in: CREATED
+03-11 21:10:29.928  9301  9301 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.group8_bartertrader.SubmitForm@ac239b0
+03-11 21:10:29.936  9301  9301 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@ac239b0 in: STARTED
+03-11 21:10:29.937  9301  9301 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.group8_bartertrader.SubmitForm@ac239b0
+03-11 21:10:29.942  9301  9301 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@ac239b0 in: RESUMED
+03-11 21:10:29.942  9301  9301 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.group8_bartertrader.SubmitForm@ac239b0
+03-11 21:10:29.954  9301  9301 W HWUI    : Unknown dataspace 0
+03-11 21:10:30.055   408   660 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10218 pid=0
+03-11 21:10:30.055   408   660 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10218 => denied (372 us)
+03-11 21:10:30.056   408   660 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10218 pid=0
+03-11 21:10:30.056   408   660 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10218 => denied (517 us)
+03-11 21:10:30.056   408   514 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10218 pid=9301
+03-11 21:10:30.056   408   514 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10218 => denied (212 us)
+03-11 21:10:30.056   408   660 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10218 pid=0
+03-11 21:10:30.056   408   660 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10218 => denied (542 us)
+03-11 21:10:30.056   408   514 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10218 pid=9301
+03-11 21:10:30.056   408   514 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10218 => denied (449 us)
+03-11 21:10:30.059  9301  9329 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+03-11 21:10:30.061  9301  9329 I EGL_emulation: Opening libGLESv2_emulation.so
+03-11 21:10:30.080  9301  9329 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+03-11 21:10:30.080  9301  9329 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+03-11 21:10:30.124   162   162 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+03-11 21:10:30.124  9301  9329 I Gralloc4: mapper 4.x is not supported
+03-11 21:10:30.157  9301  9344 D TrafficStats: tagSocket(127) with statsTag=0xffffffff, statsUid=-1
+03-11 21:10:30.217   598  1835 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10218 pid=0
+03-11 21:10:30.217   598  1835 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10218 => denied (131 us)
+03-11 21:10:30.217   598  1835 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10218 pid=0
+03-11 21:10:30.217   598  1835 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10218 => denied (41 us)
+03-11 21:10:30.217   598  1835 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10218 pid=0
+03-11 21:10:30.217   598  1835 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10218 => denied (12 us)
+03-11 21:10:30.220   598   626 W ziparchive: Unable to open '/data/app/~~0JYRWmC6mi3Q5P6ZF7lFgg==/com.example.group8_bartertrader-L5O7521AO5omhkmfH693Kg==/base.dm': No such file or directory
+03-11 21:10:30.240   598   626 I ActivityTaskManager: Displayed com.example.group8_bartertrader/.SubmitForm for user 0: +1s141ms
+03-11 21:10:30.263   882   951 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@b6387e4
+03-11 21:10:30.265   598  1845 W InputManager-JNI: Input channel object 'd05dd94 Splash Screen com.example.group8_bartertrader (client)' was disposed without first being removed with the input manager!
+03-11 21:10:30.269   598   735 I ImeTracker: com.example.group8_bartertrader:50e8a638: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+03-11 21:10:30.270   598   735 I ImeTracker: com.example.group8_bartertrader:50e8a638: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-11 21:10:30.291  1386  9339 D AdvertisingIdClient: AdvertisingIdClient already created.
+03-11 21:10:30.291  1386  9339 D AdvertisingIdClient: AdvertisingIdClient is not bounded. Starting to bind it...
+03-11 21:10:30.308  1386  9339 D AdvertisingIdClient: AdvertisingIdClient is bounded
+03-11 21:10:30.324  9301  9319 I FirebaseAuth: Logging in as testreset@gmail.com with empty reCAPTCHA token
+03-11 21:10:30.333  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157
+03-11 21:10:30.334  1157  9161 I FusedLocation: (REDACTED) stationary throttling engaged @%s
+03-11 21:10:30.349   925  8693 D android.hardware.gnss-service.ranchu: GnssHwConn:workerThread:119
+03-11 21:10:30.351   598   626 W AlarmManager: Unrecognized alarm listener com.android.server.location.gnss.GnssLocationProvider$$ExternalSyntheticLambda14@1c181df
+03-11 21:10:30.351   598   626 W AlarmManager: Unrecognized alarm listener com.android.server.location.gnss.GnssLocationProvider$$ExternalSyntheticLambda13@6706e2c
+03-11 21:10:30.368   925  9358 D android.hardware.gnss-service.ranchu: GnssHwConn:workerThread:70
+03-11 21:10:30.369  1386  9339 I AdvertisingIdClient: shouldSendLog 54886
+03-11 21:10:30.370   925  9358 D android.hardware.gnss-service.ranchu: GnssHwConn:workerThread:119
+03-11 21:10:30.371  1386  9339 I AdvertisingIdClient: GetInfoInternal elapse 78ms
+03-11 21:10:30.371   598   626 W AlarmManager: Unrecognized alarm listener com.android.server.location.gnss.GnssLocationProvider$$ExternalSyntheticLambda14@1c181df
+03-11 21:10:30.371   598   626 W AlarmManager: Unrecognized alarm listener com.android.server.location.gnss.GnssLocationProvider$$ExternalSyntheticLambda13@6706e2c
+03-11 21:10:30.375   925  9360 D android.hardware.gnss-service.ranchu: GnssHwConn:workerThread:70
+03-11 21:10:30.381  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+03-11 21:10:30.384  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.example.group8_bartertrader, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+03-11 21:10:30.385  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+03-11 21:10:30.388  1409  1409 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password, password
+03-11 21:10:30.401  9301  9330 W System  : Ignoring header X-Firebase-Locale because its value was null.
+03-11 21:10:30.414   925  9360 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+03-11 21:10:30.419   925  9360 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=62
+03-11 21:10:30.419   925  9360 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+03-11 21:10:30.419   925  9360 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+03-11 21:10:30.456   882  1012 D EGL_emulation: app_time_stats: avg=30382.94ms min=30382.94ms max=30382.94ms count=1
+03-11 21:10:30.463  1157  1173 I FontLog : (REDACTED) Received query %s, URI %s
+03-11 21:10:30.468  1157  1173 I FontLog : (REDACTED) Query [%s] resolved to %s
+03-11 21:10:30.478  1386  1386 I AdvertisingIdClient: getting error as 17: API: ClientTelemetry.API is not available on this device. Connection failed with: ConnectionResult{statusCode=API_DISABLED_FOR_CONNECTION, resolution=null, message=null}
+03-11 21:10:30.493  1157  9161 I FusedOrientationManager: Unregistering orientation client. [CONTEXT service_id=6 ]
+03-11 21:10:30.507  1157  1173 I FontLog : (REDACTED) Fetch %s end status %s
+03-11 21:10:30.521  9301  9330 D TrafficStats: tagSocket(149) with statsTag=0xffffffff, statsUid=-1
+03-11 21:10:30.535  1157  1173 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+03-11 21:10:30.556  1157  1173 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+03-11 21:10:30.561  1157  9195 I FrewleTileCacheManagerV: (REDACTED) Fetched %d AP models from cache
+03-11 21:10:30.585  9301  9305 I p8_bartertrader: Compiler allocated 4206KB to compile void android.widget.TextView.<init>(android.content.Context, android.util.AttributeSet, int, int)
+03-11 21:10:30.639   925  9360 D android.hardware.gnss-service.ranchu: GnssHwConn:workerThread:119
+03-11 21:10:30.639   598   626 W AlarmManager: Unrecognized alarm listener com.android.server.location.gnss.GnssLocationProvider$$ExternalSyntheticLambda14@1c181df
+03-11 21:10:30.639   598   626 W AlarmManager: Unrecognized alarm listener com.android.server.location.gnss.GnssLocationProvider$$ExternalSyntheticLambda13@6706e2c
+03-11 21:10:30.657  2163  3638 I Finsky  : [109] arcf.L(185): Package com.google.android.gms is verified.
+03-11 21:10:30.672  1157  1504 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+03-11 21:10:30.672  1157  1504 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+03-11 21:10:30.699  1386  9339 W FA-SVC  : Service response is missing Install Referrer install timestamp
+03-11 21:10:30.721  2163  2163 I Finsky  : [2] zhu.onTrimMemory(11): Memory trim requested to level 40
+03-11 21:10:30.724  2163  2163 I Finsky  : [2] adua.accept(139): Flushing in-memory image cache
+03-11 21:10:30.798  9301  9330 W System  : Ignoring header X-Firebase-Locale because its value was null.
+03-11 21:10:30.876  1157  3009 I cn_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@14a4986
+03-11 21:10:30.879  1157  9195 I FrewleTileCacheManagerV: (REDACTED) Fetched %d AP models from cache
+03-11 21:10:30.884  1157  1683 I ActivityScheduler: nextTriggerTime: 2392492, in 196988ms, detectorType: 39, FULL_TYPE alarmWindowMillis: 80000
+03-11 21:10:30.910  9301  9330 D FirebaseAuth: Notifying id token listeners about user ( TXImQm98VlUgP7vwEb6X5K6gyju2 ).
+03-11 21:10:30.911  9301  9330 D FirebaseAuth: Notifying auth state listeners about user ( TXImQm98VlUgP7vwEb6X5K6gyju2 ).
+03-11 21:10:30.913  9301  9301 D FirebaseTest: Test user signed in: testreset@gmail.com
+03-11 21:10:31.026  9301  9305 I p8_bartertrader: Compiler allocated 5250KB to compile void android.view.ViewRootImpl.performTraversals()
+03-11 21:10:31.048  1741  1741 I GmmNavBroadcastRec: canHotwordForGmm is false
+03-11 21:10:31.067  1741  2033 I A       : NGA enabled in interactor.
+03-11 21:10:31.372  5511  9328 I FA      : Application backgrounded at: timestamp_millis: 1741738229371
+03-11 21:10:33.335  9301  9319 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+03-11 21:10:33.350   598  1835 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@19434f67 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+03-11 21:10:33.370   408   408 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+03-11 21:10:33.372  9301  9301 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@ac239b0 in: PAUSED
+03-11 21:10:33.372  9301  9301 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.group8_bartertrader.SubmitForm@ac239b0
+03-11 21:10:33.373  9301  9301 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity=com.example.group8_bartertrader.SubmitForm@ac239b0
+03-11 21:10:33.417  9301  9301 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@f16ba3 in: PRE_ON_CREATE
+03-11 21:10:33.417  9301  9301 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity.getIntent()=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity=com.example.group8_bartertrader.SubmitForm@f16ba3
+03-11 21:10:33.418  9301  9301 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+03-11 21:10:33.473  9301  9301 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@f16ba3 in: CREATED
+03-11 21:10:33.474  9301  9301 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity.getIntent()=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity=com.example.group8_bartertrader.SubmitForm@f16ba3
+03-11 21:10:33.474  9301  9301 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.group8_bartertrader.SubmitForm@f16ba3
+03-11 21:10:33.479  9301  9301 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@f16ba3 in: STARTED
+03-11 21:10:33.483  9301  9301 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity.getIntent()=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity=com.example.group8_bartertrader.SubmitForm@f16ba3
+03-11 21:10:33.483  9301  9301 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.group8_bartertrader.SubmitForm@f16ba3
+03-11 21:10:33.484  9301  9301 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@f16ba3 in: RESUMED
+03-11 21:10:33.484  9301  9301 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity.getIntent()=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity=com.example.group8_bartertrader.SubmitForm@f16ba3
+03-11 21:10:33.484  9301  9301 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.group8_bartertrader.SubmitForm@f16ba3
+03-11 21:10:33.527   882  1012 D EGL_emulation: app_time_stats: avg=1017.47ms min=2.31ms max=2892.42ms count=3
+03-11 21:10:33.562  9301  9301 D VRI[SubmitForm]: visibilityChanged oldVisibility=true newVisibility=false
+03-11 21:10:33.569   598   626 I ActivityTaskManager: Displayed com.example.group8_bartertrader/.SubmitForm for user 0: +226ms
+03-11 21:10:33.589   882   951 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@c29b609
+03-11 21:10:33.591   598  1607 W InputManager-JNI: Input channel object '9215880 Splash Screen com.example.group8_bartertrader (client)' was disposed without first being removed with the input manager!
+03-11 21:10:33.600   598   735 I ImeTracker: com.example.group8_bartertrader:4313ca3f: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+03-11 21:10:33.600   598   735 I ImeTracker: com.example.group8_bartertrader:4313ca3f: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-11 21:10:33.603  9301  9319 W SurfaceComposerClient: Sync transaction timed out waiting for commit callback.
+03-11 21:10:33.605  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157
+03-11 21:10:33.610  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+03-11 21:10:33.610  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.example.group8_bartertrader, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+03-11 21:10:33.611  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+03-11 21:10:33.611  1409  1409 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password, password
+03-11 21:10:33.613  9301  9301 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@ac239b0 in: STOPPED
+03-11 21:10:33.614  9301  9301 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.example.group8_bartertrader.SubmitForm@ac239b0
+03-11 21:10:33.614  9301  9301 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity=com.example.group8_bartertrader.SubmitForm@ac239b0
+03-11 21:10:33.617  9301  9301 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@ac239b0 in: DESTROYED
+03-11 21:10:33.618  9301  9301 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+03-11 21:10:33.619  9301  9301 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity=com.example.group8_bartertrader.SubmitForm@ac239b0
+03-11 21:10:33.619  9301  9301 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@963d413
+03-11 21:10:33.623   598   869 W InputManager-JNI: Input channel object 'b2bcac1 com.example.group8_bartertrader/com.example.group8_bartertrader.SubmitForm (client)' was disposed without first being removed with the input manager!
+03-11 21:10:33.633  9301  9319 I UiAutomation: Initialized for user 0 on display 0
+03-11 21:10:33.653  1390  2255 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+03-11 21:10:33.655   598   598 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:33.655   598   598 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:33.655   598   598 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:33.655   598   598 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:33.655   598   598 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:33.656   598   598 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:33.656   598   598 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:33.656   598   598 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:33.656   598   598 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:33.658  1390  1684 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+03-11 21:10:33.658  1390  1684 I AiAiEcho: EchoTargets:
+03-11 21:10:33.658  1390  1684 I AiAiEcho: Filtered by AiAi flag check:
+03-11 21:10:33.658  1390  1684 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+03-11 21:10:33.668  1390  1684 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+03-11 21:10:33.674  1390  1684 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+03-11 21:10:33.689  1390  1684 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+03-11 21:10:33.689  1741  2033 I A       : NGA enabled in interactor.
+03-11 21:10:33.689  1390  1684 I AiAiEcho: EchoTargets:
+03-11 21:10:33.689  1390  1684 I AiAiEcho: Filtered by AiAi flag check:
+03-11 21:10:33.689  1390  1684 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+03-11 21:10:33.689  1390  1684 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+03-11 21:10:33.690  1390  1684 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+03-11 21:10:33.690  1390  1684 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+03-11 21:10:33.690  1390  1684 I AiAiEcho: EchoTargets:
+03-11 21:10:33.690  1390  1684 I AiAiEcho: Filtered by AiAi flag check:
+03-11 21:10:33.690  1390  1684 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+03-11 21:10:33.690  1390  1684 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+03-11 21:10:33.690  1390  1684 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+03-11 21:10:33.691  1390  1684 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+03-11 21:10:33.692  1741  2033 I A       : NGA enabled in interactor.
+03-11 21:10:33.694  1390  1684 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+03-11 21:10:33.697  1390  1684 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+03-11 21:10:33.703   882   882 D SsMediaDataProvider: Forwarding Smartspace updates []
+03-11 21:10:33.704   882   882 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+03-11 21:10:33.714  1184  1184 D SsBaseTemplateCard: No text view can be set up
+03-11 21:10:33.727  1184  1184 D SsBaseTemplateCard: Passed-in item info is null
+03-11 21:10:33.728  1184  1184 D SsBaseTemplateCard: Passed-in item info is null
+03-11 21:10:33.728  1184  1184 D SsBaseTemplateCard: Passed-in item info is null
+03-11 21:10:33.728  1184  1184 I SsBaseTemplateCard: Secondary card pane is null
+03-11 21:10:33.743  9301  9319 W FileTestStorage: Output properties is not supported.
+03-11 21:10:33.746  9301  9319 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+03-11 21:10:33.756  9301  9319 D EventInjectionStrategy: Creating injection strategy with input manager.
+03-11 21:10:33.756  9301  9319 W p8_bartertrader: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (unsupported, reflection, allowed)
+03-11 21:10:33.759  9301  9319 W p8_bartertrader: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (unsupported, reflection, allowed)
+03-11 21:10:33.759  9301  9319 W p8_bartertrader: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (unsupported, reflection, allowed)
+03-11 21:10:33.767  9301  9301 W p8_bartertrader: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (unsupported, reflection, allowed)
+03-11 21:10:33.767  9301  9301 W p8_bartertrader: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (unsupported, reflection, allowed)
+03-11 21:10:33.767  9301  9301 W p8_bartertrader: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (unsupported, reflection, allowed)
+03-11 21:10:33.770  9301  9301 I ViewInteraction: Performing 'replace text(Test Offer Item)' action on view view.getId() is <2131296651/com.example.group8_bartertrader:id/productName>
+03-11 21:10:33.792  1409  1409 W AndroidSpellCheckerService: AndroidSpellCheckerService.initialize():73 initialize...
+03-11 21:10:33.792  1409  1409 I ShortcutsDataManager: ShortcutsDataManager.onContentChanged():72 onContentChanged()
+03-11 21:10:33.793  1409  1409 I ContactsDataManager: ContactsDataManager.onContentChanged():159 onContentChanged()
+03-11 21:10:33.793  1409  1409 W AndroidSpellCheckerService: AndroidSpellCheckerService.initialize():83 initialize...done
+03-11 21:10:33.798  1409  2608 I AndroidSpellCheckerService: AndroidSpellCheckerService.createSession():139 com.google.android.keyboard.client.delight5.LanguageIdentifier@8e6f27 is created
+03-11 21:10:33.809  9301  9301 I AssistStructure: Flattened final assist data: 2508 bytes, containing 1 windows, 11 views
+03-11 21:10:33.813  9301  9301 I ViewInteraction: Performing 'close keyboard' action on view view.getId() is <2131296651/com.example.group8_bartertrader:id/productName>
+03-11 21:10:33.814  9301  9301 D IdlingRegistry: Registering idling resources: [androidx.test.espresso.action.CloseKeyboardAction$CloseKeyboardIdlingResult@59537b]
+03-11 21:10:33.815  9301  9301 I ImeTracker: com.example.group8_bartertrader:2fd735d4: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+03-11 21:10:33.817   598   735 I ImeTracker: com.example.group8_bartertrader:2fd735d4: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-11 21:10:34.122  9301  9301 D IdlingRegistry: Unregistering idling resources: [androidx.test.espresso.action.CloseKeyboardAction$CloseKeyboardIdlingResult@59537b]
+03-11 21:10:34.126  9301  9301 I ViewInteraction: Performing 'replace text(Test Offer Description)' action on view view.getId() is <2131296649/com.example.group8_bartertrader:id/productDescription>
+03-11 21:10:34.135  1409  2608 I AndroidSpellCheckerService: AndroidSpellCheckerService.createSession():139 com.google.android.keyboard.client.delight5.LanguageIdentifier@1d3237d is created
+03-11 21:10:34.138  9301  9301 I ViewInteraction: Performing 'close keyboard' action on view view.getId() is <2131296649/com.example.group8_bartertrader:id/productDescription>
+03-11 21:10:34.140  9301  9301 D IdlingRegistry: Registering idling resources: [androidx.test.espresso.action.CloseKeyboardAction$CloseKeyboardIdlingResult@bc91344]
+03-11 21:10:34.141  9301  9301 I ImeTracker: com.example.group8_bartertrader:5098ea07: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+03-11 21:10:34.142   598   735 I ImeTracker: com.example.group8_bartertrader:5098ea07: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-11 21:10:34.444  9301  9301 D IdlingRegistry: Unregistering idling resources: [androidx.test.espresso.action.CloseKeyboardAction$CloseKeyboardIdlingResult@bc91344]
+03-11 21:10:34.457  9301  9319 W p8_bartertrader: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (unsupported, reflection, allowed)
+03-11 21:10:34.460  9301  9301 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296648/com.example.group8_bartertrader:id/productCategory>
+03-11 21:10:34.592  9301  9329 D EGL_emulation: app_time_stats: avg=114.27ms min=1.47ms max=363.54ms count=9
+03-11 21:10:34.692  9301  9403 D ProfileInstaller: Installing profile for com.example.group8_bartertrader
+03-11 21:10:34.841  9301  9301 I ViewInteraction: Performing 'single click' action on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Electronics"
+03-11 21:10:34.965   403  3538 D audioserver: logFgsApiBegin: FGS Logger Transaction failed, -129
+03-11 21:10:34.966   598   950 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 15
+03-11 21:10:35.602   598   779 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-11 21:10:35.606   598   779 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-11 21:10:35.606   598   779 D InetDiagMessage: Destroyed live tcp sockets for uids={10101} in 6ms
+03-11 21:10:35.610  9301  9329 D EGL_emulation: app_time_stats: avg=209.00ms min=17.16ms max=685.56ms count=5
+03-11 21:10:35.613  9301  9329 D EGL_emulation: app_time_stats: avg=340.36ms min=15.24ms max=988.53ms count=3
+03-11 21:10:35.613   598   630 I Choreographer: Skipped 37 frames!  The application may be doing too much work on its main thread.
+03-11 21:10:35.614   403   531 W AudioFlinger: write blocked for 640 msecs, 4 delayed writes, thread 13
+03-11 21:10:35.624  9301  9301 I Choreographer: Skipped 38 frames!  The application may be doing too much work on its main thread.
+03-11 21:10:35.627  9301  9301 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@bf8beba
+03-11 21:10:35.636   598   950 W InputManager-JNI: Input channel object 'a84bc58 PopupWindow:3edcf4f (client)' was disposed without first being removed with the input manager!
+03-11 21:10:35.644   598   735 I ImeTracker: com.example.group8_bartertrader:6ab1b4b5: onRequestHide at ORIGIN_SERVER reason HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR fromUser false
+03-11 21:10:35.644   598   735 I ImeTracker: com.example.group8_bartertrader:6ab1b4b5: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-11 21:10:35.648  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157
+03-11 21:10:35.650  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+03-11 21:10:35.652  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.example.group8_bartertrader, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+03-11 21:10:35.655  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+03-11 21:10:35.656  1409  1409 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password, password
+03-11 21:10:35.658  1409  1409 I ShortcutsDataManager: AbstractContentDataManager.startImportContentTask():240 startImportContentTask()
+03-11 21:10:35.661  1409  2124 I ShortcutsDataManager: AbstractContentDataManager$ImportContentTask.doInBackground():255 doInBackground()
+03-11 21:10:35.664  1409  2124 I PersonalDictionaryDataHandler: PersonalDictionaryDataHandler.beginProcess():114 LanguageTags = [en-US]
+03-11 21:10:35.737  1409  2124 I ShortcutsDataManager: AbstractContentDataManager.importRecords():345 importRecords() : Success : Count = 0
+03-11 21:10:35.741  9301  9301 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296479/com.example.group8_bartertrader:id/getLocationButton>
+03-11 21:10:35.747  1409  2124 I ShortcutsDataManager: AbstractContentDataManager.importContentData():295 importContentData() : Ending import process
+03-11 21:10:35.752  1409  2121 I Delight5Decoder: Delight5DecoderWrapper.unloadLanguageModel():943 unloadLanguageModel() : 4, version [n/a]
+03-11 21:10:35.753   403   531 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+03-11 21:10:35.787   403  3533 D audioserver: logFgsApiBegin: FGS Logger Transaction failed, -129
+03-11 21:10:35.787   598   964 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 15
+03-11 21:10:35.811  9301  9301 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@f16ba3 in: PAUSED
+03-11 21:10:35.811  9301  9301 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity.getIntent()=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity=com.example.group8_bartertrader.SubmitForm@f16ba3
+03-11 21:10:35.811  9301  9301 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.group8_bartertrader.SubmitForm@f16ba3
+03-11 21:10:35.819   403   531 D AudioFlinger: mixer(0xb400007bdda188e0) throttle end: throttle time(44)
+03-11 21:10:35.819   408   408 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+03-11 21:10:35.882  1409  2124 I PersonalLanguageModelUpdater: PersonalLanguageModelUpdater$UpdateOperation.performInternal():165 run() : Added 0 words and 0 shortcuts
+03-11 21:10:35.882  1409  2124 I DynamicLanguageModelOperation: DynamicLanguageModelOperation.perform():43 perform() : 4 : dxm : Completed
+03-11 21:10:35.885  1409  2121 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():730 loadLanguageModel() : 4, version [n/a]
+03-11 21:10:35.887  1409  2121 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():771 Loaded dynamic LM 4.en
+03-11 21:10:35.890  1409  1409 I ShortcutsDataManager: AbstractContentDataManager$ImportContentTask.onPostExecute():266 onPostExecute() : Result = [2,0]
+03-11 21:10:35.890  1409  1409 I ShortcutsDataManager: ShortcutsDataManager.onImportFinished():82 onImportFinished() : Result = 2 : Count = 0
+03-11 21:10:36.001  5013  5856 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+03-11 21:10:36.006  5013  5856 I EGL_emulation: Opening libGLESv2_emulation.so
+03-11 21:10:36.025   403   531 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+03-11 21:10:36.036  5013  5856 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+03-11 21:10:36.037  5013  5856 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+03-11 21:10:36.075   598   626 I ActivityTaskManager: Displayed com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity for user 0: +259ms
+03-11 21:10:36.098  9301  9301 W RootViewPicker: No activity currently resumed - waiting: 10ms for one to appear.
+03-11 21:10:36.109  9301  9301 W RootViewPicker: No activity currently resumed - waiting: 50ms for one to appear.
+03-11 21:10:36.139  1184  1732 D EGL_emulation: app_time_stats: avg=413784.16ms min=413784.16ms max=413784.16ms count=1
+03-11 21:10:36.160  9301  9301 W RootViewPicker: No activity currently resumed - waiting: 100ms for one to appear.
+03-11 21:10:36.240   598   735 I ImeTracker: com.google.android.permissioncontroller:e96556fd: onRequestHide at ORIGIN_SERVER reason HIDE_ALWAYS_HIDDEN_STATE fromUser false
+03-11 21:10:36.240   598   735 I ImeTracker: com.google.android.permissioncontroller:e96556fd: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-11 21:10:36.247  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157
+03-11 21:10:36.249  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+03-11 21:10:36.249  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.google.android.permissioncontroller, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+03-11 21:10:36.252  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+03-11 21:10:36.252  1409  1409 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password, password
+03-11 21:10:36.261  9301  9301 W RootViewPicker: No activity currently resumed - waiting: 500ms for one to appear.
+03-11 21:10:36.764  9301  9301 W RootViewPicker: No activity currently resumed - waiting: 2000ms for one to appear.
+03-11 21:10:37.463  3737  7913 I artd    : Dex parent of /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/base.apk is not writable: Permission denied
+03-11 21:10:37.463  3737  7913 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@base.apk@classes.dex)
+03-11 21:10:37.463  3737  7913 I artd    : Loading /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@base.apk@classes.dex with executable: 0
+03-11 21:10:37.463  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@base.apk@classes.dex: File /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@base.apk@classes.vdex does not exist.
+03-11 21:10:37.463  3737  7913 I artd    : GetBestInfo checking odex next to the dex file (/data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/base.odex)
+03-11 21:10:37.463  3737  7913 I artd    : Loading /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/base.odex with executable: 0
+03-11 21:10:37.466  3737  7913 I artd    : Successfully loaded /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/base.odex with executable: 0
+03-11 21:10:37.466  3737  7913 I artd    : /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/base.odex is kOatUpToDate with filter speed-profile
+03-11 21:10:37.468  3737  7913 I artd    : Dex parent of /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/split_CronetDynamite_installtime.apk is not writable: Permission denied
+03-11 21:10:37.468  3737  7913 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_CronetDynamite_installtime.apk@classes.dex)
+03-11 21:10:37.468  3737  7913 I artd    : Loading /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_CronetDynamite_installtime.apk@classes.dex with executable: 0
+03-11 21:10:37.468  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_CronetDynamite_installtime.apk@classes.dex: File /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_CronetDynamite_installtime.apk@classes.vdex does not exist.
+03-11 21:10:37.468  3737  7913 I artd    : GetBestInfo checking odex next to the dex file (/data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_CronetDynamite_installtime.odex)
+03-11 21:10:37.468  3737  7913 I artd    : Loading /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_CronetDynamite_installtime.odex with executable: 0
+03-11 21:10:37.469  3737  7913 I artd    : Successfully loaded /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_CronetDynamite_installtime.odex with executable: 0
+03-11 21:10:37.469  3737  7913 I artd    : /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_CronetDynamite_installtime.odex is kOatUpToDate with filter speed
+03-11 21:10:37.470  3737  7913 I artd    : Dex parent of /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/split_DynamiteLoader_installtime.apk is not writable: Permission denied
+03-11 21:10:37.470  3737  7913 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_DynamiteLoader_installtime.apk@classes.dex)
+03-11 21:10:37.470  3737  7913 I artd    : Loading /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_DynamiteLoader_installtime.apk@classes.dex with executable: 0
+03-11 21:10:37.470  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_DynamiteLoader_installtime.apk@classes.dex: File /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_DynamiteLoader_installtime.apk@classes.vdex does not exist.
+03-11 21:10:37.470  3737  7913 I artd    : GetBestInfo checking odex next to the dex file (/data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_DynamiteLoader_installtime.odex)
+03-11 21:10:37.470  3737  7913 I artd    : Loading /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_DynamiteLoader_installtime.odex with executable: 0
+03-11 21:10:37.471  3737  7913 I artd    : Successfully loaded /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_DynamiteLoader_installtime.odex with executable: 0
+03-11 21:10:37.471  3737  7913 I artd    : /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_DynamiteLoader_installtime.odex is kOatUpToDate with filter speed
+03-11 21:10:37.472  3737  7913 I artd    : Dex parent of /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/split_DynamiteModulesA_installtime.apk is not writable: Permission denied
+03-11 21:10:37.472  3737  7913 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_DynamiteModulesA_installtime.apk@classes.dex)
+03-11 21:10:37.472  3737  7913 I artd    : Loading /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_DynamiteModulesA_installtime.apk@classes.dex with executable: 0
+03-11 21:10:37.472  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_DynamiteModulesA_installtime.apk@classes.dex: File /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_DynamiteModulesA_installtime.apk@classes.vdex does not exist.
+03-11 21:10:37.472  3737  7913 I artd    : GetBestInfo checking odex next to the dex file (/data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_DynamiteModulesA_installtime.odex)
+03-11 21:10:37.472  3737  7913 I artd    : Loading /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_DynamiteModulesA_installtime.odex with executable: 0
+03-11 21:10:37.473  3737  7913 I artd    : Successfully loaded /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_DynamiteModulesA_installtime.odex with executable: 0
+03-11 21:10:37.473  3737  7913 I artd    : /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_DynamiteModulesA_installtime.odex is kOatUpToDate with filter speed
+03-11 21:10:37.475  3737  3737 I artd    : Dex parent of /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/split_DynamiteModulesC_installtime.apk is not writable: Permission denied
+03-11 21:10:37.475  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_DynamiteModulesC_installtime.apk@classes.dex)
+03-11 21:10:37.475  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_DynamiteModulesC_installtime.apk@classes.dex with executable: 0
+03-11 21:10:37.475  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_DynamiteModulesC_installtime.apk@classes.dex: File /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_DynamiteModulesC_installtime.apk@classes.vdex does not exist.
+03-11 21:10:37.475  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_DynamiteModulesC_installtime.odex)
+03-11 21:10:37.475  3737  3737 I artd    : Loading /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_DynamiteModulesC_installtime.odex with executable: 0
+03-11 21:10:37.476  3737  3737 I artd    : Successfully loaded /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_DynamiteModulesC_installtime.odex with executable: 0
+03-11 21:10:37.476  3737  3737 I artd    : /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_DynamiteModulesC_installtime.odex is kOatUpToDate with filter speed
+03-11 21:10:37.477  3737  3737 I artd    : Dex parent of /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/split_GoogleCertificates_installtime.apk is not writable: Permission denied
+03-11 21:10:37.477  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_GoogleCertificates_installtime.apk@classes.dex)
+03-11 21:10:37.477  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_GoogleCertificates_installtime.apk@classes.dex with executable: 0
+03-11 21:10:37.477  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_GoogleCertificates_installtime.apk@classes.dex: File /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_GoogleCertificates_installtime.apk@classes.vdex does not exist.
+03-11 21:10:37.477  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_GoogleCertificates_installtime.odex)
+03-11 21:10:37.477  3737  3737 I artd    : Loading /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_GoogleCertificates_installtime.odex with executable: 0
+03-11 21:10:37.478  3737  3737 I artd    : Successfully loaded /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_GoogleCertificates_installtime.odex with executable: 0
+03-11 21:10:37.479  3737  3737 I artd    : /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_GoogleCertificates_installtime.odex is kOatUpToDate with filter speed
+03-11 21:10:37.480  3737  3737 I artd    : Dex parent of /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/split_MapsDynamite_installtime.apk is not writable: Permission denied
+03-11 21:10:37.480  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_MapsDynamite_installtime.apk@classes.dex)
+03-11 21:10:37.480  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_MapsDynamite_installtime.apk@classes.dex with executable: 0
+03-11 21:10:37.480  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_MapsDynamite_installtime.apk@classes.dex: File /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_MapsDynamite_installtime.apk@classes.vdex does not exist.
+03-11 21:10:37.480  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_MapsDynamite_installtime.odex)
+03-11 21:10:37.480  3737  3737 I artd    : Loading /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_MapsDynamite_installtime.odex with executable: 0
+03-11 21:10:37.481  3737  3737 I artd    : Successfully loaded /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_MapsDynamite_installtime.odex with executable: 0
+03-11 21:10:37.481  3737  3737 I artd    : /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_MapsDynamite_installtime.odex is kOatUpToDate with filter speed
+03-11 21:10:37.482  3737  7913 I artd    : Dex parent of /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/split_MeasurementDynamite_installtime.apk is not writable: Permission denied
+03-11 21:10:37.482  3737  7913 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_MeasurementDynamite_installtime.apk@classes.dex)
+03-11 21:10:37.482  3737  7913 I artd    : Loading /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_MeasurementDynamite_installtime.apk@classes.dex with executable: 0
+03-11 21:10:37.482  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_MeasurementDynamite_installtime.apk@classes.dex: File /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_MeasurementDynamite_installtime.apk@classes.vdex does not exist.
+03-11 21:10:37.482  3737  7913 I artd    : GetBestInfo checking odex next to the dex file (/data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_MeasurementDynamite_installtime.odex)
+03-11 21:10:37.482  3737  7913 I artd    : Loading /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_MeasurementDynamite_installtime.odex with executable: 0
+03-11 21:10:37.482  3737  7913 I artd    : Successfully loaded /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_MeasurementDynamite_installtime.odex with executable: 0
+03-11 21:10:37.482  3737  7913 I artd    : /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_MeasurementDynamite_installtime.odex is kOatUpToDate with filter speed
+03-11 21:10:37.484  3737  7913 I artd    : Dex parent of /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/split_all_locale_splits.apk is not writable: Permission denied
+03-11 21:10:37.484  3737  7913 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_all_locale_splits.apk@classes.dex)
+03-11 21:10:37.484  3737  7913 I artd    : Loading /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_all_locale_splits.apk@classes.dex with executable: 0
+03-11 21:10:37.484  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_all_locale_splits.apk@classes.dex: File /data/dalvik-cache/arm64/data@app@~~IpDfzShC4JabgRdOVkPRUw==@com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==@split_all_locale_splits.apk@classes.vdex does not exist.
+03-11 21:10:37.484  3737  7913 I artd    : GetBestInfo checking odex next to the dex file (/data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_all_locale_splits.odex)
+03-11 21:10:37.484  3737  7913 I artd    : Loading /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_all_locale_splits.odex with executable: 0
+03-11 21:10:37.484  3737  7913 I artd    : Successfully loaded /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_all_locale_splits.odex with executable: 0
+03-11 21:10:37.484  3737  7913 I artd    : /data/app/~~IpDfzShC4JabgRdOVkPRUw==/com.google.android.gms-DuCdpQNuAYEpjB6xHXY15g==/oat/arm64/split_all_locale_splits.odex is kOatUpToDate with filter speed
+03-11 21:10:37.485  3737  7913 I artd    : Dex parent of /data/user/0/com.google.android.gms/app_dg_cache/9FECBF7F742FE9DA9AF42F1F5EA43F1A4D5A18BE/the.apk is not writable: Permission denied
+03-11 21:10:37.485  3737  7913 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@9FECBF7F742FE9DA9AF42F1F5EA43F1A4D5A18BE@the.apk@classes.dex)
+03-11 21:10:37.485  3737  7913 I artd    : Loading /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@9FECBF7F742FE9DA9AF42F1F5EA43F1A4D5A18BE@the.apk@classes.dex with executable: 0
+03-11 21:10:37.486  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@9FECBF7F742FE9DA9AF42F1F5EA43F1A4D5A18BE@the.apk@classes.dex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@9FECBF7F742FE9DA9AF42F1F5EA43F1A4D5A18BE@the.apk@classes.vdex does not exist.
+03-11 21:10:37.486  3737  7913 I artd    : GetBestInfo checking odex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/9FECBF7F742FE9DA9AF42F1F5EA43F1A4D5A18BE/oat/arm64/the.odex)
+03-11 21:10:37.486  3737  7913 I artd    : Loading /data/user/0/com.google.android.gms/app_dg_cache/9FECBF7F742FE9DA9AF42F1F5EA43F1A4D5A18BE/oat/arm64/the.odex with executable: 0
+03-11 21:10:37.486  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/user/0/com.google.android.gms/app_dg_cache/9FECBF7F742FE9DA9AF42F1F5EA43F1A4D5A18BE/oat/arm64/the.odex: Failed to open oat filename for reading: No such file or directory
+03-11 21:10:37.486  3737  7913 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@9FECBF7F742FE9DA9AF42F1F5EA43F1A4D5A18BE@the.apk@classes.vdex)
+03-11 21:10:37.486  3737  7913 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@9FECBF7F742FE9DA9AF42F1F5EA43F1A4D5A18BE@the.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@9FECBF7F742FE9DA9AF42F1F5EA43F1A4D5A18BE@the.apk@classes.vdex does not exist.
+03-11 21:10:37.486  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@9FECBF7F742FE9DA9AF42F1F5EA43F1A4D5A18BE@the.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@9FECBF7F742FE9DA9AF42F1F5EA43F1A4D5A18BE@the.apk@classes.vdex does not exist.
+03-11 21:10:37.486  3737  7913 I artd    : GetBestInfo checking vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/9FECBF7F742FE9DA9AF42F1F5EA43F1A4D5A18BE/oat/arm64/the.vdex)
+03-11 21:10:37.486  3737  7913 I artd    : Successfully loaded /data/user/0/com.google.android.gms/app_dg_cache/9FECBF7F742FE9DA9AF42F1F5EA43F1A4D5A18BE/oat/arm64/the.vdex with executable: 0
+03-11 21:10:37.486  3737  7913 I artd    : Image checksum test skipped for vdex file /data/user/0/com.google.android.gms/app_dg_cache/9FECBF7F742FE9DA9AF42F1F5EA43F1A4D5A18BE/oat/arm64/the.vdex
+03-11 21:10:37.486  3737  7913 I artd    : /data/user/0/com.google.android.gms/app_dg_cache/9FECBF7F742FE9DA9AF42F1F5EA43F1A4D5A18BE/oat/arm64/the.vdex is kOatUpToDate with filter verify
+03-11 21:10:37.487  3737  7913 I artd    : Dex parent of /data/user/0/com.google.android.gms/app_dg_cache/8F57DBDCA4347134A169711F534C96F7425A0A3D/the.apk is not writable: Permission denied
+03-11 21:10:37.487  3737  7913 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@8F57DBDCA4347134A169711F534C96F7425A0A3D@the.apk@classes.dex)
+03-11 21:10:37.487  3737  7913 I artd    : Loading /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@8F57DBDCA4347134A169711F534C96F7425A0A3D@the.apk@classes.dex with executable: 0
+03-11 21:10:37.487  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@8F57DBDCA4347134A169711F534C96F7425A0A3D@the.apk@classes.dex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@8F57DBDCA4347134A169711F534C96F7425A0A3D@the.apk@classes.vdex does not exist.
+03-11 21:10:37.487  3737  7913 I artd    : GetBestInfo checking odex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/8F57DBDCA4347134A169711F534C96F7425A0A3D/oat/arm64/the.odex)
+03-11 21:10:37.487  3737  7913 I artd    : Loading /data/user/0/com.google.android.gms/app_dg_cache/8F57DBDCA4347134A169711F534C96F7425A0A3D/oat/arm64/the.odex with executable: 0
+03-11 21:10:37.487  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/user/0/com.google.android.gms/app_dg_cache/8F57DBDCA4347134A169711F534C96F7425A0A3D/oat/arm64/the.odex: Failed to open oat filename for reading: No such file or directory
+03-11 21:10:37.487  3737  7913 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@8F57DBDCA4347134A169711F534C96F7425A0A3D@the.apk@classes.vdex)
+03-11 21:10:37.487  3737  7913 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@8F57DBDCA4347134A169711F534C96F7425A0A3D@the.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@8F57DBDCA4347134A169711F534C96F7425A0A3D@the.apk@classes.vdex does not exist.
+03-11 21:10:37.487  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@8F57DBDCA4347134A169711F534C96F7425A0A3D@the.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@8F57DBDCA4347134A169711F534C96F7425A0A3D@the.apk@classes.vdex does not exist.
+03-11 21:10:37.487  3737  7913 I artd    : GetBestInfo checking vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/8F57DBDCA4347134A169711F534C96F7425A0A3D/oat/arm64/the.vdex)
+03-11 21:10:37.488  3737  7913 I artd    : Successfully loaded /data/user/0/com.google.android.gms/app_dg_cache/8F57DBDCA4347134A169711F534C96F7425A0A3D/oat/arm64/the.vdex with executable: 0
+03-11 21:10:37.488  3737  7913 I artd    : Image checksum test skipped for vdex file /data/user/0/com.google.android.gms/app_dg_cache/8F57DBDCA4347134A169711F534C96F7425A0A3D/oat/arm64/the.vdex
+03-11 21:10:37.488  3737  7913 I artd    : /data/user/0/com.google.android.gms/app_dg_cache/8F57DBDCA4347134A169711F534C96F7425A0A3D/oat/arm64/the.vdex is kOatUpToDate with filter verify
+03-11 21:10:37.489  3737  3737 I artd    : Dex parent of /data/user/0/com.google.android.gms/app_dg_cache/D2AC9CFD4880476FDBFF2B522714807D18BD24C0/the.apk is not writable: Permission denied
+03-11 21:10:37.489  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@D2AC9CFD4880476FDBFF2B522714807D18BD24C0@the.apk@classes.dex)
+03-11 21:10:37.489  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@D2AC9CFD4880476FDBFF2B522714807D18BD24C0@the.apk@classes.dex with executable: 0
+03-11 21:10:37.489  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@D2AC9CFD4880476FDBFF2B522714807D18BD24C0@the.apk@classes.dex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@D2AC9CFD4880476FDBFF2B522714807D18BD24C0@the.apk@classes.vdex does not exist.
+03-11 21:10:37.489  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/D2AC9CFD4880476FDBFF2B522714807D18BD24C0/oat/arm64/the.odex)
+03-11 21:10:37.489  3737  3737 I artd    : Loading /data/user/0/com.google.android.gms/app_dg_cache/D2AC9CFD4880476FDBFF2B522714807D18BD24C0/oat/arm64/the.odex with executable: 0
+03-11 21:10:37.489  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user/0/com.google.android.gms/app_dg_cache/D2AC9CFD4880476FDBFF2B522714807D18BD24C0/oat/arm64/the.odex: Failed to open oat filename for reading: No such file or directory
+03-11 21:10:37.489  3737  3737 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@D2AC9CFD4880476FDBFF2B522714807D18BD24C0@the.apk@classes.vdex)
+03-11 21:10:37.489  3737  3737 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@D2AC9CFD4880476FDBFF2B522714807D18BD24C0@the.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@D2AC9CFD4880476FDBFF2B522714807D18BD24C0@the.apk@classes.vdex does not exist.
+03-11 21:10:37.489  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@D2AC9CFD4880476FDBFF2B522714807D18BD24C0@the.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@D2AC9CFD4880476FDBFF2B522714807D18BD24C0@the.apk@classes.vdex does not exist.
+03-11 21:10:37.489  3737  3737 I artd    : GetBestInfo checking vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/D2AC9CFD4880476FDBFF2B522714807D18BD24C0/oat/arm64/the.vdex)
+03-11 21:10:37.489  3737  3737 I artd    : Successfully loaded /data/user/0/com.google.android.gms/app_dg_cache/D2AC9CFD4880476FDBFF2B522714807D18BD24C0/oat/arm64/the.vdex with executable: 0
+03-11 21:10:37.489  3737  3737 I artd    : Image checksum test skipped for vdex file /data/user/0/com.google.android.gms/app_dg_cache/D2AC9CFD4880476FDBFF2B522714807D18BD24C0/oat/arm64/the.vdex
+03-11 21:10:37.489  3737  3737 I artd    : /data/user/0/com.google.android.gms/app_dg_cache/D2AC9CFD4880476FDBFF2B522714807D18BD24C0/oat/arm64/the.vdex is kOatUpToDate with filter verify
+03-11 21:10:37.492  3737  3737 I artd    : Dex parent of /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-Antifingerprinting.optional_242335100000.apk is not writable: No such file or directory
+03-11 21:10:37.492  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000008@dl-Antifingerprinting.optional_242335100000.apk@classes.dex)
+03-11 21:10:37.492  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000008@dl-Antifingerprinting.optional_242335100000.apk@classes.dex with executable: 0
+03-11 21:10:37.492  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000008@dl-Antifingerprinting.optional_242335100000.apk@classes.dex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000008@dl-Antifingerprinting.optional_242335100000.apk@classes.vdex does not exist.
+03-11 21:10:37.492  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000008/oat/arm64/dl-Antifingerprinting.optional_242335100000.odex)
+03-11 21:10:37.492  3737  3737 I artd    : Loading /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/oat/arm64/dl-Antifingerprinting.optional_242335100000.odex with executable: 0
+03-11 21:10:37.492  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/oat/arm64/dl-Antifingerprinting.optional_242335100000.odex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/oat/arm64/dl-Antifingerprinting.optional_242335100000.vdex does not exist.
+03-11 21:10:37.492  3737  3737 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000008@dl-Antifingerprinting.optional_242335100000.apk@classes.vdex)
+03-11 21:10:37.492  3737  3737 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000008@dl-Antifingerprinting.optional_242335100000.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000008@dl-Antifingerprinting.optional_242335100000.apk@classes.vdex does not exist.
+03-11 21:10:37.492  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000008@dl-Antifingerprinting.optional_242335100000.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000008@dl-Antifingerprinting.optional_242335100000.apk@classes.vdex does not exist.
+03-11 21:10:37.492  3737  3737 I artd    : GetBestInfo checking vdex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000008/oat/arm64/dl-Antifingerprinting.optional_242335100000.vdex)
+03-11 21:10:37.492  3737  3737 I artd    : unable to open vdex file /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/oat/arm64/dl-Antifingerprinting.optional_242335100000.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/oat/arm64/dl-Antifingerprinting.optional_242335100000.vdex does not exist.
+03-11 21:10:37.492  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/oat/arm64/dl-Antifingerprinting.optional_242335100000.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/oat/arm64/dl-Antifingerprinting.optional_242335100000.vdex does not exist.
+03-11 21:10:37.492  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-Antifingerprinting.optional_242335100000.dm)
+03-11 21:10:37.492  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-Antifingerprinting.optional_242335100000.dm': No such file or directory
+03-11 21:10:37.492  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-Antifingerprinting.optional_242335100000.dm: I/O error
+03-11 21:10:37.492  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-Antifingerprinting.optional_242335100000.dm)
+03-11 21:10:37.492  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-Antifingerprinting.optional_242335100000.dm': No such file or directory
+03-11 21:10:37.492  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-Antifingerprinting.optional_242335100000.dm: I/O error
+03-11 21:10:37.492  3737  3737 I artd    : GetBestInfo no usable artifacts
+03-11 21:10:37.493  3737  3737 I artd    : Dex parent of /data/user_de/0/com.google.android.gms/app_chimera/m/0000001b/dl-Appsearch.optional_250832100400.apk is not writable: Permission denied
+03-11 21:10:37.493  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000001b@dl-Appsearch.optional_250832100400.apk@classes.dex)
+03-11 21:10:37.493  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000001b@dl-Appsearch.optional_250832100400.apk@classes.dex with executable: 0
+03-11 21:10:37.493  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000001b@dl-Appsearch.optional_250832100400.apk@classes.dex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000001b@dl-Appsearch.optional_250832100400.apk@classes.vdex does not exist.
+03-11 21:10:37.493  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/0000001b/oat/arm64/dl-Appsearch.optional_250832100400.odex)
+03-11 21:10:37.493  3737  3737 I artd    : Loading /data/user_de/0/com.google.android.gms/app_chimera/m/0000001b/oat/arm64/dl-Appsearch.optional_250832100400.odex with executable: 0
+03-11 21:10:37.493  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/0000001b/oat/arm64/dl-Appsearch.optional_250832100400.odex: File /data/user_de/0/com.google.android.gms/app_chimera/m/0000001b/oat/arm64/dl-Appsearch.optional_250832100400.vdex does not exist.
+03-11 21:10:37.493  3737  3737 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000001b@dl-Appsearch.optional_250832100400.apk@classes.vdex)
+03-11 21:10:37.493  3737  3737 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000001b@dl-Appsearch.optional_250832100400.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000001b@dl-Appsearch.optional_250832100400.apk@classes.vdex does not exist.
+03-11 21:10:37.493  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000001b@dl-Appsearch.optional_250832100400.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000001b@dl-Appsearch.optional_250832100400.apk@classes.vdex does not exist.
+03-11 21:10:37.493  3737  3737 I artd    : GetBestInfo checking vdex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/0000001b/oat/arm64/dl-Appsearch.optional_250832100400.vdex)
+03-11 21:10:37.493  3737  3737 I artd    : unable to open vdex file /data/user_de/0/com.google.android.gms/app_chimera/m/0000001b/oat/arm64/dl-Appsearch.optional_250832100400.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/0000001b/oat/arm64/dl-Appsearch.optional_250832100400.vdex does not exist.
+03-11 21:10:37.493  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/0000001b/oat/arm64/dl-Appsearch.optional_250832100400.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/0000001b/oat/arm64/dl-Appsearch.optional_250832100400.vdex does not exist.
+03-11 21:10:37.493  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/0000001b/dl-Appsearch.optional_250832100400.dm)
+03-11 21:10:37.493  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/0000001b/dl-Appsearch.optional_250832100400.dm': No such file or directory
+03-11 21:10:37.493  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/0000001b/dl-Appsearch.optional_250832100400.dm: I/O error
+03-11 21:10:37.493  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/0000001b/dl-Appsearch.optional_250832100400.dm)
+03-11 21:10:37.493  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/0000001b/dl-Appsearch.optional_250832100400.dm': No such file or directory
+03-11 21:10:37.493  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/0000001b/dl-Appsearch.optional_250832100400.dm: I/O error
+03-11 21:10:37.493  3737  3737 I artd    : GetBestInfo no usable artifacts
+03-11 21:10:37.494  3737  3737 I artd    : Dex parent of /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.uncompressed.apk is not writable: No such file or directory
+03-11 21:10:37.494  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000002@DynamiteLoader.uncompressed.apk@classes.dex)
+03-11 21:10:37.494  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000002@DynamiteLoader.uncompressed.apk@classes.dex with executable: 0
+03-11 21:10:37.494  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000002@DynamiteLoader.uncompressed.apk@classes.dex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000002@DynamiteLoader.uncompressed.apk@classes.vdex does not exist.
+03-11 21:10:37.494  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000002/oat/arm64/DynamiteLoader.uncompressed.odex)
+03-11 21:10:37.494  3737  3737 I artd    : Loading /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/oat/arm64/DynamiteLoader.uncompressed.odex with executable: 0
+03-11 21:10:37.494  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/oat/arm64/DynamiteLoader.uncompressed.odex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/oat/arm64/DynamiteLoader.uncompressed.vdex does not exist.
+03-11 21:10:37.494  3737  3737 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000002@DynamiteLoader.uncompressed.apk@classes.vdex)
+03-11 21:10:37.494  3737  3737 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000002@DynamiteLoader.uncompressed.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000002@DynamiteLoader.uncompressed.apk@classes.vdex does not exist.
+03-11 21:10:37.494  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000002@DynamiteLoader.uncompressed.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000002@DynamiteLoader.uncompressed.apk@classes.vdex does not exist.
+03-11 21:10:37.494  3737  3737 I artd    : GetBestInfo checking vdex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000002/oat/arm64/DynamiteLoader.uncompressed.vdex)
+03-11 21:10:37.494  3737  3737 I artd    : unable to open vdex file /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/oat/arm64/DynamiteLoader.uncompressed.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/oat/arm64/DynamiteLoader.uncompressed.vdex does not exist.
+03-11 21:10:37.494  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/oat/arm64/DynamiteLoader.uncompressed.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/oat/arm64/DynamiteLoader.uncompressed.vdex does not exist.
+03-11 21:10:37.494  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.uncompressed.dm)
+03-11 21:10:37.494  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.uncompressed.dm': No such file or directory
+03-11 21:10:37.494  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.uncompressed.dm: I/O error
+03-11 21:10:37.494  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.uncompressed.dm)
+03-11 21:10:37.494  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.uncompressed.dm': No such file or directory
+03-11 21:10:37.494  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.uncompressed.dm: I/O error
+03-11 21:10:37.494  3737  3737 I artd    : GetBestInfo no usable artifacts
+03-11 21:10:37.495  3737  3737 I artd    : Dex parent of /data/user_de/0/com.google.android.gms/app_chimera/m/00000017/dl-BrellaDynamite.optional_250832100400.apk is not writable: Permission denied
+03-11 21:10:37.495  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000017@dl-BrellaDynamite.optional_250832100400.apk@classes.dex)
+03-11 21:10:37.495  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000017@dl-BrellaDynamite.optional_250832100400.apk@classes.dex with executable: 0
+03-11 21:10:37.495  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000017@dl-BrellaDynamite.optional_250832100400.apk@classes.dex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000017@dl-BrellaDynamite.optional_250832100400.apk@classes.vdex does not exist.
+03-11 21:10:37.495  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000017/oat/arm64/dl-BrellaDynamite.optional_250832100400.odex)
+03-11 21:10:37.495  3737  3737 I artd    : Loading /data/user_de/0/com.google.android.gms/app_chimera/m/00000017/oat/arm64/dl-BrellaDynamite.optional_250832100400.odex with executable: 0
+03-11 21:10:37.495  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000017/oat/arm64/dl-BrellaDynamite.optional_250832100400.odex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000017/oat/arm64/dl-BrellaDynamite.optional_250832100400.vdex does not exist.
+03-11 21:10:37.495  3737  3737 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000017@dl-BrellaDynamite.optional_250832100400.apk@classes.vdex)
+03-11 21:10:37.495  3737  3737 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000017@dl-BrellaDynamite.optional_250832100400.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000017@dl-BrellaDynamite.optional_250832100400.apk@classes.vdex does not exist.
+03-11 21:10:37.495  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000017@dl-BrellaDynamite.optional_250832100400.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000017@dl-BrellaDynamite.optional_250832100400.apk@classes.vdex does not exist.
+03-11 21:10:37.495  3737  3737 I artd    : GetBestInfo checking vdex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000017/oat/arm64/dl-BrellaDynamite.optional_250832100400.vdex)
+03-11 21:10:37.495  3737  3737 I artd    : unable to open vdex file /data/user_de/0/com.google.android.gms/app_chimera/m/00000017/oat/arm64/dl-BrellaDynamite.optional_250832100400.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000017/oat/arm64/dl-BrellaDynamite.optional_250832100400.vdex does not exist.
+03-11 21:10:37.495  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000017/oat/arm64/dl-BrellaDynamite.optional_250832100400.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000017/oat/arm64/dl-BrellaDynamite.optional_250832100400.vdex does not exist.
+03-11 21:10:37.495  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000017/dl-BrellaDynamite.optional_250832100400.dm)
+03-11 21:10:37.495  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000017/dl-BrellaDynamite.optional_250832100400.dm': No such file or directory
+03-11 21:10:37.495  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000017/dl-BrellaDynamite.optional_250832100400.dm: I/O error
+03-11 21:10:37.495  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000017/dl-BrellaDynamite.optional_250832100400.dm)
+03-11 21:10:37.495  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000017/dl-BrellaDynamite.optional_250832100400.dm': No such file or directory
+03-11 21:10:37.495  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000017/dl-BrellaDynamite.optional_250832100400.dm: I/O error
+03-11 21:10:37.495  3737  3737 I artd    : GetBestInfo no usable artifacts
+03-11 21:10:37.496  3737  3737 I artd    : Dex parent of /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk is not writable: No such file or directory
+03-11 21:10:37.496  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000005@GoogleCertificates.apk@classes.dex)
+03-11 21:10:37.496  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000005@GoogleCertificates.apk@classes.dex with executable: 0
+03-11 21:10:37.496  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000005@GoogleCertificates.apk@classes.dex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000005@GoogleCertificates.apk@classes.vdex does not exist.
+03-11 21:10:37.496  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000005/oat/arm64/GoogleCertificates.odex)
+03-11 21:10:37.496  3737  3737 I artd    : Loading /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/oat/arm64/GoogleCertificates.odex with executable: 0
+03-11 21:10:37.496  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/oat/arm64/GoogleCertificates.odex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/oat/arm64/GoogleCertificates.vdex does not exist.
+03-11 21:10:37.496  3737  3737 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000005@GoogleCertificates.apk@classes.vdex)
+03-11 21:10:37.496  3737  3737 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000005@GoogleCertificates.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000005@GoogleCertificates.apk@classes.vdex does not exist.
+03-11 21:10:37.496  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000005@GoogleCertificates.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000005@GoogleCertificates.apk@classes.vdex does not exist.
+03-11 21:10:37.496  3737  3737 I artd    : GetBestInfo checking vdex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000005/oat/arm64/GoogleCertificates.vdex)
+03-11 21:10:37.496  3737  3737 I artd    : unable to open vdex file /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/oat/arm64/GoogleCertificates.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/oat/arm64/GoogleCertificates.vdex does not exist.
+03-11 21:10:37.496  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/oat/arm64/GoogleCertificates.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/oat/arm64/GoogleCertificates.vdex does not exist.
+03-11 21:10:37.496  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.dm)
+03-11 21:10:37.496  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.dm': No such file or directory
+03-11 21:10:37.496  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.dm: I/O error
+03-11 21:10:37.496  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.dm)
+03-11 21:10:37.496  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.dm': No such file or directory
+03-11 21:10:37.496  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.dm: I/O error
+03-11 21:10:37.496  3737  3737 I artd    : GetBestInfo no usable artifacts
+03-11 21:10:37.497  3737  3737 I artd    : Dex parent of /data/user/0/com.google.android.gms/app_dg_cache/7D03DB48C1B776E1F6B27F2A4D0C3B0500A182EE/the.apk is not writable: Permission denied
+03-11 21:10:37.497  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@7D03DB48C1B776E1F6B27F2A4D0C3B0500A182EE@the.apk@classes.dex)
+03-11 21:10:37.497  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@7D03DB48C1B776E1F6B27F2A4D0C3B0500A182EE@the.apk@classes.dex with executable: 0
+03-11 21:10:37.497  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@7D03DB48C1B776E1F6B27F2A4D0C3B0500A182EE@the.apk@classes.dex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@7D03DB48C1B776E1F6B27F2A4D0C3B0500A182EE@the.apk@classes.vdex does not exist.
+03-11 21:10:37.497  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/7D03DB48C1B776E1F6B27F2A4D0C3B0500A182EE/oat/arm64/the.odex)
+03-11 21:10:37.497  3737  3737 I artd    : Loading /data/user/0/com.google.android.gms/app_dg_cache/7D03DB48C1B776E1F6B27F2A4D0C3B0500A182EE/oat/arm64/the.odex with executable: 0
+03-11 21:10:37.497  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user/0/com.google.android.gms/app_dg_cache/7D03DB48C1B776E1F6B27F2A4D0C3B0500A182EE/oat/arm64/the.odex: Failed to open oat filename for reading: No such file or directory
+03-11 21:10:37.497  3737  3737 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@7D03DB48C1B776E1F6B27F2A4D0C3B0500A182EE@the.apk@classes.vdex)
+03-11 21:10:37.497  3737  3737 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@7D03DB48C1B776E1F6B27F2A4D0C3B0500A182EE@the.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@7D03DB48C1B776E1F6B27F2A4D0C3B0500A182EE@the.apk@classes.vdex does not exist.
+03-11 21:10:37.497  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@7D03DB48C1B776E1F6B27F2A4D0C3B0500A182EE@the.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@7D03DB48C1B776E1F6B27F2A4D0C3B0500A182EE@the.apk@classes.vdex does not exist.
+03-11 21:10:37.497  3737  3737 I artd    : GetBestInfo checking vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/7D03DB48C1B776E1F6B27F2A4D0C3B0500A182EE/oat/arm64/the.vdex)
+03-11 21:10:37.498  3737  3737 I artd    : Successfully loaded /data/user/0/com.google.android.gms/app_dg_cache/7D03DB48C1B776E1F6B27F2A4D0C3B0500A182EE/oat/arm64/the.vdex with executable: 0
+03-11 21:10:37.498  3737  3737 I artd    : Image checksum test skipped for vdex file /data/user/0/com.google.android.gms/app_dg_cache/7D03DB48C1B776E1F6B27F2A4D0C3B0500A182EE/oat/arm64/the.vdex
+03-11 21:10:37.498  3737  3737 I artd    : /data/user/0/com.google.android.gms/app_dg_cache/7D03DB48C1B776E1F6B27F2A4D0C3B0500A182EE/oat/arm64/the.vdex is kOatUpToDate with filter verify
+03-11 21:10:37.499  3737  3737 I artd    : Dex parent of /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/dl-TfliteDynamiteDynamite.integ_243930801100400.apk is not writable: Permission denied
+03-11 21:10:37.499  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000000c@dl-TfliteDynamiteDynamite.integ_243930801100400.apk@classes.dex)
+03-11 21:10:37.499  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000000c@dl-TfliteDynamiteDynamite.integ_243930801100400.apk@classes.dex with executable: 0
+03-11 21:10:37.499  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000000c@dl-TfliteDynamiteDynamite.integ_243930801100400.apk@classes.dex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000000c@dl-TfliteDynamiteDynamite.integ_243930801100400.apk@classes.vdex does not exist.
+03-11 21:10:37.499  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/oat/arm64/dl-TfliteDynamiteDynamite.integ_243930801100400.odex)
+03-11 21:10:37.499  3737  3737 I artd    : Loading /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/oat/arm64/dl-TfliteDynamiteDynamite.integ_243930801100400.odex with executable: 0
+03-11 21:10:37.499  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/oat/arm64/dl-TfliteDynamiteDynamite.integ_243930801100400.odex: File /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/oat/arm64/dl-TfliteDynamiteDynamite.integ_243930801100400.vdex does not exist.
+03-11 21:10:37.499  3737  3737 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000000c@dl-TfliteDynamiteDynamite.integ_243930801100400.apk@classes.vdex)
+03-11 21:10:37.499  3737  3737 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000000c@dl-TfliteDynamiteDynamite.integ_243930801100400.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000000c@dl-TfliteDynamiteDynamite.integ_243930801100400.apk@classes.vdex does not exist.
+03-11 21:10:37.499  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000000c@dl-TfliteDynamiteDynamite.integ_243930801100400.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000000c@dl-TfliteDynamiteDynamite.integ_243930801100400.apk@classes.vdex does not exist.
+03-11 21:10:37.499  3737  3737 I artd    : GetBestInfo checking vdex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/oat/arm64/dl-TfliteDynamiteDynamite.integ_243930801100400.vdex)
+03-11 21:10:37.499  3737  3737 I artd    : unable to open vdex file /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/oat/arm64/dl-TfliteDynamiteDynamite.integ_243930801100400.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/oat/arm64/dl-TfliteDynamiteDynamite.integ_243930801100400.vdex does not exist.
+03-11 21:10:37.499  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/oat/arm64/dl-TfliteDynamiteDynamite.integ_243930801100400.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/oat/arm64/dl-TfliteDynamiteDynamite.integ_243930801100400.vdex does not exist.
+03-11 21:10:37.499  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/dl-TfliteDynamiteDynamite.integ_243930801100400.dm)
+03-11 21:10:37.499  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/dl-TfliteDynamiteDynamite.integ_243930801100400.dm': No such file or directory
+03-11 21:10:37.499  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/dl-TfliteDynamiteDynamite.integ_243930801100400.dm: I/O error
+03-11 21:10:37.499  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/dl-TfliteDynamiteDynamite.integ_243930801100400.dm)
+03-11 21:10:37.499  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/dl-TfliteDynamiteDynamite.integ_243930801100400.dm': No such file or directory
+03-11 21:10:37.499  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/dl-TfliteDynamiteDynamite.integ_243930801100400.dm: I/O error
+03-11 21:10:37.499  3737  3737 I artd    : GetBestInfo no usable artifacts
+03-11 21:10:37.501  3737  3737 I artd    : Dex parent of /data/user/0/com.google.android.gms/app_dg_cache/6BAF10F8F9D78B8224A5ABF4D3B4A4FEAFCA8411/the.apk is not writable: Permission denied
+03-11 21:10:37.501  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@6BAF10F8F9D78B8224A5ABF4D3B4A4FEAFCA8411@the.apk@classes.dex)
+03-11 21:10:37.501  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@6BAF10F8F9D78B8224A5ABF4D3B4A4FEAFCA8411@the.apk@classes.dex with executable: 0
+03-11 21:10:37.501  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@6BAF10F8F9D78B8224A5ABF4D3B4A4FEAFCA8411@the.apk@classes.dex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@6BAF10F8F9D78B8224A5ABF4D3B4A4FEAFCA8411@the.apk@classes.vdex does not exist.
+03-11 21:10:37.501  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/6BAF10F8F9D78B8224A5ABF4D3B4A4FEAFCA8411/oat/arm64/the.odex)
+03-11 21:10:37.501  3737  3737 I artd    : Loading /data/user/0/com.google.android.gms/app_dg_cache/6BAF10F8F9D78B8224A5ABF4D3B4A4FEAFCA8411/oat/arm64/the.odex with executable: 0
+03-11 21:10:37.501  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user/0/com.google.android.gms/app_dg_cache/6BAF10F8F9D78B8224A5ABF4D3B4A4FEAFCA8411/oat/arm64/the.odex: Failed to open oat filename for reading: No such file or directory
+03-11 21:10:37.501  3737  3737 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@6BAF10F8F9D78B8224A5ABF4D3B4A4FEAFCA8411@the.apk@classes.vdex)
+03-11 21:10:37.501  3737  3737 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@6BAF10F8F9D78B8224A5ABF4D3B4A4FEAFCA8411@the.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@6BAF10F8F9D78B8224A5ABF4D3B4A4FEAFCA8411@the.apk@classes.vdex does not exist.
+03-11 21:10:37.501  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@6BAF10F8F9D78B8224A5ABF4D3B4A4FEAFCA8411@the.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@6BAF10F8F9D78B8224A5ABF4D3B4A4FEAFCA8411@the.apk@classes.vdex does not exist.
+03-11 21:10:37.501  3737  3737 I artd    : GetBestInfo checking vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/6BAF10F8F9D78B8224A5ABF4D3B4A4FEAFCA8411/oat/arm64/the.vdex)
+03-11 21:10:37.502  3737  3737 I artd    : Successfully loaded /data/user/0/com.google.android.gms/app_dg_cache/6BAF10F8F9D78B8224A5ABF4D3B4A4FEAFCA8411/oat/arm64/the.vdex with executable: 0
+03-11 21:10:37.502  3737  3737 I artd    : Image checksum test skipped for vdex file /data/user/0/com.google.android.gms/app_dg_cache/6BAF10F8F9D78B8224A5ABF4D3B4A4FEAFCA8411/oat/arm64/the.vdex
+03-11 21:10:37.502  3737  3737 I artd    : /data/user/0/com.google.android.gms/app_dg_cache/6BAF10F8F9D78B8224A5ABF4D3B4A4FEAFCA8411/oat/arm64/the.vdex is kOatUpToDate with filter verify
+03-11 21:10:37.502  3737  3737 I artd    : Dex parent of /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.uncompressed.apk is not writable: No such file or directory
+03-11 21:10:37.502  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000001@CronetDynamite.uncompressed.apk@classes.dex)
+03-11 21:10:37.502  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000001@CronetDynamite.uncompressed.apk@classes.dex with executable: 0
+03-11 21:10:37.502  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000001@CronetDynamite.uncompressed.apk@classes.dex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000001@CronetDynamite.uncompressed.apk@classes.vdex does not exist.
+03-11 21:10:37.502  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/oat/arm64/CronetDynamite.uncompressed.odex)
+03-11 21:10:37.502  3737  3737 I artd    : Loading /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/oat/arm64/CronetDynamite.uncompressed.odex with executable: 0
+03-11 21:10:37.502  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/oat/arm64/CronetDynamite.uncompressed.odex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/oat/arm64/CronetDynamite.uncompressed.vdex does not exist.
+03-11 21:10:37.502  3737  3737 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000001@CronetDynamite.uncompressed.apk@classes.vdex)
+03-11 21:10:37.502  3737  3737 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000001@CronetDynamite.uncompressed.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000001@CronetDynamite.uncompressed.apk@classes.vdex does not exist.
+03-11 21:10:37.502  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000001@CronetDynamite.uncompressed.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000001@CronetDynamite.uncompressed.apk@classes.vdex does not exist.
+03-11 21:10:37.502  3737  3737 I artd    : GetBestInfo checking vdex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/oat/arm64/CronetDynamite.uncompressed.vdex)
+03-11 21:10:37.502  3737  3737 I artd    : unable to open vdex file /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/oat/arm64/CronetDynamite.uncompressed.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/oat/arm64/CronetDynamite.uncompressed.vdex does not exist.
+03-11 21:10:37.502  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/oat/arm64/CronetDynamite.uncompressed.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/oat/arm64/CronetDynamite.uncompressed.vdex does not exist.
+03-11 21:10:37.502  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.uncompressed.dm)
+03-11 21:10:37.502  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.uncompressed.dm': No such file or directory
+03-11 21:10:37.502  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.uncompressed.dm: I/O error
+03-11 21:10:37.502  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.uncompressed.dm)
+03-11 21:10:37.502  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.uncompressed.dm': No such file or directory
+03-11 21:10:37.502  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.uncompressed.dm: I/O error
+03-11 21:10:37.502  3737  3737 I artd    : GetBestInfo no usable artifacts
+03-11 21:10:37.503  3737  7913 I artd    : Dex parent of /data/user/0/com.google.android.gms/app_dg_cache/3C1D3F8EF43440C65925941092C7ACB5BE6D5E25/the.apk is not writable: Permission denied
+03-11 21:10:37.503  3737  7913 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@3C1D3F8EF43440C65925941092C7ACB5BE6D5E25@the.apk@classes.dex)
+03-11 21:10:37.503  3737  7913 I artd    : Loading /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@3C1D3F8EF43440C65925941092C7ACB5BE6D5E25@the.apk@classes.dex with executable: 0
+03-11 21:10:37.503  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@3C1D3F8EF43440C65925941092C7ACB5BE6D5E25@the.apk@classes.dex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@3C1D3F8EF43440C65925941092C7ACB5BE6D5E25@the.apk@classes.vdex does not exist.
+03-11 21:10:37.503  3737  7913 I artd    : GetBestInfo checking odex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/3C1D3F8EF43440C65925941092C7ACB5BE6D5E25/oat/arm64/the.odex)
+03-11 21:10:37.503  3737  7913 I artd    : Loading /data/user/0/com.google.android.gms/app_dg_cache/3C1D3F8EF43440C65925941092C7ACB5BE6D5E25/oat/arm64/the.odex with executable: 0
+03-11 21:10:37.503  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/user/0/com.google.android.gms/app_dg_cache/3C1D3F8EF43440C65925941092C7ACB5BE6D5E25/oat/arm64/the.odex: Failed to open oat filename for reading: No such file or directory
+03-11 21:10:37.503  3737  7913 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@3C1D3F8EF43440C65925941092C7ACB5BE6D5E25@the.apk@classes.vdex)
+03-11 21:10:37.503  3737  7913 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@3C1D3F8EF43440C65925941092C7ACB5BE6D5E25@the.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@3C1D3F8EF43440C65925941092C7ACB5BE6D5E25@the.apk@classes.vdex does not exist.
+03-11 21:10:37.503  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@3C1D3F8EF43440C65925941092C7ACB5BE6D5E25@the.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@3C1D3F8EF43440C65925941092C7ACB5BE6D5E25@the.apk@classes.vdex does not exist.
+03-11 21:10:37.503  3737  7913 I artd    : GetBestInfo checking vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/3C1D3F8EF43440C65925941092C7ACB5BE6D5E25/oat/arm64/the.vdex)
+03-11 21:10:37.504  3737  7913 I artd    : Successfully loaded /data/user/0/com.google.android.gms/app_dg_cache/3C1D3F8EF43440C65925941092C7ACB5BE6D5E25/oat/arm64/the.vdex with executable: 0
+03-11 21:10:37.504  3737  7913 I artd    : Image checksum test skipped for vdex file /data/user/0/com.google.android.gms/app_dg_cache/3C1D3F8EF43440C65925941092C7ACB5BE6D5E25/oat/arm64/the.vdex
+03-11 21:10:37.504  3737  7913 I artd    : /data/user/0/com.google.android.gms/app_dg_cache/3C1D3F8EF43440C65925941092C7ACB5BE6D5E25/oat/arm64/the.vdex is kOatUpToDate with filter verify
+03-11 21:10:37.505  3737  3737 I artd    : Dex parent of /data/user/0/com.google.android.gms/app_dg_cache/A42B0FF0F39F74F35A217667D38CCB940919E805/the.apk is not writable: Permission denied
+03-11 21:10:37.505  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@A42B0FF0F39F74F35A217667D38CCB940919E805@the.apk@classes.dex)
+03-11 21:10:37.505  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@A42B0FF0F39F74F35A217667D38CCB940919E805@the.apk@classes.dex with executable: 0
+03-11 21:10:37.505  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@A42B0FF0F39F74F35A217667D38CCB940919E805@the.apk@classes.dex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@A42B0FF0F39F74F35A217667D38CCB940919E805@the.apk@classes.vdex does not exist.
+03-11 21:10:37.505  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/A42B0FF0F39F74F35A217667D38CCB940919E805/oat/arm64/the.odex)
+03-11 21:10:37.505  3737  3737 I artd    : Loading /data/user/0/com.google.android.gms/app_dg_cache/A42B0FF0F39F74F35A217667D38CCB940919E805/oat/arm64/the.odex with executable: 0
+03-11 21:10:37.505  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user/0/com.google.android.gms/app_dg_cache/A42B0FF0F39F74F35A217667D38CCB940919E805/oat/arm64/the.odex: Failed to open oat filename for reading: No such file or directory
+03-11 21:10:37.505  3737  3737 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@A42B0FF0F39F74F35A217667D38CCB940919E805@the.apk@classes.vdex)
+03-11 21:10:37.505  3737  3737 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@A42B0FF0F39F74F35A217667D38CCB940919E805@the.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@A42B0FF0F39F74F35A217667D38CCB940919E805@the.apk@classes.vdex does not exist.
+03-11 21:10:37.505  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@A42B0FF0F39F74F35A217667D38CCB940919E805@the.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@A42B0FF0F39F74F35A217667D38CCB940919E805@the.apk@classes.vdex does not exist.
+03-11 21:10:37.505  3737  3737 I artd    : GetBestInfo checking vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/A42B0FF0F39F74F35A217667D38CCB940919E805/oat/arm64/the.vdex)
+03-11 21:10:37.506  3737  3737 I artd    : Successfully loaded /data/user/0/com.google.android.gms/app_dg_cache/A42B0FF0F39F74F35A217667D38CCB940919E805/oat/arm64/the.vdex with executable: 0
+03-11 21:10:37.506  3737  3737 I artd    : Image checksum test skipped for vdex file /data/user/0/com.google.android.gms/app_dg_cache/A42B0FF0F39F74F35A217667D38CCB940919E805/oat/arm64/the.vdex
+03-11 21:10:37.506  3737  3737 I artd    : /data/user/0/com.google.android.gms/app_dg_cache/A42B0FF0F39F74F35A217667D38CCB940919E805/oat/arm64/the.vdex is kOatUpToDate with filter verify
+03-11 21:10:37.509  3737  3737 I artd    : Dex parent of /data/user_de/0/com.google.android.gms/app_chimera/m/00000012/dl-Antifingerprinting.optional_250832100000.apk is not writable: Permission denied
+03-11 21:10:37.509  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000012@dl-Antifingerprinting.optional_250832100000.apk@classes.dex)
+03-11 21:10:37.509  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000012@dl-Antifingerprinting.optional_250832100000.apk@classes.dex with executable: 0
+03-11 21:10:37.509  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000012@dl-Antifingerprinting.optional_250832100000.apk@classes.dex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000012@dl-Antifingerprinting.optional_250832100000.apk@classes.vdex does not exist.
+03-11 21:10:37.509  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000012/oat/arm64/dl-Antifingerprinting.optional_250832100000.odex)
+03-11 21:10:37.509  3737  3737 I artd    : Loading /data/user_de/0/com.google.android.gms/app_chimera/m/00000012/oat/arm64/dl-Antifingerprinting.optional_250832100000.odex with executable: 0
+03-11 21:10:37.509  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000012/oat/arm64/dl-Antifingerprinting.optional_250832100000.odex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000012/oat/arm64/dl-Antifingerprinting.optional_250832100000.vdex does not exist.
+03-11 21:10:37.509  3737  3737 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000012@dl-Antifingerprinting.optional_250832100000.apk@classes.vdex)
+03-11 21:10:37.509  3737  3737 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000012@dl-Antifingerprinting.optional_250832100000.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000012@dl-Antifingerprinting.optional_250832100000.apk@classes.vdex does not exist.
+03-11 21:10:37.509  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000012@dl-Antifingerprinting.optional_250832100000.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000012@dl-Antifingerprinting.optional_250832100000.apk@classes.vdex does not exist.
+03-11 21:10:37.509  3737  3737 I artd    : GetBestInfo checking vdex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000012/oat/arm64/dl-Antifingerprinting.optional_250832100000.vdex)
+03-11 21:10:37.509  3737  3737 I artd    : unable to open vdex file /data/user_de/0/com.google.android.gms/app_chimera/m/00000012/oat/arm64/dl-Antifingerprinting.optional_250832100000.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000012/oat/arm64/dl-Antifingerprinting.optional_250832100000.vdex does not exist.
+03-11 21:10:37.509  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000012/oat/arm64/dl-Antifingerprinting.optional_250832100000.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000012/oat/arm64/dl-Antifingerprinting.optional_250832100000.vdex does not exist.
+03-11 21:10:37.509  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000012/dl-Antifingerprinting.optional_250832100000.dm)
+03-11 21:10:37.509  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000012/dl-Antifingerprinting.optional_250832100000.dm': No such file or directory
+03-11 21:10:37.509  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000012/dl-Antifingerprinting.optional_250832100000.dm: I/O error
+03-11 21:10:37.509  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000012/dl-Antifingerprinting.optional_250832100000.dm)
+03-11 21:10:37.509  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000012/dl-Antifingerprinting.optional_250832100000.dm': No such file or directory
+03-11 21:10:37.509  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000012/dl-Antifingerprinting.optional_250832100000.dm: I/O error
+03-11 21:10:37.509  3737  3737 I artd    : GetBestInfo no usable artifacts
+03-11 21:10:37.514  3737  3737 I artd    : Dex parent of /data/user_de/0/com.google.android.gms/app_chimera/m/00000014/dl-MlkitBarcodeUi.optional_250832100400.apk is not writable: Permission denied
+03-11 21:10:37.514  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000014@dl-MlkitBarcodeUi.optional_250832100400.apk@classes.dex)
+03-11 21:10:37.514  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000014@dl-MlkitBarcodeUi.optional_250832100400.apk@classes.dex with executable: 0
+03-11 21:10:37.514  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000014@dl-MlkitBarcodeUi.optional_250832100400.apk@classes.dex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000014@dl-MlkitBarcodeUi.optional_250832100400.apk@classes.vdex does not exist.
+03-11 21:10:37.514  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000014/oat/arm64/dl-MlkitBarcodeUi.optional_250832100400.odex)
+03-11 21:10:37.514  3737  3737 I artd    : Loading /data/user_de/0/com.google.android.gms/app_chimera/m/00000014/oat/arm64/dl-MlkitBarcodeUi.optional_250832100400.odex with executable: 0
+03-11 21:10:37.514  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000014/oat/arm64/dl-MlkitBarcodeUi.optional_250832100400.odex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000014/oat/arm64/dl-MlkitBarcodeUi.optional_250832100400.vdex does not exist.
+03-11 21:10:37.514  3737  3737 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000014@dl-MlkitBarcodeUi.optional_250832100400.apk@classes.vdex)
+03-11 21:10:37.514  3737  3737 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000014@dl-MlkitBarcodeUi.optional_250832100400.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000014@dl-MlkitBarcodeUi.optional_250832100400.apk@classes.vdex does not exist.
+03-11 21:10:37.514  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000014@dl-MlkitBarcodeUi.optional_250832100400.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000014@dl-MlkitBarcodeUi.optional_250832100400.apk@classes.vdex does not exist.
+03-11 21:10:37.514  3737  3737 I artd    : GetBestInfo checking vdex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000014/oat/arm64/dl-MlkitBarcodeUi.optional_250832100400.vdex)
+03-11 21:10:37.514  3737  3737 I artd    : unable to open vdex file /data/user_de/0/com.google.android.gms/app_chimera/m/00000014/oat/arm64/dl-MlkitBarcodeUi.optional_250832100400.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000014/oat/arm64/dl-MlkitBarcodeUi.optional_250832100400.vdex does not exist.
+03-11 21:10:37.514  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000014/oat/arm64/dl-MlkitBarcodeUi.optional_250832100400.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000014/oat/arm64/dl-MlkitBarcodeUi.optional_250832100400.vdex does not exist.
+03-11 21:10:37.514  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000014/dl-MlkitBarcodeUi.optional_250832100400.dm)
+03-11 21:10:37.514  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000014/dl-MlkitBarcodeUi.optional_250832100400.dm': No such file or directory
+03-11 21:10:37.514  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000014/dl-MlkitBarcodeUi.optional_250832100400.dm: I/O error
+03-11 21:10:37.514  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000014/dl-MlkitBarcodeUi.optional_250832100400.dm)
+03-11 21:10:37.514  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000014/dl-MlkitBarcodeUi.optional_250832100400.dm': No such file or directory
+03-11 21:10:37.514  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000014/dl-MlkitBarcodeUi.optional_250832100400.dm: I/O error
+03-11 21:10:37.514  3737  3737 I artd    : GetBestInfo no usable artifacts
+03-11 21:10:37.518  3737  3737 I artd    : Dex parent of /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-MlkitBarcodeUi.optional_242335100400.apk is not writable: No such file or directory
+03-11 21:10:37.518  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000000a@dl-MlkitBarcodeUi.optional_242335100400.apk@classes.dex)
+03-11 21:10:37.518  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000000a@dl-MlkitBarcodeUi.optional_242335100400.apk@classes.dex with executable: 0
+03-11 21:10:37.518  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000000a@dl-MlkitBarcodeUi.optional_242335100400.apk@classes.dex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000000a@dl-MlkitBarcodeUi.optional_242335100400.apk@classes.vdex does not exist.
+03-11 21:10:37.518  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/oat/arm64/dl-MlkitBarcodeUi.optional_242335100400.odex)
+03-11 21:10:37.518  3737  3737 I artd    : Loading /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/oat/arm64/dl-MlkitBarcodeUi.optional_242335100400.odex with executable: 0
+03-11 21:10:37.518  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/oat/arm64/dl-MlkitBarcodeUi.optional_242335100400.odex: File /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/oat/arm64/dl-MlkitBarcodeUi.optional_242335100400.vdex does not exist.
+03-11 21:10:37.518  3737  3737 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000000a@dl-MlkitBarcodeUi.optional_242335100400.apk@classes.vdex)
+03-11 21:10:37.518  3737  3737 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000000a@dl-MlkitBarcodeUi.optional_242335100400.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000000a@dl-MlkitBarcodeUi.optional_242335100400.apk@classes.vdex does not exist.
+03-11 21:10:37.518  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000000a@dl-MlkitBarcodeUi.optional_242335100400.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@0000000a@dl-MlkitBarcodeUi.optional_242335100400.apk@classes.vdex does not exist.
+03-11 21:10:37.518  3737  3737 I artd    : GetBestInfo checking vdex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/oat/arm64/dl-MlkitBarcodeUi.optional_242335100400.vdex)
+03-11 21:10:37.518  3737  3737 I artd    : unable to open vdex file /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/oat/arm64/dl-MlkitBarcodeUi.optional_242335100400.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/oat/arm64/dl-MlkitBarcodeUi.optional_242335100400.vdex does not exist.
+03-11 21:10:37.518  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/oat/arm64/dl-MlkitBarcodeUi.optional_242335100400.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/oat/arm64/dl-MlkitBarcodeUi.optional_242335100400.vdex does not exist.
+03-11 21:10:37.518  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-MlkitBarcodeUi.optional_242335100400.dm)
+03-11 21:10:37.518  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-MlkitBarcodeUi.optional_242335100400.dm': No such file or directory
+03-11 21:10:37.518  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-MlkitBarcodeUi.optional_242335100400.dm: I/O error
+03-11 21:10:37.518  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-MlkitBarcodeUi.optional_242335100400.dm)
+03-11 21:10:37.518  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-MlkitBarcodeUi.optional_242335100400.dm': No such file or directory
+03-11 21:10:37.518  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-MlkitBarcodeUi.optional_242335100400.dm: I/O error
+03-11 21:10:37.518  3737  3737 I artd    : GetBestInfo no usable artifacts
+03-11 21:10:37.519  3737  7913 I artd    : Dex parent of /data/user_de/0/com.google.android.gms/app_chimera/m/00000016/dl-PlayCloudSearch.optional_250832100000.apk is not writable: Permission denied
+03-11 21:10:37.519  3737  7913 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000016@dl-PlayCloudSearch.optional_250832100000.apk@classes.dex)
+03-11 21:10:37.519  3737  7913 I artd    : Loading /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000016@dl-PlayCloudSearch.optional_250832100000.apk@classes.dex with executable: 0
+03-11 21:10:37.519  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000016@dl-PlayCloudSearch.optional_250832100000.apk@classes.dex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000016@dl-PlayCloudSearch.optional_250832100000.apk@classes.vdex does not exist.
+03-11 21:10:37.519  3737  7913 I artd    : GetBestInfo checking odex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000016/oat/arm64/dl-PlayCloudSearch.optional_250832100000.odex)
+03-11 21:10:37.519  3737  7913 I artd    : Loading /data/user_de/0/com.google.android.gms/app_chimera/m/00000016/oat/arm64/dl-PlayCloudSearch.optional_250832100000.odex with executable: 0
+03-11 21:10:37.519  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000016/oat/arm64/dl-PlayCloudSearch.optional_250832100000.odex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000016/oat/arm64/dl-PlayCloudSearch.optional_250832100000.vdex does not exist.
+03-11 21:10:37.519  3737  7913 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000016@dl-PlayCloudSearch.optional_250832100000.apk@classes.vdex)
+03-11 21:10:37.519  3737  7913 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000016@dl-PlayCloudSearch.optional_250832100000.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000016@dl-PlayCloudSearch.optional_250832100000.apk@classes.vdex does not exist.
+03-11 21:10:37.519  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000016@dl-PlayCloudSearch.optional_250832100000.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000016@dl-PlayCloudSearch.optional_250832100000.apk@classes.vdex does not exist.
+03-11 21:10:37.519  3737  7913 I artd    : GetBestInfo checking vdex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000016/oat/arm64/dl-PlayCloudSearch.optional_250832100000.vdex)
+03-11 21:10:37.519  3737  7913 I artd    : unable to open vdex file /data/user_de/0/com.google.android.gms/app_chimera/m/00000016/oat/arm64/dl-PlayCloudSearch.optional_250832100000.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000016/oat/arm64/dl-PlayCloudSearch.optional_250832100000.vdex does not exist.
+03-11 21:10:37.519  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000016/oat/arm64/dl-PlayCloudSearch.optional_250832100000.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000016/oat/arm64/dl-PlayCloudSearch.optional_250832100000.vdex does not exist.
+03-11 21:10:37.519  3737  7913 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000016/dl-PlayCloudSearch.optional_250832100000.dm)
+03-11 21:10:37.519  3737  7913 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000016/dl-PlayCloudSearch.optional_250832100000.dm': No such file or directory
+03-11 21:10:37.519  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000016/dl-PlayCloudSearch.optional_250832100000.dm: I/O error
+03-11 21:10:37.519  3737  7913 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000016/dl-PlayCloudSearch.optional_250832100000.dm)
+03-11 21:10:37.519  3737  7913 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000016/dl-PlayCloudSearch.optional_250832100000.dm': No such file or directory
+03-11 21:10:37.519  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000016/dl-PlayCloudSearch.optional_250832100000.dm: I/O error
+03-11 21:10:37.519  3737  7913 I artd    : GetBestInfo no usable artifacts
+03-11 21:10:37.520  3737  7913 I artd    : Dex parent of /data/user_de/0/com.google.android.gms/app_chimera/m/00000018/dl-VisionOcr.optional_250832100000.apk is not writable: Permission denied
+03-11 21:10:37.520  3737  7913 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000018@dl-VisionOcr.optional_250832100000.apk@classes.dex)
+03-11 21:10:37.520  3737  7913 I artd    : Loading /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000018@dl-VisionOcr.optional_250832100000.apk@classes.dex with executable: 0
+03-11 21:10:37.520  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000018@dl-VisionOcr.optional_250832100000.apk@classes.dex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000018@dl-VisionOcr.optional_250832100000.apk@classes.vdex does not exist.
+03-11 21:10:37.520  3737  7913 I artd    : GetBestInfo checking odex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000018/oat/arm64/dl-VisionOcr.optional_250832100000.odex)
+03-11 21:10:37.520  3737  7913 I artd    : Loading /data/user_de/0/com.google.android.gms/app_chimera/m/00000018/oat/arm64/dl-VisionOcr.optional_250832100000.odex with executable: 0
+03-11 21:10:37.520  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000018/oat/arm64/dl-VisionOcr.optional_250832100000.odex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000018/oat/arm64/dl-VisionOcr.optional_250832100000.vdex does not exist.
+03-11 21:10:37.520  3737  7913 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000018@dl-VisionOcr.optional_250832100000.apk@classes.vdex)
+03-11 21:10:37.520  3737  7913 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000018@dl-VisionOcr.optional_250832100000.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000018@dl-VisionOcr.optional_250832100000.apk@classes.vdex does not exist.
+03-11 21:10:37.520  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000018@dl-VisionOcr.optional_250832100000.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000018@dl-VisionOcr.optional_250832100000.apk@classes.vdex does not exist.
+03-11 21:10:37.520  3737  7913 I artd    : GetBestInfo checking vdex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000018/oat/arm64/dl-VisionOcr.optional_250832100000.vdex)
+03-11 21:10:37.520  3737  7913 I artd    : unable to open vdex file /data/user_de/0/com.google.android.gms/app_chimera/m/00000018/oat/arm64/dl-VisionOcr.optional_250832100000.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000018/oat/arm64/dl-VisionOcr.optional_250832100000.vdex does not exist.
+03-11 21:10:37.520  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000018/oat/arm64/dl-VisionOcr.optional_250832100000.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000018/oat/arm64/dl-VisionOcr.optional_250832100000.vdex does not exist.
+03-11 21:10:37.520  3737  7913 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000018/dl-VisionOcr.optional_250832100000.dm)
+03-11 21:10:37.520  3737  7913 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000018/dl-VisionOcr.optional_250832100000.dm': No such file or directory
+03-11 21:10:37.520  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000018/dl-VisionOcr.optional_250832100000.dm: I/O error
+03-11 21:10:37.520  3737  7913 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000018/dl-VisionOcr.optional_250832100000.dm)
+03-11 21:10:37.520  3737  7913 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000018/dl-VisionOcr.optional_250832100000.dm': No such file or directory
+03-11 21:10:37.520  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000018/dl-VisionOcr.optional_250832100000.dm: I/O error
+03-11 21:10:37.520  3737  7913 I artd    : GetBestInfo no usable artifacts
+03-11 21:10:37.522  3737  7913 I artd    : Dex parent of /data/user_de/0/com.google.android.gms/app_chimera/m/00000015/dl-MlkitOcrCommon.optional_250832100400.apk is not writable: Permission denied
+03-11 21:10:37.522  3737  7913 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000015@dl-MlkitOcrCommon.optional_250832100400.apk@classes.dex)
+03-11 21:10:37.522  3737  7913 I artd    : Loading /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000015@dl-MlkitOcrCommon.optional_250832100400.apk@classes.dex with executable: 0
+03-11 21:10:37.522  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000015@dl-MlkitOcrCommon.optional_250832100400.apk@classes.dex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000015@dl-MlkitOcrCommon.optional_250832100400.apk@classes.vdex does not exist.
+03-11 21:10:37.522  3737  7913 I artd    : GetBestInfo checking odex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000015/oat/arm64/dl-MlkitOcrCommon.optional_250832100400.odex)
+03-11 21:10:37.522  3737  7913 I artd    : Loading /data/user_de/0/com.google.android.gms/app_chimera/m/00000015/oat/arm64/dl-MlkitOcrCommon.optional_250832100400.odex with executable: 0
+03-11 21:10:37.522  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000015/oat/arm64/dl-MlkitOcrCommon.optional_250832100400.odex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000015/oat/arm64/dl-MlkitOcrCommon.optional_250832100400.vdex does not exist.
+03-11 21:10:37.522  3737  7913 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000015@dl-MlkitOcrCommon.optional_250832100400.apk@classes.vdex)
+03-11 21:10:37.522  3737  7913 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000015@dl-MlkitOcrCommon.optional_250832100400.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000015@dl-MlkitOcrCommon.optional_250832100400.apk@classes.vdex does not exist.
+03-11 21:10:37.522  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000015@dl-MlkitOcrCommon.optional_250832100400.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000015@dl-MlkitOcrCommon.optional_250832100400.apk@classes.vdex does not exist.
+03-11 21:10:37.522  3737  7913 I artd    : GetBestInfo checking vdex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000015/oat/arm64/dl-MlkitOcrCommon.optional_250832100400.vdex)
+03-11 21:10:37.522  3737  7913 I artd    : unable to open vdex file /data/user_de/0/com.google.android.gms/app_chimera/m/00000015/oat/arm64/dl-MlkitOcrCommon.optional_250832100400.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000015/oat/arm64/dl-MlkitOcrCommon.optional_250832100400.vdex does not exist.
+03-11 21:10:37.522  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000015/oat/arm64/dl-MlkitOcrCommon.optional_250832100400.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000015/oat/arm64/dl-MlkitOcrCommon.optional_250832100400.vdex does not exist.
+03-11 21:10:37.522  3737  7913 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000015/dl-MlkitOcrCommon.optional_250832100400.dm)
+03-11 21:10:37.522  3737  7913 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000015/dl-MlkitOcrCommon.optional_250832100400.dm': No such file or directory
+03-11 21:10:37.522  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000015/dl-MlkitOcrCommon.optional_250832100400.dm: I/O error
+03-11 21:10:37.522  3737  7913 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000015/dl-MlkitOcrCommon.optional_250832100400.dm)
+03-11 21:10:37.522  3737  7913 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000015/dl-MlkitOcrCommon.optional_250832100400.dm': No such file or directory
+03-11 21:10:37.522  3737  7913 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000015/dl-MlkitOcrCommon.optional_250832100400.dm: I/O error
+03-11 21:10:37.522  3737  7913 I artd    : GetBestInfo no usable artifacts
+03-11 21:10:37.523  3737  3737 I artd    : Dex parent of /data/user/0/com.google.android.gms/app_dg_cache/93A243DDAC7E19EC17B11ECB1ED220C921AD786C/the.apk is not writable: Permission denied
+03-11 21:10:37.523  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@93A243DDAC7E19EC17B11ECB1ED220C921AD786C@the.apk@classes.dex)
+03-11 21:10:37.523  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@93A243DDAC7E19EC17B11ECB1ED220C921AD786C@the.apk@classes.dex with executable: 0
+03-11 21:10:37.523  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@93A243DDAC7E19EC17B11ECB1ED220C921AD786C@the.apk@classes.dex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@93A243DDAC7E19EC17B11ECB1ED220C921AD786C@the.apk@classes.vdex does not exist.
+03-11 21:10:37.523  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/93A243DDAC7E19EC17B11ECB1ED220C921AD786C/oat/arm64/the.odex)
+03-11 21:10:37.523  3737  3737 I artd    : Loading /data/user/0/com.google.android.gms/app_dg_cache/93A243DDAC7E19EC17B11ECB1ED220C921AD786C/oat/arm64/the.odex with executable: 0
+03-11 21:10:37.523  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user/0/com.google.android.gms/app_dg_cache/93A243DDAC7E19EC17B11ECB1ED220C921AD786C/oat/arm64/the.odex: Failed to open oat filename for reading: No such file or directory
+03-11 21:10:37.523  3737  3737 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@93A243DDAC7E19EC17B11ECB1ED220C921AD786C@the.apk@classes.vdex)
+03-11 21:10:37.523  3737  3737 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@93A243DDAC7E19EC17B11ECB1ED220C921AD786C@the.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@93A243DDAC7E19EC17B11ECB1ED220C921AD786C@the.apk@classes.vdex does not exist.
+03-11 21:10:37.523  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@93A243DDAC7E19EC17B11ECB1ED220C921AD786C@the.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user@0@com.google.android.gms@app_dg_cache@93A243DDAC7E19EC17B11ECB1ED220C921AD786C@the.apk@classes.vdex does not exist.
+03-11 21:10:37.523  3737  3737 I artd    : GetBestInfo checking vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/93A243DDAC7E19EC17B11ECB1ED220C921AD786C/oat/arm64/the.vdex)
+03-11 21:10:37.524  3737  3737 I artd    : Successfully loaded /data/user/0/com.google.android.gms/app_dg_cache/93A243DDAC7E19EC17B11ECB1ED220C921AD786C/oat/arm64/the.vdex with executable: 0
+03-11 21:10:37.524  3737  3737 I artd    : Image checksum test skipped for vdex file /data/user/0/com.google.android.gms/app_dg_cache/93A243DDAC7E19EC17B11ECB1ED220C921AD786C/oat/arm64/the.vdex
+03-11 21:10:37.524  3737  3737 I artd    : /data/user/0/com.google.android.gms/app_dg_cache/93A243DDAC7E19EC17B11ECB1ED220C921AD786C/oat/arm64/the.vdex is kOatUpToDate with filter verify
+03-11 21:10:37.524  3737  3737 W artd    : Could not get dex checksums for location /data/app/~~sVoEUZSHgSEOQF1gGpEg4Q==/com.android.vending-7gERttiZQ3goJ1oNoahgDg==/base.apk, fd=-1
+03-11 21:10:37.525  3737  3737 I artd    : Dex parent of /data/user_de/0/com.google.android.gms/app_chimera/m/00000019/dl-MapsCoreDynamite.integ_245125201100400.apk is not writable: Permission denied
+03-11 21:10:37.525  3737  3737 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000019@dl-MapsCoreDynamite.integ_245125201100400.apk@classes.dex)
+03-11 21:10:37.525  3737  3737 I artd    : Loading /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000019@dl-MapsCoreDynamite.integ_245125201100400.apk@classes.dex with executable: 0
+03-11 21:10:37.525  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000019@dl-MapsCoreDynamite.integ_245125201100400.apk@classes.dex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000019@dl-MapsCoreDynamite.integ_245125201100400.apk@classes.vdex does not exist.
+03-11 21:10:37.525  3737  3737 I artd    : GetBestInfo checking odex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000019/oat/arm64/dl-MapsCoreDynamite.integ_245125201100400.odex)
+03-11 21:10:37.525  3737  3737 I artd    : Loading /data/user_de/0/com.google.android.gms/app_chimera/m/00000019/oat/arm64/dl-MapsCoreDynamite.integ_245125201100400.odex with executable: 0
+03-11 21:10:37.525  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000019/oat/arm64/dl-MapsCoreDynamite.integ_245125201100400.odex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000019/oat/arm64/dl-MapsCoreDynamite.integ_245125201100400.vdex does not exist.
+03-11 21:10:37.525  3737  3737 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000019@dl-MapsCoreDynamite.integ_245125201100400.apk@classes.vdex)
+03-11 21:10:37.525  3737  3737 I artd    : unable to open vdex file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000019@dl-MapsCoreDynamite.integ_245125201100400.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000019@dl-MapsCoreDynamite.integ_245125201100400.apk@classes.vdex does not exist.
+03-11 21:10:37.525  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000019@dl-MapsCoreDynamite.integ_245125201100400.apk@classes.vdex: File /data/dalvik-cache/arm64/data@user_de@0@com.google.android.gms@app_chimera@m@00000019@dl-MapsCoreDynamite.integ_245125201100400.apk@classes.vdex does not exist.
+03-11 21:10:37.525  3737  3737 I artd    : GetBestInfo checking vdex next to the dex file (/data/user_de/0/com.google.android.gms/app_chimera/m/00000019/oat/arm64/dl-MapsCoreDynamite.integ_245125201100400.vdex)
+03-11 21:10:37.525  3737  3737 I artd    : unable to open vdex file /data/user_de/0/com.google.android.gms/app_chimera/m/00000019/oat/arm64/dl-MapsCoreDynamite.integ_245125201100400.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000019/oat/arm64/dl-MapsCoreDynamite.integ_245125201100400.vdex does not exist.
+03-11 21:10:37.525  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000019/oat/arm64/dl-MapsCoreDynamite.integ_245125201100400.vdex: File /data/user_de/0/com.google.android.gms/app_chimera/m/00000019/oat/arm64/dl-MapsCoreDynamite.integ_245125201100400.vdex does not exist.
+03-11 21:10:37.525  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000019/dl-MapsCoreDynamite.integ_245125201100400.dm)
+03-11 21:10:37.525  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000019/dl-MapsCoreDynamite.integ_245125201100400.dm': No such file or directory
+03-11 21:10:37.525  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000019/dl-MapsCoreDynamite.integ_245125201100400.dm: I/O error
+03-11 21:10:37.525  3737  3737 I artd    : GetBestInfo checking dm (/data/user_de/0/com.google.android.gms/app_chimera/m/00000019/dl-MapsCoreDynamite.integ_245125201100400.dm)
+03-11 21:10:37.525  3737  3737 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000019/dl-MapsCoreDynamite.integ_245125201100400.dm': No such file or directory
+03-11 21:10:37.525  3737  3737 I artd    : OatFileAssistant test for existing oat file /data/user_de/0/com.google.android.gms/app_chimera/m/00000019/dl-MapsCoreDynamite.integ_245125201100400.dm: I/O error
+03-11 21:10:37.525  3737  3737 I artd    : GetBestInfo no usable artifacts
+03-11 21:10:37.923   598   779 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-11 21:10:37.924   598   779 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-11 21:10:37.924   598   779 D InetDiagMessage: Destroyed live tcp sockets for uids={10143} in 1ms
+03-11 21:10:37.924   598   779 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-11 21:10:37.925   598   779 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-11 21:10:37.925   598   779 D InetDiagMessage: Destroyed live tcp sockets for uids={20143} in 1ms
+03-11 21:10:37.956  9301  9321 I FA      : Application backgrounded at: timestamp_millis: 1741738235952
+03-11 21:10:38.421  5013  5013 I GrantPermissionsViewModel: Logged buttons presented and clicked permissionGroupName=android.permission-group.LOCATION uid=10218 selectedPrecision=3 package=com.example.group8_bartertrader presentedButtons=44 clickedButton=4 isPermissionRationaleShown=false sessionId=-133718729462619109 targetSdk=35
+03-11 21:10:38.422   403  3533 D audioserver: logFgsApiBegin: FGS Logger Transaction failed, -129
+03-11 21:10:38.423   598   950 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 15
+03-11 21:10:38.430   598   626 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:38.434   598   626 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:38.436   598   626 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:38.437   598   626 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:38.438   598   626 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:38.463   408   408 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+03-11 21:10:38.502  9301  9301 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@f16ba3 in: RESUMED
+03-11 21:10:38.502  9301  9301 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity.getIntent()=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity=com.example.group8_bartertrader.SubmitForm@f16ba3
+03-11 21:10:38.502  9301  9301 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.group8_bartertrader.SubmitForm@f16ba3
+03-11 21:10:38.529  5013  5013 D VRI[GrantPermissionsActivity]: visibilityChanged oldVisibility=true newVisibility=false
+03-11 21:10:38.560   598   735 I ImeTracker: com.example.group8_bartertrader:8a76cd04: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+03-11 21:10:38.562  5013  5013 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@24469c9
+03-11 21:10:38.584   598   735 I ImeTracker: com.example.group8_bartertrader:8a76cd04: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-11 21:10:38.593   598  1867 W InputManager-JNI: Input channel object '53f751b com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity (client)' was disposed without first being removed with the input manager!
+03-11 21:10:38.593  9301  9329 D EGL_emulation: app_time_stats: avg=328.41ms min=2.34ms max=2702.86ms count=9
+03-11 21:10:38.626  1184  1732 D EGL_emulation: app_time_stats: avg=2486.96ms min=2486.96ms max=2486.96ms count=1
+03-11 21:10:38.628  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157
+03-11 21:10:38.633  9301  9306 W p8_bartertrader: Cleared Reference was only reachable from finalizer (only reported once)
+03-11 21:10:38.638  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+03-11 21:10:38.639  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.example.group8_bartertrader, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+03-11 21:10:38.641  1409  1409 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+03-11 21:10:38.642  1409  1409 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password, password
+03-11 21:10:38.657   403   531 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+03-11 21:10:38.721  9301  9306 I p8_bartertrader: Background concurrent mark compact GC freed 6509KB AllocSpace bytes, 49(2004KB) LOS objects, 49% free, 5834KB/11MB, paused 1.791ms,4.315ms total 213.674ms
+03-11 21:10:38.725  5013  5026 W ssioncontroller: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~0JYRWmC6mi3Q5P6ZF7lFgg==/com.example.group8_bartertrader-L5O7521AO5omhkmfH693Kg==/base.apk' with 1 weak references
+03-11 21:10:38.744  9301  9308 W System  : A resource failed to call close.
+03-11 21:10:38.744  9301  9308 W System  : A resource failed to call close.
+03-11 21:10:38.745  9301  9308 W System  : A resource failed to call close.
+03-11 21:10:38.766  9301  9301 I ViewInteraction: Performing 'Wait for 2000 milliseconds.' action on view view.getRootView() to equal view
+03-11 21:10:40.449  9301  9329 D EGL_emulation: app_time_stats: avg=923.43ms min=11.38ms max=1835.48ms count=2
+03-11 21:10:40.508  1386  3000 D TrafficStats: tagSocket(166) with statsTag=0x3300, statsUid=10157
+03-11 21:10:40.524   403  3533 D audioserver: logFgsApiBegin: FGS Logger Transaction failed, -129
+03-11 21:10:40.524   598  1950 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 15
+03-11 21:10:40.544  1157  9194 I GmsCoreXrpcWrapper: (REDACTED) Returning a channel provider with trafficStatsTag=%d trafficStatsUid=%d
+03-11 21:10:40.580  1157  1504 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+03-11 21:10:40.581  1157  1504 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+03-11 21:10:40.595  1157  9194 E gzzv    : *~*~*~ Previous channel {0} was garbage collected without being shut down! ~*~*~*
+03-11 21:10:40.595  1157  9194 E gzzv    :     Make sure to call shutdown()/shutdownNow()
+03-11 21:10:40.595  1157  9194 E gzzv    : java.lang.RuntimeException: ManagedChannel allocation site
+03-11 21:10:40.595  1157  9194 E gzzv    : 	at gzzu.<init>(:com.google.android.gms@250832035@25.08.32 (260400-731361394):21)
+03-11 21:10:40.595  1157  9194 E gzzv    : 	at gzzv.<init>(:com.google.android.gms@250832035@25.08.32 (260400-731361394):10)
+03-11 21:10:40.595  1157  9194 E gzzv    : 	at gzzt.a(:com.google.android.gms@250832035@25.08.32 (260400-731361394):251)
+03-11 21:10:40.595  1157  9194 E gzzv    : 	at gzkt.a(:com.google.android.gms@250832035@25.08.32 (260400-731361394):5)
+03-11 21:10:40.595  1157  9194 E gzzv    : 	at caoy.g(:com.google.android.gms@250832035@25.08.32 (260400-731361394):81)
+03-11 21:10:40.595  1157  9194 E gzzv    : 	at frnx.a(:com.google.android.gms@250832035@25.08.32 (260400-731361394):219)
+03-11 21:10:40.595  1157  9194 E gzzv    : 	at fgkk.a(:com.google.android.gms@250832035@25.08.32 (260400-731361394):13)
+03-11 21:10:40.595  1157  9194 E gzzv    : 	at fohx.a(:com.google.android.gms@250832035@25.08.32 (260400-731361394):3)
+03-11 21:10:40.595  1157  9194 E gzzv    : 	at fogy.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):19)
+03-11 21:10:40.595  1157  9194 E gzzv    : 	at fohz.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):5)
+03-11 21:10:40.595  1157  9194 E gzzv    : 	at atim.c(:com.google.android.gms@250832035@25.08.32 (260400-731361394):50)
+03-11 21:10:40.595  1157  9194 E gzzv    : 	at atim.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):76)
+03-11 21:10:40.595  1157  9194 E gzzv    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+03-11 21:10:40.595  1157  9194 E gzzv    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+03-11 21:10:40.595  1157  9194 E gzzv    : 	at atnz.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):8)
+03-11 21:10:40.595  1157  9194 E gzzv    : 	at java.lang.Thread.run(Thread.java:1012)
+03-11 21:10:40.638  1157  3009 D TrafficStats: tagSocket(199) with statsTag=0x2c000608, statsUid=10218
+03-11 21:10:40.655  1386  3000 D TrafficStats: tagSocket(167) with statsTag=0x3300, statsUid=10218
+03-11 21:10:40.726   598   779 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:40.733   598   779 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:40.734   598   779 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:40.734   598   779 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:40.741  1157  1504 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+03-11 21:10:40.741  1157  1504 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+03-11 21:10:40.748   598   779 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:40.750   598   779 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:40.750   598   779 W IPCThreadState: Sending oneway calls to frozen process.
+03-11 21:10:40.755  1472  1817 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=54 ]
+03-11 21:10:40.755  1472  2066 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[4a15dd23-b1a9]>Handler" thread_id=60 ]
+03-11 21:10:40.763   598   779 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-11 21:10:40.767   598   779 D InetDiagMessage: Destroyed 1 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-11 21:10:40.767   598   779 D InetDiagMessage: Destroyed live tcp sockets for uids={10142} in 8ms
+03-11 21:10:40.768   403   531 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+03-11 21:10:40.780  1472  2066 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=60 ]
+03-11 21:10:40.825  1157  3009 I cn_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@41957b3
+03-11 21:10:40.854  1409  1497 I AndroidSpellCheckerService: AndroidSpellCheckerService.createSession():139 com.google.android.keyboard.client.delight5.LanguageIdentifier@ef37a79 is created
+03-11 21:10:40.855  9301  9301 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296734/com.example.group8_bartertrader:id/submitProduct>
+03-11 21:10:40.909   403  3533 D audioserver: logFgsApiBegin: FGS Logger Transaction failed, -129
+03-11 21:10:40.909   598  1607 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 15
+03-11 21:10:40.933  1443  2061 I BistoHotwordHelper: (REDACTED) getHotwordActive::active query: %s, watch: %s, devices connected: %s
+03-11 21:10:40.997  9301  9301 D Product Form: Product offered successfully
+03-11 21:10:41.044  1184  1184 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=34, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.google.android.apps.maps/com.google.android.maps.MapsActivity }
+03-11 21:10:41.049  9301  9301 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@f16ba3 in: PAUSED
+03-11 21:10:41.049  9301  9301 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity.getIntent()=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity=com.example.group8_bartertrader.SubmitForm@f16ba3
+03-11 21:10:41.049  9301  9301 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.group8_bartertrader.SubmitForm@f16ba3
+03-11 21:10:41.053   408   408 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+03-11 21:10:41.158   403   531 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+03-11 21:10:41.215  9301  9319 I TestRunner: finished: testSubmitOffer(com.example.group8_bartertrader.SubmitFormUITest)

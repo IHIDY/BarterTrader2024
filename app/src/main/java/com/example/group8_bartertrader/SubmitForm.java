@@ -117,6 +117,7 @@ public class SubmitForm extends AppCompatActivity {
                 Geocoder geocoder = new Geocoder(this);
                 try {
                     List<Address> addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
+                    assert addresses != null;
                     if (!addresses.isEmpty()) {
                         // Get the address and display it
                         address = addresses.get(0).getAddressLine(0); // Store the address
@@ -161,12 +162,12 @@ public class SubmitForm extends AppCompatActivity {
 
         databaseReference.child(OfferId).setValue(offerData).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
-                Log.d("Product Form", "Product posted successfully");
-                Toast.makeText(SubmitForm.this, "Product posted successfully", Toast.LENGTH_SHORT).show();
+                Log.d("Product Form", "Product offered successfully");
+                Toast.makeText(SubmitForm.this, "Product offered successfully", Toast.LENGTH_SHORT).show();
                 finish(); // Close the form after submission
             } else {
-                Log.d("Product Form", "Failed to post product");
-                Toast.makeText(SubmitForm.this, "Failed to post product", Toast.LENGTH_SHORT).show();
+                Log.d("Product Form", "Failed to offer exchange");
+                Toast.makeText(SubmitForm.this, "Failed to offer exchange", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -206,6 +207,9 @@ public class SubmitForm extends AppCompatActivity {
         }
     }
 
+    public void setMockAuth(FirebaseAuth mockAuth) {
+        this.mAuth = mockAuth;
+    }
     // Callback interface for passing the location
     interface LocationCallback {
         void onLocationReceived(Location location);
