@@ -20,7 +20,6 @@ public class DetailsActivity extends AppCompatActivity {
         this.selectedProduct = getSelectedProduct();
         this.showProductDetails(this.selectedProduct);
         this.setupOfferExchangeButton();
-        //this.setupMapButton(); check if necessary
         this.setupExitButton();
     }
 
@@ -34,25 +33,36 @@ public class DetailsActivity extends AppCompatActivity {
         this.showProductDetails(product.getDescription());
     }
 
-    protected void showProductName(String name) {}
+    protected void showProductName(String name) {
+        TextView productName = findViewById(R.id.productName);
+        productName.setText(name);
+    }
 
-    protected void showProductCondition(String condition) {}
+    protected void showProductCondition(String condition) {
+        TextView productCondition = findViewById(R.id.productCondition);
+        productCondition.setText(condition);
+    }
 
-    protected void showProductCategory(String category) {}
+    protected void showProductCategory(String category) {
+        TextView productCategory = findViewById(R.id.productCategory);
+        productCategory.setText(category);
+    }
 
-    protected void showProductLocation(String location) {}
+    protected void showProductLocation(String location) {
+        TextView productLocation = findViewById(R.id.productLocation);
+        productLocation.setText(location);
+    }
 
-    protected void showProductDetails(String detials) {}
+    protected void showProductDetails(String details) {
+        TextView productDetails = findViewById(R.id.productDetails);
+        productDetails.setText(details);
+    }
 
     protected void setupOfferExchangeButton() {}
 
     protected void setupExitButton() {}
 
-    protected void setupMapButton() {} //check if necessary
-
     protected void move2OfferExchange() {}
 
     protected void move2RecieverDash() {}
-
-    protected void showOnGoogleMap(String location) {}
 }
