@@ -10,8 +10,6 @@ import com.example.group8_bartertrader.adapter.ProductAdapter;
 import com.example.group8_bartertrader.model.Product;
 
 public class DetailsActivity extends AppCompatActivity {
-    private TextView productName, productCondition, productCategory, productLocation, productDetails;
-    private Button offerExchangeButton, exitButton;
     public Product selectedProduct;
 
     @Override
@@ -19,19 +17,22 @@ public class DetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
-        productName = findViewById(R.id.productName);
-        productCondition = findViewById(R.id.productCondition);
-        productCategory = findViewById(R.id.productCategory);
-        productLocation = findViewById(R.id.productLocation);
-        productDetails = findViewById(R.id.productDetails);
-
-        offerExchangeButton = findViewById(R.id.OfferExchangeButton);
-        exitButton = findViewById(R.id.ExitButton);
+        this.selectedProduct = getSelectedProduct();
+        this.showProductDetails(this.selectedProduct);
+        this.setupOfferExchangeButton();
+        //this.setupMapButton(); check if necessary
+        this.setupExitButton();
     }
 
     protected Product getSelectedProduct() {}
 
-    public void showProductDetails(Product product) {}
+    public void showProductDetails(Product product) {
+        this.showProductName(product.getName());
+        this.showProductCondition(product.getCondition());
+        this.showProductCategory(product.getCategory());
+        this.showProductLocation(product.getLocation());
+        this.showProductDetails(product.getDescription());
+    }
 
     protected void showProductName(String name) {}
 
@@ -47,7 +48,7 @@ public class DetailsActivity extends AppCompatActivity {
 
     protected void setupExitButton() {}
 
-    protected void setupMapButton() {}
+    protected void setupMapButton() {} //check if necessary
 
     protected void move2OfferExchange() {}
 
