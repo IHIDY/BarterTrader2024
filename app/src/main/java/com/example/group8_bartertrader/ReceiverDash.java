@@ -31,6 +31,8 @@ import java.util.List;
 public class ReceiverDash extends AppCompatActivity implements LocationHelper.OnLocationFetchListener {
 
     private Button receiverSettingBtn;
+    private Button myOffersBtn;
+
     private TextView locationTextView;
     private LocationHelper locationHelper;
     private DatabaseReference productsRef;
@@ -43,6 +45,7 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         setContentView(R.layout.activity_receiver_dash);
 
         receiverSettingBtn = findViewById(R.id.recsettingbutton);
+        myOffersBtn = findViewById(R.id.myOffersButton);
         locationTextView = findViewById(R.id.locationTextView);
 
         productsRef = FirebaseDatabase.getInstance().getReference("Products");
@@ -64,8 +67,17 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         receiverSettingBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("TEST", "LOGIN BUTTON CLICKED");
+                Log.d("TEST", "GO TO SETTINGS BUTTON CLICKED");
                 Intent intent = new Intent(ReceiverDash.this, SettingsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        myOffersBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("TEST", "MY OFFERS BUTTON CLICKED");
+                Intent intent = new Intent(ReceiverDash.this, MyOffersActivity.class);
                 startActivity(intent);
             }
         });
