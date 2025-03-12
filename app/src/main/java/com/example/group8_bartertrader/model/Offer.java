@@ -1,7 +1,7 @@
 package com.example.group8_bartertrader.model;
 
 public class Offer {
-    private String id;
+    private transient String id;
     private String providerEmail;
     private String receiverEmail;
 
@@ -14,7 +14,8 @@ public class Offer {
     private String offeredItemDescription;
     private String targetItemDescription;
 
-    private String status; // Offer 状态 (pending, accepted, rejected)
+    private String targetItemId;
+    private String status; // Offer status (pending, accepted, rejected)
 
     // Default constructor required for Firebase
     public Offer() {}
@@ -25,6 +26,7 @@ public class Offer {
                  String offeredItemCategory, String targetItemCategory,
                  String offeredItemLocation, String targetItemLocation,
                  String offeredItemDescription, String targetItemDescription,
+                 String targetItemId,
                  String status) {
         this.id = id;
         this.providerEmail = providerEmail;
@@ -37,6 +39,7 @@ public class Offer {
         this.targetItemLocation = targetItemLocation;
         this.offeredItemDescription = offeredItemDescription;
         this.targetItemDescription = targetItemDescription;
+        this.targetItemId = targetItemId;
         this.status = status;
     }
 
@@ -127,6 +130,14 @@ public class Offer {
 
     public void setTargetItemDescription(String targetItemDescription) {
         this.targetItemDescription = targetItemDescription;
+    }
+
+    public String getTargetItemId() {
+        return targetItemId;
+    }
+
+    public void setTargetItemId(String targetItemId) {
+        this.targetItemId = targetItemId;
     }
 
     public String getStatus() {

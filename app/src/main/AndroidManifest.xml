@@ -16,6 +16,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Group8_bartertrader"
         tools:targetApi="31">
+
+        <activity
+            android:name=".MyOffersActivity"
+            android:exported="true" />
+
         <activity
             android:name=".SubmitForm"
             android:exported="true" />

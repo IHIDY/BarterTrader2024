@@ -39,6 +39,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Group8_bartertrader" >
         <activity
+            android:name="com.example.group8_bartertrader.MyOffersActivity"
+            android:exported="true" />
+        <activity
             android:name="com.example.group8_bartertrader.SubmitForm"
             android:exported="true" />
         <activity

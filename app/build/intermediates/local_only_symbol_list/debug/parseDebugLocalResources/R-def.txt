@@ -23,6 +23,7 @@ id lName
 id locationTextView
 id loginBtn
 id main
+id myOffersButton
 id mySpinner
 id newPasswordEditText
 id pBtn

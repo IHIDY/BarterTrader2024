@@ -54,8 +54,8 @@ public class MyOffersActivity extends AppCompatActivity {
             return;
         }
 
-        String userEmail = currentUser.getEmail().replace(".", "_");
-        offersRef = FirebaseDatabase.getInstance().getReference("Offers").child(userEmail);
+        String userEmail = currentUser.getEmail();
+        offersRef = FirebaseDatabase.getInstance().getReference("Offers");
 
         // Initailize the RecyclerView
         offerRecyclerView = findViewById(R.id.productRecyclerView);
@@ -65,7 +65,7 @@ public class MyOffersActivity extends AppCompatActivity {
         offerRecyclerView.setAdapter(offerAdapter);
 
         // Fetch the Offers
-        fetchOffersFromFirebase();
+        fetchOffersFromFirebase(userEmail);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -81,19 +81,51 @@ public class MyOffersActivity extends AppCompatActivity {
         });
     }
 
-    private void fetchOffersFromFirebase() {
-        offersRef.addValueEventListener(new ValueEventListener() {
+    private void fetchOffersFromFirebase(String userEmail) {
+        offersRef.orderByChild("receiverEmail").equalTo(userEmail).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 offerList.clear();
+                Log.d("FirebaseDebug", "Raw Data: " + dataSnapshot.toString());
+
                 for (DataSnapshot offerSnapshot : dataSnapshot.getChildren()) {
-                    Offer offer = offerSnapshot.getValue(Offer.class);
+                    Log.d("FirebaseDebug", "Raw Data: " + offerSnapshot.toString());
+
+                    String id = offerSnapshot.getKey();
+
+                    String providerEmail = offerSnapshot.child("providerEmail").getValue(String.class);
+                    String receiverEmail = offerSnapshot.child("receiverEmail").getValue(String.class);
+                    String offeredItemName = offerSnapshot.child("offeredItemName").getValue(String.class);
+                    String targetItemId = offerSnapshot.child("targetItemId").getValue(String.class);
+                    String targetItemName = offerSnapshot.child("targetItemName").getValue(String.class);
+                    String offeredItemCategory = offerSnapshot.child("offeredItemCategory").getValue(String.class);
+                    String targetItemCategory = offerSnapshot.child("targetItemCategory").getValue(String.class);
+                    String offeredItemLocation = offerSnapshot.child("offeredItemLocation").getValue(String.class);
+                    String targetItemLocation = offerSnapshot.child("targetItemLocation").getValue(String.class);
+                    String offeredItemDescription = offerSnapshot.child("offeredItemDescription").getValue(String.class);
+                    String targetItemDescription = offerSnapshot.child("targetItemDescription").getValue(String.class);
+                    String status = offerSnapshot.child("status").getValue(String.class);
+
+                    Offer offer = new Offer(id, providerEmail, receiverEmail,
+                            offeredItemName, targetItemName,
+                            offeredItemCategory, targetItemCategory,
+                            offeredItemLocation, targetItemLocation,
+                            offeredItemDescription, targetItemDescription,
+                            targetItemId, status);
+
+                    Log.d("OfferFetched", "ID: " + offer.getId() +
+                            ", Name: " + offer.getOfferedItemName() +
+                            ", Category: " + offer.getOfferedItemCategory() +
+                            ", Target ID: " + offer.getTargetItemId() +
+                            ", Location: " + offer.getOfferedItemLocation() +
+                            ", Status: " + offer.getStatus());
+
                     if (offer != null) {
                         Log.d("Offer fetched", "ID: " + offer.getId() + ", Status: " + offer.getStatus());
                         offerList.add(offer);
                     }
                 }
-                offerAdapter.notifyDataSetChanged(); // 更新 UI
+                offerAdapter.notifyDataSetChanged();
             }
 
             @Override

@@ -64,7 +64,6 @@ public class SubmitFormUITest {
         intent.putExtra("productDescription", "Test Description");
         intent.putExtra("providerEmail", "provider@test.com");
 
-        // 让 Espresso 在启动 SubmitForm 之前，使用带参数的 Intent
         scenario = ActivityScenario.launch(intent);
 
         InstrumentationRegistry.getInstrumentation().getUiAutomation().executeShellCommand(

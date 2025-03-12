@@ -147,18 +147,18 @@ public class SubmitForm extends AppCompatActivity {
 
         String OfferId = databaseReference.push().getKey();
         Map<String, Object> offerData = new HashMap<>();
-        offerData.put("ProviderEmail", providerEmail);
-        offerData.put("ReceiverEmail", currentUserEmail);
-        offerData.put("OfferedItemName", name);
-        offerData.put("OfferedItemCategory", category);
-        offerData.put("OfferedItemLocation", address);
-        offerData.put("OfferedItemDescription", description);
-        offerData.put("TargetItemId", targetProductId);
-        offerData.put("TargetItemName", targetProductName);
-        offerData.put("TargetItemCategory", targetProductCategory);
-        offerData.put("TargetItemLocation", targetProductLocation);
-        offerData.put("TargetItemDescription", targetProductDescription);
-        offerData.put("Status", "pending");
+        offerData.put("providerEmail", providerEmail);
+        offerData.put("receiverEmail", currentUserEmail);
+        offerData.put("offeredItemName", name);
+        offerData.put("offeredItemCategory", category);
+        offerData.put("offeredItemLocation", address);
+        offerData.put("offeredItemDescription", description);
+        offerData.put("targetItemId", targetProductId);
+        offerData.put("targetItemName", targetProductName);
+        offerData.put("targetItemCategory", targetProductCategory);
+        offerData.put("targetItemLocation", targetProductLocation);
+        offerData.put("targetItemDescription", targetProductDescription);
+        offerData.put("status", "pending");
 
         databaseReference.child(OfferId).setValue(offerData).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {

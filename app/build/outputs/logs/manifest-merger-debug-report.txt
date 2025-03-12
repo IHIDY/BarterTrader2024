@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-75:12
-INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-75:12
-INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-75:12
-INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-75:12
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-80:12
+INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-80:12
+INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-80:12
+INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-80:12
 MERGED from [com.google.android.material:material:1.12.0] /Users/junfali/.gradle/caches/8.10.2/transforms/ec8b646f5d3ee4729cc1d940a6c0b48b/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /Users/junfali/.gradle/caches/8.10.2/transforms/d9b1fb194bbb5d68d7939b6f34c2df50/transformed/constraintlayout-2.2.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /Users/junfali/.gradle/caches/8.10.2/transforms/b6969c50a450cfd68e40f955d779c34b/transformed/jetified-appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
@@ -127,8 +127,8 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.2.0] /U
 	android:name
 		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:7:22-64
 application
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:9:5-73:19
-INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:9:5-73:19
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:9:5-78:19
+INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:9:5-78:19
 MERGED from [com.google.android.material:material:1.12.0] /Users/junfali/.gradle/caches/8.10.2/transforms/ec8b646f5d3ee4729cc1d940a6c0b48b/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] /Users/junfali/.gradle/caches/8.10.2/transforms/ec8b646f5d3ee4729cc1d940a6c0b48b/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /Users/junfali/.gradle/caches/8.10.2/transforms/d9b1fb194bbb5d68d7939b6f34c2df50/transformed/constraintlayout-2.2.0/AndroidManifest.xml:7:5-20
@@ -221,76 +221,82 @@ MERGED from [com.google.android.play:core-common:2.0.3] /Users/junfali/.gradle/c
 		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:17:9-57
 	android:dataExtractionRules
 		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:11:9-65
+activity#com.example.group8_bartertrader.MyOffersActivity
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:20:9-22:39
+	android:exported
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:22:13-36
+	android:name
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:21:13-45
 activity#com.example.group8_bartertrader.SubmitForm
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:19:9-21:39
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:24:9-26:39
 	android:exported
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:21:13-36
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:26:13-36
 	android:name
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:20:13-39
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:25:13-39
 activity#com.example.group8_bartertrader.ProductForm
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:23:9-25:39
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:28:9-30:39
 	android:exported
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:25:13-36
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:24:13-40
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:29:13-40
 activity#com.example.group8_bartertrader.ConfirmationPage
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:27:9-29:39
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:32:9-34:39
 	android:exported
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:29:13-36
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:34:13-36
 	android:name
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:28:13-45
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:33:13-45
 activity#com.example.group8_bartertrader.ReceiverDash
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:30:9-32:39
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:35:9-37:39
 	android:exported
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:32:13-36
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:37:13-36
 	android:name
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:31:13-41
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:36:13-41
 activity#com.example.group8_bartertrader.ProviderDash
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:33:9-35:39
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:38:9-40:39
 	android:exported
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:35:13-36
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:40:13-36
 	android:name
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:34:13-41
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:39:13-41
 activity#com.example.group8_bartertrader.LoginActivity
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:36:9-38:40
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:41:9-43:40
 	android:exported
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:38:13-37
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:37:13-42
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:42:13-42
 activity#com.example.group8_bartertrader.RegistrationActivity
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:39:9-47:20
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:44:9-52:20
 	android:exported
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:41:13-36
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:46:13-36
 	android:name
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:40:13-49
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:45:13-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:42:13-46:29
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:47:13-51:29
 action#android.intent.action.MAIN
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:43:17-69
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:48:17-69
 	android:name
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:43:25-66
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:48:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:45:17-77
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:50:17-77
 	android:name
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:45:27-74
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:50:27-74
 activity#com.example.group8_bartertrader.MainActivity
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:48:9-58:20
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:53:9-63:20
 	android:exported
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:50:13-36
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:55:13-36
 	android:name
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:49:13-41
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:54:13-41
 activity#com.example.group8_bartertrader.SettingsActivity
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:59:9-69:20
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:64:9-74:20
 	android:exported
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:61:13-36
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:66:13-36
 	android:name
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:60:13-45
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:65:13-45
 activity#com.example.group8_bartertrader.ResetPasswordActivity
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:70:9-72:39
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:75:9-77:39
 	android:exported
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:72:13-36
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:77:13-36
 	android:name
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:71:13-50
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:76:13-50
 uses-sdk
 INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml
