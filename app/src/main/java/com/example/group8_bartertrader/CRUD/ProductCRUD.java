@@ -14,12 +14,12 @@ public class ProductCRUD {
     }
 
     protected void loadSampleProds() {
-        Product prod1 = new Product("1", "Pink Vase", "Good Condition",
-                "Home Decor", true, "", "Halifax");
-        Product prod2 = new Product("2", "Computer Mouse", "Fair Condition",
-                "Electronics", true, "", "Halifax");
-        Product prod3 = new Product("3", "Star Wars Figurine", "Fair Condition",
-                "Collectibles", true, "", "Halifax");
+        Product prod1 = new Product("1", "ellaemail@gmail.com", "Pink Vase",
+                "Home Decor for Living room", "Electronic", true, "Halifax", "Halifax", "Good", 2023-05-01);
+        Product prod2 = new Product("2", "ellaemail@gmail.com", "Peach Bag",
+                "Nice Bag", "Fashion", true, "Halifax", "Halifax", "Good", 2023-05-01);
+        Product prod3 = new Product("3", "ellaemail@gmail.com", "Black Sunglasses",
+                "Fashionable Sunglasses", "Accesories", true, "Halifax", "Halifax", "Good", 2023-05-01);
 
         products.add(prod1);
         products.add(prod2);
