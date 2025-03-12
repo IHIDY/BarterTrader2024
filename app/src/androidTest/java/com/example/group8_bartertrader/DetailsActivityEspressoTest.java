@@ -6,7 +6,6 @@ import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
 
-import static com.example.group8_bartertrader.ResetPasswordActivityUITest.LAUNCH_TIMEOUT;
 import static java.util.regex.Pattern.matches;
 
 import android.content.Context;
@@ -72,7 +71,7 @@ public class DetailsActivityEspressoTest {
         offerExchangeButton.clickAndWaitForNewWindow();
 
         device.wait(Until.hasObject(By.pkg(launcherPackage).depth(0)), LAUNCH_TIMEOUT);
-        UiObject exchangeActivity = device.findObject(new UiSelector().resourceId(/**name of activity*/));
+        UiObject exchangeActivity = device.findObject(new UiSelector().textContains("Get Current Location"));
 
         assert exchangeActivity.exists();
     }
@@ -83,7 +82,7 @@ public class DetailsActivityEspressoTest {
         exitButton.clickAndWaitForNewWindow();
 
         device.wait(Until.hasObject(By.pkg(launcherPackage).depth(0)), LAUNCH_TIMEOUT);
-        UiObject productActivity = device.findObject(new UiSelector().resourceId(/**name of activity*/));
+        UiObject productActivity = device.findObject(new UiSelector().resourceId("com.example.group8_bartertrader:id/receiverDashActivity"));
 
         assert productActivity.exists();
     }
