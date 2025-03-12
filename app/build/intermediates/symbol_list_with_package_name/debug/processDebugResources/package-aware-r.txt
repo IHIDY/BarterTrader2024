@@ -3550,6 +3550,7 @@ id postLayout
 id pressed
 id productAvailability
 id productCategory
+id productCondition
 id productDescription
 id productLocation
 id productName

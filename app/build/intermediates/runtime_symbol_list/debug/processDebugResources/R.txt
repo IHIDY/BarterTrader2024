@@ -3549,6 +3549,7 @@ int id postLayout 0x7f090186
 int id pressed 0x7f090187
 int id productAvailability 0x7f090188
 int id productCategory 0x7f090189
+int id productCondition 0x7f090233
 int id productDescription 0x7f09018a
 int id productLocation 0x7f09018b
 int id productName 0x7f09018c
