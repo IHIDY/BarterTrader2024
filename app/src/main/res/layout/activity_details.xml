@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".DetailsActivity">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="24dp"
+        android:text="Product Details"
+        android:textSize="24dp"/>
+
+    <GridLayout
+        android:id="@+id/detailsContainerGL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:rowCount="5">
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/productCondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Condition"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/productCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Category"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/productLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/productDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Details"
+            android:textSize="16dp"></TextView>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/OfferExchangeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Offer Exchange"
+        android:textSize="16dp"></Button>
+
+    <Button
+        android:id="@+id/ExitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:textSize="16dp"></Button>
+
+</LinearLayout>
