@@ -1,1 +1,17 @@
-#/build
+# Gradle
+.gradle/
+*.iml
+
+# IntelliJ/Android Studio
+.idea/
+*.iml
+
+# Local properties
+local.properties
+
+# Build artifacts
+app/build/
+app/.cxx/
+app/intermediates/
+app/outputs/
+app/tmp/
