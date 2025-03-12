@@ -4,11 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -23,13 +20,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class ConfirmationPage extends AppCompatActivity {
 
-    private Spinner roleSpinner;
-    private String selectedRole = "";
     private EditText emailEditText;
     private DatabaseReference databaseReference;
 
@@ -45,35 +37,9 @@ public class ConfirmationPage extends AppCompatActivity {
         databaseReference = FirebaseDatabase.getInstance().getReference("Users");
 
         Button confirmBtn = findViewById(R.id.confirmEmailBtn);
-        roleSpinner = findViewById(R.id.roleSelectSpinner);
         emailEditText = findViewById(R.id.confirmEmailTextView);
 
         Log.d("UI_SETUP", "UI components initialized");
-
-        // Define role options
-        List<String> roleOptions = Arrays.asList("Select your role", "Provider", "Receiver");
-
-        // Set up Spinner Adapter
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, roleOptions);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        roleSpinner.setAdapter(adapter);
-        Log.d("SPINNER_SETUP", "Role spinner initialized with options");
-
-        // Handle Spinner selection
-        roleSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                selectedRole = parent.getItemAtPosition(position).toString();
-                if (!selectedRole.equals("Select your role")) {
-                    Log.d("ROLE_SELECTION", "Selected Role: " + selectedRole);
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-                Log.d("ROLE_SELECTION", "No role selected");
-            }
-        });
 
         // Handle Confirm Button Click
         confirmBtn.setOnClickListener(v -> {
@@ -99,12 +65,6 @@ public class ConfirmationPage extends AppCompatActivity {
             return;
         }
 
-        if (selectedRole.equals("Select your role")) {
-            Log.w("INPUT_VALIDATION", "No role selected");
-            Toast.makeText(this, "Please select a role", Toast.LENGTH_SHORT).show();
-            return;
-        }
-
         Log.d("DATABASE_QUERY", "Checking if email exists in database: " + email);
 
         // Query the Firebase Realtime Database to check if the email exists
@@ -113,10 +73,11 @@ public class ConfirmationPage extends AppCompatActivity {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         if (dataSnapshot.exists()) {
-                            // Email exists, update the role
                             for (DataSnapshot userSnapshot : dataSnapshot.getChildren()) {
-                                Log.d("DATABASE_QUERY", "Email found in database: " + email);
-                                updateRole(userSnapshot.getKey(), selectedRole);
+                                String currentRole = userSnapshot.child("role").getValue(String.class);
+                                String newRole = (currentRole != null && currentRole.equals("Provider")) ? "Receiver" : "Provider";
+                                Log.d("DATABASE_QUERY", "Email found. Current role: " + currentRole + ", Switching to: " + newRole);
+                                updateRole(userSnapshot.getKey(), newRole);
                                 return;
                             }
                         } else {
@@ -139,13 +100,13 @@ public class ConfirmationPage extends AppCompatActivity {
         databaseReference.child(userId).child("role").setValue(newRole)
                 .addOnSuccessListener(aVoid -> {
                     Log.d("DATABASE_UPDATE", "Role updated successfully to: " + newRole);
-                    Toast.makeText(this, "Role updated successfully!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Role updated to " + newRole + "!", Toast.LENGTH_SHORT).show();
 
-                    // Redirect user based on their role
+                    // Redirect user based on their new role
                     if (newRole.equals("Provider")) {
                         Log.d("NAVIGATION", "Redirecting to ProviderDash");
                         startActivity(new Intent(ConfirmationPage.this, ProviderDash.class));
-                    } else if (newRole.equals("Receiver")) {
+                    } else {
                         Log.d("NAVIGATION", "Redirecting to ReceiverDash");
                         startActivity(new Intent(ConfirmationPage.this, ReceiverDash.class));
                     }
@@ -157,5 +118,4 @@ public class ConfirmationPage extends AppCompatActivity {
                     Toast.makeText(this, "Error updating role", Toast.LENGTH_SHORT).show();
                 });
     }
-
 }

@@ -17,6 +17,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.group8_bartertrader.adapter.ProductAdapter;
 import com.example.group8_bartertrader.model.Product;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -32,6 +34,7 @@ public class ProviderDash extends AppCompatActivity {
     private ProductAdapter productAdapter;
     private List<Product> productList;
     private DatabaseReference productsRef;
+    private FirebaseUser currentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +45,10 @@ public class ProviderDash extends AppCompatActivity {
         Button pBtn = findViewById(R.id.pBtn);
         Button postUsedProductsBtn = findViewById(R.id.postButton);
 
-        // Initialize Firebase
+        // Initialize Firebase Authentication
+        currentUser = FirebaseAuth.getInstance().getCurrentUser();
+
+        // Initialize Firebase Database Reference
         productsRef = FirebaseDatabase.getInstance().getReference("Products");
 
         // Initialize RecyclerView and Adapter
@@ -74,14 +80,20 @@ public class ProviderDash extends AppCompatActivity {
     }
 
     private void fetchProductsFromFirebase() {
+        if (currentUser == null) {
+            Toast.makeText(this, "User not logged in", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        String currentUserEmail = currentUser.getEmail();
         productsRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 productList.clear();
                 for (DataSnapshot productSnapshot : dataSnapshot.getChildren()) {
                     Product product = productSnapshot.getValue(Product.class);
-                    if (product != null) {
-                        Log.d("Product fetched", "ID: " + product.getId() + ", Availability: " + product.isAvailable());
+                    if (product != null && currentUserEmail != null && currentUserEmail.equals(product.getEmail())) {
+                        Log.d("Product fetched", "ID: " + product.getId() + ", Availability: " + product.isAvailable() + ", Email: " + product.getEmail());
                         productList.add(product);
                     }
                 }
