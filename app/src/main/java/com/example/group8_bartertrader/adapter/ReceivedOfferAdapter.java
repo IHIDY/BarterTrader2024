@@ -18,6 +18,7 @@ import com.example.group8_bartertrader.model.Offer;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdapter.ReceivedOfferViewHolder> {
@@ -57,10 +58,12 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
         holder.acceptButton.setOnClickListener(v-> {
             Log.d("DEBUG_ADAPTER", "Accepted offer: " + offer.getId());
             updateOfferStatus(offer.getId(), "accepted");
+            sendNotification(offer.getReceiverEmail(), "Offer has been accepted");
         });
         holder.declineButton.setOnClickListener(v-> {
             Log.d("DEBUG_ADAPTER", "Declined offer: " + offer.getId());
             updateOfferStatus(offer.getId(), "declined");
+            sendNotification(offer.getReceiverEmail(), "Offer has been declined");
         });
 
         holder.itemView.setOnClickListener(v -> {
@@ -70,6 +73,24 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
         });
     }
 
+    private void sendNotification(String receiverEmail, String message){
+        DatabaseReference notification = FirebaseDatabase.getInstance().getReference("Notifications");
+        String notificationId = notification.push().getKey();
+        HashMap<String, Object> notificationData = new HashMap<>();
+        notificationData.put("receiverEmail", receiverEmail);
+        notificationData.put("message", message);
+        notificationData.put("time", System.currentTimeMillis());
+        if (notificationId != null){
+            notification.child(notificationId).setValue(notificationData).addOnCompleteListener(task->{
+                if (task.isSuccessful()){
+                    Log.d("DEBUG_FIREBASE", "Notification sent: " + receiverEmail);
+                }else{
+                    Log.e("DEBUG_FIREBASE", "Failed sending notification to receiver", task.getException());
+                }
+            });
+        }
+
+    }
     private void updateOfferStatus(String offerId, String status){
         if (offerId == null || offerId.isEmpty()){
             Log.e("DEBUG_FIREBASE", "OfferId is null");
