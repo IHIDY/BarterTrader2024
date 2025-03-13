@@ -44,7 +44,7 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
     private List<Product> productList;
     private Spinner category;
     private Button searchButton;
-    private EditText Distance;
+    private EditText keyword,Distance;
     private int distance;
     private final int RADIUS = 10;
     private final int Radius_E = 6371; // Radius of the Earth in km
@@ -62,7 +62,8 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         receiverSettingBtn = findViewById(R.id.recsettingbutton);
         locationTextView = findViewById(R.id.locationTextView);
         category = findViewById(R.id.filterSpinner);
-        Distance = findViewById(R.id.filterEditText);
+        keyword = findViewById(R.id.inputEditText);
+        Distance = findViewById(R.id.distanceEditText);
         searchButton = findViewById(R.id.filterButton);
 
         productsRef = FirebaseDatabase.getInstance().getReference("Products");
@@ -75,7 +76,7 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
             locationHelper.getCurrentLocation(this);
         }
 
-        filterItems(RADIUS,null);
+        fetchProductsFromFirebase(RADIUS,null,"");
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -114,7 +115,9 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
     }
 
     public void search(){
+        String word = "";
         try {
+            word = keyword.getText().toString().trim();
             distance = Integer.parseInt(Distance.getText().toString().trim());
         } catch (NumberFormatException e) {
             Toast.makeText(this,"Must be number "+e.getMessage(),Toast.LENGTH_SHORT).show();
@@ -122,25 +125,9 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         if(distance<=0){
             distance=RADIUS;
         }
-        if(selectedCategory==null){
-            //select all in dis
-            filterItems(distance,null);
-        }
-        else {
-            //select only in dis
-            filterItems(distance,selectedCategory);
-        }
+        fetchProductsFromFirebase(distance,selectedCategory,word);
     }
 
-    private void filterItems(int maxDistance, String category) {
-        //incomplete
-        productRecyclerView = findViewById(R.id.productRecyclerView);
-        productRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        productList = new ArrayList<>();
-        productAdapter = new ProductAdapter(productList);
-        productRecyclerView.setAdapter(productAdapter);
-        fetchProductsFromFirebase(latitude,longitude,maxDistance,category);
-    }
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -153,7 +140,7 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         this.latitude=latitude;
         this.longitude=longitude;
         locationTextView.setText("Lat: " + latitude + ", Long: " + longitude);
-        fetchProductsFromFirebase(latitude, longitude,RADIUS,null);
+        fetchProductsFromFirebase(RADIUS,null,"");
     }
 
     @Override
@@ -161,23 +148,25 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
     }
 
-    private void fetchProductsFromFirebase(double latitude, double longitude,int distance,String category) {
+    private void fetchProductsFromFirebase(int distance,String category,String word) {
         productsRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 productList = new ArrayList<>();
                 for (DataSnapshot productSnapshot : dataSnapshot.getChildren()) {
                     Product product = productSnapshot.getValue(Product.class);
+                    String categoryOfP = product.getCategory();
+                    String name = product.getName();
                     if (product != null) {
                         // Parse latLngLocation from the product
                         double[] productLatLng = LocationHelper.parseLatLngLocation(product.getLatLngLocation());
                         if(category==null){
-                            if (productLatLng != null && isWithinRange(latitude, longitude, productLatLng[0], productLatLng[1],distance)) {
+                            if (productLatLng != null && isWithinRange(latitude, longitude, productLatLng[0], productLatLng[1],distance)&&name.contains(word)) {
                                 productList.add(product);
                             }
                         }
                         else {
-                            if (productLatLng != null && isWithinRange(latitude, longitude, productLatLng[0], productLatLng[1],distance)&&product.getCategory().equals(category)) {
+                            if (productLatLng != null && isWithinRange(latitude, longitude, productLatLng[0], productLatLng[1],distance)&&categoryOfP.equals(category)&&name.contains(word)) {
                                 productList.add(product);
                             }
                         }

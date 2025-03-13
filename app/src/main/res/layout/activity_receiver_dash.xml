@@ -51,8 +51,18 @@
 
         <!-- Filter Input -->
         <EditText
-            android:id="@+id/filterEditText"
+            android:id="@+id/inputEditText"
             android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@android:drawable/edit_text"
+            android:hint="enter Keyword"
+            android:inputType="text"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/distanceEditText"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:background="@android:drawable/edit_text"

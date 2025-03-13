@@ -16,6 +16,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.group8_bartertrader.GoogleMapActivity;
 import com.example.group8_bartertrader.R;
 import com.example.group8_bartertrader.model.Product;
 
@@ -53,16 +54,10 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         holder.productAvailability.setText("Status: " + "Available");
 
         holder.mapButton.setOnClickListener(v -> {
-            String location = product.getLocation();
-            Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-            mapIntent.setPackage("com.google.android.apps.maps");
-
-            if (v.getContext().getPackageManager().resolveActivity(mapIntent, 0) != null) {
-                v.getContext().startActivity(mapIntent);
-            } else {
-                Toast.makeText(v.getContext(), "No Map App Found", Toast.LENGTH_SHORT).show();
-            }
+            Context context = v.getContext();
+            Intent mapIntent = new Intent(context, GoogleMapActivity.class);
+            mapIntent.putExtra("itemLocation", product.getLocation());
+            context.startActivity(mapIntent);
         });
 
         holder.detailButton.setOnClickListener(v -> {
