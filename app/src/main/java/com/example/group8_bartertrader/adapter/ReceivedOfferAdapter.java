@@ -36,11 +36,22 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
     @Override
     public void onBindViewHolder(@NonNull ReceivedOfferViewHolder holder, int position) {
         Offer offer = offerList.get(position);
-        holder.productName.setText(offer.getOfferedItemName());
-        holder.targetProductName.setText(offer.getTargetItemName());
         holder.status.setText("Status: " + offer.getStatus());
 
         Log.d("DEBUG_ADAPTER", "Bind offer: " + offer.getOfferedItemName());
+        Log.d("DEBUG_ADAPTER", "Location: " + offer.getOfferedItemLocation());
+
+        holder.productName.setText("I Offer: " + offer.getOfferedItemName());
+        holder.productCategory.setText("Category: " + (offer.getOfferedItemCategory()));
+        holder.productLocation.setText("Location: " + (offer.getOfferedItemLocation()));
+        holder.productDescription.setText("Description: " + (offer.getOfferedItemDescription()));
+
+        holder.targetItemName.setText("For: " + offer.getTargetItemName());
+        holder.targetItemDescription.setText("Description: " + (offer.getTargetItemDescription()));
+        holder.targetItemCategory.setText("Category: " + (offer.getTargetItemCategory()));
+        holder.targetItemLocation.setText("Location: " +(offer.getTargetItemLocation()));
+        holder.status.setText("Status: " + offer.getStatus());
+
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, OfferDetailsActivity.class);
             intent.putExtra("offerId", offer.getId());
@@ -54,11 +65,18 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
     }
 
     public static class ReceivedOfferViewHolder extends RecyclerView.ViewHolder {
-        TextView productName, targetProductName, status;
+        TextView productName, status, productCategory, productLocation, productDescription, targetItemName, targetItemDescription, targetItemCategory, targetItemLocation;
         public ReceivedOfferViewHolder(View itemView) {
             super(itemView);
             productName = itemView.findViewById(R.id.productName);
-            targetProductName = itemView.findViewById(R.id.targetProductName);
+            productCategory = itemView.findViewById(R.id.productCategory);
+            productLocation = itemView.findViewById(R.id.productLocation);
+            productDescription = itemView.findViewById(R.id.productDescription);
+
+            targetItemName = itemView.findViewById(R.id.targetProductName);
+            targetItemDescription = itemView.findViewById(R.id.targetProductDescription);
+            targetItemCategory = itemView.findViewById(R.id.targetProductCategory);
+            targetItemLocation = itemView.findViewById(R.id.targetProductLocation);
             status = itemView.findViewById(R.id.status);
         }
     }
