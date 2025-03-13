@@ -33,12 +33,12 @@ import java.util.List;
 
 public class ReceiverDash extends AppCompatActivity implements LocationHelper.OnLocationFetchListener {
 
-    private Button receiverSettingBtn;
-    private TextView locationTextView;
-    private LocationHelper locationHelper;
-    private DatabaseReference productsRef;
+    Button receiverSettingBtn;
+    TextView locationTextView;
+    LocationHelper locationHelper;
+    DatabaseReference productsRef;
     private List<Product> productList;
-    private RecyclerView productRecyclerView;
+    RecyclerView productRecyclerView;
     private ProductAdapter productAdapter;
 
     @Override

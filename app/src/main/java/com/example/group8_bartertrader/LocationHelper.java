@@ -14,7 +14,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 public class LocationHelper {
 
     private Context context;
-    private FusedLocationProviderClient fusedLocationClient;
+    FusedLocationProviderClient fusedLocationClient;
     private OnLocationFetchListener listener;
 
     public LocationHelper(Context context) {
@@ -69,7 +69,7 @@ public class LocationHelper {
 
     //Fetches the location using FusedLocationProviderClient.
 
-    private void fetchLocation() {
+    void fetchLocation() {
         if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
             if (listener != null) {

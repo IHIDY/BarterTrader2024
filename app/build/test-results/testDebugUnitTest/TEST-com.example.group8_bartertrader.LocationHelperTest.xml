@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.group8_bartertrader.ProductFormTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-03-03T02:53:33" hostname="Daniels-MacBook-Pro.local" time="0.686">
+<testsuite name="com.example.group8_bartertrader.LocationHelperTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-03-12T18:15:04" hostname="Jaes-MacBook-Pro.local" time="1.204">
   <properties/>
-  <testcase name="testProductPostedSuccessfully" classname="com.example.group8_bartertrader.ProductFormTest" time="0.686">
-    <failure message="org.mockito.exceptions.base.MockitoException: &#10;Mockito cannot mock this class: class android.content.Context.&#10;&#10;If you're not sure why you're getting this error, please report to the mailing list.&#10;&#10;&#10;Java               : 21&#10;JVM vendor name    : JetBrains s.r.o.&#10;JVM vendor version : 21.0.3+-79915917-b509.11&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 21.0.3+-79915917-b509.11&#10;JVM info           : mixed mode&#10;OS name            : Mac OS X&#10;OS version         : 14.5&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class android.content.Context]" type="org.mockito.exceptions.base.MockitoException">org.mockito.exceptions.base.MockitoException: 
+  <testcase name="testGetCurrentLocation_WithPermissionGranted" classname="com.example.group8_bartertrader.LocationHelperTest" time="1.204">
+    <failure message="org.mockito.exceptions.base.MockitoException: &#10;Mockito cannot mock this class: class android.content.Context.&#10;&#10;If you're not sure why you're getting this error, please report to the mailing list.&#10;&#10;&#10;Java               : 21&#10;JVM vendor name    : JetBrains s.r.o.&#10;JVM vendor version : 21.0.4+-12422083-b607.1&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 21.0.4+-12422083-b607.1&#10;JVM info           : mixed mode&#10;OS name            : Mac OS X&#10;OS version         : 14.4&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class android.content.Context]" type="org.mockito.exceptions.base.MockitoException">org.mockito.exceptions.base.MockitoException: 
 Mockito cannot mock this class: class android.content.Context.
 
 If you're not sure why you're getting this error, please report to the mailing list.
@@ -10,12 +10,12 @@ If you're not sure why you're getting this error, please report to the mailing l
 
 Java               : 21
 JVM vendor name    : JetBrains s.r.o.
-JVM vendor version : 21.0.3+-79915917-b509.11
+JVM vendor version : 21.0.4+-12422083-b607.1
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 21.0.3+-79915917-b509.11
+JVM version        : 21.0.4+-12422083-b607.1
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 14.5
+OS version         : 14.4
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
@@ -44,8 +44,8 @@ Underlying exception : org.mockito.exceptions.base.MockitoException: Could not m
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
 	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:54)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:53)
-	at java.base@21.0.3/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
-	at java.base@21.0.3/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.4/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base@21.0.4/java.lang.reflect.Method.invoke(Unknown Source)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
 	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
@@ -117,7 +117,7 @@ Caused by: java.lang.IllegalArgumentException: Unsupported class file major vers
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/a123456/.gradle/caches/8.10.2/transforms/3732b05ac0a469692ccbccf3ae0dc3d7/transformed/jetified-byte-buddy-agent-1.11.19.jar)
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/jae/.gradle/caches/8.10.2/transforms/3732b05ac0a469692ccbccf3ae0dc3d7/transformed/jetified-byte-buddy-agent-1.11.19.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
 WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
 WARNING: Dynamic loading of agents will be disallowed by default in a future release

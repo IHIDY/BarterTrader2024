@@ -12,12 +12,12 @@
         "source": "/Users/jae/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-46:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/jae/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-44:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/jae/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-46:/xml/data_extraction_rules.xml"
-    },
-    {
         "merged": "/Users/jae/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-44:/mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/jae/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-46:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/jae/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-44:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/jae/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-46:/xml/data_extraction_rules.xml"
     },
     {
         "merged": "/Users/jae/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-44:/mipmap-xxhdpi_ic_launcher.webp.flat",

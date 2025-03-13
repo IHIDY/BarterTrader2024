@@ -42,8 +42,8 @@ id statusLabel
 id submitEmailButton
 id submitProduct
 id textView
-id textView2
 id textView3
+id title
 layout activity_confirmation_page
 layout activity_login
 layout activity_main
