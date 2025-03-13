@@ -68,7 +68,7 @@ public class ReceivedOfferActivity extends AppCompatActivity {
 
         View mainLayout = findViewById(R.id.main);
         if (mainLayout != null) {
-            ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            ViewCompat.setOnApplyWindowInsetsListener(mainLayout, (v, insets) -> {
                 Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
                 v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
                 return insets;
@@ -85,19 +85,25 @@ public class ReceivedOfferActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 receivedOfferList.clear();
+                Log.d("DEBUG_FIREBASE", "Data: " + dataSnapshot.toString());
 
                 for (DataSnapshot offerSnapshot : dataSnapshot.getChildren()) {
                     Offer offer = offerSnapshot.getValue(Offer.class);
                     if (offer != null) {
                         receivedOfferList.add(offer);
+                        Log.d("DEBUG_FIREBASE", "Offer added: " + offer.getOfferedItemName() + " Status: " + offer.getStatus());
                     }
                 }
                 receivedOfferAdapter.notifyDataSetChanged();
+                if (receivedOfferList.isEmpty()){
+                    Log.w("DEBUG_FIREBASE", "No offers found");
+                }
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 Log.w("ReceivedOfferActivity", "loadOffers:onCancelled", databaseError.toException());
+                Log.e("DEBUG_FIREBASE", "Firebase error: " + databaseError.getMessage());
                 Toast.makeText(ReceivedOfferActivity.this, "Failed to load offers.", Toast.LENGTH_SHORT).show();
             }
         });

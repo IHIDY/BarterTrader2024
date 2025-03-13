@@ -2,6 +2,7 @@ package com.example.group8_bartertrader.adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,6 +40,7 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
         holder.targetProductName.setText(offer.getTargetItemName());
         holder.status.setText("Status: " + offer.getStatus());
 
+        Log.d("DEBUG_ADAPTER", "Bind offer: " + offer.getOfferedItemName());
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, OfferDetailsActivity.class);
             intent.putExtra("offerId", offer.getId());

@@ -4,6 +4,7 @@ import android.util.Log;
 
 public class Product {
     private String id;
+    private String email;
     private String name;
     private String description;
     private String category;
@@ -16,9 +17,10 @@ public class Product {
     public Product() {}
 
     // Constructor to initialize all fields
-    public Product(String id, String name, String description, String category, String isAvailable, String latLngLocation, String location) {
+    public Product(String id, String name, String email, String description, String category, String isAvailable, String latLngLocation, String location) {
         this.id = id;
         this.name = name;
+        this.email = email;
         this.description = description;
         this.category = category;
         this.isAvailable = isAvailable;
@@ -43,7 +45,9 @@ public class Product {
     public void setName(String name) {
         this.name = name;
     }
-
+    public String getEmail(){
+        return email;
+    }
     public String getDescription() {
         return description;
     }
