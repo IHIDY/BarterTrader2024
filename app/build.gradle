@@ -46,6 +46,7 @@ dependencies {
     implementation libs.firebase.database
     implementation libs.uiautomator
     implementation libs.uiautomator
+    implementation libs.play.services.maps
     testImplementation libs.junit
     testImplementation libs.ext.junit
     implementation 'com.google.android.gms:play-services-location:21.0.1'

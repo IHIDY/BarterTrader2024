@@ -1,6 +1,10 @@
 package com.example.group8_bartertrader.model;
 
-public class Product {
+import android.util.Log;
+
+import java.io.Serializable;
+
+public class Product implements Serializable {
     private String id;
     private String email;
     private String name;
