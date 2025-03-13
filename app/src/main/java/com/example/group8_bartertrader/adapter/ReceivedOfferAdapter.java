@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,6 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.group8_bartertrader.OfferDetailsActivity;
 import com.example.group8_bartertrader.R;
 import com.example.group8_bartertrader.model.Offer;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.List;
 
@@ -36,14 +39,13 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
     @Override
     public void onBindViewHolder(@NonNull ReceivedOfferViewHolder holder, int position) {
         Offer offer = offerList.get(position);
-        holder.status.setText("Status: " + offer.getStatus());
 
         Log.d("DEBUG_ADAPTER", "Bind offer: " + offer.getOfferedItemName());
-        Log.d("DEBUG_ADAPTER", "Location: " + offer.getOfferedItemLocation());
-
+        holder.status.setText("Status: " + offer.getStatus());
         holder.productName.setText("I Offer: " + offer.getOfferedItemName());
         holder.productCategory.setText("Category: " + (offer.getOfferedItemCategory()));
         holder.productLocation.setText("Location: " + (offer.getOfferedItemLocation()));
+        Log.d("DEBUG_ADAPTER", "Location: " + offer.getOfferedItemLocation());
         holder.productDescription.setText("Description: " + (offer.getOfferedItemDescription()));
 
         holder.targetItemName.setText("For: " + offer.getTargetItemName());
@@ -52,10 +54,38 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
         holder.targetItemLocation.setText("Location: " +(offer.getTargetItemLocation()));
         holder.status.setText("Status: " + offer.getStatus());
 
+        holder.acceptButton.setOnClickListener(v-> {
+            Log.d("DEBUG_ADAPTER", "Accepted offer: " + offer.getId());
+            updateOfferStatus(offer.getId(), "accepted");
+        });
+        holder.declineButton.setOnClickListener(v-> {
+            Log.d("DEBUG_ADAPTER", "Declined offer: " + offer.getId());
+            updateOfferStatus(offer.getId(), "declined");
+        });
+
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, OfferDetailsActivity.class);
             intent.putExtra("offerId", offer.getId());
             context.startActivity(intent);
+        });
+    }
+
+    private void updateOfferStatus(String offerId, String status){
+        if (offerId == null || offerId.isEmpty()){
+            Log.e("DEBUG_FIREBASE", "OfferId is null");
+            Toast.makeText(context, "No offerId found", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        DatabaseReference offers = FirebaseDatabase.getInstance().getReference("Offers");
+
+        offers.child(offerId).child("status").setValue(status).addOnCompleteListener(task-> {
+            if (task.isSuccessful()) {
+                Log.d("DEBUG_FIREBASE", "Offer " + offerId + "updated: " + status);
+                Toast.makeText(context, "Offer is: " + status, Toast.LENGTH_SHORT).show();
+            } else {
+                Log.e("DEBUG_FIREBASE", "Failed updating status", task.getException());
+                Toast.makeText(context, "Failed updating offer", Toast.LENGTH_SHORT).show();
+            }
         });
     }
 
@@ -65,7 +95,8 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
     }
 
     public static class ReceivedOfferViewHolder extends RecyclerView.ViewHolder {
-        TextView productName, status, productCategory, productLocation, productDescription, targetItemName, targetItemDescription, targetItemCategory, targetItemLocation;
+        public View acceptButton, declineButton;
+        TextView offerId, productName, status, productCategory, productLocation, productDescription, targetItemName, targetItemDescription, targetItemCategory, targetItemLocation;
         public ReceivedOfferViewHolder(View itemView) {
             super(itemView);
             productName = itemView.findViewById(R.id.productName);
@@ -78,6 +109,9 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
             targetItemCategory = itemView.findViewById(R.id.targetProductCategory);
             targetItemLocation = itemView.findViewById(R.id.targetProductLocation);
             status = itemView.findViewById(R.id.status);
+
+            acceptButton = itemView.findViewById(R.id.acceptButton);
+            declineButton = itemView.findViewById(R.id.declineButton);
         }
     }
 }

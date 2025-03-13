@@ -81,6 +81,11 @@ public class ReceivedOfferActivity extends AppCompatActivity {
     }
 
     private void fetchReceivedOffers(String providerEmail) {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user == null) {
+            Log.e("DEBUG_FIREBASE", "No user logged-in");
+            return;
+        }
         offersRef.orderByChild("providerEmail").equalTo(providerEmail).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -90,6 +95,8 @@ public class ReceivedOfferActivity extends AppCompatActivity {
                 for (DataSnapshot offerSnapshot : dataSnapshot.getChildren()) {
                     Offer offer = offerSnapshot.getValue(Offer.class);
                     if (offer != null) {
+                        String offerId = offerSnapshot.getKey();
+                        offer.setId(offerId);
                         receivedOfferList.add(offer);
                         Log.d("DEBUG_FIREBASE", "Offer added: " + offer.getOfferedItemName() + " Status: " + offer.getStatus());
                     }
