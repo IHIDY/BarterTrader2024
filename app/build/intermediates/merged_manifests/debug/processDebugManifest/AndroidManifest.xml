@@ -8,6 +8,7 @@
         android:minSdkVersion="30"
         android:targetSdkVersion="35" />
 
+    <!-- Permissions -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -38,6 +39,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Group8_bartertrader" >
+
+        <!-- Activities -->
         <activity
             android:name="com.example.group8_bartertrader.ProductForm"
             android:exported="false" />
@@ -64,32 +67,22 @@
         </activity>
         <activity
             android:name="com.example.group8_bartertrader.MainActivity"
-            android:exported="true" >
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
+            android:exported="true" />
         <activity
             android:name="com.example.group8_bartertrader.SettingsActivity"
-            android:exported="true" >
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
+            android:exported="true" />
         <activity
             android:name="com.example.group8_bartertrader.ResetPasswordActivity"
             android:exported="true" />
         <activity
             android:name="com.example.group8_bartertrader.ResetPasswordFormActivity"
             android:exported="true" />
+
+        <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="&apos;AIzaSyCpYrT1a38sJJwtQQUMaJjVT3So-Wtbub8&apos;" />
+
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"
