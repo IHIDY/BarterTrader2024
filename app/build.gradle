@@ -46,6 +46,7 @@ dependencies {
     implementation libs.firebase.database
     implementation libs.uiautomator
     implementation libs.uiautomator
+    implementation libs.play.services.maps
     testImplementation libs.junit
     testImplementation libs.ext.junit
     implementation 'com.google.android.gms:play-services-location:21.0.1'
@@ -54,4 +55,14 @@ dependencies {
     testImplementation 'org.mockito:mockito-inline:4.0.0' // For mocking final classes
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+
+    // Mockito Core
+    testImplementation 'org.mockito:mockito-core:5.4.0'
+
+    // Mockito  Android Instrumentation Tests
+    androidTestImplementation 'org.mockito:mockito-android:5.4.0'
+
+    // PowerMockito
+    testImplementation 'org.powermock:powermock-module-junit4:2.0.9'
+    testImplementation 'org.powermock:powermock-api-mockito2:2.0.9'
 }

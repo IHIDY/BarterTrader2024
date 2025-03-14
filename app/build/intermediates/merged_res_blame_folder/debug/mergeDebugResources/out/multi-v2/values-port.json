@@ -4,7 +4,7 @@
             "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-42:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/ecdb54c4722da5da6f9ab969b877944a/transformed/appcompat-1.7.0/res/values-port/values-port.xml",
+                    "source": "C:\\Users\\fredv\\.gradle\\caches\\8.10.2\\transforms\\ecdb54c4722da5da6f9ab969b877944a\\transformed\\appcompat-1.7.0\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
