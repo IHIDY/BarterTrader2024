@@ -64,6 +64,7 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(context, R.array.offer_options, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         holder.respondToOfferSpinner.setAdapter(adapter);
+        holder.respondToOfferSpinner.setContentDescription("OfferSpinner-" + position);
 
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, OfferDetailsActivity.class);

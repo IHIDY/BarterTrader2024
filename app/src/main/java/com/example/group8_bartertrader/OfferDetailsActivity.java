@@ -24,17 +24,7 @@ public class OfferDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle saveState){
         super.onCreate(saveState);
         setContentView(R.layout.activity_offer_details);
-        prodName = findViewById(R.id.prodName);
-        targetProdName = findViewById(R.id.targetProdName);
-        status = findViewById(R.id.status);
-        acceptButton = findViewById(R.id.acceptButton);
-        declineButton = findViewById(R.id.declineButton);
-        offerId = getIntent().getStringExtra("offerId");
-        offerRef = FirebaseDatabase.getInstance().getReference("Offers");
-        acceptButton.setOnClickListener(v->
-                updateOfferStatus("Accepted"));
-        declineButton.setOnClickListener(v->
-                updateOfferStatus("Declined"));
+
     }
     private void updateOfferStatus(String status){
         if (offerId != null){
