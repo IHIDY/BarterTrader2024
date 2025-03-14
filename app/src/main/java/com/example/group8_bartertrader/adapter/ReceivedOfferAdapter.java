@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.group8_bartertrader.OfferDetailsActivity;
 import com.example.group8_bartertrader.R;
 import com.example.group8_bartertrader.model.Offer;
+import com.google.firebase.Firebase;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -30,11 +31,15 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
     private Context context;
     private DatabaseReference offers;
 
-    public ReceivedOfferAdapter(List<Offer> offerList, Context context) {
+    public ReceivedOfferAdapter(List<Offer> offerList, Context context){
+        this(offerList, context, FirebaseDatabase.getInstance().getReference("Offers"));
+    }
+    public ReceivedOfferAdapter(List<Offer> offerList, Context context, DatabaseReference db) {
         this.offerList = offerList;
         this.context = context;
-        this.offers = FirebaseDatabase.getInstance().getReference("Offers");
+        this.offers = db;
     }
+
 
     @NonNull
     @Override
@@ -93,7 +98,7 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
         });
     }
 
-    private void updateOfferStatus(Offer offer) {
+    public void updateOfferStatus(Offer offer) {
         if (offer.getId() != null){
             offers.child(offer.getId()).child("status").setValue(offer.getStatus());
         }
