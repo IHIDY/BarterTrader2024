@@ -2,10 +2,14 @@ package com.example.group8_bartertrader.adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,10 +28,12 @@ import java.util.List;
 public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdapter.ReceivedOfferViewHolder> {
     private List<Offer> offerList;
     private Context context;
+    private DatabaseReference offers;
 
     public ReceivedOfferAdapter(List<Offer> offerList, Context context) {
         this.offerList = offerList;
         this.context = context;
+        this.offers = FirebaseDatabase.getInstance().getReference("Offers");
     }
 
     @NonNull
@@ -55,25 +61,44 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
         holder.targetItemLocation.setText("Location: " +(offer.getTargetItemLocation()));
         holder.status.setText("Status: " + offer.getStatus());
 
-        holder.acceptButton.setOnClickListener(v-> {
-            Log.d("DEBUG_ADAPTER", "Accepted offer: " + offer.getId());
-            updateOfferStatus(offer.getId(), "accepted");
-            sendNotification(offer.getReceiverEmail(), "Offer has been accepted");
-        });
-        holder.declineButton.setOnClickListener(v-> {
-            Log.d("DEBUG_ADAPTER", "Declined offer: " + offer.getId());
-            updateOfferStatus(offer.getId(), "declined");
-            sendNotification(offer.getReceiverEmail(), "Offer has been declined");
-        });
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(context, R.array.offer_options, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        holder.respondToOfferSpinner.setAdapter(adapter);
 
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, OfferDetailsActivity.class);
             intent.putExtra("offerId", offer.getId());
             context.startActivity(intent);
         });
+
+        int defaultPos = adapter.getPosition(offer.getStatus());
+        holder.respondToOfferSpinner.setSelection(defaultPos);
+        holder.respondToOfferSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String selectedStatus = parent.getItemAtPosition(position).toString();
+                if (!selectedStatus.equals(offer.getStatus())){
+                    offer.setStatus(selectedStatus);
+                    updateOfferStatus(offer);
+                    Toast.makeText(context, "Offer " + selectedStatus, Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
     }
 
-    private void sendNotification(String receiverEmail, String message){
+    private void updateOfferStatus(Offer offer) {
+        if (offer.getId() != null){
+            offers.child(offer.getId()).child("status").setValue(offer.getStatus());
+        }
+    }
+
+    public void sendNotification(String receiverEmail, String message){
         DatabaseReference notification = FirebaseDatabase.getInstance().getReference("Notifications");
         String notificationId = notification.push().getKey();
         HashMap<String, Object> notificationData = new HashMap<>();
@@ -91,7 +116,7 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
         }
 
     }
-    private void updateOfferStatus(String offerId, String status){
+    public void updateOfferStatus(String offerId, String status){
         if (offerId == null || offerId.isEmpty()){
             Log.e("DEBUG_FIREBASE", "OfferId is null");
             Toast.makeText(context, "No offerId found", Toast.LENGTH_SHORT).show();
@@ -116,7 +141,7 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
     }
 
     public static class ReceivedOfferViewHolder extends RecyclerView.ViewHolder {
-        public View acceptButton, declineButton;
+        Spinner respondToOfferSpinner;
         TextView offerId, productName, status, productCategory, productLocation, productDescription, targetItemName, targetItemDescription, targetItemCategory, targetItemLocation;
         public ReceivedOfferViewHolder(View itemView) {
             super(itemView);
@@ -131,8 +156,7 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
             targetItemLocation = itemView.findViewById(R.id.targetProductLocation);
             status = itemView.findViewById(R.id.status);
 
-            acceptButton = itemView.findViewById(R.id.acceptButton);
-            declineButton = itemView.findViewById(R.id.declineButton);
+            respondToOfferSpinner = itemView.findViewById(R.id.respondToOfferSpinner);
         }
     }
 }

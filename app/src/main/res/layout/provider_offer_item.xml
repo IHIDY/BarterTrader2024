@@ -81,16 +81,12 @@
             android:text="Status: "
             android:textSize="18sp"
             android:textStyle="bold" />
-        <Button
-            android:id="@+id/acceptButton"
-            android:layout_width="wrap_content"
+        <Spinner
+            android:id="@+id/respondToOfferSpinner"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Accept Offer"/>
-        <Button
-            android:id="@+id/declineButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Decline Offer"/>
+            android:entries="@array/offer_options"
+            android:spinnerMode="dropdown"/>
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>
