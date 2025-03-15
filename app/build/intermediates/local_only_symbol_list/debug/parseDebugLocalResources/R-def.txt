@@ -9,8 +9,10 @@ id LogOutButton
 id backButton
 id changeRoleBtn
 id confirmEmailBtn
+id confirmEmailLabel
 id confirmEmailTextView
 id confirmPasswordEditText
+id dashboardTitle
 id detailButton
 id distanceEditText
 id email
@@ -30,7 +32,6 @@ id main
 id map
 id mapButton
 id myOffersButton
-id mySpinner
 id newPasswordEditText
 id pBtn
 id pass
@@ -55,9 +56,7 @@ id targetProductCategory
 id targetProductDescription
 id targetProductLocation
 id targetProductName
-id textView
 id textView2
-id textView3
 id title
 layout activity_confirmation_page
 layout activity_google_map

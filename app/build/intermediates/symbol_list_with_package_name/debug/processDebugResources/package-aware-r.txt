@@ -3318,6 +3318,7 @@ id closest
 id collapseActionView
 id compress
 id confirmEmailBtn
+id confirmEmailLabel
 id confirmEmailTextView
 id confirmPasswordEditText
 id confirm_button
@@ -3336,6 +3337,7 @@ id custom
 id customPanel
 id cut
 id dark
+id dashboardTitle
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3524,7 +3526,6 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id myOffersButton
-id mySpinner
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3699,9 +3700,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id textView2
-id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon

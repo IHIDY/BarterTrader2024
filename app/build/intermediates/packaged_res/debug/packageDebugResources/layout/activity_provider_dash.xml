@@ -7,48 +7,50 @@
     android:layout_height="match_parent"
     tools:context=".ProviderDash">
 
-
-
-    <Button
-        android:id="@+id/pBtn"
+    <!-- Title -->
+    <TextView
+        android:id="@+id/dashboardTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go to Settings" />
+        android:text="Provider Dashboard"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
 
+    <!-- Post Used Products Button -->
     <Button
         android:id="@+id/postButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:layout_marginBottom="122dp"
         android:text="Post Used Products"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dashboardTitle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pBtn" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
 
     <!-- RecyclerView to display products -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/productRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/postButton"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintBottom_toTopOf="@id/pBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
 
-    <TextView
-        android:id="@+id/textView3"
+    <!-- Settings Button (Moved to the Bottom) -->
+    <Button
+        android:id="@+id/pBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="143dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginBottom="7dp"
-        android:text="Provider Dashboard"
-        app:layout_constraintBottom_toTopOf="@+id/postButton"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Go to Settings"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

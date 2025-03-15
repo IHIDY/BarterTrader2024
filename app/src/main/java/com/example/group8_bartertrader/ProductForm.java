@@ -6,6 +6,7 @@ import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -21,6 +22,7 @@ import androidx.core.app.ActivityCompat;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -110,7 +112,7 @@ public class ProductForm extends AppCompatActivity {
 
         if (TextUtils.isEmpty(name) || TextUtils.isEmpty(category) || TextUtils.isEmpty(description)
                 || TextUtils.isEmpty(address) || TextUtils.isEmpty(condition)) {
-            Toast.makeText(this, "All fields are required", Toast.LENGTH_SHORT).show();
+            Snackbar.make(submitButton, "All fields are required", Snackbar.LENGTH_SHORT).show();
             return;
         }
 
@@ -134,11 +136,12 @@ public class ProductForm extends AppCompatActivity {
         databaseReference.child(productId).setValue(productData).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
                 Log.d("Product Form", "Product posted successfully");
-                Toast.makeText(ProductForm.this, "Product posted successfully", Toast.LENGTH_SHORT).show();
-                finish();
+                Snackbar.make(submitButton, "Product posted successfully", Snackbar.LENGTH_SHORT).show();
+                // Add a 2-second delay before calling finish()
+                new Handler().postDelayed(() -> finish(), 2000);  // 2000 ms = 2 seconds
             } else {
                 Log.d("Product Form", "Failed to post product");
-                Toast.makeText(ProductForm.this, "Failed to post product", Toast.LENGTH_SHORT).show();
+                Snackbar.make(submitButton, "Failed to post product", Snackbar.LENGTH_SHORT).show();
             }
         });
     }
@@ -153,7 +156,7 @@ public class ProductForm extends AppCompatActivity {
             if (location != null) {
                 callback.onLocationReceived(location);
             } else {
-                Toast.makeText(ProductForm.this, "Unable to get location", Toast.LENGTH_SHORT).show();
+                Snackbar.make(getLocationButton, "Unable to get location", Snackbar.LENGTH_SHORT).show();
             }
         });
     }
@@ -169,7 +172,7 @@ public class ProductForm extends AppCompatActivity {
             }
         } catch (IOException e) {
             e.printStackTrace();
-            Toast.makeText(ProductForm.this, "Unable to get address", Toast.LENGTH_SHORT).show();
+            Snackbar.make(getLocationButton, "Unable to get address", Snackbar.LENGTH_SHORT).show();
         }
     }
 
