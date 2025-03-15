@@ -1,65 +1,23 @@
-INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.ReceiverDashUITest
+INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.SubmitFormUITest
 INSTRUMENTATION_STATUS: current=1
 INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
-INSTRUMENTATION_STATUS: numtests=4
+INSTRUMENTATION_STATUS: numtests=1
 INSTRUMENTATION_STATUS: stream=
-com.example.group8_bartertrader.ReceiverDashUITest:
-INSTRUMENTATION_STATUS: test=testLocationTextView_InitialState
+com.example.group8_bartertrader.SubmitFormUITest:
+INSTRUMENTATION_STATUS: test=testSubmitOffer
 INSTRUMENTATION_STATUS_CODE: 1
-INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.ReceiverDashUITest
+INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.SubmitFormUITest
 INSTRUMENTATION_STATUS: current=1
 INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
-INSTRUMENTATION_STATUS: numtests=4
+INSTRUMENTATION_STATUS: numtests=1
 INSTRUMENTATION_STATUS: stream=.
-INSTRUMENTATION_STATUS: test=testLocationTextView_InitialState
-INSTRUMENTATION_STATUS_CODE: 0
-INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.ReceiverDashUITest
-INSTRUMENTATION_STATUS: current=2
-INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
-INSTRUMENTATION_STATUS: numtests=4
-INSTRUMENTATION_STATUS: stream=
-INSTRUMENTATION_STATUS: test=testRecyclerView_Displayed
-INSTRUMENTATION_STATUS_CODE: 1
-INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.ReceiverDashUITest
-INSTRUMENTATION_STATUS: current=2
-INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
-INSTRUMENTATION_STATUS: numtests=4
-INSTRUMENTATION_STATUS: stream=.
-INSTRUMENTATION_STATUS: test=testRecyclerView_Displayed
-INSTRUMENTATION_STATUS_CODE: 0
-INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.ReceiverDashUITest
-INSTRUMENTATION_STATUS: current=3
-INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
-INSTRUMENTATION_STATUS: numtests=4
-INSTRUMENTATION_STATUS: stream=
-INSTRUMENTATION_STATUS: test=testSettingsButton_Click
-INSTRUMENTATION_STATUS_CODE: 1
-INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.ReceiverDashUITest
-INSTRUMENTATION_STATUS: current=3
-INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
-INSTRUMENTATION_STATUS: numtests=4
-INSTRUMENTATION_STATUS: stream=.
-INSTRUMENTATION_STATUS: test=testSettingsButton_Click
-INSTRUMENTATION_STATUS_CODE: 0
-INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.ReceiverDashUITest
-INSTRUMENTATION_STATUS: current=4
-INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
-INSTRUMENTATION_STATUS: numtests=4
-INSTRUMENTATION_STATUS: stream=
-INSTRUMENTATION_STATUS: test=testTitleTextView_Displayed
-INSTRUMENTATION_STATUS_CODE: 1
-INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.ReceiverDashUITest
-INSTRUMENTATION_STATUS: current=4
-INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
-INSTRUMENTATION_STATUS: numtests=4
-INSTRUMENTATION_STATUS: stream=.
-INSTRUMENTATION_STATUS: test=testTitleTextView_Displayed
+INSTRUMENTATION_STATUS: test=testSubmitOffer
 INSTRUMENTATION_STATUS_CODE: 0
 INSTRUMENTATION_RESULT: stream=
 
-Time: 36.553
+Time: 10.987
 
-OK (4 tests)
+OK (1 test)
 
 
 INSTRUMENTATION_CODE: -1

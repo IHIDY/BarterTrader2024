@@ -1,20 +1,20 @@
-# 2025-03-15T02:08:35.189959Z:
+# 2025-03-15T18:01:14.344505Z:
 test_suite_meta_data {
-  scheduled_test_case_count: 4
+  scheduled_test_case_count: 1
 }
 test_status: PASSED
 test_result {
   test_case {
-    test_class: "ReceiverDashUITest"
+    test_class: "SubmitFormUITest"
     test_package: "com.example.group8_bartertrader"
-    test_method: "testLocationTextView_InitialState"
+    test_method: "testSubmitOffer"
     start_time {
-      seconds: 1742004475
-      nanos: 852000000
+      seconds: 1742061662
+      nanos: 304000000
     }
     end_time {
-      seconds: 1742004476
-      nanos: 581000000
+      seconds: 1742061673
+      nanos: 14000000
     }
   }
   test_status: PASSED
@@ -24,7 +24,7 @@ test_result {
       namespace: "android"
     }
     source_path {
-      path: "/Users/jae/Desktop/W25/3130/group8/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.group8_bartertrader.ReceiverDashUITest-testLocationTextView_InitialState.txt"
+      path: "/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.group8_bartertrader.SubmitFormUITest-testSubmitOffer.txt"
     }
   }
   output_artifact {
@@ -33,7 +33,7 @@ test_result {
       namespace: "android"
     }
     source_path {
-      path: "/Users/jae/Desktop/W25/3130/group8/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/device-info.pb"
+      path: "/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/device-info.pb"
     }
   }
   output_artifact {
@@ -42,7 +42,7 @@ test_result {
       namespace: "android"
     }
     source_path {
-      path: "/Users/jae/Desktop/W25/3130/group8/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/meminfo"
+      path: "/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/meminfo"
     }
   }
   output_artifact {
@@ -51,163 +51,7 @@ test_result {
       namespace: "android"
     }
     source_path {
-      path: "/Users/jae/Desktop/W25/3130/group8/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/cpuinfo"
-    }
-  }
-}
-test_result {
-  test_case {
-    test_class: "ReceiverDashUITest"
-    test_package: "com.example.group8_bartertrader"
-    test_method: "testRecyclerView_Displayed"
-    start_time {
-      seconds: 1742004476
-      nanos: 610000000
-    }
-    end_time {
-      seconds: 1742004481
-      nanos: 49000000
-    }
-  }
-  test_status: PASSED
-  output_artifact {
-    label {
-      label: "logcat"
-      namespace: "android"
-    }
-    source_path {
-      path: "/Users/jae/Desktop/W25/3130/group8/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.group8_bartertrader.ReceiverDashUITest-testRecyclerView_Displayed.txt"
-    }
-  }
-  output_artifact {
-    label {
-      label: "device-info"
-      namespace: "android"
-    }
-    source_path {
-      path: "/Users/jae/Desktop/W25/3130/group8/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/device-info.pb"
-    }
-  }
-  output_artifact {
-    label {
-      label: "device-info.meminfo"
-      namespace: "android"
-    }
-    source_path {
-      path: "/Users/jae/Desktop/W25/3130/group8/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/meminfo"
-    }
-  }
-  output_artifact {
-    label {
-      label: "device-info.cpuinfo"
-      namespace: "android"
-    }
-    source_path {
-      path: "/Users/jae/Desktop/W25/3130/group8/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/cpuinfo"
-    }
-  }
-}
-test_result {
-  test_case {
-    test_class: "ReceiverDashUITest"
-    test_package: "com.example.group8_bartertrader"
-    test_method: "testSettingsButton_Click"
-    start_time {
-      seconds: 1742004481
-      nanos: 945000000
-    }
-    end_time {
-      seconds: 1742004499
-      nanos: 467000000
-    }
-  }
-  test_status: PASSED
-  output_artifact {
-    label {
-      label: "logcat"
-      namespace: "android"
-    }
-    source_path {
-      path: "/Users/jae/Desktop/W25/3130/group8/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.group8_bartertrader.ReceiverDashUITest-testSettingsButton_Click.txt"
-    }
-  }
-  output_artifact {
-    label {
-      label: "device-info"
-      namespace: "android"
-    }
-    source_path {
-      path: "/Users/jae/Desktop/W25/3130/group8/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/device-info.pb"
-    }
-  }
-  output_artifact {
-    label {
-      label: "device-info.meminfo"
-      namespace: "android"
-    }
-    source_path {
-      path: "/Users/jae/Desktop/W25/3130/group8/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/meminfo"
-    }
-  }
-  output_artifact {
-    label {
-      label: "device-info.cpuinfo"
-      namespace: "android"
-    }
-    source_path {
-      path: "/Users/jae/Desktop/W25/3130/group8/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/cpuinfo"
-    }
-  }
-}
-test_result {
-  test_case {
-    test_class: "ReceiverDashUITest"
-    test_package: "com.example.group8_bartertrader"
-    test_method: "testTitleTextView_Displayed"
-    start_time {
-      seconds: 1742004500
-      nanos: 524000000
-    }
-    end_time {
-      seconds: 1742004511
-      nanos: 495000000
-    }
-  }
-  test_status: PASSED
-  output_artifact {
-    label {
-      label: "logcat"
-      namespace: "android"
-    }
-    source_path {
-      path: "/Users/jae/Desktop/W25/3130/group8/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.group8_bartertrader.ReceiverDashUITest-testTitleTextView_Displayed.txt"
-    }
-  }
-  output_artifact {
-    label {
-      label: "device-info"
-      namespace: "android"
-    }
-    source_path {
-      path: "/Users/jae/Desktop/W25/3130/group8/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/device-info.pb"
-    }
-  }
-  output_artifact {
-    label {
-      label: "device-info.meminfo"
-      namespace: "android"
-    }
-    source_path {
-      path: "/Users/jae/Desktop/W25/3130/group8/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/meminfo"
-    }
-  }
-  output_artifact {
-    label {
-      label: "device-info.cpuinfo"
-      namespace: "android"
-    }
-    source_path {
-      path: "/Users/jae/Desktop/W25/3130/group8/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/cpuinfo"
+      path: "/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/cpuinfo"
     }
   }
 }
@@ -217,7 +61,7 @@ output_artifact {
     namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
   }
   source_path {
-    path: "/Users/jae/Desktop/W25/3130/group8/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/testlog/test-results.log"
+    path: "/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/testlog/test-results.log"
   }
   type: TEST_DATA
   mime_type: "text/plain"

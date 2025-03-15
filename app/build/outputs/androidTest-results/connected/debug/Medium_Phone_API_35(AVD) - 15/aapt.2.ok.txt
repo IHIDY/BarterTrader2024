@@ -1,7 +1,7 @@
-EXECUTING: /Users/jae/Library/Android/sdk/build-tools/34.0.0/aapt dump badging /Users/jae/Desktop/W25/3130/group8/app/build/intermediates/apk/androidTest/debug/app-debug-androidTest.apk
-CURRENT_WORKING_DIRECTORY: /Users/jae/Desktop/W25/3130/group8
-START_TIME: 2025-03-14 23:08:33.743
-START_TIME-NANOS: 2025-03-14 23:08:33.743488000
+EXECUTING: /Users/junfali/Library/Android/sdk/build-tools/34.0.0/aapt dump badging /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/apk/androidTest/debug/app-debug-androidTest.apk
+CURRENT_WORKING_DIRECTORY: /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter
+START_TIME: 2025-03-15 15:01:13.770
+START_TIME-NANOS: 2025-03-15 15:01:13.770905000
 ENVIRONMENT:
 
 *****************************************
@@ -10,18 +10,20 @@ STDOUT/STDERR BELOW
 package: name='com.example.group8_bartertrader.test' versionCode='' versionName='' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'
 sdkVersion:'30'
 targetSdkVersion:'35'
+uses-permission: name='android.permission.REORDER_TASKS'
 application: label='' icon=''
 application-debuggable
 uses-library:'android.test.runner'
 feature-group: label=''
   uses-feature: name='android.hardware.faketouch'
   uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+other-activities
 supports-screens: 'small' 'normal' 'large' 'xlarge'
 supports-any-density: 'true'
 locales: '--_--'
 densities: '160'
 ===================
-END_TIME: 2025-03-14 23:08:33.771
-END_TIME-NANOS: 2025-03-14 23:08:33.771940000
-DURATION: 28ms
+END_TIME: 2025-03-15 15:01:13.793
+END_TIME-NANOS: 2025-03-15 15:01:13.793695000
+DURATION: 22ms
 EXIT CODE: 0

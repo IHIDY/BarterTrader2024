@@ -12,35 +12,32 @@ INFO: Configuring Android Instrumentation driver: android_instrumentation_runtim
     }
     args_map {
       key: "class"
-      value: "com.example.group8_bartertrader.ReceiverDashUITest"
+      value: "com.example.group8_bartertrader.SubmitFormUITest"
     }
   }
 }
 am_instrument_timeout: 31536000
 
 INFO: Configuring AndroidTestApkInstallerPlugin: apks_to_install {
-  apk_paths: "/Users/jae/Desktop/W25/3130/group8/app/build/intermediates/apk/debug/app-debug.apk"
+  apk_paths: "/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/apk/debug/app-debug.apk"
   install_options {
   }
   uninstall_after_test: true
 }
 apks_to_install {
-  apk_paths: "/Users/jae/Desktop/W25/3130/group8/app/build/intermediates/apk/androidTest/debug/app-debug-androidTest.apk"
+  apk_paths: "/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/apk/androidTest/debug/app-debug-androidTest.apk"
   install_options {
   }
   uninstall_after_test: true
 }
 
 INFO: No installables found in test fixture. Nothing to install.
-INFO: Installing [/Users/jae/Desktop/W25/3130/group8/app/build/intermediates/apk/debug/app-debug.apk] on device emulator-5554.
-INFO: Installing [/Users/jae/Desktop/W25/3130/group8/app/build/intermediates/apk/androidTest/debug/app-debug-androidTest.apk] on device emulator-5554.
+INFO: Installing [/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/apk/debug/app-debug.apk] on device emulator-5554.
+INFO: Installing [/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/apk/androidTest/debug/app-debug-androidTest.apk] on device emulator-5554.
 INFO: Start logcat streaming.
 INFO: Running Android Instrumentation driver.
-INFO: Copying files from device to host: /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output to /Users/jae/Desktop/W25/3130/group8/app/build/outputs/connected_android_test_additional_output/debugAndroidTest/connected/Medium_Phone_API_35(AVD) - 15
+INFO: Copying files from device to host: /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output to /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/outputs/connected_android_test_additional_output/debugAndroidTest/connected/Medium_Phone_API_35(AVD) - 15
 INFO: Stop logcat streaming.
 INFO: Uninstalling com.example.group8_bartertrader for device emulator-5554.
 INFO: Uninstalling com.example.group8_bartertrader.test for device emulator-5554.
-INFO: Execute com.example.group8_bartertrader.ReceiverDashUITest.testLocationTextView_InitialState: PASSED
-INFO: Execute com.example.group8_bartertrader.ReceiverDashUITest.testRecyclerView_Displayed: PASSED
-INFO: Execute com.example.group8_bartertrader.ReceiverDashUITest.testSettingsButton_Click: PASSED
-INFO: Execute com.example.group8_bartertrader.ReceiverDashUITest.testTitleTextView_Displayed: PASSED
+INFO: Execute com.example.group8_bartertrader.SubmitFormUITest.testSubmitOffer: PASSED

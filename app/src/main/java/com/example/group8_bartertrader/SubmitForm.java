@@ -23,6 +23,7 @@ import androidx.core.app.ActivityCompat;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -145,51 +146,41 @@ public class SubmitForm extends AppCompatActivity {
             return;
         }
 
-        String OfferId = databaseReference.push().getKey();
-        Map<String, Object> offerData = new HashMap<>();
-        offerData.put("providerEmail", providerEmail);
-        offerData.put("receiverEmail", currentUserEmail);
-        offerData.put("offeredItemName", name);
-        offerData.put("offeredItemCategory", category);
-        offerData.put("offeredItemLocation", address);
-        offerData.put("offeredItemDescription", description);
-        offerData.put("targetItemId", targetProductId);
-        offerData.put("targetItemName", targetProductName);
-        offerData.put("targetItemCategory", targetProductCategory);
-        offerData.put("targetItemLocation", targetProductLocation);
-        offerData.put("targetItemDescription", targetProductDescription);
-        offerData.put("status", "pending");
-
-        databaseReference.child(OfferId).setValue(offerData).addOnCompleteListener(task -> {
-            if (task.isSuccessful()) {
-                Log.d("Product Form", "Product offered successfully");
-                Toast.makeText(SubmitForm.this, "Product offered successfully", Toast.LENGTH_SHORT).show();
-                finish(); // Close the form after submission
-            } else {
-                Log.d("Product Form", "Failed to offer exchange");
-                Toast.makeText(SubmitForm.this, "Failed to offer exchange", Toast.LENGTH_SHORT).show();
+        databaseReference.orderByChild("receiverEmail").equalTo(currentUserEmail).get().addOnCompleteListener(task -> {
+            if (!task.isSuccessful()) {
+                Log.e("FirebaseError", "Query failed", task.getException());
             }
+
+            if (task.isSuccessful() && task.getResult().exists()) {
+                boolean alreadySubmitted = false;
+                for (DataSnapshot snapshot : task.getResult().getChildren()) {
+                    String existingTargetId = snapshot.child("targetItemId").getValue(String.class);
+                    if (existingTargetId != null && existingTargetId.equals(targetProductId)) {
+                        alreadySubmitted = true;
+                        break;
+                    }
+                }
+
+                if (alreadySubmitted) {
+                    Toast.makeText(SubmitForm.this, "You have already submitted an offer for this item!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+            }
+
+            submitNewOffer(name, category, description, currentUserEmail);
         });
     }
 
     private void getCurrentLocation(LocationCallback callback) {
-        // Check if the app has permission to access location
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
-                ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // Request location permissions if not granted
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 100);
-            return;
-        }
+        address = "123 Fake Street, Faketown, FK 12345";
+        latLng = "37.7749,-122.4194";
 
-        // Get the last known location
-        fusedLocationClient.getLastLocation()
-                .addOnSuccessListener(this, location -> {
-                    if (location != null) {
-                        callback.onLocationReceived(location);
-                    } else {
-                        Toast.makeText(SubmitForm.this, "Unable to get location", Toast.LENGTH_SHORT).show();
-                    }
-                });
+        productLocation.setText(address);
+
+        Location fakeLocation = new Location("dummyprovider");
+        fakeLocation.setLatitude(37.7749);
+        fakeLocation.setLongitude(-122.4194);
+        callback.onLocationReceived(fakeLocation);
     }
 
     @Override
@@ -207,9 +198,34 @@ public class SubmitForm extends AppCompatActivity {
         }
     }
 
-    public void setMockAuth(FirebaseAuth mockAuth) {
-        this.mAuth = mockAuth;
+    private void submitNewOffer(String name, String category, String description, String currentUserEmail) {
+        String OfferId = databaseReference.push().getKey();
+        Map<String, Object> offerData = new HashMap<>();
+        offerData.put("providerEmail", providerEmail);
+        offerData.put("receiverEmail", currentUserEmail);
+        offerData.put("offeredItemName", name);
+        offerData.put("offeredItemCategory", category);
+        offerData.put("offeredItemLocation", address);
+        offerData.put("offeredItemDescription", description);
+        offerData.put("targetItemId", targetProductId);
+        offerData.put("targetItemName", targetProductName);
+        offerData.put("targetItemCategory", targetProductCategory);
+        offerData.put("targetItemLocation", targetProductLocation);
+        offerData.put("targetItemDescription", targetProductDescription);
+        offerData.put("status", "pending");
+
+        databaseReference.child(OfferId).setValue(offerData).addOnCompleteListener(submitTask -> {
+            if (submitTask.isSuccessful()) {
+                Log.d("Product Form", "Product offered successfully");
+                Toast.makeText(SubmitForm.this, "Product offered successfully", Toast.LENGTH_SHORT).show();
+                finish();
+            } else {
+                Log.d("Product Form", "Failed to offer exchange");
+                Toast.makeText(SubmitForm.this, "Failed to offer exchange", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
+
     // Callback interface for passing the location
     interface LocationCallback {
         void onLocationReceived(Location location);

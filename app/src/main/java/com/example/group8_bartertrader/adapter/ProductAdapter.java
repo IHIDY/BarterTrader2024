@@ -53,19 +53,19 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
 //        holder.productAvailability.setText("Status: " + availability);
         holder.productAvailability.setText("Status: " + "Available");
 
-        holder.mapButton.setOnClickListener(v -> {
-            Context context = v.getContext();
-            Intent mapIntent = new Intent(context, GoogleMapActivity.class);
-            mapIntent.putExtra("itemLocation", product.getLocation());
-            context.startActivity(mapIntent);
-        });
-
-        holder.detailButton.setOnClickListener(v -> {
-            Context context = v.getContext();
-            Intent detailIntent = new Intent(context, DetailsActivity.class);
-            detailIntent.putExtra("Product",product);
-            context.startActivity(detailIntent);
-        });
+//        holder.mapButton.setOnClickListener(v -> {
+//            Context context = v.getContext();
+//            Intent mapIntent = new Intent(context, GoogleMapActivity.class);
+//            mapIntent.putExtra("itemLocation", product.getLocation());
+//            context.startActivity(mapIntent);
+//        });
+//
+//        holder.detailButton.setOnClickListener(v -> {
+//            Context context = v.getContext();
+//            Intent detailIntent = new Intent(context, DetailsActivity.class);
+//            detailIntent.putExtra("Product",product);
+//            context.startActivity(detailIntent);
+//        });
         // Log the isAvailable value
         Log.d("From Product Adapter", "Product ID: " + product.getId() + ", Availability: " + product.isAvailable());
 
@@ -91,8 +91,8 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
             productCategory = itemView.findViewById(R.id.productCategory);
             productLocation = itemView.findViewById(R.id.productLocation);
             productAvailability = itemView.findViewById(R.id.productAvailability);
-            mapButton = itemView.findViewById(R.id.mapButton);
-            detailButton = itemView.findViewById(R.id.detailButton);
+//            mapButton = itemView.findViewById(R.id.mapButton);
+//            detailButton = itemView.findViewById(R.id.detailButton);
         }
     }
 }
