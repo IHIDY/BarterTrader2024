@@ -50,7 +50,7 @@ public class MyOffersActivity extends AppCompatActivity {
 
         if (currentUser == null) {
             Toast.makeText(this, "User not logged in!", Toast.LENGTH_SHORT).show();
-            finish();
+//            finish();
             return;
         }
 

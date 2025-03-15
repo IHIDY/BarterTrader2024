@@ -6,6 +6,7 @@ color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 id LogOutButton
+id activity_settings
 id backButton
 id changeRoleBtn
 id confirmEmailBtn
