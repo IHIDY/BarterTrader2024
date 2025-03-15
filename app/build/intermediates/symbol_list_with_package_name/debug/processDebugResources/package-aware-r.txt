@@ -3266,7 +3266,6 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
-id button3
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3292,8 +3291,8 @@ id clockwise
 id closest
 id collapseActionView
 id compress
-id confirmEmail
 id confirmEmailBtn
+id confirmEmailLabel
 id confirmEmailTextView
 id confirmPasswordEditText
 id confirm_button
@@ -3570,7 +3569,6 @@ id rightToLeft
 id right_icon
 id right_side
 id roleSelect
-id roleSelectSpinner
 id rounded
 id row_index_key
 id save_non_transition_alpha

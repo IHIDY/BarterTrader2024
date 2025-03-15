@@ -36,6 +36,7 @@ public class ConfirmationPage extends AppCompatActivity {
         // Initialize Firebase Realtime Database
         databaseReference = FirebaseDatabase.getInstance().getReference("Users");
 
+        // Initialize UI components
         Button confirmBtn = findViewById(R.id.confirmEmailBtn);
         emailEditText = findViewById(R.id.confirmEmailTextView);
 
@@ -76,13 +77,14 @@ public class ConfirmationPage extends AppCompatActivity {
                             for (DataSnapshot userSnapshot : dataSnapshot.getChildren()) {
                                 String currentRole = userSnapshot.child("role").getValue(String.class);
                                 String newRole = (currentRole != null && currentRole.equals("Provider")) ? "Receiver" : "Provider";
+
                                 Log.d("DATABASE_QUERY", "Email found. Current role: " + currentRole + ", Switching to: " + newRole);
                                 updateRole(userSnapshot.getKey(), newRole);
                                 return;
                             }
                         } else {
                             Log.w("DATABASE_QUERY", "Email not found in database: " + email);
-                            Toast.makeText(ConfirmationPage.this, "Email not found in database", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ConfirmationPage.this, "Email not found in database, Email is Case Sensitive", Toast.LENGTH_SHORT).show();
                         }
                     }
 

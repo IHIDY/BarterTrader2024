@@ -1,0 +1,68 @@
+# 2025-03-15T00:05:35.035528Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 1
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "ProductFormEspressoTest"
+    test_package: "com.example.group8_bartertrader"
+    test_method: "testSnackbarMessageForIncompleteFields"
+    start_time {
+      seconds: 1741997133
+      nanos: 332000000
+    }
+    end_time {
+      seconds: 1741997134
+      nanos: 537000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Pixel_2_API_35(AVD) - 15/logcat-com.example.group8_bartertrader.ProductFormEspressoTest-testSnackbarMessageForIncompleteFields.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Pixel_2_API_35(AVD) - 15/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Pixel_2_API_35(AVD) - 15/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Pixel_2_API_35(AVD) - 15/cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Pixel_2_API_35(AVD) - 15/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

@@ -7,10 +7,9 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 id LogOutButton
 id backButton
-id button3
 id changeRoleBtn
-id confirmEmail
 id confirmEmailBtn
+id confirmEmailLabel
 id confirmEmailTextView
 id confirmPasswordEditText
 id email
@@ -40,7 +39,6 @@ id recsettingbutton
 id regBtn
 id resetPasswordButton
 id roleSelect
-id roleSelectSpinner
 id settings_title
 id status
 id statusLabel
