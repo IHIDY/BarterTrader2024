@@ -65,15 +65,16 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         myOffersBtn = findViewById(R.id.myOffersButton);
         locationTextView = findViewById(R.id.locationTextView);
         productRecyclerView = findViewById(R.id.productRecyclerView);
+        category = findViewById(R.id.filterSpinner);
+        keyword = findViewById(R.id.inputEditText);
+        Distance = findViewById(R.id.distanceEditText);
+        searchButton = findViewById(R.id.filterButton);
 
         productList = new ArrayList<>();
         productAdapter = new ProductAdapter(productList);
         productRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         productRecyclerView.setAdapter(productAdapter);
-        category = findViewById(R.id.filterSpinner);
-        keyword = findViewById(R.id.inputEditText);
-        Distance = findViewById(R.id.distanceEditText);
-        searchButton = findViewById(R.id.filterButton);
+
 
         productsRef = FirebaseDatabase.getInstance().getReference("Products");
 
@@ -94,13 +95,14 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
             return insets;
         });
 
-        receiverSettingBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d("TEST", "GO TO SETTINGS BUTTON CLICKED");
-                Intent intent = new Intent(ReceiverDash.this, SettingsActivity.class);
-                startActivity(intent);
-            }
+        receiverSettingBtn.setOnClickListener(v -> {
+            Log.d("TEST", "GO TO SETTINGS BUTTON CLICKED");
+            startActivity(new Intent(ReceiverDash.this, SettingsActivity.class));
+        });
+
+        myOffersBtn.setOnClickListener(v -> {
+            Log.d("TEST", "MY OFFERS BUTTON CLICKED");
+            startActivity(new Intent(ReceiverDash.this, MyOffersActivity.class));
         });
 
         String[] categories = {"Select Category", "Electronics", "Furniture", "Clothing & Accessories", "Books", "Toys & Games",
@@ -116,23 +118,16 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
                 selectedCategory = parentView.getItemAtPosition(position).toString();
             }
 
-        myOffersBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d("TEST", "MY OFFERS BUTTON CLICKED");
-                Intent intent = new Intent(ReceiverDash.this, MyOffersActivity.class);
-                startActivity(intent);
-            }
-        });
-    }
-
             @Override
             public void onNothingSelected(AdapterView<?> parentView) {
                 selectedCategory = null;
             }
         });
+
         searchButton.setOnClickListener(v -> search());
+
     }
+
 
     public void search(){
         String word = "";

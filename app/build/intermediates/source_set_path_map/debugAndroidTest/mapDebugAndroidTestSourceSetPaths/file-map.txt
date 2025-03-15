@@ -1,5 +1,5 @@
-com.example.group8_bartertrader.test.app-jetified-core-1.6.1-0 /Users/jae/.gradle/caches/8.10.2/transforms/69be14cf057a08d97dd635e2374d3f65/transformed/jetified-core-1.6.1/res
-com.example.group8_bartertrader.test.app-jetified-tracing-1.1.0-1 /Users/jae/.gradle/caches/8.10.2/transforms/f5d14313cf9a4b2d7b81d2cc29b0816b/transformed/jetified-tracing-1.1.0/res
+com.example.group8_bartertrader.test.app-jetified-core-1.6.1-0 /Users/jae/.gradle/caches/8.10.2/transforms/60832c7bcba916820ef72b0a6ddf5fc7/transformed/jetified-core-1.6.1/res
+com.example.group8_bartertrader.test.app-jetified-tracing-1.1.0-1 /Users/jae/.gradle/caches/8.10.2/transforms/b5c57ad67670355b6cc6c97af0221368/transformed/jetified-tracing-1.1.0/res
 com.example.group8_bartertrader.test.app-androidTest-2 /Users/jae/Desktop/W25/3130/group8/app/build/generated/res/resValues/androidTest/debug
 com.example.group8_bartertrader.test.app-mergeDebugAndroidTestResources-3 /Users/jae/Desktop/W25/3130/group8/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
 com.example.group8_bartertrader.test.app-mergeDebugAndroidTestResources-4 /Users/jae/Desktop/W25/3130/group8/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir

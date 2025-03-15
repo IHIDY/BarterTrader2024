@@ -4,8 +4,20 @@
         "source": "com.example.group8_bartertrader.app-main-47:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
+        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_offer_item.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/layout/offer_item.xml"
+    },
+    {
+        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_activity_google_map.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/layout/activity_google_map.xml"
+    },
+    {
         "merged": "com.example.group8_bartertrader.app-debug-45:/layout_reset_password.xml.flat",
         "source": "com.example.group8_bartertrader.app-main-47:/layout/reset_password.xml"
+    },
+    {
+        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_activity_my_offers.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/layout/activity_my_offers.xml"
     },
     {
         "merged": "com.example.group8_bartertrader.app-debug-45:/mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -48,12 +60,12 @@
         "source": "com.example.group8_bartertrader.app-main-47:/layout/activity_login.xml"
     },
     {
-        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_activity_registration.xml.flat",
-        "source": "com.example.group8_bartertrader.app-main-47:/layout/activity_registration.xml"
-    },
-    {
         "merged": "com.example.group8_bartertrader.app-debug-45:/xml_data_extraction_rules.xml.flat",
         "source": "com.example.group8_bartertrader.app-main-47:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_activity_registration.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/layout/activity_registration.xml"
     },
     {
         "merged": "com.example.group8_bartertrader.app-debug-45:/xml_backup_rules.xml.flat",

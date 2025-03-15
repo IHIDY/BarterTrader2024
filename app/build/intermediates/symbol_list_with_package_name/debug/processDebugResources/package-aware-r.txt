@@ -127,6 +127,7 @@ attr allowStacking
 attr alpha
 attr alphabeticModifiers
 attr altSrc
+attr ambientEnabled
 attr animateCircleAngleTo
 attr animateMenuItems
 attr animateNavigationIcon
@@ -233,6 +234,13 @@ attr buttonStyle
 attr buttonStyleSmall
 attr buttonTint
 attr buttonTintMode
+attr cameraBearing
+attr cameraMaxZoomPreference
+attr cameraMinZoomPreference
+attr cameraTargetLat
+attr cameraTargetLng
+attr cameraTilt
+attr cameraZoom
 attr cardBackgroundColor
 attr cardCornerRadius
 attr cardElevation
@@ -713,6 +721,10 @@ attr labelVisibilityMode
 attr largeFontVerticalOffsetAdjustment
 attr lastBaselineToBottomHeight
 attr lastItemDecorated
+attr latLngBoundsNorthEastLatitude
+attr latLngBoundsNorthEastLongitude
+attr latLngBoundsSouthWestLatitude
+attr latLngBoundsSouthWestLongitude
 attr layout
 attr layoutDescription
 attr layoutDuringTransition
@@ -808,10 +820,14 @@ attr listPreferredItemPaddingEnd
 attr listPreferredItemPaddingLeft
 attr listPreferredItemPaddingRight
 attr listPreferredItemPaddingStart
+attr liteMode
 attr logo
 attr logoAdjustViewBounds
 attr logoDescription
 attr logoScaleType
+attr mapColorScheme
+attr mapId
+attr mapType
 attr marginHorizontal
 attr marginLeftSystemWindowInsets
 attr marginRightSystemWindowInsets
@@ -1310,10 +1326,19 @@ attr triggerId
 attr triggerReceiver
 attr triggerSlack
 attr ttcIndex
+attr uiCompass
+attr uiMapToolbar
+attr uiRotateGestures
+attr uiScrollGestures
+attr uiScrollGesturesDuringRotateOrZoom
+attr uiTiltGestures
+attr uiZoomControls
+attr uiZoomGestures
 attr upDuration
 attr useCompatPadding
 attr useDrawerArrowDrawable
 attr useMaterialThemeColors
+attr useViewLifecycle
 attr values
 attr verticalOffset
 attr verticalOffsetWithText
@@ -1344,6 +1369,7 @@ attr windowNoTitle
 attr yearSelectedStyle
 attr yearStyle
 attr yearTodayStyle
+attr zOrderOnTop
 bool abc_action_bar_embed_tabs
 bool abc_config_actionMenuItemAllCaps
 bool mtrl_btn_textappearance_all_caps
@@ -3266,7 +3292,6 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
-id button3
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3292,7 +3317,6 @@ id clockwise
 id closest
 id collapseActionView
 id compress
-id confirmEmail
 id confirmEmailBtn
 id confirmEmailTextView
 id confirmPasswordEditText
@@ -3324,6 +3348,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detailButton
 id dialog_button
 id dimensions
 id direct
@@ -3332,6 +3357,7 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id distanceEditText
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -3367,7 +3393,6 @@ id fill_horizontal
 id fill_vertical
 id filled
 id filterButton
-id filterEditText
 id filterLayout
 id filterSpinner
 id fitCenter
@@ -3378,6 +3403,7 @@ id fitXY
 id fixed
 id flip
 id floating
+id follow_system
 id forever
 id forfield
 id fragment_container_view_tag
@@ -3400,6 +3426,7 @@ id homeAsUp
 id honorRequest
 id horizontal
 id horizontal_only
+id hybrid
 id iOffer
 id icon
 id icon_group
@@ -3412,6 +3439,7 @@ id immediateStop
 id included
 id indeterminate
 id info
+id inputEditText
 id invisible
 id inward
 id italic
@@ -3434,6 +3462,8 @@ id locationTextView
 id loginBtn
 id m3_side_sheet
 id main
+id map
+id mapButton
 id marquee
 id masked
 id match_constraint
@@ -3574,9 +3604,9 @@ id rightToLeft
 id right_icon
 id right_side
 id roleSelect
-id roleSelectSpinner
 id rounded
 id row_index_key
+id satellite
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3661,6 +3691,7 @@ id targetProductCategory
 id targetProductDescription
 id targetProductLocation
 id targetProductName
+id terrain
 id text
 id text2
 id textEnd
@@ -3669,6 +3700,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView2
 id textView3
 id text_input_end_icon
 id text_input_error_icon
@@ -3839,6 +3871,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_confirmation_page
+layout activity_google_map
 layout activity_login
 layout activity_main
 layout activity_my_offers
@@ -4892,8 +4925,6 @@ style ThemeOverlay_MaterialComponents_TimePicker_Display_TextInputEditText
 style ThemeOverlay_MaterialComponents_Toolbar_Popup_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar
@@ -5356,6 +5387,7 @@ styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width 
 styleable LinearProgressIndicator indeterminateAnimationType indicatorDirectionLinear trackStopIndicatorSize
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
+styleable MapAttrs ambientEnabled backgroundColor cameraBearing cameraMaxZoomPreference cameraMinZoomPreference cameraTargetLat cameraTargetLng cameraTilt cameraZoom latLngBoundsNorthEastLatitude latLngBoundsNorthEastLongitude latLngBoundsSouthWestLatitude latLngBoundsSouthWestLongitude liteMode mapColorScheme mapId mapType uiCompass uiMapToolbar uiRotateGestures uiScrollGestures uiScrollGesturesDuringRotateOrZoom uiTiltGestures uiZoomControls uiZoomGestures useViewLifecycle zOrderOnTop
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop backgroundTint
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogButtonSpacerVisibility materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialAutoCompleteTextView android_inputType android_popupElevation dropDownBackgroundTint simpleItemLayout simpleItemSelectedColor simpleItemSelectedRippleColor simpleItems
