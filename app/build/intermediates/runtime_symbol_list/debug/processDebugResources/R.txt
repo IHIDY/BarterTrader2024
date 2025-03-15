@@ -3310,6 +3310,7 @@ int id custom 0x7f090097
 int id customPanel 0x7f090098
 int id cut 0x7f090099
 int id dark 0x7f09009a
+int id dashboardTitle 0x7f090232
 int id date_picker_actions 0x7f09009b
 int id decelerate 0x7f09009c
 int id decelerateAndComplete 0x7f09009d
@@ -3661,9 +3662,7 @@ int id textSpacerNoButtons 0x7f0901f6
 int id textSpacerNoTitle 0x7f0901f7
 int id textStart 0x7f0901f8
 int id textTop 0x7f0901f9
-int id textView 0x7f0901fa
 int id textView2 0x7f0901fb
-int id textView3 0x7f0901fc
 int id text_input_end_icon 0x7f0901fd
 int id text_input_error_icon 0x7f0901fe
 int id text_input_start_icon 0x7f0901ff
