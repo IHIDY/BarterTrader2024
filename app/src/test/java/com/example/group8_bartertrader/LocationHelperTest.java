@@ -1,85 +1,86 @@
 package com.example.group8_bartertrader;
 
-import static org.mockito.Mockito.*;
-import static org.mockito.ArgumentMatchers.any;
-
-import android.content.Context;
-import android.location.Location;
-
-import androidx.core.content.ContextCompat;
-
-import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-
-import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
-import org.mockito.MockedStatic;
-import org.mockito.junit.MockitoJUnitRunner;
+import static org.junit.Assert.*;
 
-@RunWith(MockitoJUnitRunner.class)
 public class LocationHelperTest {
 
-    @Mock
-    private Context mockContext;
-
-    @Mock
-    private FusedLocationProviderClient mockFusedLocationClient;
-
-    @Mock
-    private Task<Location> mockLocationTask;
-
-    @Mock
-    private Location mockLocation;
-
-    private LocationHelper locationHelper;
-
-    @Before
-    public void setUp() {
-        MockitoAnnotations.openMocks(this);
-        locationHelper = new LocationHelper(mockContext);
-        locationHelper.fusedLocationClient = mockFusedLocationClient;
+    @Test
+    public void testParseLatLngLocation_ValidInput() {
+        String latLngLocation = "37.7749,-122.4194";
+        double[] result = LocationHelper.parseLatLngLocation(latLngLocation);
+        assertNotNull(result);
+        assertEquals(37.7749, result[0], 0.0001); // Latitude
+        assertEquals(-122.4194, result[1], 0.0001); // Longitude
     }
 
     @Test
-    public void testGetCurrentLocation_WithPermissionGranted() {
-        try (MockedStatic<ContextCompat> mockedStatic = Mockito.mockStatic(ContextCompat.class)) {
-            mockedStatic.when(() -> ContextCompat.checkSelfPermission(mockContext, android.Manifest.permission.ACCESS_FINE_LOCATION))
-                    .thenReturn(android.content.pm.PackageManager.PERMISSION_GRANTED);
-
-            when(mockFusedLocationClient.getLastLocation()).thenReturn(mockLocationTask);
-            when(mockLocationTask.addOnSuccessListener(any())).thenAnswer(invocation -> {
-                OnSuccessListener<Location> listener = invocation.getArgument(0);
-                listener.onSuccess(mockLocation);
-                return mockLocationTask;
-            });
-
-            locationHelper.getCurrentLocation(mockListener);
-
-            verify(mockFusedLocationClient).getLastLocation();
-            verifyNoMoreInteractions(mockListener);
-
-        }
+    public void testParseLatLngLocation_InvalidInput_MissingComma() {
+        String latLngLocation = "37.7749-122.4194";
+        double[] result = LocationHelper.parseLatLngLocation(latLngLocation);
+        assertNull(result);
     }
 
     @Test
-    public void testFetchLocation_Success() {
-        when(mockFusedLocationClient.getLastLocation()).thenReturn(mockLocationTask);
-        when(mockLocationTask.addOnSuccessListener(any())).thenAnswer(invocation -> {
-            OnSuccessListener<Location> listener = invocation.getArgument(0);
-            listener.onSuccess(mockLocation);
-            return mockLocationTask;
-        });
+    public void testParseLatLngLocation_InvalidInput_NonNumeric() {
+        String latLngLocation = "invalid,input";
+        double[] result = LocationHelper.parseLatLngLocation(latLngLocation);
+        assertNull(result);
+    }
 
-        when(mockLocation.getLatitude()).thenReturn(10.0);
-        when(mockLocation.getLongitude()).thenReturn(20.0);
-        locationHelper.fetchLocation();
+    @Test
+    public void testParseLatLngLocation_NullInput() {
+        double[] result = LocationHelper.parseLatLngLocation(null);
+        assertNull(result);
+    }
 
-        verify(mockListener).onLocationFetched(10.0, 20.0);
+    @Test
+    public void testParseLatLngLocation_EmptyInput() {
+        String latLngLocation = "";
+        double[] result = LocationHelper.parseLatLngLocation(latLngLocation);
+        assertNull(result);
+    }
+
+    @Test
+    public void testIsWithinRange_WithinRange() {
+        double userLat = 37.7749;
+        double userLong = -122.4194;
+        double productLat = 37.7849;
+        double productLong = -122.4294;
+
+        assertTrue(LocationHelper.isWithinRange(userLat, userLong, productLat, productLong));
+    }
+
+    @Test
+    public void testIsWithinRange_OutsideRange() {
+        double userLat = 37.7749;
+        double userLong = -122.4194;
+        double productLat = 38.7849;
+        double productLong = -122.4294;
+
+        assertFalse(LocationHelper.isWithinRange(userLat, userLong, productLat, productLong));
+    }
+
+    @Test
+    public void testCalculateDistance_ValidCoordinates() {
+        double lat1 = 37.7749;
+        double lon1 = -122.4194;
+        double lat2 = 37.7849;
+        double lon2 = -122.4294;
+
+        double distance = LocationHelper.calculateDistance(lat1, lon1, lat2, lon2);
+        assertEquals(1.41, distance, 0.1); // Allow for minor floating-point differences
+    }
+
+    @Test
+    public void testCalculateDistance_SameCoordinates() {
+        double lat1 = 37.7749;
+        double lon1 = -122.4194;
+        double lat2 = 37.7749;
+        double lon2 = -122.4194;
+
+        double distance = LocationHelper.calculateDistance(lat1, lon1, lat2, lon2);
+        assertEquals(0.0, distance, 0.0001); // Distance should be 0
     }
 
 }

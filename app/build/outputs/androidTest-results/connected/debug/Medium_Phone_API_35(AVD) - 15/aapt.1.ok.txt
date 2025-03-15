@@ -1,7 +1,7 @@
 EXECUTING: /Users/jae/Library/Android/sdk/build-tools/34.0.0/aapt dump badging /Users/jae/Desktop/W25/3130/group8/app/build/intermediates/apk/debug/app-debug.apk
 CURRENT_WORKING_DIRECTORY: /Users/jae/Desktop/W25/3130/group8
-START_TIME: 2025-02-16 21:30:54.506
-START_TIME-NANOS: 2025-02-16 21:30:54.506933000
+START_TIME: 2025-03-14 23:08:33.360
+START_TIME-NANOS: 2025-03-14 23:08:33.360017000
 ENVIRONMENT:
 
 *****************************************
@@ -10,6 +10,8 @@ STDOUT/STDERR BELOW
 package: name='com.example.group8_bartertrader' versionCode='1' versionName='1.0' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'
 sdkVersion:'30'
 targetSdkVersion:'35'
+uses-permission: name='android.permission.ACCESS_FINE_LOCATION'
+uses-permission: name='android.permission.ACCESS_COARSE_LOCATION'
 uses-permission: name='android.permission.INTERNET'
 uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
 uses-permission: name='com.google.android.providers.gsf.permission.READ_GSERVICES'
@@ -17,6 +19,7 @@ uses-permission: name='android.permission.WAKE_LOCK'
 uses-permission: name='com.google.android.gms.permission.AD_ID'
 uses-permission: name='android.permission.ACCESS_ADSERVICES_ATTRIBUTION'
 uses-permission: name='android.permission.ACCESS_ADSERVICES_AD_ID'
+uses-permission: name='android.permission.REORDER_TASKS'
 uses-permission: name='com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE'
 uses-permission: name='com.example.group8_bartertrader.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
 application-label:'group8_bartertrader'
@@ -121,6 +124,8 @@ uses-library-not-required:'android.ext.adservices'
 feature-group: label=''
   uses-feature: name='android.hardware.faketouch'
   uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+  uses-feature: name='android.hardware.location'
+  uses-implied-feature: name='android.hardware.location' reason='requested android.permission.ACCESS_COARSE_LOCATION permission, and requested android.permission.ACCESS_FINE_LOCATION permission'
 main
 other-activities
 other-receivers
@@ -130,7 +135,7 @@ supports-any-density: 'true'
 locales: '--_--' 'af' 'am' 'ar' 'as' 'az' 'be' 'bg' 'bn' 'bs' 'ca' 'cs' 'da' 'de' 'el' 'en-AU' 'en-CA' 'en-GB' 'en-IN' 'en-XC' 'es' 'es-419' 'es-US' 'et' 'eu' 'fa' 'fi' 'fr' 'fr-CA' 'gl' 'gu' 'hi' 'hr' 'hu' 'hy' 'in' 'is' 'it' 'iw' 'ja' 'ka' 'kk' 'km' 'kn' 'ko' 'ky' 'lo' 'lt' 'lv' 'mk' 'ml' 'mn' 'mr' 'ms' 'my' 'nb' 'ne' 'nl' 'or' 'pa' 'pl' 'pt' 'pt-BR' 'pt-PT' 'ro' 'ru' 'si' 'sk' 'sl' 'sq' 'sr' 'sr-Latn' 'sv' 'sw' 'ta' 'te' 'th' 'tl' 'tr' 'uk' 'ur' 'uz' 'vi' 'zh-CN' 'zh-HK' 'zh-TW' 'zu'
 densities: '120' '160' '240' '320' '480' '640' '65534'
 ===================
-END_TIME: 2025-02-16 21:30:54.570
-END_TIME-NANOS: 2025-02-16 21:30:54.570784000
-DURATION: 63ms
+END_TIME: 2025-03-14 23:08:33.429
+END_TIME-NANOS: 2025-03-14 23:08:33.429038000
+DURATION: 69ms
 EXIT CODE: 0

@@ -1,0 +1,128 @@
+03-14 23:07:54.877 19489 19507 I TestRunner: started: testLocationTextView_InitialState(com.example.group8_bartertrader.ReceiverDashUITest)
+03-14 23:07:54.901 19489 19507 I UiDevice: Creating a new instance, old instance exists: false
+03-14 23:07:54.905 19489 19507 I UiAutomation: Initialized for user 0 on display 0
+03-14 23:07:54.924  1493  3014 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+03-14 23:07:54.928  1493  1697 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+03-14 23:07:54.929  1493  1697 I AiAiEcho: EchoTargets:
+03-14 23:07:54.929  1493  1697 I AiAiEcho: Filtered by AiAi flag check:
+03-14 23:07:54.929  1493  1697 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+03-14 23:07:54.930  1493  1697 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+03-14 23:07:54.931  1493  1697 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+03-14 23:07:54.931  1493  1697 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+03-14 23:07:54.932  1493  1697 I AiAiEcho: EchoTargets:
+03-14 23:07:54.932  1493  1697 I AiAiEcho: Filtered by AiAi flag check:
+03-14 23:07:54.932  1493  1697 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+03-14 23:07:54.932  1493  1697 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+03-14 23:07:54.933  1493  1697 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+03-14 23:07:54.933  1493  1697 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+03-14 23:07:54.934  1493  1697 I AiAiEcho: EchoTargets:
+03-14 23:07:54.934  1493  1697 I AiAiEcho: Filtered by AiAi flag check:
+03-14 23:07:54.934  1493  1697 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+03-14 23:07:54.934  1493  1697 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+03-14 23:07:54.934  1493  1697 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+03-14 23:07:54.936  1493  1697 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+03-14 23:07:54.942   888   888 D SsMediaDataProvider: Forwarding Smartspace updates []
+03-14 23:07:54.943  1493  1697 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+03-14 23:07:54.952   888   888 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+03-14 23:07:54.953  1493  1697 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+03-14 23:07:54.953   620   620 W IPCThreadState: Sending oneway calls to frozen process.
+03-14 23:07:54.954   620   620 W IPCThreadState: Sending oneway calls to frozen process.
+03-14 23:07:54.955  1171  1171 D SsBaseTemplateCard: No text view can be set up
+03-14 23:07:54.956   620   620 W IPCThreadState: Sending oneway calls to frozen process.
+03-14 23:07:54.956  1171  1171 D SsBaseTemplateCard: Passed-in item info is null
+03-14 23:07:54.957  1171  1171 D SsBaseTemplateCard: Passed-in item info is null
+03-14 23:07:54.957  1171  1171 D SsBaseTemplateCard: Passed-in item info is null
+03-14 23:07:54.957  1171  1171 I SsBaseTemplateCard: Secondary card pane is null
+03-14 23:07:54.959 19489 19507 D UiDevice: Setting accessibility service flags: 65618
+03-14 23:07:54.961   620   620 W IPCThreadState: Sending oneway calls to frozen process.
+03-14 23:07:54.973   620   620 W IPCThreadState: Sending oneway calls to frozen process.
+03-14 23:07:54.971  1493  3014 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+03-14 23:07:54.977   620   620 W IPCThreadState: Sending oneway calls to frozen process.
+03-14 23:07:54.982   620   620 W IPCThreadState: Sending oneway calls to frozen process.
+03-14 23:07:54.976  1493  1697 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+03-14 23:07:54.989   620   620 W IPCThreadState: Sending oneway calls to frozen process.
+03-14 23:07:54.991  1493  1697 I AiAiEcho: EchoTargets:
+03-14 23:07:54.991  1493  1697 I AiAiEcho: Filtered by AiAi flag check:
+03-14 23:07:54.991  1493  1697 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+03-14 23:07:54.991  1493  1697 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+03-14 23:07:54.991  1171  1714 D EGL_emulation: app_time_stats: avg=260.41ms min=4.16ms max=5019.83ms count=20
+03-14 23:07:54.991  1493  1697 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+03-14 23:07:54.992  1493  1697 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+03-14 23:07:54.992  1493  1697 I AiAiEcho: EchoTargets:
+03-14 23:07:54.992  1493  1697 I AiAiEcho: Filtered by AiAi flag check:
+03-14 23:07:54.992  1493  1697 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+03-14 23:07:54.993  1493  1697 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+03-14 23:07:54.993  1493  1697 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+03-14 23:07:54.994   620   620 W IPCThreadState: Sending oneway calls to frozen process.
+03-14 23:07:54.995 19489 19507 D UiObject: Waiting 0ms for UiSelector[TEXT_REGEX=(?i)While using the app].
+03-14 23:07:55.000  1493  1697 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+03-14 23:07:55.002  1493  1697 I AiAiEcho: EchoTargets:
+03-14 23:07:55.002  1493  1697 I AiAiEcho: Filtered by AiAi flag check:
+03-14 23:07:55.002  1493  1697 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+03-14 23:07:55.003  1493  1697 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+03-14 23:07:55.003  1493  1697 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+03-14 23:07:55.004  1493  1697 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+03-14 23:07:55.005  1493  1697 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+03-14 23:07:55.005   620   620 W IPCThreadState: Sending oneway calls to frozen process.
+03-14 23:07:55.007   620   620 W IPCThreadState: Sending oneway calls to frozen process.
+03-14 23:07:55.008  1493  1697 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+03-14 23:07:55.008   620   620 W IPCThreadState: Sending oneway calls to frozen process.
+03-14 23:07:55.012  1171  1171 D SsBaseTemplateCard: No text view can be set up
+03-14 23:07:55.013  1171  1171 D SsBaseTemplateCard: Passed-in item info is null
+03-14 23:07:55.014  1171  1171 D SsBaseTemplateCard: Passed-in item info is null
+03-14 23:07:55.014  1171  1171 D SsBaseTemplateCard: Passed-in item info is null
+03-14 23:07:55.014   620   620 W IPCThreadState: Sending oneway calls to frozen process.
+03-14 23:07:55.014  1171  1171 I SsBaseTemplateCard: Secondary card pane is null
+03-14 23:07:55.017  9011  9035 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+03-14 23:07:55.016   620   620 W IPCThreadState: Sending oneway calls to frozen process.
+03-14 23:07:55.017  9011  9035 I A       : (REDACTED) Nga state changed to %s
+03-14 23:07:55.017  9011  9035 I A       : (REDACTED) isTngActive=%s
+03-14 23:07:55.022   620   620 W IPCThreadState: Sending oneway calls to frozen process.
+03-14 23:07:55.033  1547  1970 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+03-14 23:07:55.034  1547  1970 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+03-14 23:07:55.034  1547  1970 I A       : Unsubscribed to apa or classic variant change.
+03-14 23:07:55.049   888   888 D SsMediaDataProvider: Forwarding Smartspace updates []
+03-14 23:07:55.049   888   888 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+03-14 23:07:55.056  5356  9817 D AccessibilitySourceService: enabled a11y services count 0
+03-14 23:07:55.056  5356  9817 D AccessibilitySourceService: a11y source sending 0 issue to sc
+03-14 23:07:55.060   620  1969 D SafetySourceDataValidat: No cert check requested for package com.google.android.permissioncontroller
+03-14 23:07:55.086 19489 19510 E p8_bartertrader: No package ID 76 found for resource ID 0x760b000f.
+03-14 23:07:55.086 19489 19510 E p8_bartertrader: No package ID 76 found for resource ID 0x760b000f.
+03-14 23:07:55.090 19489 19510 I FA      : App measurement initialized, version: 118001
+03-14 23:07:55.091 19489 19510 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+03-14 23:07:55.091 19489 19510 I FA      : To enable faster debug mode event logging run:
+03-14 23:07:55.091 19489 19510 I FA      :   adb shell setprop debug.firebase.analytics.app com.example.group8_bartertrader
+03-14 23:07:55.121  2820  2953 W adservices: Skip logging because Cobalt logger is null
+03-14 23:07:55.272  1610  1610 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+03-14 23:07:55.273  1610  1610 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+03-14 23:07:55.290  1610 18873 D AdvertisingIdClient: AdvertisingIdClient already created.
+03-14 23:07:55.290  1610 18873 D AdvertisingIdClient: AdvertisingIdClient is not bounded. Starting to bind it...
+03-14 23:07:55.299  1610 18873 D AdvertisingIdClient: AdvertisingIdClient is bounded
+03-14 23:07:55.310  1610 18873 I AdvertisingIdClient: shouldSendLog 122882478
+03-14 23:07:55.310  1610 18873 I AdvertisingIdClient: GetInfoInternal elapse 19ms
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: Error inserting flex_time=2000 job_id=-1 period=5000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=250832000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1742004475337 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:974)
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:814)
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1981)
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1875)
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: 	at drev.d(:com.google.android.gms@250832038@25.08.32 (260800-731361394):727)
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: 	at drcm.n(:com.google.android.gms@250832038@25.08.32 (260800-731361394):29)
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: 	at drcm.u(:com.google.android.gms@250832038@25.08.32 (260800-731361394):364)
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: 	at drcm.h(:com.google.android.gms@250832038@25.08.32 (260800-731361394):51)
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: 	at dqxb.run(:com.google.android.gms@250832038@25.08.32 (260800-731361394):72)
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: 	at atin.c(:com.google.android.gms@250832038@25.08.32 (260800-731361394):50)
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: 	at atin.run(:com.google.android.gms@250832038@25.08.32 (260800-731361394):76)
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: 	at atoa.run(:com.google.android.gms@250832038@25.08.32 (260800-731361394):8)
+03-14 23:07:55.341  1123 19314 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+03-14 23:07:55.360  3087  8509 I Finsky  : [194] arcf.L(185): Package com.google.android.gms is verified.
+03-14 23:07:55.374  1610 18873 W FA-SVC  : Service response is missing Install Referrer install timestamp
+03-14 23:07:55.383  3087  3087 I Finsky  : [2] zhu.onTrimMemory(11): Memory trim requested to level 40
+03-14 23:07:55.384  3087  3087 I Finsky  : [2] adua.accept(139): Flushing in-memory image cache
+03-14 23:07:55.421  3087  3107 W android.vending: Missing inline cache for java.lang.Object apbk.apply(java.lang.Object)
+03-14 23:07:55.422  3087  3107 W android.vending: Missing inline cache for java.lang.Object apbk.apply(java.lang.Object)
+03-14 23:07:55.609 19489 19507 I TestRunner: finished: testLocationTextView_InitialState(com.example.group8_bartertrader.ReceiverDashUITest)

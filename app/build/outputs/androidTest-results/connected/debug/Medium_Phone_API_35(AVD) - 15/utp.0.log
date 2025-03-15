@@ -12,7 +12,7 @@ INFO: Configuring Android Instrumentation driver: android_instrumentation_runtim
     }
     args_map {
       key: "class"
-      value: "com.example.group8_bartertrader.ResetPasswordActivityUITest"
+      value: "com.example.group8_bartertrader.ReceiverDashUITest"
     }
   }
 }
@@ -33,13 +33,14 @@ apks_to_install {
 
 INFO: No installables found in test fixture. Nothing to install.
 INFO: Installing [/Users/jae/Desktop/W25/3130/group8/app/build/intermediates/apk/debug/app-debug.apk] on device emulator-5554.
-SEVERE: Test execution failed with fatal error!
+INFO: Installing [/Users/jae/Desktop/W25/3130/group8/app/build/intermediates/apk/androidTest/debug/app-debug-androidTest.apk] on device emulator-5554.
+INFO: Start logcat streaming.
+INFO: Running Android Instrumentation driver.
 INFO: Copying files from device to host: /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output to /Users/jae/Desktop/W25/3130/group8/app/build/outputs/connected_android_test_additional_output/debugAndroidTest/connected/Medium_Phone_API_35(AVD) - 15
-INFO: /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output is not a directory
 INFO: Stop logcat streaming.
 INFO: Uninstalling com.example.group8_bartertrader for device emulator-5554.
-WARNING: Device emulator-5554 failed to uninstall test APK com.example.group8_bartertrader.
-[Failure [DELETE_FAILED_INTERNAL_ERROR]]
 INFO: Uninstalling com.example.group8_bartertrader.test for device emulator-5554.
-WARNING: Device emulator-5554 failed to uninstall test APK com.example.group8_bartertrader.test.
-[Failure [DELETE_FAILED_INTERNAL_ERROR]]
+INFO: Execute com.example.group8_bartertrader.ReceiverDashUITest.testLocationTextView_InitialState: PASSED
+INFO: Execute com.example.group8_bartertrader.ReceiverDashUITest.testRecyclerView_Displayed: PASSED
+INFO: Execute com.example.group8_bartertrader.ReceiverDashUITest.testSettingsButton_Click: PASSED
+INFO: Execute com.example.group8_bartertrader.ReceiverDashUITest.testTitleTextView_Displayed: PASSED
