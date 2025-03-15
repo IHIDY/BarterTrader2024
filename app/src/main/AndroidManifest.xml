@@ -16,16 +16,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Group8_bartertrader"
         tools:targetApi="31">
+
+        <activity
+            android:name=".MyOffersActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".SubmitForm"
+            android:exported="true" />
+
         <activity
             android:name=".ProductForm"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".ConfirmationPage"
             android:exported="true" />
         <activity
             android:name=".ReceiverDash"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ProviderDash"
             android:exported="true" />
@@ -57,7 +66,7 @@
             android:exported="true">
 
             <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <action android:name="android.intent.action.SETTINGS" /> -->
 
 
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
@@ -65,9 +74,6 @@
         </activity>
         <activity
             android:name=".ResetPasswordActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ResetPasswordFormActivity"
             android:exported="true" />
     </application>
 

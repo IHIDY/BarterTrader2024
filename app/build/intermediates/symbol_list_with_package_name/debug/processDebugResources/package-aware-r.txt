@@ -3366,6 +3366,10 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id filterButton
+id filterEditText
+id filterLayout
+id filterSpinner
 id fitCenter
 id fitEnd
 id fitStart
@@ -3375,6 +3379,7 @@ id fixed
 id flip
 id floating
 id forever
+id forfield
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3395,6 +3400,7 @@ id homeAsUp
 id honorRequest
 id horizontal
 id horizontal_only
+id iOffer
 id icon
 id icon_group
 id icon_only
@@ -3487,6 +3493,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id myOffersButton
 id mySpinner
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
@@ -3547,6 +3554,7 @@ id postLayout
 id pressed
 id productAvailability
 id productCategory
+id productCondition
 id productDescription
 id productLocation
 id productName
@@ -3626,6 +3634,7 @@ id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
+id status
 id statusLabel
 id stop
 id stretch
@@ -3648,6 +3657,10 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id targetProductCategory
+id targetProductDescription
+id targetProductLocation
+id targetProductName
 id text
 id text2
 id textEnd
@@ -3829,6 +3842,7 @@ layout abc_tooltip
 layout activity_confirmation_page
 layout activity_login
 layout activity_main
+layout activity_my_offers
 layout activity_product_form
 layout activity_provider_dash
 layout activity_receiver_dash
@@ -3912,6 +3926,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout offer_item
 layout product_item
 layout reset_password
 layout select_dialog_item_material
