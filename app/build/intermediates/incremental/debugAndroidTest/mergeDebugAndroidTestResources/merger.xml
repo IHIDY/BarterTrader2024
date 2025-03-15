@@ -1,47 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.tracing:tracing:1.1.0$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\fredv\.gradle\caches\8.10.2\transforms\a6b80ec1fc32047b684bb298c6513a1a\transformed\jetified-tracing-1.1.0\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.tracing:tracing:1.1.0" from-dependency="true" generated-set="androidx.tracing:tracing:1.1.0$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\fredv\.gradle\caches\8.10.2\transforms\a6b80ec1fc32047b684bb298c6513a1a\transformed\jetified-tracing-1.1.0\res"><file path="C:\Users\fredv\.gradle\caches\8.10.2\transforms\a6b80ec1fc32047b684bb298c6513a1a\transformed\jetified-tracing-1.1.0\res\values\values.xml" qualifiers=""/></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.test:core:1.6.1$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\fredv\.gradle\caches\8.10.2\transforms\9fb63423171eb3a025012787ab91a580\transformed\jetified-core-1.6.1\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.test:core:1.6.1" from-dependency="true" generated-set="androidx.test:core:1.6.1$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\fredv\.gradle\caches\8.10.2\transforms\9fb63423171eb3a025012787ab91a580\transformed\jetified-core-1.6.1\res"><file path="C:\Users\fredv\.gradle\caches\8.10.2\transforms\9fb63423171eb3a025012787ab91a580\transformed\jetified-core-1.6.1\res\values\values.xml" qualifiers=""><style name="WhiteBackgroundDialogTheme" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
-<item name="android:windowNoTitle">true</item>
-<item name="android:windowFullscreen">false</item>
-<item name="android:fadingEdge">none</item>
-<item name="android:windowBackground">@android:color/white</item>
-<item name="android:windowAnimationStyle">@null</item>
-</style><style name="WhiteBackgroundTheme" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
-<item name="android:windowNoTitle">true</item>
-<item name="android:windowFullscreen">false</item>
-<item name="android:fadingEdge">none</item>
-<item name="android:windowBackground">@android:color/white</item>
-<item name="android:windowAnimationStyle">@null</item>
-</style></file><file path="C:\Users\fredv\.gradle\caches\8.10.2\transforms\9fb63423171eb3a025012787ab91a580\transformed\jetified-core-1.6.1\res\values-v18\values.xml" qualifiers="v18"><style name="WhiteBackgroundDialogTheme" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
-<item name="android:windowNoTitle">true</item>
-<item name="android:windowFullscreen">false</item>
-<item name="android:windowOverscan">true</item>
-<item name="android:fadingEdge">none</item>
-<item name="android:windowBackground">@android:color/white</item>
-<item name="android:windowAnimationStyle">@null</item>
-</style><style name="WhiteBackgroundTheme" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
-<item name="android:windowNoTitle">true</item>
-<item name="android:windowFullscreen">false</item>
-<item name="android:windowOverscan">true</item>
-<item name="android:fadingEdge">none</item>
-<item name="android:windowBackground">@android:color/white</item>
-<item name="android:windowAnimationStyle">@null</item>
-</style></file><file path="C:\Users\fredv\.gradle\caches\8.10.2\transforms\9fb63423171eb3a025012787ab91a580\transformed\jetified-core-1.6.1\res\values-v21\values.xml" qualifiers="v21"><style name="WhiteBackgroundDialogTheme" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
-<item name="android:windowNoTitle">true</item>
-<item name="android:windowFullscreen">false</item>
-<item name="android:windowOverscan">true</item>
-<item name="android:fadingEdge">none</item>
-<item name="android:windowBackground">@android:color/white</item>
-<item name="android:windowContentTransitions">false</item>
-<item name="android:windowAnimationStyle">@null</item>
-</style><style name="WhiteBackgroundTheme" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
-<item name="android:windowNoTitle">true</item>
-<item name="android:windowFullscreen">false</item>
-<item name="android:windowOverscan">true</item>
-<item name="android:fadingEdge">none</item>
-<item name="android:windowBackground">@android:color/white</item>
-<item name="android:windowContentTransitions">false</item>
-<item name="android:windowAnimationStyle">@null</item>
-</style></file><file path="C:\Users\fredv\.gradle\caches\8.10.2\transforms\9fb63423171eb3a025012787ab91a580\transformed\jetified-core-1.6.1\res\values-v28\values.xml" qualifiers="v28"><style name="WhiteBackgroundDialogTheme" parent="@android:style/Theme.Material.Dialog.NoActionBar">
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.tracing:tracing:1.1.0$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jae/.gradle/caches/8.10.2/transforms/f5d14313cf9a4b2d7b81d2cc29b0816b/transformed/jetified-tracing-1.1.0/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.tracing:tracing:1.1.0" from-dependency="true" generated-set="androidx.tracing:tracing:1.1.0$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jae/.gradle/caches/8.10.2/transforms/f5d14313cf9a4b2d7b81d2cc29b0816b/transformed/jetified-tracing-1.1.0/res"><file path="/Users/jae/.gradle/caches/8.10.2/transforms/f5d14313cf9a4b2d7b81d2cc29b0816b/transformed/jetified-tracing-1.1.0/res/values/values.xml" qualifiers=""/></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.test:core:1.6.1$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jae/.gradle/caches/8.10.2/transforms/69be14cf057a08d97dd635e2374d3f65/transformed/jetified-core-1.6.1/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.test:core:1.6.1" from-dependency="true" generated-set="androidx.test:core:1.6.1$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jae/.gradle/caches/8.10.2/transforms/69be14cf057a08d97dd635e2374d3f65/transformed/jetified-core-1.6.1/res"><file path="/Users/jae/.gradle/caches/8.10.2/transforms/69be14cf057a08d97dd635e2374d3f65/transformed/jetified-core-1.6.1/res/values-v28/values.xml" qualifiers="v28"><style name="WhiteBackgroundDialogTheme" parent="@android:style/Theme.Material.Dialog.NoActionBar">
 <item name="android:windowNoTitle">true</item>
 <item name="android:windowFullscreen">false</item>
 <item name="android:windowOverscan">true</item>
@@ -57,4 +15,46 @@
 <item name="android:windowBackground">@android:color/white</item>
 <item name="android:windowContentTransitions">false</item>
 <item name="android:windowAnimationStyle">@null</item>
-</style></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidTest$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\fredv\AndroidStudioProjects\group_8_csci_3130_winter\app\src\androidTest\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidTest" generated-set="androidTest$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\fredv\AndroidStudioProjects\group_8_csci_3130_winter\app\src\androidTest\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidTestDebug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\fredv\AndroidStudioProjects\group_8_csci_3130_winter\app\src\androidTestDebug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidTestDebug" generated-set="androidTestDebug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\fredv\AndroidStudioProjects\group_8_csci_3130_winter\app\src\androidTestDebug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\fredv\AndroidStudioProjects\group_8_csci_3130_winter\app\build\generated\res\resValues\androidTest\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\fredv\AndroidStudioProjects\group_8_csci_3130_winter\app\build\generated\res\resValues\androidTest\debug"/></dataSet><mergedItems/></merger>
+</style></file><file path="/Users/jae/.gradle/caches/8.10.2/transforms/69be14cf057a08d97dd635e2374d3f65/transformed/jetified-core-1.6.1/res/values-v21/values.xml" qualifiers="v21"><style name="WhiteBackgroundDialogTheme" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
+<item name="android:windowNoTitle">true</item>
+<item name="android:windowFullscreen">false</item>
+<item name="android:windowOverscan">true</item>
+<item name="android:fadingEdge">none</item>
+<item name="android:windowBackground">@android:color/white</item>
+<item name="android:windowContentTransitions">false</item>
+<item name="android:windowAnimationStyle">@null</item>
+</style><style name="WhiteBackgroundTheme" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+<item name="android:windowNoTitle">true</item>
+<item name="android:windowFullscreen">false</item>
+<item name="android:windowOverscan">true</item>
+<item name="android:fadingEdge">none</item>
+<item name="android:windowBackground">@android:color/white</item>
+<item name="android:windowContentTransitions">false</item>
+<item name="android:windowAnimationStyle">@null</item>
+</style></file><file path="/Users/jae/.gradle/caches/8.10.2/transforms/69be14cf057a08d97dd635e2374d3f65/transformed/jetified-core-1.6.1/res/values-v18/values.xml" qualifiers="v18"><style name="WhiteBackgroundDialogTheme" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
+<item name="android:windowNoTitle">true</item>
+<item name="android:windowFullscreen">false</item>
+<item name="android:windowOverscan">true</item>
+<item name="android:fadingEdge">none</item>
+<item name="android:windowBackground">@android:color/white</item>
+<item name="android:windowAnimationStyle">@null</item>
+</style><style name="WhiteBackgroundTheme" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+<item name="android:windowNoTitle">true</item>
+<item name="android:windowFullscreen">false</item>
+<item name="android:windowOverscan">true</item>
+<item name="android:fadingEdge">none</item>
+<item name="android:windowBackground">@android:color/white</item>
+<item name="android:windowAnimationStyle">@null</item>
+</style></file><file path="/Users/jae/.gradle/caches/8.10.2/transforms/69be14cf057a08d97dd635e2374d3f65/transformed/jetified-core-1.6.1/res/values/values.xml" qualifiers=""><style name="WhiteBackgroundDialogTheme" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
+<item name="android:windowNoTitle">true</item>
+<item name="android:windowFullscreen">false</item>
+<item name="android:fadingEdge">none</item>
+<item name="android:windowBackground">@android:color/white</item>
+<item name="android:windowAnimationStyle">@null</item>
+</style><style name="WhiteBackgroundTheme" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+<item name="android:windowNoTitle">true</item>
+<item name="android:windowFullscreen">false</item>
+<item name="android:fadingEdge">none</item>
+<item name="android:windowBackground">@android:color/white</item>
+<item name="android:windowAnimationStyle">@null</item>
+</style></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidTest$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jae/Desktop/W25/3130/group8/app/src/androidTest/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidTest" generated-set="androidTest$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jae/Desktop/W25/3130/group8/app/src/androidTest/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidTestDebug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jae/Desktop/W25/3130/group8/app/src/androidTestDebug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidTestDebug" generated-set="androidTestDebug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jae/Desktop/W25/3130/group8/app/src/androidTestDebug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jae/Desktop/W25/3130/group8/app/build/generated/res/resValues/androidTest/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jae/Desktop/W25/3130/group8/app/build/generated/res/resValues/androidTest/debug"/></dataSet><mergedItems/></merger>

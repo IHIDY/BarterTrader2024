@@ -1,0 +1,178 @@
+03-14 23:08:19.559 19489 19507 I TestRunner: started: testTitleTextView_Displayed(com.example.group8_bartertrader.ReceiverDashUITest)
+03-14 23:08:19.559   400 19609 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+03-14 23:08:19.559   400 19609 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+03-14 23:08:19.569 19489 19507 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+03-14 23:08:19.577  1171  1171 I TopTaskTracker: onTaskRemoved: taskId=149
+03-14 23:08:19.580  1171  1171 I TopTaskTracker: onTaskRemoved: taskId=149
+03-14 23:08:19.599   620  1968 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@e48364ae does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+03-14 23:08:19.622  1171  1171 W SplitSelectStateCtor: Missing session instanceIds
+03-14 23:08:19.623  1171  1171 D StatsLog: LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
+03-14 23:08:19.636   458   458 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+03-14 23:08:19.649  1171  1171 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=150, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.ReceiverDash }
+03-14 23:08:19.662   400 19609 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+03-14 23:08:19.662   400 19609 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+03-14 23:08:19.674 19489 19489 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.ReceiverDash@e4c9d64 in: PRE_ON_CREATE
+03-14 23:08:19.674 19489 19489 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was DESTROYED
+03-14 23:08:19.675 19489 19489 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+03-14 23:08:19.766   400 19609 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+03-14 23:08:19.767   400 19609 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+03-14 23:08:19.803   888  1024 D EGL_emulation: app_time_stats: avg=173.25ms min=6.22ms max=1621.03ms count=10
+03-14 23:08:19.812 19489 19489 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.ReceiverDash@e4c9d64 in: CREATED
+03-14 23:08:19.812 19489 19489 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.group8_bartertrader.ReceiverDash@e4c9d64
+03-14 23:08:19.813 19489 19489 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.group8_bartertrader.ReceiverDash@e4c9d64
+03-14 23:08:19.818 19489 19489 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.ReceiverDash@e4c9d64 in: STARTED
+03-14 23:08:19.819 19489 19489 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.group8_bartertrader.ReceiverDash@e4c9d64
+03-14 23:08:19.820 19489 19489 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.group8_bartertrader.ReceiverDash@e4c9d64
+03-14 23:08:19.825 19489 19489 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.ReceiverDash@e4c9d64 in: RESUMED
+03-14 23:08:19.827 19489 19489 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.group8_bartertrader.ReceiverDash@e4c9d64
+03-14 23:08:19.827 19489 19489 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.group8_bartertrader.ReceiverDash@e4c9d64
+03-14 23:08:19.870   400 19609 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+03-14 23:08:19.870   400 19609 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+03-14 23:08:19.883  1171  1714 D EGL_emulation: app_time_stats: avg=63.96ms min=9.93ms max=545.57ms count=15
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: Error inserting flex_time=7000 job_id=-1 period=16000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=250832000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1742004499955 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:974)
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:814)
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1981)
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1875)
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: 	at drev.d(:com.google.android.gms@250832038@25.08.32 (260800-731361394):727)
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: 	at drcm.n(:com.google.android.gms@250832038@25.08.32 (260800-731361394):29)
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: 	at drcm.u(:com.google.android.gms@250832038@25.08.32 (260800-731361394):364)
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: 	at drcm.h(:com.google.android.gms@250832038@25.08.32 (260800-731361394):51)
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: 	at dqxb.run(:com.google.android.gms@250832038@25.08.32 (260800-731361394):72)
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: 	at atin.c(:com.google.android.gms@250832038@25.08.32 (260800-731361394):50)
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: 	at atin.run(:com.google.android.gms@250832038@25.08.32 (260800-731361394):76)
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: 	at atoa.run(:com.google.android.gms@250832038@25.08.32 (260800-731361394):8)
+03-14 23:08:19.961  1123 19615 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+03-14 23:08:19.974   400 19609 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+03-14 23:08:19.975   400 19609 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+03-14 23:08:20.054   888   899 W ndroid.systemui: Missing inline cache for void com.android.wm.shell.transition.Transitions.onFinish(android.os.IBinder, android.window.WindowContainerTransaction)
+03-14 23:08:20.049  1171  1171 D VRI[NexusLauncherActivity]: visibilityChanged oldVisibility=true newVisibility=false
+03-14 23:08:20.058  1171  1171 D NexusLauncherModelDelegate: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+03-14 23:08:20.083   400 19609 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+03-14 23:08:20.083   400 19609 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+03-14 23:08:20.187   400 19609 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+03-14 23:08:20.187   400 19609 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+03-14 23:08:20.290   400 19609 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+03-14 23:08:20.290   400 19609 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+03-14 23:08:20.394   400 19609 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+03-14 23:08:20.394   400 19609 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+03-14 23:08:20.498   400 19609 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+03-14 23:08:20.498   400 19609 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+03-14 23:08:20.572   400  4279 D android.hardware.audio@7.1-impl.ranchu: threadLoop: entering standby, frames: 4543488
+03-14 23:08:20.602   400 19609 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+03-14 23:08:20.603   400 19609 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+03-14 23:08:21.981  1123  2385 W GLSUser : [AppCertManager] Exception while requesting key:
+03-14 23:08:21.981  1123  2385 W GLSUser : java.util.concurrent.ExecutionException: bzgh: Failed to process request
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at fodx.s(:com.google.android.gms@250832038@25.08.32 (260800-731361394):21)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at fodx.get(:com.google.android.gms@250832038@25.08.32 (260800-731361394):10)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at acba.b(:com.google.android.gms@250832038@25.08.32 (260800-731361394):454)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at acay.a(:com.google.android.gms@250832038@25.08.32 (260800-731361394):69)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at acay.fD(:com.google.android.gms@250832038@25.08.32 (260800-731361394):16)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at rhn.onTransact(:com.google.android.gms@250832038@25.08.32 (260800-731361394):97)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at android.os.Binder.transact(Binder.java:1345)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at brmh.onTransact(:com.google.android.gms@250832038@25.08.32 (260800-731361394):10)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at android.os.Binder.transact(Binder.java:1345)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at bimi.onTransact(:com.google.android.gms@250832038@25.08.32 (260800-731361394):148)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at android.os.Binder.execTransactInternal(Binder.java:1505)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at android.os.Binder.execTransact(Binder.java:1444)
+03-14 23:08:21.981  1123  2385 W GLSUser : Caused by: bzgh: Failed to process request
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at bzgn.a(:com.google.android.gms@250832038@25.08.32 (260800-731361394):23)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at bzkh.b(:com.google.android.gms@250832038@25.08.32 (260800-731361394):15)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at bzkv.onFailed(:com.google.android.gms@250832038@25.08.32 (260800-731361394):15)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at m.li.onFailed(:com.google.android.gms.dynamite_cronetdynamite@250832038@25.08.32 (260800-0):3)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at m.kj.run(:com.google.android.gms.dynamite_cronetdynamite@250832038@25.08.32 (260800-0):16)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at atin.c(:com.google.android.gms@250832038@25.08.32 (260800-731361394):50)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at atin.run(:com.google.android.gms@250832038@25.08.32 (260800-731361394):76)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at atoa.run(:com.google.android.gms@250832038@25.08.32 (260800-731361394):8)
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at java.lang.Thread.run(Thread.java:1012)
+03-14 23:08:21.981  1123  2385 W GLSUser : Caused by: m.ks: Exception in CronetUrlRequest: net::ERR_NAME_NOT_RESOLVED, ErrorCode=1, InternalErrorCode=-105, Retryable=false
+03-14 23:08:21.981  1123  2385 W GLSUser : 	at org.chromium.net.impl.CronetUrlRequest.onError(:com.google.android.gms.dynamite_cronetdynamite@250832038@25.08.32 (260800-0):4)
+03-14 23:08:21.983  1123  2385 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+03-14 23:08:21.996  1123  2385 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+03-14 23:08:21.997  1123  2385 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+03-14 23:08:22.047  1123 19615 I GmsGeocoder: (REDACTED) reverse geocoding network failure: %s
+03-14 23:08:25.015  1123 19595 W gzzm    : [{0}] Failed to resolve name. status={1}
+03-14 23:08:26.938  1123 19314 W CCTUploader: Clearcut transport failed to make network request after 20084 milliseconds.
+03-14 23:08:26.938  1123 19314 W CCTUploader: java.io.IOException: bzgh: Failed to process request
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at arhw.a(:com.google.android.gms@250832038@25.08.32 (260800-731361394):108)
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at aris.b(:com.google.android.gms@250832038@25.08.32 (260800-731361394):511)
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at com.google.android.gms.clearcut.uploader.QosUploaderChimeraService.g(:com.google.android.gms@250832038@25.08.32 (260800-731361394):1562)
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at com.google.android.gms.clearcut.uploader.QosUploaderChimeraService.a(:com.google.android.gms@250832038@25.08.32 (260800-731361394):24)
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at bzof.call(:com.google.android.gms@250832038@25.08.32 (260800-731361394):32)
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at atin.c(:com.google.android.gms@250832038@25.08.32 (260800-731361394):50)
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at atin.run(:com.google.android.gms@250832038@25.08.32 (260800-731361394):76)
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at atoa.run(:com.google.android.gms@250832038@25.08.32 (260800-731361394):8)
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at java.lang.Thread.run(Thread.java:1012)
+03-14 23:08:26.938  1123 19314 W CCTUploader: Caused by: bzgh: Failed to process request
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at bzgn.a(:com.google.android.gms@250832038@25.08.32 (260800-731361394):23)
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at bzkh.b(:com.google.android.gms@250832038@25.08.32 (260800-731361394):15)
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at bzkv.onFailed(:com.google.android.gms@250832038@25.08.32 (260800-731361394):15)
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at m.li.onFailed(:com.google.android.gms.dynamite_cronetdynamite@250832038@25.08.32 (260800-0):3)
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at m.kj.run(:com.google.android.gms.dynamite_cronetdynamite@250832038@25.08.32 (260800-0):16)
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at fofn.execute(:com.google.android.gms@250832038@25.08.32 (260800-731361394):1)
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at org.chromium.net.impl.CronetUrlRequest.onNativeAdapterDestroyed(:com.google.android.gms.dynamite_cronetdynamite@250832038@25.08.32 (260800-0):35)
+03-14 23:08:26.938  1123 19314 W CCTUploader: Caused by: m.ks: Exception in CronetUrlRequest: net::ERR_NAME_NOT_RESOLVED, ErrorCode=1, InternalErrorCode=-105, Retryable=false
+03-14 23:08:26.938  1123 19314 W CCTUploader: 	at org.chromium.net.impl.CronetUrlRequest.onError(:com.google.android.gms.dynamite_cronetdynamite@250832038@25.08.32 (260800-0):4)
+03-14 23:08:27.123  1123 19615 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+03-14 23:08:28.146   620   791 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-14 23:08:28.148   620   791 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-14 23:08:28.149   620   791 D InetDiagMessage: Destroyed live tcp sockets for uids={10143} in 4ms
+03-14 23:08:28.952  1547  1883 I BistoHotwordHelper: (REDACTED) getHotwordActive::active query: %s, watch: %s, devices connected: %s
+03-14 23:08:29.648  1171  1171 D BaseDepthController: setSurface:
+03-14 23:08:29.648  1171  1171 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+03-14 23:08:29.648  1171  1171 D BaseDepthController: 	mSurface: null
+03-14 23:08:29.649  1171  1171 D BaseDepthController: mSurface is null and mCurrentBlur is: 0
+03-14 23:08:29.651  1171  1171 D StateManager: goToState - fromState: Normal, toState: Normal, partial trace:
+03-14 23:08:29.651  1171  1171 D StateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:4)
+03-14 23:08:29.651  1171  1171 D StateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:1)
+03-14 23:08:29.651  1171  1171 D StateManager: 	at com.android.launcher3.statemanager.StatefulActivity.onStop(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:34)
+03-14 23:08:29.652  1171  1171 D StatsLog: LAUNCHER_ONSTOP
+03-14 23:08:29.654  1171  1171 D StatsLog: LAUNCHER_GOOGLE_SEARCH_RESTORE_LIST_SIZE_AFTER_ACTIVITY_RESTART
+03-14 23:08:29.655  1171  1860 D OneSearchSuggestProvider: Shut down the binder channel
+03-14 23:08:29.658  1171  3805 I IPCThreadState: oneway function results for code 2 on binder at 0x7abcbf6c7c60 will be dropped but finished with status UNKNOWN_TRANSACTION
+03-14 23:08:29.881  1123  3808 I cn_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@bcd0723
+03-14 23:08:29.890  1123 19314 I GmsGeocoder: (REDACTED) reverse geocoding network failure: %s
+03-14 23:08:29.892 19489 19489 W System.err: java.io.IOException: gzok: DEADLINE_EXCEEDED: CallOptions deadline exceeded after 7.827873423s. Name resolution delay 0.000000000 seconds. [closed=[], open=[[remote_addr=null]]]
+03-14 23:08:29.892 19489 19489 W System.err: 	at android.location.Geocoder$SynchronousGeocoder.getResults(Geocoder.java:401)
+03-14 23:08:29.892 19489 19489 W System.err: 	at android.location.Geocoder.getFromLocation(Geocoder.java:145)
+03-14 23:08:29.893 19489 19489 W System.err: 	at com.example.group8_bartertrader.LocationHelper.getCityName(LocationHelper.java:108)
+03-14 23:08:29.893 19489 19489 W System.err: 	at com.example.group8_bartertrader.ReceiverDash.onLocationFetched(ReceiverDash.java:113)
+03-14 23:08:29.893 19489 19489 W System.err: 	at com.example.group8_bartertrader.LocationHelper$1.onSuccess(LocationHelper.java:93)
+03-14 23:08:29.894 19489 19489 W System.err: 	at com.example.group8_bartertrader.LocationHelper$1.onSuccess(LocationHelper.java:88)
+03-14 23:08:29.894 19489 19489 W System.err: 	at com.google.android.gms.tasks.zzm.run(com.google.android.gms:play-services-tasks@@18.1.0:1)
+03-14 23:08:29.895 19489 19489 W System.err: 	at android.os.Handler.handleCallback(Handler.java:959)
+03-14 23:08:29.895 19489 19489 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+03-14 23:08:29.895 19489 19489 W System.err: 	at android.os.Looper.loopOnce(Looper.java:232)
+03-14 23:08:29.895 19489 19489 W System.err: 	at android.os.Looper.loop(Looper.java:317)
+03-14 23:08:29.895 19489 19489 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:8705)
+03-14 23:08:29.896 19489 19489 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+03-14 23:08:29.896 19489 19489 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+03-14 23:08:29.896 19489 19489 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+03-14 23:08:29.900 19489 19489 I Choreographer: Skipped 602 frames!  The application may be doing too much work on its main thread.
+03-14 23:08:29.955   620   653 W ziparchive: Unable to open '/data/app/~~C_i0W2L1kLLmd2SbVXFcJg==/com.example.group8_bartertrader-2ytbDH00S7KKiamSUhKvEg==/base.dm': No such file or directory
+03-14 23:08:29.963 19489 19619 I HWUI    : Davey! duration=10101ms; Flags=1, FrameTimelineVsyncId=177878, IntendedVsync=123100540998622, Vsync=123110574331554, InputEventId=0, HandleInputStart=123110592681079, AnimationStart=123110592682606, PerformTraversalsStart=123110592683633, DrawStart=123110623470731, FrameDeadline=123100557665288, FrameInterval=123110590574084, FrameStartTime=16666666, SyncQueued=123110629940573, SyncStart=123110630515966, IssueDrawCommandsStart=123110630869613, SwapBuffers=123110634622688, FrameCompleted=123110642744060, DequeueBufferDuration=3997, QueueBufferDuration=343054, GpuCompleted=123110642744060, SwapBuffersCompleted=123110635963386, DisplayPresentTime=0, CommandSubmissionCompleted=123110634622688,
+03-14 23:08:29.970   620   653 I ActivityTaskManager: Displayed com.example.group8_bartertrader/.ReceiverDash for user 0: +10s353ms
+03-14 23:08:29.973 19489 19507 W SurfaceComposerClient: Sync transaction timed out waiting for commit callback.
+03-14 23:08:29.989   620   758 I ImeTracker: com.example.group8_bartertrader:cb92e087: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+03-14 23:08:29.990   620   758 I ImeTracker: com.example.group8_bartertrader:cb92e087: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-14 23:08:30.000  1381  1381 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157
+03-14 23:08:30.006  1381  1381 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+03-14 23:08:30.007  1381  1381 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.example.group8_bartertrader, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+03-14 23:08:30.008  1381  1381 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+03-14 23:08:30.009  1381  1381 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password, password
+03-14 23:08:30.036 19489 19507 D UiObject: Waiting 0ms for UiSelector[TEXT_REGEX=(?i)While using the app].
+03-14 23:08:30.233   888   980 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@7c8e187
+03-14 23:08:30.239   620   977 W InputManager-JNI: Input channel object '965a9b0 Splash Screen com.example.group8_bartertrader (client)' was disposed without first being removed with the input manager!
+03-14 23:08:30.501 19489 19489 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296767/com.example.group8_bartertrader:id/title>
+03-14 23:08:30.511 19489 19489 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Receiver Dashboard"}' assertion on view view.getId() is <2131296767/com.example.group8_bartertrader:id/title>
+03-14 23:08:30.518 19489 19507 I TestRunner: finished: testTitleTextView_Displayed(com.example.group8_bartertrader.ReceiverDashUITest)

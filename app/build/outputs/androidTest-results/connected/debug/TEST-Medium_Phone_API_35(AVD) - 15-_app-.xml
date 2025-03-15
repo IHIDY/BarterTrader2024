@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.example.group8_bartertrader.ReceiverDashUITest" tests="4" failures="0" errors="0" skipped="0" time="39.258" timestamp="2025-03-15T02:08:35" hostname="localhost">
+  <properties>
+    <property name="device" value="Medium_Phone_API_35(AVD) - 15" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="testLocationTextView_InitialState" classname="com.example.group8_bartertrader.ReceiverDashUITest" time="0.719" />
+  <testcase name="testRecyclerView_Displayed" classname="com.example.group8_bartertrader.ReceiverDashUITest" time="4.442" />
+  <testcase name="testSettingsButton_Click" classname="com.example.group8_bartertrader.ReceiverDashUITest" time="17.545" />
+  <testcase name="testTitleTextView_Displayed" classname="com.example.group8_bartertrader.ReceiverDashUITest" time="10.973" />
+</testsuite>
