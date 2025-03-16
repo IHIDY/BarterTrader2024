@@ -47,7 +47,7 @@ public class ReceiverDashUITest {
                 allowButton.click();
             }
 
-            Espresso.onView(ViewMatchers.withId(R.id.title))
+            Espresso.onView(ViewMatchers.withId(R.id.textView2))
                     .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
                     .check(ViewAssertions.matches(ViewMatchers.withText("Receiver Dashboard")));
         }
