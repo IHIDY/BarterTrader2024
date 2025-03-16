@@ -98,7 +98,7 @@ public class SubmitFormUITest {
         onView(withId(R.id.getLocationButton)).perform(click());
 
         // Click the submit button
-        onView(isRoot()).perform(waitFor(2000));
+        onView(isRoot()).perform(waitFor(3000));
         onView(withId(R.id.submitProduct)).perform(click());
     }
 }

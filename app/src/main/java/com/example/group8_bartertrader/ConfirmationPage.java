@@ -82,7 +82,7 @@ public class ConfirmationPage extends AppCompatActivity {
                             }
                         } else {
                             Log.w("DATABASE_QUERY", "Email not found in database: " + email);
-                            Toast.makeText(ConfirmationPage.this, "Email not found in database", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ConfirmationPage.this, "Email not found in database, Email is Case Sensitive", Toast.LENGTH_SHORT).show();
                         }
                     }
 
