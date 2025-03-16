@@ -12,6 +12,7 @@ import androidx.test.uiautomator.UiObject;
 import androidx.test.uiautomator.UiObjectNotFoundException;
 import androidx.test.uiautomator.UiSelector;
 
+import org.hamcrest.Matchers;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -84,4 +85,42 @@ public class ReceiverDashUITest {
                     .perform(ViewActions.click());
 
         }
+
+    @Test
+    public void testSearchByCategory() throws UiObjectNotFoundException {
+        ActivityScenario.launch(ReceiverDash.class);
+        UiObject allowButton = device.findObject(new UiSelector().textMatches("(?i)While using the app"));
+        if (allowButton.exists()) {
+            allowButton.click();
+        }
+        Espresso.onView(ViewMatchers.withId(R.id.filterSpinner)).perform(ViewActions.click());
+        Espresso.onData(Matchers.anything()).atPosition(1).perform(ViewActions.click());
+        Espresso.onView(ViewMatchers.withId(R.id.filterButton)).perform(ViewActions.click());
+        Espresso.onView(ViewMatchers.withId(R.id.productRecyclerView)).check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
     }
+
+    @Test
+    public void testSearchByDistance() throws UiObjectNotFoundException {
+        ActivityScenario.launch(ReceiverDash.class);
+        UiObject allowButton = device.findObject(new UiSelector().textMatches("(?i)While using the app"));
+        if (allowButton.exists()) {
+            allowButton.click();
+        }
+        Espresso.onView(ViewMatchers.withId(R.id.distanceEditText)).perform(ViewActions.typeText("10"), ViewActions.closeSoftKeyboard());
+        Espresso.onView(ViewMatchers.withId(R.id.filterButton)).perform(ViewActions.click());
+        Espresso.onView(ViewMatchers.withId(R.id.productRecyclerView)).check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
+    }
+
+    @Test
+    public void testSearchByKeyword() throws UiObjectNotFoundException {
+        ActivityScenario.launch(ReceiverDash.class);
+        UiObject allowButton = device.findObject(new UiSelector().textMatches("(?i)While using the app"));
+        if (allowButton.exists()) {
+            allowButton.click();
+        }
+        Espresso.onView(ViewMatchers.withId(R.id.inputEditText)).perform(ViewActions.typeText("Bottle"), ViewActions.closeSoftKeyboard());
+        Espresso.onView(ViewMatchers.withId(R.id.filterButton)).perform(ViewActions.click());
+        Espresso.onView(ViewMatchers.withId(R.id.productRecyclerView)).check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
+    }
+
+}
