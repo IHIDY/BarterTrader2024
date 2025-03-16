@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<testsuite name="com.example.group8_bartertrader.MyOffersActivityUITest" tests="1" failures="0" errors="0" skipped="0" time="11.4" timestamp="2025-03-16T17:10:23" hostname="localhost">
-  <properties>
-    <property name="device" value="Medium_Phone_API_35(AVD) - 15" />
-    <property name="flavor" value="" />
-    <property name="project" value=":app" />
-  </properties>
-  <testcase name="testGoToSettingsButton" classname="com.example.group8_bartertrader.MyOffersActivityUITest" time="8.803" />
-</testsuite>

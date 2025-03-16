@@ -1,7 +1,7 @@
-EXECUTING: /Users/junfali/Library/Android/sdk/build-tools/34.0.0/aapt dump badging /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/apk/androidTest/debug/app-debug-androidTest.apk
-CURRENT_WORKING_DIRECTORY: /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter
-START_TIME: 2025-03-16 14:10:22.037
-START_TIME-NANOS: 2025-03-16 14:10:22.037764000
+EXECUTING: /Users/a123456/Library/Android/sdk/build-tools/34.0.0/aapt dump badging /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/build/intermediates/apk/androidTest/debug/app-debug-androidTest.apk
+CURRENT_WORKING_DIRECTORY: /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter
+START_TIME: 2025-03-16 16:32:27.648
+START_TIME-NANOS: 2025-03-16 16:32:27.648827000
 ENVIRONMENT:
 
 *****************************************
@@ -23,7 +23,7 @@ supports-any-density: 'true'
 locales: '--_--'
 densities: '160'
 ===================
-END_TIME: 2025-03-16 14:10:22.064
-END_TIME-NANOS: 2025-03-16 14:10:22.064144000
-DURATION: 26ms
+END_TIME: 2025-03-16 16:32:27.661
+END_TIME-NANOS: 2025-03-16 16:32:27.661103000
+DURATION: 12ms
 EXIT CODE: 0
