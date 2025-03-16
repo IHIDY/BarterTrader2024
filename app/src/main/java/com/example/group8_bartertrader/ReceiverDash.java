@@ -87,13 +87,14 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
             return insets;
         });
 
-        receiverSettingBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d("TEST", "GO TO SETTINGS BUTTON CLICKED");
-                Intent intent = new Intent(ReceiverDash.this, SettingsActivity.class);
-                startActivity(intent);
-            }
+        receiverSettingBtn.setOnClickListener(v -> {
+            Log.d("TEST", "GO TO SETTINGS BUTTON CLICKED");
+            startActivity(new Intent(ReceiverDash.this, SettingsActivity.class));
+        });
+
+        myOffersBtn.setOnClickListener(v -> {
+            Log.d("TEST", "MY OFFERS BUTTON CLICKED");
+            startActivity(new Intent(ReceiverDash.this, MyOffersActivity.class));
         });
 
         String[] categories = {"Select Category", "Electronics", "Furniture", "Clothing & Accessories", "Books", "Toys & Games",
@@ -104,20 +105,10 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         category.setAdapter(adapter);
 
         category.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                selectedCategory = parentView.getItemAtPosition(position).toString();
-            }
-
-        myOffersBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d("TEST", "MY OFFERS BUTTON CLICKED");
-                Intent intent = new Intent(ReceiverDash.this, MyOffersActivity.class);
-                startActivity(intent);
-            }
-        });
-    }
+           @Override
+           public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+               selectedCategory = parentView.getItemAtPosition(position).toString();
+           }
 
             @Override
             public void onNothingSelected(AdapterView<?> parentView) {
