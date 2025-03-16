@@ -34,6 +34,12 @@
         <activity
             android:name=".ReceiverDash"
             android:exported="true" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDH3vyca_VDL0AYJ4CezhZueccrAZy8VN0"/>
+
+        <activity android:name=".GoogleMapActivity"/>
+
         <activity
             android:name=".ProviderDash"
             android:exported="true" />

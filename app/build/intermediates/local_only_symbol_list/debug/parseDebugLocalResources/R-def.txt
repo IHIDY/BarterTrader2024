@@ -36,7 +36,6 @@ id main
 id map
 id mapButton
 id myOffersButton
-id mySpinner
 id newPasswordEditText
 id pBtn
 id pass
