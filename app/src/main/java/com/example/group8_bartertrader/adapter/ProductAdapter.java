@@ -1,7 +1,5 @@
 package com.example.group8_bartertrader.adapter;
 
-import static androidx.core.content.ContextCompat.startActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -20,11 +18,14 @@ import com.example.group8_bartertrader.DetailsActivity;
 import com.example.group8_bartertrader.GoogleMapActivity;
 import com.example.group8_bartertrader.R;
 import com.example.group8_bartertrader.model.Product;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.List;
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolder> {
     private List<Product> productList;
+    private FirebaseAuth mAuth;
 
     public ProductAdapter(List<Product> productList) {
         this.productList = productList;
@@ -59,20 +60,41 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
 //            mapIntent.putExtra("itemLocation", product.getLocation());
 //            context.startActivity(mapIntent);
 //        });
-//
-//        holder.detailButton.setOnClickListener(v -> {
-//            Context context = v.getContext();
-//            Intent detailIntent = new Intent(context, DetailsActivity.class);
-//            detailIntent.putExtra("Product",product);
-//            context.startActivity(detailIntent);
-//        });
+        holder.mapButton.setOnClickListener(v -> {
+            Context context = v.getContext();
+            // Get the address from the product object
+            String address = product.getLocation();  // e.g., "1600 Amphitheatre Pkwy, Mountain View, CA 94043, USA"
+
+            if (address != null && !address.isEmpty()) {
+                // Create a URI to open Google Maps with the address
+                String uri = "google.navigation:q=" + Uri.encode(address);
+
+                // Create an Intent to open Google Maps with the address
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                mapIntent.setPackage("com.google.android.apps.maps"); // Ensures Google Maps opens directly
+
+                // Check if Google Maps is available on the device
+                if (mapIntent.resolveActivity(context.getPackageManager()) != null) {
+                    context.startActivity(mapIntent);
+                } else {
+                    // Handle case where Google Maps is not available
+                    Toast.makeText(context, "Google Maps is not installed", Toast.LENGTH_SHORT).show();
+                }
+            } else {
+                Toast.makeText(context, "Invalid address", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         // Set up button click listeners
         setupDetailButton(holder.detailButton, product);
+
         // Log the isAvailable value
         Log.d("From Product Adapter", "Product ID: " + product.getId() + ", Availability: " + product.isAvailable());
 
     }
+
     private void setupDetailButton(Button detailButton, Product product) {
+
         detailButton.setOnClickListener(v -> {
             Context context = v.getContext();
             Intent detailIntent = new Intent(context, DetailsActivity.class);
@@ -101,7 +123,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
             productCategory = itemView.findViewById(R.id.productCategory);
             productLocation = itemView.findViewById(R.id.productLocation);
             productAvailability = itemView.findViewById(R.id.productAvailability);
-//            mapButton = itemView.findViewById(R.id.mapButton);
+            mapButton = itemView.findViewById(R.id.mapButton);
             detailButton = itemView.findViewById(R.id.detailButton);
         }
     }

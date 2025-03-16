@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.group8_bartertrader.model.Product;
 
+import java.io.Serializable;
+
 public class DetailsActivity extends AppCompatActivity {
 
     private TextView productName, productCategory, productLocation, productDescription, productCondition, providerEmail;
@@ -35,6 +37,7 @@ public class DetailsActivity extends AppCompatActivity {
 
         // Get the product passed from the adapter
         Product product = (Product) getIntent().getSerializableExtra("Product");
+
 
         // Display product details
         if (product != null) {

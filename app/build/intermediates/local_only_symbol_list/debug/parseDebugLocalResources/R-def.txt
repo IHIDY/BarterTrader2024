@@ -64,7 +64,6 @@ id targetProductDescription
 id targetProductLocation
 id targetProductName
 id textView2
-id title
 layout activity_confirmation_page
 layout activity_details
 layout activity_google_map
