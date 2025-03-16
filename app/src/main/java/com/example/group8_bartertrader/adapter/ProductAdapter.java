@@ -54,36 +54,28 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         boolean availability = product.isAvailable();
         holder.productAvailability.setText("Status: " + "Available");
 
-//        holder.mapButton.setOnClickListener(v -> {
-//            Context context = v.getContext();
-//            Intent mapIntent = new Intent(context, GoogleMapActivity.class);
-//            mapIntent.putExtra("itemLocation", product.getLocation());
-//            context.startActivity(mapIntent);
-//        });
-        holder.mapButton.setOnClickListener(v -> {
-            Context context = v.getContext();
-            // Get the address from the product object
-            String address = product.getLocation();  // e.g., "1600 Amphitheatre Pkwy, Mountain View, CA 94043, USA"
-
-            if (address != null && !address.isEmpty()) {
-                // Create a URI to open Google Maps with the address
-                String uri = "google.navigation:q=" + Uri.encode(address);
-
-                // Create an Intent to open Google Maps with the address
-                Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-                mapIntent.setPackage("com.google.android.apps.maps"); // Ensures Google Maps opens directly
-
-                // Check if Google Maps is available on the device
-                if (mapIntent.resolveActivity(context.getPackageManager()) != null) {
-                    context.startActivity(mapIntent);
-                } else {
-                    // Handle case where Google Maps is not available
-                    Toast.makeText(context, "Google Maps is not installed", Toast.LENGTH_SHORT).show();
+        holder.mapButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Context context = v.getContext();
+                if (product == null) {
+                    Toast.makeText(context, "Error: Product is null", Toast.LENGTH_SHORT).show();
+                    return;
                 }
-            } else {
-                Toast.makeText(context, "Invalid address", Toast.LENGTH_SHORT).show();
+
+                String location = product.getLatLngLocation();
+                if (location == null || location.isEmpty()) {
+                    Toast.makeText(context, "Location not available", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                Intent mapIntent = new Intent(context, GoogleMapActivity.class);
+                mapIntent.putExtra("itemLocation", location.trim());
+                context.startActivity(mapIntent);
             }
         });
+
+
 
         // Set up button click listeners
         setupDetailButton(holder.detailButton, product);
