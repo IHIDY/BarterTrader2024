@@ -87,8 +87,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb758ab1-1104-45f3-8618-25349e59be1e" name="Changes" comment="androidmanifest.xml update">
+      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/group8_bartertrader/DetailsActivityEspressoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/group8_bartertrader/SubmitFormUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/group8_bartertrader/SubmitFormUITest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +98,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/junfali/.android/avd/Medium_Phone_API_35.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/a123456/.android/avd/Pixel_7_API_35.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -156,7 +156,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="fixForElla" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -191,61 +191,61 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Android App.ProviderDash (1).executor": "Run",
-    "Android App.ProviderDash (2).executor": "Run",
-    "Android App.ProviderDash.executor": "Run",
-    "Android App.RegistrationActivity.executor": "Run",
-    "Android App.ResetPasswordActivity.executor": "Run",
-    "Android App.SF.executor": "Run",
-    "Android App.SettingsActivity.executor": "Run",
-    "Android App.app.executor": "Run",
-    "Android Instrumented Tests.ReceiverDashUITest.executor": "Run",
-    "Android Instrumented Tests.SubmitFormUITest.executor": "Run",
-    "Android Instrumented Tests.testGoToSettingsButton().executor": "Run",
-    "Android Instrumented Tests.testLocationTextView_InitialState().executor": "Run",
-    "Android Instrumented Tests.testProductItemListDisplayed() (1).executor": "Run",
-    "Android Instrumented Tests.testProductItemListDisplayed().executor": "Run",
-    "Android Instrumented Tests.testRecyclerView_Displayed().executor": "Run",
-    "Android Instrumented Tests.testSnackbarMessageForIncompleteFields().executor": "Run",
-    "Android Instrumented Tests.testSnackbarMessageForSuccess().executor": "Run",
-    "Android Instrumented Tests.testTitleTextView_Displayed().executor": "Run",
-    "Gradle.LocationHelperTest.executor": "Run",
-    "Gradle.LocationHelperTest.testCalculateDistance_SameCoordinates.executor": "Debug",
-    "Gradle.LocationHelperTest.testFetchLocation_Success.executor": "Run",
-    "Gradle.LocationHelperTest.testGetCurrentLocation_PermissionDenied.executor": "Run",
-    "Gradle.LocationHelperTest.testGetCurrentLocation_PermissionGranted.executor": "Run",
-    "Gradle.LocationHelperTest.testGetCurrentLocation_WithPermissionGranted.executor": "Run",
-    "Gradle.LocationHelperTest.testOnRequestPermissionsResult_PermissionGranted.executor": "Run",
-    "Gradle.LocationHelperTest.testParseLatLngLocation_InvalidInput.executor": "Run",
-    "Gradle.LocationHelperTest.testParseLatLngLocation_ValidInput.executor": "Run",
-    "Gradle.LoginActivtyTest.executor": "Run",
-    "Gradle.ProductFormTest.executor": "Run",
-    "Gradle.ProductFormTest.testProductPostedSuccessfully.executor": "Run",
-    "Gradle.ProductFormTest.testSubmitButtonValidationEmptyFields.executor": "Run",
-    "Gradle.ReceiverDashFirebaseTest.executor": "Run",
-    "Gradle.ReceiverDashLocationTest.executor": "Run",
-    "Gradle.ReceiverDashLogicTest.executor": "Run",
-    "Gradle.ReceiverDashLogicTest.testIsWithinRange_WithinRange.executor": "Run",
-    "Gradle.ReceiverDashTest.executor": "Run",
-    "Gradle.SubmitFormTest.testSubmitOfferSuccessfully.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ellaj/group8_bartertrader",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "recommended.upgrade.last.time.stamp": "1741877969342",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Android App.ProviderDash (1).executor&quot;: &quot;Run&quot;,
+    &quot;Android App.ProviderDash (2).executor&quot;: &quot;Run&quot;,
+    &quot;Android App.ProviderDash.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.RegistrationActivity.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.ResetPasswordActivity.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.SF.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.SettingsActivity.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.ReceiverDashUITest.executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.SubmitFormUITest.executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.testGoToSettingsButton().executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.testLocationTextView_InitialState().executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.testProductItemListDisplayed() (1).executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.testProductItemListDisplayed().executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.testRecyclerView_Displayed().executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.testSnackbarMessageForIncompleteFields().executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.testSnackbarMessageForSuccess().executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.testTitleTextView_Displayed().executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LocationHelperTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LocationHelperTest.testCalculateDistance_SameCoordinates.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.LocationHelperTest.testFetchLocation_Success.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LocationHelperTest.testGetCurrentLocation_PermissionDenied.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LocationHelperTest.testGetCurrentLocation_PermissionGranted.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LocationHelperTest.testGetCurrentLocation_WithPermissionGranted.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LocationHelperTest.testOnRequestPermissionsResult_PermissionGranted.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LocationHelperTest.testParseLatLngLocation_InvalidInput.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LocationHelperTest.testParseLatLngLocation_ValidInput.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginActivtyTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ProductFormTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ProductFormTest.testProductPostedSuccessfully.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ProductFormTest.testSubmitButtonValidationEmptyFields.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReceiverDashFirebaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReceiverDashLocationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReceiverDashLogicTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReceiverDashLogicTest.testIsWithinRange_WithinRange.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReceiverDashTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SubmitFormTest.testSubmitOfferSuccessfully.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ellaj/group8_bartertrader&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;recommended.upgrade.last.time.stamp&quot;: &quot;1741877969342&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ellaj\OneDrive\Desktop\SCHOOL\Dalhousie\2024-2025\Winter\CSCI 3130\group_8_csci_3130_winter\app" />
@@ -260,10 +260,9 @@
       <recent name="com.example.group8_bartertrader" />
     </key>
   </component>
-  <component name="RunManager" selected="Android Instrumented Tests.testGoToSettingsButton()">
+  <component name="RunManager" selected="Android Instrumented Tests.DetailsActivityEspressoTest">
     <configuration name="SF" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="group8_bartertrader.app" />
-      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -271,7 +270,6 @@
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
       <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
-      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
       <option name="CLEAR_APP_STORAGE" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
@@ -324,7 +322,6 @@
         <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY" value="" />
       <option name="ACTIVITY_CLASS" value="com.example.group8_bartertrader.SubmitForm" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
@@ -334,7 +331,6 @@
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="group8_bartertrader.app" />
-      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -342,7 +338,6 @@
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
       <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
-      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
       <option name="CLEAR_APP_STORAGE" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
@@ -395,7 +390,6 @@
         <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
@@ -403,12 +397,11 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubmitFormUITest" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
-      <module name="group8_bartertrader.app" />
-      <option name="ANDROID_TEST_RUN_CONFIGURATION_SCHEMA_VERSION" value="0" />
+    <configuration name="DetailsActivityEspressoTest" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="group8_bartertrader.app.androidTest" />
       <option name="TESTING_TYPE" value="2" />
       <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="com.example.group8_bartertrader.SubmitFormUITest" />
+      <option name="CLASS_NAME" value="com.example.group8_bartertrader.DetailsActivityEspressoTest" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_NAME_REGEX" value="" />
       <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
@@ -419,8 +412,69 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="2147483645" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="csci-3130-aa" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testExitButton()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="group8_bartertrader.app.androidTest" />
+      <option name="TESTING_TYPE" value="3" />
+      <option name="METHOD_NAME" value="testExitButton" />
+      <option name="CLASS_NAME" value="com.example.group8_bartertrader.DetailsActivityEspressoTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_NAME_REGEX" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="RETENTION_ENABLED" value="No" />
+      <option name="RETENTION_MAX_SNAPSHOTS" value="2" />
+      <option name="RETENTION_COMPRESS_SNAPSHOTS" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEBUGGER_TYPE" value="Auto" />
       <Auto>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
@@ -467,7 +521,6 @@
     </configuration>
     <configuration name="testGoToSettingsButton()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
       <module name="group8_bartertrader.app" />
-      <option name="ANDROID_TEST_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
       <option name="TESTING_TYPE" value="3" />
       <option name="METHOD_NAME" value="testGoToSettingsButton" />
       <option name="CLASS_NAME" value="com.example.group8_bartertrader.MyOffersActivityUITest" />
@@ -527,12 +580,11 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testProductItemListDisplayed() (1)" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
-      <module name="group8_bartertrader.app" />
-      <option name="ANDROID_TEST_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+    <configuration name="testOfferExchangeButton()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="group8_bartertrader.app.androidTest" />
       <option name="TESTING_TYPE" value="3" />
-      <option name="METHOD_NAME" value="testProductItemListDisplayed" />
-      <option name="CLASS_NAME" value="com.example.group8_bartertrader.MyOffersActivityUITest" />
+      <option name="METHOD_NAME" value="testOfferExchangeButton" />
+      <option name="CLASS_NAME" value="com.example.group8_bartertrader.DetailsActivityEspressoTest" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_NAME_REGEX" value="" />
       <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
@@ -589,74 +641,11 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testProductItemListDisplayed()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
-      <module name="group8_bartertrader.app" />
-      <option name="ANDROID_TEST_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+    <configuration name="testProductDetailsDisplayed()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="group8_bartertrader.app.androidTest" />
       <option name="TESTING_TYPE" value="3" />
-      <option name="METHOD_NAME" value="testProductItemListDisplayed" />
-      <option name="CLASS_NAME" value="MyOffersActivityUITest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_NAME_REGEX" value="" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="RETENTION_ENABLED" value="No" />
-      <option name="RETENTION_MAX_SNAPSHOTS" value="2" />
-      <option name="RETENTION_COMPRESS_SNAPSHOTS" value="false" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
-        <option name="DEBUG_SANDBOX_SDK" value="false" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
-        <option name="DEBUG_SANDBOX_SDK" value="false" />
-      </Hybrid>
-      <Java>
-        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
-        <option name="DEBUG_SANDBOX_SDK" value="false" />
-      </Java>
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
-        <option name="DEBUG_SANDBOX_SDK" value="false" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
-        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
-        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
-      </Profilers>
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testSnackbarMessageForSuccess()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
-      <module name="group8_bartertrader.app" />
-      <option name="ANDROID_TEST_RUN_CONFIGURATION_SCHEMA_VERSION" value="0" />
-      <option name="TESTING_TYPE" value="3" />
-      <option name="METHOD_NAME" value="testSnackbarMessageForSuccess" />
-      <option name="CLASS_NAME" value="com.example.group8_bartertrader.ProductFormEspressoTest" />
+      <option name="METHOD_NAME" value="testProductDetailsDisplayed" />
+      <option name="CLASS_NAME" value="com.example.group8_bartertrader.DetailsActivityEspressoTest" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_NAME_REGEX" value="" />
       <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
@@ -716,19 +705,19 @@
     <list>
       <item itemvalue="Android App.SF" />
       <item itemvalue="Android App.app" />
+      <item itemvalue="Android Instrumented Tests.DetailsActivityEspressoTest" />
+      <item itemvalue="Android Instrumented Tests.testExitButton()" />
+      <item itemvalue="Android Instrumented Tests.testOfferExchangeButton()" />
+      <item itemvalue="Android Instrumented Tests.testProductDetailsDisplayed()" />
       <item itemvalue="Android Instrumented Tests.testGoToSettingsButton()" />
-      <item itemvalue="Android Instrumented Tests.testProductItemListDisplayed()" />
-      <item itemvalue="Android Instrumented Tests.testProductItemListDisplayed() (1)" />
-      <item itemvalue="Android Instrumented Tests.testSnackbarMessageForSuccess()" />
-      <item itemvalue="Android Instrumented Tests.SubmitFormUITest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Android Instrumented Tests.DetailsActivityEspressoTest" />
+        <item itemvalue="Android Instrumented Tests.testExitButton()" />
+        <item itemvalue="Android Instrumented Tests.testProductDetailsDisplayed()" />
+        <item itemvalue="Android Instrumented Tests.testOfferExchangeButton()" />
         <item itemvalue="Android Instrumented Tests.testGoToSettingsButton()" />
-        <item itemvalue="Android Instrumented Tests.testProductItemListDisplayed() (1)" />
-        <item itemvalue="Android Instrumented Tests.SubmitFormUITest" />
-        <item itemvalue="Android Instrumented Tests.testProductItemListDisplayed()" />
-        <item itemvalue="Android Instrumented Tests.testSnackbarMessageForSuccess()" />
       </list>
     </recent_temporary>
   </component>
