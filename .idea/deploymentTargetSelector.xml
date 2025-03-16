@@ -25,6 +25,9 @@
       <SelectionState runConfigName="testSnackbarMessageForIncompleteFields()">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
+      <SelectionState runConfigName="testSnackbarMessageForSuccess()">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
     </selectionStates>
   </component>
 </project>
