@@ -110,4 +110,33 @@ public class SubmitFormUITest {
         onView(withId(com.google.android.material.R.id.snackbar_text))
                 .check(matches(isDisplayed()));
     }
+
+    @Test
+    public void testSubmitDuplicateOffer() throws InterruptedException {
+        // Make sure the intent is passed correctly
+        scenario.onActivity(activity -> {
+            assertNotNull(activity.getIntent().getStringExtra("productId"));
+            assertNotNull(activity.getIntent().getStringExtra("productName"));
+            assertNotNull(activity.getIntent().getStringExtra("productCategory"));
+            assertNotNull(activity.getIntent().getStringExtra("productLocation"));
+            assertNotNull(activity.getIntent().getStringExtra("productDescription"));
+            assertNotNull(activity.getIntent().getStringExtra("providerEmail"));
+        });
+
+        // Enter the test info
+        onView(withId(R.id.productName)).perform(replaceText("Test Offer Item"), closeSoftKeyboard());
+        onView(withId(R.id.productDescription)).perform(replaceText("Test Offer Description"), closeSoftKeyboard());
+
+        onView(withId(R.id.productCategory)).perform(click());
+        onView(withText("Electronics")).perform(click());
+        onView(withId(R.id.getLocationButton)).perform(click());
+
+        // Click the submit button
+        onView(isRoot()).perform(waitFor(3000));
+        onView(withId(R.id.submitProduct)).perform(click());
+
+        // Make sure the snackbar message about the submission result is displayed
+        onView(withId(com.google.android.material.R.id.snackbar_text))
+                .check(matches(withText("Failed to submit offer!")));
+    }
 }
