@@ -38,13 +38,14 @@ public class SubmitForm extends AppCompatActivity {
     private String providerEmail;
     FirebaseAuth mAuth;
     DatabaseReference databaseReference;
-    SubmitHelper submitHelper; // 使用 SubmitHelper
+    SubmitHelper submitHelper; // Subimt Helper we use for interacting with backend
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_form);
 
+        // Get all the UI Element
         productName = findViewById(R.id.productName);
         productCategory = findViewById(R.id.productCategory);
         productLocation = findViewById(R.id.productLocation);
@@ -53,18 +54,18 @@ public class SubmitForm extends AppCompatActivity {
         backButton = findViewById(R.id.backButton);
         getLocationButton = findViewById(R.id.getLocationButton);
 
+        // Initialize FirebaseAuth FirebaseDatabase SubmitHelper
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         databaseReference = FirebaseDatabase.getInstance().getReference("Offers");
         mAuth = FirebaseAuth.getInstance();
-        submitHelper = new SubmitHelper(databaseReference, mAuth); // 初始化 SubmitHelper
+        submitHelper = new SubmitHelper(databaseReference, mAuth);
 
+        // Set up the spinner
         String[] categories = {"Select Category", "Electronics", "Furniture", "Clothing & Accessories", "Books", "Toys & Games",
                 "Sports & Outdoors", "Baby & Kids", "Home Improvement", "Vehicles", "Health & Beauty",
                 "Pet Supplies", "Collectibles", "Home Decor", "Office Supplies"};
-
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, categories);
         productCategory.setAdapter(adapter);
-
         productCategory.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
@@ -77,6 +78,7 @@ public class SubmitForm extends AppCompatActivity {
             }
         });
 
+        // Set up the submitButton
         submitButton.setOnClickListener(v -> {
             String name = productName.getText().toString().trim();
             String category = selectedCategory;
@@ -87,7 +89,7 @@ public class SubmitForm extends AppCompatActivity {
             submitHelper.submitOffer(name, category, description, location, currentUserEmail,
                     "testProduct123", "Test Product", "Electronics", "Test Description", "New York",
                     success -> {
-                        View rootView = findViewById(android.R.id.content); // 获取根视图
+                        View rootView = findViewById(android.R.id.content);
                         if (success) {
                             Snackbar.make(rootView, "Offer submitted successfully!", Snackbar.LENGTH_SHORT).show();
                         } else {
@@ -96,8 +98,10 @@ public class SubmitForm extends AppCompatActivity {
                     });
         });
 
+        // Set up the BackButton
         backButton.setOnClickListener(v -> onBackPressed());
 
+        // Set up the getLocationButton
         getLocationButton.setOnClickListener(v -> getCurrentLocation(location -> {
             if (location != null) {
                 Geocoder geocoder = new Geocoder(this);
@@ -115,6 +119,7 @@ public class SubmitForm extends AppCompatActivity {
         }));
     }
 
+    // Set up the Mock Location
     private void getCurrentLocation(LocationCallback callback) {
         productLocation.setText("123 Fake Street, Faketown, FK 12345");
         Location fakeLocation = new Location("dummyprovider");

@@ -45,6 +45,7 @@ public class SubmitFormUITest {
 
     @Before
     public void setup() throws InterruptedException {
+        // Set up the Mock user
         FirebaseAuth auth = FirebaseAuth.getInstance();
 
         auth.signInWithEmailAndPassword("testreset@gmail.com", "Password1!")
@@ -58,6 +59,7 @@ public class SubmitFormUITest {
 
         Thread.sleep(3000);
 
+        // Set up the Mock Intent
         Intent intent = new Intent(ApplicationProvider.getApplicationContext(), SubmitForm.class);
         intent.putExtra("productId", "test123");
         intent.putExtra("productName", "Test Product");
@@ -82,6 +84,7 @@ public class SubmitFormUITest {
 
     @Test
     public void testSubmitOffer() throws InterruptedException {
+        // Make sure the intent is passed correctly
         scenario.onActivity(activity -> {
             assertNotNull(activity.getIntent().getStringExtra("productId"));
             assertNotNull(activity.getIntent().getStringExtra("productName"));
@@ -103,6 +106,7 @@ public class SubmitFormUITest {
         onView(isRoot()).perform(waitFor(3000));
         onView(withId(R.id.submitProduct)).perform(click());
 
+        // Make sure the snackbar message about the submission result is displayed
         onView(withId(com.google.android.material.R.id.snackbar_text))
                 .check(matches(isDisplayed()));
     }

@@ -45,36 +45,34 @@ public class MyOffersActivityUITest {
                     }
                 });
 
-        // 确保 Firebase 登录完成
         try {
-            Thread.sleep(3000); // 给 Firebase 认证一点时间
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        // 启动 MyOffersActivity
         ActivityScenario.launch(MyOffersActivity.class);
     }
 
     @Test
     public void testGoToSettingsButton() {
-        // 确保 "Go to Settings" 按钮存在
+        // Make sure the button exist
         onView(withId(R.id.recsettingbutton)).check(matches(isDisplayed()));
 
-        // 点击 "Go to Settings" 按钮
+        // CLick the Button
         onView(withId(R.id.recsettingbutton)).perform(click());
 
         onView(isRoot()).perform(waitFor(3000));
 
-        // 确保跳转到了 SettingsActivity
+        // Make sure SettingsActivity is displayed
         InstrumentationRegistry.getInstrumentation().waitForIdleSync();
-        onView(withId(R.id.activity_settings)) // 假设 SettingsActivity 里有个主布局 ID
+        onView(withId(R.id.activity_settings))
                 .check(matches(isDisplayed()));
     }
 
     @Test
     public void testProductItemListDisplayed() {
-        // 确保 RecyclerView 存在
+        // Make sure the REcyclerView is displayed
         onView(withId(R.id.productRecyclerView))
                 .check(matches(isDisplayed()));
     }
