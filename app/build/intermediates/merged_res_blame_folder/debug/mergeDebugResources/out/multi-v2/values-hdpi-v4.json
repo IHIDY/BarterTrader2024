@@ -4,7 +4,7 @@
             "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-43:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/0f1c74eaca0932be1d6a29071d15cfdc/transformed/appcompat-1.7.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/Users/junfali/.gradle/caches/8.10.2/transforms/45765a2b17cfdd5ca7cdbb643a7a2cba/transformed/appcompat-1.7.0/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

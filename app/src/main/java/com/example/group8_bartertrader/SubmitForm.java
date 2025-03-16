@@ -21,6 +21,7 @@ import androidx.core.app.ActivityCompat;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -84,7 +85,15 @@ public class SubmitForm extends AppCompatActivity {
             String location = productLocation.getText().toString().trim();
 
             submitHelper.submitOffer(name, category, description, location, currentUserEmail,
-                    "testProduct123", "Test Product", "Electronics", "Test Description", "New York");
+                    "testProduct123", "Test Product", "Electronics", "Test Description", "New York",
+                    success -> {
+                        View rootView = findViewById(android.R.id.content); // 获取根视图
+                        if (success) {
+                            Snackbar.make(rootView, "Offer submitted successfully!", Snackbar.LENGTH_SHORT).show();
+                        } else {
+                            Snackbar.make(rootView, "Failed to submit offer!", Snackbar.LENGTH_SHORT).show();
+                        }
+                    });
         });
 
         backButton.setOnClickListener(v -> onBackPressed());

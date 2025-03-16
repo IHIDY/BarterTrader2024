@@ -45,13 +45,8 @@
         <!-- Filter Spinner -->
         <Spinner
             android:id="@+id/filterSpinner"
-<<<<<<< HEAD
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-=======
             android:layout_width="wrap_content"
             android:layout_height="70dp"
->>>>>>> origin/main
             android:layout_weight="1" />
 
         <!-- Filter Input -->

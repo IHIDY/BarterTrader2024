@@ -67,6 +67,12 @@
         <activity
             android:name="com.example.group8_bartertrader.ReceiverDash"
             android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDH3vyca_VDL0AYJ4CezhZueccrAZy8VN0" />
+
+        <activity android:name="com.example.group8_bartertrader.GoogleMapActivity" />
         <activity
             android:name="com.example.group8_bartertrader.ProviderDash"
             android:exported="true" />

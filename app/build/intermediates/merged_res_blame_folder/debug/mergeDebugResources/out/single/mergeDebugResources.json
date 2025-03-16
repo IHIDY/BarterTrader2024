@@ -1,130 +1,126 @@
 [
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/layout_activity_login.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/layout/activity_login.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/layout_activity_product_form.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/layout/activity_product_form.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_activity_details.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/layout/activity_details.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_offer_item.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/layout/offer_item.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/xml/data_extraction_rules.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_activity_google_map.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/layout/activity_google_map.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/layout_new_password_form_page.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/layout/new_password_form_page.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_reset_password.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/layout/reset_password.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/layout_activity_provider_dash.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/layout/activity_provider_dash.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_activity_my_offers.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/layout/activity_my_offers.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/layout_activity_registration.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/layout/activity_registration.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/layout_product_item.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/layout/product_item.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_product_item.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/layout/product_item.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/layout_reset_password.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/layout/reset_password.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/layout_offer_item.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/layout/offer_item.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/layout_activity_my_offers.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/layout/activity_my_offers.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_new_password_form_page.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/layout/new_password_form_page.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/xml_backup_rules.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/xml/backup_rules.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/drawable/ic_launcher_background.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_activity_login.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/layout/activity_login.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/layout_activity_settings.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/layout/activity_settings.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_activity_registration.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/layout/activity_registration.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/layout_activity_main.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/layout/activity_main.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/xml_backup_rules.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/xml/backup_rules.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/layout_activity_confirmation_page.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/layout/activity_confirmation_page.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_activity_main.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/layout_activity_google_map.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/layout/activity_google_map.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_activity_product_form.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/layout/activity_product_form.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/drawable/ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/mipmap-xxxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
         "merged": "com.example.group8_bartertrader.app-debug-45:/layout_activity_settings.xml.flat",
         "source": "com.example.group8_bartertrader.app-main-47:/layout/activity_settings.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/layout_activity_details.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/layout/activity_details.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_activity_receiver_dash.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/layout/activity_receiver_dash.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/layout_activity_receiver_dash.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/layout/activity_receiver_dash.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_activity_confirmation_page.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/layout/activity_confirmation_page.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-45:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-47:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.example.group8_bartertrader.app-debug-45:/layout_activity_provider_dash.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/layout/activity_provider_dash.xml"
+    },
+    {
+        "merged": "com.example.group8_bartertrader.app-debug-45:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.group8_bartertrader.app-main-47:/mipmap-xhdpi/ic_launcher_round.webp"
     }
 ]

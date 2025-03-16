@@ -15,25 +15,25 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class SubmitHelper {
     private DatabaseReference databaseReference;
     private FirebaseAuth mAuth;
-    private AtomicBoolean result = new AtomicBoolean(false);
 
     public SubmitHelper(DatabaseReference databaseReference, FirebaseAuth mAuth) {
         this.databaseReference = databaseReference;
         this.mAuth = mAuth;
     }
 
-    public AtomicBoolean submitOffer(String name, String category, String description, String location, String currentUserEmail,
+    public void submitOffer(String name, String category, String description, String location, String currentUserEmail,
                             String targetProductId, String targetProductName, String targetProductCategory,
-                            String targetProductDescription, String targetProductLocation) {
+                            String targetProductDescription, String targetProductLocation, SubmitCallback callback) {
 
         if (TextUtils.isEmpty(name) || TextUtils.isEmpty(category) || TextUtils.isEmpty(description) || TextUtils.isEmpty(location)) {
             Log.e("SubmitHelper", "All fields are required.");
-            return result;
+            return;
         }
 
         databaseReference.orderByChild("receiverEmail").equalTo(currentUserEmail).get().addOnCompleteListener(task -> {
             if (!task.isSuccessful()) {
                 Log.e("FirebaseError", "Query failed", task.getException());
+                callback.onSubmissionResult(false);
                 return;
             }
 
@@ -50,19 +50,18 @@ public class SubmitHelper {
 
             if (alreadySubmitted) {
                 Log.e("SubmitHelper", "Offer already exists for this product.");
+                callback.onSubmissionResult(false);
                 return;
             }
 
             submitNewOffer(name, category, description, location, currentUserEmail,
-                    targetProductId, targetProductName, targetProductCategory, targetProductDescription, targetProductLocation);
+                    targetProductId, targetProductName, targetProductCategory, targetProductDescription, targetProductLocation, callback);
         });
-
-        return result;
     }
 
     private void submitNewOffer(String name, String category, String description, String location, String currentUserEmail,
                                 String targetProductId, String targetProductName, String targetProductCategory,
-                                String targetProductDescription, String targetProductLocation) {
+                                String targetProductDescription, String targetProductLocation, SubmitCallback callback) {
 
         String OfferId = databaseReference.push().getKey();
         Map<String, Object> offerData = new HashMap<>();
@@ -81,10 +80,16 @@ public class SubmitHelper {
         databaseReference.child(OfferId).setValue(offerData).addOnCompleteListener(submitTask -> {
             if (submitTask.isSuccessful()) {
                 Log.d("SubmitHelper", "Product offered successfully");
-                result.set(true);
+                callback.onSubmissionResult(true);
             } else {
                 Log.e("SubmitHelper", "Failed to offer exchange");
+                callback.onSubmissionResult(false);
             }
         });
     }
+
+    public interface SubmitCallback {
+        void onSubmissionResult(boolean success);
+    }
+
 }

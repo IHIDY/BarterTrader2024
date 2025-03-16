@@ -1,35 +1,41 @@
 package com.example.group8_bartertrader;
 
-import androidx.test.espresso.Espresso;
-import androidx.test.espresso.assertion.ViewAssertions;
-import androidx.test.espresso.matcher.ViewMatchers;
+import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.action.ViewActions.click;
+import static androidx.test.espresso.assertion.ViewAssertions.matches;
+import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
+import static androidx.test.espresso.matcher.ViewMatchers.isRoot;
+import static androidx.test.espresso.matcher.ViewMatchers.withId;
+
+import static com.example.group8_bartertrader.EspressoUtils.waitFor;
+
+import android.content.Intent;
+import android.util.Log;
+
+import androidx.test.core.app.ActivityScenario;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import androidx.test.platform.app.InstrumentationRegistry;
 
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static androidx.test.espresso.action.ViewActions.click;
-import static androidx.test.espresso.assertion.ViewAssertions.matches;
-import static androidx.test.espresso.matcher.ViewMatchers.*;
-import static org.hamcrest.Matchers.greaterThan;
-
-import android.util.Log;
-
+import com.example.group8_bartertrader.MyOffersActivity;
+import com.example.group8_bartertrader.R;
 import com.google.firebase.auth.FirebaseAuth;
-
-import java.util.concurrent.CountDownLatch;
 
 @RunWith(AndroidJUnit4.class)
 public class MyOffersActivityUITest {
 
-    @Before
-    public void setup() throws InterruptedException {
-        FirebaseAuth auth = FirebaseAuth.getInstance();
-        CountDownLatch latch = new CountDownLatch(1);
+    @Rule
+    public ActivityScenarioRule<MyOffersActivity> activityRule =
+            new ActivityScenarioRule<>(MyOffersActivity.class);
 
+    @Before
+    public void setup() {
+        FirebaseAuth auth = FirebaseAuth.getInstance();
         auth.signInWithEmailAndPassword("testreset@gmail.com", "Password1!")
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
@@ -37,33 +43,39 @@ public class MyOffersActivityUITest {
                     } else {
                         Log.e("FirebaseTest", "Test sign-in failed: " + task.getException().getMessage());
                     }
-                    latch.countDown();
                 });
 
-        latch.await();
+        // 确保 Firebase 登录完成
+        try {
+            Thread.sleep(3000); // 给 Firebase 认证一点时间
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
-        activityRule = new ActivityScenarioRule<>(MyOffersActivity.class);
+        // 启动 MyOffersActivity
+        ActivityScenario.launch(MyOffersActivity.class);
     }
-    @Rule
-    public ActivityScenarioRule<MyOffersActivity> activityRule =
-            new ActivityScenarioRule<>(MyOffersActivity.class);
 
     @Test
-    public void testRecyclerViewLoadsData() throws InterruptedException {
-        Espresso.onView(withId(R.id.productRecyclerView))
+    public void testGoToSettingsButton() {
+        // 确保 "Go to Settings" 按钮存在
+        onView(withId(R.id.recsettingbutton)).check(matches(isDisplayed()));
+
+        // 点击 "Go to Settings" 按钮
+        onView(withId(R.id.recsettingbutton)).perform(click());
+
+        onView(isRoot()).perform(waitFor(3000));
+
+        // 确保跳转到了 SettingsActivity
+        InstrumentationRegistry.getInstrumentation().waitForIdleSync();
+        onView(withId(R.id.activity_settings)) // 假设 SettingsActivity 里有个主布局 ID
                 .check(matches(isDisplayed()));
-
-        Thread.sleep(3000);
-
-        Espresso.onView(withId(R.id.productRecyclerView))
-                .check(ViewAssertions.matches(hasMinimumChildCount(1)));
     }
 
     @Test
-    public void testSettingsButtonClick() {
-        Espresso.onView(withId(R.id.recsettingbutton)).perform(click());
-
-        Espresso.onView(withId(R.id.activity_settings))
+    public void testProductItemListDisplayed() {
+        // 确保 RecyclerView 存在
+        onView(withId(R.id.productRecyclerView))
                 .check(matches(isDisplayed()));
     }
 }

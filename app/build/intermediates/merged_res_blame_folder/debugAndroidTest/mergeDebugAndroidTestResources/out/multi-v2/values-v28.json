@@ -4,7 +4,7 @@
             "outputFile": "com.example.group8_bartertrader.test.app-mergeDebugAndroidTestResources-3:/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "/Users/junfali/.gradle/caches/8.10.2/transforms/60832c7bcba916820ef72b0a6ddf5fc7/transformed/jetified-core-1.6.1/res/values-v28/values.xml",
+                    "source": "/Users/junfali/.gradle/caches/8.10.2/transforms/c1053cb019480c007c90dfef3e41c7e8/transformed/jetified-core-1.6.1/res/values-v28/values.xml",
                     "from": {
                         "startLines": "4,13",
                         "startColumns": "0,0",
