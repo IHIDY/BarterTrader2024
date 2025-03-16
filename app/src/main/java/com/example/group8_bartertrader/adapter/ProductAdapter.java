@@ -16,6 +16,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.group8_bartertrader.DetailsActivity;
 import com.example.group8_bartertrader.GoogleMapActivity;
 import com.example.group8_bartertrader.R;
 import com.example.group8_bartertrader.model.Product;
@@ -50,7 +51,6 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
 
         // You can also add logic for availability if needed
         boolean availability = product.isAvailable();
-//        holder.productAvailability.setText("Status: " + availability);
         holder.productAvailability.setText("Status: " + "Available");
 
 //        holder.mapButton.setOnClickListener(v -> {
@@ -66,9 +66,19 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
 //            detailIntent.putExtra("Product",product);
 //            context.startActivity(detailIntent);
 //        });
+        // Set up button click listeners
+        setupDetailButton(holder.detailButton, product);
         // Log the isAvailable value
         Log.d("From Product Adapter", "Product ID: " + product.getId() + ", Availability: " + product.isAvailable());
 
+    }
+    private void setupDetailButton(Button detailButton, Product product) {
+        detailButton.setOnClickListener(v -> {
+            Context context = v.getContext();
+            Intent detailIntent = new Intent(context, DetailsActivity.class);
+            detailIntent.putExtra("Product", product);
+            context.startActivity(detailIntent);
+        });
     }
 
     @Override
@@ -92,7 +102,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
             productLocation = itemView.findViewById(R.id.productLocation);
             productAvailability = itemView.findViewById(R.id.productAvailability);
 //            mapButton = itemView.findViewById(R.id.mapButton);
-//            detailButton = itemView.findViewById(R.id.detailButton);
+            detailButton = itemView.findViewById(R.id.detailButton);
         }
     }
 }

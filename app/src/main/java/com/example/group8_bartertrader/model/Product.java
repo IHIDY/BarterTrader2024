@@ -3,6 +3,9 @@ package com.example.group8_bartertrader.model;
 import android.util.Log;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 public class Product implements Serializable {
     private String id;
@@ -64,4 +67,9 @@ public class Product implements Serializable {
 
     public long getPostDate() { return postDate; }
     public void setPostDate(long postDate) { this.postDate = postDate; }
+
+    public String getFormattedPostDate() {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
+        return sdf.format(new Date(postDate)); // Convert long to formatted string
+    }
 }
