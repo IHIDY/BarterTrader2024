@@ -5,7 +5,9 @@ color black
 color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+id ExitButton
 id LogOutButton
+id OfferExchangeButton
 id activity_settings
 id backButton
 id changeRoleBtn
@@ -15,6 +17,7 @@ id confirmEmailTextView
 id confirmPasswordEditText
 id dashboardTitle
 id detailButton
+id detailsContainerGL
 id distanceEditText
 id email
 id emailEditText
@@ -41,9 +44,11 @@ id productAvailability
 id productCategory
 id productCondition
 id productDescription
+id productDetails
 id productLocation
 id productName
 id productRecyclerView
+id providerEmail
 id recsettingbutton
 id regBtn
 id resetPasswordButton
@@ -58,8 +63,8 @@ id targetProductDescription
 id targetProductLocation
 id targetProductName
 id textView2
-id title
 layout activity_confirmation_page
+layout activity_details
 layout activity_google_map
 layout activity_login
 layout activity_main
