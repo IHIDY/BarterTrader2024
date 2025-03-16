@@ -1,6 +1,7 @@
 package com.example.group8_bartertrader;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
@@ -93,7 +94,7 @@ public class SubmitForm extends AppCompatActivity {
                         if (success) {
                             Snackbar.make(rootView, "Offer submitted successfully!", Snackbar.LENGTH_SHORT).show();
                         } else {
-                            Snackbar.make(rootView, "Failed to submit offer!", Snackbar.LENGTH_SHORT).show();
+                            Snackbar.make(rootView, "Failed to submit offer!, Offer already exists for this product", Snackbar.LENGTH_SHORT).show();
                         }
                     });
         });

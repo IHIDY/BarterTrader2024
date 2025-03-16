@@ -51,8 +51,8 @@ public class DetailsActivity extends AppCompatActivity {
 
         // Set up the "Offer Exchange" button
         offerExchangeButton.setOnClickListener(v -> {
-            Intent intent = new Intent(DetailsActivity.this, MyOffersActivity.class);
-            intent.putExtra("Product", product);  // You might want to pass the product to the next activity
+            Intent intent = new Intent(DetailsActivity.this, SubmitForm.class);
+            intent.putExtra("Product", product);
             startActivity(intent);
         });
         ExitButton.setOnClickListener(v -> {
