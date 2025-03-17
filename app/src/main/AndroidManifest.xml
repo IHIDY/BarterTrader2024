@@ -43,6 +43,8 @@
         <activity
             android:name=".ProviderDash"
             android:exported="true" />
+        <activity android:name=".ReceivedOfferActivity"/>
+
         <activity
             android:name=".LoginActivity"
             android:exported="false" />

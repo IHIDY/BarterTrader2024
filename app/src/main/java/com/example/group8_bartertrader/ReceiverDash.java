@@ -113,10 +113,10 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         category.setAdapter(adapter);
 
         category.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                selectedCategory = parentView.getItemAtPosition(position).toString();
-            }
+           @Override
+           public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+               selectedCategory = parentView.getItemAtPosition(position).toString();
+           }
 
             @Override
             public void onNothingSelected(AdapterView<?> parentView) {

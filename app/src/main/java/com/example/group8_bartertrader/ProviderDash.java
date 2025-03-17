@@ -44,6 +44,7 @@ public class ProviderDash extends AppCompatActivity {
 
         Button pBtn = findViewById(R.id.pBtn);
         Button postUsedProductsBtn = findViewById(R.id.postButton);
+        Button receivedOffersBtn = findViewById(R.id.button_received_offers);
 
         // Initialize Firebase Authentication
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -75,6 +76,10 @@ public class ProviderDash extends AppCompatActivity {
 
         postUsedProductsBtn.setOnClickListener(v -> {
             Intent intent = new Intent(ProviderDash.this, ProductForm.class);
+            startActivity(intent);
+        });
+        receivedOffersBtn.setOnClickListener(v ->{
+            Intent intent = new Intent(ProviderDash.this, ReceivedOfferActivity.class);
             startActivity(intent);
         });
     }
