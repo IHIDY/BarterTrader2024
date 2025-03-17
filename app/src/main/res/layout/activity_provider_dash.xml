@@ -19,9 +19,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/settingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Go to Settings"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <!-- Post Used Products Button -->
     <Button
@@ -62,7 +67,5 @@
         android:text="View your received offers"
         android:layout_gravity="center"
         tools:ignore="MissingConstraints" />
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
