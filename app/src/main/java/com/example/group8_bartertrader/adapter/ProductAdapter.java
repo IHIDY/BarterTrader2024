@@ -1,7 +1,5 @@
 package com.example.group8_bartertrader.adapter;
 
-import static androidx.core.content.ContextCompat.startActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -16,14 +14,18 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.group8_bartertrader.DetailsActivity;
 import com.example.group8_bartertrader.GoogleMapActivity;
 import com.example.group8_bartertrader.R;
 import com.example.group8_bartertrader.model.Product;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.List;
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolder> {
     private List<Product> productList;
+    private FirebaseAuth mAuth;
 
     public ProductAdapter(List<Product> productList) {
         this.productList = productList;
@@ -50,30 +52,56 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
 
         // You can also add logic for availability if needed
         boolean availability = product.isAvailable();
-//        holder.productAvailability.setText("Status: " + availability);
         holder.productAvailability.setText("Status: " + "Available");
 
-        holder.mapButton.setOnClickListener(v -> {
-            Context context = v.getContext();
-            Intent mapIntent = new Intent(context, GoogleMapActivity.class);
-            mapIntent.putExtra("itemLocation", product.getLocation());
-            context.startActivity(mapIntent);
+        holder.mapButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Context context = v.getContext();
+                if (product == null) {
+                    Toast.makeText(context, "Error: Product is null", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                String location = product.getLatLngLocation();
+                if (location == null || location.isEmpty()) {
+                    Toast.makeText(context, "Location not available", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                Intent mapIntent = new Intent(context, GoogleMapActivity.class);
+                mapIntent.putExtra("itemLocation", location.trim());
+                context.startActivity(mapIntent);
+            }
         });
 
-        holder.detailButton.setOnClickListener(v -> {
-            Context context = v.getContext();
-            Intent detailIntent = new Intent(context, DetailsActivity.class);
-            detailIntent.putExtra("Product",product);
-            context.startActivity(detailIntent);
-        });
+
+
+        // Set up button click listeners
+        setupDetailButton(holder.detailButton, product);
+
         // Log the isAvailable value
         Log.d("From Product Adapter", "Product ID: " + product.getId() + ", Availability: " + product.isAvailable());
 
     }
 
+    private void setupDetailButton(Button detailButton, Product product) {
+
+        detailButton.setOnClickListener(v -> {
+            Context context = v.getContext();
+            Intent detailIntent = new Intent(context, DetailsActivity.class);
+            detailIntent.putExtra("Product", product);
+            context.startActivity(detailIntent);
+        });
+    }
+
     @Override
     public int getItemCount() {
         return productList.size();
+    }
+
+    public void setProductList(List<Product> productList) {
+        this.productList = productList;
     }
 
     // ViewHolder class to hold references to views in the layout

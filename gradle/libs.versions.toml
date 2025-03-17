@@ -13,6 +13,7 @@ firebaseAuth = "23.1.0"
 firebaseDatabase = "21.0.0"
 uiautomator = "2.3.0"
 playServicesMaps = "19.1.0"
+espressoContrib = "3.6.1"
 
 [libraries]
 firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
@@ -30,6 +31,7 @@ firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
 uiautomator = { group = "androidx.test.uiautomator", name = "uiautomator", version.ref = "uiautomator" }
 play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
+espresso-contrib = { group = "androidx.test.espresso", name = "espresso-contrib", version.ref = "espressoContrib" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -50,7 +50,7 @@ public class MyOffersActivity extends AppCompatActivity {
 
         if (currentUser == null) {
             Toast.makeText(this, "User not logged in!", Toast.LENGTH_SHORT).show();
-            finish();
+//            finish();
             return;
         }
 
@@ -82,6 +82,10 @@ public class MyOffersActivity extends AppCompatActivity {
     }
 
     private void fetchOffersFromFirebase(String userEmail) {
+        /**
+         * According to the current user's email
+         * Fetch all the offer data that matches
+         */
         offersRef.orderByChild("receiverEmail").equalTo(userEmail).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {

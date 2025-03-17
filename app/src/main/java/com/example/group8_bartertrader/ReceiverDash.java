@@ -64,15 +64,23 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         receiverSettingBtn = findViewById(R.id.recsettingbutton);
         myOffersBtn = findViewById(R.id.myOffersButton);
         locationTextView = findViewById(R.id.locationTextView);
+        productRecyclerView = findViewById(R.id.productRecyclerView);
         category = findViewById(R.id.filterSpinner);
         keyword = findViewById(R.id.inputEditText);
         Distance = findViewById(R.id.distanceEditText);
         searchButton = findViewById(R.id.filterButton);
 
+        productList = new ArrayList<>();
+        productAdapter = new ProductAdapter(productList);
+        productRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        productRecyclerView.setAdapter(productAdapter);
+
+
         productsRef = FirebaseDatabase.getInstance().getReference("Products");
 
         locationHelper = new LocationHelper(this);
 
+        // Check and request location permissions
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
         } else {
@@ -115,14 +123,20 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
                 selectedCategory = null;
             }
         });
+
         searchButton.setOnClickListener(v -> search());
+
     }
+
 
     public void search(){
         String word = "";
         try {
             word = keyword.getText().toString().trim();
-            distance = Integer.parseInt(Distance.getText().toString().trim());
+            String temp = Distance.getText().toString().trim();
+            if(!temp.equals("")){
+                distance = Integer.parseInt(temp);
+            }
         } catch (NumberFormatException e) {
             Toast.makeText(this,"Must be number "+e.getMessage(),Toast.LENGTH_SHORT).show();
         }
@@ -137,6 +151,9 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         locationHelper.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        Intent intent = getIntent();
+        finish();
+        startActivity(intent);
     }
 
     @Override
@@ -164,7 +181,7 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
                     if (product != null) {
                         // Parse latLngLocation from the product
                         double[] productLatLng = LocationHelper.parseLatLngLocation(product.getLatLngLocation());
-                        if(category==null){
+                        if(category==null||category.equals("Select Category")){
                             if (productLatLng != null && isWithinRange(latitude, longitude, productLatLng[0], productLatLng[1],distance)&&name.contains(word)) {
                                 productList.add(product);
                             }
