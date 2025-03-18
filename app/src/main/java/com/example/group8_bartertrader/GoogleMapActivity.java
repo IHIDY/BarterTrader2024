@@ -2,21 +2,12 @@ package com.example.group8_bartertrader;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-
-public class GoogleMapActivity extends FragmentActivity implements OnMapReadyCallback{
-    GoogleMap map;
-    LatLng itemLocation;
+public class GoogleMapActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,37 +19,33 @@ public class GoogleMapActivity extends FragmentActivity implements OnMapReadyCal
         if (intent != null && intent.hasExtra("itemLocation")) {
             String locationString = intent.getStringExtra("itemLocation");
 
-            if (locationString != null && locationString.contains(",")) {
-                try {
-                    String[] location = locationString.split(",");
-                    double latitude = Double.parseDouble(location[0].trim());
-                    double longitude = Double.parseDouble(location[1].trim());
-                    itemLocation = new LatLng(latitude, longitude);
-                } catch (NumberFormatException e) {
-                    itemLocation = null;
-                    e.printStackTrace();
-                }
-            }
-        }
+            if (locationString != null && !locationString.isEmpty()) {
+                Log.d("ITEMLOCATION>>>", locationString);
 
-        // Initialize map fragment
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
-        if (mapFragment != null) {
-            mapFragment.getMapAsync(this);
+                // Open Google Maps app with a search query
+                openGoogleMapsWithSearch(locationString.trim());
+            } else {
+                Toast.makeText(this, "Location not available", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
-    @Override
-    public void onMapReady(@NonNull GoogleMap googleMap) {
-        map = googleMap;
+    private void openGoogleMapsWithSearch(String locationString) {
+        // Create a URI to search for the location
+        String uri = "geo:0,0?q=" + locationString;
 
-        if (itemLocation != null) {
-            // Add marker and move camera
-            map.addMarker(new MarkerOptions().position(itemLocation).title("Item Location"));
-            map.moveCamera(CameraUpdateFactory.newLatLngZoom(itemLocation, 15));
+        // Create an Intent to launch Google Maps with the search query
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, android.net.Uri.parse(uri));
+
+        // Check if there's an app to handle the intent
+        if (mapIntent.resolveActivity(getPackageManager()) != null) {
+            // Start the activity and open the map
+            startActivity(mapIntent);
+            Log.d("MAP_INTENT", "Google Maps launched with query: " + locationString);
         } else {
-            Toast.makeText(this, "Invalid location data", Toast.LENGTH_SHORT).show();
+            // Handle the case where no maps app is available
+            Log.e("MAP_INTENT", "No app available to handle the Google Maps intent");
+            Toast.makeText(this, "No app available to open Google Maps", Toast.LENGTH_SHORT).show();
         }
     }
 }

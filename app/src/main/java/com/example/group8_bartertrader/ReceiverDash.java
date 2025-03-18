@@ -180,7 +180,11 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
                     String name = product.getName();
                     if (product != null) {
                         // Parse latLngLocation from the product
-                        double[] productLatLng = LocationHelper.parseLatLngLocation(product.getLatLngLocation());
+//                        double[] productLatLng = LocationHelper.parseLatLngLocation(product.getLatLngLocation());
+
+                        // This is jst dummy, until it is fixed
+                        double[] productLatLng = {44.6480, -63.5750};
+
                         if(category==null||category.equals("Select Category")){
                             if (productLatLng != null && isWithinRange(latitude, longitude, productLatLng[0], productLatLng[1],distance)&&name.contains(word)) {
                                 productList.add(product);

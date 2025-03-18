@@ -4,15 +4,16 @@
     <string name="register">Register</string>
     <string name="enter_your_password">Enter your Password</string>
     <string name="EMPTY_EMAIL_ADDRESS">Empty email address</string>
-    <string name="INVALID_EMAIL_ADDRESS">Invalid email address</string>
+    <string name="INVALID_EMAIL_ADDRESS">Enter a valid email (e.g., name@example.com)..</string>
     <string name="EMAIL_IS_DUPLICATE">Duplicate email address</string>
     <string name="EMPTY_PASSWORD">Empty password</string>
-    <string name="INVALID_PASSWORD">Invalid password</string>
-    <string name="INVALID_ROLE">Invalid user role</string>
+    <string name="INVALID_PASSWORD">Invalid password, Password must be 6-30 chars, include 1 uppercase, 1 lowercase, 1 number, and 1 special char</string>
+    <string name="INVALID_ROLE">Invalid user role, Select a role</string>
     <string name="EMPTY_FNAME">Empty first name</string>
     <string name="EMPTY_LNAME">Empty last name</string>
     <string name="REGISTRATION_SUCCESSFUL">Registration successful</string>
-    <string name="REGISTRATION_FAILED">Registration failed</string>
+    <string name="REGISTRATION_FAILED">Registration Failed! - User already exists!</string>
+    <string name="NO_NETWORK">No internet connection. Please check your network.</string>
     <string-array name="offer_options">
         <item>Pending</item>
         <item>Accepted</item>

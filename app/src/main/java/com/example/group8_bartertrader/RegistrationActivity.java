@@ -4,7 +4,10 @@
 //importing necessary packages and libraries
 package com.example.group8_bartertrader;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -126,12 +129,23 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
                 });
     }
 
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (connectivityManager != null) {
+            NetworkInfo activeNetwork = connectivityManager.getActiveNetworkInfo();
+            return activeNetwork != null && activeNetwork.isConnected();
+        }
+        return false;
+    }
+
     //creating a new user
     @Override
     public void onClick(View view) {
         //if login was clicked instead
         if (view.getId() == R.id.loginBtn) {
             move2Login();
+            return;
         }
 
         //getting all user input as strings
@@ -162,6 +176,10 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         } else if (cred.isLnameEmpty(lName)) {
             setStatusMessage(getResources().getString(R.string.EMPTY_LNAME));
             showToast(getResources().getString(R.string.EMPTY_LNAME));
+        } else if (!isNetworkAvailable()) {
+            setStatusMessage(getResources().getString(R.string.NO_NETWORK));
+            showToast("No internet connection. Please check your network.");
+            return;
         } else {
             setStatusMessage(getResources().getString(R.string.REGISTRATION_SUCCESSFUL));
             mAuth.createUserWithEmailAndPassword(email, pass)
@@ -176,11 +194,17 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
 
                                 move2Login();
                             } else {
-                                showToast("Registration Failed!\n");
+                                showToast("Registration Failed! - User already exists!\n");
                                 setStatusMessage(getResources().getString(R.string.REGISTRATION_FAILED));
                             }
                         }
                     });
         }
+
+//        if (!isNetworkAvailable()) {
+//            setStatusMessage(getResources().getString(R.string.NO_NETWORK));
+//            showToast("No internet connection. Please check your network.");
+//            return;
+//        }
     }
 }

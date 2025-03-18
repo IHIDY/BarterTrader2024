@@ -50,6 +50,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Group8_bartertrader" >
         <activity
+            android:name="com.example.group8_bartertrader.provider.ProviderProductList"
+            android:exported="false" />
+        <activity
             android:name="com.example.group8_bartertrader.DetailsActivity"
             android:exported="false" />
         <activity
@@ -76,6 +79,7 @@
         <activity
             android:name="com.example.group8_bartertrader.ProviderDash"
             android:exported="true" />
+        <activity android:name="com.example.group8_bartertrader.ReceivedOfferActivity" />
         <activity
             android:name="com.example.group8_bartertrader.LoginActivity"
             android:exported="false" />

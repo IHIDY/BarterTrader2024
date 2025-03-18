@@ -63,7 +63,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
                     return;
                 }
 
-                String location = product.getLatLngLocation();
+                String location = product.getLocation();
                 if (location == null || location.isEmpty()) {
                     Toast.makeText(context, "Location not available", Toast.LENGTH_SHORT).show();
                     return;
