@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-87:12
-INJECTED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-87:12
-INJECTED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-87:12
-INJECTED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-87:12
+ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-89:12
+INJECTED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-89:12
+INJECTED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-89:12
+INJECTED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-89:12
 MERGED from [com.google.android.material:material:1.12.0] /Users/a123456/.gradle/caches/8.10.2/transforms/ee0bf381f5c5bffb71a9ec550403121f/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /Users/a123456/.gradle/caches/8.10.2/transforms/683a1a2b2f4037167bb557fbf1a19f69/transformed/constraintlayout-2.2.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /Users/a123456/.gradle/caches/8.10.2/transforms/dcc911de53e88de732feedafed820d82/transformed/jetified-appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
@@ -130,8 +130,8 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.2.0] /U
 	android:name
 		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:7:22-64
 application
-ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:9:5-85:19
-INJECTED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:9:5-85:19
+ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:9:5-87:19
+INJECTED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:9:5-87:19
 MERGED from [com.google.android.material:material:1.12.0] /Users/a123456/.gradle/caches/8.10.2/transforms/ee0bf381f5c5bffb71a9ec550403121f/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] /Users/a123456/.gradle/caches/8.10.2/transforms/ee0bf381f5c5bffb71a9ec550403121f/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /Users/a123456/.gradle/caches/8.10.2/transforms/683a1a2b2f4037167bb557fbf1a19f69/transformed/constraintlayout-2.2.0/AndroidManifest.xml:7:5-20
@@ -226,102 +226,108 @@ MERGED from [com.google.android.play:core-common:2.0.3] /Users/a123456/.gradle/c
 		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:17:9-57
 	android:dataExtractionRules
 		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:11:9-65
-activity#com.example.group8_bartertrader.DetailsActivity
+activity#com.example.group8_bartertrader.provider.ProviderProductList
 ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:19:9-21:40
 	android:exported
 		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:20:13-44
-activity#com.example.group8_bartertrader.MyOffersActivity
-ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:22:9-24:39
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:20:13-57
+activity#com.example.group8_bartertrader.DetailsActivity
+ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:22:9-24:40
 	android:exported
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:24:13-36
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:23:13-45
-activity#com.example.group8_bartertrader.SubmitForm
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:23:13-44
+activity#com.example.group8_bartertrader.MyOffersActivity
 ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:25:9-27:39
 	android:exported
 		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:27:13-36
 	android:name
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:26:13-39
-activity#com.example.group8_bartertrader.ProductForm
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:26:13-45
+activity#com.example.group8_bartertrader.SubmitForm
 ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:28:9-30:39
 	android:exported
 		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:29:13-40
-activity#com.example.group8_bartertrader.ConfirmationPage
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:29:13-39
+activity#com.example.group8_bartertrader.ProductForm
 ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:31:9-33:39
 	android:exported
 		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:33:13-36
 	android:name
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:32:13-45
-activity#com.example.group8_bartertrader.ReceiverDash
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:32:13-40
+activity#com.example.group8_bartertrader.ConfirmationPage
 ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:34:9-36:39
 	android:exported
 		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:36:13-36
 	android:name
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:35:13-41
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:35:13-45
+activity#com.example.group8_bartertrader.ReceiverDash
+ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:37:9-39:39
+	android:exported
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:39:13-36
+	android:name
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:38:13-41
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:37:9-39:70
+ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:41:9-43:71
 	android:value
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:39:13-68
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:43:13-68
 	android:name
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:38:13-58
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:42:13-58
 activity#com.example.group8_bartertrader.GoogleMapActivity
-ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:41:9-54
+ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:45:9-55
 	android:name
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:41:19-52
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:45:19-52
 activity#com.example.group8_bartertrader.ProviderDash
-ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:43:9-45:39
+ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:46:9-48:39
 	android:exported
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:45:13-36
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:48:13-36
 	android:name
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:44:13-41
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:47:13-41
 activity#com.example.group8_bartertrader.ReceivedOfferActivity
-ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:46:9-58
+ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:49:9-59
 	android:name
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:46:19-56
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:49:19-56
 activity#com.example.group8_bartertrader.LoginActivity
-ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:48:9-50:40
+ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:50:9-52:40
 	android:exported
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:50:13-37
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:52:13-37
 	android:name
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:49:13-42
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:51:13-42
 activity#com.example.group8_bartertrader.RegistrationActivity
-ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:51:9-59:20
+ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:53:9-61:20
 	android:exported
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:53:13-36
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:55:13-36
 	android:name
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:52:13-49
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:54:13-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:54:13-58:29
+ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:56:13-60:29
 action#android.intent.action.MAIN
-ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:55:17-69
+ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:57:17-69
 	android:name
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:55:25-66
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:57:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:57:17-77
+ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:59:17-77
 	android:name
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:57:27-74
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:59:27-74
 activity#com.example.group8_bartertrader.MainActivity
-ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:60:9-70:20
+ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:62:9-72:20
 	android:exported
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:62:13-36
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:64:13-36
 	android:name
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:61:13-41
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:63:13-41
 activity#com.example.group8_bartertrader.SettingsActivity
-ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:71:9-81:20
+ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:73:9-83:20
 	android:exported
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:73:13-36
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:75:13-36
 	android:name
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:72:13-45
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:74:13-45
 activity#com.example.group8_bartertrader.ResetPasswordActivity
-ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:82:9-84:39
+ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:84:9-86:39
 	android:exported
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:84:13-36
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:86:13-36
 	android:name
-		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:83:13-50
+		ADDED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:85:13-50
 uses-sdk
 INJECTED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml

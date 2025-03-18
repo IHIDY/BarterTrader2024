@@ -44,16 +44,28 @@
             android:text="Availability"
             android:textColor="@android:color/holo_purple" />
 
-        <Button
-            android:id="@+id/mapButton"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="View On Map"/>
-        <Button
-            android:id="@+id/detailButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="View Detail"/>
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:paddingTop="8dp">
+
+            <Button
+                android:id="@+id/mapButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="View On Map"/>
+
+            <Button
+                android:id="@+id/detailButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="View Detail"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>

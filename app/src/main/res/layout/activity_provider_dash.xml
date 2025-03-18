@@ -39,16 +39,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp" />
 
-    <!-- RecyclerView to display products -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/productRecyclerView"
+    <!-- View Posted Products Button -->
+    <Button
+        android:id="@+id/viewPostProducts"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
+        android:text="View Posted Products"
         app:layout_constraintTop_toBottomOf="@id/postButton"
-        app:layout_constraintBottom_toTopOf="@id/pBtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/button_received_offers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View your received offers"
+        app:layout_constraintTop_toBottomOf="@id/viewPostProducts"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
     <!-- Settings Button (Moved to the Bottom) -->
     <Button
@@ -60,12 +72,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button_received_offers"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View your received offers"
-        android:layout_gravity="center"
-        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

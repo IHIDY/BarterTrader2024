@@ -3727,6 +3727,7 @@ int id textinput_suffix_text 0x7f090215
 int id time 0x7f090216
 int id title 0x7f090217
 int id titleDividerNoCustom 0x7f090218
+int id titleText 0x7f09024a
 int id title_template 0x7f090219
 int id toggle 0x7f09021a
 int id top 0x7f09021b
@@ -3750,6 +3751,7 @@ int id up 0x7f09022c
 int id useLogo 0x7f09022d
 int id vertical 0x7f09022e
 int id vertical_only 0x7f09022f
+int id viewPostProducts 0x7f09024b
 int id view_offset_helper 0x7f090230
 int id view_transition 0x7f090231
 int id view_tree_lifecycle_owner 0x7f090232
@@ -3892,6 +3894,7 @@ int layout activity_my_offers 0x7f0c0021
 int layout activity_offer_details 0x7f0c007c
 int layout activity_product_form 0x7f0c0022
 int layout activity_provider_dash 0x7f0c0023
+int layout activity_provider_product_list 0x7f0c007f
 int layout activity_received_offers 0x7f0c007d
 int layout activity_receiver_dash 0x7f0c0024
 int layout activity_registration 0x7f0c0025
