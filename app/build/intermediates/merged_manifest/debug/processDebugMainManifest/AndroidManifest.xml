@@ -76,6 +76,7 @@
         <activity
             android:name="com.example.group8_bartertrader.ProviderDash"
             android:exported="true" />
+        <activity android:name="com.example.group8_bartertrader.ReceivedOfferActivity" />
         <activity
             android:name="com.example.group8_bartertrader.LoginActivity"
             android:exported="false" />

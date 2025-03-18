@@ -77,6 +77,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array offer_options
 array spinner_items
 attr SharedValue
 attr SharedValueId
@@ -3201,6 +3202,7 @@ id TOP_END
 id TOP_START
 id above
 id accelerate
+id acceptButton
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -3296,6 +3298,7 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id buttonPanel
+id button_received_offers
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3344,6 +3347,7 @@ id dashboardTitle
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
+id declineButton
 id decor_content_parent
 id default_activity_button
 id deltaRelative
@@ -3587,6 +3591,7 @@ id position
 id postButton
 id postLayout
 id pressed
+id prodName
 id productAvailability
 id productCategory
 id productCondition
@@ -3600,11 +3605,13 @@ id progress_horizontal
 id providerEmail
 id radio
 id ratio
+id receivedOffersRecyclerView
 id recsettingbutton
 id rectangles
 id regBtn
 id report_drawn
 id resetPasswordButton
+id respondToOfferSpinner
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3637,6 +3644,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id settingsButton
 id settings_title
 id sharedValueSet
 id sharedValueUnset
@@ -3694,6 +3702,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id targetProdName
 id targetProductCategory
 id targetProductDescription
 id targetProductLocation
@@ -3881,8 +3890,10 @@ layout activity_google_map
 layout activity_login
 layout activity_main
 layout activity_my_offers
+layout activity_offer_details
 layout activity_product_form
 layout activity_provider_dash
+layout activity_received_offers
 layout activity_receiver_dash
 layout activity_registration
 layout activity_settings
@@ -3966,6 +3977,7 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 layout offer_item
 layout product_item
+layout provider_offer_item
 layout reset_password
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
@@ -3983,6 +3995,7 @@ string EMPTY_PASSWORD
 string INVALID_EMAIL_ADDRESS
 string INVALID_PASSWORD
 string INVALID_ROLE
+string NO_NETWORK
 string REGISTRATION_FAILED
 string REGISTRATION_SUCCESSFUL
 string abc_action_bar_home_description

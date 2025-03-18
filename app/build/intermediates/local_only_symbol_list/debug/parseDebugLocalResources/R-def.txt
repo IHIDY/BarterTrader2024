@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+array offer_options
 array spinner_items
 color black
 color white
@@ -8,14 +9,17 @@ drawable ic_launcher_foreground
 id ExitButton
 id LogOutButton
 id OfferExchangeButton
+id acceptButton
 id activity_settings
 id backButton
+id button_received_offers
 id changeRoleBtn
 id confirmEmailBtn
 id confirmEmailLabel
 id confirmEmailTextView
 id confirmPasswordEditText
 id dashboardTitle
+id declineButton
 id detailButton
 id detailsContainerGL
 id distanceEditText
@@ -40,6 +44,7 @@ id newPasswordEditText
 id pBtn
 id pass
 id postButton
+id prodName
 id productAvailability
 id productCategory
 id productCondition
@@ -49,15 +54,19 @@ id productLocation
 id productName
 id productRecyclerView
 id providerEmail
+id receivedOffersRecyclerView
 id recsettingbutton
 id regBtn
 id resetPasswordButton
+id respondToOfferSpinner
 id roleSelect
+id settingsButton
 id settings_title
 id status
 id statusLabel
 id submitEmailButton
 id submitProduct
+id targetProdName
 id targetProductCategory
 id targetProductDescription
 id targetProductLocation
@@ -69,14 +78,17 @@ layout activity_google_map
 layout activity_login
 layout activity_main
 layout activity_my_offers
+layout activity_offer_details
 layout activity_product_form
 layout activity_provider_dash
+layout activity_received_offers
 layout activity_receiver_dash
 layout activity_registration
 layout activity_settings
 layout new_password_form_page
 layout offer_item
 layout product_item
+layout provider_offer_item
 layout reset_password
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -88,6 +100,7 @@ string EMPTY_PASSWORD
 string INVALID_EMAIL_ADDRESS
 string INVALID_PASSWORD
 string INVALID_ROLE
+string NO_NETWORK
 string REGISTRATION_FAILED
 string REGISTRATION_SUCCESSFUL
 string app_name
