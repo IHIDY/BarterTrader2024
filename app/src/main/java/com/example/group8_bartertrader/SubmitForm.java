@@ -53,7 +53,7 @@ public class SubmitForm extends AppCompatActivity {
         productDescription = findViewById(R.id.productDescription);
         submitButton = findViewById(R.id.submitProduct);
         backButton = findViewById(R.id.backButton);
-        getLocationButton = findViewById(R.id.getLocationButton);
+//        getLocationButton = findViewById(R.id.getLocationButton);
 
         // Initialize FirebaseAuth FirebaseDatabase SubmitHelper
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);

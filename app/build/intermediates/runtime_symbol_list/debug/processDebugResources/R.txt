@@ -3418,7 +3418,6 @@ int id forfield 0x7f0900e5
 int id fragment_container_view_tag 0x7f0900e6
 int id frost 0x7f0900e7
 int id fullscreen_header 0x7f0900e8
-int id getLocationButton 0x7f0900e9
 int id ghost_view 0x7f0900ea
 int id ghost_view_holder 0x7f0900eb
 int id gone 0x7f0900ec
