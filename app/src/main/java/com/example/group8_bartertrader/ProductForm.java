@@ -1,14 +1,7 @@
 package com.example.group8_bartertrader;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
-import android.location.Address;
-import android.location.Geocoder;
-import android.location.Location;
 import android.os.Bundle;
-import android.os.Handler;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -18,32 +11,24 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
-import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.location.LocationServices;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class ProductForm extends AppCompatActivity {
 
     private EditText productName, productLocation, productDescription;
     private Spinner productCategory, productCondition;
-    private Button submitButton, backButton, getLocationButton;
+    private Button submitButton, backButton;
     private DatabaseReference databaseReference;
     private String selectedCategory, selectedCondition;
-    private FusedLocationProviderClient fusedLocationClient;
-    private String address = "";
-    private String latLng = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,16 +42,12 @@ public class ProductForm extends AppCompatActivity {
         productDescription = findViewById(R.id.productDescription);
         submitButton = findViewById(R.id.submitProduct);
         backButton = findViewById(R.id.backButton);
-        getLocationButton = findViewById(R.id.getLocationButton);
-
-        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
         setupSpinners();
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Products");
         submitButton.setOnClickListener(v -> submitProduct());
         backButton.setOnClickListener(v -> onBackPressed());
-        getLocationButton.setOnClickListener(v -> getCurrentLocation(this::handleLocationResult));
     }
 
     private void setupSpinners() {
@@ -109,9 +90,10 @@ public class ProductForm extends AppCompatActivity {
         String category = selectedCategory;
         String description = productDescription.getText().toString().trim();
         String condition = selectedCondition;
+        String location = productLocation.getText().toString().trim().toUpperCase();
 
         if (TextUtils.isEmpty(name) || TextUtils.isEmpty(category) || TextUtils.isEmpty(description)
-                || TextUtils.isEmpty(address) || TextUtils.isEmpty(condition)) {
+                || TextUtils.isEmpty(location) || TextUtils.isEmpty(condition)) {
             Snackbar.make(submitButton, "All fields are required", Snackbar.LENGTH_SHORT).show();
             return;
         }
@@ -126,8 +108,7 @@ public class ProductForm extends AppCompatActivity {
         productData.put("name", name);
         productData.put("category", category);
         productData.put("condition", condition);
-        productData.put("location", address);
-        productData.put("latLngLocation", latLng);
+        productData.put("location", location); // Location field is now a custom string
         productData.put("description", description);
         productData.put("isAvailable", true);
         productData.put("datePosted", formattedDate);
@@ -135,48 +116,11 @@ public class ProductForm extends AppCompatActivity {
 
         databaseReference.child(productId).setValue(productData).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
-                Log.d("Product Form", "Product posted successfully");
                 Snackbar.make(submitButton, "Product posted successfully", Snackbar.LENGTH_SHORT).show();
-                // Add a 2-second delay before calling finish()
-                new Handler().postDelayed(() -> finish(), 2000);  // 2000 ms = 2 seconds
+                finish();
             } else {
-                Log.d("Product Form", "Failed to post product");
                 Snackbar.make(submitButton, "Failed to post product", Snackbar.LENGTH_SHORT).show();
             }
         });
-    }
-
-    private void getCurrentLocation(LocationCallback callback) {
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 100);
-            return;
-        }
-
-        fusedLocationClient.getLastLocation().addOnSuccessListener(this, location -> {
-            if (location != null) {
-                callback.onLocationReceived(location);
-            } else {
-                Snackbar.make(getLocationButton, "Unable to get location", Snackbar.LENGTH_SHORT).show();
-            }
-        });
-    }
-
-    private void handleLocationResult(Location location) {
-        Geocoder geocoder = new Geocoder(this);
-        try {
-            List<Address> addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
-            if (!addresses.isEmpty()) {
-                address = addresses.get(0).getAddressLine(0);
-                productLocation.setText(address);
-                latLng = location.getLatitude() + "," + location.getLongitude();
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-            Snackbar.make(getLocationButton, "Unable to get address", Snackbar.LENGTH_SHORT).show();
-        }
-    }
-
-    interface LocationCallback {
-        void onLocationReceived(Location location);
     }
 }

@@ -53,16 +53,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Get Current Location Button -->
-    <Button
-        android:id="@+id/getLocationButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Get Current Location"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@id/productLocation"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+<!--    &lt;!&ndash; Get Current Location Button &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/getLocationButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Get Current Location"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/productLocation"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
 
     <!-- Product Description -->
     <EditText
@@ -73,7 +73,7 @@
         android:inputType="textMultiLine"
         android:minHeight="100dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/getLocationButton"
+        app:layout_constraintTop_toBottomOf="@id/productLocation"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
