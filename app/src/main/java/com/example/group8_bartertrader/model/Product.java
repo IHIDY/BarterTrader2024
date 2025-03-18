@@ -14,7 +14,6 @@ public class Product implements Serializable {
     private String description;
     private String category;
     private boolean isAvailable;
-    private String latLngLocation;
     private String location;
     private String condition;
     private long postDate;
@@ -24,14 +23,13 @@ public class Product implements Serializable {
 
     // Constructor to initialize all fields
     public Product(String id, String email, String name, String description, String category,
-                   boolean isAvailable, String latLngLocation, String location, String condition, long postDate) {
+                   boolean isAvailable, String location, String condition, long postDate) {
         this.id = id;
         this.email = email;
         this.name = name;
         this.description = description;
         this.category = category;
         this.isAvailable = isAvailable;
-        this.latLngLocation = latLngLocation;
         this.location = location;
         this.condition = condition;
         this.postDate = postDate;
@@ -55,9 +53,6 @@ public class Product implements Serializable {
 
     public boolean isAvailable() { return isAvailable; }
     public void setAvailable(boolean available) { isAvailable = available; }
-
-    public String getLatLngLocation() { return latLngLocation; }
-    public void setLatLngLocation(String latLngLocation) { this.latLngLocation = latLngLocation; }
 
     public String getLocation() { return location; }
     public void setLocation(String location) { this.location = location; }

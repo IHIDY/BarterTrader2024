@@ -90,7 +90,7 @@ public class ProductForm extends AppCompatActivity {
         String category = selectedCategory;
         String description = productDescription.getText().toString().trim();
         String condition = selectedCondition;
-        String location = productLocation.getText().toString().trim();
+        String location = productLocation.getText().toString().trim().toUpperCase();
 
         if (TextUtils.isEmpty(name) || TextUtils.isEmpty(category) || TextUtils.isEmpty(description)
                 || TextUtils.isEmpty(location) || TextUtils.isEmpty(condition)) {

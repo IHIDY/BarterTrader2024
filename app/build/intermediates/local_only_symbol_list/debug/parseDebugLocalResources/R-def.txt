@@ -59,7 +59,6 @@ id regBtn
 id resetPasswordButton
 id respondToOfferSpinner
 id roleSelect
-id settingsButton
 id settings_title
 id status
 id statusLabel

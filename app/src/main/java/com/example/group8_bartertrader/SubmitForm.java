@@ -53,7 +53,6 @@ public class SubmitForm extends AppCompatActivity {
         productDescription = findViewById(R.id.productDescription);
         submitButton = findViewById(R.id.submitProduct);
         backButton = findViewById(R.id.backButton);
-//        getLocationButton = findViewById(R.id.getLocationButton);
 
         // Initialize FirebaseAuth FirebaseDatabase SubmitHelper
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
@@ -85,7 +84,7 @@ public class SubmitForm extends AppCompatActivity {
             String category = selectedCategory;
             String description = productDescription.getText().toString().trim();
             String currentUserEmail = mAuth.getCurrentUser().getEmail();
-            String location = productLocation.getText().toString().trim();
+            String location = productLocation.getText().toString().trim().toUpperCase();
 
             submitHelper.submitOffer(name, category, description, location, currentUserEmail,
                     "testProduct123", "Test Product", "Electronics", "Test Description", "New York",
