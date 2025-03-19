@@ -4,7 +4,7 @@
             "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-43:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/ee0bf381f5c5bffb71a9ec550403121f/transformed/material-1.12.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/jae/.gradle/caches/8.10.2/transforms/ee0bf381f5c5bffb71a9ec550403121f/transformed/material-1.12.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,5,9,13,16,19,22,25,28,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/45765a2b17cfdd5ca7cdbb643a7a2cba/transformed/appcompat-1.7.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/jae/.gradle/caches/8.10.2/transforms/45765a2b17cfdd5ca7cdbb643a7a2cba/transformed/appcompat-1.7.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -34,7 +34,7 @@
                     }
                 },
                 {
-                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/3d0a43fa61e3c70c00dbbe11ac5c29ce/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/jae/.gradle/caches/8.10.2/transforms/3d0a43fa61e3c70c00dbbe11ac5c29ce/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

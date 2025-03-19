@@ -160,7 +160,7 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
     public void onLocationFetched(double latitude, double longitude) {
         this.latitude=latitude;
         this.longitude=longitude;
-        locationTextView.setText("Lat: " + latitude + ", Long: " + longitude);
+        locationTextView.setText(LocationHelper.getCityName(latitude, longitude));
         fetchProductsFromFirebase(RADIUS,null,"");
     }
 
