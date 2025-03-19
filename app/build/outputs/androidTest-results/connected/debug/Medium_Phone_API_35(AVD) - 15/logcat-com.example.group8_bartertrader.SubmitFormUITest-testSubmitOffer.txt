@@ -1,0 +1,350 @@
+03-19 16:01:28.731  7120  7137 I TestRunner: started: testSubmitOffer(com.example.group8_bartertrader.SubmitFormUITest)
+03-19 16:01:28.741  7120  7137 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+03-19 16:01:28.761   575  1747 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@eafb7fd5 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+03-19 16:01:28.782  1592  1592 E adservices: Encryption key fetch job is disabled, skip scheduling.
+03-19 16:01:28.799  1115  1115 W SplitSelectStateCtor: Missing session instanceIds
+03-19 16:01:28.799  1115  1115 D StatsLog: LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
+03-19 16:01:28.815  1115  1115 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=13, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }
+03-19 16:01:28.878  1592  1845 W adservices: Skip logging because Cobalt logger is null
+03-19 16:01:28.900   404   404 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+03-19 16:01:28.920  1115  1544 D EGL_emulation: app_time_stats: avg=1740.90ms min=528.77ms max=2953.03ms count=2
+03-19 16:01:28.930  7120  7120 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+03-19 16:01:28.978  7120  7120 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@2033d58 in: PRE_ON_CREATE
+03-19 16:01:28.978  7120  7120 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+03-19 16:01:29.055  7120  7120 D CompatChangeReporter: Compat change id reported: 309578419; UID 10215; state: ENABLED
+03-19 16:01:29.106  7120  7148 D TrafficStats: tagSocket(120) with statsTag=0x8001, statsUid=-1
+03-19 16:01:29.124  1115  1544 D EGL_emulation: app_time_stats: avg=740441.56ms min=102.29ms max=1480781.00ms count=2
+03-19 16:01:29.146  1115  1115 D VRI[NexusLauncherActivity]: visibilityChanged oldVisibility=true newVisibility=false
+03-19 16:01:29.152  1115  1115 D NexusLauncherModelDelegate: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+03-19 16:01:29.172  7120  7120 W p8_bartertrader: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+03-19 16:01:29.193   850   985 D EGL_emulation: app_time_stats: avg=29046.05ms min=29046.05ms max=29046.05ms count=1
+03-19 16:01:29.209  1566  1566 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+03-19 16:01:29.210  1566  1566 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+03-19 16:01:29.214  7120  7138 I FA      : Tag Manager is not found and thus will not be used
+03-19 16:01:29.225  7120  7120 D CompatChangeReporter: Compat change id reported: 63938206; UID 10215; state: ENABLED
+03-19 16:01:29.276  7120  7120 D CompatChangeReporter: Compat change id reported: 303326708; UID 10215; state: ENABLED
+03-19 16:01:29.376  7120  7120 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@2033d58 in: CREATED
+03-19 16:01:29.376  7120  7120 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.group8_bartertrader.SubmitForm@2033d58
+03-19 16:01:29.382  7120  7120 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@2033d58 in: STARTED
+03-19 16:01:29.383  7120  7120 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.group8_bartertrader.SubmitForm@2033d58
+03-19 16:01:29.397  7120  7120 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@2033d58 in: RESUMED
+03-19 16:01:29.397  7120  7120 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.group8_bartertrader.SubmitForm@2033d58
+03-19 16:01:29.405  7120  7120 W HWUI    : Unknown dataspace 0
+03-19 16:01:29.477   404  1018 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10215 pid=0
+03-19 16:01:29.477   404  1018 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10215 => denied (369 us)
+03-19 16:01:29.478   404  1018 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10215 pid=0
+03-19 16:01:29.478   404  1018 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10215 => denied (409 us)
+03-19 16:01:29.478   404   488 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10215 pid=7120
+03-19 16:01:29.478   404  1018 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10215 pid=0
+03-19 16:01:29.478   404   488 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10215 => denied (219 us)
+03-19 16:01:29.478   404  1018 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10215 => denied (240 us)
+03-19 16:01:29.482  7120  7143 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+03-19 16:01:29.482  7120  7143 I EGL_emulation: Opening libGLESv2_emulation.so
+03-19 16:01:29.502  7120  7159 D TrafficStats: tagSocket(129) with statsTag=0xffffffff, statsUid=-1
+03-19 16:01:29.529  7120  7143 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+03-19 16:01:29.530  7120  7143 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+03-19 16:01:29.550   161   161 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+03-19 16:01:29.550  7120  7143 I Gralloc4: mapper 4.x is not supported
+03-19 16:01:29.655   575  1745 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10215 pid=0
+03-19 16:01:29.655   575  1745 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10215 => denied (159 us)
+03-19 16:01:29.655   575  1745 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10215 pid=0
+03-19 16:01:29.655   575  1745 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10215 => denied (76 us)
+03-19 16:01:29.655   575  1745 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10215 pid=0
+03-19 16:01:29.656   575  1745 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10215 => denied (547 us)
+03-19 16:01:29.663   575   626 W ziparchive: Unable to open '/data/app/~~XPBY1Etatypukm2mIlHKVw==/com.example.group8_bartertrader-H5rVJfp2O-wsyZkkrSWQog==/base.dm': No such file or directory
+03-19 16:01:29.673   575   626 I ActivityTaskManager: Displayed com.example.group8_bartertrader/.SubmitForm for user 0: +904ms
+03-19 16:01:29.673   850   963 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@c7384c6
+03-19 16:01:29.673   575  1747 W InputManager-JNI: Input channel object '312b4c1 Splash Screen com.example.group8_bartertrader (client)' was disposed without first being removed with the input manager!
+03-19 16:01:29.675  1115  1115 D BaseDepthController: setSurface:
+03-19 16:01:29.675  1115  1115 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+03-19 16:01:29.675  1115  1115 D BaseDepthController: 	mSurface: null
+03-19 16:01:29.675  1115  1115 D BaseDepthController: mSurface is null and mCurrentBlur is: 0
+03-19 16:01:29.678  1115  1115 D StateManager: goToState - fromState: Normal, toState: Normal, partial trace:
+03-19 16:01:29.678  1115  1115 D StateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:4)
+03-19 16:01:29.678  1115  1115 D StateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:1)
+03-19 16:01:29.678  1115  1115 D StateManager: 	at com.android.launcher3.statemanager.StatefulActivity.onStop(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:34)
+03-19 16:01:29.683  1115  1115 D StatsLog: LAUNCHER_ONSTOP
+03-19 16:01:29.686  1115  1115 D StatsLog: LAUNCHER_GOOGLE_SEARCH_RESTORE_LIST_SIZE_AFTER_ACTIVITY_RESTART
+03-19 16:01:29.689  1115  1698 D OneSearchSuggestProvider: Shut down the binder channel
+03-19 16:01:29.713   575   720 I ImeTracker: com.example.group8_bartertrader:af6f5644: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+03-19 16:01:29.713   575   720 I ImeTracker: com.example.group8_bartertrader:af6f5644: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-19 16:01:29.720  7120  7137 I FirebaseAuth: Logging in as testreset@gmail.com with empty reCAPTCHA token
+03-19 16:01:29.727  7120  7148 W System  : Ignoring header X-Firebase-Locale because its value was null.
+03-19 16:01:29.755  1299  1299 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157
+03-19 16:01:29.765  1566  7172 D AdvertisingIdClient: AdvertisingIdClient already created.
+03-19 16:01:29.765  1566  7172 D AdvertisingIdClient: AdvertisingIdClient is not bounded. Starting to bind it...
+03-19 16:01:29.774  1299  1299 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+03-19 16:01:29.774  1566  7172 D AdvertisingIdClient: AdvertisingIdClient is bounded
+03-19 16:01:29.775  1299  1299 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.example.group8_bartertrader, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+03-19 16:01:29.776  1299  1299 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+03-19 16:01:29.780  1299  1299 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password, password
+03-19 16:01:29.785  7120  7148 D TrafficStats: tagSocket(149) with statsTag=0xffffffff, statsUid=-1
+03-19 16:01:29.786  1566  7172 I AdvertisingIdClient: shouldSendLog 337149
+03-19 16:01:29.792  1566  7172 I AdvertisingIdClient: GetInfoInternal elapse 17ms
+03-19 16:01:29.808  1566  1566 I AdvertisingIdClient: getting error as 17: API: ClientTelemetry.API is not available on this device. Connection failed with: ConnectionResult{statusCode=API_DISABLED_FOR_CONNECTION, resolution=null, message=null}
+03-19 16:01:29.908  1095  1107 I FontLog : (REDACTED) Received query %s, URI %s
+03-19 16:01:29.910  1095  1107 I FontLog : (REDACTED) Query [%s] resolved to %s
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: Error inserting flex_time=0 job_id=-1 period=2000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=250832000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1742410889893 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:974)
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:814)
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1981)
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1875)
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: 	at dreu.d(:com.google.android.gms@250832035@25.08.32 (260400-731361394):727)
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: 	at drcl.n(:com.google.android.gms@250832035@25.08.32 (260400-731361394):29)
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: 	at drcl.u(:com.google.android.gms@250832035@25.08.32 (260400-731361394):364)
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: 	at drcl.h(:com.google.android.gms@250832035@25.08.32 (260400-731361394):51)
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: 	at dqxa.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):72)
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: 	at atim.c(:com.google.android.gms@250832035@25.08.32 (260400-731361394):50)
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: 	at atim.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):97)
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: 	at atnz.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):8)
+03-19 16:01:29.912  1095  6845 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+03-19 16:01:29.912  7120  7124 I p8_bartertrader: Compiler allocated 4206KB to compile void android.widget.TextView.<init>(android.content.Context, android.util.AttributeSet, int, int)
+03-19 16:01:29.916  1095  1107 I FontLog : (REDACTED) Fetch %s end status %s
+03-19 16:01:29.919  1095  1980 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: Error inserting flex_time=9000 job_id=-1 period=20000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=250832000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1742410889904 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:974)
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:814)
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1981)
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1875)
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: 	at dreu.d(:com.google.android.gms@250832035@25.08.32 (260400-731361394):727)
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: 	at drcl.n(:com.google.android.gms@250832035@25.08.32 (260400-731361394):29)
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: 	at drcl.u(:com.google.android.gms@250832035@25.08.32 (260400-731361394):364)
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: 	at drcl.h(:com.google.android.gms@250832035@25.08.32 (260400-731361394):51)
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: 	at dqxa.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):72)
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: 	at atim.c(:com.google.android.gms@250832035@25.08.32 (260400-731361394):50)
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: 	at atim.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):97)
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: 	at atnz.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):8)
+03-19 16:01:29.919  1095  6845 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: Error inserting flex_time=9000 job_id=-1 period=20000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=250832000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1742410889921 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:974)
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:814)
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1981)
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1875)
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: 	at dreu.d(:com.google.android.gms@250832035@25.08.32 (260400-731361394):727)
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: 	at drcl.n(:com.google.android.gms@250832035@25.08.32 (260400-731361394):29)
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: 	at drcl.u(:com.google.android.gms@250832035@25.08.32 (260400-731361394):364)
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: 	at drcl.h(:com.google.android.gms@250832035@25.08.32 (260400-731361394):51)
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: 	at dqxa.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):72)
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: 	at atim.c(:com.google.android.gms@250832035@25.08.32 (260400-731361394):50)
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: 	at atim.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):76)
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: 	at atnz.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):8)
+03-19 16:01:29.921  1095  6845 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+03-19 16:01:29.930  1095  1980 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+03-19 16:01:29.936  1498  3901 I Finsky  : [159] arcf.L(185): Package com.google.android.gms is verified.
+03-19 16:01:29.946  1566  7172 W FA-SVC  : Service response is missing Install Referrer install timestamp
+03-19 16:01:29.951  1498  1498 I Finsky  : [2] zhu.onTrimMemory(11): Memory trim requested to level 40
+03-19 16:01:29.953  1498  1498 I Finsky  : [2] adua.accept(139): Flushing in-memory image cache
+03-19 16:01:30.059  7120  7148 W System  : Ignoring header X-Firebase-Locale because its value was null.
+03-19 16:01:30.178  7120  7148 D FirebaseAuth: Notifying id token listeners about user ( TXImQm98VlUgP7vwEb6X5K6gyju2 ).
+03-19 16:01:30.178  7120  7148 D FirebaseAuth: Notifying auth state listeners about user ( TXImQm98VlUgP7vwEb6X5K6gyju2 ).
+03-19 16:01:30.180  7120  7120 D FirebaseTest: Test user signed in: testreset@gmail.com
+03-19 16:01:30.186  7120  7124 I p8_bartertrader: Compiler allocated 5250KB to compile void android.view.ViewRootImpl.performTraversals()
+03-19 16:01:32.669   575   761 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-19 16:01:32.670   575   761 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-19 16:01:32.670   575   761 D InetDiagMessage: Destroyed live tcp sockets for uids={10091} in 3ms
+03-19 16:01:32.726  7120  7137 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+03-19 16:01:32.733   575  1745 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@eafb7fd5 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+03-19 16:01:32.778  7120  7120 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@2033d58 in: PAUSED
+03-19 16:01:32.778  7120  7120 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.group8_bartertrader.SubmitForm@2033d58
+03-19 16:01:32.778  7120  7120 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity=com.example.group8_bartertrader.SubmitForm@2033d58
+03-19 16:01:32.783   404   404 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+03-19 16:01:32.804  7120  7120 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@36484cf in: PRE_ON_CREATE
+03-19 16:01:32.804  7120  7120 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity.getIntent()=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity=com.example.group8_bartertrader.SubmitForm@36484cf
+03-19 16:01:32.804  7120  7120 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: Error inserting flex_time=7000 job_id=-1 period=15000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=250832000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1742410892840 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:974)
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:814)
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1981)
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1875)
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: 	at dreu.d(:com.google.android.gms@250832035@25.08.32 (260400-731361394):727)
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: 	at drcl.n(:com.google.android.gms@250832035@25.08.32 (260400-731361394):29)
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: 	at drcl.u(:com.google.android.gms@250832035@25.08.32 (260400-731361394):364)
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: 	at drcl.h(:com.google.android.gms@250832035@25.08.32 (260400-731361394):51)
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: 	at dqxa.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):72)
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: 	at atim.c(:com.google.android.gms@250832035@25.08.32 (260400-731361394):50)
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: 	at atim.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):76)
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: 	at atnz.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):8)
+03-19 16:01:32.841  1095  6845 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+03-19 16:01:32.846  7120  7120 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@36484cf in: CREATED
+03-19 16:01:32.846  7120  7120 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity.getIntent()=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity=com.example.group8_bartertrader.SubmitForm@36484cf
+03-19 16:01:32.847  7120  7120 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.group8_bartertrader.SubmitForm@36484cf
+03-19 16:01:32.848  7120  7120 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@36484cf in: STARTED
+03-19 16:01:32.849  7120  7120 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity.getIntent()=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity=com.example.group8_bartertrader.SubmitForm@36484cf
+03-19 16:01:32.849  7120  7120 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.group8_bartertrader.SubmitForm@36484cf
+03-19 16:01:32.850  7120  7120 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@36484cf in: RESUMED
+03-19 16:01:32.850  7120  7120 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity.getIntent()=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity=com.example.group8_bartertrader.SubmitForm@36484cf
+03-19 16:01:32.850  7120  7120 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.group8_bartertrader.SubmitForm@36484cf
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: Error inserting flex_time=7000 job_id=-1 period=15000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=250832000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1742410892877 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:974)
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:814)
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1981)
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1875)
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: 	at dreu.d(:com.google.android.gms@250832035@25.08.32 (260400-731361394):727)
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: 	at drcl.n(:com.google.android.gms@250832035@25.08.32 (260400-731361394):29)
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: 	at drcl.u(:com.google.android.gms@250832035@25.08.32 (260400-731361394):364)
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: 	at drcl.h(:com.google.android.gms@250832035@25.08.32 (260400-731361394):51)
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: 	at dqxa.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):72)
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: 	at atim.c(:com.google.android.gms@250832035@25.08.32 (260400-731361394):50)
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: 	at atim.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):76)
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: 	at atnz.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):8)
+03-19 16:01:32.879  1095  7021 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+03-19 16:01:32.888   850   985 D EGL_emulation: app_time_stats: avg=921.19ms min=6.40ms max=3149.25ms count=4
+03-19 16:01:32.899   575   626 I ActivityTaskManager: Displayed com.example.group8_bartertrader/.SubmitForm for user 0: +169ms
+03-19 16:01:32.906  7120  7120 D VRI[SubmitForm]: visibilityChanged oldVisibility=true newVisibility=false
+03-19 16:01:32.911  7120  7143 D EGL_emulation: app_time_stats: avg=814.36ms min=9.32ms max=3191.36ms count=4
+03-19 16:01:32.926   850   963 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@d365a67
+03-19 16:01:32.927   575  1842 W InputManager-JNI: Input channel object '90c27e5 Splash Screen com.example.group8_bartertrader (client)' was disposed without first being removed with the input manager!
+03-19 16:01:32.930   575   720 I ImeTracker: com.example.group8_bartertrader:8031df46: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+03-19 16:01:32.930   575   720 I ImeTracker: com.example.group8_bartertrader:8031df46: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-19 16:01:32.933  1299  1299 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157
+03-19 16:01:32.936  1299  1299 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+03-19 16:01:32.936  1299  1299 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.example.group8_bartertrader, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+03-19 16:01:32.937  1299  1299 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+03-19 16:01:32.937  1299  1299 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password, password
+03-19 16:01:32.944  7120  7120 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@2033d58 in: STOPPED
+03-19 16:01:32.944  7120  7120 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.example.group8_bartertrader.SubmitForm@2033d58
+03-19 16:01:32.944  7120  7120 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity=com.example.group8_bartertrader.SubmitForm@2033d58
+03-19 16:01:32.948  7120  7120 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SubmitForm@2033d58 in: DESTROYED
+03-19 16:01:32.948  7120  7120 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+03-19 16:01:32.948  7120  7120 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm (has extras) }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SubmitForm }, activity=com.example.group8_bartertrader.SubmitForm@2033d58
+03-19 16:01:32.948  7120  7120 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@3b021e5
+03-19 16:01:32.953   575  1842 W InputManager-JNI: Input channel object '9c89eee com.example.group8_bartertrader/com.example.group8_bartertrader.SubmitForm (client)' was disposed without first being removed with the input manager!
+03-19 16:01:32.966  7120  7137 W SurfaceComposerClient: Sync transaction timed out waiting for commit callback.
+03-19 16:01:32.969  7120  7137 I UiAutomation: Initialized for user 0 on display 0
+03-19 16:01:32.992  1393  2845 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+03-19 16:01:32.992   575   575 W IPCThreadState: Sending oneway calls to frozen process.
+03-19 16:01:32.994  1393  1609 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+03-19 16:01:32.994  1393  1609 I AiAiEcho: EchoTargets:
+03-19 16:01:32.994  1393  1609 I AiAiEcho: Filtered by AiAi flag check:
+03-19 16:01:32.994  1393  1609 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+03-19 16:01:32.994  1393  1609 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+03-19 16:01:32.995  1393  1609 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+03-19 16:01:32.995  1393  1609 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+03-19 16:01:32.995  1393  1609 I AiAiEcho: EchoTargets:
+03-19 16:01:32.995  1393  1609 I AiAiEcho: Filtered by AiAi flag check:
+03-19 16:01:32.995  1393  1609 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+03-19 16:01:32.995  1393  1609 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+03-19 16:01:32.995  1393  1609 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+03-19 16:01:32.995  1393  1609 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+03-19 16:01:32.995  1393  1609 I AiAiEcho: EchoTargets:
+03-19 16:01:32.995  1393  1609 I AiAiEcho: Filtered by AiAi flag check:
+03-19 16:01:32.995  1393  1609 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+03-19 16:01:32.995  1393  1609 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+03-19 16:01:32.995  1393  1609 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+03-19 16:01:32.997  1393  1609 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+03-19 16:01:32.998  1393  1609 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+03-19 16:01:32.999  1393  1609 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+03-19 16:01:33.006   575   575 W IPCThreadState: Sending oneway calls to frozen process.
+03-19 16:01:33.007  1115  1115 D SsBaseTemplateCard: No text view can be set up
+03-19 16:01:33.010  1115  1115 D SsBaseTemplateCard: Passed-in item info is null
+03-19 16:01:33.010  1115  1115 D SsBaseTemplateCard: Passed-in item info is null
+03-19 16:01:33.010  1115  1115 D SsBaseTemplateCard: Passed-in item info is null
+03-19 16:01:33.010  1115  1115 I SsBaseTemplateCard: Secondary card pane is null
+03-19 16:01:33.011   850   850 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+03-19 16:01:33.012   850   850 D SsMediaDataProvider: Forwarding Smartspace updates []
+03-19 16:01:33.018   575   575 W IPCThreadState: Sending oneway calls to frozen process.
+03-19 16:01:33.019   575   575 W IPCThreadState: Sending oneway calls to frozen process.
+03-19 16:01:33.019   575   575 W IPCThreadState: Sending oneway calls to frozen process.
+03-19 16:01:33.019   575   575 W IPCThreadState: Sending oneway calls to frozen process.
+03-19 16:01:33.094  7120  7137 W FileTestStorage: Output properties is not supported.
+03-19 16:01:33.094  7120  7137 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+03-19 16:01:33.106  7120  7137 D EventInjectionStrategy: Creating injection strategy with input manager.
+03-19 16:01:33.106  7120  7137 W p8_bartertrader: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (unsupported, reflection, allowed)
+03-19 16:01:33.107  7120  7137 W p8_bartertrader: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (unsupported, reflection, allowed)
+03-19 16:01:33.107  7120  7137 W p8_bartertrader: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (unsupported, reflection, allowed)
+03-19 16:01:33.113  7120  7120 W p8_bartertrader: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (unsupported, reflection, allowed)
+03-19 16:01:33.113  7120  7120 W p8_bartertrader: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (unsupported, reflection, allowed)
+03-19 16:01:33.113  7120  7120 W p8_bartertrader: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (unsupported, reflection, allowed)
+03-19 16:01:33.116  1525  1866 I A       : NGA enabled in interactor.
+03-19 16:01:33.118  7120  7120 I ViewInteraction: Performing 'replace text(Test Offer Item 2)' action on view view.getId() is <2131296670/com.example.group8_bartertrader:id/productName>
+03-19 16:01:33.119  1525  1866 I A       : NGA enabled in interactor.
+03-19 16:01:33.137  1299  1299 W AndroidSpellCheckerService: AndroidSpellCheckerService.initialize():73 initialize...
+03-19 16:01:33.137  1299  1299 I ShortcutsDataManager: ShortcutsDataManager.onContentChanged():72 onContentChanged()
+03-19 16:01:33.137  1299  1299 I ContactsDataManager: ContactsDataManager.onContentChanged():159 onContentChanged()
+03-19 16:01:33.137  1299  1299 W AndroidSpellCheckerService: AndroidSpellCheckerService.initialize():83 initialize...done
+03-19 16:01:33.142  1299  2191 I AndroidSpellCheckerService: AndroidSpellCheckerService.createSession():139 com.google.android.keyboard.client.delight5.LanguageIdentifier@18b59ec is created
+03-19 16:01:33.146  7120  7120 I AssistStructure: Flattened final assist data: 2540 bytes, containing 1 windows, 11 views
+03-19 16:01:33.148  7120  7120 I ViewInteraction: Performing 'close keyboard' action on view view.getId() is <2131296670/com.example.group8_bartertrader:id/productName>
+03-19 16:01:33.150  7120  7120 D IdlingRegistry: Registering idling resources: [androidx.test.espresso.action.CloseKeyboardAction$CloseKeyboardIdlingResult@ae53e2f]
+03-19 16:01:33.152  7120  7120 I ImeTracker: com.example.group8_bartertrader:7ee1a07f: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+03-19 16:01:33.154   575   720 I ImeTracker: com.example.group8_bartertrader:7ee1a07f: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-19 16:01:33.457  7120  7120 D IdlingRegistry: Unregistering idling resources: [androidx.test.espresso.action.CloseKeyboardAction$CloseKeyboardIdlingResult@ae53e2f]
+03-19 16:01:33.460  7120  7120 I ViewInteraction: Performing 'replace text(Test Offer Description 2)' action on view view.getId() is <2131296667/com.example.group8_bartertrader:id/productDescription>
+03-19 16:01:33.468  1299  2191 I AndroidSpellCheckerService: AndroidSpellCheckerService.createSession():139 com.google.android.keyboard.client.delight5.LanguageIdentifier@973f04a is created
+03-19 16:01:33.470  7120  7120 I ViewInteraction: Performing 'close keyboard' action on view view.getId() is <2131296667/com.example.group8_bartertrader:id/productDescription>
+03-19 16:01:33.471  7120  7120 D IdlingRegistry: Registering idling resources: [androidx.test.espresso.action.CloseKeyboardAction$CloseKeyboardIdlingResult@56a028]
+03-19 16:01:33.471  7120  7120 I ImeTracker: com.example.group8_bartertrader:2738345e: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+03-19 16:01:33.472   575   720 I ImeTracker: com.example.group8_bartertrader:2738345e: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-19 16:01:33.774  7120  7120 D IdlingRegistry: Unregistering idling resources: [androidx.test.espresso.action.CloseKeyboardAction$CloseKeyboardIdlingResult@56a028]
+03-19 16:01:33.776  7120  7137 W p8_bartertrader: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (unsupported, reflection, allowed)
+03-19 16:01:33.779  7120  7120 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296665/com.example.group8_bartertrader:id/productCategory>
+03-19 16:01:33.918  7120  7143 D EGL_emulation: app_time_stats: avg=90.41ms min=0.95ms max=350.75ms count=11
+03-19 16:01:33.938  7120  7213 D ProfileInstaller: Installing profile for com.example.group8_bartertrader
+03-19 16:01:34.156  7120  7120 I ViewInteraction: Performing 'single click' action on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Electronics"
+03-19 16:01:34.280   398   398 D audioserver: logFgsApiBegin: FGS Logger Transaction failed, -129
+03-19 16:01:34.281   575  1745 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 15
+03-19 16:01:34.433  7120  7120 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@a64dcbe
+03-19 16:01:34.437   575  1656 W InputManager-JNI: Input channel object '4f7e9f6 PopupWindow:6937bc3 (client)' was disposed without first being removed with the input manager!
+03-19 16:01:34.441   575   720 I ImeTracker: com.example.group8_bartertrader:d489764c: onRequestHide at ORIGIN_SERVER reason HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR fromUser false
+03-19 16:01:34.441   575   720 I ImeTracker: com.example.group8_bartertrader:d489764c: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-19 16:01:34.443  1299  1299 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157
+03-19 16:01:34.444  1299  1299 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+03-19 16:01:34.446  1299  1299 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.example.group8_bartertrader, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+03-19 16:01:34.446  1299  1299 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+03-19 16:01:34.447  1299  1299 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password, password
+03-19 16:01:34.448  1299  1299 I ShortcutsDataManager: AbstractContentDataManager.startImportContentTask():240 startImportContentTask()
+03-19 16:01:34.452  1299  1881 I ShortcutsDataManager: AbstractContentDataManager$ImportContentTask.doInBackground():255 doInBackground()
+03-19 16:01:34.453  1299  1881 I PersonalDictionaryDataHandler: PersonalDictionaryDataHandler.beginProcess():114 LanguageTags = [en-US]
+03-19 16:01:34.471   398   510 D AudioFlinger: mixer(0xb4000073f25f68e0) throttle end: throttle time(32)
+03-19 16:01:34.496  1299  1881 I ShortcutsDataManager: AbstractContentDataManager.importRecords():345 importRecords() : Success : Count = 0
+03-19 16:01:34.501  1299  1881 I ShortcutsDataManager: AbstractContentDataManager.importContentData():295 importContentData() : Ending import process
+03-19 16:01:34.530  1299  1881 I PersonalLanguageModelUpdater: PersonalLanguageModelUpdater$UpdateOperation.performInternal():165 run() : Added 0 words and 0 shortcuts
+03-19 16:01:34.530  1299  1881 I DynamicLanguageModelOperation: DynamicLanguageModelOperation.perform():43 perform() : 4 : dxm : Completed
+03-19 16:01:34.535  1299  1299 I ShortcutsDataManager: AbstractContentDataManager$ImportContentTask.onPostExecute():266 onPostExecute() : Result = [2,0]
+03-19 16:01:34.535  1299  1299 I ShortcutsDataManager: ShortcutsDataManager.onImportFinished():82 onImportFinished() : Result = 2 : Count = 0
+03-19 16:01:34.536  7120  7120 I ViewInteraction: Performing 'replace text(Dalhousie University)' action on view view.getId() is <2131296669/com.example.group8_bartertrader:id/productLocation>
+03-19 16:01:34.541  1299  2191 I AndroidSpellCheckerService: AndroidSpellCheckerService.createSession():139 com.google.android.keyboard.client.delight5.LanguageIdentifier@908c716 is created
+03-19 16:01:34.552  7120  7120 I ViewInteraction: Performing 'close keyboard' action on view view.getId() is <2131296669/com.example.group8_bartertrader:id/productLocation>
+03-19 16:01:34.554  7120  7120 D IdlingRegistry: Registering idling resources: [androidx.test.espresso.action.CloseKeyboardAction$CloseKeyboardIdlingResult@13cb4e8]
+03-19 16:01:34.556  7120  7120 I ImeTracker: com.example.group8_bartertrader:50b8f609: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+03-19 16:01:34.557   575   720 I ImeTracker: com.example.group8_bartertrader:50b8f609: onCancelled at PHASE_SERVER_SHOULD_HIDE
+03-19 16:01:34.584   398   510 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+03-19 16:01:34.859  7120  7120 D IdlingRegistry: Unregistering idling resources: [androidx.test.espresso.action.CloseKeyboardAction$CloseKeyboardIdlingResult@13cb4e8]
+03-19 16:01:34.862  7120  7120 I ViewInteraction: Performing 'Wait for 1000 milliseconds.' action on view view.getRootView() to equal view
+03-19 16:01:35.875  7120  7120 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296756/com.example.group8_bartertrader:id/submitProduct>
+03-19 16:01:35.909  7120  7143 D EGL_emulation: app_time_stats: avg=394.36ms min=16.01ms max=1355.18ms count=5
+03-19 16:01:35.924   398   788 D audioserver: logFgsApiBegin: FGS Logger Transaction failed, -129
+03-19 16:01:35.924   575  1656 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 15
+03-19 16:01:36.073  7120  7120 E SubmitHelper: Offer already exists for this product.
+03-19 16:01:36.147   398   510 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+03-19 16:01:36.171   575   761 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+03-19 16:01:36.172   575   761 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+03-19 16:01:36.172   575   761 D InetDiagMessage: Destroyed live tcp sockets for uids={10102} in 3ms
+03-19 16:01:36.191  7120  7120 I ViewInteraction: Performing 'Wait for 1000 milliseconds.' action on view view.getRootView() to equal view
+03-19 16:01:37.200  7120  7120 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296728/com.example.group8_bartertrader:id/snackbar_text>
+03-19 16:01:37.203  7120  7137 I TestRunner: finished: testSubmitOffer(com.example.group8_bartertrader.SubmitFormUITest)

@@ -41,7 +41,11 @@ public class SubmitHelper {
             if (task.getResult().exists()) {
                 for (DataSnapshot snapshot : task.getResult().getChildren()) {
                     String existingTargetId = snapshot.child("targetItemId").getValue(String.class);
-                    if (existingTargetId != null && existingTargetId.equals(targetProductId)) {
+                    String existingReceiverEmail = snapshot.child("receiverEmail").getValue(String.class);
+
+                    // Check the receiverEmail and targetItemId
+                    if (existingTargetId != null && existingTargetId.equals(targetProductId) &&
+                            existingReceiverEmail != null && existingReceiverEmail.equals(currentUserEmail)) {
                         alreadySubmitted = true;
                         break;
                     }

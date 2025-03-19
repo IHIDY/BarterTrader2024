@@ -21,6 +21,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
@@ -33,7 +34,7 @@ import java.util.List;
 public class SubmitForm extends AppCompatActivity {
     private EditText productName, productLocation, productDescription;
     private Spinner productCategory;
-    private Button submitButton, backButton, getLocationButton;
+    private Button submitButton, backButton;
     private String selectedCategory;
     private FusedLocationProviderClient fusedLocationClient;
     private String providerEmail;
@@ -45,6 +46,14 @@ public class SubmitForm extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_form);
+
+        // Get all the info from Intent
+        Intent intent = getIntent();
+        String targetProductId = intent.getStringExtra("productId");
+        String targetProductName = intent.getStringExtra("productName");
+        String targetProductCategory = intent.getStringExtra("productCategory");
+        String targetProductLocation = intent.getStringExtra("productLocation");
+        String targetProductDescription = intent.getStringExtra("productDescription");
 
         // Get all the UI Element
         productName = findViewById(R.id.productName);
@@ -87,7 +96,7 @@ public class SubmitForm extends AppCompatActivity {
             String location = productLocation.getText().toString().trim().toUpperCase();
 
             submitHelper.submitOffer(name, category, description, location, currentUserEmail,
-                    "testProduct123", "Test Product", "Electronics", "Test Description", "New York",
+                    targetProductId, targetProductName, targetProductCategory, targetProductDescription, targetProductLocation,
                     success -> {
                         View rootView = findViewById(android.R.id.content);
                         if (success) {
@@ -100,35 +109,6 @@ public class SubmitForm extends AppCompatActivity {
 
         // Set up the BackButton
         backButton.setOnClickListener(v -> onBackPressed());
-
-        // Set up the getLocationButton
-        getLocationButton.setOnClickListener(v -> getCurrentLocation(location -> {
-            if (location != null) {
-                Geocoder geocoder = new Geocoder(this);
-                try {
-                    List<Address> addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
-                    if (!addresses.isEmpty()) {
-                        String address = addresses.get(0).getAddressLine(0);
-                        productLocation.setText(address);
-                    }
-                } catch (IOException e) {
-                    e.printStackTrace();
-                    Toast.makeText(SubmitForm.this, "Unable to get address", Toast.LENGTH_SHORT).show();
-                }
-            }
-        }));
     }
 
-    // Set up the Mock Location
-    private void getCurrentLocation(LocationCallback callback) {
-        productLocation.setText("123 Fake Street, Faketown, FK 12345");
-        Location fakeLocation = new Location("dummyprovider");
-        fakeLocation.setLatitude(37.7749);
-        fakeLocation.setLongitude(-122.4194);
-        callback.onLocationReceived(fakeLocation);
-    }
-
-    interface LocationCallback {
-        void onLocationReceived(Location location);
-    }
 }

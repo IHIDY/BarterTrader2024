@@ -61,12 +61,11 @@ public class SubmitFormUITest {
 
         // Set up the Mock Intent
         Intent intent = new Intent(ApplicationProvider.getApplicationContext(), SubmitForm.class);
-        intent.putExtra("productId", "test123");
+        intent.putExtra("productId", "test456");
         intent.putExtra("productName", "Test Product");
         intent.putExtra("productCategory", "Electronics");
         intent.putExtra("productLocation", "New York");
         intent.putExtra("productDescription", "Test Description");
-        intent.putExtra("providerEmail", "provider@test.com");
 
         scenario = ActivityScenario.launch(intent);
 
@@ -91,21 +90,22 @@ public class SubmitFormUITest {
             assertNotNull(activity.getIntent().getStringExtra("productCategory"));
             assertNotNull(activity.getIntent().getStringExtra("productLocation"));
             assertNotNull(activity.getIntent().getStringExtra("productDescription"));
-            assertNotNull(activity.getIntent().getStringExtra("providerEmail"));
         });
 
         // Enter the test info
-        onView(withId(R.id.productName)).perform(replaceText("Test Offer Item"), closeSoftKeyboard());
-        onView(withId(R.id.productDescription)).perform(replaceText("Test Offer Description"), closeSoftKeyboard());
+        onView(withId(R.id.productName)).perform(replaceText("Test Offer Item 2"), closeSoftKeyboard());
+        onView(withId(R.id.productDescription)).perform(replaceText("Test Offer Description 2"), closeSoftKeyboard());
 
         onView(withId(R.id.productCategory)).perform(click());
         onView(withText("Electronics")).perform(click());
-        onView(withId(R.id.getLocationButton)).perform(click());
+        onView(withId(R.id.productLocation)).perform(replaceText("Dalhousie University"), closeSoftKeyboard());
+
 
         // Click the submit button
-        onView(isRoot()).perform(waitFor(3000));
+        onView(isRoot()).perform(waitFor(1000));
         onView(withId(R.id.submitProduct)).perform(click());
 
+        onView(isRoot()).perform(waitFor(1000));
         // Make sure the snackbar message about the submission result is displayed
         onView(withId(com.google.android.material.R.id.snackbar_text))
                 .check(matches(isDisplayed()));
@@ -120,21 +120,21 @@ public class SubmitFormUITest {
             assertNotNull(activity.getIntent().getStringExtra("productCategory"));
             assertNotNull(activity.getIntent().getStringExtra("productLocation"));
             assertNotNull(activity.getIntent().getStringExtra("productDescription"));
-            assertNotNull(activity.getIntent().getStringExtra("providerEmail"));
         });
 
         // Enter the test info
-        onView(withId(R.id.productName)).perform(replaceText("Test Offer Item"), closeSoftKeyboard());
-        onView(withId(R.id.productDescription)).perform(replaceText("Test Offer Description"), closeSoftKeyboard());
+        onView(withId(R.id.productName)).perform(replaceText("Test Offer Item 2"), closeSoftKeyboard());
+        onView(withId(R.id.productDescription)).perform(replaceText("Test Offer Description 2"), closeSoftKeyboard());
 
         onView(withId(R.id.productCategory)).perform(click());
         onView(withText("Electronics")).perform(click());
-        onView(withId(R.id.getLocationButton)).perform(click());
 
         // Click the submit button
-        onView(isRoot()).perform(waitFor(3000));
+        onView(isRoot()).perform(waitFor(1000));
         onView(withId(R.id.submitProduct)).perform(click());
+        onView(withId(R.id.productLocation)).perform(replaceText("Dalhousie University"), closeSoftKeyboard());
 
+        onView(isRoot()).perform(waitFor(1000));
         // Make sure the snackbar message about the submission result is displayed
         onView(withId(com.google.android.material.R.id.snackbar_text))
                 .check(matches(withText("Failed to submit offer!")));
