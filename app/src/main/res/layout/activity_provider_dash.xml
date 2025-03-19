@@ -13,18 +13,17 @@
         android:id="@+id/dashboardTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="Provider Dashboard"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button_received_offers"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="12dp" />
 
 
     <!-- Post Used Products Button -->
-
-    <!-- RecyclerView to display products -->
 
     <Button
         android:id="@+id/postButton"

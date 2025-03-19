@@ -1,3 +1,0 @@
-com.example.group8_bartertrader.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme
