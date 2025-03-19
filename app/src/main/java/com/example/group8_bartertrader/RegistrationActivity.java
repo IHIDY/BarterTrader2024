@@ -1,7 +1,7 @@
-//Reference Link = https://www.geeksforgeeks.org/user-authentication-using-firebase-in-android/ -->
-//Author = Ella Morais, B00926808
-
-//importing necessary packages and libraries
+// Reference Link = https://www.geeksforgeeks.org/user-authentication-using-firebase-in-android/
+// Author = Ella Morais, B00926808
+//
+// Importing necessary packages and libraries
 package com.example.group8_bartertrader;
 
 import android.content.Context;
@@ -19,18 +19,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class RegistrationActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button loginBtn; // Login Button
+    private Button loginBtn;
     private FirebaseAuth mAuth;
     private DatabaseReference databaseReference;
     CredentialsValidator cred;
@@ -53,12 +49,8 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
 
     public void loadRoleSpin() {
         Spinner role = findViewById(R.id.roleSelect);
-
         String[] items = new String[]{"Select your Role", "Provider", "Receiver"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_spinner_dropdown_item,
-                items);
-
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
         role.setAdapter(adapter);
     }
 
@@ -108,23 +100,19 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
 
     protected void setStatusMessage(String message) {
         TextView statusLabel = findViewById(R.id.statusLabel);
-        statusLabel.post(()-> statusLabel.setText(message.trim()));
+        statusLabel.post(() -> statusLabel.setText(message.trim()));
     }
 
     protected void saveCreds(String uid, String email, String pass, String role, String fname, String lname) {
         User user = new User(email, pass, role, fname, lname);
-
         databaseReference.child(uid).setValue(user)
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()) {
-                            Log.d("Success", "User Saved to Database");
-                            Toast.makeText(getApplicationContext(), "User data saved to database!", Toast.LENGTH_SHORT).show();
-                        } else {
-                            Log.d("Error", "User not saved to database");
-                            Toast.makeText(getApplicationContext(), "User data failed to save!", Toast.LENGTH_SHORT).show();
-                        }
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        Log.d("Success", "User Saved to Database");
+                        Toast.makeText(getApplicationContext(), "User data saved to database!", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Log.d("Error", "User not saved to database");
+                        Toast.makeText(getApplicationContext(), "User data failed to save!", Toast.LENGTH_SHORT).show();
                     }
                 });
     }
@@ -142,13 +130,11 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
     //creating a new user
     @Override
     public void onClick(View view) {
-        //if login was clicked instead
         if (view.getId() == R.id.loginBtn) {
             move2Login();
             return;
         }
 
-        //getting all user input as strings
         String email = getEmail();
         String pass = getPassword();
         String role = getRole();
@@ -165,8 +151,10 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
             setStatusMessage(getResources().getString(R.string.EMPTY_PASSWORD));
             showToast(getResources().getString(R.string.EMPTY_PASSWORD));
         } else if (!cred.isValidPass(pass)) {
-            setStatusMessage(getResources().getString(R.string.INVALID_PASSWORD));
-            showToast(getResources().getString(R.string.INVALID_PASSWORD));
+            String passwordRequirements = "Password must be at least 8 characters long and include a mix of uppercase, lowercase, numbers, and special characters.";
+            setStatusMessage(passwordRequirements);
+            showToast(passwordRequirements);
+
         } else if (!cred.isValidRole(role) || role.equals("Select your Role")) {
             setStatusMessage(getResources().getString(R.string.INVALID_ROLE));
             showToast(getResources().getString(R.string.INVALID_ROLE));
