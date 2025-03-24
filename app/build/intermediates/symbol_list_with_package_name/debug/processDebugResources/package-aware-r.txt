@@ -3404,6 +3404,7 @@ id fill_vertical
 id filled
 id filterButton
 id filterLayout
+id filterLayout2
 id filterSpinner
 id fitCenter
 id fitEnd
@@ -3897,6 +3898,7 @@ layout activity_provider_product_list
 layout activity_received_offers
 layout activity_receiver_dash
 layout activity_registration
+layout activity_search
 layout activity_settings
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row

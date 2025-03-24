@@ -28,6 +28,7 @@ id emailEditText
 id fName
 id filterButton
 id filterLayout
+id filterLayout2
 id filterSpinner
 id forfield
 id iOffer
@@ -59,6 +60,7 @@ id regBtn
 id resetPasswordButton
 id respondToOfferSpinner
 id roleSelect
+id search_button
 id settings_title
 id status
 id statusLabel
@@ -85,6 +87,7 @@ layout activity_provider_product_list
 layout activity_received_offers
 layout activity_receiver_dash
 layout activity_registration
+layout activity_search
 layout activity_settings
 layout new_password_form_page
 layout offer_item

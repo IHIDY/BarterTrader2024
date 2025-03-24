@@ -26,6 +26,9 @@
             android:name=".MyOffersActivity"
             android:exported="true" />
         <activity
+            android:name=".SearchProductActivity"
+            android:exported="true" />
+        <activity
             android:name=".SubmitForm"
             android:exported="true" />
         <activity
