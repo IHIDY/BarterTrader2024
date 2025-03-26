@@ -41,6 +41,7 @@ public class SubmitForm extends AppCompatActivity {
     FirebaseAuth mAuth;
     DatabaseReference databaseReference;
     SubmitHelper submitHelper; // Subimt Helper we use for interacting with backend
+    String targetProductId, targetProductName, targetProductCategory, targetProductLocation, targetProductDescription;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,11 +50,13 @@ public class SubmitForm extends AppCompatActivity {
 
         // Get all the info from Intent
         Intent intent = getIntent();
-        String targetProductId = intent.getStringExtra("productId");
-        String targetProductName = intent.getStringExtra("productName");
-        String targetProductCategory = intent.getStringExtra("productCategory");
-        String targetProductLocation = intent.getStringExtra("productLocation");
-        String targetProductDescription = intent.getStringExtra("productDescription");
+        targetProductId = intent.getStringExtra("productId");
+        targetProductName = intent.getStringExtra("productName");
+        targetProductCategory = intent.getStringExtra("productCategory");
+        targetProductLocation = intent.getStringExtra("productLocation");
+        targetProductDescription = intent.getStringExtra("productDescription");
+
+        System.out.println(targetProductName);
 
         // Get all the UI Element
         productName = findViewById(R.id.productName);

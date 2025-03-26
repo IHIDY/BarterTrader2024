@@ -97,305 +97,306 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb758ab1-1104-45f3-8618-25349e59be1e" name="Changes" comment="androidmanifest.xml update">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/group8_bartertrader/SearchProductActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibs$BundleAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibs$EspressoLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibs$ExtLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibs$FirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleFirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleGmsGooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleGmsPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibs$GooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibs$MapPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibs$PluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibs$VersionAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$BundleAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$EspressoLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$ExtLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$FirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleFirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleGmsGooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleGmsPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$MapPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$VersionAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/metadata.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/sources/org/gradle/accessors/dm/LibrariesForLibs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/33d388d44a4a385f260f085ee7c162422ab9255c/sources/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/489afb4719698494b4e63c5da4adc612a963c75c/metadata.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/489afb4719698494b4e63c5da4adc612a963c75c/metadata.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibs$BundleAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibs$EspressoLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibs$ExtLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibs$FirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleFirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleGmsGooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleGmsPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibs$GooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibs$MapPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibs$PluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibs$VersionAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$BundleAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$EspressoLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$ExtLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$FirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleFirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleGmsGooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleGmsPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$MapPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$VersionAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/metadata.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/sources/org/gradle/accessors/dm/LibrariesForLibs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/6c3ad7e032aecbdb918945789735765dae4b4c31/sources/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibs$BundleAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibs$EspressoLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibs$ExtLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibs$FirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleFirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleGmsGooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleGmsPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibs$GooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibs$MapPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibs$PluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibs$VersionAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$BundleAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$EspressoLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$ExtLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$FirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleFirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleGmsGooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleGmsPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$MapPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$VersionAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/metadata.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/sources/org/gradle/accessors/dm/LibrariesForLibs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/8df7020e297c7c1fbc2b1c3fa13f4e01d3e675e8/sources/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibs$BundleAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibs$EspressoLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibs$ExtLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibs$FirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleFirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleGmsGooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleGmsPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibs$GooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibs$PlayLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibs$PlayServicesLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibs$PluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibs$VersionAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$BundleAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$EspressoLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$ExtLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$FirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleFirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleGmsGooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleGmsPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PlayLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PlayServicesLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$VersionAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/metadata.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/sources/org/gradle/accessors/dm/LibrariesForLibs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b-e8cb5072-19e8-460b-a320-da1780b99b04/sources/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibs$BundleAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibs$EspressoLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibs$ExtLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibs$FirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleFirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleGmsGooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleGmsPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibs$GooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibs$PlayLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibs$PlayServicesLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibs$PluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibs$VersionAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$BundleAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$EspressoLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$ExtLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$FirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleFirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleGmsGooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleGmsPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PlayLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PlayServicesLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$VersionAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/metadata.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/sources/org/gradle/accessors/dm/LibrariesForLibs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/ca6e7927e34c0dae24c40e19ace785511a54d16b/sources/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibs$BundleAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibs$EspressoLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibs$ExtLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibs$FirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleFirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleGmsGooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleGmsPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibs$GooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibs$PluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibs$VersionAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$BundleAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$EspressoLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$ExtLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$FirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleFirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleGmsGooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleGmsPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$VersionAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/metadata.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/sources/org/gradle/accessors/dm/LibrariesForLibs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-77ba91e6-ab82-4703-b67c-6a17a59b5c17/sources/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibs$BundleAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibs$EspressoLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibs$ExtLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibs$FirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleFirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleGmsGooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleGmsPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibs$GooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibs$PluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibs$VersionAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$BundleAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$EspressoLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$ExtLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$FirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleFirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleGmsGooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleGmsPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$VersionAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/metadata.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/sources/org/gradle/accessors/dm/LibrariesForLibs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf-a8270d8e-4723-416a-b117-2e09f4705273/sources/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibs$BundleAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibs$EspressoLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibs$ExtLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibs$FirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleFirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleGmsGooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleGmsPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibs$GooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibs$PluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibs$VersionAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$BundleAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$EspressoLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$ExtLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$FirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleFirebaseLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleGmsGooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleGmsPluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleLibraryAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GooglePluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PluginAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$VersionAccessors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/metadata.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/sources/org/gradle/accessors/dm/LibrariesForLibs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/f93cac667669af91f7ef20f3f879c249227e8bcf/sources/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/res/processDebugGoogleServices/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/res/processDebugGoogleServices/values/values.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/apk/debug/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/apk/debug/output-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/app_metadata/debug/writeDebugAppMetadata/app-metadata.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/app_metadata/debug/writeDebugAppMetadata/app-metadata.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compatible_screen_manifest/debug/createDebugCompatibleScreenManifests/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compatible_screen_manifest/debug/createDebugCompatibleScreenManifests/output-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/processDebugResources/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/processDebugResources/R.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_0/graph.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_0/graph.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_1/graph.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_1/graph.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_10/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_11/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_12/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_13/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_14/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_15/graph.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_2/graph.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_2/graph.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_3/graph.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_3/graph.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_2f615121992c33c272cf1d462d5b0886c59a1eecda86ccbc0f3abae7e37ae822_bucket_0/graph.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_2f615121992c33c272cf1d462d5b0886c59a1eecda86ccbc0f3abae7e37ae822_bucket_1/graph.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_2f615121992c33c272cf1d462d5b0886c59a1eecda86ccbc0f3abae7e37ae822_bucket_2/graph.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_2f615121992c33c272cf1d462d5b0886c59a1eecda86ccbc0f3abae7e37ae822_bucket_3/graph.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_4/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_5/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_6/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_7/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_8/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_9/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_10b14c43462cf24fb32499fecee15f44842dfcf97e150a6fdb3b1bd77041a27b_bucket_0/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_10b14c43462cf24fb32499fecee15f44842dfcf97e150a6fdb3b1bd77041a27b_bucket_1/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_10b14c43462cf24fb32499fecee15f44842dfcf97e150a6fdb3b1bd77041a27b_bucket_10/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_10b14c43462cf24fb32499fecee15f44842dfcf97e150a6fdb3b1bd77041a27b_bucket_11/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_10b14c43462cf24fb32499fecee15f44842dfcf97e150a6fdb3b1bd77041a27b_bucket_12/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_10b14c43462cf24fb32499fecee15f44842dfcf97e150a6fdb3b1bd77041a27b_bucket_13/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_10b14c43462cf24fb32499fecee15f44842dfcf97e150a6fdb3b1bd77041a27b_bucket_14/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_10b14c43462cf24fb32499fecee15f44842dfcf97e150a6fdb3b1bd77041a27b_bucket_15/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_10b14c43462cf24fb32499fecee15f44842dfcf97e150a6fdb3b1bd77041a27b_bucket_2/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_10b14c43462cf24fb32499fecee15f44842dfcf97e150a6fdb3b1bd77041a27b_bucket_3/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_10b14c43462cf24fb32499fecee15f44842dfcf97e150a6fdb3b1bd77041a27b_bucket_4/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_10b14c43462cf24fb32499fecee15f44842dfcf97e150a6fdb3b1bd77041a27b_bucket_5/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_10b14c43462cf24fb32499fecee15f44842dfcf97e150a6fdb3b1bd77041a27b_bucket_6/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_10b14c43462cf24fb32499fecee15f44842dfcf97e150a6fdb3b1bd77041a27b_bucket_7/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_10b14c43462cf24fb32499fecee15f44842dfcf97e150a6fdb3b1bd77041a27b_bucket_8/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_10b14c43462cf24fb32499fecee15f44842dfcf97e150a6fdb3b1bd77041a27b_bucket_9/graph.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/dexBuilderDebug/out" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/dexBuilderDebug/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex_number_of_buckets_file/debug/dexBuilderDebug/out" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex_number_of_buckets_file/debug/dexBuilderDebug/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+FKLiXe2xmFMMsiAS25hA6WMZPE=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+WI3i1xRSCoL1l8cfFTFW2LKOGM=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+f8WDoYYpvFq0PWryE41MIDEDZU=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/0A8YoRAj_ITl7xGgo2rHR29eodw=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/12nM2bwGbcTvnPcJWOCbvfndhZI=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/1V3fTx_fJyBNjGBqA5eDPZXgmKg=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/1jt1OY+ZE7dLBqDtt7RhQ+_6HLI=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/1knGBDvnkXoIOO+G1Eca15cxrjc=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/2E4Zhoqb6pBXzXIUHBLnkarcy6U=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/2GnE1_tHFtMM3xEaarFMvDcjfXE=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/2W72aUcsB_GgjtjuRFxGPXdJ4Y8=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/2XNOn9ryCkqi8giUsyHfU78Vjnw=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/3rKTWc3SSMP5nA4Owf_uraXEJiw=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/43paj1AdAcJzKdtkOz+Mz+EsEnU=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/48PWy8n5KHnkg125Xn2JzeWUvmk=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/4Npou2__JE2EmuFi76YbwUwwEzw=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/6Q5xYbbI_8tYx4G1d40KTTE2blc=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/6xZELwnDoxA0OrKYYDkIVfJb0r0=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/8yPsH0WRN_pGYdFhKtnwhobyl3w=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/9+NPRFEGGL8PAjh_erIb30GRv3w=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/9IGI_1Be7KymjxmsXNdiJi4IHVQ=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/9sQbPr43KI5hWENOpAmwtg9FokM=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/AC5ARAPfLpeby4T_FvrX7xrD31g=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Au2iUdOwEqXu98j2qY49l8Kd_jM=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/B+luGVmk6+R2WjKxZqaeA8895F8=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/BUEuCNTFN1EFeN1iw3ynFxoq0vQ=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/BicTe27kzH3Oyq0LfWhriTf87So=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/CNlnRKhIJ_eM89MNPrL6mIfIJkE=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Cw4lKHN0+ZmV59CKWC33UnW98Dg=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/DT7LqAwy+f3nDvAxJo_pz9JqZoY=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/DUoqyLwNXuGtZ9xlHSAjG+cBzNI=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/D_gC7rkOIDjrMFipRBcyOhZdzvg=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Do1syoglH++pGJLSQ7BPXEehsFs=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Dq7Dwe8TsABELj9Gh5Oc_+UGxJU=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/E6aVt7zTS0KJFFFTXT_CYJqJwjU=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/EA_wanfBwyEjUcIxJWP7h9KRK7I=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/EZYUgwwW68CBwSsBzWNllMqmmwI=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/EZZIdJQxbTiNMEnoUPz5Zisr37E=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/EfapBLivWUSclb4wsqa6QOv2LXE=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/F_nLVptbgEYebfldUm+lGRzLIgo=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/GUhpUOCLNLfpcLaXzowytBM24_k=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/GVHo_Om+5FbVm1A6LnR2gYvQSbA=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/HkyeMXBBciVOxH3lhy_aFTMHX_g=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/IWcs4UswpotbD9TA8mDCuRa9UYQ=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/LX7JIs+baCpBTBHc4vPn8zi_UqQ=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Mz5YLJu0jUrKMxTcs+yTyHpE_b8=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/N5MsPfrSA9lfIPd45L_WCL8YAaE=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/OnIZm_PRrW9jNKXX9jnaCKUqX4U=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/PQrt+SfGobSPXFQWUD9_MHz2s8E=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Q1RMca9fhTmAGgR41kvxfHnd8zI=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Q2qJ_TzTRIj4qg8f+nmGfRH+Ya0=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Q2zkLbNw+JwTBPFOigSHcMtcgXA=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Qj5gZW5M1UpfK+H8p5uMWI9f9kI=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/SMbK9I3wCLJUhVIchXvU2xKsC6M=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/SnvhqjG211+kzgGiiPQfhp5Cy20=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/T+G0WIGnx23r2QQ1+ooGDDTvbxU=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/TSfO9bEkTcT+S2e9qJu5afZkcls=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/TuysRDulplkeNWReRZ0g8CCdkmg=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/V9xF31SNgG2GwKrAYFGj8rEvJQ4=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/VJLjZrjqjZgg4UlzSD7UgWfQGE0=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/WqvKnLjoAN8Hd2qN_TfWR1Dhb04=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/XNT+KjyYv0fbxG5N0Khvnh7rHYo=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/YPpZ_Y2KmLRaGUQNE1hS5K8Bp0c=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/YUaJUjEaDZ9FopEXe+EimmNOrGI=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ZY_TRzwc1M68Ce7Nf8FLuD0RsFc=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/aLPtzhMkGKx7cM0JbQHPZRTQuoY=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/aRtYNJIZDz8nUGRT97z88e6mZ6o=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/bGDd4O4jfkA_72keEy6s6eIHEoc=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/c3ztZbKHjgqiJGkCNVuX+pPzkbI=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/cbBBFfHTCVNRYQv4WGRFNjOES5g=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/clgpi12J2lx0jx8ZUTul2YZhZKI=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/d3z5TKPu0EA0nkx2_H3QvsM8kBw=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/dav6W8cKvJqAM2Sr7ggNlaZWsn4=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/dn0yBDe1cIOyD+1Ce0AWO71ZNyQ=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/dtozBT12iDwPJENT8OorKmnzaTo=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/eHSJ0G7wCWPIMJdOUgNapj1VZDk=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ebOFmmSnXCX_Wyyr81V70Qws0nw=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ecKKWk4Yo0Kkag0Avgd0IagDs90=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ep4UsWeZlkrU5HJj6gdE3mUAsLI=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/f6Nqf84tARZfX2xhwRNTxcoWU1E=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/fUImgtdxcQ1l0xs87wyHjImV2xI=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/fVbO5sTlsJ8JTuEZ6L1holOO3wE=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/i50RBICdH6aXMTk+OtwWM8tWQV8=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/iGMxLwDq9JjH9_EHm8HiyuJ_Pyo=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/iOoKPuXxpMGNxo27kvmQK4_mevA=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/iP71ZpbiiNpwF5nJZBBvh8v_D4g=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/j+Nd+6TBbSW3NExbcPYddzhqb70=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/jEFyisiyBqlsdgShz6_o_1QpS9A=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/jqp+qfdcB3ABD4GkZfHHae8RkSs=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ktHHMqTUTBZ2IHRLUeeuHtP9SpA=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/l6IvvstTYYJguRvP5i9Qn3NkQWE=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/mLLoIR5DSu48ytQRfhZoDfbJ6iA=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/mjXzE_19KLbRx7Cptp_czc_cBEc=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/nPL2zv2DZMxtYF2v4MEX8C1AgXs=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/npC6UOEv4QxG5vttunKcPwwLqZE=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/nqHe1TLynOJWkYtwCknXJ2Fq0I0=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ntyBoAe1iHQJaaR6FaDf2r9cwR0=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/odZoO0njWN1D+rSqVGdUcza9tv0=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/onTpZYij7NK4c05LaNCWCPeN+wM=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/p577TEhCa4x5MpGAGR68T__VUE0=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/pJPPhu+p5lrJut0MiQtiRcBSWHU=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/pNVtSc6wnmXKzNxrW3gFWcx4uuA=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/pou4cqioH+4ynKtNALafF_MtQUU=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/qOXlIqpE_qYnqESqGD61LBfLKrQ=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/qTGfy23M3wb4EGQ_DJQhyStIL6U=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/rcB36rZQDa74Ko1T9SPQTFHEsP8=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/s7E9MeAZRxtbxXmkBUrJwjlS1us=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/tcw1QOgGqyRhqn8Px47e0xpSiFA=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/uTyWgtETJnU8B8sH9CkBOHAR36k=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ufbsl5MRGlAnOvyDmVk6veTeY60=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/vAfaq48fG148_zQgv_T7jCNDH9U=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/vG5VpNMg8+vdGsyPPSQyUuM5JL8=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/vvoWbCAJoLNo6JjouJXwbNXLIz8=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/w42FzARKB8OHh1IgjSX72MIZFhM=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/whCdlx1UFoHzIQmwqe3K0Ugmt3Q=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/xeJtTyHT4zNZkmZ8Xmcmt9qP5yk=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/xwJ3W4or3BqSbqcva4kccis3+sw=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/yK2h+WXbIbaUWkIYogVFOvESmUU=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/yrbcXTQKZxHDohIz7OU3jUMHLps=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/z3VRNPujT0eFymdY+Wm1Jybysog=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/z92Tyoy2sTMR3YpJmuLvY9n+wl4=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/zBrtjbScV+GkSeBs_erz_ipJlbQ=" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-af/values-af.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-am/values-am.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ar/values-ar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-as/values-as.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-az/values-az.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-b+es+419/values-b+es+419.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-be/values-be.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bg/values-bg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bn/values-bn.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bs/values-bs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ca/values-ca.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-cs/values-cs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-da/values-da.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-de/values-de.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-el/values-el.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-es/values-es.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-et/values-et.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-eu/values-eu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fa/values-fa.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fi/values-fi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fr/values-fr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-gl/values-gl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-gu/values-gu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h320dp-port-v13/values-h320dp-port-v13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h360dp-land-v13/values-h360dp-land-v13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h480dp-land-v13/values-h480dp-land-v13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h550dp-port-v13/values-h550dp-port-v13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hi/values-hi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hr/values-hr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hu/values-hu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hy/values-hy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-in/values-in.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-is/values-is.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-it/values-it.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-iw/values-iw.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ja/values-ja.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ka/values-ka.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-kk/values-kk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-km/values-km.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-kn/values-kn.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ko/values-ko.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ky/values-ky.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-land/values-land.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ldrtl-v17/values-ldrtl-v17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lo/values-lo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lt/values-lt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lv/values-lv.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mk/values-mk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ml/values-ml.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mn/values-mn.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mr/values-mr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ms/values-ms.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-my/values-my.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-nb/values-nb.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ne/values-ne.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-nl/values-nl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-or/values-or.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pa/values-pa.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pl/values-pl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-port/values-port.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt/values-pt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ro/values-ro.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ru/values-ru.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-si/values-si.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sk/values-sk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sl/values-sl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sq/values-sq.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sr/values-sr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sv/values-sv.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sw/values-sw.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ta/values-ta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-te/values-te.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-th/values-th.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-tl/values-tl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-tr/values-tr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-uk/values-uk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ur/values-ur.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-uz/values-uz.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v16/values-v16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v17/values-v17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v18/values-v18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v21/values-v21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v22/values-v22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v23/values-v23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v24/values-v24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v25/values-v25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v26/values-v26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v28/values-v28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v31/values-v31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v34/values-v34.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-vi/values-vi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w320dp-land-v13/values-w320dp-land-v13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w360dp-port-v13/values-w360dp-port-v13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w400dp-port-v13/values-w400dp-port-v13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w600dp-land-v13/values-w600dp-land-v13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zu/values-zu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values/values.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir/values-night-v8/values-night-v8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir/values/values.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/group8_bartertrader/ReceiverDash$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/group8_bartertrader/ReceiverDash$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/group8_bartertrader/ReceiverDash.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/group8_bartertrader/ReceiverDash.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/linked_resources_binary_format/debug/processDebugResources/linked-resources-binary-format-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/linked_resources_binary_format/debug/processDebugResources/linked-resources-binary-format-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/linked_resources_binary_format/debug/processDebugResources/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/linked_resources_binary_format/debug/processDebugResources/output-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/group8_bartertrader/SubmitForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/group8_bartertrader/SubmitForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/group8_bartertrader/SubmitForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/group8_bartertrader/SubmitForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/processDebugMainManifest/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/processDebugMainManifest/manifest-merger-blame-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifest/debug/processDebugMainManifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifest/debug/processDebugMainManifest/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/processDebugManifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/processDebugManifest/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/processDebugManifest/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/processDebugManifest/output-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/layout_activity_receiver_dash.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/layout_activity_receiver_dash.xml.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/mergeDebugResources.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/mergeDebugResources.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-af.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-af.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-am.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-am.json" afterDir="false" />
@@ -518,35 +519,32 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-zu.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-zu.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/single/mergeDebugResources.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/single/mergeDebugResources.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage/output-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/layout/activity_receiver_dash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/layout/activity_receiver_dash.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/values-night-v8/values-night-v8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/values-night-v8/values-night-v8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/values/values.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/1b80a507cfa2e0e67a701c5055771891f1e4f4e62c39d465450b92295d019232_0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/1b80a507cfa2e0e67a701c5055771891f1e4f4e62c39d465450b92295d019232_1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/1b80a507cfa2e0e67a701c5055771891f1e4f4e62c39d465450b92295d019232_2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/1b80a507cfa2e0e67a701c5055771891f1e4f4e62c39d465450b92295d019232_3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/80ea8695f5becea2106564c4ae90f4c1ae05c106c55d2ed788828cfe117ef858_9.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/group8_bartertrader/ProductForm.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/group8_bartertrader/ProductForm.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/group8_bartertrader/ReceiverDash$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/group8_bartertrader/ReceiverDash$2.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/group8_bartertrader/ReceiverDash.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/group8_bartertrader/ReceiverDash.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/group8_bartertrader/SubmitForm$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/group8_bartertrader/SubmitForm$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/group8_bartertrader/SubmitForm.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/group8_bartertrader/SubmitForm.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/group8_bartertrader/adapter/ReceivedOfferAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/group8_bartertrader/adapter/ReceivedOfferAdapter.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/processDebugResources/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/processDebugResources/R.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/source_set_path_map/debug/mapDebugSourceSetPaths/file-map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/source_set_path_map/debug/mapDebugSourceSetPaths/file-map.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/stable_resource_ids_file/debug/processDebugResources/stableIds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/stable_resource_ids_file/debug/processDebugResources/stableIds.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/processDebugResources/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/processDebugResources/package-aware-r.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/DetailsActivity.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/SubmitForm$1.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/SubmitForm$LocationCallback.class.uniqueId3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/SubmitForm.class.uniqueId4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/SubmitHelper$SubmitCallback.class.uniqueId5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/SubmitHelper.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/ReceiverDash.class.uniqueId2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/group8_bartertrader/ReceiverDash.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/group8_bartertrader/ReceiverDash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_receiver_dash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_receiver_dash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/group8_bartertrader/DetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/group8_bartertrader/DetailsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/group8_bartertrader/SubmitForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/group8_bartertrader/SubmitForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -556,7 +554,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\William\.android\avd\Pixel_Fold_API_35.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/junfali/.android/avd/Medium_Phone_API_35.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -629,12 +627,12 @@
     }
   }
 }</component>
-  <component name="GitLabMergeRequestsSettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;first&quot;: &quot;https://git.cs.dal.ca/olaiya/group_8_csci_3130_winter.git&quot;,
-    &quot;second&quot;: &quot;5a585b85-a0d0-413e-a96c-ff17df7d952b&quot;
+  <component name="GitLabMergeRequestsSettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "first": "https://git.cs.dal.ca/olaiya/group_8_csci_3130_winter.git",
+    "second": "5da4d392-89d5-4934-8caa-5c6738ef099c"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -649,63 +647,63 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Android App.ProviderDash (1).executor": "Run",
-    "Android App.ProviderDash (2).executor": "Run",
-    "Android App.ProviderDash.executor": "Run",
-    "Android App.RegistrationActivity.executor": "Run",
-    "Android App.ResetPasswordActivity.executor": "Run",
-    "Android App.SF.executor": "Run",
-    "Android App.SettingsActivity.executor": "Run",
-    "Android App.app.executor": "Run",
-    "Android Instrumented Tests.ReceiverDashUITest.executor": "Run",
-    "Android Instrumented Tests.SubmitFormUITest.executor": "Run",
-    "Android Instrumented Tests.testGoToSettingsButton().executor": "Run",
-    "Android Instrumented Tests.testLocationTextView_InitialState().executor": "Run",
-    "Android Instrumented Tests.testProductItemListDisplayed() (1).executor": "Run",
-    "Android Instrumented Tests.testProductItemListDisplayed().executor": "Run",
-    "Android Instrumented Tests.testRecyclerView_Displayed().executor": "Run",
-    "Android Instrumented Tests.testSnackbarMessageForIncompleteFields().executor": "Run",
-    "Android Instrumented Tests.testSnackbarMessageForSuccess().executor": "Run",
-    "Android Instrumented Tests.testSubmitOffer().executor": "Run",
-    "Android Instrumented Tests.testTitleTextView_Displayed().executor": "Run",
-    "Gradle.LocationHelperTest.executor": "Run",
-    "Gradle.LocationHelperTest.testCalculateDistance_SameCoordinates.executor": "Debug",
-    "Gradle.LocationHelperTest.testFetchLocation_Success.executor": "Run",
-    "Gradle.LocationHelperTest.testGetCurrentLocation_PermissionDenied.executor": "Run",
-    "Gradle.LocationHelperTest.testGetCurrentLocation_PermissionGranted.executor": "Run",
-    "Gradle.LocationHelperTest.testGetCurrentLocation_WithPermissionGranted.executor": "Run",
-    "Gradle.LocationHelperTest.testOnRequestPermissionsResult_PermissionGranted.executor": "Run",
-    "Gradle.LocationHelperTest.testParseLatLngLocation_InvalidInput.executor": "Run",
-    "Gradle.LocationHelperTest.testParseLatLngLocation_ValidInput.executor": "Run",
-    "Gradle.LoginActivtyTest.executor": "Run",
-    "Gradle.ProductFormTest.executor": "Run",
-    "Gradle.ProductFormTest.testProductPostedSuccessfully.executor": "Run",
-    "Gradle.ProductFormTest.testSubmitButtonValidationEmptyFields.executor": "Run",
-    "Gradle.ReceiverDashFirebaseTest.executor": "Run",
-    "Gradle.ReceiverDashLocationTest.executor": "Run",
-    "Gradle.ReceiverDashLogicTest.executor": "Run",
-    "Gradle.ReceiverDashLogicTest.testIsWithinRange_WithinRange.executor": "Run",
-    "Gradle.ReceiverDashTest.executor": "Run",
-    "Gradle.SubmitFormTest.testSubmitOfferSuccessfully.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "/Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/java/com/example/group8_bartertrader",
-    "last_opened_file_path": "C:/Users/William/Desktop/csci3130/iteration3/debug/group_8_csci_3130_winter",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "recommended.upgrade.last.time.stamp": "1741877969342",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Android App.ProviderDash (1).executor&quot;: &quot;Run&quot;,
+    &quot;Android App.ProviderDash (2).executor&quot;: &quot;Run&quot;,
+    &quot;Android App.ProviderDash.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.RegistrationActivity.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.ResetPasswordActivity.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.SF.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.SettingsActivity.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.ReceiverDashUITest.executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.SubmitFormUITest.executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.testGoToSettingsButton().executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.testLocationTextView_InitialState().executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.testProductItemListDisplayed() (1).executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.testProductItemListDisplayed().executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.testRecyclerView_Displayed().executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.testSnackbarMessageForIncompleteFields().executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.testSnackbarMessageForSuccess().executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.testSubmitOffer().executor&quot;: &quot;Run&quot;,
+    &quot;Android Instrumented Tests.testTitleTextView_Displayed().executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LocationHelperTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LocationHelperTest.testCalculateDistance_SameCoordinates.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.LocationHelperTest.testFetchLocation_Success.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LocationHelperTest.testGetCurrentLocation_PermissionDenied.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LocationHelperTest.testGetCurrentLocation_PermissionGranted.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LocationHelperTest.testGetCurrentLocation_WithPermissionGranted.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LocationHelperTest.testOnRequestPermissionsResult_PermissionGranted.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LocationHelperTest.testParseLatLngLocation_InvalidInput.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LocationHelperTest.testParseLatLngLocation_ValidInput.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginActivtyTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ProductFormTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ProductFormTest.testProductPostedSuccessfully.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ProductFormTest.testSubmitButtonValidationEmptyFields.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReceiverDashFirebaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReceiverDashLocationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReceiverDashLogicTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReceiverDashLogicTest.testIsWithinRange_WithinRange.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReceiverDashTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SubmitFormTest.testSubmitOfferSuccessfully.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/Users/a123456/Documents/PHD/Coursework/Software Engineering/Project/group_8_csci_3130_winter/app/src/main/java/com/example/group8_bartertrader&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/William/Desktop/csci3130/iteration3/debug/group_8_csci_3130_winter&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;recommended.upgrade.last.time.stamp&quot;: &quot;1741877969342&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ellaj\OneDrive\Desktop\SCHOOL\Dalhousie\2024-2025\Winter\CSCI 3130\group_8_csci_3130_winter\app" />

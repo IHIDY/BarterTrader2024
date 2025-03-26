@@ -52,7 +52,12 @@ public class DetailsActivity extends AppCompatActivity {
         // Set up the "Offer Exchange" button
         offerExchangeButton.setOnClickListener(v -> {
             Intent intent = new Intent(DetailsActivity.this, SubmitForm.class);
-            intent.putExtra("Product", product);
+            intent.putExtra("productId", product.getId());
+            intent.putExtra("productName", product.getName());
+            intent.putExtra("productCategory", product.getCategory());
+            intent.putExtra("productLocation", product.getLocation());
+            intent.putExtra("productDescription", product.getDescription());
+
             startActivity(intent);
         });
         ExitButton.setOnClickListener(v -> {

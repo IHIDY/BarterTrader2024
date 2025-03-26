@@ -4,7 +4,7 @@
             "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-43:/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\William\\.gradle\\caches\\8.10.2\\transforms\\45765a2b17cfdd5ca7cdbb643a7a2cba\\transformed\\appcompat-1.7.0\\res\\values-v17\\values-v17.xml",
+                    "source": "/Users/junfali/.gradle/caches/8.10.2/transforms/45765a2b17cfdd5ca7cdbb643a7a2cba/transformed/appcompat-1.7.0/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
