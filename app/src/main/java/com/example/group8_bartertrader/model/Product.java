@@ -35,6 +35,16 @@ public class Product implements Serializable {
         this.postDate = postDate;
     }
 
+    public Product(String id, String name, String description, String category, String location, boolean isAvailable) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.category = category;
+        this.location = location;
+        this.isAvailable = isAvailable;
+    }
+
+
     // Getters and Setters for all fields
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }

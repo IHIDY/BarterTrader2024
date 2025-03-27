@@ -13,6 +13,7 @@ id acceptButton
 id activity_settings
 id backButton
 id button_received_offers
+id cancelButton
 id changeRoleBtn
 id confirmEmailBtn
 id confirmEmailLabel
@@ -20,9 +21,11 @@ id confirmEmailTextView
 id confirmPasswordEditText
 id dashboardTitle
 id declineButton
+id deleteButton
 id detailButton
 id detailsContainerGL
 id distanceEditText
+id editButton
 id email
 id emailEditText
 id fName
@@ -34,6 +37,7 @@ id forfield
 id iOffer
 id inputEditText
 id lName
+id loadingIndicator
 id locationTextView
 id loginBtn
 id main
@@ -47,11 +51,16 @@ id postButton
 id prodName
 id productAvailability
 id productCategory
+id productCategoryEditText
 id productCondition
+id productConditionEditText
 id productDescription
+id productDescriptionEditText
 id productDetails
 id productLocation
+id productLocationEditText
 id productName
+id productNameEditText
 id productRecyclerView
 id providerEmail
 id receivedOffersRecyclerView
@@ -60,6 +69,7 @@ id regBtn
 id resetPasswordButton
 id respondToOfferSpinner
 id roleSelect
+id saveButton
 id search_button
 id settings_title
 id status
@@ -76,6 +86,7 @@ id titleText
 id viewPostProducts
 layout activity_confirmation_page
 layout activity_details
+layout activity_edit_product
 layout activity_google_map
 layout activity_login
 layout activity_main

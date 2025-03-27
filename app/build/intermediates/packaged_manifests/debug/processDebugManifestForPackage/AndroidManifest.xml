@@ -50,6 +50,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.Group8_bartertrader" >
         <activity
+            android:name="com.example.group8_bartertrader.EditProductListActvity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.group8_bartertrader.EditProductActvity"
+            android:exported="false" />
+        <activity
             android:name="com.example.group8_bartertrader.provider.ProviderProductList"
             android:exported="false" />
         <activity

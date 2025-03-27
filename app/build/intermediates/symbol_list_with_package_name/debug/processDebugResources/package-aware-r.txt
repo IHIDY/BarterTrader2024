@@ -3301,6 +3301,7 @@ id buttonPanel
 id button_received_offers
 id cache_measures
 id callMeasure
+id cancelButton
 id cancel_button
 id carryVelocity
 id center
@@ -3350,6 +3351,7 @@ id decelerateAndComplete
 id declineButton
 id decor_content_parent
 id default_activity_button
+id deleteButton
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -3382,6 +3384,7 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editButton
 id edit_query
 id edit_text_id
 id elastic
@@ -3468,6 +3471,7 @@ id line3
 id linear
 id listMode
 id list_item
+id loadingIndicator
 id locationTextView
 id loginBtn
 id m3_side_sheet
@@ -3594,11 +3598,16 @@ id pressed
 id prodName
 id productAvailability
 id productCategory
+id productCategoryEditText
 id productCondition
+id productConditionEditText
 id productDescription
+id productDescriptionEditText
 id productDetails
 id productLocation
+id productLocationEditText
 id productName
+id productNameEditText
 id productRecyclerView
 id progress_circular
 id progress_horizontal
@@ -3621,6 +3630,7 @@ id roleSelect
 id rounded
 id row_index_key
 id satellite
+id saveButton
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3887,6 +3897,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_confirmation_page
 layout activity_details
+layout activity_edit_product
 layout activity_google_map
 layout activity_login
 layout activity_main
