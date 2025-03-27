@@ -5,6 +5,8 @@ import org.junit.Test;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
 
+import com.example.group8_bartertrader.utils.CredentialsValidator;
+
 public class RegistrationActivityTest {
 
     CredentialsValidator validator;
