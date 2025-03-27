@@ -4,6 +4,8 @@ import org.junit.Test;
 import org.junit.Before;
 import static org.junit.Assert.*;
 
+import com.example.group8_bartertrader.utils.CredentialsValidator;
+
 public class ResetPasswordActivityTest {
     CredentialsValidator validator;
 

@@ -1,7 +1,3 @@
-// Reference Link = https://www.geeksforgeeks.org/user-authentication-using-firebase-in-android/
-// Author = Ella Morais, B00926808
-//
-// Importing necessary packages and libraries
 package com.example.group8_bartertrader;
 
 import android.content.Context;
@@ -9,7 +5,6 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -19,21 +14,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+import com.example.group8_bartertrader.CRUD.UserCRUD;
+import com.example.group8_bartertrader.utils.CredentialsValidator;
+import com.google.android.material.snackbar.Snackbar;
 
 public class RegistrationActivity extends AppCompatActivity implements View.OnClickListener {
     private Button loginBtn;
-    private FirebaseAuth mAuth;
-    private DatabaseReference databaseReference;
-    CredentialsValidator cred;
+    private UserCRUD userCRUD;
+    private CredentialsValidator cred;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,14 +31,12 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_registration);
 
-        this.loadRoleSpin();
-        this.setRegBtn();
-        this.setLogBtn();
+        loadRoleSpin();
+        setRegBtn();
+        setLogBtn();
 
-        mAuth = FirebaseAuth.getInstance();
-        databaseReference = FirebaseDatabase.getInstance().getReference("Users");
-
-        this.cred = new CredentialsValidator();
+        userCRUD = new UserCRUD();
+        cred = new CredentialsValidator();
     }
 
     public void loadRoleSpin() {
@@ -70,6 +58,10 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
 
     private void showToast(String msg) {
         Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
+    }
+    private void showSnackbar(String msg) {
+        View rootView = findViewById(android.R.id.content);
+        Snackbar.make(rootView, msg, Snackbar.LENGTH_LONG).show();
     }
 
     protected String getEmail() {
@@ -107,20 +99,6 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         statusLabel.post(() -> statusLabel.setText(message.trim()));
     }
 
-    protected void saveCreds(String uid, String email, String pass, String role, String fname, String lname) {
-        User user = new User(email, pass, role, fname, lname);
-        databaseReference.child(uid).setValue(user)
-                .addOnCompleteListener(task -> {
-                    if (task.isSuccessful()) {
-                        Log.d("Success", "User Saved to Database");
-                        Toast.makeText(getApplicationContext(), "User data saved to database!", Toast.LENGTH_SHORT).show();
-                    } else {
-                        Log.d("Error", "User not saved to database");
-                        Toast.makeText(getApplicationContext(), "User data failed to save!", Toast.LENGTH_SHORT).show();
-                    }
-                });
-    }
-
     private boolean isNetworkAvailable() {
         ConnectivityManager connectivityManager =
                 (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -131,7 +109,6 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         return false;
     }
 
-    //creating a new user
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.loginBtn) {
@@ -148,50 +125,53 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         if (email.isEmpty()) {
             setStatusMessage(getResources().getString(R.string.EMPTY_EMAIL_ADDRESS));
             showToast(getResources().getString(R.string.EMPTY_EMAIL_ADDRESS));
+            showSnackbar(getResources().getString(R.string.EMPTY_EMAIL_ADDRESS));
         } else if (!cred.isValidEmail(email)) {
             setStatusMessage(getResources().getString(R.string.INVALID_EMAIL_ADDRESS));
             showToast(getResources().getString(R.string.INVALID_EMAIL_ADDRESS));
+            showSnackbar(getResources().getString(R.string.INVALID_EMAIL_ADDRESS));
         } else if (pass.isEmpty()) {
             setStatusMessage(getResources().getString(R.string.EMPTY_PASSWORD));
             showToast(getResources().getString(R.string.EMPTY_PASSWORD));
+            showSnackbar(getResources().getString(R.string.EMPTY_PASSWORD));
         } else if (!cred.isValidPass(pass)) {
             String passwordRequirements = "Password must be at least 8 characters long and include a mix of uppercase, lowercase, numbers, and special characters.";
             setStatusMessage(passwordRequirements);
             showToast(passwordRequirements);
+            showSnackbar(passwordRequirements);
 
         } else if (!cred.isValidRole(role) || role.equals("Select your Role")) {
             setStatusMessage(getResources().getString(R.string.INVALID_ROLE));
             showToast(getResources().getString(R.string.INVALID_ROLE));
+            showSnackbar(getResources().getString(R.string.INVALID_ROLE));
         } else if (cred.isFnameEmpty(fName)) {
             setStatusMessage(getResources().getString(R.string.EMPTY_FNAME));
             showToast(getResources().getString(R.string.EMPTY_FNAME));
+            showSnackbar(getResources().getString(R.string.EMPTY_FNAME));
         } else if (cred.isLnameEmpty(lName)) {
             setStatusMessage(getResources().getString(R.string.EMPTY_LNAME));
             showToast(getResources().getString(R.string.EMPTY_LNAME));
+            showSnackbar(getResources().getString(R.string.EMPTY_FNAME));
         } else if (!isNetworkAvailable()) {
             setStatusMessage(getResources().getString(R.string.NO_NETWORK));
             showToast("No internet connection. Please check your network.");
+            showSnackbar("No internet connection. Please check your network.");
             return;
         } else {
             setStatusMessage(getResources().getString(R.string.REGISTRATION_SUCCESSFUL));
-            mAuth.createUserWithEmailAndPassword(email, pass)
-                    .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (task.isSuccessful()) {
-                                showToast("Registration Successful!");
+            userCRUD.registerUser(email, pass, role, fName, lName, new UserCRUD.RegisterCallback() {
+                @Override
+                public void onSuccess(String message) {
+                    showToast(message);
+                    move2Login();
+                }
 
-                                String uid = task.getResult().getUser().getUid();
-                                saveCreds(uid, email, pass, role, fName, lName);
-
-                                move2Login();
-                            } else {
-                                showToast("Registration Failed! - User already exists!\n");
-                                setStatusMessage(getResources().getString(R.string.REGISTRATION_FAILED));
-                            }
-                        }
-                    });
+                @Override
+                public void onFailure(String error) {
+                    showToast(error);
+                    setStatusMessage(getResources().getString(R.string.REGISTRATION_FAILED));
+                }
+            });
         }
-
     }
 }
