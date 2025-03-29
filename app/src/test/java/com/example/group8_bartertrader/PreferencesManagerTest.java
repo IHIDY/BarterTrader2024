@@ -59,5 +59,4 @@ public class PreferencesManagerTest {
         verify(mockEditor).putStringSet("preferred_locations", locations);
         verify(mockEditor).apply();
     }
-
 }
