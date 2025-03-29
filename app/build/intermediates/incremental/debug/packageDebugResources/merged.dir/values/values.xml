@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="offer_options">
+        <item>Pending</item>
+        <item>Accepted</item>
+        <item>Declined</item>
+    </string-array>
+    <string-array name="spinner_items">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="EMAIL_IS_DUPLICATE">Duplicate email address</string>
+    <string name="EMPTY_EMAIL_ADDRESS">Empty email address</string>
+    <string name="EMPTY_FNAME">Empty first name</string>
+    <string name="EMPTY_LNAME">Empty last name</string>
+    <string name="EMPTY_PASSWORD">Empty password</string>
+    <string name="INVALID_EMAIL_ADDRESS">Enter a valid email (e.g., name@example.com)..</string>
+    <string name="INVALID_PASSWORD">Invalid password, Password must be 6-30 chars, include 1 uppercase, 1 lowercase, 1 number, and 1 special char</string>
+    <string name="INVALID_ROLE">Invalid user role, Select a role</string>
+    <string name="NO_NETWORK">No internet connection. Please check your network.</string>
+    <string name="REGISTRATION_FAILED">Registration Failed! - User already exists!</string>
+    <string name="REGISTRATION_SUCCESSFUL">Registration successful</string>
+    <string name="app_name">group8_bartertrader</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="gcm_defaultSenderId" translatable="false">978161918415</string>
+    <string name="google_api_key" translatable="false">AIzaSyBMNyjrAvW9ef6j1pOAi8nrlSsk5FjWdiU</string>
+    <string name="google_app_id" translatable="false">1:978161918415:android:5d027df0d3feed2129b2ba</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBMNyjrAvW9ef6j1pOAi8nrlSsk5FjWdiU</string>
+    <string name="google_storage_bucket" translatable="false">group-8-barter-trader.firebasestorage.app</string>
+    <string name="project_id" translatable="false">group-8-barter-trader</string>
+    <string name="register">Register</string>
+    <style name="Base.Theme.Group8_bartertrader" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Group8_bartertrader" parent="Base.Theme.Group8_bartertrader"/>
+</resources>
