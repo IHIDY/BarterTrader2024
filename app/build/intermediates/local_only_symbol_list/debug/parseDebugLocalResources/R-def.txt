@@ -12,6 +12,7 @@ id OfferExchangeButton
 id acceptButton
 id activity_settings
 id backButton
+id bodyTV
 id button_received_offers
 id changeRoleBtn
 id confirmEmailBtn
@@ -33,6 +34,8 @@ id filterSpinner
 id forfield
 id iOffer
 id inputEditText
+id jobIdTV
+id jobLocationTV
 id lName
 id locationTextView
 id loginBtn
@@ -41,6 +44,7 @@ id map
 id mapButton
 id myOffersButton
 id newPasswordEditText
+id notificationPrefBtn
 id pBtn
 id pass
 id postButton
@@ -61,6 +65,7 @@ id resetPasswordButton
 id respondToOfferSpinner
 id roleSelect
 id search_button
+id sendNotificationBtn
 id settings_title
 id status
 id statusLabel
@@ -72,6 +77,7 @@ id targetProductDescription
 id targetProductLocation
 id targetProductName
 id textView2
+id titleTV
 id titleText
 id viewPostProducts
 layout activity_confirmation_page
@@ -80,6 +86,7 @@ layout activity_google_map
 layout activity_login
 layout activity_main
 layout activity_my_offers
+layout activity_notification
 layout activity_offer_details
 layout activity_product_form
 layout activity_provider_dash
@@ -89,6 +96,7 @@ layout activity_receiver_dash
 layout activity_registration
 layout activity_search
 layout activity_settings
+layout activity_view_push_notification
 layout new_password_form_page
 layout offer_item
 layout product_item
