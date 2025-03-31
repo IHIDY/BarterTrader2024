@@ -2,6 +2,8 @@ package com.example.group8_bartertrader;
 
 import static org.junit.Assert.assertEquals;
 
+import com.example.group8_bartertrader.model.PreferencesManager;
+
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -65,7 +67,7 @@ public class NotificationTest {
         assertEquals(0, testNotificationManager.getNotificationCount());
     }
 
-    private static class TestNotificationManager extends NotificationManager {
+    private static class TestNotificationManager {
         private int notificationCount = 0;
 
         @Override

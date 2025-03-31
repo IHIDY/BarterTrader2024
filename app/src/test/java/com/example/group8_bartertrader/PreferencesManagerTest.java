@@ -4,6 +4,8 @@ import static com.google.common.base.Verify.verify;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 
+import com.example.group8_bartertrader.model.PreferencesManager;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

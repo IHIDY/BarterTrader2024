@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,6 +26,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.group8_bartertrader.adapter.ProductAdapter;
+import com.example.group8_bartertrader.model.PreferencesManager;
 import com.example.group8_bartertrader.model.Product;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -34,6 +36,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class ReceiverDash extends AppCompatActivity implements LocationHelper.OnLocationFetchListener {
 
@@ -232,4 +235,20 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         productAdapter = new ProductAdapter(productList);
         productRecyclerView.setAdapter(productAdapter);
     }
+
+    private void updatePreferencesSummary() {
+        TextView preferencesSummary = findViewById(R.id.preferencesSummary);
+        Set<String> categories = PreferencesManager.getInstance(this).getPreferredCategories();
+        Set<String> locations = PreferencesManager.getInstance(this).getPreferredLocations();
+
+        if (categories.isEmpty() && locations.isEmpty()) {
+            preferencesSummary.setText("Preferences: Not set");
+        } else {
+            String summary = "Interested in: " + TextUtils.join(", ", categories) +
+                    " | Locations: " + TextUtils.join(", ", locations);
+            preferencesSummary.setText(summary);
+        }
+    }
+
+// Call this in onCreate and onResume
 }
