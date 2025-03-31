@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -57,7 +58,8 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
     }
 
     private void showToast(String msg) {
-        Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
+//        Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
+        Log.d("showToast", msg);
     }
     private void showSnackbar(String msg) {
         View rootView = findViewById(android.R.id.content);
