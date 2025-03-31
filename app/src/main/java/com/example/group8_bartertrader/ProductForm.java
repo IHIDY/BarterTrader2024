@@ -30,6 +30,7 @@ public class ProductForm extends AppCompatActivity {
     private DatabaseReference databaseReference;
     private String selectedCategory, selectedCondition;
 
+    public ProductForm(){}
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

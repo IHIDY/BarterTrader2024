@@ -12,9 +12,9 @@ public class CredentialsValidator {
     private DatabaseReference databaseReference;
 
     public CredentialsValidator() {
-        if (!unitTestRunning()) {
-            this.mAuth = FirebaseAuth.getInstance();
-        }
+//        if (!unitTestRunning()) {
+//            this.mAuth = FirebaseAuth.getInstance();
+//        }
     }
 
     private boolean unitTestRunning() {

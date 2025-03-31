@@ -24,29 +24,29 @@ public class ProductDetailsTest {
         Product firstProd = crud.deliverTopProduct(products);
         Assert.assertEquals("Pink Vase", firstProd.getName());
         Product secondProd = crud.deliverTopProduct(products);
-        Assert.assertEquals("Computer Mouse", secondProd.getName());
+        Assert.assertEquals("Peach Bag", secondProd.getName());
         Product thirdProd = crud.deliverTopProduct(products);
-        Assert.assertEquals("Star Wars Figurine", thirdProd.getName());
+        Assert.assertEquals("Black Sunglasses", thirdProd.getName());
     }
 
     @Test
     public void testProductCategory() {
         Product firstProd = crud.deliverTopProduct(products);
-        Assert.assertEquals("Home Decor", firstProd.getCategory());
+        Assert.assertEquals("Electronic", firstProd.getCategory());
         Product secondProd = crud.deliverTopProduct(products);
-        Assert.assertEquals("Electronics", secondProd.getCategory());
+        Assert.assertEquals("Fashion", secondProd.getCategory());
         Product thirdProd = crud.deliverTopProduct(products);
-        Assert.assertEquals("Collectibles", thirdProd.getCategory());
+        Assert.assertEquals("Accesories", thirdProd.getCategory());
     }
 
     @Test
     public void testProductDescription() {
         Product firstProd = crud.deliverTopProduct(products);
-        Assert.assertEquals("Good Condition", firstProd.getDescription());
+        Assert.assertEquals("Home Decor for Living room", firstProd.getDescription());
         Product secondProd = crud.deliverTopProduct(products);
-        Assert.assertEquals("Fair Condition", secondProd.getDescription());
+        Assert.assertEquals("Nice Bag", secondProd.getDescription());
         Product thirdProd = crud.deliverTopProduct(products);
-        Assert.assertEquals("Fair Condition", thirdProd.getDescription());
+        Assert.assertEquals("Fashionable Sunglasses", thirdProd.getDescription());
     }
 
     @Test
