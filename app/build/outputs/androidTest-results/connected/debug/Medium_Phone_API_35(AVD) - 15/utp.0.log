@@ -12,7 +12,7 @@ INFO: Configuring Android Instrumentation driver: android_instrumentation_runtim
     }
     args_map {
       key: "class"
-      value: "com.example.group8_bartertrader.SubmitFormUITest#testSubmitOffer"
+      value: "com.example.group8_bartertrader.ReceivedOfferUITest#testChatButtonDisabled_whenOfferNotAccepted"
     }
   }
 }
@@ -40,4 +40,4 @@ INFO: Copying files from device to host: /sdcard/Android/media/com.example.group
 INFO: Stop logcat streaming.
 INFO: Uninstalling com.example.group8_bartertrader for device emulator-5554.
 INFO: Uninstalling com.example.group8_bartertrader.test for device emulator-5554.
-INFO: Execute com.example.group8_bartertrader.SubmitFormUITest.testSubmitOffer: PASSED
+INFO: Execute com.example.group8_bartertrader.ReceivedOfferUITest.testChatButtonDisabled_whenOfferNotAccepted: PASSED

@@ -16,10 +16,19 @@
       <SelectionState runConfigName="SF">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="DetailsActivityEspressoTest">
+      <SelectionState runConfigName="testChatButtonLaunchesChatActivity_whenOfferAccepted()">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="testSubmitOffer()">
+      <SelectionState runConfigName="testChatButtonLaunchesChatActivity_whenOfferAccepted_withActionOnItem()">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="testChatButtonDisabled_whenOfferNotAccepted()">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="testChatButtonLaunchesChatActivity_whenOfferAccepted_withActionOnItem() (1)">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="testChatButtonDisabled_whenOfferNotAccepted() (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

@@ -1,10 +1,10 @@
 
-¢
-`
-SubmitFormUITestcom.example.group8_bartertradertestSubmitOffer2¤©ì¾À“ÔÁ:­©ì¾€íï»"ö
+à
+
+ReceivedOfferUITestcom.example.group8_bartertrader+testChatButtonDisabled_whenOfferNotAccepted2ž¬¬¿ÀÜÀ‹:§¬¬¿ÀÌŸü"•
 
-logcatandroidà
-Ý/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.group8_bartertrader.SubmitFormUITest-testSubmitOffer.txt"¾
+logcatandroidÿ
+ü/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.group8_bartertrader.ReceivedOfferUITest-testChatButtonDisabled_whenOfferNotAccepted.txt"¾
 
 device-infoandroid£
  /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/device-info.pb"¿

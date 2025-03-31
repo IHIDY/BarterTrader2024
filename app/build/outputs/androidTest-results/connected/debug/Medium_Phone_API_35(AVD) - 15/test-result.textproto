@@ -1,20 +1,20 @@
-# 2025-03-19T19:02:06.742436Z:
+# 2025-03-31T22:24:40.686365Z:
 test_suite_meta_data {
   scheduled_test_case_count: 1
 }
 test_status: PASSED
 test_result {
   test_case {
-    test_class: "SubmitFormUITest"
+    test_class: "ReceivedOfferUITest"
     test_package: "com.example.group8_bartertrader"
-    test_method: "testSubmitOffer"
+    test_method: "testChatButtonDisabled_whenOfferNotAccepted"
     start_time {
-      seconds: 1742410916
-      nanos: 943000000
+      seconds: 1743459870
+      nanos: 561000000
     }
     end_time {
-      seconds: 1742410925
-      nanos: 394000000
+      seconds: 1743459879
+      nanos: 529000000
     }
   }
   test_status: PASSED
@@ -24,7 +24,7 @@ test_result {
       namespace: "android"
     }
     source_path {
-      path: "/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.group8_bartertrader.SubmitFormUITest-testSubmitOffer.txt"
+      path: "/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.group8_bartertrader.ReceivedOfferUITest-testChatButtonDisabled_whenOfferNotAccepted.txt"
     }
   }
   output_artifact {
