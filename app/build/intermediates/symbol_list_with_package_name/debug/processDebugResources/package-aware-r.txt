@@ -3058,6 +3058,8 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable bubble_me
+drawable bubble_other
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -3312,6 +3314,8 @@ id chain
 id chain2
 id chains
 id changeRoleBtn
+id chatButton
+id chatLayout
 id checkbox
 id checked
 id chronometer
@@ -3500,6 +3504,10 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id message
+id messageContainer
+id messageEditText
+id messageRecyclerView
+id messageTextView
 id middle
 id mini
 id month_grid
@@ -3644,6 +3652,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id sendButton
 id settings_title
 id sharedValueSet
 id sharedValueUnset
@@ -3885,6 +3894,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_chat
 layout activity_confirmation_page
 layout activity_details
 layout activity_google_map
@@ -3939,6 +3949,7 @@ layout material_time_input
 layout material_timepicker
 layout material_timepicker_dialog
 layout material_timepicker_textinput_display
+layout message_item
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title

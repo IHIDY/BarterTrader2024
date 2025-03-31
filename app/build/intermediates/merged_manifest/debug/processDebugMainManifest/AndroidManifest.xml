@@ -121,6 +121,9 @@
             android:name="com.example.group8_bartertrader.ResetPasswordActivity"
             android:exported="true" />
         <activity
+            android:name="com.example.group8_bartertrader.ChatActivity"
+            android:exported="true" />
+        <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"
             android:exported="true"

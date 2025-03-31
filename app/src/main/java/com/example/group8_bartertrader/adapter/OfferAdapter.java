@@ -1,22 +1,30 @@
 package com.example.group8_bartertrader.adapter;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.group8_bartertrader.ChatActivity;
 import com.example.group8_bartertrader.R;
 import com.example.group8_bartertrader.model.Offer;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.List;
 
 public class OfferAdapter extends RecyclerView.Adapter<OfferAdapter.OfferViewHolder> {
+    private Context context;
+
     private List<Offer> offerList;
 
-    public OfferAdapter(List<Offer> offerList) {
+    public OfferAdapter(List<Offer> offerList, Context context) {
+        this.context = context;
         this.offerList = offerList;
     }
 
@@ -43,6 +51,18 @@ public class OfferAdapter extends RecyclerView.Adapter<OfferAdapter.OfferViewHol
         holder.targetItemLocation.setText("Location: " + offer.getTargetItemLocation());
 
         holder.status.setText("Status: " + offer.getStatus());
+
+        if ("accepted".equalsIgnoreCase(offer.getStatus())) {
+            holder.chatButton.setEnabled(true);
+            holder.chatButton.setOnClickListener(v -> {
+                Intent intent = new Intent(context, ChatActivity.class);
+                intent.putExtra("offerId", offer.getId());
+                intent.putExtra("currentUserEmail", FirebaseAuth.getInstance().getCurrentUser().getEmail());
+                context.startActivity(intent);
+            });
+        } else {
+            holder.chatButton.setEnabled(false);
+        }
     }
 
     @Override
@@ -54,6 +74,7 @@ public class OfferAdapter extends RecyclerView.Adapter<OfferAdapter.OfferViewHol
         TextView offeredItemName, offeredItemDescription, offeredItemCategory, offeredItemLocation;
         TextView targetItemName, targetItemDescription, targetItemCategory, targetItemLocation;
         TextView status;
+        Button chatButton;
 
         public OfferViewHolder(View itemView) {
             super(itemView);
@@ -68,6 +89,8 @@ public class OfferAdapter extends RecyclerView.Adapter<OfferAdapter.OfferViewHol
             targetItemLocation = itemView.findViewById(R.id.targetProductLocation);
 
             status = itemView.findViewById(R.id.status);
+
+            chatButton = itemView.findViewById(R.id.chatButton);
         }
     }
 }
