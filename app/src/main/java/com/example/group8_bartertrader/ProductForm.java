@@ -75,8 +75,11 @@ public class ProductForm extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 selectedCategory = parent.getItemAtPosition(position).toString();
             }
+
             @Override
-            public void onNothingSelected(AdapterView<?> parent) { selectedCategory = null; }
+            public void onNothingSelected(AdapterView<?> parent) {
+                selectedCategory = null;
+            }
         });
 
         productCondition.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -84,8 +87,10 @@ public class ProductForm extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 selectedCondition = parent.getItemAtPosition(position).toString();
             }
+
             @Override
-            public void onNothingSelected(AdapterView<?> parent) {}
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
         });
     }
 
@@ -127,7 +132,15 @@ public class ProductForm extends AppCompatActivity {
         FirebaseAuth auth = FirebaseAuth.getInstance();
         String currentUserEmail = auth.getCurrentUser() != null ? auth.getCurrentUser().getEmail() : "No email";
 
+        // Check if editing an existing product
+        String productId = getIntent().getStringExtra("productId");
+        if (productId == null) {
+            // Create new product
+            productId = databaseReference.push().getKey();
+        }
+
         Map<String, Object> productData = new HashMap<>();
+        productData.put("id", productId);
         productData.put("name", name);
         productData.put("category", category);
         productData.put("condition", condition);
@@ -136,30 +149,14 @@ public class ProductForm extends AppCompatActivity {
         productData.put("isAvailable", true);
         productData.put("email", currentUserEmail);
 
-        if (productId != null) {
-            // Update existing product
-            databaseReference.child(productId).updateChildren(productData).addOnCompleteListener(task -> {
-                if (task.isSuccessful()) {
-                    Snackbar.make(submitButton, "Product updated successfully", Snackbar.LENGTH_SHORT).show();
-                    finish();
-                } else {
-                    Snackbar.make(submitButton, "Failed to update product", Snackbar.LENGTH_SHORT).show();
-                }
-            });
-        } else {
-            // Create a new product
-            String newProductId = databaseReference.push().getKey();
-            productData.put("id", newProductId);
-            productData.put("datePosted", new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
-
-            databaseReference.child(newProductId).setValue(productData).addOnCompleteListener(task -> {
-                if (task.isSuccessful()) {
-                    Snackbar.make(submitButton, "Product posted successfully", Snackbar.LENGTH_SHORT).show();
-                    finish();
-                } else {
-                    Snackbar.make(submitButton, "Failed to post product", Snackbar.LENGTH_SHORT).show();
-                }
-            });
-        }
+        databaseReference.child(productId).setValue(productData).addOnCompleteListener(task -> {
+            if (task.isSuccessful()) {
+                Snackbar.make(submitButton, "Product updated successfully!", Snackbar.LENGTH_INDEFINITE)
+                        .setAction("OK", v -> finish()) // Keeps it visible until user clicks OK
+                        .show();
+            } else {
+                Snackbar.make(submitButton, "Failed to update product", Snackbar.LENGTH_SHORT).show();
+            }
+        });
     }
 }
