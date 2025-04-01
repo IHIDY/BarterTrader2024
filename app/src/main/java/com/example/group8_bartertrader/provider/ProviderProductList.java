@@ -33,30 +33,23 @@ public class ProviderProductList extends AppCompatActivity implements ProductAda
     private List<Product> productList;
     private DatabaseReference productsRef;
     private FirebaseUser currentUser;
-    private ProgressBar loadingIndicator; // Added a progress bar
+    private ProgressBar loadingIndicator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_provider_product_list);
 
-        // Initialize Firebase Authentication
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
-
-        // Initialize Firebase Database Reference
         productsRef = FirebaseDatabase.getInstance().getReference("Products");
 
-        // Initialize UI Elements
         productRecyclerView = findViewById(R.id.productRecyclerView);
-        loadingIndicator = findViewById(R.id.loadingIndicator); // Progress Bar
-
+        loadingIndicator = findViewById(R.id.loadingIndicator);
         productRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         productList = new ArrayList<>();
-        // Pass the listener to the adapter
-        productAdapter = new ProductAdapter(productList);
+        productAdapter = new ProductAdapter(productList, this);
         productRecyclerView.setAdapter(productAdapter);
 
-        // Fetch products from Firebase
         fetchProductsFromFirebase();
     }
 
@@ -72,7 +65,6 @@ public class ProviderProductList extends AppCompatActivity implements ProductAda
             return;
         }
 
-        // Show progress bar before fetching data
         loadingIndicator.setVisibility(View.VISIBLE);
 
         productsRef.addValueEventListener(new ValueEventListener() {
@@ -81,29 +73,19 @@ public class ProviderProductList extends AppCompatActivity implements ProductAda
                 productList.clear();
                 for (DataSnapshot productSnapshot : dataSnapshot.getChildren()) {
                     Product product = productSnapshot.getValue(Product.class);
-
-                    // Prevent crashes due to null values
-                    if (product == null) {
-                        Log.e("Firebase", "Invalid product data");
-                        continue;
-                    }
-
-                    // Filter by provider's email
-                    if (currentUserEmail.equals(product.getEmail())) {
-                        Log.d("Product fetched", "ID: " + product.getId() + ", Availability: " + product.isAvailable() + ", Email: " + product.getEmail());
+                    if (product != null && currentUserEmail.equals(product.getEmail())) {
                         productList.add(product);
                     }
                 }
-
                 productAdapter.notifyDataSetChanged();
-                loadingIndicator.setVisibility(View.GONE); // Hide loading indicator after loading
+                loadingIndicator.setVisibility(View.GONE);
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 Log.w("ProviderProductList", "loadProducts:onCancelled", databaseError.toException());
                 Toast.makeText(ProviderProductList.this, "Failed to load products.", Toast.LENGTH_SHORT).show();
-                loadingIndicator.setVisibility(View.GONE); // Hide loading indicator on error
+                loadingIndicator.setVisibility(View.GONE);
             }
         });
     }
@@ -116,17 +98,14 @@ public class ProviderProductList extends AppCompatActivity implements ProductAda
         startActivity(intent);
     }
 
+
     @Override
     public void onDeleteClick(Product product) {
-        // Handle Delete action
         productsRef.child(product.getId()).removeValue()
                 .addOnSuccessListener(aVoid -> {
                     Toast.makeText(this, "Product deleted", Toast.LENGTH_SHORT).show();
-                    // Refresh the list after deletion
                     fetchProductsFromFirebase();
                 })
-                .addOnFailureListener(e -> {
-                    Toast.makeText(this, "Failed to delete product", Toast.LENGTH_SHORT).show();
-                });
+                .addOnFailureListener(e -> Toast.makeText(this, "Failed to delete product", Toast.LENGTH_SHORT).show());
     }
 }

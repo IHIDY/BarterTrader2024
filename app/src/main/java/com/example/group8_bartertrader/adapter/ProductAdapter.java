@@ -25,11 +25,11 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
     private OnProductListener mOnProductListener;
 
     // Constructor to pass the listener
-    public ProductAdapter(List<Product> productList) {
+    public ProductAdapter(List<Product> productList, OnProductListener onProductListener) {
         this.productList = productList;
-        OnProductListener onProductListener = null;
         this.mOnProductListener = onProductListener;
     }
+
 
     @NonNull
     @Override

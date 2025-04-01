@@ -3384,6 +3384,10 @@ int id easeOut 0x7f0900c4
 int id east 0x7f0900c5
 int id edge 0x7f0900c6
 int id editButton 0x7f09024d
+int id editCategory 0x7f090255
+int id editDescription 0x7f090256
+int id editLocation 0x7f090257
+int id editName 0x7f090258
 int id edit_query 0x7f0900c7
 int id edit_text_id 0x7f0900c8
 int id elastic 0x7f0900c9
@@ -3599,7 +3603,6 @@ int id productAvailability 0x7f090199
 int id productCategory 0x7f09019a
 int id productCategoryEditText 0x7f09024e
 int id productCondition 0x7f09019b
-int id productConditionEditText 0x7f09024f
 int id productDescription 0x7f09019c
 int id productDescriptionEditText 0x7f090250
 int id productDetails 0x7f09019d

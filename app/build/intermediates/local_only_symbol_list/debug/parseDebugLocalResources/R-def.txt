@@ -26,6 +26,10 @@ id detailButton
 id detailsContainerGL
 id distanceEditText
 id editButton
+id editCategory
+id editDescription
+id editLocation
+id editName
 id email
 id emailEditText
 id fName
@@ -53,7 +57,6 @@ id productAvailability
 id productCategory
 id productCategoryEditText
 id productCondition
-id productConditionEditText
 id productDescription
 id productDescriptionEditText
 id productDetails

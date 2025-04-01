@@ -3385,6 +3385,10 @@ id easeOut
 id east
 id edge
 id editButton
+id editCategory
+id editDescription
+id editLocation
+id editName
 id edit_query
 id edit_text_id
 id elastic
@@ -3600,7 +3604,6 @@ id productAvailability
 id productCategory
 id productCategoryEditText
 id productCondition
-id productConditionEditText
 id productDescription
 id productDescriptionEditText
 id productDetails
