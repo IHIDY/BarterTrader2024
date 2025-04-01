@@ -35,9 +35,7 @@ public class NotificationActivity extends AppCompatActivity {
 
     //path
     private static final String CREDENTIALS_FILE_PATH = "key.json";
-
     //provided by google - for sending the notification
-
     //new endpoint
     private static final String PUSH_NOTIFICATION_ENDPOINT ="https://fcm.googleapis.com/v1/projects/group-8-barter-trader/messages:send";
 
@@ -122,8 +120,8 @@ public class NotificationActivity extends AppCompatActivity {
             notificationJSONBody.put("body", "A new job is created in your city.");
 
             JSONObject dataJSONBody = new JSONObject();
-            dataJSONBody.put("jobLocation", "Halifax");
-            dataJSONBody.put("job_id", "HF-128369");
+            dataJSONBody.put("productLocation", "Halifax");
+            dataJSONBody.put("product_id", "HF-128369");
 
             JSONObject messageJSONBody = new JSONObject();
             messageJSONBody.put("topic", "jobs");

@@ -45,15 +45,15 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         final Map<String, String> data = message.getData();
         Log.d("NotificationReceived", "Title: " + title + ", Body: " + body + ", Data: " + data);
 
-        final String jobId = data.get("job_id");
-        final String jobLocation = data.get("jobLocation");
+        final String productId = data.get("product_id");
+        final String productLocation = data.get("productLocation");
 
         // Create an intent to start activity when the notification is clicked.
         Intent intent = new Intent(this, ViewPushNotificationActivity.class);
         intent.putExtra("title", title);
         intent.putExtra("body", body);
-        intent.putExtra("job_id", jobId);
-        intent.putExtra("jobLocation", jobLocation);
+        intent.putExtra("product_id", productId);
+        intent.putExtra("productLocation", productLocation);
         //based on the flag, the notification will be displayed
         PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 10, intent,  PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_MUTABLE);
 

@@ -29,7 +29,7 @@
         tools:text="This is the where the body goes" />
 
     <TextView
-        android:id="@+id/jobIdTV"
+        android:id="@+id/productIdTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -40,14 +40,14 @@
         tools:text="Extra Data 1" />
 
     <TextView
-        android:id="@+id/jobLocationTV"
+        android:id="@+id/productLocationTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/jobIdTV"
+        app:layout_constraintTop_toBottomOf="@id/productIdTV"
         tools:text="Extra Data 2" />
 
 

@@ -11,8 +11,8 @@ public class ViewPushNotificationActivity extends AppCompatActivity {
 
     private TextView titleTV;
     private TextView bodyTV;
-    private TextView jobIdTV;
-    private TextView jobLocationTV;
+    private TextView productIdTV;
+    private TextView productLocationTV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +26,8 @@ public class ViewPushNotificationActivity extends AppCompatActivity {
         //binding the views with the variables
         titleTV = findViewById(R.id.titleTV);
         bodyTV = findViewById(R.id.bodyTV);
-        jobIdTV = findViewById(R.id.jobIdTV);
-        jobLocationTV = findViewById(R.id.jobLocationTV);
+        productIdTV = findViewById(R.id.productIdTV);
+        productLocationTV = findViewById(R.id.productLocationTV);
     }
 
     private void setData() {
@@ -35,12 +35,12 @@ public class ViewPushNotificationActivity extends AppCompatActivity {
         final Bundle extras = getIntent().getExtras();
         final String title = extras.getString("title");
         final String body = extras.getString("body");
-        final String jobId = extras.getString("job_id");
-        final String jobLocation = extras.getString("jobLocation");
+        final String jobId = extras.getString("product_id");
+        final String jobLocation = extras.getString("productLocation");
 
         titleTV.setText(title);
         bodyTV.setText(body);
-        jobIdTV.setText(jobId);
-        jobLocationTV.setText(jobLocation);
+        productIdTV.setText(jobId);
+        productLocationTV.setText(jobLocation);
     }
 }
