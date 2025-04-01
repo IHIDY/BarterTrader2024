@@ -206,11 +206,13 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
                     Log.d("ChatInit", "Chat already exists, skipping creation");
                 } else {
                     HashMap<String, Object> chatData = new HashMap<>();
-                    chatData.put("offerAccepted", true);
                     chatData.put("participants",
                             java.util.Arrays.asList(offer.getProviderEmail(), offer.getReceiverEmail()));
 
-                    chatRef.setValue(chatData)
+                    //defaults to false, true if accepted
+                    chatData.put("offerAccepted", offer.getStatus().equalsIgnoreCase("Accepted"));
+
+                    chatRef.updateChildren(chatData)
                             .addOnSuccessListener(unused -> {
                                 Log.d("ChatInit", "Chat node created for offerId: " + offer.getId());
                                 Toast.makeText(context, "Chat ready!", Toast.LENGTH_SHORT).show();
