@@ -1,11 +1,16 @@
 package com.example.group8_bartertrader;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class User {
     private String firstName;
     private String lastName;
     private String email;
     private String role;
     private String pass;
+    private Set<String> preferredCategories = new HashSet<>();
+    private Set<String> preferredLocations = new HashSet<>();
 
     public User() {
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
@@ -57,5 +62,21 @@ public class User {
 
     public void setPass(String pass) {
         this.pass = pass;
+    }
+
+    public Set<String> getPreferredCategories() {
+        return preferredCategories;
+    }
+
+    public void setPreferredCategories(Set<String> preferredCategories) {
+        this.preferredCategories = preferredCategories;
+    }
+
+    public Set<String> getPreferredLocations() {
+        return preferredLocations;
+    }
+
+    public void setPreferredLocations(Set<String> preferredLocations) {
+        this.preferredLocations = preferredLocations;
     }
 }
