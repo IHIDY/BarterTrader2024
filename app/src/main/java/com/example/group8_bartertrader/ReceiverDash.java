@@ -35,6 +35,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -57,6 +58,8 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
     private RecyclerView productRecyclerView;
     private ProductAdapter productAdapter;
     private double latitude, longitude;
+    private Button savePreferencesButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +85,9 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         productsRef = FirebaseDatabase.getInstance().getReference("Products");
 
         locationHelper = new LocationHelper(this);
+
+        savePreferencesButton = findViewById(R.id.savePreferencesButton);
+        savePreferencesButton.setOnClickListener(v -> saveCurrentSearchAsPreferences());
 
         // Check and request location permissions
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -236,18 +242,37 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         productRecyclerView.setAdapter(productAdapter);
     }
 
-    private void updatePreferencesSummary() {
-        TextView preferencesSummary = findViewById(R.id.preferencesSummary);
-        Set<String> categories = PreferencesManager.getInstance(this).getPreferredCategories();
-        Set<String> locations = PreferencesManager.getInstance(this).getPreferredLocations();
+    private void saveCurrentSearchAsPreferences() {
+        String currentCategory = selectedCategory;
+        String currentKeyword = keyword.getText().toString().trim();
+        String currentDistance = Distance.getText().toString().trim();
+        String currentLocation = locationTextView.getText().toString();
 
-        if (categories.isEmpty() && locations.isEmpty()) {
-            preferencesSummary.setText("Preferences: Not set");
-        } else {
-            String summary = "Interested in: " + TextUtils.join(", ", categories) +
-                    " | Locations: " + TextUtils.join(", ", locations);
-            preferencesSummary.setText(summary);
+        Set<String> categories = new HashSet<>();
+        Set<String> locations = new HashSet<>();
+
+        if (currentCategory != null && !currentCategory.equals("Select Category")) {
+            categories.add(currentCategory);
         }
+
+        if (!currentKeyword.isEmpty()) {
+            categories.add(currentKeyword);
+        }
+
+        if (!currentLocation.equals("Location: Not available")) {
+            String cleanLocation = currentLocation.replace("Location: ", "");
+            locations.add(cleanLocation);
+        }
+
+        if (!currentDistance.isEmpty()) {
+            locations.add(currentDistance + " km");
+        }
+
+        PreferencesManager preferencesManager = PreferencesManager.getInstance(this);
+        preferencesManager.savePreferredCategories(categories);
+        preferencesManager.savePreferredLocations(locations);
+
+        Toast.makeText(this, "Search preferences saved!", Toast.LENGTH_SHORT).show();
     }
 
 // Call this in onCreate and onResume
