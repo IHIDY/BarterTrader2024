@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.group8_bartertrader.EditProductActivity;
+import com.example.group8_bartertrader.ProductForm;
 import com.example.group8_bartertrader.R;
 import com.example.group8_bartertrader.adapter.ProductAdapter;
 import com.example.group8_bartertrader.model.Product;
@@ -93,7 +93,7 @@ public class ProviderProductList extends AppCompatActivity implements ProductAda
     @Override
     public void onEditClick(Product product) {
         // Handle Edit action
-        Intent intent = new Intent(ProviderProductList.this, EditProductActivity.class);
+        Intent intent = new Intent(ProviderProductList.this, ProductForm.class);
         intent.putExtra("productId", product.getId());  // Pass the product ID to the edit activity
         startActivity(intent);
     }

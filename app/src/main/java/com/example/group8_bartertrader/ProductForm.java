@@ -29,6 +29,7 @@ public class ProductForm extends AppCompatActivity {
     private Button submitButton, backButton;
     private DatabaseReference databaseReference;
     private String selectedCategory, selectedCondition;
+    private String productId; // Holds the ID of the product being edited
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,13 @@ public class ProductForm extends AppCompatActivity {
         setupSpinners();
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Products");
+
+        // Check if this activity was opened for editing an existing product
+        if (getIntent().hasExtra("productId")) {
+            productId = getIntent().getStringExtra("productId");
+            populateProductData();
+        }
+
         submitButton.setOnClickListener(v -> submitProduct());
         backButton.setOnClickListener(v -> onBackPressed());
     }
@@ -67,11 +75,8 @@ public class ProductForm extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 selectedCategory = parent.getItemAtPosition(position).toString();
             }
-
             @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-                selectedCategory = null;
-            }
+            public void onNothingSelected(AdapterView<?> parent) { selectedCategory = null; }
         });
 
         productCondition.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -79,10 +84,31 @@ public class ProductForm extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 selectedCondition = parent.getItemAtPosition(position).toString();
             }
-
             @Override
             public void onNothingSelected(AdapterView<?> parent) {}
         });
+    }
+
+    private void populateProductData() {
+        databaseReference.child(productId).get().addOnSuccessListener(dataSnapshot -> {
+            if (dataSnapshot.exists()) {
+                Map<String, Object> productData = (Map<String, Object>) dataSnapshot.getValue();
+                if (productData != null) {
+                    productName.setText((String) productData.get("name"));
+                    productDescription.setText((String) productData.get("description"));
+                    productLocation.setText((String) productData.get("location"));
+
+                    String category = (String) productData.get("category");
+                    String condition = (String) productData.get("condition");
+
+                    ArrayAdapter categoryAdapter = (ArrayAdapter) productCategory.getAdapter();
+                    productCategory.setSelection(categoryAdapter.getPosition(category));
+
+                    ArrayAdapter conditionAdapter = (ArrayAdapter) productCondition.getAdapter();
+                    productCondition.setSelection(conditionAdapter.getPosition(condition));
+                }
+            }
+        }).addOnFailureListener(e -> Toast.makeText(ProductForm.this, "Failed to load product", Toast.LENGTH_SHORT).show());
     }
 
     private void submitProduct() {
@@ -98,29 +124,42 @@ public class ProductForm extends AppCompatActivity {
             return;
         }
 
-        String formattedDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
         FirebaseAuth auth = FirebaseAuth.getInstance();
         String currentUserEmail = auth.getCurrentUser() != null ? auth.getCurrentUser().getEmail() : "No email";
 
-        String productId = databaseReference.push().getKey();
         Map<String, Object> productData = new HashMap<>();
-        productData.put("id", productId);
         productData.put("name", name);
         productData.put("category", category);
         productData.put("condition", condition);
-        productData.put("location", location); // Location field is now a custom string
+        productData.put("location", location);
         productData.put("description", description);
         productData.put("isAvailable", true);
-        productData.put("datePosted", formattedDate);
         productData.put("email", currentUserEmail);
 
-        databaseReference.child(productId).setValue(productData).addOnCompleteListener(task -> {
-            if (task.isSuccessful()) {
-                Snackbar.make(submitButton, "Product posted successfully", Snackbar.LENGTH_SHORT).show();
-                finish();
-            } else {
-                Snackbar.make(submitButton, "Failed to post product", Snackbar.LENGTH_SHORT).show();
-            }
-        });
+        if (productId != null) {
+            // Update existing product
+            databaseReference.child(productId).updateChildren(productData).addOnCompleteListener(task -> {
+                if (task.isSuccessful()) {
+                    Snackbar.make(submitButton, "Product updated successfully", Snackbar.LENGTH_SHORT).show();
+                    finish();
+                } else {
+                    Snackbar.make(submitButton, "Failed to update product", Snackbar.LENGTH_SHORT).show();
+                }
+            });
+        } else {
+            // Create a new product
+            String newProductId = databaseReference.push().getKey();
+            productData.put("id", newProductId);
+            productData.put("datePosted", new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
+
+            databaseReference.child(newProductId).setValue(productData).addOnCompleteListener(task -> {
+                if (task.isSuccessful()) {
+                    Snackbar.make(submitButton, "Product posted successfully", Snackbar.LENGTH_SHORT).show();
+                    finish();
+                } else {
+                    Snackbar.make(submitButton, "Failed to post product", Snackbar.LENGTH_SHORT).show();
+                }
+            });
+        }
     }
 }

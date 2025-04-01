@@ -3385,10 +3385,6 @@ id easeOut
 id east
 id edge
 id editButton
-id editCategory
-id editDescription
-id editLocation
-id editName
 id edit_query
 id edit_text_id
 id elastic
@@ -3900,7 +3896,6 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_confirmation_page
 layout activity_details
-layout activity_edit_product
 layout activity_google_map
 layout activity_login
 layout activity_main

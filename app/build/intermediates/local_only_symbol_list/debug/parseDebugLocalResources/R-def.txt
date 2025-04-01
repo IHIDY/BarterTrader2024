@@ -26,10 +26,6 @@ id detailButton
 id detailsContainerGL
 id distanceEditText
 id editButton
-id editCategory
-id editDescription
-id editLocation
-id editName
 id email
 id emailEditText
 id fName
@@ -89,7 +85,6 @@ id titleText
 id viewPostProducts
 layout activity_confirmation_page
 layout activity_details
-layout activity_edit_product
 layout activity_google_map
 layout activity_login
 layout activity_main

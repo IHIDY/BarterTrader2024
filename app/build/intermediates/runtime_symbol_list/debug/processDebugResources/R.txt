@@ -3384,10 +3384,6 @@ int id easeOut 0x7f0900c4
 int id east 0x7f0900c5
 int id edge 0x7f0900c6
 int id editButton 0x7f09024d
-int id editCategory 0x7f090255
-int id editDescription 0x7f090256
-int id editLocation 0x7f090257
-int id editName 0x7f090258
 int id edit_query 0x7f0900c7
 int id edit_text_id 0x7f0900c8
 int id elastic 0x7f0900c9
@@ -3899,7 +3895,6 @@ int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
 int layout activity_confirmation_page 0x7f0c001c
 int layout activity_details 0x7f0c001d
-int layout activity_edit_product 0x7f0c0081
 int layout activity_google_map 0x7f0c001e
 int layout activity_login 0x7f0c001f
 int layout activity_main 0x7f0c0020

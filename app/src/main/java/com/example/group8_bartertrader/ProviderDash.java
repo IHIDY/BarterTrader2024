@@ -76,7 +76,7 @@ public class ProviderDash extends AppCompatActivity {
 
     // Method to edit product by productId
     private void editProduct(String productId) {
-        Intent intent = new Intent(ProviderDash.this, EditProductActivity.class);
+        Intent intent = new Intent(ProviderDash.this, ProductForm.class);
         intent.putExtra("productId", productId); // Pass the productId to EditProductActivity
         startActivity(intent);
     }
