@@ -31,11 +31,13 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
     public static class MessageViewHolder extends RecyclerView.ViewHolder {
         TextView messageTextView;
         LinearLayout messageContainer;
+        TextView timeStamp;
 
         public MessageViewHolder(@NonNull View itemView) {
             super(itemView);
             messageTextView = itemView.findViewById(R.id.messageTextView);
             messageContainer = itemView.findViewById(R.id.messageContainer);
+            timeStamp = itemView.findViewById(R.id.timestampTextView);
         }
     }
 
@@ -50,6 +52,9 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
     public void onBindViewHolder(@NonNull MessageViewHolder holder, int position) {
         Message message = messageList.get(position);
         holder.messageTextView.setText(message.getContent());
+
+        String time = android.text.format.DateFormat.format("hh:mm a", message.getTimestamp()).toString();
+        holder.timeStamp.setText(time);
 
         if (message.getSenderId().equals(currentUserId)) {
             holder.messageContainer.setGravity(Gravity.END);
