@@ -3302,6 +3302,7 @@ int id cache_measures 0x7f090074
 int id callMeasure 0x7f090075
 int id cancel_button 0x7f090076
 int id carryVelocity 0x7f090077
+int id categoriesInput 0x7f09024a
 int id center 0x7f090078
 int id centerCrop 0x7f090079
 int id centerInside 0x7f09007a
@@ -3467,6 +3468,7 @@ int id linear 0x7f090119
 int id listMode 0x7f09011a
 int id list_item 0x7f09011b
 int id locationTextView 0x7f09011c
+int id locationsInput 0x7f09024b
 int id loginBtn 0x7f09011d
 int id m3_side_sheet 0x7f09011e
 int id main 0x7f09011f
@@ -3619,6 +3621,8 @@ int id roleSelect 0x7f0901b1
 int id rounded 0x7f0901b2
 int id row_index_key 0x7f0901b3
 int id satellite 0x7f0901b4
+int id saveButton 0x7f09024d
+int id savePreferencesButton 0x7f09024e
 int id save_non_transition_alpha 0x7f0901b5
 int id save_overlay_view 0x7f0901b6
 int id sawtooth 0x7f0901b7
@@ -3890,6 +3894,7 @@ int layout activity_login 0x7f0c001f
 int layout activity_main 0x7f0c0020
 int layout activity_my_offers 0x7f0c0021
 int layout activity_offer_details 0x7f0c0022
+int layout activity_preferences 0x7f0c0080
 int layout activity_product_form 0x7f0c0023
 int layout activity_provider_dash 0x7f0c0024
 int layout activity_provider_product_list 0x7f0c0025

@@ -1,5 +1,7 @@
 package com.example.group8_bartertrader;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;

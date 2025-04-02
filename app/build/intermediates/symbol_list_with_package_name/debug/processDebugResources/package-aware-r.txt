@@ -3303,6 +3303,7 @@ id cache_measures
 id callMeasure
 id cancel_button
 id carryVelocity
+id categoriesInput
 id center
 id centerCrop
 id centerInside
@@ -3468,6 +3469,7 @@ id linear
 id listMode
 id list_item
 id locationTextView
+id locationsInput
 id loginBtn
 id m3_side_sheet
 id main
@@ -3620,6 +3622,8 @@ id roleSelect
 id rounded
 id row_index_key
 id satellite
+id saveButton
+id savePreferencesButton
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3891,6 +3895,7 @@ layout activity_login
 layout activity_main
 layout activity_my_offers
 layout activity_offer_details
+layout activity_preferences
 layout activity_product_form
 layout activity_provider_dash
 layout activity_provider_product_list
