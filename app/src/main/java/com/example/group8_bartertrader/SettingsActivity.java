@@ -13,10 +13,17 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.group8_bartertrader.model.PreferencesManager;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -43,6 +50,7 @@ public class SettingsActivity extends AppCompatActivity {
         Button resetPasswordButton = findViewById(R.id.resetPasswordButton);
         Button changeRoleBtn = findViewById(R.id.changeRoleBtn);
         Button editPreferencesBtn = findViewById(R.id.editPreferencesBtn);
+        Button returnToDashBtn = findViewById(R.id.returnToDashBtn);
         preferencesSummary = findViewById(R.id.preferencesSummary); // Removed local variable declaration
 
         // Set up role spinner items
@@ -63,7 +71,34 @@ public class SettingsActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
+        returnToDashBtn.setOnClickListener(view -> {
+            FirebaseUser currentUser = mAuth.getCurrentUser();
+            if (currentUser != null) {
+                // Get user role from Firebase Database instead of static User class
+                DatabaseReference userRef = FirebaseDatabase.getInstance().getReference("users").child(currentUser.getUid());
+                userRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        String role = snapshot.child("role").getValue(String.class);
+                        if ("Receiver".equals(role)) {
+                            startActivity(new Intent(SettingsActivity.this, ReceiverDash.class));
+                        } else if ("Provider".equals(role)) {
+                            startActivity(new Intent(SettingsActivity.this, ProviderDash.class));
+                        }
+                        finish();
+                    }
 
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+                        Toast.makeText(SettingsActivity.this, "Failed to get user role", Toast.LENGTH_SHORT).show();
+                    }
+                });
+            } else {
+                // User not logged in, redirect to login
+                startActivity(new Intent(this, LoginActivity.class));
+                finish();
+            }
+        });
         resetPasswordButton.setOnClickListener(v -> {
             startActivity(new Intent(this, ResetPasswordActivity.class));
             finish();

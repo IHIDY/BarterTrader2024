@@ -3614,6 +3614,7 @@ int id regBtn 0x7f0901aa
 int id report_drawn 0x7f0901ab
 int id resetPasswordButton 0x7f0901ac
 int id respondToOfferSpinner 0x7f0901ad
+int id returnToDashBtn 0x7f090250
 int id reverseSawtooth 0x7f0901ae
 int id right 0x7f0901af
 int id rightToLeft 0x7f0901b0

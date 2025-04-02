@@ -62,6 +62,7 @@ id recsettingbutton
 id regBtn
 id resetPasswordButton
 id respondToOfferSpinner
+id returnToDashBtn
 id roleSelect
 id saveButton
 id savePreferencesButton

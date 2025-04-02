@@ -3615,6 +3615,7 @@ id regBtn
 id report_drawn
 id resetPasswordButton
 id respondToOfferSpinner
+id returnToDashBtn
 id reverseSawtooth
 id right
 id rightToLeft
