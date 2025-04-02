@@ -3,80 +3,132 @@
  */
 package com.example.group8_bartertrader;
 
-// import package needed
-import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
+import android.text.TextUtils;
+import android.view.View;
 import android.widget.Button;
-import android.widget.Spinner;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.group8_bartertrader.model.PreferencesManager;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class SettingsActivity extends AppCompatActivity {
-    // Firebase authentication instance
     private FirebaseAuth mAuth;
+    private PreferencesManager preferencesManager;
+    private TextView preferencesSummary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        // Initialize Firebase Auth
+        // Initialize Firebase Auth and PreferencesManager
         mAuth = FirebaseAuth.getInstance();
+        preferencesManager = PreferencesManager.getInstance(this);
 
-        // Find the logout button in the layout
+        // Initialize views
         Button logoutButton = findViewById(R.id.LogOutButton);
-
         Button resetPasswordButton = findViewById(R.id.resetPasswordButton);
         Button changeRoleBtn = findViewById(R.id.changeRoleBtn);
+        Button editPreferencesBtn = findViewById(R.id.editPreferencesBtn);
+        preferencesSummary = findViewById(R.id.preferencesSummary); // Removed local variable declaration
 
-//        Spinner mySpinner = findViewById(R.id.mySpinner);
-
+        // Set up role spinner items
         List<String> items = new ArrayList<>();
         items.add("Select a role");
         items.add("Provider");
         items.add("Receiver");
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(
-                this,
-                android.R.layout.simple_spinner_item,
-                items
-        );
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-//        mySpinner.setAdapter(adapter);
-
         changeRoleBtn.setOnClickListener(view -> {
-            Intent intent = new Intent(SettingsActivity.this, ConfirmationPage.class);
-            startActivity(intent);
+            startActivity(new Intent(SettingsActivity.this, ConfirmationPage.class));
         });
 
-
-        // Set a click listener for the logout button
         logoutButton.setOnClickListener(view -> {
-            // Confirm the logout action
-            mAuth.signOut(); // Log out the user
-            Toast.makeText(SettingsActivity.this, "You have been logged out", Toast.LENGTH_SHORT).show();
-
-//           Redirect to the login activity
-            Intent intent = new Intent(SettingsActivity.this, LoginActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(intent);
-            finish(); // Finish the current activity
-        });
-
-        resetPasswordButton.setOnClickListener(v -> {
-            Intent intent = new Intent(SettingsActivity.this, ResetPasswordActivity.class);
+            mAuth.signOut();
+            Toast.makeText(this, "You have been logged out", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, LoginActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
             finish();
         });
+
+        resetPasswordButton.setOnClickListener(v -> {
+            startActivity(new Intent(this, ResetPasswordActivity.class));
+            finish();
+        });
+
+        editPreferencesBtn.setOnClickListener(v -> showEditPreferencesDialog());
+
+        loadAndDisplayPreferences();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadAndDisplayPreferences();
+    }
+
+    private void loadAndDisplayPreferences() {
+        if (preferencesManager != null && preferencesSummary != null) {
+            preferencesManager.loadPreferencesFromFirebase((categories, locations) -> {
+                runOnUiThread(() -> {
+                    if (categories.isEmpty() && locations.isEmpty()) {
+                        preferencesSummary.setText("No preferences set");
+                    } else {
+                        String summary = "Categories: " + TextUtils.join(", ", categories) +
+                                "\nLocations: " + TextUtils.join(", ", locations);
+                        preferencesSummary.setText(summary);
+                    }
+                });
+            });
+        }
+    }
+
+    private void showEditPreferencesDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        View dialogView = getLayoutInflater().inflate(R.layout.dialog_edit_preferences, null);
+
+        EditText categoriesInput = dialogView.findViewById(R.id.categoriesInput);
+        EditText locationsInput = dialogView.findViewById(R.id.locationsInput);
+
+        if (preferencesManager != null) {
+            Set<String> categories = preferencesManager.getPreferredCategories();
+            Set<String> locations = preferencesManager.getPreferredLocations();
+
+            categoriesInput.setText(TextUtils.join(", ", categories));
+            locationsInput.setText(TextUtils.join(", ", locations));
+        }
+
+        builder.setView(dialogView)
+                .setTitle("Edit Preferences")
+                .setPositiveButton("Save", (dialog, which) -> {
+                    Set<String> newCategories = new HashSet<>(
+                            Arrays.asList(categoriesInput.getText().toString().split("\\s*,\\s*"))
+                    );
+                    Set<String> newLocations = new HashSet<>(
+                            Arrays.asList(locationsInput.getText().toString().split("\\s*,\\s*"))
+                    );
+
+                    if (preferencesManager != null) {
+                        preferencesManager.savePreferredCategories(newCategories);
+                        preferencesManager.savePreferredLocations(newLocations);
+                        loadAndDisplayPreferences();
+                    }
+                })
+                .setNegativeButton("Cancel", null)
+                .create()
+                .show();
     }
 }

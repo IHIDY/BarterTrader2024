@@ -30,6 +30,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.group8_bartertrader.adapter.ProductAdapter;
 import com.example.group8_bartertrader.model.PreferencesManager;
 import com.example.group8_bartertrader.model.Product;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -91,6 +93,13 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
         savePreferencesButton = findViewById(R.id.savePreferencesButton);
         savePreferencesButton.setOnClickListener(v -> saveCurrentSearchAsPreferences());
 
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        if (currentUser == null) {
+            // Not logged in, redirect to login
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
+            return;
+        }
         // Check and request location permissions
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
@@ -245,37 +254,58 @@ public class ReceiverDash extends AppCompatActivity implements LocationHelper.On
     }
 
     private void saveCurrentSearchAsPreferences() {
-        String currentCategory = selectedCategory;
-        String currentKeyword = keyword.getText().toString().trim();
-        String currentDistance = Distance.getText().toString().trim();
-        String currentLocation = locationTextView.getText().toString();
+        // Get current values with null checks
+        String currentCategory = selectedCategory != null ? selectedCategory : "";
+        String currentKeyword = keyword.getText() != null ? keyword.getText().toString().trim() : "";
+        String currentDistance = Distance.getText() != null ? Distance.getText().toString().trim() : "";
+        String currentLocation = locationTextView.getText() != null ?
+                locationTextView.getText().toString() : "Location: Not available";
 
         Set<String> categories = new HashSet<>();
         Set<String> locations = new HashSet<>();
 
-        if (currentCategory != null && !currentCategory.equals("Select Category")) {
+        // Add category if valid
+        if (!currentCategory.isEmpty() && !currentCategory.equals("Select Category")) {
             categories.add(currentCategory);
         }
 
+        // Add keyword if not empty
         if (!currentKeyword.isEmpty()) {
             categories.add(currentKeyword);
         }
 
+        // Add location if available
         if (!currentLocation.equals("Location: Not available")) {
-            String cleanLocation = currentLocation.replace("Location: ", "");
-            locations.add(cleanLocation);
+            String cleanLocation = currentLocation.replace("Location: ", "").trim();
+            if (!cleanLocation.isEmpty()) {
+                locations.add(cleanLocation);
+            }
         }
 
+        // Add distance if valid
         if (!currentDistance.isEmpty()) {
-            locations.add(currentDistance + " km");
+            try {
+                int distance = Integer.parseInt(currentDistance);
+                if (distance > 0) {
+                    locations.add(currentDistance + " km");
+                }
+            } catch (NumberFormatException e) {
+                Log.e("Preferences", "Invalid distance format", e);
+            }
         }
 
-        PreferencesManager preferencesManager = PreferencesManager.getInstance(this);
-        preferencesManager.savePreferredCategories(categories);
-        preferencesManager.savePreferredLocations(locations);
+        // Only save if we have at least one preference
+        if (!categories.isEmpty() || !locations.isEmpty()) {
+            PreferencesManager preferencesManager = PreferencesManager.getInstance(this);
+            preferencesManager.savePreferredCategories(categories);
+            preferencesManager.savePreferredLocations(locations);
 
-        Toast.makeText(this, "Search preferences saved!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Search preferences saved!", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "No preferences to save", Toast.LENGTH_SHORT).show();
+        }
     }
+
 
 // Call this in onCreate and onResume
 }

@@ -24,6 +24,7 @@ id declineButton
 id detailButton
 id detailsContainerGL
 id distanceEditText
+id editPreferencesBtn
 id email
 id emailEditText
 id fName
@@ -45,6 +46,7 @@ id newPasswordEditText
 id pBtn
 id pass
 id postButton
+id preferencesSummary
 id prodName
 id productAvailability
 id productCategory
@@ -91,6 +93,7 @@ layout activity_received_offers
 layout activity_receiver_dash
 layout activity_registration
 layout activity_settings
+layout dialog_edit_preferences
 layout new_password_form_page
 layout offer_item
 layout product_item
