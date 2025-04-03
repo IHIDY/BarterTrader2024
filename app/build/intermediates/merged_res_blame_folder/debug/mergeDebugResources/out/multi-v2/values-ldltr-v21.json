@@ -4,7 +4,7 @@
             "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-43:/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "/Users/jae/.gradle/caches/8.10.2/transforms/59d7662212bed10b1a890048675012a0/transformed/appcompat-1.7.0/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "source": "C:\\Users\\ellaj\\.gradle\\caches\\8.10.2\\transforms\\59d7662212bed10b1a890048675012a0\\transformed\\appcompat-1.7.0\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
