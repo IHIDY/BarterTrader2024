@@ -28,7 +28,7 @@ public class PreferencesManager {
     private static final String KEY_CATEGORIES = "preferred_categories";
     private static final String KEY_LOCATIONS = "preferred_locations";
 
-    private PreferencesManager(Context context) {
+    public PreferencesManager(Context context) {
         sharedPreferences = context.getSharedPreferences("UserPreferences", Context.MODE_PRIVATE);
         databaseReference = FirebaseDatabase.getInstance().getReference("users");
     }

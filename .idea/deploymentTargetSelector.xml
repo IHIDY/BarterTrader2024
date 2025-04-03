@@ -16,9 +16,6 @@
       <SelectionState runConfigName="SF">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="DetailsActivityEspressoTest">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
       <SelectionState runConfigName="SettingsActivity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>

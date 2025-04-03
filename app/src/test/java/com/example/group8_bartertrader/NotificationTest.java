@@ -2,6 +2,8 @@ package com.example.group8_bartertrader;
 
 import static org.junit.Assert.assertEquals;
 
+import androidx.test.ext.junit.runners.AndroidJUnit4;
+
 import com.example.group8_bartertrader.model.PreferencesManager;
 
 import org.junit.Rule;
