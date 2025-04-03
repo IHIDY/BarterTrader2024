@@ -57,14 +57,14 @@ public class SetPreferencesTest {
         onView(withId(R.id.categoriesInput))
                 .perform(typeText("Electronics, Furniture"), closeSoftKeyboard());
         onView(withId(R.id.locationsInput))
-                .perform(typeText("New York, 10 km"), closeSoftKeyboard());
+                .perform(typeText("Halifax, 10 km"), closeSoftKeyboard());
 
         onView(withText("Save")).perform(click());
 
         onView(withId(R.id.preferencesSummary))
                 .check(matches(withText(containsString("Electronics"))))
                 .check(matches(withText(containsString("Furniture"))))
-                .check(matches(withText(containsString("New York"))))
+                .check(matches(withText(containsString("Halifax"))))
                 .check(matches(withText(containsString("10 km"))));
     }
 }
