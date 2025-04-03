@@ -37,13 +37,11 @@ public class SetPreferencesTest {
 
     @Before
     public void setUp() {
-        // Initialize test user
         FirebaseAuth.getInstance().signInWithEmailAndPassword("testemail@email.com", "Test@123")
                 .addOnCompleteListener(task -> {
 
                 });
 
-        // Clear preferences before each test
         Context context = InstrumentationRegistry.getInstrumentation().getTargetContext();
         PreferencesManager.getInstance(context)
                 .savePreferredCategories(new HashSet<>());
@@ -51,23 +49,18 @@ public class SetPreferencesTest {
 
     @Test
     public void testPreferencesDisplay() {
-        // Verify initial empty state
         onView(withId(R.id.preferencesSummary))
                 .check(matches(withText("No preferences set")));
 
-        // Test preference editing flow
         onView(withId(R.id.editPreferencesBtn)).perform(click());
 
-        // Enter test data in dialog
         onView(withId(R.id.categoriesInput))
                 .perform(typeText("Electronics, Furniture"), closeSoftKeyboard());
         onView(withId(R.id.locationsInput))
                 .perform(typeText("New York, 10 km"), closeSoftKeyboard());
 
-        // Click save
         onView(withText("Save")).perform(click());
 
-        // Verify display updates
         onView(withId(R.id.preferencesSummary))
                 .check(matches(withText(containsString("Electronics"))))
                 .check(matches(withText(containsString("Furniture"))))

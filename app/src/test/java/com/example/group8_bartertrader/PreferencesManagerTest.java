@@ -39,15 +39,12 @@ public class PreferencesManagerTest {
 
     @Before
     public void setUp() {
-        // Mock Context to return our mock SharedPreferences
         when(mockContext.getSharedPreferences("UserPreferences", Context.MODE_PRIVATE))
                 .thenReturn(mockSharedPreferences);
 
-        // Mock SharedPreferences behavior
         when(mockSharedPreferences.edit()).thenReturn(mockEditor);
         when(mockEditor.putStringSet(anyString(), anySet())).thenReturn(mockEditor);
 
-        // Initialize with Context
         preferencesManager = new PreferencesManager(mockContext);
     }
 
@@ -55,12 +52,10 @@ public class PreferencesManagerTest {
     public void testSaveAndGetCategories() {
         Set<String> testCategories = new HashSet<>(Arrays.asList("Electronics", "Books"));
 
-        // Test saving
         preferencesManager.savePreferredCategories(testCategories);
         verify(mockEditor).putStringSet("preferred_categories", testCategories);
         verify(mockEditor).apply();
 
-        // Test retrieval
         when(mockSharedPreferences.getStringSet("preferred_categories", new HashSet<>()))
                 .thenReturn(testCategories);
         Set<String> result = preferencesManager.getPreferredCategories();
@@ -71,12 +66,10 @@ public class PreferencesManagerTest {
     public void testSaveAndGetLocations() {
         Set<String> testLocations = new HashSet<>(Arrays.asList("New York", "Boston"));
 
-        // Test saving
         preferencesManager.savePreferredLocations(testLocations);
         verify(mockEditor).putStringSet("preferred_locations", testLocations);
         verify(mockEditor).apply();
 
-        // Test retrieval
         when(mockSharedPreferences.getStringSet("preferred_locations", new HashSet<>()))
                 .thenReturn(testLocations);
         Set<String> result = preferencesManager.getPreferredLocations();
