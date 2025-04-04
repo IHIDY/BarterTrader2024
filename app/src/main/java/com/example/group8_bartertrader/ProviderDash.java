@@ -13,13 +13,12 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.group8_bartertrader.model.Product;
 import com.example.group8_bartertrader.provider.ProviderProductList;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 public class ProviderDash extends AppCompatActivity {
 
@@ -49,25 +48,55 @@ public class ProviderDash extends AppCompatActivity {
             return insets;
         });
 
+        // Navigate to SettingsActivity
         pBtn.setOnClickListener(v -> {
             Log.d("BTN CLICKED", "P BTN CLICKED");
             Intent intent = new Intent(ProviderDash.this, SettingsActivity.class);
             startActivity(intent);
         });
 
+        // Navigate to ProductForm for posting a new product
         postUsedProductsBtn.setOnClickListener(v -> {
             Intent intent = new Intent(ProviderDash.this, ProductForm.class);
             startActivity(intent);
         });
 
+        // Navigate to ReceivedOfferActivity for received offers
         receivedOffersBtn.setOnClickListener(v -> {
             Intent intent = new Intent(ProviderDash.this, ReceivedOfferActivity.class);
             startActivity(intent);
         });
 
+        // Navigate to ProviderProductList to view posted products
         viewPostProducts.setOnClickListener(v -> {
             Intent intent = new Intent(ProviderDash.this, ProviderProductList.class);
             startActivity(intent);
         });
+    }
+
+    // Method to edit product by productId
+    private void editProduct(String productId) {
+        Intent intent = new Intent(ProviderDash.this, ProductForm.class);
+        intent.putExtra("productId", productId); // Pass the productId to EditProductActivity
+        startActivity(intent);
+    }
+
+    // Method to delete product by productId
+    private void deleteProduct(String productId) {
+        productsRef.child(productId).removeValue()
+                .addOnSuccessListener(aVoid -> Toast.makeText(ProviderDash.this, "Product deleted successfully", Toast.LENGTH_SHORT).show())
+                .addOnFailureListener(e -> Toast.makeText(ProviderDash.this, "Failed to delete product", Toast.LENGTH_SHORT).show());
+    }
+
+    // Method to handle the edit and delete button clicks in the product list
+    private void setUpProductButtons(View productView, String productId) {
+        Button editButton = productView.findViewById(R.id.editButton); // Assuming the button's id is editButton
+        Button deleteButton = productView.findViewById(R.id.deleteButton); // Assuming the button's id is deleteButton
+
+        // Set edit button listener
+        editButton.setOnClickListener(v -> editProduct(productId));
+
+        // Set delete button listener
+        deleteButton.setOnClickListener(v -> deleteProduct(productId));
     }
 }

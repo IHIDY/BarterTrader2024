@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="deleteButton" type="id" />
+    <item name="detailButton" type="id" />
+    <item name="editButton" type="id" />
+    <item name="mapButton" type="id" />
+    <item name="productAvailability" type="id" />
+    <item name="productDescriptionEditText" type="id" />
+    <item name="productCategoryEditText" type="id" />
+    <item name="productNameEditText" type="id" />
+    <item name="productLocationEditText" type="id" />
+    <item name="saveButton" type="id" />
+    <item name="cancelButton" type="id" />
+</resources>

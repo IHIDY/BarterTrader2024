@@ -3058,6 +3058,8 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable bubble_me
+drawable bubble_other
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -3267,6 +3269,7 @@ id aligned
 id all
 id allStates
 id always
+id androidx_test_espresso_contrib_drawer_layout_tag
 id animateToEnd
 id animateToStart
 id antiClockwise
@@ -3302,6 +3305,7 @@ id buttonPanel
 id button_received_offers
 id cache_measures
 id callMeasure
+id cancelButton
 id cancel_button
 id carryVelocity
 id categoriesInput
@@ -3314,6 +3318,8 @@ id chain
 id chain2
 id chains
 id changeRoleBtn
+id chatButton
+id chatLayout
 id checkbox
 id checked
 id chronometer
@@ -3352,6 +3358,7 @@ id decelerateAndComplete
 id declineButton
 id decor_content_parent
 id default_activity_button
+id deleteButton
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -3384,6 +3391,7 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editButton
 id editPreferencesBtn
 id edit_query
 id edit_text_id
@@ -3471,6 +3479,7 @@ id line3
 id linear
 id listMode
 id list_item
+id loadingIndicator
 id locationTextView
 id locationsInput
 id loginBtn
@@ -3504,6 +3513,10 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id message
+id messageContainer
+id messageEditText
+id messageRecyclerView
+id messageTextView
 id middle
 id mini
 id month_grid
@@ -3600,13 +3613,17 @@ id pressed
 id prodName
 id productAvailability
 id productCategory
+id productCategoryEditText
 id productCondition
 id productDescription
+id productDescriptionEditText
 id productDetails
 id productIdTV
 id productLocation
+id productLocationEditText
 id productLocationTV
 id productName
+id productNameEditText
 id productRecyclerView
 id progress_circular
 id progress_horizontal
@@ -3655,6 +3672,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id sendButton
 id sendNotificationBtn
 id settings_title
 id sharedValueSet
@@ -3737,6 +3755,7 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id time
+id timestampTextView
 id title
 id titleDividerNoCustom
 id titleTV
@@ -3898,6 +3917,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_chat
 layout activity_confirmation_page
 layout activity_details
 layout activity_google_map
@@ -3956,6 +3976,7 @@ layout material_time_input
 layout material_timepicker
 layout material_timepicker_dialog
 layout material_timepicker_textinput_display
+layout message_item
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -4965,6 +4986,8 @@ style ThemeOverlay_MaterialComponents_TimePicker_Display_TextInputEditText
 style ThemeOverlay_MaterialComponents_Toolbar_Popup_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar

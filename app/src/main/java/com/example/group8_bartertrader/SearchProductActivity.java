@@ -50,7 +50,7 @@ public class SearchProductActivity extends AppCompatActivity {
         searchButton = findViewById(R.id.filterButton);
 
         productList = new ArrayList<>();
-        productAdapter = new ProductAdapter(productList);
+        productAdapter = new ProductAdapter(productList, null);
         productRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         productRecyclerView.setAdapter(productAdapter);
 
@@ -135,7 +135,7 @@ public class SearchProductActivity extends AppCompatActivity {
         // use a RecyclerView to display the products
         productRecyclerView = findViewById(R.id.productRecyclerView);
         productRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        productAdapter = new ProductAdapter(productList);
+        productAdapter = new ProductAdapter(productList, null);
         productRecyclerView.setAdapter(productAdapter);
     }
 }
