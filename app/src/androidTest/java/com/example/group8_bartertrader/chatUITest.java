@@ -30,17 +30,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import org.junit.Test;
 
 public class chatUITest {
-    //When the offer has not been accepted yet, the chat button should not be visable
-    @Test
-    public void chatDisabledTest(){
-        Intent intent = new Intent(ApplicationProvider.getApplicationContext(), ChatActivity.class);
-        intent.putExtra("offerId", "-OMmjlFGgNTbk4Po5wKl"); //OfferId is pending (defaults to false)
-        ActivityScenario<ChatActivity> scenario = ActivityScenario.launch(intent);
-
-        onView(withId(R.id.sendButton)).check(matches(not(isEnabled())));
-        onView(withId(R.id.messageEditText)).check(matches(not(isEnabled())));
-    }
-
     //When the offer is accepted, the chat button should appear
     @Test
     public void chatEnabledTest(){

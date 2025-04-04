@@ -1,9 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<testsuite name="com.example.group8_bartertrader.ReceivedOfferUITest" tests="1" failures="0" errors="0" skipped="0" time="10.16" timestamp="2025-04-04T22:09:23" hostname="localhost">
+<testsuite name="com.example.group8_bartertrader.chatUITest" tests="2" failures="0" errors="0" skipped="0" time="4.586" timestamp="2025-04-04T22:18:39" hostname="localhost">
   <properties>
     <property name="device" value="Medium_Phone_API_35(AVD) - 15" />
     <property name="flavor" value="" />
     <property name="project" value=":app" />
   </properties>
-  <testcase name="testChatButtonLaunchesChatActivity_whenOfferAccepted_withActionOnItem" classname="com.example.group8_bartertrader.ReceivedOfferUITest" time="7.818" />
+  <testcase name="sendMessageTest" classname="com.example.group8_bartertrader.chatUITest" time="2.283" />
+  <testcase name="chatEnabledTest" classname="com.example.group8_bartertrader.chatUITest" time="0.48" />
 </testsuite>

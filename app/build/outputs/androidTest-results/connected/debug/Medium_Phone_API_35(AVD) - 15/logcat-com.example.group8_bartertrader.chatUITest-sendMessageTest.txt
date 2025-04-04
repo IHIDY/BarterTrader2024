@@ -1,0 +1,256 @@
+04-04 19:17:20.139  8312  8340 I TestRunner: started: sendMessageTest(com.example.group8_bartertrader.chatUITest)
+04-04 19:17:20.140  2664  2790 W adservices: Skip logging because Cobalt logger is null
+04-04 19:17:20.154  8312  8340 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+04-04 19:17:20.169  8312  8343 D TrafficStats: tagSocket(102) with statsTag=0x8001, statsUid=-1
+04-04 19:17:20.171   591  1844 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@6538e99 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+04-04 19:17:20.196  1139  1139 W SplitSelectStateCtor: Missing session instanceIds
+04-04 19:17:20.196  1139  1139 D StatsLog: LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
+04-04 19:17:20.215  1139  1139 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=96, baseIntent=Intent { flg=0x10008000 cmp=com.example.group8_bartertrader/.ChatActivity }
+04-04 19:17:20.228   408   408 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+04-04 19:17:20.358  8312  8312 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+04-04 19:17:20.371  1139  1604 D EGL_emulation: app_time_stats: avg=2726.69ms min=2726.69ms max=2726.69ms count=1
+04-04 19:17:20.380  8312  8312 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.ChatActivity@a92a6a3 in: PRE_ON_CREATE
+04-04 19:17:20.380  8312  8312 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+04-04 19:17:20.413  1139  1604 D EGL_emulation: app_time_stats: avg=80328.66ms min=109.97ms max=160547.34ms count=2
+04-04 19:17:20.426  1139  1139 D VRI[NexusLauncherActivity]: visibilityChanged oldVisibility=true newVisibility=false
+04-04 19:17:20.426  8312  8312 D CompatChangeReporter: Compat change id reported: 309578419; UID 10275; state: ENABLED
+04-04 19:17:20.444  1139  1139 D NexusLauncherModelDelegate: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+04-04 19:17:20.450  8312  8312 W p8_bartertrader: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+04-04 19:17:20.476   856   972 D EGL_emulation: app_time_stats: avg=20325.56ms min=20325.56ms max=20325.56ms count=1
+04-04 19:17:20.490  8312  8312 D CompatChangeReporter: Compat change id reported: 63938206; UID 10275; state: ENABLED
+04-04 19:17:20.511  1714  1714 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+04-04 19:17:20.511  1714  1714 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+04-04 19:17:20.515  8312  8312 D CompatChangeReporter: Compat change id reported: 303326708; UID 10275; state: ENABLED
+04-04 19:17:20.518  8312  8337 I FA      : Tag Manager is not found and thus will not be used
+04-04 19:17:20.594  8312  8312 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.ChatActivity@a92a6a3 in: CREATED
+04-04 19:17:20.595  8312  8312 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.group8_bartertrader.ChatActivity@a92a6a3
+04-04 19:17:20.597  8312  8312 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.ChatActivity@a92a6a3 in: STARTED
+04-04 19:17:20.597  8312  8312 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.group8_bartertrader.ChatActivity@a92a6a3
+04-04 19:17:20.599  8312  8312 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.ChatActivity@a92a6a3 in: RESUMED
+04-04 19:17:20.599  8312  8312 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.group8_bartertrader.ChatActivity@a92a6a3
+04-04 19:17:20.606  8312  8312 W HWUI    : Unknown dataspace 0
+04-04 19:17:20.623  8312  8358 D TrafficStats: tagSocket(119) with statsTag=0xffffffff, statsUid=-1
+04-04 19:17:20.647   408   504 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10275 pid=0
+04-04 19:17:20.647   408   504 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10275 => denied (201 us)
+04-04 19:17:20.647   408   504 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10275 pid=0
+04-04 19:17:20.647   408   504 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10275 => denied (397 us)
+04-04 19:17:20.648   408   541 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10275 pid=8312
+04-04 19:17:20.648   408   541 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10275 => denied (440 us)
+04-04 19:17:20.648   408   504 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10275 pid=0
+04-04 19:17:20.648   408   504 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10275 => denied (853 us)
+04-04 19:17:20.649  8312  8351 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+04-04 19:17:20.650  8312  8351 I EGL_emulation: Opening libGLESv2_emulation.so
+04-04 19:17:20.679  8312  8351 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+04-04 19:17:20.680  8312  8351 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+04-04 19:17:20.691   162   162 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+04-04 19:17:20.691  8312  8351 I Gralloc4: mapper 4.x is not supported
+04-04 19:17:20.747   591  1844 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10275 pid=0
+04-04 19:17:20.747   591  1844 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10275 => denied (156 us)
+04-04 19:17:20.747   591  1844 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10275 pid=0
+04-04 19:17:20.747   591  1844 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10275 => denied (61 us)
+04-04 19:17:20.747   591  1844 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10275 pid=0
+04-04 19:17:20.747   591  1844 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10275 => denied (607 us)
+04-04 19:17:20.761   591   627 W ziparchive: Unable to open '/data/app/~~AMdxyI0LvyEBhowSNjO6_w==/com.example.group8_bartertrader-72M20uXEJ-TqcSjPq-OJ3g==/base.dm': No such file or directory
+04-04 19:17:20.767   591   627 I ActivityTaskManager: Displayed com.example.group8_bartertrader/.ChatActivity for user 0: +590ms
+04-04 19:17:20.768   856   927 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@cbf2ba6
+04-04 19:17:20.769   591  1844 W InputManager-JNI: Input channel object '81b11a9 Splash Screen com.example.group8_bartertrader (client)' was disposed without first being removed with the input manager!
+04-04 19:17:20.774  1139  1139 D BaseDepthController: setSurface:
+04-04 19:17:20.774  1139  1139 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+04-04 19:17:20.774  1139  1139 D BaseDepthController: 	mSurface: null
+04-04 19:17:20.774  1139  1139 D BaseDepthController: mSurface is null and mCurrentBlur is: 0
+04-04 19:17:20.782  1139  1139 D StateManager: goToState - fromState: Normal, toState: Normal, partial trace:
+04-04 19:17:20.782  1139  1139 D StateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:4)
+04-04 19:17:20.782  1139  1139 D StateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:1)
+04-04 19:17:20.782  1139  1139 D StateManager: 	at com.android.launcher3.statemanager.StatefulActivity.onStop(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:34)
+04-04 19:17:20.785   591   726 I ImeTracker: com.example.group8_bartertrader:f040b71: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+04-04 19:17:20.785   591   726 I ImeTracker: com.example.group8_bartertrader:f040b71: onCancelled at PHASE_SERVER_SHOULD_HIDE
+04-04 19:17:20.795  1139  1139 D StatsLog: LAUNCHER_ONSTOP
+04-04 19:17:20.799  1139  1675 D OneSearchSuggestProvider: Shut down the binder channel
+04-04 19:17:20.801  1139  1139 D StatsLog: LAUNCHER_GOOGLE_SEARCH_RESTORE_LIST_SIZE_AFTER_ACTIVITY_RESTART
+04-04 19:17:20.823  1315  1315 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2090
+04-04 19:17:20.831  8312  8340 W FileTestStorage: Output properties is not supported.
+04-04 19:17:20.833  8312  8340 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+04-04 19:17:20.835  1315  1315 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 0, locked = false
+04-04 19:17:20.841  1714  8371 D AdvertisingIdClient: AdvertisingIdClient already created.
+04-04 19:17:20.841  1714  8371 D AdvertisingIdClient: AdvertisingIdClient is not bounded. Starting to bind it...
+04-04 19:17:20.845  8312  8340 D EventInjectionStrategy: Creating injection strategy with input manager.
+04-04 19:17:20.845  8312  8340 W p8_bartertrader: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (unsupported, reflection, allowed)
+04-04 19:17:20.845  8312  8340 W p8_bartertrader: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (unsupported, reflection, allowed)
+04-04 19:17:20.845  8312  8340 W p8_bartertrader: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (unsupported, reflection, allowed)
+04-04 19:17:20.847  1315  1315 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1357 onStartInput(EditorInfo{EditorInfo{packageName=com.example.group8_bartertrader, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+04-04 19:17:20.853  8312  8340 W p8_bartertrader: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (unsupported, reflection, allowed)
+04-04 19:17:20.856  8312  8312 W p8_bartertrader: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (unsupported, reflection, allowed)
+04-04 19:17:20.856  8312  8312 W p8_bartertrader: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (unsupported, reflection, allowed)
+04-04 19:17:20.857  8312  8312 W p8_bartertrader: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (unsupported, reflection, allowed)
+04-04 19:17:20.857  1315  1315 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 1, locked = false
+04-04 19:17:20.860  1714  8371 D AdvertisingIdClient: AdvertisingIdClient is bounded
+04-04 19:17:20.860  1093  3429 D TrafficStats: tagSocket(196) with statsTag=0x407, statsUid=-1
+04-04 19:17:20.864  8312  8312 I ViewInteraction: Performing 'type text(Test Message sent)' action on view view.getId() is <2131296585/com.example.group8_bartertrader:id/messageEditText>
+04-04 19:17:20.872  1714  8371 I AdvertisingIdClient: shouldSendLog 2265793
+04-04 19:17:20.873  1714  8371 I AdvertisingIdClient: GetInfoInternal elapse 32ms
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: Error inserting flex_time=0 job_id=-1 period=2000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=250832000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1743805040937 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:974)
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:814)
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1981)
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1875)
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: 	at dreu.d(:com.google.android.gms@250832035@25.08.32 (260400-731361394):727)
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: 	at drcl.n(:com.google.android.gms@250832035@25.08.32 (260400-731361394):29)
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: 	at drcl.u(:com.google.android.gms@250832035@25.08.32 (260400-731361394):364)
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: 	at drcl.h(:com.google.android.gms@250832035@25.08.32 (260400-731361394):51)
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: 	at dqxa.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):72)
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: 	at atim.c(:com.google.android.gms@250832035@25.08.32 (260400-731361394):50)
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: 	at atim.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):76)
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: 	at atnz.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):8)
+04-04 19:17:20.948  1093  8378 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+04-04 19:17:20.953  1315  1315 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2090
+04-04 19:17:20.955  8312  8312 I ImeTracker: com.example.group8_bartertrader:431003d6: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser true
+04-04 19:17:20.958  1315  1315 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 0, locked = false
+04-04 19:17:20.959  8312  8312 D InputMethodManager: showSoftInput() view=androidx.appcompat.widget.AppCompatEditText{191a9c3 VFED..CL. .F.P..ID 21,22-828,140 #7f090149 app:id/messageEditText aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+04-04 19:17:20.960  1315  1315 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1357 onStartInput(EditorInfo{EditorInfo{packageName=com.example.group8_bartertrader, inputType=20001, inputTypeString=Normal[MultiLine], enableLearning=true, autoCorrection=true, autoComplete=true, imeOptions=40000006, privateImeOptions=null, actionName=DONE, actionLabel=null, initialSelStart=0, initialSelEnd=0, initialCapsMode=0, label=null, fieldId=2131296585, fieldName=null, extras=Bundle[mParcelledData.dataSize=168], hintText=non-empty, hintLocales=[]}}, false)
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: Error inserting flex_time=9000 job_id=-1 period=20000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=250832000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1743805040962 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:974)
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:814)
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1981)
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1875)
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: 	at dreu.d(:com.google.android.gms@250832035@25.08.32 (260400-731361394):727)
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: 	at drcl.n(:com.google.android.gms@250832035@25.08.32 (260400-731361394):29)
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: 	at drcl.u(:com.google.android.gms@250832035@25.08.32 (260400-731361394):364)
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: 	at drcl.h(:com.google.android.gms@250832035@25.08.32 (260400-731361394):51)
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: 	at dqxa.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):72)
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: 	at atim.c(:com.google.android.gms@250832035@25.08.32 (260400-731361394):50)
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: 	at atim.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):76)
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: 	at atnz.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):8)
+04-04 19:17:20.970  1093  7823 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+04-04 19:17:20.972  8312  8312 I AssistStructure: Flattened final assist data: 1260 bytes, containing 1 windows, 6 views
+04-04 19:17:20.992  1315  1315 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 1, locked = false
+04-04 19:17:21.004  1315  1315 I DeviceIntelligenceExtension: DeviceIntelligenceExtension.getInlineSuggestionsRequest():281 Inline suggestions disabled in stylus mode or vertical PK/Voice toolbar
+04-04 19:17:21.007  1315  1315 I StylusModule: StylusModule.onUpdateToolType():801 Update tool type = 2
+04-04 19:17:21.036  1315  1315 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1454 onStartInputView(EditorInfo{EditorInfo{packageName=com.example.group8_bartertrader, inputType=20001, inputTypeString=Normal[MultiLine], enableLearning=true, autoCorrection=true, autoComplete=true, imeOptions=40000006, privateImeOptions=null, actionName=DONE, actionLabel=null, initialSelStart=0, initialSelEnd=0, initialCapsMode=0, label=null, fieldId=2131296585, fieldName=null, extras=Bundle[{androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true}], hintText=non-empty, hintLocales=[]}}, false)
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: Error inserting flex_time=9000 job_id=-1 period=20000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=250832000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1743805041027 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:974)
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:814)
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1981)
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1875)
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: 	at dreu.d(:com.google.android.gms@250832035@25.08.32 (260400-731361394):727)
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: 	at drcl.n(:com.google.android.gms@250832035@25.08.32 (260400-731361394):29)
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: 	at drcl.u(:com.google.android.gms@250832035@25.08.32 (260400-731361394):364)
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: 	at drcl.h(:com.google.android.gms@250832035@25.08.32 (260400-731361394):51)
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: 	at dqxa.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):72)
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: 	at atim.c(:com.google.android.gms@250832035@25.08.32 (260400-731361394):50)
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: 	at atim.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):76)
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: 	at atnz.run(:com.google.android.gms@250832035@25.08.32 (260400-731361394):8)
+04-04 19:17:21.036  1093  7935 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+04-04 19:17:21.048  1315  1315 I KeyboardHeightUtil: KeyboardHeightUtil.getOemKeyboardHeightRatio():161 systemKeyboardHeightRatio:1.000000.
+04-04 19:17:21.052  4442  4469 I Finsky  : [52] akya.A(184): Package com.google.android.gms is verified.
+04-04 19:17:21.052  1315  1315 I AndroidIME: InputBundleManager.loadActiveInputBundleId():483 loadActiveInputBundleId: en-US, ime_english_united_states
+04-04 19:17:21.057  1315  1315 I AndroidIME: AbstractIme.onActivate():90 LatinIme.onActivate() : EditorInfo = EditorInfo{packageName=com.example.group8_bartertrader, inputType=20001, inputTypeString=Normal[MultiLine], enableLearning=true, autoCorrection=true, autoComplete=true, imeOptions=40000006, privateImeOptions=null, actionName=DONE, actionLabel=null, initialSelStart=0, initialSelEnd=0, initialCapsMode=0, label=null, fieldId=2131296585, fieldName=null, extras=Bundle[{androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true}], hintText=non-empty, hintLocales=[]}, IncognitoMode = false, DeviceLocked = false
+04-04 19:17:21.078  1315  1315 I InputBundle: InputBundle.consumeEvent():949 Skip consuming an event as keyboard status is 0
+04-04 19:17:21.085  1714  1714 D BoundBrokerSvc: onBind: Intent { act=com.google.android.mdd.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+04-04 19:17:21.085  1714  1714 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.mdd.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+04-04 19:17:21.087  1315  1315 I Delight5Facilitator: Delight5Facilitator.initializeForIme():729 initializeForIme() : Locale = [en_US], layout = qwerty
+04-04 19:17:21.097  1714  8371 W FA-SVC  : Service response is missing Install Referrer install timestamp
+04-04 19:17:21.114  4442  4442 I Finsky  : [2] zne.onTrimMemory(11): Memory trim requested to level 40
+04-04 19:17:21.114  4442  4442 I Finsky  : [2] aeaw.accept(139): Flushing in-memory image cache
+04-04 19:17:21.117  1093  1552 I FontLog : (REDACTED) Received query %s, URI %s
+04-04 19:17:21.117  1093  1552 I FontLog : (REDACTED) Query [%s] resolved to %s
+04-04 19:17:21.123  1093  1552 I FontLog : (REDACTED) Fetch %s end status %s
+04-04 19:17:21.127  1093  1552 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+04-04 19:17:21.133  1315  1315 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1245 inline flag updated to:false
+04-04 19:17:21.142  1093  1552 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+04-04 19:17:21.153  1315  1315 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1245 inline flag updated to:false
+04-04 19:17:21.187  1042  1042 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:80123105
+04-04 19:17:21.205  8312  8356 W SyncTree: Listen at /chats/-OMX3e7jHiipVy4FnViz/offerAccepted failed: DatabaseError: Permission denied
+04-04 19:17:21.225  8312  8312 D UiControllerImpl: Injecting string: "Test Message sent"
+04-04 19:17:21.231  1315  1315 I InputBundle: InputBundle.consumeEvent():949 Skip consuming an event as keyboard status is 0
+04-04 19:17:21.236  1315  1315 I InputBundle: InputBundle.consumeEvent():949 Skip consuming an event as keyboard status is 0
+04-04 19:17:21.263  1315  1315 I KeyboardWrapper: KeyboardWrapper.activateKeyboard():546 activateKeyboard(): type=accessory, status=0, imeDef=kxt{stringId=ime_english_united_states, language=en-US, languageTag=en-US, processedConditions={enable_number_row=false, device=phone}, className=com.google.android.libraries.inputmethod.ime.experiment.ExperimentImeWrapper, label=0, keyEventInterpreter=null, inlineComposing=true, autoCapital=true, announceAutoSelectedCandidate=true, statusIcon=0, primeKeyboardType=SOFT, indicatorIcon=0, indicatorLabel=US, displayAppCompletions=true, extraValues=kxl{#0x7f0b0218=TypedValue{t=0x3/d=0x0 "writing_helper_enable_by_word_revert=false"}, #0x7f0b021e=TypedValue{t=0x3/d=0x0 "com.google.android.apps.inputmethod.libs.latin5.LatinIme"}, #0x7f0b021f=TypedValue{t=0x3/d=0x0 "com.google.android.apps.inputmethod.libs.edittracker.EditTrackingImeWrapper"}, #0x7f0b0220=TypedValue{t=0x3/d=0x0 "com.google.android.apps.inputmethod.libs.latin5.LatinIme"}}, processors=kzm@6ad8d7c, unacceptableMetaKeys=4098, languageSpecificSettings=0, asciiCapable=true, alwaysShowSuggestions=false, useAsciiPasswordKeyboard=false, secondaryIme=null, keyboardGroupDef=kyv@a492ed3, phenotypeFlagId=0, localizationLanguageTag=null, supportsInlineSuggestion=true}
+04-04 19:17:21.265  1315  1315 I KeyboardManager: KeyboardManager.requestKeyboard():248 Creating keyboard accessory, imeId=ime_english_united_states, cacheKey=theme_!gsf_!pgsans_!pgsf_!use_system_font_BORDER=true_FLAVOR_DPI=10_KEYBOARD_WIDTH_CATEGORY=NORMAL_LIGHT_THEME=true_PHYSICAL_DIAGONAL=6.1297245_SCREEN_SHORTEST_WIDTH=411_SCREEN_SHORTEST_WIDTH_NO_SCALE=411_bottom4dp_enable_google_fonts_icons=true_enable_popup_on_keypress=true_keyboard_redesign_google_sans=true_noshadow_overlay_builtin_dynamic_color_light_base.binarypb:gm3-light-fffaf8ff-ff495d92-e193b79a50e130fc32bee4b104211b83_silkpopup_unify_function_key_color=true
+04-04 19:17:21.271  1315  1315 I KeyboardWrapper: KeyboardWrapper.onKeyboardReady():208 onKeyboardReady(): type=accessory(accessory), kb=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard@9c56a66
+04-04 19:17:21.271  1315  1315 I KeyboardWrapper: KeyboardWrapper.doActivateKeyboard():573 doActivateKeyboard(): accessory
+04-04 19:17:21.273  1315  1315 W Keyboard: Keyboard.getKeyboardViewHelper():597 null helper is returned: keyboardDef=kyo{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f170045], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=0, recentKeyLayoutId=0, recentKeyPopupLayoutId=0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=HEADER, helpersCreated=[null, null, null, null], context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h914dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 0 - 1080, 2400) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.8 fontWeightAdjustment=0}
+04-04 19:17:21.276  1315  1315 W Keyboard: Keyboard.getKeyboardViewHelper():597 null helper is returned: keyboardDef=kyo{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f170045], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=0, recentKeyLayoutId=0, recentKeyPopupLayoutId=0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=BODY, helpersCreated=[null, null, null, null], context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h914dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 0 - 1080, 2400) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.8 fontWeightAdjustment=0}
+04-04 19:17:21.277  1315  1315 I GlobeKeyExtension: GlobeKeyExtension.getKeyboardInitialStates():131
+04-04 19:17:21.286  1315  1315 W Keyboard: Keyboard.getKeyboardViewHelper():597 null helper is returned: keyboardDef=kyo{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f170045], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=0, recentKeyLayoutId=0, recentKeyPopupLayoutId=0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=HEADER, helpersCreated=[null, null, null, null], context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h914dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 0 - 1080, 2400) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.8 fontWeightAdjustment=0}
+04-04 19:17:21.286  1315  1315 W Keyboard: Keyboard.getKeyboardViewHelper():597 null helper is returned: keyboardDef=kyo{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f170045], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=0, recentKeyLayoutId=0, recentKeyPopupLayoutId=0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=BODY, helpersCreated=[null, null, null, null], context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h914dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 0 - 1080, 2400) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.8 fontWeightAdjustment=0}
+04-04 19:17:21.286  1315  1315 W Keyboard: Keyboard.getKeyboardViewHelper():597 null helper is returned: keyboardDef=kyo{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f170045], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=0, recentKeyLayoutId=0, recentKeyPopupLayoutId=0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=FLOATING_CANDIDATES, helpersCreated=[null, null, null, null], context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h914dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 0 - 1080, 2400) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.8 fontWeightAdjustment=0}
+04-04 19:17:21.287  1315  1315 W Keyboard: Keyboard.getKeyboardViewHelper():597 null helper is returned: keyboardDef=kyo{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f170045], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=0, recentKeyLayoutId=0, recentKeyPopupLayoutId=0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=WIDGET, helpersCreated=[null, null, null, null], context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h914dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 0 - 1080, 2400) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.8 fontWeightAdjustment=0}
+04-04 19:17:21.288  1315  1315 I KeyboardManager: KeyboardManager.requestKeyboard():248 Creating keyboard accessory_candidates_consumer, imeId=ime_english_united_states, cacheKey=theme_!gsf_!pgsans_!pgsf_!use_system_font_BORDER=true_FLAVOR_DPI=10_KEYBOARD_WIDTH_CATEGORY=NORMAL_LIGHT_THEME=true_PHYSICAL_DIAGONAL=6.1297245_SCREEN_SHORTEST_WIDTH=411_SCREEN_SHORTEST_WIDTH_NO_SCALE=411_bottom4dp_enable_google_fonts_icons=true_enable_popup_on_keypress=true_keyboard_redesign_google_sans=true_noshadow_overlay_builtin_dynamic_color_light_base.binarypb:gm3-light-fffaf8ff-ff495d92-e193b79a50e130fc32bee4b104211b83_silkpopup_unify_function_key_color=true
+04-04 19:17:21.292  1315  1315 I GlobeKeyExtension: GlobeKeyExtension.getKeyboardInitialStates():131
+04-04 19:17:21.293  1315  1315 W Keyboard: Keyboard.getKeyboardViewHelper():597 null helper is returned: keyboardDef=kyo{processedConditions={}, globalConditions={global_theme_key=theme_!gsf_!pgsans_!pgsf_!use_system_font_BORDER=true_FLAVOR_DPI=10_KEYBOARD_WIDTH_CATEGORY=NORMAL_LIGHT_THEME=true_PHYSICAL_DIAGONAL=6.1297245_SCREEN_SHORTEST_WIDTH=411_SCREEN_SHORTEST_WIDTH_NO_SCALE=411_bottom4dp_enable_google_fonts_icons=true_enable_popup_on_keypress=true_keyboard_redesign_google_sans=true_noshadow_overlay_builtin_dynamic_color_light_base.binarypb:gm3-light-fffaf8ff-ff495d92-e193b79a50e130fc32bee4b104211b83_silkpopup_unify_function_key_color=true, global_locale=en_US, global_density_dpi=420, global_orientation=1}, className=.latin.keyboard.AccessoryKeyboard, resourceIds=[#0x7f170044], initialStates=0, keyboardViewDefs=[kzd{direction=null, id=#0x7f0b0164, isScalable=false, layoutId=#0x7f0e002d, type=FLOATING_CANDIDATES, touchable=true, defaultShow=false}], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x7f0e05cb, recentKeyLayoutId=0, recentKeyPopupLayoutId=0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=HEADER, helpersCreated=[null, null, kjv@6bb1991, null], context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h914dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 0 - 1080, 2400) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.8 fontWeightAdjustment=0}
+04-04 19:17:21.294  1315  1315 W Keyboard: Keyboard.getKeyboardViewHelper():597 null helper is returned: keyboardDef=kyo{processedConditions={}, globalConditions={global_theme_key=theme_!gsf_!pgsans_!pgsf_!use_system_font_BORDER=true_FLAVOR_DPI=10_KEYBOARD_WIDTH_CATEGORY=NORMAL_LIGHT_THEME=true_PHYSICAL_DIAGONAL=6.1297245_SCREEN_SHORTEST_WIDTH=411_SCREEN_SHORTEST_WIDTH_NO_SCALE=411_bottom4dp_enable_google_fonts_icons=true_enable_popup_on_keypress=true_keyboard_redesign_google_sans=true_noshadow_overlay_builtin_dynamic_color_light_base.binarypb:gm3-light-fffaf8ff-ff495d92-e193b79a50e130fc32bee4b104211b83_silkpopup_unify_function_key_color=true, global_locale=en_US, global_density_dpi=420, global_orientation=1}, className=.latin.keyboard.AccessoryKeyboard, resourceIds=[#0x7f170044], initialStates=0, keyboardViewDefs=[kzd{direction=null, id=#0x7f0b0164, isScalable=false, layoutId=#0x7f0e002d, type=FLOATING_CANDIDATES, touchable=true, defaultShow=false}], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x7f0e05cb, recentKeyLayoutId=0, recentKeyPopupLayoutId=0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=BODY, helpersCreated=[null, null, kjv@6bb1991, null], context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h914dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 0 - 1080, 2400) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.8 fontWeightAdjustment=0}
+04-04 19:17:21.308  1315  1315 I AndroidIME: InputBundleManager.startInput():361 startInput() with kyz[keyboardType=accessory, payload=null]
+04-04 19:17:21.309  1315  1315 I GlobeKeyExtension: GlobeKeyExtension.onActivate():70
+04-04 19:17:21.335  1315  1315 I CrowdsourceExtension: CrowdsourceExtension.checkIfDefaultBrowserIsAllowed():109 Failed to get default browser. The default browser may be deactivated.
+04-04 19:17:21.345  1315  1315 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():100 cancelShutdown()
+04-04 19:17:21.346  1315  1315 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():112 syncLanguagePacks()
+04-04 19:17:21.350  1315  1315 I VoiceInputManager: VoiceInputManager.onKeyboardActivated():1027 onKeyboardActivated() [UD]
+04-04 19:17:21.351  1315  2888 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():161 maybeScheduleAutoPackDownloadForFallback()
+04-04 19:17:21.354  1315  2888 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():198 maybeScheduleAutoPackDownload() for language tag en-US
+04-04 19:17:21.360  1315  1315 I AccessoryInputModeManager: AccessoryInputModeManager.onModeStarted():322 Accessory input mode started: STYLUS
+04-04 19:17:21.360  1315  1315 W ExtensionWrapper: ExtensionWrapper.setAllowUpdateNavigationBarStyle():810 class ihw is not activate
+04-04 19:17:21.361  1315  1315 I WidgetViewShowingController: WidgetViewShowingController.showWidgetKeyboardInternal():524 Show companion widget
+04-04 19:17:21.392  1315  1315 W ExtensionWrapper: ExtensionWrapper.setAllowUpdateNavigationBarStyle():810 class ihw is not activate
+04-04 19:17:21.394  1315  1315 I WidgetViewShowingPositionHandler: WidgetViewShowingPositionHandler.updateAvailableArea():194 update available area Rect(21, 84 - 1059, 2333)
+04-04 19:17:21.396  1315  1315 W NotificationCenter: NotificationCenter$NotificationQueue.notifyPendingNotificationsOnExecutor():877 Heavy notify work detected on UI thread: [ijo->ihs] takes 37ms
+04-04 19:17:21.400  1315  1315 I KeyboardModeManager: KeyboardModeManager.setSupportedKeyboardModes():1425 supportsSplitMode=true supportsOneHandedMode=true, needUpdateKeyboardMode=false
+04-04 19:17:21.402  1315  1315 I KeyboardHeightUtil: KeyboardHeightUtil.calculateMaxKeyboardBodyHeight():46 leave 281 height for app when ime window height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1877
+04-04 19:17:21.402  1315  1315 I KeyboardHeightUtil: KeyboardHeightUtil.calculateMaxKeyboardBodyHeight():46 leave 281 height for app when ime window height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1877
+04-04 19:17:21.402  1315  1315 W ExtensionWrapper: ExtensionWrapper.setExtensionViewVisibility():801 interface knk is not activate
+04-04 19:17:21.418  1315  1315 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 1, locked = false
+04-04 19:17:21.421  1315  1315 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomaticallyInCurrentInputBox():469 No private IME option set to start voice input.
+04-04 19:17:21.426  1315  1315 I StylusModule: StylusModule.onUpdateToolType():801 Update tool type = 0
+04-04 19:17:21.441  1315  1315 I WindowMetricsNotification: WindowMetricsNotification.notifyWithWindow():166
+04-04 19:17:21.444  1315  1315 I WindowMetricsNotification: WindowMetricsNotification.notify():159 mte[bounds=Rect(0, 63 - 1080, 2400), insets=Rect(0, 0 - 0, 63), densityDpi=420, smallestScreenWidthDp=411, displayWidth=1080, displayHeight=2400, xdpi=420.0, ydpi=420.0, isTrustable=true, displayId=0]; DisplayMetrics{density=2.625, width=1080, height=2400, scaledDensity=2.625, xdpi=420.0, ydpi=420.0}
+04-04 19:17:21.463  8312  8392 D FCM Token: Token: exAx5YG9T2-JyDLxvfCIyC:APA91bGemO9rSKH3aRciQLRE-drvC28VRAucwVA8PV7Wq__PwaKPrSEjNMN2Lc8TzneKx8v63Lj3Cyu7SXiyw8hJtuwxX2lyHKE50P4J6MNESCSippGb5_U
+04-04 19:17:21.486  8312  8317 I p8_bartertrader: Compiler allocated 4206KB to compile void android.widget.TextView.<init>(android.content.Context, android.util.AttributeSet, int, int)
+04-04 19:17:21.488  1714  1714 D BoundBrokerSvc: onBind: Intent { act=com.google.firebase.dynamiclinks.service.START pkg=com.google.android.gms }
+04-04 19:17:21.489  1714  1714 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.firebase.dynamiclinks.service.START pkg=com.google.android.gms }
+04-04 19:17:21.536  1315  1315 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():521 setKeyboardLayout()
+04-04 19:17:21.543  8312  8312 D InsetsController: show(ime(), fromIme=true)
+04-04 19:17:21.575  8312  8393 W InteractionJankMonitor: Initializing without READ_DEVICE_CONFIG permission. enabled=false, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=com.example.group8_bartertrader
+04-04 19:17:21.593  8312  8312 I ImeTracker: com.example.group8_bartertrader:431003d6: onShown
+04-04 19:17:21.736  1315  1315 I GoogleInputMethodService: GoogleInputMethodService$1.onKeyboardViewShown():311 onKeyboardViewShown: keyboardType=accessory, keyboardViewType=HEADER keyboardView=null
+04-04 19:17:21.736  1315  1315 I GoogleInputMethodService: GoogleInputMethodService$1.onKeyboardViewShown():311 onKeyboardViewShown: keyboardType=accessory, keyboardViewType=BODY keyboardView=null
+04-04 19:17:21.738  1315  1315 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltips():154 Tooltip with id spell_check_add_to_dictionary not found in tooltipManager.
+04-04 19:17:21.755  1315  1315 W AndroidSpellCheckerService: AndroidSpellCheckerService.initialize():73 initialize...
+04-04 19:17:21.755  1315  1315 I ShortcutsDataManager: ShortcutsDataManager.onContentChanged():72 onContentChanged()
+04-04 19:17:21.755  1315  1315 I ContactsDataManager: ContactsDataManager.onContentChanged():153 onContentChanged()
+04-04 19:17:21.757  1315  1315 W AndroidSpellCheckerService: AndroidSpellCheckerService.initialize():83 initialize...done
+04-04 19:17:21.760  1315  1326 I AndroidSpellCheckerService: AndroidSpellCheckerService.createSession():139 com.google.android.keyboard.client.delight5.LanguageIdentifier@2d9d9a5 is created
+04-04 19:17:21.780  8312  8351 D EGL_emulation: app_time_stats: avg=114.98ms min=12.59ms max=454.51ms count=9
+04-04 19:17:21.787  1315  1815 I native  : I0000 00:00:1743805041.785892    1815 input-context-store.cc:268] Ignoring stale client request for FetchSuggestions
+04-04 19:17:21.788  1315  1815 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():521 setKeyboardLayout()
+04-04 19:17:21.788  1315  1315 W InputContextProxy: InputContextProxy.applyClientDiffInternal():957 Ignore [FetchSuggestions] diff due to stale request: 147<150, inputStateId=63, lastInputStateId=63
+04-04 19:17:21.891  1315  1315 W InputContextProxy: InputContextProxy.waitForDecoderResponse():1632 Timed out while waiting for suggestion fetch request.
+04-04 19:17:21.893  1315  1315 E native  : E0000 00:00:1743805041.892956    1315 touch-center-module.cc:316] [TouchCenter] Can't find key at (1143, 285.75)
+04-04 19:17:21.918  1315  1315 I StylusModule: StylusModule.onUpdateToolType():801 Update tool type = 0
+04-04 19:17:21.980  8312  8317 I p8_bartertrader: Compiler allocated 5250KB to compile void android.view.ViewRootImpl.performTraversals()
+04-04 19:17:22.013  1315  1815 I native  : I0000 00:00:1743805042.013346    1815 input-context-store.cc:268] Ignoring stale client request for FetchSuggestions
+04-04 19:17:22.013  1315  1315 W InputContextProxy: InputContextProxy.applyClientDiffInternal():957 Ignore [FetchSuggestions] diff due to stale request: 151<164, inputStateId=70, lastInputStateId=70
+04-04 19:17:22.031  1315  1815 I native  : I0000 00:00:1743805042.031288    1815 input-context-store.cc:268] Ignoring stale client request for FetchSuggestions
+04-04 19:17:22.032  1315  1315 W InputContextProxy: InputContextProxy.applyClientDiffInternal():957 Ignore [FetchSuggestions] diff due to stale request: 165<167, inputStateId=71, lastInputStateId=71
+04-04 19:17:22.036  1315  1815 I native  : I0000 00:00:1743805042.036774    1815 input-context-store.cc:268] Ignoring stale client request for FetchSuggestions
+04-04 19:17:22.037  1315  1315 W InputContextProxy: InputContextProxy.applyClientDiffInternal():957 Ignore [FetchSuggestions] diff due to stale request: 167<169, inputStateId=72, lastInputStateId=72
+04-04 19:17:22.123  1315  1315 W InputContextProxy: InputContextProxy.waitForDecoderResponse():1632 Timed out while waiting for suggestion fetch request.
+04-04 19:17:22.124  1315  1315 E native  : E0000 00:00:1743805042.123979    1315 touch-center-module.cc:316] [TouchCenter] Can't find key at (1089, 304)
+04-04 19:17:22.145  1315  1815 I native  : I0000 00:00:1743805042.145050    1815 input-context-store.cc:268] Ignoring stale client request for FetchSuggestions
+04-04 19:17:22.223  1315  1815 I native  : I0000 00:00:1743805042.223444    1815 input-context-store.cc:191] Ignoring stale client request for OverrideDecodedCandidates
+04-04 19:17:22.223  1315  1315 W InputContextProxy: InputContextProxy.applyClientDiffInternal():957 Ignore [FetchSuggestions] diff due to stale request: 171<180, inputStateId=0, lastInputStateId=79
+04-04 19:17:22.234  8312  8312 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296743/com.example.group8_bartertrader:id/sendButton>
+04-04 19:17:22.531  8312  8312 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Test Message sent"
+04-04 19:17:22.534  8312  8340 I TestRunner: finished: sendMessageTest(com.example.group8_bartertrader.chatUITest)

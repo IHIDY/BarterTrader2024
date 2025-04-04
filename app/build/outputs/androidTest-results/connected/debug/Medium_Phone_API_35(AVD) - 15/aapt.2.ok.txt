@@ -1,7 +1,7 @@
 EXECUTING: /Users/junfali/Library/Android/sdk/build-tools/35.0.0/aapt dump badging /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/apk/androidTest/debug/app-debug-androidTest.apk
 CURRENT_WORKING_DIRECTORY: /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter
-START_TIME: 2025-04-04 19:09:22.678
-START_TIME-NANOS: 2025-04-04 19:09:22.678057000
+START_TIME: 2025-04-04 19:18:39.396
+START_TIME-NANOS: 2025-04-04 19:18:39.396312000
 ENVIRONMENT:
 
 *****************************************
@@ -21,7 +21,7 @@ supports-any-density: 'true'
 locales: '--_--'
 densities: '160'
 ===================
-END_TIME: 2025-04-04 19:09:22.705
-END_TIME-NANOS: 2025-04-04 19:09:22.705622000
-DURATION: 27ms
+END_TIME: 2025-04-04 19:18:39.421
+END_TIME-NANOS: 2025-04-04 19:18:39.421163000
+DURATION: 24ms
 EXIT CODE: 0
