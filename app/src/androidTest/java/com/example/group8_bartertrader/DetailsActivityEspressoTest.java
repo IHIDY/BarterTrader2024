@@ -43,7 +43,7 @@ public class DetailsActivityEspressoTest {
 
         // Create a test product
         testProduct = new Product("3", "ellaemail@gmail.com", "Black Sunglasses",
-                "Fashionable Sunglasses", "Accesories", true, "Halifax", "Halifax", "Good", 2023-05-01);
+                "Fashionable Sunglasses", "Accesories", true, "Halifax", "Good", 2023-05-01);
     }
 
     @Test

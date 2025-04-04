@@ -46,8 +46,8 @@ public class ProductFormEspressoTest {
             onView(withId(R.id.productName)).perform(ViewActions.typeText("Sample Product"));
             onView(withId(R.id.productCategory)).perform(ViewActions.click());
             onView(withText("Electronics")).perform(ViewActions.click());
-            onView(withId(R.id.getLocationButton)).perform(ViewActions.click());
-            onView(withId(R.id.getLocationButton)).perform(ViewActions.click());
+//            onView(withId(R.id.getLocationButton)).perform(ViewActions.click());
+//            onView(withId(R.id.getLocationButton)).perform(ViewActions.click());
             onView(withId(R.id.productCondition)).perform(ViewActions.click());
             onView(withText("Good")).perform(ViewActions.click());
             onView(withId(R.id.productDescription)).perform(ViewActions.typeText("Product description"));

@@ -38,7 +38,6 @@ public class DetailsActivity extends AppCompatActivity {
         // Get the product passed from the adapter
         Product product = (Product) getIntent().getSerializableExtra("Product");
 
-
         // Display product details
         if (product != null) {
             productName.setText(product.getName());
@@ -52,7 +51,12 @@ public class DetailsActivity extends AppCompatActivity {
         // Set up the "Offer Exchange" button
         offerExchangeButton.setOnClickListener(v -> {
             Intent intent = new Intent(DetailsActivity.this, SubmitForm.class);
-            intent.putExtra("Product", product);
+            intent.putExtra("productId", product.getId());
+            intent.putExtra("productName", product.getName());
+            intent.putExtra("productCategory", product.getCategory());
+            intent.putExtra("productLocation", product.getLocation());
+            intent.putExtra("productDescription", product.getDescription());
+            intent.putExtra("providerEmail", product.getEmail());
             startActivity(intent);
         });
         ExitButton.setOnClickListener(v -> {

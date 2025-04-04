@@ -23,7 +23,7 @@ public class SubmitHelper {
 
     public void submitOffer(String name, String category, String description, String location, String currentUserEmail,
                             String targetProductId, String targetProductName, String targetProductCategory,
-                            String targetProductDescription, String targetProductLocation, SubmitCallback callback) {
+                            String targetProductDescription, String targetProductLocation, String targetProviderEmail, SubmitCallback callback) {
 
         if (TextUtils.isEmpty(name) || TextUtils.isEmpty(category) || TextUtils.isEmpty(description) || TextUtils.isEmpty(location)) {
             Log.e("SubmitHelper", "All fields are required.");
@@ -41,7 +41,11 @@ public class SubmitHelper {
             if (task.getResult().exists()) {
                 for (DataSnapshot snapshot : task.getResult().getChildren()) {
                     String existingTargetId = snapshot.child("targetItemId").getValue(String.class);
-                    if (existingTargetId != null && existingTargetId.equals(targetProductId)) {
+                    String existingReceiverEmail = snapshot.child("receiverEmail").getValue(String.class);
+
+                    // Check the receiverEmail and targetItemId
+                    if (existingTargetId != null && existingTargetId.equals(targetProductId) &&
+                            existingReceiverEmail != null && existingReceiverEmail.equals(currentUserEmail)) {
                         alreadySubmitted = true;
                         break;
                     }
@@ -55,17 +59,18 @@ public class SubmitHelper {
             }
 
             submitNewOffer(name, category, description, location, currentUserEmail,
-                    targetProductId, targetProductName, targetProductCategory, targetProductDescription, targetProductLocation, callback);
+                    targetProductId, targetProductName, targetProductCategory, targetProductDescription, targetProductLocation, targetProviderEmail, callback);
         });
     }
 
     private void submitNewOffer(String name, String category, String description, String location, String currentUserEmail,
                                 String targetProductId, String targetProductName, String targetProductCategory,
-                                String targetProductDescription, String targetProductLocation, SubmitCallback callback) {
+                                String targetProductDescription, String targetProductLocation, String targetProviderEmail, SubmitCallback callback) {
 
         String OfferId = databaseReference.push().getKey();
         Map<String, Object> offerData = new HashMap<>();
         offerData.put("receiverEmail", currentUserEmail);
+        offerData.put("providerEmail", targetProviderEmail);
         offerData.put("offeredItemName", name);
         offerData.put("offeredItemCategory", category);
         offerData.put("offeredItemLocation", location);
