@@ -28,6 +28,13 @@ variables:
   # when the script was last modified for latest compileSdkVersion, it was which is written down below
   ANDROID_SDK_TOOLS: "6514223"
 
+cache:
+  key: gradle-cache
+  paths:
+    - .gradle/wrapper
+    - .gradle/caches
+    - android-home/
+
 # Packages installation before running script
 before_script:
   - apt-get --quiet update --yes
