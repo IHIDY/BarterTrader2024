@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-43:/values-nb/values-nb.xml",
+            "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-44:/values-nb/values-nb.xml",
             "map": [
                 {
                     "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/91c3c92e75b8cc538c8ec68fcdeb9e29/transformed/core-1.13.0/res/values-nb/values-nb.xml",

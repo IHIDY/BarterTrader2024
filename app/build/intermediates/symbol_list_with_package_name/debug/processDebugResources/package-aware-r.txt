@@ -3287,6 +3287,7 @@ id beginning
 id below
 id bestChoice
 id blocking
+id bodyTV
 id bottom
 id bounce
 id bounceBoth
@@ -3550,6 +3551,7 @@ id noState
 id none
 id normal
 id north
+id notificationPrefBtn
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -3597,7 +3599,9 @@ id productCategory
 id productCondition
 id productDescription
 id productDetails
+id productIdTV
 id productLocation
+id productLocationTV
 id productName
 id productRecyclerView
 id progress_circular
@@ -3644,6 +3648,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id sendNotificationBtn
 id settings_title
 id sharedValueSet
 id sharedValueUnset
@@ -3727,6 +3732,7 @@ id textinput_suffix_text
 id time
 id title
 id titleDividerNoCustom
+id titleTV
 id titleText
 id title_template
 id toggle
@@ -3891,6 +3897,7 @@ layout activity_google_map
 layout activity_login
 layout activity_main
 layout activity_my_offers
+layout activity_notification
 layout activity_offer_details
 layout activity_product_form
 layout activity_provider_dash
@@ -3900,6 +3907,7 @@ layout activity_receiver_dash
 layout activity_registration
 layout activity_search
 layout activity_settings
+layout activity_view_push_notification
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -4079,6 +4087,7 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string fcm_fallback_notification_channel_label
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
