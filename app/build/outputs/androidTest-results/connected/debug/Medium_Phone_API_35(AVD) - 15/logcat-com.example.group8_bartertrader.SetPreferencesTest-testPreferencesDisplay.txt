@@ -1,317 +1,380 @@
-04-03 21:24:29.527 13826 13843 I TestRunner: started: testPreferencesDisplay(com.example.group8_bartertrader.SetPreferencesTest)
-04-03 21:24:29.552 13826 13843 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
-04-03 21:24:29.660   592  3354 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@c07ab37 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
-04-03 21:24:29.677  1158  6316 W GetConfigSnapshotOp: Succeeded but not registered: com.google.android.libraries.performance.primes#com.android.vending [CONTEXT service_id=51 ]
-04-03 21:24:29.678 13559 13564 W android.vending: Suspending all threads took: 10.229ms
-04-03 21:24:29.821 13826 13847 E p8_bartertrader: No package ID 76 found for resource ID 0x760b000f.
-04-03 21:24:29.822 13826 13847 E p8_bartertrader: No package ID 76 found for resource ID 0x760b000f.
-04-03 21:24:29.826 13826 13847 I FA      : App measurement initialized, version: 118010
-04-03 21:24:29.826 13826 13847 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
-04-03 21:24:29.827 13826 13847 I FA      : To enable faster debug mode event logging run:
-04-03 21:24:29.827 13826 13847 I FA      :   adb shell setprop debug.firebase.analytics.app com.example.group8_bartertrader
-04-03 21:24:29.834  1078  1078 W SplitSelectStateCtor: Missing session instanceIds
-04-03 21:24:29.834  1078  1078 D StatsLog: LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
-04-03 21:24:29.839   432   432 I BpBinder: onLastStrongRef automatically unlinking death recipients:
-04-03 21:24:29.889  1078  1078 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=69, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SettingsActivity }
-04-03 21:24:30.030  1078  1775 D EGL_emulation: app_time_stats: avg=8241.01ms min=8241.01ms max=8241.01ms count=1
-04-03 21:24:30.053 13826 13826 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
-04-03 21:24:30.079 13826 13826 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@75babfd in: PRE_ON_CREATE
-04-03 21:24:30.082 13826 13826 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
-04-03 21:24:30.263 13826 13826 D CompatChangeReporter: Compat change id reported: 309578419; UID 10215; state: ENABLED
-04-03 21:24:30.326 13826 13826 W p8_bartertrader: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
-04-03 21:24:30.391 13826 13826 D CompatChangeReporter: Compat change id reported: 63938206; UID 10215; state: ENABLED
-04-03 21:24:30.413  1078  1775 D EGL_emulation: app_time_stats: avg=981337.06ms min=2.39ms max=6868921.50ms count=7
-04-03 21:24:30.429  4539  5547 E adservices.measurement: Consent notification has not been displayed.
-04-03 21:24:30.457  4539  5172 W adservices: Skip logging because Cobalt logger is null
-04-03 21:24:30.476  8649  8825 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=30000Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 1Mbps, Tx Link speed: 1Mbps, Max Supported Tx Link speed: 11Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 11Mbps, Frequency: 2447MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -50 UnderlyingNetworks: Null]
-04-03 21:24:30.476   592   761 W IPCThreadState: Sending oneway calls to frozen process.
-04-03 21:24:30.476   592   761 W IPCThreadState: Sending oneway calls to frozen process.
-04-03 21:24:30.476   592   761 W IPCThreadState: Sending oneway calls to frozen process.
-04-03 21:24:30.477  8633  8768 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=109 ]
-04-03 21:24:30.478   592   761 W IPCThreadState: Sending oneway calls to frozen process.
-04-03 21:24:30.478  8633  8794 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[48856093-0e84]>Handler" thread_id=116 ]
-04-03 21:24:30.482  1158  2215 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
-04-03 21:24:30.482  1158  2215 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
-04-03 21:24:30.490  8633  8794 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=116 ]
-04-03 21:24:30.611 13826 13826 D FirebaseAuth: Notifying id token listeners about user ( QWLE96em1YP5gxHSVmOvd54up4C3 ).
-04-03 21:24:30.620  1565  1565 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
-04-03 21:24:30.621  1565  1565 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
-04-03 21:24:30.653 13826 13847 I FA      : Tag Manager is not found and thus will not be used
-04-03 21:24:30.706  1078  1078 D VRI[NexusLauncherActivity]: visibilityChanged oldVisibility=true newVisibility=false
-04-03 21:24:30.714  1078  1078 D NexusLauncherModelDelegate: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
-04-03 21:24:30.737 13826 13826 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@75babfd in: CREATED
-04-03 21:24:30.737 13826 13826 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.group8_bartertrader.SettingsActivity@75babfd
-04-03 21:24:30.754 13826 13826 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@75babfd in: STARTED
-04-03 21:24:30.755 13826 13826 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.group8_bartertrader.SettingsActivity@75babfd
-04-03 21:24:30.764 13826 13826 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@75babfd in: RESUMED
-04-03 21:24:30.764 13826 13826 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.group8_bartertrader.SettingsActivity@75babfd
-04-03 21:24:30.781 13826 13861 W System  : Ignoring header X-Firebase-Locale because its value was null.
-04-03 21:24:30.792 13826 13826 W HWUI    : Unknown dataspace 0
-04-03 21:24:30.801 13826 13862 W System  : Ignoring header X-Firebase-Locale because its value was null.
-04-03 21:24:30.880 13826 13861 D TrafficStats: tagSocket(121) with statsTag=0xffffffff, statsUid=-1
-04-03 21:24:30.881 13826 13862 D TrafficStats: tagSocket(123) with statsTag=0xffffffff, statsUid=-1
-04-03 21:24:30.925 13826 13848 I EGL_emulation: Opening libGLESv1_CM_emulation.so
-04-03 21:24:30.927 13826 13848 I EGL_emulation: Opening libGLESv2_emulation.so
-04-03 21:24:31.001 13826 13848 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
-04-03 21:24:31.001 13826 13848 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
-04-03 21:24:31.119 13826 13862 D FirebaseAuth: Notifying id token listeners about user ( QWLE96em1YP5gxHSVmOvd54up4C3 ).
-04-03 21:24:31.126 13826 13861 D FirebaseAuth: Notifying id token listeners about user ( QWLE96em1YP5gxHSVmOvd54up4C3 ).
-04-03 21:24:31.217   162   162 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
-04-03 21:24:31.221 13826 13848 I Gralloc4: mapper 4.x is not supported
-04-03 21:24:31.406 13826 13830 I p8_bartertrader: Compiler allocated 4219KB to compile void android.widget.TextView.<init>(android.content.Context, android.util.AttributeSet, int, int)
-04-03 21:24:31.490   592   618 W ziparchive: Unable to open '/data/app/~~t-mKUOy2CbJy3bcrf0hEnQ==/com.example.group8_bartertrader-4Tiaim5j2zAQsNMPcEySLg==/base.dm': No such file or directory
-04-03 21:24:31.491   592   618 I ActivityTaskManager: Displayed com.example.group8_bartertrader/.SettingsActivity for user 0: +1s905ms
-04-03 21:24:31.496 13826 13826 I Choreographer: Skipped 40 frames!  The application may be doing too much work on its main thread.
-04-03 21:24:31.518  1078  1078 D BaseDepthController: setSurface:
-04-03 21:24:31.518  1078  1078 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
-04-03 21:24:31.518  1078  1078 D BaseDepthController: 	mSurface: null
-04-03 21:24:31.518  1078  1078 D BaseDepthController: mSurface is null and mCurrentBlur is: 23
-04-03 21:24:31.524 13826 13843 I FirebaseAuth: Logging in as testemail@email.com with empty reCAPTCHA token
-04-03 21:24:31.527  1078  1078 D StatsLog: LAUNCHER_ONSTOP
-04-03 21:24:31.530  1078  1856 D OneSearchSuggestProvider: Shut down the binder channel
-04-03 21:24:31.537  1078  2555 D GmsPlayProvider: Shut down the binder channel
-04-03 21:24:31.540  1078  1078 D StatsLog: LAUNCHER_GOOGLE_SEARCH_RESTORE_LIST_SIZE_AFTER_ACTIVITY_RESTART
-04-03 21:24:31.555  1158  2216 I FontLog : (REDACTED) Received query %s, URI %s
-04-03 21:24:31.557  1158  2216 I FontLog : (REDACTED) Query [%s] resolved to %s
-04-03 21:24:31.563  1565 13876 D AdvertisingIdClient: AdvertisingIdClient already created.
-04-03 21:24:31.563  1565 13876 D AdvertisingIdClient: AdvertisingIdClient is not bounded. Starting to bind it...
-04-03 21:24:31.568   592   721 I ImeTracker: com.example.group8_bartertrader:28a54bea: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
-04-03 21:24:31.568   592   721 I ImeTracker: com.example.group8_bartertrader:28a54bea: onCancelled at PHASE_SERVER_SHOULD_HIDE
-04-03 21:24:31.603  1158  2216 I FontLog : (REDACTED) Fetch %s end status %s
-04-03 21:24:31.616  1565 13876 D AdvertisingIdClient: AdvertisingIdClient is bounded
-04-03 21:24:31.620 11423 11423 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2043
-04-03 21:24:31.623  1158  2215 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
-04-03 21:24:31.624 13826 13861 W System  : Ignoring header X-Firebase-Locale because its value was null.
-04-03 21:24:31.633  1565 13876 I AdvertisingIdClient: shouldSendLog 8109888
-04-03 21:24:31.634  1565 13876 I AdvertisingIdClient: GetInfoInternal elapse 70ms
-04-03 21:24:31.656  1158  2216 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
-04-03 21:24:31.657  1565  1565 I AdvertisingIdClient: getting error as 17: API: ClientTelemetry.API is not available on this device. Connection failed with: ConnectionResult{statusCode=API_DISABLED_FOR_CONNECTION, resolution=null, message=null}
-04-03 21:24:31.668 11423 11423 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 0, locked = false
-04-03 21:24:31.676 11423 11423 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1293 onStartInput(EditorInfo{EditorInfo{packageName=com.example.group8_bartertrader, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
-04-03 21:24:31.709 13826 13843 W FileTestStorage: Output properties is not supported.
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: EmojiCompatManager.getEmojiCompatIfLoaded():343 EmojiCompat.init() was never called.
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: java.lang.IllegalStateException: EmojiCompat is not initialized. Please call EmojiCompat.init() first
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at asx.p(PG:6)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at axb.b(PG:13)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at jnr.b(PG:2)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at jnr.c(PG:4)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at jnr.f(PG:3)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at jnx.c(PG:3)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at kif.cz(PG:47)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at lhl.run(PG:1025)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at jaf.execute(PG:12)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at nco.v(PG:13)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at lhn.m(PG:96)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at lhn.k(PG:25)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at kgn.onStartInput(PG:250)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at android.inputmethodservice.InputMethodService.doStartInput(InputMethodService.java:3390)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.startInput(InputMethodService.java:863)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.dispatchStartInput(InputMethodService.java:892)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at android.inputmethodservice.IInputMethodWrapper.executeMessage(IInputMethodWrapper.java:201)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at android.os.Handler.dispatchMessage(Handler.java:107)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at android.os.Looper.loopOnce(Looper.java:232)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at android.os.Looper.loop(Looper.java:317)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at android.app.ActivityThread.main(ActivityThread.java:8705)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at java.lang.reflect.Method.invoke(Native Method)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
-04-03 21:24:31.724 11423 11423 I EmojiCompatManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
-04-03 21:24:31.731 11423 11423 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 1, locked = false
-04-03 21:24:31.735 13826 13843 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
-04-03 21:24:31.739 11423 11423 W NotificationCenter: NotificationCenter$NotificationQueue.notifyPendingNotificationsOnExecutor():877 Heavy notify work detected on UI thread: [kig->jnx, kig->fef, kig->ilu, kig->ilu, kig->lux, kig->khg, kig->ilu, kig->fcb, kig->ilu, kig->fro, kig->ilu, kig->ilu, kig->ilu, kig->khc, kig->ilu, kig->ilu, kig->ilu, kig->imt, kig->ilu, kig->ilu] takes 53ms
-04-03 21:24:31.746 13826 13861 D TrafficStats: tagSocket(140) with statsTag=0xffffffff, statsUid=-1
-04-03 21:24:31.763 13826 13878 D TrafficStats: tagSocket(142) with statsTag=0xffffffff, statsUid=-1
-04-03 21:24:31.822   856   921 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@b5e41
-04-03 21:24:31.827 13826 13843 D EventInjectionStrategy: Creating injection strategy with input manager.
-04-03 21:24:31.830   592  1801 W InputManager-JNI: Input channel object '730de89 Splash Screen com.example.group8_bartertrader (client)' was disposed without first being removed with the input manager!
-04-03 21:24:31.830 13826 13843 W p8_bartertrader: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (unsupported, reflection, allowed)
-04-03 21:24:31.832 13826 13843 W p8_bartertrader: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (unsupported, reflection, allowed)
-04-03 21:24:31.833 13826 13843 W p8_bartertrader: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (unsupported, reflection, allowed)
-04-03 21:24:31.890 13826 13826 W p8_bartertrader: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (unsupported, reflection, allowed)
-04-03 21:24:31.890 13826 13826 W p8_bartertrader: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (unsupported, reflection, allowed)
-04-03 21:24:31.892 13826 13826 W p8_bartertrader: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (unsupported, reflection, allowed)
-04-03 21:24:31.917 13826 13826 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "No preferences set"}' assertion on view view.getId() is <2131296665/com.example.group8_bartertrader:id/preferencesSummary>
-04-03 21:24:31.932 13826 13843 I UiAutomation: Initialized for user 0 on display 0
-04-03 21:24:31.978  2082  4435 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
-04-03 21:24:31.982   592   592 W IPCThreadState: Sending oneway calls to frozen process.
-04-03 21:24:31.982   592   592 W IPCThreadState: Sending oneway calls to frozen process.
-04-03 21:24:31.982   592   592 W IPCThreadState: Sending oneway calls to frozen process.
-04-03 21:24:31.982   592   592 W IPCThreadState: Sending oneway calls to frozen process.
-04-03 21:24:31.983   592   592 W IPCThreadState: Sending oneway calls to frozen process.
-04-03 21:24:31.983   592   592 W IPCThreadState: Sending oneway calls to frozen process.
-04-03 21:24:31.983   592   592 W IPCThreadState: Sending oneway calls to frozen process.
-04-03 21:24:31.983   592   592 W IPCThreadState: Sending oneway calls to frozen process.
-04-03 21:24:31.985   592   592 W IPCThreadState: Sending oneway calls to frozen process.
-04-03 21:24:31.985   592   592 W IPCThreadState: Sending oneway calls to frozen process.
-04-03 21:24:31.985   592   592 W IPCThreadState: Sending oneway calls to frozen process.
-04-03 21:24:31.986   592   592 W IPCThreadState: Sending oneway calls to frozen process.
-04-03 21:24:31.994  2082  2152 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
-04-03 21:24:31.994  2082  2152 I AiAiEcho: EchoTargets:
-04-03 21:24:31.994  2082  2152 I AiAiEcho: Filtered by AiAi flag check:
-04-03 21:24:31.994  2082  2152 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
-04-03 21:24:31.994  2082  2152 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
-04-03 21:24:31.996  2082  2152 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
-04-03 21:24:31.997  2082  2152 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
-04-03 21:24:31.997  2082  2152 I AiAiEcho: EchoTargets:
-04-03 21:24:31.997  2082  2152 I AiAiEcho: Filtered by AiAi flag check:
-04-03 21:24:31.997  2082  2152 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
-04-03 21:24:31.997  2082  2152 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
-04-03 21:24:31.998  2082  2152 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
-04-03 21:24:31.998  2082  2152 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
-04-03 21:24:31.998  2082  2152 I AiAiEcho: EchoTargets:
-04-03 21:24:31.998  2082  2152 I AiAiEcho: Filtered by AiAi flag check:
-04-03 21:24:31.998  2082  2152 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
-04-03 21:24:31.998  2082  2152 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
-04-03 21:24:31.999  2082  2152 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
-04-03 21:24:32.006  2082  2152 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
-04-03 21:24:32.008  2082  2152 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
-04-03 21:24:32.017  2082  2152 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
-04-03 21:24:32.017  1078  1078 D SsBaseTemplateCard: No text view can be set up
-04-03 21:24:32.020  1078  1078 D SsBaseTemplateCard: Passed-in item info is null
-04-03 21:24:32.020  1078  1078 D SsBaseTemplateCard: Passed-in item info is null
-04-03 21:24:32.020  1078  1078 D SsBaseTemplateCard: Passed-in item info is null
-04-03 21:24:32.020  1078  1078 I SsBaseTemplateCard: Secondary card pane is null
-04-03 21:24:32.069 13826 13861 W System  : Ignoring header X-Firebase-Locale because its value was null.
-04-03 21:24:32.084   856   856 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
-04-03 21:24:32.086   856   856 D SsMediaDataProvider: Forwarding Smartspace updates []
-04-03 21:24:32.133   856   959 D EGL_emulation: app_time_stats: avg=32104.29ms min=32104.29ms max=32104.29ms count=1
-04-03 21:24:32.156 13826 13826 D DeviceCapture: Found 1 global views to redraw
-04-03 21:24:32.184 13826 13826 D Preferences: preferred_categories saved successfully
-04-03 21:24:32.184 13826 13826 I forceRedraw: FrameCommitCallback complete
-04-03 21:24:32.195 13826 13861 D FirebaseAuth: Notifying id token listeners about user ( 3X7ZSyXYZVW2v5CxHcen1R5HzfF2 ).
-04-03 21:24:32.197 13826 13861 D FirebaseAuth: Notifying auth state listeners about user ( 3X7ZSyXYZVW2v5CxHcen1R5HzfF2 ).
-04-03 21:24:32.316 13826 13826 I DeviceCapture: got bitmap, returning
-04-03 21:24:32.320 13826 13843 D FileTestStorage: openOutputFile from /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output/view-op-error-1.png
-04-03 21:24:32.389 13826 13830 I p8_bartertrader: Compiler allocated 5174KB to compile void android.view.ViewRootImpl.performTraversals()
-04-03 21:24:32.598  2762  3536 W MediaProvider: isAppCloneUserPair for user 0: false
-04-03 21:24:32.622  2762  3536 W MediaProvider: isAppCloneUserPair for user 0: false
-04-03 21:24:32.669  2762  3536 W MediaProvider: isAppCloneUserPair for user 0: false
-04-03 21:24:32.786 13679 13750 I Finsky:background: [102] pfv.d(112): playLoggingServerUrl: https://play.googleapis.com/play/log
-04-03 21:24:32.787 13679 13750 I Finsky:background: [102] pfv.d(129): playLoggingServerTimestampUrl: https://play.googleapis.com/play/log/timestamp
-04-03 21:24:32.797  1158  6316 W GetConfigSnapshotOp: Succeeded but not registered: com.google.android.libraries.performance.primes#com.android.vending [CONTEXT service_id=51 ]
-04-03 21:24:32.870   592  1801 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@53448bb does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
-04-03 21:24:32.884 13826 13826 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@75babfd in: PAUSED
-04-03 21:24:32.884 13826 13826 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.group8_bartertrader.SettingsActivity@75babfd
-04-03 21:24:32.885   592   621 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@53448bb does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
-04-03 21:24:32.889  1078  1078 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=70, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.group8_bartertrader.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }
-04-03 21:24:32.897   432   432 I BpBinder: onLastStrongRef automatically unlinking death recipients:
-04-03 21:24:32.926 13826 13848 D EGL_emulation: app_time_stats: avg=140.30ms min=3.87ms max=741.76ms count=10
-04-03 21:24:32.938   370   370 D Zygote  : Forked child process 13895
-04-03 21:24:32.963  1158 13888 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
-04-03 21:24:33.001  1158 13592 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
-04-03 21:24:33.037 13895 13895 I rtertrader.test: Late-enabling -Xcheck:jni
-04-03 21:24:33.138   856   959 D EGL_emulation: app_time_stats: avg=80.81ms min=1.87ms max=838.11ms count=11
-04-03 21:24:33.370 13895 13895 I rtertrader.test: Using CollectorTypeCMC GC.
-04-03 21:24:33.381 13895 13895 W rtertrader.test: Unexpected CPU variant for x86: x86_64.
-04-03 21:24:33.381 13895 13895 W rtertrader.test: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
-04-03 21:24:33.391   448   470 I adbd    : jdwp connection from 13895
-04-03 21:24:33.420 13895 13895 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
-04-03 21:24:33.486 13895 13895 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
-04-03 21:24:33.496 13895 13895 D nativeloader: Configuring clns-7 for other apk /system/framework/android.test.mock.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/data/app/~~ynmn0yGlSm1i0Ht6RVxyDA==/com.example.group8_bartertrader.test-11ldbfxz5rR7meg-KN2wZw==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.group8_bartertrader.test
-04-03 21:24:33.503 13895 13895 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
-04-03 21:24:33.510 13895 13895 D nativeloader: Configuring clns-8 for other apk /system/framework/android.test.runner.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/data/app/~~ynmn0yGlSm1i0Ht6RVxyDA==/com.example.group8_bartertrader.test-11ldbfxz5rR7meg-KN2wZw==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.group8_bartertrader.test
-04-03 21:24:33.513 13895 13895 W ziparchive: Unable to open '/data/app/~~ynmn0yGlSm1i0Ht6RVxyDA==/com.example.group8_bartertrader.test-11ldbfxz5rR7meg-KN2wZw==/base.dm': No such file or directory
-04-03 21:24:33.513 13895 13895 W ziparchive: Unable to open '/data/app/~~ynmn0yGlSm1i0Ht6RVxyDA==/com.example.group8_bartertrader.test-11ldbfxz5rR7meg-KN2wZw==/base.dm': No such file or directory
-04-03 21:24:33.655 13895 13895 D nativeloader: Configuring clns-9 for other apk /data/app/~~ynmn0yGlSm1i0Ht6RVxyDA==/com.example.group8_bartertrader.test-11ldbfxz5rR7meg-KN2wZw==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~ynmn0yGlSm1i0Ht6RVxyDA==/com.example.group8_bartertrader.test-11ldbfxz5rR7meg-KN2wZw==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.group8_bartertrader.test
-04-03 21:24:33.661 13895 13895 D CompatChangeReporter: Compat change id reported: 202956589; UID 10211; state: ENABLED
-04-03 21:24:33.673 13895 13895 V GraphicsEnvironment: Currently set values for:
-04-03 21:24:33.673 13895 13895 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
-04-03 21:24:33.673 13895 13895 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
-04-03 21:24:33.673 13895 13895 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
-04-03 21:24:33.673 13895 13895 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
-04-03 21:24:33.684 13826 13826 D VRI[SettingsActivity]: visibilityChanged oldVisibility=true newVisibility=false
-04-03 21:24:33.796 13895 13895 D CompatChangeReporter: Compat change id reported: 279646685; UID 10211; state: ENABLED
-04-03 21:24:33.806 13895 13895 D CompatChangeReporter: Compat change id reported: 309578419; UID 10211; state: ENABLED
-04-03 21:24:33.838 13826 13826 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@75babfd in: STOPPED
-04-03 21:24:33.839 13826 13826 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.example.group8_bartertrader.SettingsActivity@75babfd
-04-03 21:24:33.842 13895 13895 W HWUI    : Unknown dataspace 0
-04-03 21:24:33.843 13826 13826 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@75babfd in: DESTROYED
-04-03 21:24:33.843 13826 13826 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
-04-03 21:24:33.844 13826 13826 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@c481400
-04-03 21:24:33.861   592  1022 W InputManager-JNI: Input channel object 'd4897a2 com.example.group8_bartertrader/com.example.group8_bartertrader.SettingsActivity (client)' was disposed without first being removed with the input manager!
-04-03 21:24:33.874  1078  1078 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=50, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity }
-04-03 21:24:33.874 13826 13843 E TestRunner: failed: testPreferencesDisplay(com.example.group8_bartertrader.SetPreferencesTest)
-04-03 21:24:33.877 13826 13843 E TestRunner: ----- begin exception -----
-04-03 21:24:33.877 13826 13843 E TestRunner: androidx.test.espresso.base.AssertionErrorHandler$AssertionFailedWithCauseError: 'an instance of android.widget.TextView and view.getText() with or without transformation to match: is "No preferences set"' doesn't match the selected view.
-04-03 21:24:33.877 13826 13843 E TestRunner: Expected: an instance of android.widget.TextView and view.getText() with or without transformation to match: is "No preferences set"
-04-03 21:24:33.877 13826 13843 E TestRunner:      Got: view.getText() was "Loading preferences..." transformed text was "Loading preferences..."
-04-03 21:24:33.877 13826 13843 E TestRunner: View Details: MaterialTextView{id=2131296665, res-name=preferencesSummary, visibility=VISIBLE, width=996, height=57, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=42.0, y=252.0, text=Loading preferences..., input-type=0, ime-target=false, has-links=false}
-04-03 21:24:33.877 13826 13843 E TestRunner:
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at dalvik.system.VMStack.getThreadStackTrace(Native Method)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at java.lang.Thread.getStackTrace(Thread.java:1841)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:35)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:26)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:158)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:120)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:387)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:366)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at com.example.group8_bartertrader.SetPreferencesTest.testPreferencesDisplay(SetPreferencesTest.java:53)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at java.lang.reflect.Method.invoke(Native Method)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at androidx.test.internal.runner.junit4.statement.RunBefores.evaluate(RunBefores.java:80)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:128)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:27)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-04-03 21:24:33.877 13826 13843 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-04-03 21:24:33.878   432   451 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10211 pid=0
-04-03 21:24:33.878   432   451 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10211 => denied (1042 us)
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:68)
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:463)
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2594)
-04-03 21:24:33.878 13826 13843 E TestRunner: Caused by: junit.framework.AssertionFailedError: 'an instance of android.widget.TextView and view.getText() with or without transformation to match: is "No preferences set"' doesn't match the selected view.
-04-03 21:24:33.878 13826 13843 E TestRunner: Expected: an instance of android.widget.TextView and view.getText() with or without transformation to match: is "No preferences set"
-04-03 21:24:33.878 13826 13843 E TestRunner:      Got: view.getText() was "Loading preferences..." transformed text was "Loading preferences..."
-04-03 21:24:33.878 13826 13843 E TestRunner: View Details: MaterialTextView{id=2131296665, res-name=preferencesSummary, visibility=VISIBLE, width=996, height=57, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=42.0, y=252.0, text=Loading preferences..., input-type=0, ime-target=false, has-links=false}
-04-03 21:24:33.878 13826 13843 E TestRunner:
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at androidx.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:620)
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at androidx.test.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:97)
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:488)
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:346)
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:319)
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at android.os.Handler.handleCallback(Handler.java:959)
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at android.os.Handler.dispatchMessage(Handler.java:100)
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at android.os.Looper.loopOnce(Looper.java:232)
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at android.os.Looper.loop(Looper.java:317)
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at android.app.ActivityThread.main(ActivityThread.java:8705)
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at java.lang.reflect.Method.invoke(Native Method)
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
-04-03 21:24:33.878 13826 13843 E TestRunner: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
-04-03 21:24:33.878 13826 13843 E TestRunner: ----- end exception -----
-04-03 21:24:33.878   432   451 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10211 pid=0
-04-03 21:24:33.878   432   451 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10211 => denied (547 us)
-04-03 21:24:33.879   432   451 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10211 pid=0
-04-03 21:24:33.879   432   451 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10211 => denied (710 us)
-04-03 21:24:33.880 13895 13909 I EGL_emulation: Opening libGLESv1_CM_emulation.so
-04-03 21:24:33.880 13895 13909 I EGL_emulation: Opening libGLESv2_emulation.so
-04-03 21:24:33.897   432   432 I BpBinder: onLastStrongRef automatically unlinking death recipients:
-04-03 21:24:33.906  1078  1078 I TopTaskTracker: onTaskRemoved: taskId=69
-04-03 21:24:33.906  1078  1078 I TopTaskTracker: onTaskRemoved: taskId=69
-04-03 21:24:33.912 13895 13909 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
-04-03 21:24:33.912 13895 13909 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
-04-03 21:24:33.916 13826 13843 I TestRunner: finished: testPreferencesDisplay(com.example.group8_bartertrader.SetPreferencesTest)
+04-04 17:37:05.097 25048 25074 I TestRunner: started: testPreferencesDisplay(com.example.group8_bartertrader.SetPreferencesTest)
+04-04 17:37:05.117 25048 25074 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+04-04 17:37:05.133   592  1018 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@1eccfa0c does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+04-04 17:37:05.153   432   432 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+04-04 17:37:05.178  1078  1078 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=98, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.group8_bartertrader/.SettingsActivity }
+04-04 17:37:05.208 17252 22830 D EGL_emulation: app_time_stats: avg=5701.73ms min=8.52ms max=45434.79ms count=8
+04-04 17:37:05.346 25048 25048 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+04-04 17:37:05.351  4539  4554 E adservices.measurement: Consent notification has not been displayed.
+04-04 17:37:05.351  4539  5171 W adservices: Skip logging because Cobalt logger is null
+04-04 17:37:05.361 25048 25048 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@8e79d50 in: PRE_ON_CREATE
+04-04 17:37:05.362 25048 25048 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+04-04 17:37:05.434 25048 25048 D CompatChangeReporter: Compat change id reported: 309578419; UID 10226; state: ENABLED
+04-04 17:37:05.482 25048 25048 W p8_bartertrader: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+04-04 17:37:05.536 15181 15181 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+04-04 17:37:05.537 15181 15181 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+04-04 17:37:05.545 25048 25048 D CompatChangeReporter: Compat change id reported: 63938206; UID 10226; state: ENABLED
+04-04 17:37:05.570 25048 25073 I FA      : Tag Manager is not found and thus will not be used
+04-04 17:37:05.775 25048 25048 E Preferences: User not authenticated
+04-04 17:37:05.816 25048 25048 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@8e79d50 in: CREATED
+04-04 17:37:05.816 25048 25048 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.group8_bartertrader.SettingsActivity@8e79d50
+04-04 17:37:05.822 25048 25048 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@8e79d50 in: STARTED
+04-04 17:37:05.823 25048 25048 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.group8_bartertrader.SettingsActivity@8e79d50
+04-04 17:37:05.826 17252 17252 D VRI[UnauthenticatedMainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+04-04 17:37:05.827 25048 25048 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@8e79d50 in: RESUMED
+04-04 17:37:05.827 25048 25048 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.group8_bartertrader.SettingsActivity@8e79d50
+04-04 17:37:05.845 25048 25048 W HWUI    : Unknown dataspace 0
+04-04 17:37:05.865  1158  2398 D TrafficStats: tagSocket(125) with statsTag=0x407, statsUid=-1
+04-04 17:37:05.893 25048 25096 D TrafficStats: tagSocket(116) with statsTag=0xffffffff, statsUid=-1
+04-04 17:37:05.914   432   451 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10226 pid=0
+04-04 17:37:05.914   432   451 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10226 => denied (852 us)
+04-04 17:37:05.915   432   450 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10226 pid=25048
+04-04 17:37:05.915   432   451 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10226 pid=0
+04-04 17:37:05.915   432   451 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10226 => denied (344 us)
+04-04 17:37:05.915   432   450 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10226 => denied (498 us)
+04-04 17:37:05.915   432   451 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10226 pid=0
+04-04 17:37:05.915   432   451 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10226 => denied (435 us)
+04-04 17:37:05.916   432   450 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10226 pid=25048
+04-04 17:37:05.916   432   450 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10226 => denied (1036 us)
+04-04 17:37:05.918 25048 25085 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+04-04 17:37:05.924 25048 25085 I EGL_emulation: Opening libGLESv2_emulation.so
+04-04 17:37:05.934 25048 25085 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+04-04 17:37:05.934 25048 25085 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+04-04 17:37:06.008   162   162 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+04-04 17:37:06.009 25048 25085 I Gralloc4: mapper 4.x is not supported
+04-04 17:37:06.146   592  1018 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10226 pid=0
+04-04 17:37:06.146   592  1018 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10226 => denied (177 us)
+04-04 17:37:06.146   592  1018 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10226 pid=0
+04-04 17:37:06.146   592  1018 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10226 => denied (127 us)
+04-04 17:37:06.146   592  1018 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10226 pid=0
+04-04 17:37:06.146   592  1018 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10226 => denied (108 us)
+04-04 17:37:06.149   592   618 W ziparchive: Unable to open '/data/app/~~Wetc0S6Eu69-SDiAjNt9tw==/com.example.group8_bartertrader-aIy0paU-RDVs2x5MjFCXnw==/base.dm': No such file or directory
+04-04 17:37:06.150   592   618 I ActivityTaskManager: Displayed com.example.group8_bartertrader/.SettingsActivity for user 0: +1s18ms
+04-04 17:37:06.181 15181 25105 D AdvertisingIdClient: AdvertisingIdClient already created.
+04-04 17:37:06.182 15181 25105 D AdvertisingIdClient: AdvertisingIdClient is not bounded. Starting to bind it...
+04-04 17:37:06.194   592   721 I ImeTracker: com.example.group8_bartertrader:d66e2af4: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+04-04 17:37:06.195   592   721 I ImeTracker: com.example.group8_bartertrader:d66e2af4: onCancelled at PHASE_SERVER_SHOULD_HIDE
+04-04 17:37:06.197 15181 25105 D AdvertisingIdClient: AdvertisingIdClient is bounded
+04-04 17:37:06.203 11423 11423 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2043
+04-04 17:37:06.208 11423 11423 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 0, locked = false
+04-04 17:37:06.209 15181 25105 I AdvertisingIdClient: shouldSendLog 27884636
+04-04 17:37:06.209 11423 11423 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1293 onStartInput(EditorInfo{EditorInfo{packageName=com.example.group8_bartertrader, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+04-04 17:37:06.210 15181 25105 I AdvertisingIdClient: GetInfoInternal elapse 27ms
+04-04 17:37:06.213 11423 11423 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 1, locked = false
+04-04 17:37:06.249 17252 17252 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=ou@a669fd9
+04-04 17:37:06.255 25048 25074 I FirebaseAuth: Logging in as testemail@email.com with empty reCAPTCHA token
+04-04 17:37:06.266 25048 25074 E Preferences: User not authenticated
+04-04 17:37:06.274 17252 22824 I Finsky  : [177] argc.K(184): Package com.google.android.gms is verified.
+04-04 17:37:06.277 15181 25105 W FA-SVC  : Service response is missing Install Referrer install timestamp
+04-04 17:37:06.280 25048 25077 W System  : Ignoring header X-Firebase-Locale because its value was null.
+04-04 17:37:06.288 17252 17252 I Finsky  : [2] zhz.onTrimMemory(11): Memory trim requested to level 20
+04-04 17:37:06.288 17252 17252 I Finsky  : [2] adut.accept(139): Flushing in-memory image cache
+04-04 17:37:06.316 25048 25077 D TrafficStats: tagSocket(132) with statsTag=0xffffffff, statsUid=-1
+04-04 17:37:06.323 25048 25074 W FileTestStorage: Output properties is not supported.
+04-04 17:37:06.325 25048 25074 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: Error inserting flex_time=0 job_id=-1 period=2000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=250933000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1743799026315 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:974)
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:814)
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1981)
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1875)
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: 	at drtf.d(:com.google.android.gms@250933038@25.09.33 (260800-736501638):727)
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: 	at drqk.n(:com.google.android.gms@250933038@25.09.33 (260800-736501638):29)
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: 	at drqk.u(:com.google.android.gms@250933038@25.09.33 (260800-736501638):364)
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: 	at drqk.h(:com.google.android.gms@250933038@25.09.33 (260800-736501638):51)
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: 	at drkz.run(:com.google.android.gms@250933038@25.09.33 (260800-736501638):72)
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: 	at atlu.c(:com.google.android.gms@250933038@25.09.33 (260800-736501638):50)
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: 	at atlu.run(:com.google.android.gms@250933038@25.09.33 (260800-736501638):76)
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: 	at atrh.run(:com.google.android.gms@250933038@25.09.33 (260800-736501638):8)
+04-04 17:37:06.328  1158 25036 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+04-04 17:37:06.345  1158  1464 I FontLog : (REDACTED) Received query %s, URI %s
+04-04 17:37:06.346  1158  1464 I FontLog : (REDACTED) Query [%s] resolved to %s
+04-04 17:37:06.348  1158  1464 I FontLog : (REDACTED) Fetch %s end status %s
+04-04 17:37:06.362  1158  2320 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+04-04 17:37:06.366  1158  1464 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+04-04 17:37:06.372 25048 25074 D EventInjectionStrategy: Creating injection strategy with input manager.
+04-04 17:37:06.372 25048 25074 W p8_bartertrader: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (unsupported, reflection, allowed)
+04-04 17:37:06.374 25048 25074 W p8_bartertrader: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (unsupported, reflection, allowed)
+04-04 17:37:06.374 25048 25074 W p8_bartertrader: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (unsupported, reflection, allowed)
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: Error inserting flex_time=9000 job_id=-1 period=20000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=250933000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1743799026381 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:974)
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:814)
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1981)
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1875)
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: 	at drtf.d(:com.google.android.gms@250933038@25.09.33 (260800-736501638):727)
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: 	at drqk.n(:com.google.android.gms@250933038@25.09.33 (260800-736501638):29)
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: 	at drqk.u(:com.google.android.gms@250933038@25.09.33 (260800-736501638):364)
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: 	at drqk.h(:com.google.android.gms@250933038@25.09.33 (260800-736501638):51)
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: 	at drkz.run(:com.google.android.gms@250933038@25.09.33 (260800-736501638):72)
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: 	at atlu.c(:com.google.android.gms@250933038@25.09.33 (260800-736501638):50)
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: 	at atlu.run(:com.google.android.gms@250933038@25.09.33 (260800-736501638):76)
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: 	at atrh.run(:com.google.android.gms@250933038@25.09.33 (260800-736501638):8)
+04-04 17:37:06.386  1158 24702 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: Error inserting flex_time=9000 job_id=-1 period=20000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=250933000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1743799026397 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:974)
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:814)
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1981)
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1875)
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: 	at drtf.d(:com.google.android.gms@250933038@25.09.33 (260800-736501638):727)
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: 	at drqk.n(:com.google.android.gms@250933038@25.09.33 (260800-736501638):29)
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: 	at drqk.u(:com.google.android.gms@250933038@25.09.33 (260800-736501638):364)
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: 	at drqk.h(:com.google.android.gms@250933038@25.09.33 (260800-736501638):51)
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: 	at drkz.run(:com.google.android.gms@250933038@25.09.33 (260800-736501638):72)
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: 	at atlu.c(:com.google.android.gms@250933038@25.09.33 (260800-736501638):50)
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: 	at atlu.run(:com.google.android.gms@250933038@25.09.33 (260800-736501638):76)
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: 	at atrh.run(:com.google.android.gms@250933038@25.09.33 (260800-736501638):8)
+04-04 17:37:06.401  1158 25112 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+04-04 17:37:06.421 25048 25048 W p8_bartertrader: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (unsupported, reflection, allowed)
+04-04 17:37:06.423 25048 25048 W p8_bartertrader: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (unsupported, reflection, allowed)
+04-04 17:37:06.424 25048 25048 W p8_bartertrader: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (unsupported, reflection, allowed)
+04-04 17:37:06.430 18287 18325 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@8803f9b
+04-04 17:37:06.431   592  1803 W InputManager-JNI: Input channel object 'd109bdd Splash Screen com.example.group8_bartertrader (client)' was disposed without first being removed with the input manager!
+04-04 17:37:06.458 25048 25048 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "No preferences set"}' assertion on view view.getId() is <2131296668/com.example.group8_bartertrader:id/preferencesSummary>
+04-04 17:37:06.470 25048 25074 I UiAutomation: Initialized for user 0 on display 0
+04-04 17:37:06.482  2082  4438 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+04-04 17:37:06.484   592   592 W IPCThreadState: Sending oneway calls to frozen process.
+04-04 17:37:06.484   592   592 W IPCThreadState: Sending oneway calls to frozen process.
+04-04 17:37:06.484   592   592 W IPCThreadState: Sending oneway calls to frozen process.
+04-04 17:37:06.485  2082  2152 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+04-04 17:37:06.485  2082  2152 I AiAiEcho: EchoTargets:
+04-04 17:37:06.485  2082  2152 I AiAiEcho: Filtered by AiAi flag check:
+04-04 17:37:06.485  2082  2152 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+04-04 17:37:06.485  2082  2152 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+04-04 17:37:06.486   592   592 W IPCThreadState: Sending oneway calls to frozen process.
+04-04 17:37:06.487   592   592 W IPCThreadState: Sending oneway calls to frozen process.
+04-04 17:37:06.487   592   592 W IPCThreadState: Sending oneway calls to frozen process.
+04-04 17:37:06.488   592   592 W IPCThreadState: Sending oneway calls to frozen process.
+04-04 17:37:06.488   592   592 W IPCThreadState: Sending oneway calls to frozen process.
+04-04 17:37:06.489   592   592 W IPCThreadState: Sending oneway calls to frozen process.
+04-04 17:37:06.496  2082  2152 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+04-04 17:37:06.496  2082  2152 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+04-04 17:37:06.496  2082  2152 I AiAiEcho: EchoTargets:
+04-04 17:37:06.496  2082  2152 I AiAiEcho: Filtered by AiAi flag check:
+04-04 17:37:06.496  2082  2152 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+04-04 17:37:06.496  2082  2152 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+04-04 17:37:06.497  2082  2152 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+04-04 17:37:06.497  2082  2152 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+04-04 17:37:06.497  2082  2152 I AiAiEcho: EchoTargets:
+04-04 17:37:06.497  2082  2152 I AiAiEcho: Filtered by AiAi flag check:
+04-04 17:37:06.497  2082  2152 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+04-04 17:37:06.497  2082  2152 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+04-04 17:37:06.497  2082  2152 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+04-04 17:37:06.497  2082  2152 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+04-04 17:37:06.502  2082  2152 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+04-04 17:37:06.503  2082  2152 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+04-04 17:37:06.507  1078  1078 D SsBaseTemplateCard: No text view can be set up
+04-04 17:37:06.507  1078  1078 D SsBaseTemplateCard: Passed-in item info is null
+04-04 17:37:06.507  1078  1078 D SsBaseTemplateCard: Passed-in item info is null
+04-04 17:37:06.507  1078  1078 D SsBaseTemplateCard: Passed-in item info is null
+04-04 17:37:06.507  1078  1078 I SsBaseTemplateCard: Secondary card pane is null
+04-04 17:37:06.508 14568 14589 I alar    : NGA disabled since it's running Panthera and at least one a11y feature is on.
+04-04 17:37:06.508 14568 14589 I alar    : (REDACTED) Nga state changed to %s
+04-04 17:37:06.508 14568 14589 I alar    : (REDACTED) isTngActive=%s
+04-04 17:37:06.514 18287 18287 D SsMediaDataProvider: Forwarding Smartspace updates []
+04-04 17:37:06.514 18287 18287 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+04-04 17:37:06.518  9191  9283 I thj     : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+04-04 17:37:06.519  9191  9283 I thj     : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+04-04 17:37:06.550 25048 25048 D DeviceCapture: Found 1 global views to redraw
+04-04 17:37:06.558 25048 25119 D FCM Token: Token: cjb9AwvASfeM-5ExiMkkyt:APA91bGdrORxthFMG12yeESMGGcD_YJ1HbyYoSRUMEZym64PQQWzgO1MlcIQyGnCmZBVRlqFtC3i35FLbkcAUfmcnaZ9P-gOBY6kKXKqW7OSxef_-TR3850
+04-04 17:37:06.573 25048 25048 I forceRedraw: FrameCommitCallback complete
+04-04 17:37:06.581 25048 25077 W System  : Ignoring header X-Firebase-Locale because its value was null.
+04-04 17:37:06.641 18287 18334 D EGL_emulation: app_time_stats: avg=3374.98ms min=130.50ms max=6619.47ms count=2
+04-04 17:37:06.751 25048 25048 I DeviceCapture: got bitmap, returning
+04-04 17:37:06.755 25048 25074 D FileTestStorage: openOutputFile from /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output/view-op-error-1.png
+04-04 17:37:06.766 25048 25077 D FirebaseAuth: Notifying id token listeners about user ( 3X7ZSyXYZVW2v5CxHcen1R5HzfF2 ).
+04-04 17:37:06.767 25048 25077 D FirebaseAuth: Notifying auth state listeners about user ( 3X7ZSyXYZVW2v5CxHcen1R5HzfF2 ).
+04-04 17:37:06.769  2762  3536 W MediaProvider: isAppCloneUserPair for user 0: false
+04-04 17:37:06.851  1158 24702 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+04-04 17:37:06.856  1158 25112 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+04-04 17:37:06.996 25048 25053 I p8_bartertrader: Compiler allocated 4219KB to compile void android.widget.TextView.<init>(android.content.Context, android.util.AttributeSet, int, int)
+04-04 17:37:07.038 25048 25048 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "No preferences set"}' assertion on view view.getId() is <2131296668/com.example.group8_bartertrader:id/preferencesSummary>
+04-04 17:37:07.042 25048 25048 D DeviceCapture: Found 1 global views to redraw
+04-04 17:37:07.057 25048 25048 I forceRedraw: FrameCommitCallback complete
+04-04 17:37:07.305 25048 25048 I DeviceCapture: got bitmap, returning
+04-04 17:37:07.306 25048 25074 D FileTestStorage: openOutputFile from /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output/view-op-error-2.png
+04-04 17:37:07.308  2762  3076 W MediaProvider: isAppCloneUserPair for user 0: false
+04-04 17:37:07.448 25048 25053 I p8_bartertrader: Compiler allocated 5174KB to compile void android.view.ViewRootImpl.performTraversals()
+04-04 17:37:07.514 25048 25048 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "No preferences set"}' assertion on view view.getId() is <2131296668/com.example.group8_bartertrader:id/preferencesSummary>
+04-04 17:37:07.519 25048 25048 D DeviceCapture: Found 1 global views to redraw
+04-04 17:37:07.539 25048 25085 D EGL_emulation: app_time_stats: avg=110.25ms min=2.99ms max=483.84ms count=12
+04-04 17:37:07.539 25048 25048 I forceRedraw: FrameCommitCallback complete
+04-04 17:37:07.609 24861 24873 I AidlLazyServiceRegistrar: Process has 0 (of 2 available) client(s) in use after notification android.system.virtualizationmaintenance has clients: 0
+04-04 17:37:07.609 24861 24873 I AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
+04-04 17:37:07.614 24861 24873 I AidlLazyServiceRegistrar: Unregistered all clients and exiting
+04-04 17:37:07.781 25048 25048 I DeviceCapture: got bitmap, returning
+04-04 17:37:07.781 25048 25074 D FileTestStorage: openOutputFile from /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output/view-op-error-3.png
+04-04 17:37:07.785  2762  4553 W MediaProvider: isAppCloneUserPair for user 0: false
+04-04 17:37:07.998 25048 25048 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "No preferences set"}' assertion on view view.getId() is <2131296668/com.example.group8_bartertrader:id/preferencesSummary>
+04-04 17:37:08.014 25048 25048 D DeviceCapture: Found 1 global views to redraw
+04-04 17:37:08.022 25048 25048 I forceRedraw: FrameCommitCallback complete
+04-04 17:37:08.235 25048 25048 I DeviceCapture: got bitmap, returning
+04-04 17:37:08.239 25048 25074 D FileTestStorage: openOutputFile from /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output/view-op-error-4.png
+04-04 17:37:08.245  2762  3075 W MediaProvider: isAppCloneUserPair for user 0: false
+04-04 17:37:08.436 25048 25048 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "No preferences set"}' assertion on view view.getId() is <2131296668/com.example.group8_bartertrader:id/preferencesSummary>
+04-04 17:37:08.440 25048 25048 D DeviceCapture: Found 1 global views to redraw
+04-04 17:37:08.455 25048 25048 I forceRedraw: FrameCommitCallback complete
+04-04 17:37:08.527 25048 25048 I DeviceCapture: got bitmap, returning
+04-04 17:37:08.528 25048 25074 D FileTestStorage: openOutputFile from /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output/view-op-error-5.png
+04-04 17:37:08.531  2762  3075 W MediaProvider: isAppCloneUserPair for user 0: false
+04-04 17:37:08.725 25048 25048 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "No preferences set"}' assertion on view view.getId() is <2131296668/com.example.group8_bartertrader:id/preferencesSummary>
+04-04 17:37:08.727 25048 25048 D DeviceCapture: Found 1 global views to redraw
+04-04 17:37:08.740 25048 25085 D EGL_emulation: app_time_stats: avg=400.22ms min=284.75ms max=482.68ms count=3
+04-04 17:37:08.740 25048 25048 I forceRedraw: FrameCommitCallback complete
+04-04 17:37:08.792 25048 25048 I DeviceCapture: got bitmap, returning
+04-04 17:37:08.793 25048 25074 D FileTestStorage: openOutputFile from /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output/view-op-error-6.png
+04-04 17:37:08.798  2762  3075 W MediaProvider: isAppCloneUserPair for user 0: false
+04-04 17:37:08.987 25048 25048 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "No preferences set"}' assertion on view view.getId() is <2131296668/com.example.group8_bartertrader:id/preferencesSummary>
+04-04 17:37:08.990 25048 25048 D DeviceCapture: Found 1 global views to redraw
+04-04 17:37:09.005 25048 25048 I forceRedraw: FrameCommitCallback complete
+04-04 17:37:09.070 25048 25048 I DeviceCapture: got bitmap, returning
+04-04 17:37:09.072 25048 25074 D FileTestStorage: openOutputFile from /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output/view-op-error-7.png
+04-04 17:37:09.074  2762  3075 W MediaProvider: isAppCloneUserPair for user 0: false
+04-04 17:37:09.263 25048 25048 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "No preferences set"}' assertion on view view.getId() is <2131296668/com.example.group8_bartertrader:id/preferencesSummary>
+04-04 17:37:09.267 25048 25048 D DeviceCapture: Found 1 global views to redraw
+04-04 17:37:09.272 25048 25048 I forceRedraw: FrameCommitCallback complete
+04-04 17:37:09.332 25048 25048 I DeviceCapture: got bitmap, returning
+04-04 17:37:09.332 25048 25074 D FileTestStorage: openOutputFile from /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output/view-op-error-8.png
+04-04 17:37:09.336  2762  3076 W MediaProvider: isAppCloneUserPair for user 0: false
+04-04 17:37:09.526   592  1804 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@2081d2ab does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+04-04 17:37:09.536   432   432 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+04-04 17:37:09.539 25048 25048 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@8e79d50 in: PAUSED
+04-04 17:37:09.539 25048 25048 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.group8_bartertrader.SettingsActivity@8e79d50
+04-04 17:37:09.539   592   621 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@2081d2ab does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+04-04 17:37:09.540  1078  1078 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=99, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.group8_bartertrader.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }
+04-04 17:37:09.551   370   370 D Zygote  : Forked child process 25121
+04-04 17:37:09.581 25121 25121 I rtertrader.test: Late-enabling -Xcheck:jni
+04-04 17:37:09.601 25121 25121 I rtertrader.test: Using CollectorTypeCMC GC.
+04-04 17:37:09.602 25121 25121 W rtertrader.test: Unexpected CPU variant for x86: x86_64.
+04-04 17:37:09.602 25121 25121 W rtertrader.test: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+04-04 17:37:09.610 25121 25121 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+04-04 17:37:09.620   448   470 I adbd    : jdwp connection from 25121
+04-04 17:37:09.700 18287 18334 D EGL_emulation: app_time_stats: avg=293.35ms min=1.65ms max=2907.92ms count=10
+04-04 17:37:09.709 25121 25121 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-04 17:37:09.717 25121 25121 D nativeloader: Configuring clns-7 for other apk /system/framework/android.test.mock.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/data/app/~~SClJK3gqK00YGCMd3eYOqg==/com.example.group8_bartertrader.test-8dryVjt1UHXF1PaQLQMB7w==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.group8_bartertrader.test
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: Error inserting flex_time=6000 job_id=-1 period=14000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=250933000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1743799029709 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:974)
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:814)
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1981)
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1875)
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: 	at drtf.d(:com.google.android.gms@250933038@25.09.33 (260800-736501638):727)
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: 	at drqk.n(:com.google.android.gms@250933038@25.09.33 (260800-736501638):29)
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: 	at drqk.u(:com.google.android.gms@250933038@25.09.33 (260800-736501638):364)
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: 	at drqk.h(:com.google.android.gms@250933038@25.09.33 (260800-736501638):51)
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: 	at drkz.run(:com.google.android.gms@250933038@25.09.33 (260800-736501638):72)
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: 	at atlu.c(:com.google.android.gms@250933038@25.09.33 (260800-736501638):50)
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: 	at atlu.run(:com.google.android.gms@250933038@25.09.33 (260800-736501638):76)
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: 	at atrh.run(:com.google.android.gms@250933038@25.09.33 (260800-736501638):8)
+04-04 17:37:09.717  1158 25112 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+04-04 17:37:09.723 25121 25121 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-04 17:37:09.731 25121 25121 D nativeloader: Configuring clns-8 for other apk /system/framework/android.test.runner.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/data/app/~~SClJK3gqK00YGCMd3eYOqg==/com.example.group8_bartertrader.test-8dryVjt1UHXF1PaQLQMB7w==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.group8_bartertrader.test
+04-04 17:37:09.732 25121 25121 W ziparchive: Unable to open '/data/app/~~SClJK3gqK00YGCMd3eYOqg==/com.example.group8_bartertrader.test-8dryVjt1UHXF1PaQLQMB7w==/base.dm': No such file or directory
+04-04 17:37:09.732 25121 25121 W ziparchive: Unable to open '/data/app/~~SClJK3gqK00YGCMd3eYOqg==/com.example.group8_bartertrader.test-8dryVjt1UHXF1PaQLQMB7w==/base.dm': No such file or directory
+04-04 17:37:09.745 25048 25085 D EGL_emulation: app_time_stats: avg=120.87ms min=1.89ms max=372.60ms count=8
+04-04 17:37:09.763 25121 25121 D nativeloader: Configuring clns-9 for other apk /data/app/~~SClJK3gqK00YGCMd3eYOqg==/com.example.group8_bartertrader.test-8dryVjt1UHXF1PaQLQMB7w==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~SClJK3gqK00YGCMd3eYOqg==/com.example.group8_bartertrader.test-8dryVjt1UHXF1PaQLQMB7w==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.group8_bartertrader.test
+04-04 17:37:09.768 25121 25121 D CompatChangeReporter: Compat change id reported: 202956589; UID 10227; state: ENABLED
+04-04 17:37:09.781 25121 25121 V GraphicsEnvironment: Currently set values for:
+04-04 17:37:09.781 25121 25121 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+04-04 17:37:09.781 25121 25121 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+04-04 17:37:09.781 25121 25121 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+04-04 17:37:09.781 25121 25121 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+04-04 17:37:09.843 25121 25121 D CompatChangeReporter: Compat change id reported: 279646685; UID 10227; state: ENABLED
+04-04 17:37:09.852 25121 25121 D CompatChangeReporter: Compat change id reported: 309578419; UID 10227; state: ENABLED
+04-04 17:37:09.878 25121 25121 W HWUI    : Unknown dataspace 0
+04-04 17:37:09.892  1078  1078 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=87, baseIntent=Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=com.android.vending/com.google.android.finsky.unauthenticated.activity.UnauthenticatedMainActivity }
+04-04 17:37:09.898   432   451 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10227 pid=0
+04-04 17:37:09.898   432   451 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10227 => denied (185 us)
+04-04 17:37:09.899   432   451 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10227 pid=0
+04-04 17:37:09.899   432   451 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10227 => denied (458 us)
+04-04 17:37:09.899   432   835 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10227 pid=25121
+04-04 17:37:09.899   432   835 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10227 => denied (376 us)
+04-04 17:37:09.900   432   835 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10227 pid=25121
+04-04 17:37:09.900   432   835 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10227 => denied (673 us)
+04-04 17:37:09.901   432   451 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10227 pid=0
+04-04 17:37:09.901   432   451 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10227 => denied (2141 us)
+04-04 17:37:09.908 25121 25136 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+04-04 17:37:09.909 25121 25136 I EGL_emulation: Opening libGLESv2_emulation.so
+04-04 17:37:09.917 25121 25136 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+04-04 17:37:09.917 25121 25136 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+04-04 17:37:09.991   162   162 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+04-04 17:37:09.991 25121 25136 I Gralloc4: mapper 4.x is not supported
+04-04 17:37:10.063   592  1804 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10227 pid=0
+04-04 17:37:10.063   592  1804 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10227 => denied (110 us)
+04-04 17:37:10.063   592  1804 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10227 pid=0
+04-04 17:37:10.064   592  1804 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10227 => denied (99 us)
+04-04 17:37:10.064   592  1804 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10227 pid=0
+04-04 17:37:10.064   592  1804 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10227 => denied (83 us)
+04-04 17:37:10.083 17252 17252 D VRI[UnauthenticatedMainActivity]: visibilityChanged oldVisibility=false newVisibility=true
+04-04 17:37:10.085   592  1802 D FileUtils: Rounded bytes from 8332312576 to 16000000000
+04-04 17:37:10.186 25048 25048 D VRI[SettingsActivity]: visibilityChanged oldVisibility=true newVisibility=false
+04-04 17:37:10.212   592   721 I ImeTracker: com.android.vending:863dc0d8: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+04-04 17:37:10.212   592   721 I ImeTracker: com.android.vending:863dc0d8: onCancelled at PHASE_SERVER_SHOULD_HIDE
+04-04 17:37:10.214 11423 11423 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2043
+04-04 17:37:10.215 11423 11423 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 0, locked = false
+04-04 17:37:10.217 25048 25048 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@8e79d50 in: STOPPED
+04-04 17:37:10.217 25048 25048 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.example.group8_bartertrader.SettingsActivity@8e79d50
+04-04 17:37:10.221 25048 25048 D LifecycleMonitor: Lifecycle status change: com.example.group8_bartertrader.SettingsActivity@8e79d50 in: DESTROYED
+04-04 17:37:10.221 25048 25048 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+04-04 17:37:10.221 25048 25048 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@4a0c319
+04-04 17:37:10.224 11423 11423 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1293 onStartInput(EditorInfo{EditorInfo{packageName=com.android.vending, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+04-04 17:37:10.225 25048 25074 E TestRunner: failed: testPreferencesDisplay(com.example.group8_bartertrader.SetPreferencesTest)
+04-04 17:37:10.225 11423 11423 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 1, locked = false
+04-04 17:37:10.228 25048 25074 E TestRunner: ----- begin exception -----
+04-04 17:37:10.228 25048 25074 E TestRunner: java.lang.AssertionError: Timed out waiting for text: No preferences set
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at com.example.group8_bartertrader.SetPreferencesTest.waitForText(SetPreferencesTest.java:81)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at com.example.group8_bartertrader.SetPreferencesTest.testPreferencesDisplay(SetPreferencesTest.java:52)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at java.lang.reflect.Method.invoke(Native Method)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at androidx.test.internal.runner.junit4.statement.RunBefores.evaluate(RunBefores.java:80)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:68)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:463)
+04-04 17:37:10.228 25048 25074 E TestRunner: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2594)
+04-04 17:37:10.228 25048 25074 E TestRunner: ----- end exception -----
+04-04 17:37:10.242 25048 25074 I TestRunner: finished: testPreferencesDisplay(com.example.group8_bartertrader.SetPreferencesTest)

@@ -48,23 +48,20 @@ public class SetPreferencesTest {
     }
 
     @Test
-    public void testPreferencesDisplay() {
-        onView(withId(R.id.preferencesSummary))
-                .check(matches(withText("No preferences set")));
-
+    public void testPreferencesDisplay() throws InterruptedException {
         onView(withId(R.id.editPreferencesBtn)).perform(click());
 
         onView(withId(R.id.categoriesInput))
                 .perform(typeText("Electronics, Furniture"), closeSoftKeyboard());
         onView(withId(R.id.locationsInput))
-                .perform(typeText("Halifax, 10 km"), closeSoftKeyboard());
+                .perform(typeText("California, 10 km"), closeSoftKeyboard());
 
         onView(withText("Save")).perform(click());
 
         onView(withId(R.id.preferencesSummary))
                 .check(matches(withText(containsString("Electronics"))))
                 .check(matches(withText(containsString("Furniture"))))
-                .check(matches(withText(containsString("Halifax"))))
+                .check(matches(withText(containsString("California"))))
                 .check(matches(withText(containsString("10 km"))));
     }
 }

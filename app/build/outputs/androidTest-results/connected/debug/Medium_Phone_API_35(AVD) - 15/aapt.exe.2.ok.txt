@@ -1,7 +1,7 @@
 EXECUTING: C:\Users\ellaj\AppData\Local\Android\Sdk\build-tools\35.0.0\aapt.exe dump badging C:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\intermediates\apk\androidTest\debug\app-debug-androidTest.apk
 CURRENT_WORKING_DIRECTORY: C:\Users\ellaj\CSCI3130\group8_bartertrader
-START_TIME: 2025-04-03 21:24:39.441
-START_TIME-NANOS: 2025-04-03 21:24:39.441810900
+START_TIME: 2025-04-04 17:37:17.470
+START_TIME-NANOS: 2025-04-04 17:37:17.470645200
 ENVIRONMENT:
 
 *****************************************
@@ -23,7 +23,7 @@ supports-any-density: 'true'
 locales: '--_--'
 densities: '160'
 ===================
-END_TIME: 2025-04-03 21:24:39.505
-END_TIME-NANOS: 2025-04-03 21:24:39.505947200
-DURATION: 64ms
+END_TIME: 2025-04-04 17:37:17.510
+END_TIME-NANOS: 2025-04-04 17:37:17.510646500
+DURATION: 40ms
 EXIT CODE: 0
