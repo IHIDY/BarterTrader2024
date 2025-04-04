@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.group8_bartertrader.notification.NotificationActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
@@ -30,6 +31,7 @@ public class SettingsActivity extends AppCompatActivity {
         Button logoutButton = findViewById(R.id.LogOutButton);
         Button resetPasswordButton = findViewById(R.id.resetPasswordButton);
         Button changeRoleBtn = findViewById(R.id.changeRoleBtn);
+        Button notificationPreferencesBtn = findViewById(R.id.notificationPrefBtn);
 
         List<String> items = new ArrayList<>();
         items.add("Select a role");
@@ -50,6 +52,11 @@ public class SettingsActivity extends AppCompatActivity {
 
         // Set a click listener for the logout button
         logoutButton.setOnClickListener(view -> showLogoutConfirmation());
+
+        notificationPreferencesBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(SettingsActivity.this, NotificationActivity.class);
+            startActivity(intent);
+        });
 
         resetPasswordButton.setOnClickListener(v -> {
             Intent intent = new Intent(SettingsActivity.this, ResetPasswordActivity.class);

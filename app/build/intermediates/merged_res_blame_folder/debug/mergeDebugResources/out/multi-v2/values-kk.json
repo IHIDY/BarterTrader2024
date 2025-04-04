@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-43:/values-kk/values-kk.xml",
+            "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-44:/values-kk/values-kk.xml",
             "map": [
                 {
                     "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/71893f52dc1b09a886f4bf4bc9fce2f8/transformed/jetified-play-services-base-18.5.0/res/values-kk/values.xml",
