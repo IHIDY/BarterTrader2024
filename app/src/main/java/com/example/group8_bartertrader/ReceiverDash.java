@@ -1,13 +1,10 @@
 package com.example.group8_bartertrader;
 
-import static androidx.core.content.ContextCompat.startActivity;
-
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,10 +24,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.group8_bartertrader.adapter.ProductAdapter;
 import com.example.group8_bartertrader.model.PreferencesManager;
 import com.example.group8_bartertrader.model.Product;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.example.group8_bartertrader.notification.NotificationHelper;
 import com.example.group8_bartertrader.utils.LocationHelper;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -38,9 +35,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
 import com.example.group8_bartertrader.notification.NotificationActivity;
 
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
+import java.util.HashSet;
+import java.util.ArrayList;
 import java.util.Set;
 
 public class ReceiverDash extends AppCompatActivity {
@@ -63,9 +60,8 @@ public class ReceiverDash extends AppCompatActivity {
     private RecyclerView productRecyclerView;
     private ProductAdapter productAdapter;
     private double latitude, longitude;
-    private Button savePreferencesButton;
-
     private boolean notificationsChecked = false;
+    private Button savePreferencesButton;
     private boolean isRestarting = false; // Flag to track activity restart
 
     @Override
@@ -99,13 +95,6 @@ public class ReceiverDash extends AppCompatActivity {
         savePreferencesButton = findViewById(R.id.savePreferencesButton);
         savePreferencesButton.setOnClickListener(v -> saveCurrentSearchAsPreferences());
 
-        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
-        if (currentUser == null) {
-            // Not logged in, redirect to login
-            startActivity(new Intent(this, LoginActivity.class));
-            finish();
-            return;
-        }
         // Check and request location permissions
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
@@ -295,7 +284,4 @@ public class ReceiverDash extends AppCompatActivity {
             Toast.makeText(this, "No preferences to save", Toast.LENGTH_SHORT).show();
         }
     }
-
-
-// Call this in onCreate and onResume
 }

@@ -31,6 +31,21 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+// Import necessary packages
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.Spinner;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.group8_bartertrader.notification.NotificationActivity;
+import com.google.firebase.auth.FirebaseAuth;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class SettingsActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private PreferencesManager preferencesManager;
@@ -41,20 +56,18 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        // Initialize Firebase Auth and PreferencesManager
+        // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
         preferencesManager = PreferencesManager.getInstance(this);
 
-        // Initialize views
         Button logoutButton = findViewById(R.id.LogOutButton);
         Button resetPasswordButton = findViewById(R.id.resetPasswordButton);
         Button changeRoleBtn = findViewById(R.id.changeRoleBtn);
         Button editPreferencesBtn = findViewById(R.id.editPreferencesBtn);
         Button returnToDashBtn = findViewById(R.id.returnToDashBtn);
-        preferencesSummary = findViewById(R.id.preferencesSummary); // Removed local variable declaration
-
-        // Set up role spinner items
         Button notificationPreferencesBtn = findViewById(R.id.notificationPrefBtn);
+
+        preferencesSummary = findViewById(R.id.preferencesSummary);
 
         List<String> items = new ArrayList<>();
         items.add("Select a role");
@@ -69,14 +82,10 @@ public class SettingsActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         changeRoleBtn.setOnClickListener(view -> {
-            startActivity(new Intent(SettingsActivity.this, ConfirmationPage.class));
+            Intent intent = new Intent(SettingsActivity.this, ConfirmationPage.class);
+            startActivity(intent);
         });
 
-        logoutButton.setOnClickListener(view -> {
-            mAuth.signOut();
-            Toast.makeText(this, "You have been logged out", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(this, LoginActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         // Set a click listener for the logout button
         logoutButton.setOnClickListener(view -> showLogoutConfirmation());
 
@@ -85,6 +94,7 @@ public class SettingsActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
+
         returnToDashBtn.setOnClickListener(view -> {
             FirebaseUser currentUser = mAuth.getCurrentUser();
             if (currentUser != null) {
@@ -113,19 +123,17 @@ public class SettingsActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+
         resetPasswordButton.setOnClickListener(v -> {
-            startActivity(new Intent(this, ResetPasswordActivity.class));
+            Intent intent = new Intent(SettingsActivity.this, ResetPasswordActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
             finish();
         });
 
         editPreferencesBtn.setOnClickListener(v -> showEditPreferencesDialog());
 
-        loadAndDisplayPreferences();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
         loadAndDisplayPreferences();
     }
 
@@ -145,6 +153,7 @@ public class SettingsActivity extends AppCompatActivity {
         }
     }
 
+
     private void showLogoutConfirmation() {
         new AlertDialog.Builder(this)
                 .setTitle("Confirm Logout")
@@ -161,7 +170,6 @@ public class SettingsActivity extends AppCompatActivity {
                 .setNegativeButton("Cancel", (dialog, which) -> dialog.dismiss())
                 .show();
     }
-}
 
     private void showEditPreferencesDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -198,4 +206,5 @@ public class SettingsActivity extends AppCompatActivity {
                 .create()
                 .show();
     }
+
 }
