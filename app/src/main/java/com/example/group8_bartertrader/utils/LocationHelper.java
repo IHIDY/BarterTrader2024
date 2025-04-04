@@ -7,6 +7,8 @@ import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
+import android.util.Log;
+
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -91,6 +93,7 @@ public class LocationHelper {
                         if (location != null) {
                             if (listener != null) {
                                 listener.onLocationFetched(location.getLatitude(), location.getLongitude());
+                                Log.d("<< Location Helper >>", "Current Location LNg Lat: " + location.getLatitude() + location.getLongitude());
                             }
                         } else {
                             if (listener != null) {
@@ -102,13 +105,13 @@ public class LocationHelper {
     }
 
     // Convert Latitude and Longitude to City Name
-    static String getCityName(double lat, double lon) {
+    public static String getCityName(double lat, double lon) {
         Geocoder geocoder = new Geocoder(context, Locale.getDefault());
         try {
             List<Address> addresses = geocoder.getFromLocation(lat, lon, 1);
             if (addresses != null && !addresses.isEmpty()) {
                 Address address = addresses.get(0);
-                String cityName = address.getAdminArea(); // Get the administrative area (e.g., state)
+                String cityName = address.getLocality(); // Get the locality (e.g., city)
                 if (cityName == null) {
                     cityName = address.getLocality(); // Get the locality (e.g., city)
                     if (cityName == null) {

@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -122,6 +123,24 @@ public class ReceiverDash extends AppCompatActivity {
                 requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS}, 2);
             }
         }
+
+        locationHelper.getCurrentLocation(new LocationHelper.OnLocationFetchListener() {
+            @Override
+            public void onLocationFetched(double latitude, double longitude) {
+                // Get the city name from latitude and longitude
+                String cityName = LocationHelper.getCityName(latitude, longitude);
+                Log.d("<< Current location >>", cityName);
+
+                // Update the TextView with the city name
+                locationTextView.setText("Location: " +cityName);
+            }
+
+            @Override
+            public void onLocationFetchFailed(String errorMessage) {
+                // Handle location fetch failure (e.g., show a default message or error message)
+                locationTextView.setText("Failed to fetch location: " + errorMessage);
+            }
+        });
     }
 
     private void checkNotificationsIfNeeded() {
@@ -130,24 +149,6 @@ public class ReceiverDash extends AppCompatActivity {
             notificationsChecked = true;
         }
     }
-
-//    public void search(){
-//        String word = "";
-//        try {
-//            word = keyword.getText().toString().trim();
-//            String temp = Distance.getText().toString().trim();
-//            if(!temp.equals("")){
-//                distance = Integer.parseInt(temp);
-//            }
-//        } catch (NumberFormatException e) {
-//            Toast.makeText(this,"Must be number "+e.getMessage(),Toast.LENGTH_SHORT).show();
-//        }
-//        if(distance<=0){
-//            distance=RADIUS;
-//        }
-//        fetchProductsFromFirebase(distance,selectedCategory,word);
-//    }
-//
 
     private String getCurrentUserEmail() {
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -216,82 +217,6 @@ public class ReceiverDash extends AppCompatActivity {
         }
     }
 
-//    @Override
-//    public void onLocationFetched(double latitude, double longitude) {
-//        this.latitude=latitude;
-//        this.longitude=longitude;
-//        locationTextView.setText(LocationHelper.getCityName(latitude, longitude));
-//        fetchProductsFromFirebase(RADIUS,null,"");
-//    }
-//
-//    @Override
-//    public void onLocationFetchFailed(String errorMessage) {
-//        Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
-//    }
-
-//    private void fetchProductsFromFirebase(int distance,String category,String word) {
-//        productsRef.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//                productList = new ArrayList<>();
-//                for (DataSnapshot productSnapshot : dataSnapshot.getChildren()) {
-//                    Product product = productSnapshot.getValue(Product.class);
-//                    String categoryOfP = product.getCategory();
-//                    String name = product.getName();
-//                    if (product != null) {
-//                        // Parse latLngLocation from the product
-////                        double[] productLatLng = LocationHelper.parseLatLngLocation(product.getLatLngLocation());
-//
-//                        // This is jst dummy, until it is fixed
-//                        double[] productLatLng = {44.6480, -63.5750};
-//
-//                        if(category==null||category.equals("Select Category")){
-//                            if (productLatLng != null && isWithinRange(latitude, longitude, productLatLng[0], productLatLng[1],distance)&&name.contains(word)) {
-//                                productList.add(product);
-//                            }
-//                        }
-//                        else {
-//                            if (productLatLng != null && isWithinRange(latitude, longitude, productLatLng[0], productLatLng[1],distance)&&categoryOfP.equals(category)&&name.contains(word)) {
-//                                productList.add(product);
-//                            }
-//                        }
-//                    }
-//                }
-//                updateProductList(productList);
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError databaseError) {
-//                Log.w("ReceiverDash", "loadProducts:onCancelled", databaseError.toException());
-//                Toast.makeText(ReceiverDash.this, "Failed to load products.", Toast.LENGTH_SHORT).show();
-//            }
-//        });
-//    }
-
-//    private boolean isWithinRange(double userLat, double userLong, double productLat, double productLong,int maxDistance) {
-//        double distance = calculateDistance(userLat, userLong, productLat, productLong);
-//        return distance <= maxDistance;
-//    }
-
-//    private double calculateDistance(double lat1, double lon1, double lat2, double lon2) {
-//        // Haversine formula to calculate distance between two coordinates
-//        double latDistance = Math.toRadians(lat2 - lat1);
-//        double lonDistance = Math.toRadians(lon2 - lon1);
-//        double a = Math.sin(latDistance / 2) * Math.sin(latDistance / 2)
-//                + Math.cos(Math.toRadians(lat1)) * Math.cos(Math.toRadians(lat2))
-//                * Math.sin(lonDistance / 2) * Math.sin(lonDistance / 2);
-//        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-//        return Radius_E * c;
-//    }
-
-//    private void updateProductList(List<Product> productList) {
-//        // Update the UI with the filtered product list
-//        // use a RecyclerView to display the products
-//        productRecyclerView = findViewById(R.id.productRecyclerView);
-//        productRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-//        productAdapter = new ProductAdapter(productList);
-//        productRecyclerView.setAdapter(productAdapter);
-//    }
 
     @Override
     protected void onDestroy() {
