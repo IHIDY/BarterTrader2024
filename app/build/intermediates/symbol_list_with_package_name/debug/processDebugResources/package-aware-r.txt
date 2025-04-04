@@ -3304,6 +3304,7 @@ id cache_measures
 id callMeasure
 id cancel_button
 id carryVelocity
+id categoriesInput
 id center
 id centerCrop
 id centerInside
@@ -3383,6 +3384,7 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editPreferencesBtn
 id edit_query
 id edit_text_id
 id elastic
@@ -3470,6 +3472,7 @@ id linear
 id listMode
 id list_item
 id locationTextView
+id locationsInput
 id loginBtn
 id m3_side_sheet
 id main
@@ -3592,6 +3595,7 @@ id pin
 id position
 id postButton
 id postLayout
+id preferencesSummary
 id pressed
 id prodName
 id productAvailability
@@ -3616,6 +3620,7 @@ id regBtn
 id report_drawn
 id resetPasswordButton
 id respondToOfferSpinner
+id returnToDashBtn
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3625,6 +3630,8 @@ id roleSelect
 id rounded
 id row_index_key
 id satellite
+id saveButton
+id savePreferencesButton
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3899,6 +3906,7 @@ layout activity_main
 layout activity_my_offers
 layout activity_notification
 layout activity_offer_details
+layout activity_preferences
 layout activity_product_form
 layout activity_provider_dash
 layout activity_provider_product_list
@@ -3926,6 +3934,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_edit_preferences
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout m3_alert_dialog

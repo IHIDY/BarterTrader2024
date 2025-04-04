@@ -1,11 +1,20 @@
 package com.example.group8_bartertrader.model;
 
+import com.google.firebase.database.Exclude;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
 public class User {
     private String firstName;
     private String lastName;
     private String email;
     private String role;
     private String pass;
+    private Map<String, Boolean> preferredCategories = new HashMap<>();
+    private Map<String, Boolean> preferredLocations = new HashMap<>();
 
     public User() {
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
@@ -57,5 +66,31 @@ public class User {
 
     public void setPass(String pass) {
         this.pass = pass;
+    }
+
+    @Exclude
+    public Set<String> getPreferredCategoriesSet() {
+        return preferredCategories != null ? preferredCategories.keySet() : new HashSet<>();
+    }
+
+    public Map<String, Boolean> getPreferredCategories() {
+        return preferredCategories;
+    }
+
+    public void setPreferredCategories(Map<String, Boolean> preferredCategories) {
+        this.preferredCategories = preferredCategories;
+    }
+
+    @Exclude
+    public Set<String> getPreferredLocationsSet() {
+        return preferredLocations != null ? preferredLocations.keySet() : new HashSet<>();
+    }
+
+    public Map<String, Boolean> getPreferredLocations() {
+        return preferredLocations;
+    }
+
+    public void setPreferredLocations(Map<String, Boolean> preferredLocations) {
+        this.preferredLocations = preferredLocations;
     }
 }

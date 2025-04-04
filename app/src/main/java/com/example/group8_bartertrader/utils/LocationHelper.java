@@ -30,6 +30,7 @@ public class LocationHelper {
         this.fusedLocationClient = LocationServices.getFusedLocationProviderClient(context);
     }
 
+
     public void getCurrentLocation(OnLocationFetchListener listener) {
         this.listener = listener;
 
