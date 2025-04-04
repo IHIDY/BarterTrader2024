@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -46,10 +47,13 @@ public class NotificationActivity extends AppCompatActivity {
     //provided by volley library to make a network request
     private RequestQueue requestQueue;
 
+    private View rootView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
+        rootView = findViewById(android.R.id.content);
 
         // Initialize components and set listeners
         init();
@@ -142,7 +146,7 @@ public class NotificationActivity extends AppCompatActivity {
                     pushNotificationJSONBody,
                     response -> {
                         Log.d("NotificationResponse", "Response: " + response.toString());
-                        Toast.makeText(this, "Notification Sent Successfully", Toast.LENGTH_SHORT).show();
+                        Snackbar.make(rootView, "Notification Sent Successfully", Snackbar.LENGTH_SHORT).show();
                     },
                     error -> {
                         Log.e("NotificationError", "Error Response: " + error.toString());

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.example.group8_bartertrader.notification.PushNotificationUITest" tests="1" failures="0" errors="0" skipped="0" time="3.74" timestamp="2025-04-04T17:44:53" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_2_API_35(AVD) - 15" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="testSendNotificationButton" classname="com.example.group8_bartertrader.notification.PushNotificationUITest" time="3.206" />
+</testsuite>
