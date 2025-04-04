@@ -134,6 +134,9 @@
         <activity
             android:name="com.example.group8_bartertrader.ResetPasswordActivity"
             android:exported="true" />
+        <activity
+            android:name="com.example.group8_bartertrader.ChatActivity"
+            android:exported="true" />
 
         <service
             android:name="com.example.group8_bartertrader.notification.MyFirebaseMessagingService"
@@ -142,6 +145,7 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
         <!-- Needs to be explicitly declared on P+ -->
         <uses-library
             android:name="org.apache.http.legacy"

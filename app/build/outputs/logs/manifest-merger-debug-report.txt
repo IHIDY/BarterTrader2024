@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-109:12
-INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-109:12
-INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-109:12
-INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-109:12
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-115:12
+INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-115:12
+INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-115:12
+INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:2:1-115:12
 MERGED from [androidx.test.espresso:espresso-contrib:3.6.1] /Users/junfali/.gradle/caches/8.10.2/transforms/f85a7aca36f42c3b0645c4ef793406e3/transformed/espresso-contrib-3.6.1/AndroidManifest.xml:17:1-26:12
 MERGED from [com.google.android.apps.common.testing.accessibility.framework:accessibility-test-framework:3.1.2] /Users/junfali/.gradle/caches/8.10.2/transforms/67df24658f3546b8bad5956879766c30/transformed/jetified-accessibility-test-framework-3.1.2/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.material:material:1.12.0] /Users/junfali/.gradle/caches/8.10.2/transforms/774fe0d23148eacbc47d74060b742660/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
@@ -179,8 +179,8 @@ MERGED from [com.google.firebase:firebase-messaging:24.1.1] /Users/junfali/.grad
 	android:name
 		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:10:22-74
 application
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:12:5-107:19
-INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:12:5-107:19
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:12:5-113:19
+INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:12:5-113:19
 MERGED from [androidx.test.espresso:espresso-contrib:3.6.1] /Users/junfali/.gradle/caches/8.10.2/transforms/f85a7aca36f42c3b0645c4ef793406e3/transformed/espresso-contrib-3.6.1/AndroidManifest.xml:24:5-20
 MERGED from [androidx.test.espresso:espresso-contrib:3.6.1] /Users/junfali/.gradle/caches/8.10.2/transforms/f85a7aca36f42c3b0645c4ef793406e3/transformed/espresso-contrib-3.6.1/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.12.0] /Users/junfali/.gradle/caches/8.10.2/transforms/774fe0d23148eacbc47d74060b742660/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
@@ -411,18 +411,24 @@ ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src
 		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:98:13-36
 	android:name
 		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:97:13-50
-service#com.example.group8_bartertrader.notification.MyFirebaseMessagingService
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:100:9-106:19
+activity#com.example.group8_bartertrader.ChatActivity
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:100:9-102:39
 	android:exported
 		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:102:13-36
 	android:name
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:101:13-68
-intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:103:13-105:29
-action#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:104:17-78
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:101:13-41
+service#com.example.group8_bartertrader.notification.MyFirebaseMessagingService
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:104:9-110:19
+	android:exported
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:106:13-36
 	android:name
-		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:104:25-75
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:105:13-68
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:107:13-109:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:108:17-78
+	android:name
+		ADDED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml:108:25-75
 uses-sdk
 INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/src/main/AndroidManifest.xml

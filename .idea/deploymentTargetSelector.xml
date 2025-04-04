@@ -16,7 +16,7 @@
       <SelectionState runConfigName="SF">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="SetPreferencesTest">
+      <SelectionState runConfigName="testChatButtonLaunchesChatActivity_whenOfferAccepted_withActionOnItem()">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

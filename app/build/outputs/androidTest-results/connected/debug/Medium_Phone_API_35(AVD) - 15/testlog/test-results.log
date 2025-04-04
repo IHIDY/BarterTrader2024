@@ -1,38 +1,23 @@
-INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.SetPreferencesTest
+INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.ReceivedOfferUITest
 INSTRUMENTATION_STATUS: current=1
 INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
 INSTRUMENTATION_STATUS: numtests=1
 INSTRUMENTATION_STATUS: stream=
-com.example.group8_bartertrader.SetPreferencesTest:
-INSTRUMENTATION_STATUS: test=testPreferencesDisplay
+com.example.group8_bartertrader.ReceivedOfferUITest:
+INSTRUMENTATION_STATUS: test=testChatButtonLaunchesChatActivity_whenOfferAccepted_withActionOnItem
 INSTRUMENTATION_STATUS_CODE: 1
-INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.SetPreferencesTest
+INSTRUMENTATION_STATUS: class=com.example.group8_bartertrader.ReceivedOfferUITest
 INSTRUMENTATION_STATUS: current=1
 INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
 INSTRUMENTATION_STATUS: numtests=1
-INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Timed out waiting for text: No preferences set
-at com.example.group8_bartertrader.SetPreferencesTest.waitForText(SetPreferencesTest.java:81)
-at com.example.group8_bartertrader.SetPreferencesTest.testPreferencesDisplay(SetPreferencesTest.java:52)
-
-INSTRUMENTATION_STATUS: stream=
-Error in testPreferencesDisplay(com.example.group8_bartertrader.SetPreferencesTest):
-java.lang.AssertionError: Timed out waiting for text: No preferences set
-at com.example.group8_bartertrader.SetPreferencesTest.waitForText(SetPreferencesTest.java:81)
-at com.example.group8_bartertrader.SetPreferencesTest.testPreferencesDisplay(SetPreferencesTest.java:52)
-
-INSTRUMENTATION_STATUS: test=testPreferencesDisplay
-INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=testChatButtonLaunchesChatActivity_whenOfferAccepted_withActionOnItem
+INSTRUMENTATION_STATUS_CODE: 0
 INSTRUMENTATION_RESULT: stream=
 
-Time: 5.154
-There was 1 failure:
-1) testPreferencesDisplay(com.example.group8_bartertrader.SetPreferencesTest)
-java.lang.AssertionError: Timed out waiting for text: No preferences set
-at com.example.group8_bartertrader.SetPreferencesTest.waitForText(SetPreferencesTest.java:81)
-at com.example.group8_bartertrader.SetPreferencesTest.testPreferencesDisplay(SetPreferencesTest.java:52)
+Time: 9.359
 
-FAILURES!!!
-Tests run: 1,  Failures: 1
+OK (1 test)
 
 
 INSTRUMENTATION_CODE: -1

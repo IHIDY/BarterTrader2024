@@ -1,6 +1,6 @@
-com.example.group8_bartertrader.test.app-jetified-tracing-1.1.0-0 C:\Users\ellaj\.gradle\caches\8.10.2\transforms\791cdeaae55667c1715e4caa9bd02d9c\transformed\jetified-tracing-1.1.0\res
-com.example.group8_bartertrader.test.app-jetified-core-1.6.1-1 C:\Users\ellaj\.gradle\caches\8.10.2\transforms\950d83438b947b4022bf41ad42343866\transformed\jetified-core-1.6.1\res
-com.example.group8_bartertrader.test.app-androidTest-2 C:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\generated\res\resValues\androidTest\debug
-com.example.group8_bartertrader.test.app-mergeDebugAndroidTestResources-3 C:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.example.group8_bartertrader.test.app-mergeDebugAndroidTestResources-4 C:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.example.group8_bartertrader.test.app-debugAndroidTest-5 C:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
+com.example.group8_bartertrader.test.app-jetified-tracing-1.1.0-0 /Users/junfali/.gradle/caches/8.10.2/transforms/8d397821fc054aa842e6e70e61eacd1a/transformed/jetified-tracing-1.1.0/res
+com.example.group8_bartertrader.test.app-jetified-core-1.6.1-1 /Users/junfali/.gradle/caches/8.10.2/transforms/b9d46c8a038699784aa3193afc4f1101/transformed/jetified-core-1.6.1/res
+com.example.group8_bartertrader.test.app-androidTest-2 /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/generated/res/resValues/androidTest/debug
+com.example.group8_bartertrader.test.app-mergeDebugAndroidTestResources-3 /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.group8_bartertrader.test.app-mergeDebugAndroidTestResources-4 /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.group8_bartertrader.test.app-debugAndroidTest-5 /Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

@@ -1,27 +1,20 @@
 
-Ø
-i
-SetPreferencesTestcom.example.group8_bartertradertestPreferencesDisplay2˜Ö¡øÄΩåé:¸Ö¡ø¿ì¬Õ¿
-êjava.lang.AssertionError: Timed out waiting for text: No preferences set
-at com.example.group8_bartertrader.SetPreferencesTest.waitForText(SetPreferencesTest.java:81)
-at com.example.group8_bartertrader.SetPreferencesTest.testPreferencesDisplay(SetPreferencesTest.java:52)
-java.lang.AssertionErrorêjava.lang.AssertionError: Timed out waiting for text: No preferences set
-at com.example.group8_bartertrader.SetPreferencesTest.waitForText(SetPreferencesTest.java:81)
-at com.example.group8_bartertrader.SetPreferencesTest.testPreferencesDisplay(SetPreferencesTest.java:52)
-"Ì
+ï
+ô
+ReceivedOfferUITestcom.example.group8_bartertraderEtestChatButtonLaunchesChatActivity_whenOfferAccepted_withActionOnItem2à±¡øÄä∫´:ë±¡øÄ’ã‹"Ø
 
-logcatandroid◊
-‘C:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\outputs\androidTest-results\connected\debug\Medium_Phone_API_35(AVD) - 15\logcat-com.example.group8_bartertrader.SetPreferencesTest-testPreferencesDisplay.txt"¨
+logcatandroidô
+ñ/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.group8_bartertrader.ReceivedOfferUITest-testChatButtonLaunchesChatActivity_whenOfferAccepted_withActionOnItem.txt"æ
 
-device-infoandroidë
-éC:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\outputs\androidTest-results\connected\debug\Medium_Phone_API_35(AVD) - 15\device-info.pb"≠
+device-infoandroid£
+†/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/device-info.pb"ø
 
-device-info.meminfoandroidä
-áC:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\outputs\androidTest-results\connected\debug\Medium_Phone_API_35(AVD) - 15\meminfo"≠
+device-info.meminfoandroidú
+ô/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/meminfo"ø
 
-device-info.cpuinfoandroidä
-áC:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\outputs\androidTest-results\connected\debug\Medium_Phone_API_35(AVD) - 15\cpuinfo*ë
+device-info.cpuinfoandroidú
+ô/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/cpuinfo*£
 c
-test-results.logOcom.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriverõ
-òC:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\outputs\androidTest-results\connected\debug\Medium_Phone_API_35(AVD) - 15\testlog\test-results.log 2
+test-results.logOcom.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver≠
+™/Users/junfali/AndroidStudioProjects/group_8_csci_3130_winter/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/testlog/test-results.log 2
 text/plain
