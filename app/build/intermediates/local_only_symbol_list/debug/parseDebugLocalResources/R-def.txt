@@ -34,8 +34,6 @@ id filterSpinner
 id forfield
 id iOffer
 id inputEditText
-id jobIdTV
-id jobLocationTV
 id lName
 id locationTextView
 id loginBtn
@@ -54,7 +52,9 @@ id productCategory
 id productCondition
 id productDescription
 id productDetails
+id productIdTV
 id productLocation
+id productLocationTV
 id productName
 id productRecyclerView
 id providerEmail

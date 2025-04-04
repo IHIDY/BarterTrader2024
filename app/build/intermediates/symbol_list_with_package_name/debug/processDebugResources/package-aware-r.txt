@@ -3455,8 +3455,6 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
-id jobIdTV
-id jobLocationTV
 id jumpToEnd
 id jumpToStart
 id lName
@@ -3601,7 +3599,9 @@ id productCategory
 id productCondition
 id productDescription
 id productDetails
+id productIdTV
 id productLocation
+id productLocationTV
 id productName
 id productRecyclerView
 id progress_circular

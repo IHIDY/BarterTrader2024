@@ -16,6 +16,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.group8_bartertrader.R;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.database.Logger;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.auth.oauth2.GoogleCredentials;
