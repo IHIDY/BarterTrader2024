@@ -2,6 +2,7 @@ package com.example.group8_bartertrader;
 
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -14,8 +15,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -27,9 +31,10 @@ public class ProductForm extends AppCompatActivity {
     private EditText productName, productLocation, productDescription;
     private Spinner productCategory, productCondition;
     private Button submitButton, backButton;
-    private DatabaseReference databaseReference;
+    private DatabaseReference databaseReference, preferencesRef, notificationsRef;
     private String selectedCategory, selectedCondition;
 
+    public ProductForm(){}
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +51,8 @@ public class ProductForm extends AppCompatActivity {
         setupSpinners();
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Products");
+        preferencesRef = FirebaseDatabase.getInstance().getReference("Preferences");
+        notificationsRef = FirebaseDatabase.getInstance().getReference("Notifications");
         submitButton.setOnClickListener(v -> submitProduct());
         backButton.setOnClickListener(v -> onBackPressed());
     }
@@ -85,6 +92,59 @@ public class ProductForm extends AppCompatActivity {
         });
     }
 
+    private String generateString(String location, String category) {
+        Log.d("<<< GenerateString() >>>", "You have a " + category + " product, in " + location);
+        return "You have a " + category + " product, in " + location;
+    }
+
+    private void pushToNotification(String receiverEmail, String message) {
+
+        // Create a map to hold the data
+        Map<String, Object> notificationData = new HashMap<>();
+        notificationData.put("receiverEmail", receiverEmail);
+        notificationData.put("message", message);
+        notificationData.put("time", null);
+
+        // Push the data with a unique ID
+        notificationsRef.push().setValue(notificationData)
+                .addOnSuccessListener(aVoid -> {
+                    Log.d("Firebase", "Notification pushed successfully");
+                })
+                .addOnFailureListener(e -> {
+                    Log.e("Firebase", "Failed to push notification", e);
+                });
+    }
+
+    // This is hardcoded, needs to be changed later
+    private void checkPreferences(String location, String category, String message) {
+
+        preferencesRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                for (DataSnapshot childSnapshot : snapshot.getChildren()) {
+                    String email = childSnapshot.child("email").getValue(String.class);
+                    String preferredCategory = childSnapshot.child("preferredCategory").getValue(String.class);
+                    String preferredLocation = childSnapshot.child("preferredLocation").getValue(String.class);
+
+                    if (category.equalsIgnoreCase(preferredCategory) && location.equalsIgnoreCase(preferredLocation)) {
+                        // Do something, e.g., log it or perform an action
+                        String userId = email;
+                        Log.d("Electronics User", "User " + email + " prefers Electronics in "+ location);
+                        // Put notification into notification field.
+
+                        pushToNotification(email, message);
+
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                Log.e("FirebaseError", "Error reading preferences: " + error.getMessage());
+            }
+        });
+    }
+
     private void submitProduct() {
         String name = productName.getText().toString().trim();
         String category = selectedCategory;
@@ -117,6 +177,8 @@ public class ProductForm extends AppCompatActivity {
         databaseReference.child(productId).setValue(productData).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
                 Snackbar.make(submitButton, "Product posted successfully", Snackbar.LENGTH_SHORT).show();
+
+                checkPreferences(location, category, generateString(location, category));
                 finish();
             } else {
                 Snackbar.make(submitButton, "Failed to post product", Snackbar.LENGTH_SHORT).show();
