@@ -2,13 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
     tools:context=".ProviderDash">
 
     <!-- Title -->
-
     <TextView
         android:id="@+id/dashboardTitle"
         android:layout_width="wrap_content"
@@ -16,62 +15,58 @@
         android:text="Provider Dashboard"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button_received_offers"
+        app:layout_constraintBottom_toTopOf="@+id/postButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginBottom="24dp"
+
         android:layout_marginTop="12dp" />
 
-
     <!-- Post Used Products Button -->
-
     <Button
         android:id="@+id/postButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
         android:text="Post Used Products"
+        android:backgroundTint="#2196F3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/dashboardTitle" />
 
     <!-- View Posted Products Button -->
     <Button
         android:id="@+id/viewPostProducts"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
         android:text="View Posted Products"
+        android:backgroundTint="#2196F3"
         app:layout_constraintTop_toBottomOf="@id/postButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp" />
-
-    <Button
-        android:id="@+id/button_received_offers"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="View your received offers"
-        app:layout_constraintTop_toBottomOf="@id/viewPostProducts"
-        android:layout_gravity="center"
-        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- View Received Offers Button -->
+    <Button
+        android:id="@+id/button_received_offers"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="View Your Received Offers"
+        android:backgroundTint="#2196F3"
+        app:layout_constraintTop_toBottomOf="@id/viewPostProducts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Settings Button (Moved to the Bottom) -->
-
     <Button
         android:id="@+id/pBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
         android:text="Go to Settings"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.992" />
-
-
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

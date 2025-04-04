@@ -68,15 +68,15 @@
 
   <Button
       android:id="@+id/OfferExchangeButton"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      android:layout_width="200dp"
+      android:layout_height="60dp"
       android:text="Offer Exchange"
       android:textSize="16dp"></Button>
 
   <Button
       android:id="@+id/ExitButton"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      android:layout_width="150dp"
+      android:layout_height="60dp"
       android:text="Exit"
       android:textSize="16dp"></Button>
 

@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-             android:layout_height="match_parent"
+    android:layout_height="match_parent"
     android:id="@+id/activity_settings">
 
     <TextView
         android:id="@+id/settings_title"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="80dp"
         android:gravity="center"
         android:text="Settings"
@@ -17,52 +17,42 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/LogOutButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="600dp"
-
-        android:text="Log out"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_title" />
-    <Button
         android:id="@+id/resetPasswordButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
-
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
         android:text="Reset Password"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/settings_title" />
-
-
-<!--    <Spinner-->
-<!--        android:id="@+id/mySpinner"-->
-<!--        android:layout_width="164dp"-->
-<!--        android:layout_height="51dp"-->
-<!--        android:entries="@array/spinner_items"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        tools:ignore="MissingConstraints" />-->
 
     <Button
         android:id="@+id/changeRoleBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="151dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="131dp"
-        android:layout_marginBottom="216dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
         android:text="Change Role"
-        app:layout_constraintBottom_toTopOf="@+id/LogOutButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resetPasswordButton" />
+    <Button
+        android:id="@+id/notificationPrefBtn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Notification Preferences"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/changeRoleBtn" />
 
+    <Button
+        android:id="@+id/LogOutButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:text="Log out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

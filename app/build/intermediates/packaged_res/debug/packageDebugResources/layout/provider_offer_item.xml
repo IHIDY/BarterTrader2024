@@ -88,5 +88,13 @@
             android:entries="@array/offer_options"
             android:spinnerMode="dropdown"/>
 
+        <Button
+            android:id="@+id/chatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:enabled="false" />
+
+
     </LinearLayout>
 </androidx.cardview.widget.CardView>

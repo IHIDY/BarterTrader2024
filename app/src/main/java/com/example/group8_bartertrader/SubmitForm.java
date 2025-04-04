@@ -41,7 +41,7 @@ public class SubmitForm extends AppCompatActivity {
     FirebaseAuth mAuth;
     DatabaseReference databaseReference;
     SubmitHelper submitHelper; // Subimt Helper we use for interacting with backend
-    String targetProductId, targetProductName, targetProductCategory, targetProductLocation, targetProductDescription;
+    String targetProviderEmail, targetProductId, targetProductName, targetProductCategory, targetProductLocation, targetProductDescription;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +55,7 @@ public class SubmitForm extends AppCompatActivity {
         targetProductCategory = intent.getStringExtra("productCategory");
         targetProductLocation = intent.getStringExtra("productLocation");
         targetProductDescription = intent.getStringExtra("productDescription");
+        targetProviderEmail = intent.getStringExtra("providerEmail");
 
         System.out.println(targetProductName);
 
@@ -99,11 +100,15 @@ public class SubmitForm extends AppCompatActivity {
             String location = productLocation.getText().toString().trim().toUpperCase();
 
             submitHelper.submitOffer(name, category, description, location, currentUserEmail,
-                    targetProductId, targetProductName, targetProductCategory, targetProductDescription, targetProductLocation,
+                    targetProductId, targetProductName, targetProductCategory, targetProductDescription, targetProductLocation, targetProviderEmail,
                     success -> {
                         View rootView = findViewById(android.R.id.content);
                         if (success) {
                             Snackbar.make(rootView, "Offer submitted successfully!", Snackbar.LENGTH_SHORT).show();
+
+                            Intent nextIntent = new Intent(SubmitForm.this, ReceiverDash.class);
+                            startActivity(nextIntent);
+                            finish();
                         } else {
                             Snackbar.make(rootView, "Failed to submit offer!, Offer already exists for this product", Snackbar.LENGTH_SHORT).show();
                         }

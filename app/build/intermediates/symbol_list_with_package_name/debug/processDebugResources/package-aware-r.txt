@@ -3287,6 +3287,7 @@ id beginning
 id below
 id bestChoice
 id blocking
+id bodyTV
 id bottom
 id bounce
 id bounceBoth
@@ -3301,7 +3302,6 @@ id buttonPanel
 id button_received_offers
 id cache_measures
 id callMeasure
-id cancelButton
 id cancel_button
 id carryVelocity
 id center
@@ -3351,7 +3351,6 @@ id decelerateAndComplete
 id declineButton
 id decor_content_parent
 id default_activity_button
-id deleteButton
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -3384,7 +3383,6 @@ id easeInOut
 id easeOut
 id east
 id edge
-id editButton
 id edit_query
 id edit_text_id
 id elastic
@@ -3471,7 +3469,6 @@ id line3
 id linear
 id listMode
 id list_item
-id loadingIndicator
 id locationTextView
 id loginBtn
 id m3_side_sheet
@@ -3554,6 +3551,7 @@ id noState
 id none
 id normal
 id north
+id notificationPrefBtn
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -3598,15 +3596,13 @@ id pressed
 id prodName
 id productAvailability
 id productCategory
-id productCategoryEditText
 id productCondition
 id productDescription
-id productDescriptionEditText
 id productDetails
+id productIdTV
 id productLocation
-id productLocationEditText
+id productLocationTV
 id productName
-id productNameEditText
 id productRecyclerView
 id progress_circular
 id progress_horizontal
@@ -3629,7 +3625,6 @@ id roleSelect
 id rounded
 id row_index_key
 id satellite
-id saveButton
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3653,6 +3648,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id sendNotificationBtn
 id settings_title
 id sharedValueSet
 id sharedValueUnset
@@ -3736,6 +3732,7 @@ id textinput_suffix_text
 id time
 id title
 id titleDividerNoCustom
+id titleTV
 id titleText
 id title_template
 id toggle
@@ -3900,6 +3897,7 @@ layout activity_google_map
 layout activity_login
 layout activity_main
 layout activity_my_offers
+layout activity_notification
 layout activity_offer_details
 layout activity_product_form
 layout activity_provider_dash
@@ -3909,6 +3907,7 @@ layout activity_receiver_dash
 layout activity_registration
 layout activity_search
 layout activity_settings
+layout activity_view_push_notification
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -4088,6 +4087,7 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string fcm_fallback_notification_channel_label
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id

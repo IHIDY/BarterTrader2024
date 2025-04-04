@@ -60,14 +60,16 @@
     <Button
         android:id="@+id/regBtn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
         android:text="Register" />
 
     <!-- Button for login with text "Login" -->
     <Button
         android:id="@+id/loginBtn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
         android:backgroundTint="#23B5D3"
         android:text="Login" />
 

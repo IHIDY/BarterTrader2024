@@ -61,7 +61,7 @@ public class MyOffersActivity extends AppCompatActivity {
         offerRecyclerView = findViewById(R.id.productRecyclerView);
         offerRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         offerList = new ArrayList<>();
-        offerAdapter = new OfferAdapter(offerList);
+        offerAdapter = new OfferAdapter(offerList, this);
         offerRecyclerView.setAdapter(offerAdapter);
 
         // Fetch the Offers
