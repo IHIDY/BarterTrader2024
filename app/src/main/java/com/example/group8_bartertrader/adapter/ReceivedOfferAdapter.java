@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,12 +17,16 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.group8_bartertrader.ChatActivity;
 import com.example.group8_bartertrader.OfferDetailsActivity;
 import com.example.group8_bartertrader.R;
 import com.example.group8_bartertrader.model.Offer;
 import com.google.firebase.Firebase;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
 import java.util.List;
@@ -77,6 +82,19 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
             context.startActivity(intent);
         });
 
+        if (offer.getStatus().equalsIgnoreCase("accepted")) {
+            holder.chatButton.setEnabled(true);
+        } else {
+            holder.chatButton.setEnabled(false);
+        }
+
+        holder.chatButton.setOnClickListener(v -> {
+            Intent intent = new Intent(context, ChatActivity.class);
+            intent.putExtra("offerId", offer.getId());
+
+            context.startActivity(intent);
+        });
+
         int defaultPos = adapter.getPosition(offer.getStatus());
         holder.respondToOfferSpinner.setSelection(defaultPos);
         holder.respondToOfferSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
@@ -88,6 +106,12 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
                     offer.setStatus(selectedStatus);
                     updateOfferStatus(offer);
                     Toast.makeText(context, "Offer " + selectedStatus, Toast.LENGTH_SHORT).show();
+
+                    if (selectedStatus.equals("Accepted")) {
+                        initializeChatInDatabase(offer);
+                    } else if (selectedStatus.equals("declined")) {
+                        disableChatInDatabase(offer.getId());
+                    }
                 }
             }
 
@@ -149,6 +173,7 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
     public static class ReceivedOfferViewHolder extends RecyclerView.ViewHolder {
         Spinner respondToOfferSpinner;
         TextView offerId, productName, status, productCategory, productLocation, productDescription, targetItemName, targetItemDescription, targetItemCategory, targetItemLocation;
+        Button chatButton;
         public ReceivedOfferViewHolder(View itemView) {
             super(itemView);
             productName = itemView.findViewById(R.id.productName);
@@ -163,6 +188,60 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
             status = itemView.findViewById(R.id.status);
 
             respondToOfferSpinner = itemView.findViewById(R.id.respondToOfferSpinner);
+            chatButton = itemView.findViewById(R.id.chatButton);
+
         }
     }
+
+    private void initializeChatInDatabase(Offer offer) {
+        DatabaseReference chatRef = FirebaseDatabase.getInstance()
+                .getReference("chats")
+                .child(offer.getId());
+
+        // 首先检查 chat 是否已经存在
+        chatRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.exists()) {
+                    Log.d("ChatInit", "Chat already exists, skipping creation");
+                } else {
+                    HashMap<String, Object> chatData = new HashMap<>();
+                    chatData.put("participants",
+                            java.util.Arrays.asList(offer.getProviderEmail(), offer.getReceiverEmail()));
+
+                    //defaults to false, true if accepted
+                    chatData.put("offerAccepted", offer.getStatus().equalsIgnoreCase("Accepted"));
+
+                    chatRef.updateChildren(chatData)
+                            .addOnSuccessListener(unused -> {
+                                Log.d("ChatInit", "Chat node created for offerId: " + offer.getId());
+                                Toast.makeText(context, "Chat ready!", Toast.LENGTH_SHORT).show();
+                            })
+                            .addOnFailureListener(e -> {
+                                Log.e("ChatInit", "Failed to create chat node", e);
+                                Toast.makeText(context, "Failed to create chat", Toast.LENGTH_SHORT).show();
+                            });
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Log.e("ChatInit", "Database error: " + error.getMessage());
+            }
+        });
+    }
+
+    private void disableChatInDatabase(String offerId) {
+        DatabaseReference offerAcceptedRef = FirebaseDatabase.getInstance()
+                .getReference("chats")
+                .child(offerId)
+                .child("offerAccepted");
+
+        offerAcceptedRef.setValue(false)
+                .addOnSuccessListener(aVoid -> Log.d("ChatControl", "Chat disabled for declined offer"))
+                .addOnFailureListener(e -> Log.e("ChatControl", "Failed to disable chat", e));
+    }
+
+
+
 }

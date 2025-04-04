@@ -58,6 +58,8 @@ dependencies {
     implementation libs.uiautomator
     implementation libs.uiautomator
     implementation libs.play.services.maps
+    implementation libs.espresso.intents
+    implementation libs.espresso.contrib
     testImplementation libs.junit
     testImplementation libs.ext.junit
     implementation 'com.google.android.gms:play-services-location:21.0.1'
@@ -66,6 +68,15 @@ dependencies {
     testImplementation 'org.mockito:mockito-inline:4.0.0' // For mocking final classes
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+
+    implementation 'com.google.protobuf:protobuf-javalite:3.25.1'
+
+    implementation('com.google.android.gms:play-services-location:21.0.1') {
+        exclude group: "com.google.protobuf", module: "protobuf-lite"
+    }
+    implementation(libs.play.services.maps) {
+        exclude group: "com.google.protobuf", module: "protobuf-lite"
+    }
 
     // Mockito Core
     testImplementation 'org.mockito:mockito-core:5.4.0'
@@ -88,4 +99,14 @@ dependencies {
     implementation 'com.google.auth:google-auth-library-oauth2-http:1.30.0'
 
 
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency { details ->
+        if (details.requested.group == 'com.google.protobuf' && details.requested.name == 'protobuf-lite') {
+            details.useTarget 'com.google.protobuf:protobuf-javalite:3.25.1'
+        }
+    }
+
+    exclude group: 'com.google.protobuf', module: 'protobuf-lite'
 }
