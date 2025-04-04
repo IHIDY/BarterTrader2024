@@ -28,6 +28,10 @@
         "source": "com.example.group8_bartertrader.app-main-48:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
+        "merged": "com.example.group8_bartertrader.app-debug-46:/layout_dialog_edit_preferences.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-48:/layout/dialog_edit_preferences.xml"
+    },
+    {
         "merged": "com.example.group8_bartertrader.app-debug-46:/layout_activity_registration.xml.flat",
         "source": "com.example.group8_bartertrader.app-main-48:/layout/activity_registration.xml"
     },
@@ -150,5 +154,9 @@
     {
         "merged": "com.example.group8_bartertrader.app-debug-46:/mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "com.example.group8_bartertrader.app-main-48:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.group8_bartertrader.app-debug-46:/layout_activity_preferences.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-48:/layout/activity_preferences.xml"
     }
 ]

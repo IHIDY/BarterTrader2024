@@ -1,5 +1,36 @@
 package com.example.group8_bartertrader;
 
+import android.app.AlertDialog;
+// Import necessary packages
+import android.content.Intent;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.group8_bartertrader.notification.NotificationActivity;
+import com.example.group8_bartertrader.model.PreferencesManager;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 // Import necessary packages
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,8 +38,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.group8_bartertrader.notification.NotificationActivity;
@@ -19,6 +48,8 @@ import java.util.List;
 
 public class SettingsActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
+    private PreferencesManager preferencesManager;
+    private TextView preferencesSummary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +58,16 @@ public class SettingsActivity extends AppCompatActivity {
 
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
+        preferencesManager = PreferencesManager.getInstance(this);
 
         Button logoutButton = findViewById(R.id.LogOutButton);
         Button resetPasswordButton = findViewById(R.id.resetPasswordButton);
         Button changeRoleBtn = findViewById(R.id.changeRoleBtn);
+        Button editPreferencesBtn = findViewById(R.id.editPreferencesBtn);
+        Button returnToDashBtn = findViewById(R.id.returnToDashBtn);
         Button notificationPreferencesBtn = findViewById(R.id.notificationPrefBtn);
+
+        preferencesSummary = findViewById(R.id.preferencesSummary);
 
         List<String> items = new ArrayList<>();
         items.add("Select a role");
@@ -56,7 +92,38 @@ public class SettingsActivity extends AppCompatActivity {
         notificationPreferencesBtn.setOnClickListener(view -> {
             Intent intent = new Intent(SettingsActivity.this, NotificationActivity.class);
             startActivity(intent);
+            finish();
         });
+
+        returnToDashBtn.setOnClickListener(view -> {
+            FirebaseUser currentUser = mAuth.getCurrentUser();
+            if (currentUser != null) {
+                // Get user role from Firebase Database instead of static User class
+                DatabaseReference userRef = FirebaseDatabase.getInstance().getReference("users").child(currentUser.getUid());
+                userRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        String role = snapshot.child("role").getValue(String.class);
+                        if ("Receiver".equals(role)) {
+                            startActivity(new Intent(SettingsActivity.this, ReceiverDash.class));
+                        } else if ("Provider".equals(role)) {
+                            startActivity(new Intent(SettingsActivity.this, ProviderDash.class));
+                        }
+                        finish();
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+                        Toast.makeText(SettingsActivity.this, "Failed to get user role", Toast.LENGTH_SHORT).show();
+                    }
+                });
+            } else {
+                // User not logged in, redirect to login
+                startActivity(new Intent(this, LoginActivity.class));
+                finish();
+            }
+        });
+
 
         resetPasswordButton.setOnClickListener(v -> {
             Intent intent = new Intent(SettingsActivity.this, ResetPasswordActivity.class);
@@ -64,7 +131,28 @@ public class SettingsActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
+
+        editPreferencesBtn.setOnClickListener(v -> showEditPreferencesDialog());
+
+        loadAndDisplayPreferences();
     }
+
+    private void loadAndDisplayPreferences() {
+        if (preferencesManager != null && preferencesSummary != null) {
+            preferencesManager.loadPreferencesFromFirebase((categories, locations) -> {
+                runOnUiThread(() -> {
+                    if (categories.isEmpty() && locations.isEmpty()) {
+                        preferencesSummary.setText("No preferences set");
+                    } else {
+                        String summary = "Categories: " + TextUtils.join(", ", categories) +
+                                "\nLocations: " + TextUtils.join(", ", locations);
+                        preferencesSummary.setText(summary);
+                    }
+                });
+            });
+        }
+    }
+
 
     private void showLogoutConfirmation() {
         new AlertDialog.Builder(this)
@@ -82,4 +170,41 @@ public class SettingsActivity extends AppCompatActivity {
                 .setNegativeButton("Cancel", (dialog, which) -> dialog.dismiss())
                 .show();
     }
+
+    private void showEditPreferencesDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        View dialogView = getLayoutInflater().inflate(R.layout.dialog_edit_preferences, null);
+
+        EditText categoriesInput = dialogView.findViewById(R.id.categoriesInput);
+        EditText locationsInput = dialogView.findViewById(R.id.locationsInput);
+
+        if (preferencesManager != null) {
+            Set<String> categories = preferencesManager.getPreferredCategories();
+            Set<String> locations = preferencesManager.getPreferredLocations();
+
+            categoriesInput.setText(TextUtils.join(", ", categories));
+            locationsInput.setText(TextUtils.join(", ", locations));
+        }
+
+        builder.setView(dialogView)
+                .setTitle("Edit Preferences")
+                .setPositiveButton("Save", (dialog, which) -> {
+                    Set<String> newCategories = new HashSet<>(
+                            Arrays.asList(categoriesInput.getText().toString().split("\\s*,\\s*"))
+                    );
+                    Set<String> newLocations = new HashSet<>(
+                            Arrays.asList(locationsInput.getText().toString().split("\\s*,\\s*"))
+                    );
+
+                    if (preferencesManager != null) {
+                        preferencesManager.savePreferredCategories(newCategories);
+                        preferencesManager.savePreferredLocations(newLocations);
+                        loadAndDisplayPreferences();
+                    }
+                })
+                .setNegativeButton("Cancel", null)
+                .create()
+                .show();
+    }
+
 }

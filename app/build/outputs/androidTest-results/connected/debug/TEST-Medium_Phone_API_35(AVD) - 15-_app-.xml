@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.example.group8_bartertrader.SetPreferencesTest" tests="1" failures="1" errors="0" skipped="0" time="6.4" timestamp="2025-04-04T20:37:17" hostname="localhost">
+  <properties>
+    <property name="device" value="Medium_Phone_API_35(AVD) - 15" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="testPreferencesDisplay" classname="com.example.group8_bartertrader.SetPreferencesTest" time="5.133">
+    <failure>java.lang.AssertionError: Timed out waiting for text: No preferences set
+at com.example.group8_bartertrader.SetPreferencesTest.waitForText(SetPreferencesTest.java:81)
+at com.example.group8_bartertrader.SetPreferencesTest.testPreferencesDisplay(SetPreferencesTest.java:52)
+</failure>
+  </testcase>
+</testsuite>

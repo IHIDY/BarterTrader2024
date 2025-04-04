@@ -1,0 +1,58 @@
+INFO: Constructing runner from config.
+INFO: Configuring Android Instrumentation driver: android_instrumentation_runtime {
+  instrumentation_info {
+    app_package: "com.example.group8_bartertrader"
+    test_package: "com.example.group8_bartertrader.test"
+    test_runner_class: "androidx.test.runner.AndroidJUnitRunner"
+  }
+  instrumentation_args {
+    args_map {
+      key: "additionalTestOutputDir"
+      value: "/sdcard/Android/media/com.example.group8_bartertrader/additional_test_output"
+    }
+    args_map {
+      key: "class"
+      value: "com.example.group8_bartertrader.SetPreferencesTest"
+    }
+  }
+}
+am_instrument_timeout: 31536000
+
+INFO: Configuring AndroidTestApkInstallerPlugin: apks_to_install {
+  apk_paths: "C:\\Users\\ellaj\\CSCI3130\\group8_bartertrader\\app\\build\\intermediates\\apk\\debug\\app-debug.apk"
+  install_options {
+  }
+  uninstall_after_test: true
+}
+apks_to_install {
+  apk_paths: "C:\\Users\\ellaj\\CSCI3130\\group8_bartertrader\\app\\build\\intermediates\\apk\\androidTest\\debug\\app-debug-androidTest.apk"
+  install_options {
+  }
+  uninstall_after_test: true
+}
+
+INFO: No installables found in test fixture. Nothing to install.
+INFO: Installing [C:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\intermediates\apk\debug\app-debug.apk] on device emulator-5554.
+INFO: Installing [C:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\intermediates\apk\androidTest\debug\app-debug-androidTest.apk] on device emulator-5554.
+INFO: Start logcat streaming.
+INFO: Running Android Instrumentation driver.
+INFO: Copying files from device to host: /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output to C:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\outputs\connected_android_test_additional_output\debugAndroidTest\connected\Medium_Phone_API_35(AVD) - 15
+INFO: Copying /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output/view-op-error-1.png to C:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\outputs\connected_android_test_additional_output\debugAndroidTest\connected\Medium_Phone_API_35(AVD) - 15\view-op-error-1.png
+INFO: Copying /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output/view-op-error-2.png to C:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\outputs\connected_android_test_additional_output\debugAndroidTest\connected\Medium_Phone_API_35(AVD) - 15\view-op-error-2.png
+INFO: Copying /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output/view-op-error-3.png to C:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\outputs\connected_android_test_additional_output\debugAndroidTest\connected\Medium_Phone_API_35(AVD) - 15\view-op-error-3.png
+INFO: Copying /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output/view-op-error-4.png to C:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\outputs\connected_android_test_additional_output\debugAndroidTest\connected\Medium_Phone_API_35(AVD) - 15\view-op-error-4.png
+INFO: Copying /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output/view-op-error-5.png to C:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\outputs\connected_android_test_additional_output\debugAndroidTest\connected\Medium_Phone_API_35(AVD) - 15\view-op-error-5.png
+INFO: Copying /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output/view-op-error-6.png to C:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\outputs\connected_android_test_additional_output\debugAndroidTest\connected\Medium_Phone_API_35(AVD) - 15\view-op-error-6.png
+INFO: Copying /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output/view-op-error-7.png to C:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\outputs\connected_android_test_additional_output\debugAndroidTest\connected\Medium_Phone_API_35(AVD) - 15\view-op-error-7.png
+INFO: Copying /sdcard/Android/media/com.example.group8_bartertrader/additional_test_output/view-op-error-8.png to C:\Users\ellaj\CSCI3130\group8_bartertrader\app\build\outputs\connected_android_test_additional_output\debugAndroidTest\connected\Medium_Phone_API_35(AVD) - 15\view-op-error-8.png
+INFO: Stop logcat streaming.
+INFO: Uninstalling com.example.group8_bartertrader for device emulator-5554.
+INFO: Uninstalling com.example.group8_bartertrader.test for device emulator-5554.
+SEVERE: Execute com.example.group8_bartertrader.SetPreferencesTest.testPreferencesDisplay: FAILED
+java.lang.AssertionError: java.lang.AssertionError: Timed out waiting for text: No preferences set
+at com.example.group8_bartertrader.SetPreferencesTest.waitForText(SetPreferencesTest.java:81)
+at com.example.group8_bartertrader.SetPreferencesTest.testPreferencesDisplay(SetPreferencesTest.java:52)
+
+java.lang.AssertionError: Timed out waiting for text: No preferences set
+at com.example.group8_bartertrader.SetPreferencesTest.waitForText(SetPreferencesTest.java:81)
+at com.example.group8_bartertrader.SetPreferencesTest.testPreferencesDisplay(SetPreferencesTest.java:52)

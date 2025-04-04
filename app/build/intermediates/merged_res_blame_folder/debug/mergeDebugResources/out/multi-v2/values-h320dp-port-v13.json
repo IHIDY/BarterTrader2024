@@ -4,7 +4,7 @@
             "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-44:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/ee0bf381f5c5bffb71a9ec550403121f/transformed/material-1.12.0/res/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+                    "source": "C:\\Users\\ellaj\\.gradle\\caches\\8.10.2\\transforms\\32d2b2432bb5adff457a392d86e9a4dd\\transformed\\material-1.12.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

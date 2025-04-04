@@ -22,6 +22,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.group8_bartertrader.adapter.ProductAdapter;
+import com.example.group8_bartertrader.model.PreferencesManager;
 import com.example.group8_bartertrader.model.Product;
 import com.example.group8_bartertrader.notification.NotificationHelper;
 import com.example.group8_bartertrader.utils.LocationHelper;
@@ -35,6 +36,9 @@ import com.google.firebase.database.ValueEventListener;
 import com.example.group8_bartertrader.notification.NotificationActivity;
 
 import java.util.List;
+import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.Set;
 
 public class ReceiverDash extends AppCompatActivity {
 
@@ -57,6 +61,7 @@ public class ReceiverDash extends AppCompatActivity {
     private ProductAdapter productAdapter;
     private double latitude, longitude;
     private boolean notificationsChecked = false;
+    private Button savePreferencesButton;
     private boolean isRestarting = false; // Flag to track activity restart
 
     @Override
@@ -86,6 +91,9 @@ public class ReceiverDash extends AppCompatActivity {
 
         locationHelper = new LocationHelper(this);
         notificationHelper = new NotificationHelper(this);
+
+        savePreferencesButton = findViewById(R.id.savePreferencesButton);
+        savePreferencesButton.setOnClickListener(v -> saveCurrentSearchAsPreferences());
 
         // Check and request location permissions
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -222,5 +230,58 @@ public class ReceiverDash extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         isRestarting = false; // Reset flag when activity is destroyed
+    }
+
+    private void saveCurrentSearchAsPreferences() {
+        // Get current values with null checks
+        String currentCategory = selectedCategory != null ? selectedCategory : "";
+        String currentKeyword = keyword.getText() != null ? keyword.getText().toString().trim() : "";
+        String currentDistance = Distance.getText() != null ? Distance.getText().toString().trim() : "";
+        String currentLocation = locationTextView.getText() != null ?
+                locationTextView.getText().toString() : "Location: Not available";
+
+        Set<String> categories = new HashSet<>();
+        Set<String> locations = new HashSet<>();
+
+        // Add category if valid
+        if (!currentCategory.isEmpty() && !currentCategory.equals("Select Category")) {
+            categories.add(currentCategory);
+        }
+
+        // Add keyword if not empty
+        if (!currentKeyword.isEmpty()) {
+            categories.add(currentKeyword);
+        }
+
+        // Add location if available
+        if (!currentLocation.equals("Location: Not available")) {
+            String cleanLocation = currentLocation.replace("Location: ", "").trim();
+            if (!cleanLocation.isEmpty()) {
+                locations.add(cleanLocation);
+            }
+        }
+
+        // Add distance if valid
+        if (!currentDistance.isEmpty()) {
+            try {
+                int distance = Integer.parseInt(currentDistance);
+                if (distance > 0) {
+                    locations.add(currentDistance + " km");
+                }
+            } catch (NumberFormatException e) {
+                Log.e("Preferences", "Invalid distance format", e);
+            }
+        }
+
+        // Only save if we have at least one preference
+        if (!categories.isEmpty() || !locations.isEmpty()) {
+            PreferencesManager preferencesManager = PreferencesManager.getInstance(this);
+            preferencesManager.savePreferredCategories(categories);
+            preferencesManager.savePreferredLocations(locations);
+
+            Toast.makeText(this, "Search preferences saved!", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "No preferences to save", Toast.LENGTH_SHORT).show();
+        }
     }
 }

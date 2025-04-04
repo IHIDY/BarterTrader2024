@@ -14,6 +14,7 @@ id activity_settings
 id backButton
 id bodyTV
 id button_received_offers
+id categoriesInput
 id changeRoleBtn
 id confirmEmailBtn
 id confirmEmailLabel
@@ -24,6 +25,7 @@ id declineButton
 id detailButton
 id detailsContainerGL
 id distanceEditText
+id editPreferencesBtn
 id email
 id emailEditText
 id fName
@@ -36,6 +38,7 @@ id iOffer
 id inputEditText
 id lName
 id locationTextView
+id locationsInput
 id loginBtn
 id main
 id map
@@ -46,6 +49,7 @@ id notificationPrefBtn
 id pBtn
 id pass
 id postButton
+id preferencesSummary
 id prodName
 id productAvailability
 id productCategory
@@ -63,7 +67,10 @@ id recsettingbutton
 id regBtn
 id resetPasswordButton
 id respondToOfferSpinner
+id returnToDashBtn
 id roleSelect
+id saveButton
+id savePreferencesButton
 id search_button
 id sendNotificationBtn
 id settings_title
@@ -88,6 +95,7 @@ layout activity_main
 layout activity_my_offers
 layout activity_notification
 layout activity_offer_details
+layout activity_preferences
 layout activity_product_form
 layout activity_provider_dash
 layout activity_provider_product_list
@@ -97,6 +105,7 @@ layout activity_registration
 layout activity_search
 layout activity_settings
 layout activity_view_push_notification
+layout dialog_edit_preferences
 layout new_password_form_page
 layout offer_item
 layout product_item
