@@ -32,10 +32,6 @@
         "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-50:/layout/activity_offer_details.xml"
     },
     {
-        "merged": "com.example.group8_bartertrader.app-debug-48:/layout_message_item.xml.flat",
-        "source": "com.example.group8_bartertrader.app-main-50:/layout/message_item.xml"
-    },
-    {
         "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-48:/layout_activity_receiver_dash.xml.flat",
         "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-50:/layout/activity_receiver_dash.xml"
     },
@@ -50,10 +46,6 @@
     {
         "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-48:/mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-50:/mipmap-xhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.group8_bartertrader.app-debug-48:/layout_activity_chat.xml.flat",
-        "source": "com.example.group8_bartertrader.app-main-50:/layout/activity_chat.xml"
     },
     {
         "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-48:/layout_activity_provider_dash.xml.flat",
@@ -104,12 +96,12 @@
         "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-50:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-48:/layout_message_item.xml.flat",
-        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-50:/layout/message_item.xml"
-    },
-    {
         "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-48:/layout_activity_registration.xml.flat",
         "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-50:/layout/activity_registration.xml"
+    },
+    {
+        "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-48:/layout_message_item.xml.flat",
+        "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-50:/layout/message_item.xml"
     },
     {
         "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-48:/layout_activity_settings.xml.flat",
@@ -178,6 +170,10 @@
     {
         "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-48:/layout_new_password_form_page.xml.flat",
         "source": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-main-50:/layout/new_password_form_page.xml"
+    },
+    {
+        "merged": "com.example.group8_bartertrader.app-debug-48:/layout_activity_settings.xml.flat",
+        "source": "com.example.group8_bartertrader.app-main-50:/layout/activity_settings.xml"
     },
     {
         "merged": "/Users/a123456/.gradle/daemon/8.10.2/com.example.group8_bartertrader.app-debug-48:/mipmap-mdpi_ic_launcher.webp.flat",
