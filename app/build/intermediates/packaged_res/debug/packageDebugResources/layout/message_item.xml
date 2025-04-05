@@ -4,20 +4,25 @@
     android:id="@+id/messageContainer"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="8dp"
+    android:padding="12dp"
     android:orientation="horizontal"
-    android:gravity="start">
+    android:gravity="start"
+    android:layout_marginBottom="10dp">
 
     <TextView
         android:id="@+id/messageTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/bubble_other"
-        android:padding="10dp"
+        android:padding="12dp"
         android:text="Sample message"
         android:textColor="#000000"
+        android:fontFamily="@font/regular"
         android:textSize="16sp"
-        android:maxWidth="240dp"/>
+        android:maxWidth="240dp"
+        android:layout_gravity="start"
+        android:elevation="2dp"
+        android:layout_marginEnd="8dp"/>
 
     <TextView
         android:id="@+id/timestampTextView"
@@ -25,5 +30,7 @@
         android:layout_height="wrap_content"
         android:textSize="10sp"
         android:textColor="@android:color/darker_gray"
-        android:layout_gravity="end"/>
+        android:layout_gravity="end"
+        android:layout_marginTop="4dp"/>
+
 </LinearLayout>
