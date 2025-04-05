@@ -17,30 +17,35 @@
             android:layout_height="wrap_content"
             android:text="I Offer: "
             android:textSize="18sp"
+            android:fontFamily="@font/regular"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/productName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
             android:text="Product Name" />
 
         <TextView
             android:id="@+id/productDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
             android:text="Product Description" />
 
         <TextView
             android:id="@+id/productCategory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
             android:text="Category" />
 
         <TextView
             android:id="@+id/productLocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
             android:text="Location" />
 
         <TextView
@@ -48,6 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="For :"
+            android:fontFamily="@font/regular"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -55,24 +61,28 @@
             android:id="@+id/targetProductName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
             android:text="Product Name" />
 
         <TextView
             android:id="@+id/targetProductDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
             android:text="Product Description" />
 
         <TextView
             android:id="@+id/targetProductCategory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
             android:text="Category" />
 
         <TextView
             android:id="@+id/targetProductLocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
             android:text="Location" />
 
         <TextView
@@ -80,6 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Status: "
+            android:fontFamily="@font/regular"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -88,6 +99,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Chat"
+            android:fontFamily="@font/regular"
             android:enabled="false" />
 
     </LinearLayout>

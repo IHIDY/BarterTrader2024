@@ -9,6 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Categories (comma separated)"
+        android:fontFamily="@font/regular"
         android:textSize="16sp"/>
 
     <EditText
@@ -16,11 +17,13 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/regular"
         android:hint="Electronics, Books, Clothing"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/regular"
         android:text="Locations/Distance (comma separated)"
         android:textSize="16sp"
         android:layout_marginTop="16dp"/>
@@ -30,6 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/regular"
         android:hint="Halifax, 10 km"/>
 
 </LinearLayout>

@@ -8,6 +8,7 @@ drawable bubble_me
 drawable bubble_other
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+font regular
 id ExitButton
 id LogOutButton
 id OfferExchangeButton
