@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-44:/values-v24/values-v24.xml",
+            "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-46:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ellaj\\.gradle\\caches\\8.10.2\\transforms\\9b403b4ecbedf3071e2e067b32296dc6\\transformed\\appcompat-1.7.0\\res\\values-v24\\values-v24.xml",
+                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/8acaa7db40853470de3506b76a27a3e8/transformed/appcompat-1.7.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ellaj\\.gradle\\caches\\8.10.2\\transforms\\32d2b2432bb5adff457a392d86e9a4dd\\transformed\\material-1.12.0\\res\\values-v24\\values-v24.xml",
+                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/fed80c3fdc19e02f2cec29b93d35eb0f/transformed/material-1.12.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",

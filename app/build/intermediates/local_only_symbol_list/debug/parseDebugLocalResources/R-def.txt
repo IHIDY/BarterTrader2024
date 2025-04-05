@@ -4,6 +4,8 @@ array offer_options
 array spinner_items
 color black
 color white
+drawable bubble_me
+drawable bubble_other
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 id ExitButton
@@ -16,6 +18,8 @@ id bodyTV
 id button_received_offers
 id categoriesInput
 id changeRoleBtn
+id chatButton
+id chatLayout
 id confirmEmailBtn
 id confirmEmailLabel
 id confirmEmailTextView
@@ -43,9 +47,12 @@ id loginBtn
 id main
 id map
 id mapButton
+id messageContainer
+id messageEditText
+id messageRecyclerView
+id messageTextView
 id myOffersButton
 id newPasswordEditText
-id notificationPrefBtn
 id pBtn
 id pass
 id postButton
@@ -70,8 +77,8 @@ id respondToOfferSpinner
 id returnToDashBtn
 id roleSelect
 id saveButton
-id savePreferencesButton
 id search_button
+id sendButton
 id sendNotificationBtn
 id settings_title
 id status
@@ -84,9 +91,11 @@ id targetProductDescription
 id targetProductLocation
 id targetProductName
 id textView2
+id timestampTextView
 id titleTV
 id titleText
 id viewPostProducts
+layout activity_chat
 layout activity_confirmation_page
 layout activity_details
 layout activity_google_map
@@ -106,6 +115,7 @@ layout activity_search
 layout activity_settings
 layout activity_view_push_notification
 layout dialog_edit_preferences
+layout message_item
 layout new_password_form_page
 layout offer_item
 layout product_item

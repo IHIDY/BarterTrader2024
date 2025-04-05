@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-44:/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-46:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ellaj\\.gradle\\caches\\8.10.2\\transforms\\9b403b4ecbedf3071e2e067b32296dc6\\transformed\\appcompat-1.7.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/8acaa7db40853470de3506b76a27a3e8/transformed/appcompat-1.7.0/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

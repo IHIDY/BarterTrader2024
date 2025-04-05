@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-44:/values-v23/values-v23.xml",
+            "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-46:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ellaj\\.gradle\\caches\\8.10.2\\transforms\\b74d74e7804678bfce0a6a449186a674\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/107009fa13e03ddc65fc41ef7e067cd9/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ellaj\\.gradle\\caches\\8.10.2\\transforms\\9b403b4ecbedf3071e2e067b32296dc6\\transformed\\appcompat-1.7.0\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/8acaa7db40853470de3506b76a27a3e8/transformed/appcompat-1.7.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -34,7 +34,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ellaj\\.gradle\\caches\\8.10.2\\transforms\\32d2b2432bb5adff457a392d86e9a4dd\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/fed80c3fdc19e02f2cec29b93d35eb0f/transformed/material-1.12.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,5,9,13,16,19,22,25,28,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

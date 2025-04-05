@@ -1,14 +1,23 @@
 package com.example.group8_bartertrader.notification;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.Context;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import android.Manifest;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -33,9 +42,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class NotificationActivity extends AppCompatActivity {
+    private static final String CHANNEL_ID = "BARTER_TRADER_CHANNEL";
 
     //path
     private static final String CREDENTIALS_FILE_PATH = "key.json";
+    private static final int NOTIFICATION_PERMISSION_REQUEST_CODE = 1001;
     //provided by google - for sending the notification
     //new endpoint
     private static final String PUSH_NOTIFICATION_ENDPOINT ="https://fcm.googleapis.com/v1/projects/group-8-barter-trader/messages:send";
@@ -45,15 +56,36 @@ public class NotificationActivity extends AppCompatActivity {
 
     //provided by volley library to make a network request
     private RequestQueue requestQueue;
+    private View rootView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
+        rootView = findViewById(android.R.id.content);
+
+        // Create notification channel (required for Android 8.0+)
+        createNotificationChannel();
+
+        // Check and request notification permission (required for Android 13+)
+        checkNotificationPermission();
 
         // Initialize components and set listeners
         init();
         setListeners();
+    }
+    private void createNotificationChannel() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = "Barter Trader Notifications";
+            String description = "Channel for trade notifications";
+            int importance = NotificationManager.IMPORTANCE_HIGH; // This ensures pop-up notifications
+
+            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, name, importance);
+            channel.setDescription(description);
+
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
     }
 
     private void getAccessToken(Context context, AccessTokenListener listener) {
@@ -65,15 +97,27 @@ public class NotificationActivity extends AppCompatActivity {
                         .fromStream(serviceAccountStream)
                         .createScoped(Collections.singletonList("https://www.googleapis.com/auth/firebase.messaging"));
 
-                googleCredentials.refreshIfExpired(); // This will refresh the token if it's expired
+                googleCredentials.refreshIfExpired();
                 String token = googleCredentials.getAccessToken().getTokenValue();
                 listener.onAccessTokenReceived(token);
-                Log.d("token","token"+token);
+                Log.d("Token", "Token: " + token);
             } catch (IOException e) {
                 listener.onAccessTokenError(e);
             }
         });
         executorService.shutdown();
+    }
+    private void checkNotificationPermission() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
+                    != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(
+                        this,
+                        new String[]{Manifest.permission.POST_NOTIFICATIONS},
+                        NOTIFICATION_PERMISSION_REQUEST_CODE
+                );
+            }
+        }
     }
 
 
@@ -98,20 +142,37 @@ public class NotificationActivity extends AppCompatActivity {
                 public void onAccessTokenReceived(String token) {
                     // When the token is received, send the notification
                     sendNotification(token);
+                    // Also show a local notification to verify it works
+                    showLocalNotification();
                 }
 
                 @Override
                 public void onAccessTokenError(Exception exception) {
                     // Handle the error appropriately
-                    Toast.makeText(NotificationActivity.this, "Error getting access token: " + exception.getMessage(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(NotificationActivity.this,
+                            "Error getting access token: " + exception.getMessage(),
+                            Toast.LENGTH_LONG).show();
                     exception.printStackTrace();
                 }
             });
         });
     }
 
+    private void showLocalNotification() {
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
+                .setSmallIcon(R.drawable.ic_launcher_foreground) // Make sure you have this icon
+                .setContentTitle("Local Test Notification")
+                .setContentText("This is a local notification test")
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setAutoCancel(true);
 
-
+        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
+                == PackageManager.PERMISSION_GRANTED) {
+            notificationManager.notify(1, builder.build());
+            Log.d("Notification", "Local notification shown");
+        }
+    }
 
     private void sendNotification(String authToken) {
         try {
@@ -142,7 +203,8 @@ public class NotificationActivity extends AppCompatActivity {
                     pushNotificationJSONBody,
                     response -> {
                         Log.d("NotificationResponse", "Response: " + response.toString());
-                        Toast.makeText(this, "Notification Sent Successfully", Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(this, "Notification Sent Successfully", Toast.LENGTH_SHORT).show();
+                        Snackbar.make(rootView, "Notification Sent Successfully", Snackbar.LENGTH_SHORT).show();
                     },
                     error -> {
                         Log.e("NotificationError", "Error Response: " + error.toString());
@@ -172,4 +234,8 @@ public class NotificationActivity extends AppCompatActivity {
         }
     }
 
+    interface AccessTokenListener {
+        void onAccessTokenReceived(String token);
+        void onAccessTokenError(Exception exception);
+    }
 }
