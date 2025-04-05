@@ -2,6 +2,7 @@ package com.example.group8_bartertrader;
 
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -16,9 +17,11 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -27,7 +30,7 @@ public class ProductForm extends AppCompatActivity {
     private EditText productName, productLocation, productDescription;
     private Spinner productCategory, productCondition;
     private Button submitButton, backButton;
-    private DatabaseReference databaseReference;
+    private DatabaseReference databaseReference, preferencesRef, notificationsRef;
     private String selectedCategory, selectedCondition;
     private String productId; // Holds the ID of the product being edited
 
@@ -45,16 +48,25 @@ public class ProductForm extends AppCompatActivity {
         backButton = findViewById(R.id.backButton);
 
         setupSpinners();
-
         databaseReference = FirebaseDatabase.getInstance().getReference("Products");
+        preferencesRef = FirebaseDatabase.getInstance().getReference("Preferences");
+        notificationsRef = FirebaseDatabase.getInstance().getReference("Notifications");
 
         // Check if this activity was opened for editing an existing product
         if (getIntent().hasExtra("productId")) {
             productId = getIntent().getStringExtra("productId");
             populateProductData();
+            Log.d("ProductForm", "Editing product with ID: " + productId);
         }
 
-        submitButton.setOnClickListener(v -> submitProduct());
+        submitButton.setOnClickListener(v -> {
+            // Separate the logic based on whether productId exists (edit) or not (new submission)
+            if (productId != null) {
+                updateProduct();
+            } else {
+                submitNewProduct();
+            }
+        });
         backButton.setOnClickListener(v -> onBackPressed());
     }
 
@@ -90,6 +102,59 @@ public class ProductForm extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
+                selectedCondition = null;
+            }
+        });
+    }
+    private String generateString(String location, String category) {
+        Log.d("<<< GenerateString() >>>", "You have a " + category + " product, in " + location);
+        return "You have a " + category + " product, in " + location;
+    }
+
+    private void pushToNotification(String receiverEmail, String message) {
+
+        // Create a map to hold the data
+        Map<String, Object> notificationData = new HashMap<>();
+        notificationData.put("receiverEmail", receiverEmail);
+        notificationData.put("message", message);
+        notificationData.put("time", null);
+
+        // Push the data with a unique ID
+        notificationsRef.push().setValue(notificationData)
+                .addOnSuccessListener(aVoid -> {
+                    Log.d("Firebase", "Notification pushed successfully");
+                })
+                .addOnFailureListener(e -> {
+                    Log.e("Firebase", "Failed to push notification", e);
+                });
+    }
+
+    // This is hardcoded, needs to be changed later
+    private void checkPreferences(String location, String category, String message) {
+
+        preferencesRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                for (DataSnapshot childSnapshot : snapshot.getChildren()) {
+                    String email = childSnapshot.child("email").getValue(String.class);
+                    String preferredCategory = childSnapshot.child("preferredCategory").getValue(String.class);
+                    String preferredLocation = childSnapshot.child("preferredLocation").getValue(String.class);
+
+                    if (category.equalsIgnoreCase(preferredCategory) && location.equalsIgnoreCase(preferredLocation)) {
+                        // Do something, e.g., log it or perform an action
+                        String userId = email;
+                        Log.d("Electronics User", "User " + email + " prefers Electronics in "+ location);
+                        // Put notification into notification field.
+
+                        pushToNotification(email, message);
+
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                Log.e("FirebaseError", "Error reading preferences: " + error.getMessage());
             }
         });
     }
@@ -113,10 +178,12 @@ public class ProductForm extends AppCompatActivity {
                     productCondition.setSelection(conditionAdapter.getPosition(condition));
                 }
             }
-        }).addOnFailureListener(e -> Toast.makeText(ProductForm.this, "Failed to load product", Toast.LENGTH_SHORT).show());
+        }).addOnFailureListener(e ->
+                Toast.makeText(ProductForm.this, "Failed to load product", Toast.LENGTH_SHORT).show());
     }
 
-    private void submitProduct() {
+    // Method to handle new product submission
+    private void submitNewProduct() {
         String name = productName.getText().toString().trim();
         String category = selectedCategory;
         String description = productDescription.getText().toString().trim();
@@ -132,12 +199,47 @@ public class ProductForm extends AppCompatActivity {
         FirebaseAuth auth = FirebaseAuth.getInstance();
         String currentUserEmail = auth.getCurrentUser() != null ? auth.getCurrentUser().getEmail() : "No email";
 
-        // Check if editing an existing product
-        String productId = getIntent().getStringExtra("productId");
-        if (productId == null) {
-            // Create new product
-            productId = databaseReference.push().getKey();
+        // Create new product - generate new product ID
+        String newProductId = databaseReference.push().getKey();
+
+        Map<String, Object> productData = new HashMap<>();
+        productData.put("id", newProductId);
+        productData.put("name", name);
+        productData.put("category", category);
+        productData.put("condition", condition);
+        productData.put("location", location);
+        productData.put("description", description);
+        productData.put("isAvailable", true);
+        productData.put("email", currentUserEmail);
+
+        databaseReference.child(newProductId).setValue(productData).addOnCompleteListener(task -> {
+            if (task.isSuccessful()) {
+                Snackbar.make(submitButton, "Product submitted successfully!", Snackbar.LENGTH_INDEFINITE)
+                        .setAction("OK", v -> finish())
+                        .show();
+                checkPreferences(location, category, generateString(location, category));
+            } else {
+                Snackbar.make(submitButton, "Failed to submit product", Snackbar.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    // Method to handle updating an existing product
+    private void updateProduct() {
+        String name = productName.getText().toString().trim();
+        String category = selectedCategory;
+        String description = productDescription.getText().toString().trim();
+        String condition = selectedCondition;
+        String location = productLocation.getText().toString().trim().toUpperCase();
+
+        if (TextUtils.isEmpty(name) || TextUtils.isEmpty(category) || TextUtils.isEmpty(description)
+                || TextUtils.isEmpty(location) || TextUtils.isEmpty(condition)) {
+            Snackbar.make(submitButton, "All fields are required", Snackbar.LENGTH_SHORT).show();
+            return;
         }
+
+        FirebaseAuth auth = FirebaseAuth.getInstance();
+        String currentUserEmail = auth.getCurrentUser() != null ? auth.getCurrentUser().getEmail() : "No email";
 
         Map<String, Object> productData = new HashMap<>();
         productData.put("id", productId);
@@ -152,7 +254,7 @@ public class ProductForm extends AppCompatActivity {
         databaseReference.child(productId).setValue(productData).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
                 Snackbar.make(submitButton, "Product updated successfully!", Snackbar.LENGTH_INDEFINITE)
-                        .setAction("OK", v -> finish()) // Keeps it visible until user clicks OK
+                        .setAction("OK", v -> finish())
                         .show();
             } else {
                 Snackbar.make(submitButton, "Failed to update product", Snackbar.LENGTH_SHORT).show();

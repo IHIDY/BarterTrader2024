@@ -55,7 +55,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editPreferencesBtn" />
 
-    <!-- Change Role Button -->
     <Button
         android:id="@+id/changeRoleBtn"
         android:layout_width="200dp"
