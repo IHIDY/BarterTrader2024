@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="24dp"
     android:id="@+id/activity_settings">
 
+    <!-- Settings Title -->
     <TextView
         android:id="@+id/settings_title"
         android:layout_width="match_parent"
@@ -13,6 +15,7 @@
         android:gravity="center"
         android:text="Settings"
         android:textSize="20sp"
+        android:fontFamily="@font/regular"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,6 +28,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="Loading preferences..."
+        android:fontFamily="@font/regular"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,67 +37,64 @@
     <!-- Edit Preferences Button -->
     <Button
         android:id="@+id/editPreferencesBtn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="Edit Preferences"
+        android:fontFamily="@font/regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/preferencesSummary" />
 
+    <!-- Reset Password Button -->
     <Button
         android:id="@+id/resetPasswordButton"
         android:layout_width="200dp"
         android:layout_height="60dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="16dp"
         android:text="Reset Password"
+        android:fontFamily="@font/regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_title" />
+        app:layout_constraintTop_toBottomOf="@id/editPreferencesBtn" />
 
+    <!-- Change Role Button -->
     <Button
         android:id="@+id/changeRoleBtn"
         android:layout_width="200dp"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:text="Change Role"
+        android:fontFamily="@font/regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/resetPasswordButton" />
-    <Button
-        android:id="@+id/notificationPrefBtn"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:text="Notification Preferences"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/changeRoleBtn" />
 
-    <!--back to dashboard-->
+    <!-- Back Button -->
     <Button
         android:id="@+id/returnToDashBtn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_width="84dp"
+        android:layout_height="50dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Return to Dashboard"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Back"
+        android:fontFamily="@font/regular"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/LogOutButton" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp" />
 
+    <!-- Log Out Button -->
     <Button
         android:id="@+id/LogOutButton"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_marginBottom="50dp"
         android:text="Log out"
+        android:fontFamily="@font/regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

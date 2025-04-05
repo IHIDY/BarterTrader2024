@@ -9,6 +9,15 @@
     android:orientation="vertical"
     android:padding="15dp"
     tools:context=".LoginActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome back"
+        android:textSize="24sp"
+        android:textColor="#23B5D3"
+        android:textStyle="bold"
+        android:fontFamily="@font/regular"
+        android:layout_marginBottom="20dp"/>
 
     <!-- Edit text for email -->
     <EditText
@@ -16,6 +25,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your Email"
+        android:padding="12dp"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:fontFamily="@font/regular"
         android:inputType="textEmailAddress" />
 
     <!-- Edit text for password -->
@@ -24,6 +37,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your Password"
+        android:padding="12dp"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:fontFamily="@font/regular"
         android:inputType="textPassword" />
 
     <Button
@@ -32,6 +49,8 @@
         android:layout_marginTop="20dp"
         android:layout_height="60dp"
         android:backgroundTint="#23B5D3"
+        android:textSize="16sp"
+        android:fontFamily="@font/regular"
         android:text="Login" />
 
 </LinearLayout>

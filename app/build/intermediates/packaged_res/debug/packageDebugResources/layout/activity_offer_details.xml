@@ -15,6 +15,7 @@
             android:text="Offer Details"
             android:textStyle="bold"
             android:layout_gravity="center"
+            android:fontFamily="@font/regular"
             android:paddingBottom="16dp"/>
         <TextView
             android:id="@+id/iOffer"
@@ -22,31 +23,37 @@
             android:layout_height="wrap_content"
             android:text="I Offer: "
             android:textSize="18sp"
+            android:fontFamily="@font/regular"
             android:textStyle="bold"/>
         <TextView
             android:id="@+id/prodName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
             android:text="Product Name"/>
         <TextView
             android:id="@+id/productDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
             android:text="Product Description"/>
         <TextView
             android:id="@+id/productCategory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
             android:text="Category"/>
         <TextView
             android:id="@+id/productLocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
             android:text="Location"/>
         <TextView
             android:id="@+id/forfield"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
             android:text="For :"
             android:textSize="18sp"
             android:textStyle="bold"/>
@@ -54,27 +61,32 @@
             android:id="@+id/targetProdName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
             android:text="Product Name"/>
         <TextView
             android:id="@+id/targetProductDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
             android:text="Product Description"/>
         <TextView
             android:id="@+id/targetProductCategory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
             android:text="Category"/>
         <TextView
             android:id="@+id/targetProductLocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
             android:text="Location"/>
         <TextView
             android:id="@+id/status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Status: "
+            android:fontFamily="@font/regular"
             android:textSize="18sp"
             android:textStyle="bold"/>
         <Button
@@ -82,12 +94,14 @@
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:text="Accept Offer"
+            android:fontFamily="@font/regular"
             android:backgroundTint="#4CAF50"
             android:layout_marginTop="16dp"/>
         <Button
             android:id="@+id/declineButton"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
+            android:fontFamily="@font/regular"
             android:text="Decline Offer"
             android:backgroundTint="#F44336"
             android:layout_marginTop="8dp"/>

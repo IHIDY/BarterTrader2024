@@ -3185,6 +3185,7 @@ drawable notify_panel_notification_icon_bg
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font regular
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3567,7 +3568,6 @@ id noState
 id none
 id normal
 id north
-id notificationPrefBtn
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -3648,7 +3648,6 @@ id rounded
 id row_index_key
 id satellite
 id saveButton
-id savePreferencesButton
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth

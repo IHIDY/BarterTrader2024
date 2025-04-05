@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.group8_bartertrader.model.Preferences;
 import com.example.group8_bartertrader.notification.NotificationActivity;
 import com.example.group8_bartertrader.model.PreferencesManager;
 import com.google.firebase.auth.FirebaseAuth;
@@ -65,7 +67,7 @@ public class SettingsActivity extends AppCompatActivity {
         Button changeRoleBtn = findViewById(R.id.changeRoleBtn);
         Button editPreferencesBtn = findViewById(R.id.editPreferencesBtn);
         Button returnToDashBtn = findViewById(R.id.returnToDashBtn);
-        Button notificationPreferencesBtn = findViewById(R.id.notificationPrefBtn);
+//        Button notificationPreferencesBtn = findViewById(R.id.notificationPrefBtn);
 
         preferencesSummary = findViewById(R.id.preferencesSummary);
 
@@ -89,11 +91,11 @@ public class SettingsActivity extends AppCompatActivity {
         // Set a click listener for the logout button
         logoutButton.setOnClickListener(view -> showLogoutConfirmation());
 
-        notificationPreferencesBtn.setOnClickListener(view -> {
-            Intent intent = new Intent(SettingsActivity.this, NotificationActivity.class);
-            startActivity(intent);
-            finish();
-        });
+//        notificationPreferencesBtn.setOnClickListener(view -> {
+//            Intent intent = new Intent(SettingsActivity.this, NotificationActivity.class);
+//            startActivity(intent);
+//            finish();
+//        });
 
         returnToDashBtn.setOnClickListener(view -> {
             FirebaseUser currentUser = mAuth.getCurrentUser();
@@ -186,6 +188,8 @@ public class SettingsActivity extends AppCompatActivity {
             locationsInput.setText(TextUtils.join(", ", locations));
         }
 
+        String email = FirebaseAuth.getInstance().getCurrentUser().getEmail();
+
         builder.setView(dialogView)
                 .setTitle("Edit Preferences")
                 .setPositiveButton("Save", (dialog, which) -> {
@@ -201,10 +205,36 @@ public class SettingsActivity extends AppCompatActivity {
                         preferencesManager.savePreferredLocations(newLocations);
                         loadAndDisplayPreferences();
                     }
+                    // Get the text from the input fields
+                    String newCategory = categoriesInput.getText().toString().trim(); // Extract single string for category
+                    String newLocation = locationsInput.getText().toString().trim(); // Extract single string for location
+
+                    // Call the method to save preferences to Firebase with single strings
+                    savePreferencesToFirebase(email, newCategory, newLocation);
                 })
                 .setNegativeButton("Cancel", null)
                 .create()
                 .show();
     }
+
+    private void savePreferencesToFirebase(String email, String preferredCategory, String preferredLocation) {
+        DatabaseReference preferencesRef = FirebaseDatabase.getInstance().getReference("Preferences")
+                .child(FirebaseAuth.getInstance().getCurrentUser().getUid());
+
+        Preferences preferences = new Preferences(email, preferredCategory, preferredLocation); // Pass category and location as strings
+
+        // Save to Firebase with updated keys: preferredCategory and preferredLocation
+        preferencesRef.setValue(preferences)
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        // Data saved successfully
+                        Toast.makeText(SettingsActivity.this, "Preferences saved!", Toast.LENGTH_SHORT).show();
+                    } else {
+                        // Error saving data
+                        Toast.makeText(SettingsActivity.this, "Failed to save preferences!", Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+
 
 }
