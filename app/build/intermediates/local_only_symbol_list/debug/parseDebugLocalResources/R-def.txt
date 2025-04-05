@@ -57,7 +57,6 @@ id messageRecyclerView
 id messageTextView
 id myOffersButton
 id newPasswordEditText
-id notificationPrefBtn
 id pBtn
 id pass
 id postButton
@@ -86,7 +85,6 @@ id respondToOfferSpinner
 id returnToDashBtn
 id roleSelect
 id saveButton
-id savePreferencesButton
 id search_button
 id sendButton
 id sendNotificationBtn

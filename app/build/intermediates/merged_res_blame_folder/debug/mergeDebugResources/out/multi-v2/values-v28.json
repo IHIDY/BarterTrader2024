@@ -4,7 +4,7 @@
             "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-46:/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "/Users/junfali/.gradle/caches/8.10.2/transforms/b9d46c8a038699784aa3193afc4f1101/transformed/jetified-core-1.6.1/res/values-v28/values.xml",
+                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/2fcf845447b4579d51c1c1e2c8aa4ae3/transformed/jetified-core-1.6.1/res/values-v28/values.xml",
                     "from": {
                         "startLines": "4,13",
                         "startColumns": "0,0",
@@ -23,26 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/junfali/.gradle/caches/8.10.2/transforms/8872c92edaf198abbc3c1d7f1c385fff/transformed/appcompat-1.7.0/res/values-v28/values-v28.xml",
-                    "from": {
-                        "startLines": "2,3,4,8",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,130,217,397",
-                        "endLines": "2,3,7,11",
-                        "endColumns": "74,86,12,12",
-                        "endOffsets": "125,212,392,584"
-                    },
-                    "to": {
-                        "startLines": "14,15,16,20",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "1141,1216,1303,1483",
-                        "endLines": "14,15,19,23",
-                        "endColumns": "74,86,12,12",
-                        "endOffsets": "1211,1298,1478,1670"
-                    }
-                },
-                {
-                    "source": "/Users/junfali/.gradle/caches/8.10.2/transforms/774fe0d23148eacbc47d74060b742660/transformed/material-1.12.0/res/values-v28/values-v28.xml",
+                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/fed80c3fdc19e02f2cec29b93d35eb0f/transformed/material-1.12.0/res/values-v28/values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -58,6 +39,25 @@
                         "endLines": "2,3,4,5,6,7,8,9,10,11,12,13,45",
                         "endColumns": "97,95,94,96,87,87,87,87,86,86,86,86,10",
                         "endOffsets": "148,244,339,436,524,612,700,788,875,962,1049,1136,2921"
+                    }
+                },
+                {
+                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/8acaa7db40853470de3506b76a27a3e8/transformed/appcompat-1.7.0/res/values-v28/values-v28.xml",
+                    "from": {
+                        "startLines": "2,3,4,8",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,397",
+                        "endLines": "2,3,7,11",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,392,584"
+                    },
+                    "to": {
+                        "startLines": "14,15,16,20",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "1141,1216,1303,1483",
+                        "endLines": "14,15,19,23",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "1211,1298,1478,1670"
                     }
                 }
             ]
