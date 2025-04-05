@@ -4,7 +4,8 @@
     android:id="@+id/chatLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="16dp"> <!-- Added padding to give some space around the layout -->
 
     <!-- Message List -->
     <androidx.recyclerview.widget.RecyclerView
@@ -12,27 +13,38 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="8dp" />
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" /> <!-- Ensured padding does not overlap with content -->
 
     <!-- Text Bar and the Send Button -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:orientation="horizontal">
+        android:paddingTop="8dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"> <!-- Added gravity to vertically center content -->
 
         <EditText
             android:id="@+id/messageEditText"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:hint="Type your message..." />
+            android:fontFamily="@font/regular"
+            android:hint="Type your message..."
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp" />
 
         <Button
             android:id="@+id/sendButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Send"/>
+            android:text="Send"
+            android:textSize="16sp"
+            android:fontFamily="@font/regular"
+            android:padding="12dp"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 
 </LinearLayout>
