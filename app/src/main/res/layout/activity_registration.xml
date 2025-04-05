@@ -4,82 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:gravity="center_vertical"
+    android:gravity="center"
     android:orientation="vertical"
-    android:padding="15dp"
+    android:padding="20dp"
     tools:context=".RegistrationActivity">
 
-
-    <!-- TextView for Register heading -->
+    <!-- Title TextView for Register heading with better style -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/register"/>
+        android:text="@string/register"
+        android:textSize="24sp"
+        android:textColor="#23B5D3"
+        android:textStyle="bold"
+        android:fontFamily="@font/regular"
+        android:layout_marginBottom="20dp"/>
 
-    <!-- Edit text for First Name -->
+    <!-- EditText for First Name with improved styling -->
     <EditText
         android:id="@+id/fName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your First Name"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:fontFamily="@font/regular"
+        android:layout_marginBottom="12dp"/>
 
-    <!-- Edit text for Last Name -->
+    <!-- EditText for Last Name with improved styling -->
     <EditText
         android:id="@+id/lName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your Last Name"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:fontFamily="@font/regular"
+        android:layout_marginBottom="12dp"/>
 
-    <!-- Edit text for email -->
+    <!-- EditText for Email with improved styling -->
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your Email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:fontFamily="@font/regular"
+        android:layout_marginBottom="12dp"/>
 
-    <!-- Edit text for password -->
+    <!-- EditText for Password with improved styling -->
     <EditText
         android:id="@+id/pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:fontFamily="@font/regular"
+        android:layout_marginBottom="12dp"/>
 
-    <!-- Spinner for role selection -->
+    <!-- Spinner for role selection with improved layout -->
     <Spinner
         android:id="@+id/roleSelect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:drawable/btn_dropdown"
-        android:spinnerMode="dropdown"/>
+        android:spinnerMode="dropdown"
+        android:layout_marginBottom="12dp"/>
 
-    <!-- Button for register with text "Register" -->
+    <!-- Register Button with updated color and styling -->
     <Button
         android:id="@+id/regBtn"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        android:text="Register" />
+        android:layout_marginTop="15dp"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:backgroundTint="#23B5D3"
+        android:fontFamily="@font/regular"
+        android:layout_gravity="center"/>
 
-    <!-- Button for login with text "Login" -->
+    <!-- Login Button with updated color and styling -->
     <Button
         android:id="@+id/loginBtn"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="10dp"
-        android:backgroundTint="#23B5D3"
-        android:text="Login" />
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:backgroundTint="#FF5722"
+        android:fontFamily="@font/regular"
+        android:layout_gravity="center"/>
 
-    <!-- Status message view -->
+    <!-- Status message view with better alignment -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
         android:id="@+id/statusLabel"
-        android:text="">
-    </TextView>
+        android:text=""
+        android:textColor="#FF5722"
+        android:fontFamily="@font/regular"
+        android:layout_marginTop="15dp"/>
 
 </LinearLayout>

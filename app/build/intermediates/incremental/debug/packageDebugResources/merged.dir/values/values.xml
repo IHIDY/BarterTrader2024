@@ -44,6 +44,12 @@
     <string name="google_storage_bucket" translatable="false">group-8-barter-trader.firebasestorage.app</string>
     <string name="project_id" translatable="false">group-8-barter-trader</string>
     <string name="register">Register</string>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="android:fontFamily">@font/regular</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:textColorSecondary">#666666</item>
+    </style>
     <style name="Base.Theme.Group8_bartertrader" parent="Theme.Material3.DayNight.NoActionBar">
         
         

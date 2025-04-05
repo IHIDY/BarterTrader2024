@@ -16,8 +16,9 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Group8_bartertrader"
+
         tools:targetApi="31" >
         <activity
             android:name=".notification.NotificationActivity"

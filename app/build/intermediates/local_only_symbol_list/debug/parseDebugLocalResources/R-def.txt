@@ -8,6 +8,8 @@ drawable bubble_me
 drawable bubble_other
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+font lato
+font regular
 id ExitButton
 id LogOutButton
 id OfferExchangeButton
@@ -154,6 +156,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string project_id
 string register
+style AppTheme
 style Base.Theme.Group8_bartertrader
 style Theme.Group8_bartertrader
 xml backup_rules
