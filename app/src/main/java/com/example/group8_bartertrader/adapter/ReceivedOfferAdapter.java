@@ -2,7 +2,6 @@ package com.example.group8_bartertrader.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,10 +17,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.group8_bartertrader.ChatActivity;
-import com.example.group8_bartertrader.OfferDetailsActivity;
 import com.example.group8_bartertrader.R;
 import com.example.group8_bartertrader.model.Offer;
-import com.google.firebase.Firebase;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -75,12 +72,6 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         holder.respondToOfferSpinner.setAdapter(adapter);
         holder.respondToOfferSpinner.setContentDescription("OfferSpinner-" + position);
-
-        holder.itemView.setOnClickListener(v -> {
-            Intent intent = new Intent(context, OfferDetailsActivity.class);
-            intent.putExtra("offerId", offer.getId());
-            context.startActivity(intent);
-        });
 
         if (offer.getStatus().equalsIgnoreCase("accepted")) {
             holder.chatButton.setEnabled(true);
