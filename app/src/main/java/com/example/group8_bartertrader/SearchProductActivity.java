@@ -25,6 +25,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class SearchProductActivity extends AppCompatActivity {
@@ -119,6 +120,9 @@ public class SearchProductActivity extends AppCompatActivity {
                         }
                     }
                 }
+
+                Collections.reverse(productList);
+
                 updateProductList(productList);
             }
 

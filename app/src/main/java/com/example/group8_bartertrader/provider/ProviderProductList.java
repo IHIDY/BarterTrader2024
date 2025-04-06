@@ -24,6 +24,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ProviderProductList extends AppCompatActivity implements ProductAdapter.OnProductListener {
@@ -77,6 +78,9 @@ public class ProviderProductList extends AppCompatActivity implements ProductAda
                         productList.add(product);
                     }
                 }
+
+                Collections.reverse(productList);
+
                 productAdapter.notifyDataSetChanged();
                 loadingIndicator.setVisibility(View.GONE);
             }
