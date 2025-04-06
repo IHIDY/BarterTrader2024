@@ -101,11 +101,20 @@ public class ProviderProductList extends AppCompatActivity implements ProductAda
 
     @Override
     public void onDeleteClick(Product product) {
-        productsRef.child(product.getId()).removeValue()
-                .addOnSuccessListener(aVoid -> {
-                    Toast.makeText(this, "Product deleted", Toast.LENGTH_SHORT).show();
-                    fetchProductsFromFirebase();
+        new androidx.appcompat.app.AlertDialog.Builder(this)
+                .setTitle("Delete Confirmation")
+                .setMessage("Are you sure you would like to delete?")
+                .setPositiveButton("Yes", (dialog, which) -> {
+                    productsRef.child(product.getId()).removeValue()
+                            .addOnSuccessListener(aVoid -> {
+                                Toast.makeText(this, "Product deleted", Toast.LENGTH_SHORT).show();
+                                fetchProductsFromFirebase();
+                            })
+                            .addOnFailureListener(e -> Toast.makeText(this, "Failed to delete product", Toast.LENGTH_SHORT).show());
                 })
-                .addOnFailureListener(e -> Toast.makeText(this, "Failed to delete product", Toast.LENGTH_SHORT).show());
+                .setNegativeButton("Cancel", (dialog, which) -> {
+                    dialog.dismiss();
+                })
+                .show();
     }
 }

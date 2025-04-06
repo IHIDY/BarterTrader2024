@@ -4,17 +4,7 @@
             "outputFile": "com.example.group8_bartertrader.app-mergeDebugResources-46:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/8acaa7db40853470de3506b76a27a3e8/transformed/appcompat-1.7.0/res/values-v18/values-v18.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "48",
-                        "endOffsets": "99"
-                    }
-                },
-                {
-                    "source": "/Users/a123456/.gradle/caches/8.10.2/transforms/2fcf845447b4579d51c1c1e2c8aa4ae3/transformed/jetified-core-1.6.1/res/values-v18/values.xml",
+                    "source": "/Users/junfali/.gradle/caches/8.10.2/transforms/2fcf845447b4579d51c1c1e2c8aa4ae3/transformed/jetified-core-1.6.1/res/values-v18/values.xml",
                     "from": {
                         "startLines": "4,12",
                         "startColumns": "0,0",
@@ -30,6 +20,16 @@
                         "endLines": "10,18",
                         "endColumns": "8,8",
                         "endOffsets": "519,937"
+                    }
+                },
+                {
+                    "source": "/Users/junfali/.gradle/caches/8.10.2/transforms/8acaa7db40853470de3506b76a27a3e8/transformed/appcompat-1.7.0/res/values-v18/values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
                     }
                 }
             ]
