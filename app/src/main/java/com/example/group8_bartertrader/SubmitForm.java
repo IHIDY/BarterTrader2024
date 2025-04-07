@@ -31,6 +31,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Activity for submitting a product offer form.
+ */
 public class SubmitForm extends AppCompatActivity {
     private EditText productName, productLocation, productDescription;
     private Spinner productCategory;
@@ -42,7 +45,12 @@ public class SubmitForm extends AppCompatActivity {
     DatabaseReference databaseReference;
     SubmitHelper submitHelper; // Subimt Helper we use for interacting with backend
     String targetProviderEmail, targetProductId, targetProductName, targetProductCategory, targetProductLocation, targetProductDescription;
-
+    /**
+     * Called when the activity is created.
+     * Initializes UI components, sets up the spinner, and handles product submission logic.
+     *
+     * @param savedInstanceState The saved instance state bundle.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

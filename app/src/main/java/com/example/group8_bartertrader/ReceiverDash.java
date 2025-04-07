@@ -43,6 +43,15 @@ import java.util.List;
 import java.util.HashSet;
 import java.util.ArrayList;
 import java.util.Set;
+/**
+ * ReceiverDash is the main activity that handles the receiver's dashboard functionality.
+ * It allows users to view their location, search products, manage notifications,
+ * and navigate to settings or their offers.
+ * <p>
+ * This activity integrates with Firebase to fetch product data and send notifications.
+ * It also handles location permissions and manages notification channels for in-app updates.
+ * </p>
+ */
 
 public class ReceiverDash extends AppCompatActivity {
     private static final String CHANNEL_ID = "BARTER_TRADER_CHANNEL";
@@ -71,6 +80,15 @@ public class ReceiverDash extends AppCompatActivity {
     private Button savePreferencesButton;
     private boolean isRestarting = false; // Flag to track activity restart
 
+    /**
+     * Initializes the ReceiverDash activity. Sets up UI elements, permissions,
+     * Firebase database references, and notification handling.
+     * <p>
+     * It checks and requests necessary permissions, fetches the current location,
+     * and sets up the notification channel. It also initializes the search button
+     * to navigate to the product search activity.
+     * </p>
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -162,6 +180,13 @@ public class ReceiverDash extends AppCompatActivity {
             }
         });
     }
+    /**
+     * Creates a notification channel to handle notifications in the app.
+     * This method is called only if the Android version is Oreo (API 26) or higher.
+     * <p>
+     * It ensures that trade-related notifications will appear as high-priority notifications.
+     * </p>
+     */
     private void createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             CharSequence name = "Barter Trader Notifications";
@@ -175,6 +200,10 @@ public class ReceiverDash extends AppCompatActivity {
             notificationManager.createNotificationChannel(channel);
         }
     }
+    /**
+     * Sets up click listeners for various buttons on the receiver dashboard.
+     * It includes listeners for settings, offers, and search buttons.
+     */
     private void setupClickListeners() {
         receiverSettingBtn.setOnClickListener(v -> {
             startActivity(new Intent(ReceiverDash.this, SettingsActivity.class));
@@ -188,6 +217,10 @@ public class ReceiverDash extends AppCompatActivity {
             startActivity(new Intent(ReceiverDash.this, SearchProductActivity.class));
         });
     }
+    /**
+     * Fetches the current location of the user and updates the UI with the city name.
+     * If the location fetch fails, it displays an error message.
+     */
     private void getCurrentLocation() {
         locationHelper.getCurrentLocation(new LocationHelper.OnLocationFetchListener() {
             @Override
@@ -204,6 +237,9 @@ public class ReceiverDash extends AppCompatActivity {
             }
         });
     }
+    /**
+     * Handles the result of permission requests. It processes both location and notification permissions.
+     */
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -248,7 +284,10 @@ public class ReceiverDash extends AppCompatActivity {
             }
         }
     }
-
+    /**
+     * Checks whether notifications should be sent to the user based on their preferences.
+     * If notifications are not yet checked, it initiates the notification check process.
+     */
     private void checkNotificationsIfNeeded() {
         if (!notificationsChecked) {
             checkAndSendNotifications(getCurrentUserEmail());
@@ -256,11 +295,22 @@ public class ReceiverDash extends AppCompatActivity {
         }
     }
 
+    /**
+     * Retrieves the current user's email address from Firebase Authentication.
+     *
+     * @return The email of the current user, or null if no user is logged in.
+     */
     private String getCurrentUserEmail() {
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         return (currentUser != null) ? currentUser.getEmail() : null;
     }
 
+    /**
+     * Checks the notifications in Firebase for the current user and sends them if applicable.
+     * Notifications are sent as high-priority local notifications.
+     *
+     * @param currentUserEmail The email address of the current user.
+     */
     private void checkAndSendNotifications(String currentUserEmail) {
         if (currentUserEmail == null) return;
 
@@ -284,6 +334,11 @@ public class ReceiverDash extends AppCompatActivity {
             }
         });
     }
+    /**
+     * Sends a high-priority notification with the provided message.
+     *
+     * @param message The message to display in the notification.
+     */
     private void sendHighPriorityNotification(String message) {
         // First try sending via NotificationHelper
 //        notificationHelper.sendNotificationToTopic(message);

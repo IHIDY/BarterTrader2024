@@ -16,6 +16,9 @@ import com.example.group8_bartertrader.CRUD.UserCRUD;
 import com.example.group8_bartertrader.utils.CredentialsValidator;
 import com.google.android.material.snackbar.Snackbar;
 
+/**
+ * Activity for user login with validation and navigation based on user role.
+ */
 public class LoginActivity extends AppCompatActivity {
     private EditText emailTextView;
     private EditText passwordTextView;
@@ -24,6 +27,10 @@ public class LoginActivity extends AppCompatActivity {
 
     private static final String EMAIL_REGEX = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$";
 
+    /**
+     * Initializes the activity, sets up view components, and login button listener.
+     * @param savedInstanceState The saved instance state if the activity is being recreated.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,10 +50,18 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+    /**
+     * Displays a snackbar with the provided message.
+     * @param msg The message to be displayed in the snackbar.
+     */
     private void showSnackbar(String msg) {
         View rootView = findViewById(android.R.id.content);
         Snackbar.make(rootView, msg, Snackbar.LENGTH_LONG).show();
     }
+    /**
+     * Navigates to the dashboard based on user role.
+     * @param role The user role which determines the dashboard activity.
+     */
     private void navigateToDashboard(String role) {
         Class<?> targetActivity;
 
@@ -65,7 +80,9 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(this, targetActivity);
         startActivity(intent);
     }
-
+    /**
+     * Handles user login by validating input and calling the login method.
+     */
     private void loginUser() {
         String email = emailTextView.getText().toString();
         String pass = passwordTextView.getText().toString();
@@ -98,6 +115,12 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Validates that the input field is not empty.
+     * @param input The input to be validated.
+     * @param fieldName The name of the field for error messages.
+     * @return True if input is valid, false otherwise.
+     */
     private boolean validateInput(String input, String fieldName) {
         if (TextUtils.isEmpty(input)) {
             Toast.makeText(this, "Please enter your " + fieldName + "!", Toast.LENGTH_LONG).show();

@@ -38,7 +38,11 @@ public class SearchProductActivity extends AppCompatActivity {
     private List<Product> productList;
     private DatabaseReference productsRef;
 
-
+    /**
+     * Called when the activity is created. Initializes the UI elements, sets up the category spinner,
+     * and defines the behavior for the search button.
+     * @param savedInstanceState The saved instance state.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,7 +82,9 @@ public class SearchProductActivity extends AppCompatActivity {
         searchButton.setOnClickListener(v -> search());
 
     }
-
+    /**
+     * Initiates a product search based on the provided keyword and location distance.
+     */
     public void search() {
         String word = "";
         String temp = "";
@@ -90,7 +96,12 @@ public class SearchProductActivity extends AppCompatActivity {
         }
         fetchProductsFromFirebase(temp, selectedCategory, word);
     }
-
+    /**
+     * Fetches product data from Firebase based on the specified location, category, and search keyword.
+     * @param locations The location to filter the products by.
+     * @param category The category to filter the products by.
+     * @param word The keyword to search the product name for.
+     */
     private void fetchProductsFromFirebase(String locations,String category,String word) {
         productsRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -133,6 +144,11 @@ public class SearchProductActivity extends AppCompatActivity {
             }
         });
     }
+
+    /**
+     * Updates the UI with the filtered list of products.
+     * @param productList The list of products to display in the RecyclerView.
+     */
 
     private void updateProductList(List<Product> productList) {
         // Update the UI with the filtered product list

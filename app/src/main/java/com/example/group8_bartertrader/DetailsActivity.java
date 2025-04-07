@@ -11,7 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.group8_bartertrader.model.Product;
 
 import java.io.Serializable;
-
+/**
+ * Activity to display detailed information about a product.
+ */
 public class DetailsActivity extends AppCompatActivity {
 
     private TextView productName, productCategory, productLocation, productDescription, productCondition, providerEmail;

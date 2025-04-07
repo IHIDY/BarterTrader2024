@@ -20,6 +20,10 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+/**
+ * ProviderDash class that manages the dashboard activity for the product provider.
+ * Allows navigation to various activities for settings, posting products, received offers, and viewing posted products.
+ */
 public class ProviderDash extends AppCompatActivity {
 
     private DatabaseReference productsRef;
@@ -31,72 +35,65 @@ public class ProviderDash extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_provider_dash);
 
+        // Button initialization
         Button pBtn = findViewById(R.id.pBtn);
         Button postUsedProductsBtn = findViewById(R.id.postButton);
         Button receivedOffersBtn = findViewById(R.id.button_received_offers);
         Button viewPostProducts = findViewById(R.id.viewPostProducts);
 
-        // Initialize Firebase Authentication
+        // Initialize Firebase
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
-
-        // Initialize Firebase Database Reference
         productsRef = FirebaseDatabase.getInstance().getReference("Products");
 
+        // Adjust padding based on system bars
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        // Navigate to SettingsActivity
-        pBtn.setOnClickListener(v -> {
-            Log.d("BTN CLICKED", "P BTN CLICKED");
-            Intent intent = new Intent(ProviderDash.this, SettingsActivity.class);
-            startActivity(intent);
-        });
-
-        // Navigate to ProductForm for posting a new product
-        postUsedProductsBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(ProviderDash.this, ProductForm.class);
-            startActivity(intent);
-        });
-
-        // Navigate to ReceivedOfferActivity for received offers
-        receivedOffersBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(ProviderDash.this, ReceivedOfferActivity.class);
-            startActivity(intent);
-        });
-
-        // Navigate to ProviderProductList to view posted products
-        viewPostProducts.setOnClickListener(v -> {
-            Intent intent = new Intent(ProviderDash.this, ProviderProductList.class);
-            startActivity(intent);
-        });
+        // Set up navigation buttons
+        pBtn.setOnClickListener(v -> navigateTo(SettingsActivity.class));
+        postUsedProductsBtn.setOnClickListener(v -> navigateTo(ProductForm.class));
+        receivedOffersBtn.setOnClickListener(v -> navigateTo(ReceivedOfferActivity.class));
+        viewPostProducts.setOnClickListener(v -> navigateTo(ProviderProductList.class));
     }
 
-    // Method to edit product by productId
-    private void editProduct(String productId) {
-        Intent intent = new Intent(ProviderDash.this, ProductForm.class);
-        intent.putExtra("productId", productId); // Pass the productId to EditProductActivity
+    /**
+     * Helper method to start a new activity.
+     */
+    private void navigateTo(Class<?> activityClass) {
+        Intent intent = new Intent(ProviderDash.this, activityClass);
         startActivity(intent);
     }
 
-    // Method to delete product by productId
+    /**
+     * Edit a product based on its product ID.
+     */
+    private void editProduct(String productId) {
+        Intent intent = new Intent(ProviderDash.this, ProductForm.class);
+        intent.putExtra("productId", productId);
+        startActivity(intent);
+    }
+
+    /**
+     * Delete a product from the database by its product ID.
+     */
     private void deleteProduct(String productId) {
         productsRef.child(productId).removeValue()
                 .addOnSuccessListener(aVoid -> Toast.makeText(ProviderDash.this, "Product deleted successfully", Toast.LENGTH_SHORT).show())
                 .addOnFailureListener(e -> Toast.makeText(ProviderDash.this, "Failed to delete product", Toast.LENGTH_SHORT).show());
     }
 
-    // Method to handle the edit and delete button clicks in the product list
+    /**
+     * Set up edit and delete buttons for a product.
+     */
     private void setUpProductButtons(View productView, String productId) {
-        Button editButton = productView.findViewById(R.id.editButton); // Assuming the button's id is editButton
-        Button deleteButton = productView.findViewById(R.id.deleteButton); // Assuming the button's id is deleteButton
+        Button editButton = productView.findViewById(R.id.editButton);
+        Button deleteButton = productView.findViewById(R.id.deleteButton);
 
-        // Set edit button listener
+        // Set edit and delete button listeners
         editButton.setOnClickListener(v -> editProduct(productId));
-
-        // Set delete button listener
         deleteButton.setOnClickListener(v -> deleteProduct(productId));
     }
 }

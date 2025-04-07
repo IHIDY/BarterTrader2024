@@ -28,7 +28,10 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Activity to display received offers for a provider.
+ * Fetches offers from Firebase based on the logged-in provider's email and displays them in a RecyclerView.
+ */
 public class ReceivedOfferActivity extends AppCompatActivity {
 
     private RecyclerView receivedOffersRecyclerView;
@@ -37,6 +40,9 @@ public class ReceivedOfferActivity extends AppCompatActivity {
     private DatabaseReference offersRef;
     private FirebaseAuth mAuth;
 
+    /**
+     * Initializes the activity, sets up RecyclerView, and fetches the received offers.
+     */
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,6 +86,9 @@ public class ReceivedOfferActivity extends AppCompatActivity {
         backButton.setOnClickListener(v -> finish());
     }
 
+    /**
+     * Fetches the offers from Firebase based on the provider's email.
+     */
     private void fetchReceivedOffers(String providerEmail) {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user == null) {

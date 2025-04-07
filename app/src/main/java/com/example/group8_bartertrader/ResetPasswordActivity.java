@@ -33,7 +33,10 @@ public class ResetPasswordActivity extends AppCompatActivity {
     private EditText emailEditText;
     private Button submitEmailButton;
     private FirebaseAuth mAuth;
-
+    /**
+     * Called when the activity is created. Initializes the UI elements and sets up listeners.
+     * @param savedInstanceState The saved instance state.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +69,11 @@ public class ResetPasswordActivity extends AppCompatActivity {
     * using signInWithEmailAndPassword, use the invalid user exception to return email not registered,
     * else continue and reset password*/
 
-
+    /**
+     * Validates the email format and checks if the email exists in Firebase.
+     * If the email exists, proceeds to the password reset form; otherwise, shows an error.
+     * @param email The email entered by the user.
+     */
     private void checkEmailExists(String email) {
         mAuth = FirebaseAuth.getInstance();
 
@@ -96,8 +103,6 @@ public class ResetPasswordActivity extends AppCompatActivity {
                     }
                 });
     }
-
-
 
 
 }

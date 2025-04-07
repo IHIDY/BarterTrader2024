@@ -19,12 +19,19 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
+/**
+ * It allows users to input their email, check if the email exists in the database,
+ * and if found, allows them to switch their role between 'Provider' and 'Receiver'.
+ * The role update is reflected in the Firebase Realtime Database.
+ */
 public class ConfirmationPage extends AppCompatActivity {
 
     private EditText emailEditText;
     private DatabaseReference databaseReference;
 
+    /**
+     * Called when the activity is created. Initializes the UI components and sets up the Firebase database reference.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +63,11 @@ public class ConfirmationPage extends AppCompatActivity {
         Log.d("UI_SETUP", "Activity setup completed");
     }
 
+    /**
+     * Confirms the role selection by validating the entered email.
+     * Queries the Firebase Realtime Database to check if the email exists.
+     * If found, it updates the user's role to either 'Provider' or 'Receiver'.
+     */
     private void confirmRoleSelection() {
         String email = emailEditText.getText().toString().trim();
 
@@ -94,6 +106,9 @@ public class ConfirmationPage extends AppCompatActivity {
                 });
     }
 
+    /**
+     * Updates the role of the user in the Firebase Realtime Database.
+     */
     private void updateRole(String userId, String newRole) {
         Log.d("DATABASE_UPDATE", "Updating role for user ID: " + userId + " to " + newRole);
 

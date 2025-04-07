@@ -36,6 +36,10 @@ public class MyOffersActivity extends AppCompatActivity {
     private DatabaseReference offersRef;
     private FirebaseAuth mAuth;
 
+    /**
+     * Initializes the activity, sets up Firebase and RecyclerView.
+     * Fetches and displays offers for the current user.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

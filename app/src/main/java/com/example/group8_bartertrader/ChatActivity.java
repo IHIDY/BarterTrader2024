@@ -1,3 +1,7 @@
+/**
+ * ChatActivity - Handles the chat functionality between users.
+ * It displays messages and allows users to send new ones when the offer is accepted.
+ */
 package com.example.group8_bartertrader;
 
 import android.os.Bundle;
@@ -35,6 +39,9 @@ public class ChatActivity extends AppCompatActivity {
     private DatabaseReference offerAcceptedRef;
     private FirebaseAuth mAuth;
 
+    /**
+     * Initializes the activity, sets up UI elements and Firebase references.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,6 +75,9 @@ public class ChatActivity extends AppCompatActivity {
         checkChatPermission();
     }
 
+    /**
+     * Checks if the chat offer has been accepted before allowing message sending.
+     */
     private void checkChatPermission() {
         offerAcceptedRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -90,6 +100,10 @@ public class ChatActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Listens for new messages in the chat.
+     */
+
     private void listenForMessages() {
         messagesRef.addChildEventListener(new ChildEventListener() {
             @Override
@@ -108,7 +122,9 @@ public class ChatActivity extends AppCompatActivity {
             @Override public void onCancelled(@NonNull DatabaseError error) {}
         });
     }
-
+    /**
+     * Sets up the send button to send messages to Firebase.
+     */
     private void setupSendButton() {
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
