@@ -16,6 +16,13 @@ import com.example.group8_bartertrader.DetailsActivity;
 import com.example.group8_bartertrader.GoogleMapActivity;
 import com.example.group8_bartertrader.R;
 import com.example.group8_bartertrader.model.Product;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.List;
 
@@ -52,7 +59,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
 
         // Set availability status
         boolean availability = product.isAvailable();
-        holder.productAvailability.setText("Status: " + (availability ? "Available" : "Not Available"));
+        holder.productAvailability.setText("Status: " + (availability ? "Not Available" : "Available"));
 
         // Set up button click listeners
         holder.mapButton.setOnClickListener(v -> {
@@ -70,6 +77,35 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
 
         // Setting up the "View Details" button
         setupDetailButton(holder.detailButton, product);
+
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser != null) {
+            DatabaseReference userRef = FirebaseDatabase.getInstance()
+                    .getReference("Users")
+                    .child(currentUser.getUid());
+
+            userRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    String role = snapshot.child("role").getValue(String.class);
+                    if ("Provider".equals(role)) {
+                        holder.editButton.setVisibility(View.VISIBLE);
+                        holder.deleteButton.setVisibility(View.VISIBLE);
+                        holder.editButton.setOnClickListener(v -> mOnProductListener.onEditClick(product));
+                        holder.deleteButton.setOnClickListener(v -> mOnProductListener.onDeleteClick(product));
+                    } else {
+                        holder.editButton.setVisibility(View.GONE);
+                        holder.deleteButton.setVisibility(View.GONE);
+                    }
+                }
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+                    holder.editButton.setVisibility(View.GONE);
+                    holder.deleteButton.setVisibility(View.GONE);
+                }
+            });
+        }
 
         // Set up Edit and Delete buttons
         holder.editButton.setOnClickListener(v -> mOnProductListener.onEditClick(product));

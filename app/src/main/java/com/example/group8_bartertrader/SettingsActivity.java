@@ -52,6 +52,7 @@ public class SettingsActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private PreferencesManager preferencesManager;
     private TextView preferencesSummary;
+    private String role;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,11 +66,34 @@ public class SettingsActivity extends AppCompatActivity {
         Button logoutButton = findViewById(R.id.LogOutButton);
         Button resetPasswordButton = findViewById(R.id.resetPasswordButton);
         Button changeRoleBtn = findViewById(R.id.changeRoleBtn);
-        Button editPreferencesBtn = findViewById(R.id.editPreferencesBtn);
         Button returnToDashBtn = findViewById(R.id.returnToDashBtn);
 //        Button notificationPreferencesBtn = findViewById(R.id.notificationPrefBtn);
 
-        preferencesSummary = findViewById(R.id.preferencesSummary);
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser != null) {
+            DatabaseReference userRef = FirebaseDatabase.getInstance()
+                    .getReference("Users")
+                    .child(currentUser.getUid());
+
+            userRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    role = snapshot.child("role").getValue(String.class);
+
+                    if ("Receiver".equals(role)) {
+                        setupReceiverUI();
+                    } else if ("Provider".equals(role)) {
+                        setupProviderUI();
+                    } else {
+                        Toast.makeText(SettingsActivity.this, "Error", Toast.LENGTH_SHORT).show();
+                    }
+                }
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+                    Toast.makeText(SettingsActivity.this, "Failed to get user role", Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
 
         List<String> items = new ArrayList<>();
         items.add("Select a role");
@@ -98,7 +122,6 @@ public class SettingsActivity extends AppCompatActivity {
 //        });
 
         returnToDashBtn.setOnClickListener(view -> {
-            FirebaseUser currentUser = mAuth.getCurrentUser();
             if (currentUser != null) {
                 // Get user role from Firebase Database instead of static User class
                 DatabaseReference userRef = FirebaseDatabase.getInstance().getReference("users").child(currentUser.getUid());
@@ -133,10 +156,6 @@ public class SettingsActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
-
-        editPreferencesBtn.setOnClickListener(v -> showEditPreferencesDialog());
-
-        loadAndDisplayPreferences();
     }
 
     private void loadAndDisplayPreferences() {
@@ -155,6 +174,30 @@ public class SettingsActivity extends AppCompatActivity {
         }
     }
 
+    private void setupReceiverUI() {
+        preferencesSummary = findViewById(R.id.preferencesSummary);
+        Button editPreferencesBtn = findViewById(R.id.editPreferencesBtn);
+
+        if (editPreferencesBtn != null) {
+            editPreferencesBtn.setVisibility(View.VISIBLE);
+            editPreferencesBtn.setOnClickListener(v -> showEditPreferencesDialog());
+        }
+
+        loadAndDisplayPreferences();
+    }
+
+    private void setupProviderUI() {
+        Button editPreferencesBtn = findViewById(R.id.editPreferencesBtn);
+        preferencesSummary = findViewById(R.id.preferencesSummary);
+
+        if (editPreferencesBtn != null) {
+            editPreferencesBtn.setVisibility(View.GONE);
+        }
+
+        if (preferencesSummary != null) {
+            preferencesSummary.setText("Preferences are not available as provider");
+        }
+    }
 
     private void showLogoutConfirmation() {
         new AlertDialog.Builder(this)
