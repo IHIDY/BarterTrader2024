@@ -31,6 +31,10 @@ import org.junit.Test;
 
 public class chatUITest {
     //When the offer is accepted, the chat button should appear
+
+    /**
+     * test chat enabled
+     */
     @Test
     public void chatEnabledTest(){
         Intent intent = new Intent(ApplicationProvider.getApplicationContext(), ChatActivity.class);
@@ -41,6 +45,9 @@ public class chatUITest {
         onView(withId(R.id.messageEditText)).check(matches(isEnabled()));
     }
 
+    /**
+     * test message sent
+     */
     @Test
     public void sendMessageTest(){
         String testMessage = "Test Message sent";

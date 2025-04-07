@@ -13,6 +13,9 @@ public class ProductCRUD {
         this.loadSampleProds();
     }
 
+    /**
+     * loads the sample products
+     */
     protected void loadSampleProds() {
         Product prod1 = new Product("1", "ellaemail@gmail.com", "Pink Vase",
                 "Home Decor for Living room", "Electronic", true, "Halifax", "Good", 2023-05-01);
@@ -26,10 +29,19 @@ public class ProductCRUD {
         products.add(prod3);
     }
 
+    /**
+     * gets the products
+     * @return
+     */
     public ArrayList<Product> collectProducts() {
         return products;
     }
 
+    /**
+     * delivers the top product
+     * @param products
+     * @return
+     */
     public Product deliverTopProduct(ArrayList<Product> products) {
         if (!products.isEmpty()) {
             Product topProd = products.get(0);

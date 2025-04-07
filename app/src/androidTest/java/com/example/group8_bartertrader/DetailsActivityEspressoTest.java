@@ -31,6 +31,9 @@ public class DetailsActivityEspressoTest {
     private static final String launcherPackage = "com.example.group8_bartertrader";
     private Product testProduct;
 
+    /**
+     * before test
+     */
     @Before
     public void setup() {
         device = UiDevice.getInstance(getInstrumentation());
@@ -46,6 +49,9 @@ public class DetailsActivityEspressoTest {
                 "Fashionable Sunglasses", "Accesories", true, "Halifax", "Good", 2023-05-01);
     }
 
+    /**
+     * test offer exchange button
+     */
     @Test
     public void testOfferExchangeButton() {
         Intent intent = new Intent(ApplicationProvider.getApplicationContext(), DetailsActivity.class);
@@ -56,6 +62,9 @@ public class DetailsActivityEspressoTest {
         device.wait(Until.hasObject(By.textContains("Get Current Location")), LAUNCH_TIMEOUT);
     }
 
+    /**
+     * test exit button
+     */
     @Test
     public void testExitButton() {
         Intent intent = new Intent(ApplicationProvider.getApplicationContext(), DetailsActivity.class);

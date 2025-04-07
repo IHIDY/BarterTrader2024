@@ -62,6 +62,10 @@ public class ReceivedOfferUITest {
     private ActivityScenario<ReceivedOfferActivity> scenario;
 
 
+    /**
+     * before test
+     * @throws InterruptedException
+     */
     @Before
     public void setup() throws InterruptedException {
         init();
@@ -83,6 +87,9 @@ public class ReceivedOfferUITest {
         scenario = ActivityScenario.launch(intent);
     }
 
+    /**
+     * after test
+     */
     @After
     public void tearDown() {
         release();
@@ -91,16 +98,25 @@ public class ReceivedOfferUITest {
     @Rule
     public ActivityScenarioRule<ReceivedOfferActivity> activityRule = new ActivityScenarioRule<>(ReceivedOfferActivity.class);
 
+    /**
+     * recycler display test
+     */
     @Test
     public void RecyclerViewDisplayTest(){
     onView(withId(R.id.receivedOffersRecyclerView)).check(matches(isDisplayed()));
     }
 
+    /**
+     * back button test
+     */
     @Test
     public void backButtonTest(){
         onView(withId(R.id.backButton)).perform(click());
     }
 
+    /**
+     * spinner test
+     */
     @Test
     public void spinnerTest() {
         onView(withContentDescription("OfferSpinner-0")).perform(click());
@@ -109,6 +125,9 @@ public class ReceivedOfferUITest {
 
     }
 
+    /**
+     * test chat button
+     */
     @Test
     public void testChatButtonLaunchesChatActivity_whenOfferAccepted_withActionOnItem() {
         onView(isRoot()).perform(waitFor(3000));
@@ -127,6 +146,9 @@ public class ReceivedOfferUITest {
         intended(hasComponent(ChatActivity.class.getName()));
     }
 
+    /**
+     * test chat disabled
+     */
     @Test
     public void testChatButtonDisabled_whenOfferNotAccepted() {
         onView(isRoot()).perform(waitFor(3000));
@@ -147,18 +169,36 @@ public class ReceivedOfferUITest {
         intended(hasComponent(ReceivedOfferActivity.class.getName()));
     }
 
+    /**
+     * click child view helper
+     * @param id
+     * @return
+     */
     public static ViewAction clickChildViewWithId(final int id) {
         return new ViewAction() {
+            /**
+             * get constraints
+             * @return
+             */
             @Override
             public Matcher<View> getConstraints() {
                 return isAssignableFrom(View.class);
             }
 
+            /**
+             * get description
+             * @return
+             */
             @Override
             public String getDescription() {
                 return "Click on a child view with specified id.";
             }
 
+            /**
+             * perform controller
+             * @param uiController the controller to use to interact with the UI.
+             * @param view the view to act upon. never null.
+             */
             @Override
             public void perform(UiController uiController, View view) {
                 View childView = view.findViewById(id);

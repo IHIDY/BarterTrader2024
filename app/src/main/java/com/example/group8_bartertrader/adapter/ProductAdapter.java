@@ -32,12 +32,25 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
     private OnProductListener mOnProductListener;
 
     // Constructor to pass the listener
+
+    /**
+     * product constructor
+     * @param productList
+     * @param onProductListener
+     */
     public ProductAdapter(List<Product> productList, OnProductListener onProductListener) {
         this.productList = productList;
         this.mOnProductListener = onProductListener;
     }
 
 
+    /**
+     * create view holder
+     * @param parent   The ViewGroup into which the new View will be added after it is bound to
+     *                 an adapter position.
+     * @param viewType The view type of the new View.
+     * @return
+     */
     @NonNull
     @Override
     public ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -46,6 +59,12 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         return new ProductViewHolder(view, mOnProductListener);
     }
 
+    /**
+     * bind view holder
+     * @param holder   The ViewHolder which should be updated to represent the contents of the
+     *                 item at the given position in the data set.
+     * @param position The position of the item within the adapter's data set.
+     */
     @Override
     public void onBindViewHolder(@NonNull ProductViewHolder holder, int position) {
         // Get the product at the given position
@@ -86,6 +105,10 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
                     .child(currentUser.getUid());
 
             userRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                /**
+                 * on data change
+                 * @param snapshot The current data at the location
+                 */
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     String role = snapshot.child("role").getValue(String.class);
@@ -99,6 +122,11 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
                         holder.deleteButton.setVisibility(View.GONE);
                     }
                 }
+
+                /**
+                 * when cancelled
+                 * @param error A description of the error that occurred
+                 */
                 @Override
                 public void onCancelled(@NonNull DatabaseError error) {
                     holder.editButton.setVisibility(View.GONE);
@@ -112,6 +140,11 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         holder.deleteButton.setOnClickListener(v -> mOnProductListener.onDeleteClick(product));
     }
 
+    /**
+     * detail button setter
+     * @param detailButton
+     * @param product
+     */
     private void setupDetailButton(Button detailButton, Product product) {
         detailButton.setOnClickListener(v -> {
             Context context = v.getContext();
@@ -121,27 +154,57 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         });
     }
 
+    /**
+     * item count getter
+     * @return
+     */
     @Override
     public int getItemCount() {
         return productList.size();
     }
 
+    /**
+     * sets the product list
+     * @param productList
+     */
     public void setProductList(List<Product> productList) {
         this.productList = productList;
         notifyDataSetChanged(); // Notify adapter when data changes
     }
 
     // Interface to handle edit and delete actions
+
+    /**
+     * interface for editing and deleting actions
+     */
     public interface OnProductListener {
+        /**
+         * editing
+         * @param product
+         */
         void onEditClick(Product product);  // For editing
+
+        /**
+         * deleting
+         * @param product
+         */
         void onDeleteClick(Product product);  // For deleting
     }
 
     // ViewHolder class to hold references to views in the layout
+
+    /**
+     * product view holder
+     */
     public static class ProductViewHolder extends RecyclerView.ViewHolder {
         TextView productName, productDescription, productCategory, productLocation, productAvailability;
         Button mapButton, detailButton, editButton, deleteButton;
 
+        /**
+         * product view holder
+         * @param itemView
+         * @param onProductListener
+         */
         public ProductViewHolder(View itemView, OnProductListener onProductListener) {
             super(itemView);
 

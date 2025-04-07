@@ -27,6 +27,9 @@ public class ResetPasswordActivityUITest {
     final String launcherPackage = "com.example.group8_bartertrader";
     private UiDevice device;
 
+    /**
+     * before test
+     */
     @Before
     public void setup() {
         device = UiDevice.getInstance(getInstrumentation());
@@ -38,6 +41,10 @@ public class ResetPasswordActivityUITest {
         device.wait(Until.hasObject(By.pkg(launcherPackage).depth(0)), LAUNCH_TIMEOUT);
     }
 
+    /**
+     * check if page displayed
+     * @throws UiObjectNotFoundException
+     */
     @Test
     public void checkIfPageIsDisplayed() throws UiObjectNotFoundException {
         enterResetPasswordPage();
@@ -45,6 +52,10 @@ public class ResetPasswordActivityUITest {
         assertTrue(emailSubmitButton.exists());
     }
 
+    /**
+     * check move to password form
+     * @throws UiObjectNotFoundException
+     */
     @Test
     public void checkIfMoveToResetPasswordForm() throws UiObjectNotFoundException {
         enterResetPasswordPage();
@@ -56,6 +67,10 @@ public class ResetPasswordActivityUITest {
         assertTrue(PasswordSubmitButton.exists());
     }
 
+    /**
+     * check reset password
+     * @throws UiObjectNotFoundException
+     */
     @Test
     public void checkResetDifferentPassword() throws UiObjectNotFoundException {
         enterResetPasswordPage();
@@ -74,6 +89,10 @@ public class ResetPasswordActivityUITest {
         assertTrue(exist);
     }
 
+    /**
+     * check reset invalid password
+     * @throws UiObjectNotFoundException
+     */
     @Test
     public void checkResetInvalidPassword() throws UiObjectNotFoundException {
         enterResetPasswordPage();
@@ -92,6 +111,10 @@ public class ResetPasswordActivityUITest {
         assertTrue(exist);
     }
 
+    /**
+     * check password reset
+     * @throws UiObjectNotFoundException
+     */
     @Test
     public void checkPasswordReset() throws UiObjectNotFoundException {
         enterResetPasswordPage();
@@ -115,6 +138,10 @@ public class ResetPasswordActivityUITest {
         assertTrue(SettingsButton.exists());
     }
 
+    /**
+     * enter reset password page
+     * @throws UiObjectNotFoundException
+     */
     private void enterResetPasswordPage() throws UiObjectNotFoundException {
         UiObject LoginButton = device.findObject(new UiSelector().text("Login"));
         LoginButton.clickAndWaitForNewWindow();

@@ -28,11 +28,20 @@ public class PreferencesManager {
     private static final String KEY_CATEGORIES = "preferred_categories";
     private static final String KEY_LOCATIONS = "preferred_locations";
 
+    /**
+     * preferences constructor
+     * @param context
+     */
     public PreferencesManager(Context context) {
         sharedPreferences = context.getSharedPreferences("UserPreferences", Context.MODE_PRIVATE);
         databaseReference = FirebaseDatabase.getInstance().getReference("users");
     }
 
+    /**
+     * preferences constructor
+     * @param context
+     * @return
+     */
     public static synchronized PreferencesManager getInstance(Context context) {
         if (instance == null) {
             instance = new PreferencesManager(context);
@@ -40,6 +49,10 @@ public class PreferencesManager {
         return instance;
     }
 
+    /**
+     * save preferred categories
+     * @param categories
+     */
     public void savePreferredCategories(Set<String> categories) {
         // Save to SharedPreferences
         sharedPreferences.edit()
@@ -49,6 +62,12 @@ public class PreferencesManager {
         // Save to Firebase
         savePreferencesToFirebase(categories, KEY_CATEGORIES);
     }
+
+    /**
+     * database saver
+     * @param preferences
+     * @param preferenceType
+     */
     private void savePreferencesToFirebase(Set<String> preferences, String preferenceType) {
         FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         if (firebaseUser == null) {
@@ -81,6 +100,10 @@ public class PreferencesManager {
                 });
     }
 
+    /**
+     * location saver
+     * @param locations
+     */
     public void savePreferredLocations(Set<String> locations) {
         // Save to SharedPreferences
         sharedPreferences.edit()
@@ -91,13 +114,26 @@ public class PreferencesManager {
         savePreferencesToFirebase(locations, KEY_LOCATIONS);
     }
 
+    /**
+     * category getter
+     * @return
+     */
     public Set<String> getPreferredCategories() {
         return sharedPreferences.getStringSet(KEY_CATEGORIES, new HashSet<>());
     }
 
+    /**
+     * location getter
+     * @return
+     */
     public Set<String> getPreferredLocations() {
         return sharedPreferences.getStringSet(KEY_LOCATIONS, new HashSet<>());
     }
+
+    /**
+     * database loader
+     * @param listener
+     */
     public void loadPreferencesFromFirebase(OnPreferencesLoadedListener listener) {
         FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         if (firebaseUser == null) {
@@ -111,6 +147,10 @@ public class PreferencesManager {
                 .child(userId);
 
         userRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            /**
+             * on datachange
+             * @param snapshot The current data at the location
+             */
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 User user = snapshot.getValue(User.class);
@@ -130,6 +170,10 @@ public class PreferencesManager {
                 }
             }
 
+            /**
+             * when cancelled
+             * @param error A description of the error that occurred
+             */
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 Log.e("Preferences", "Failed to load preferences", error.toException());

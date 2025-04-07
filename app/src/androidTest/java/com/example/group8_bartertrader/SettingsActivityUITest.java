@@ -38,6 +38,10 @@ public class SettingsActivityUITest {
     private static final String PACKAGE_NAME = "com.example.group8_bartertrader";
     private static final int TIMEOUT = 3000; // 3秒超时
 
+    /**
+     * before test
+     * @throws Exception
+     */
     @Before
     public void setUp() throws Exception {
         device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
@@ -55,6 +59,10 @@ public class SettingsActivityUITest {
 
     }
 
+    /**
+     * test logout
+     * @throws UiObjectNotFoundException
+     */
     @Test
     public void testLogoutFlow() throws UiObjectNotFoundException {
         // ========== AT-2:  ==========
@@ -69,10 +77,5 @@ public class SettingsActivityUITest {
         // ========== AT-4:  ==========
         boolean isLoginScreen = device.wait(Until.hasObject(By.res(PACKAGE_NAME, "loginBtn")), TIMEOUT);
         assertTrue("Login Page Not Redirected to", isLoginScreen);
-    }
-
-    @After
-    public void tearDown() throws Exception {
-        // if needed
     }
 }

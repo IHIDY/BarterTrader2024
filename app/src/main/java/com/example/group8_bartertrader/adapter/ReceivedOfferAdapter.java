@@ -33,9 +33,21 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
     private Context context;
     private DatabaseReference offers;
 
+    /**
+     * received offer adapter constructor
+     * @param offerList
+     * @param context
+     */
     public ReceivedOfferAdapter(List<Offer> offerList, Context context){
         this(offerList, context, FirebaseDatabase.getInstance().getReference("Offers"));
     }
+
+    /**
+     * secondary constructor
+     * @param offerList
+     * @param context
+     * @param db
+     */
     public ReceivedOfferAdapter(List<Offer> offerList, Context context, DatabaseReference db) {
         this.offerList = offerList;
         this.context = context;
@@ -43,6 +55,13 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
     }
 
 
+    /**
+     * view holder
+     * @param parent   The ViewGroup into which the new View will be added after it is bound to
+     *                 an adapter position.
+     * @param viewType The view type of the new View.
+     * @return
+     */
     @NonNull
     @Override
     public ReceivedOfferViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -50,6 +69,12 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
         return new ReceivedOfferViewHolder(view);
     }
 
+    /**
+     * bind view holder
+     * @param holder   The ViewHolder which should be updated to represent the contents of the
+     *                 item at the given position in the data set.
+     * @param position The position of the item within the adapter's data set.
+     */
     @Override
     public void onBindViewHolder(@NonNull ReceivedOfferViewHolder holder, int position) {
         Offer offer = offerList.get(position);
@@ -90,6 +115,13 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
         holder.respondToOfferSpinner.setSelection(defaultPos);
         holder.respondToOfferSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
 
+            /**
+             * when an item is selected
+             * @param parent The AdapterView where the selection happened
+             * @param view The view within the AdapterView that was clicked
+             * @param position The position of the view in the adapter
+             * @param id The row id of the item that is selected
+             */
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String selectedStatus = parent.getItemAtPosition(position).toString();
@@ -106,6 +138,10 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
                 }
             }
 
+            /**
+             * when nothing is selected
+             * @param parent The AdapterView that now contains no selected item.
+             */
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
@@ -113,12 +149,21 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
         });
     }
 
+    /**
+     * offer status
+     * @param offer
+     */
     public void updateOfferStatus(Offer offer) {
         if (offer.getId() != null){
             offers.child(offer.getId()).child("status").setValue(offer.getStatus());
         }
     }
 
+    /**
+     * notification sender
+     * @param receiverEmail
+     * @param message
+     */
     public void sendNotification(String receiverEmail, String message){
         DatabaseReference notification = FirebaseDatabase.getInstance().getReference("Notifications");
         String notificationId = notification.push().getKey();
@@ -137,6 +182,12 @@ public class ReceivedOfferAdapter extends RecyclerView.Adapter<ReceivedOfferAdap
         }
 
     }
+
+    /**
+     * offer status updater
+     * @param offerId
+     * @param status
+     */
     public void updateOfferStatus(String offerId, String status){
         if (offerId == null || offerId.isEmpty()){
             Log.e("DEBUG_FIREBASE", "OfferId is null");

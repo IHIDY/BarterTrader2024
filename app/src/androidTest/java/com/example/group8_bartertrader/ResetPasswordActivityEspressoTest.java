@@ -25,17 +25,26 @@ import org.junit.runner.RunWith;
 public class ResetPasswordActivityEspressoTest {
     public ActivityScenario<SettingsActivity> scenario;
 
+    /**
+     * before test
+     */
     @Before
     public void setup() {
         scenario = ActivityScenario.launch(SettingsActivity.class);
     }
 
+    /**
+     * check display page
+     */
     @Test
     public void checkIfPageDisplayed() {
         onView(withId(R.id.resetPasswordButton)).perform(click());
         onView(withId(R.id.submitEmailButton)).check(matches(isDisplayed()));
     }
 
+    /**
+     * check empty email
+     */
     @Test
     public void checkEmptyEmail() {
         onView(withId(R.id.resetPasswordButton)).perform(click());
@@ -44,6 +53,9 @@ public class ResetPasswordActivityEspressoTest {
         onView(withText("Please enter an email")).check(matches(isDisplayed()));
     }
 
+    /**
+     * check invalid email
+     */
     @Test
     public void checkInValidEmail() {
         onView(withId(R.id.resetPasswordButton)).perform(click());
@@ -52,6 +64,9 @@ public class ResetPasswordActivityEspressoTest {
         onView(withText("Invalid email format")).check(matches(isDisplayed()));
     }
 
+    /**
+     * check not registered email
+     */
     @Test
     public void checkNotRegisteredEmail() {
         onView(withId(R.id.resetPasswordButton)).perform(click());
@@ -61,6 +76,9 @@ public class ResetPasswordActivityEspressoTest {
         onView(withText("Email not registered")).check(matches(isDisplayed()));
     }
 
+    /**
+     * check valid email
+     */
     @Test
     public void checkValidEmail() {
         onView(withId(R.id.resetPasswordButton)).perform(click());

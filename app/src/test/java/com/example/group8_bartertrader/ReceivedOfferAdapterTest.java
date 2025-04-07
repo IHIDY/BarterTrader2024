@@ -22,6 +22,9 @@ public class ReceivedOfferAdapterTest {
     private List<Offer> testOffers;
     private Context context;
 
+    /**
+     * before test
+     */
     @Before
     public void setUp(){
         testOffers = new ArrayList<>();
@@ -40,22 +43,34 @@ public class ReceivedOfferAdapterTest {
         adapter = new ReceivedOfferAdapter(testOffers, context, null);
     }
 
+    /**
+     * test item count
+     */
     @Test
     public void itemCountTest(){
         assertEquals(2, adapter.getItemCount());
     }
 
+    /**
+     * test status
+     */
     @Test
     public void offerStatusTest(){
         assertEquals("Pending", testOffers.get(0).getStatus());
         assertEquals("Accepted", testOffers.get(1).getStatus());
     }
 
+    /**
+     * test list not empty
+     */
     @Test
     public void offerListNotEmptyTest(){
         assertFalse(testOffers.isEmpty());
     }
 
+    /**
+     * test id not null
+     */
     @Test
     public void offerIdNotNullTest(){
         assertNotNull(testOffers.get(0).getId());

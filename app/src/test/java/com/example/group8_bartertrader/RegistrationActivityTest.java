@@ -11,30 +11,45 @@ public class RegistrationActivityTest {
 
     CredentialsValidator validator;
 
+    /**
+     * before test
+     */
     @Before
     public void setup(){
         System.setProperty("isUnitTest", "true");
         validator = new CredentialsValidator();
     }
 
+    /**
+     * test empty first name
+     */
     @Test
     public void isFnameEmptyTest(){
         assertTrue(validator.isFnameEmpty(""));
         assertFalse(validator.isFnameEmpty("fName"));
     }
 
+    /**
+     * test empty last name
+     */
     @Test
     public void isLnameEmptyTest(){
         assertTrue(validator.isLnameEmpty(""));
         assertFalse(validator.isLnameEmpty("lName"));
     }
 
+    /**
+     * test empty email
+     */
     @Test
     public void isEmptyEmailTest(){
         assertTrue(validator.isEmptyEmail("")); //empty
         assertFalse(validator.isEmptyEmail("User@email.com")); //Valid email
     }
 
+    /**
+     * test valid email
+     */
     @Test
     public void isValidEmailTest(){
         assertFalse(validator.isValidEmail("")); //empty
@@ -44,11 +59,18 @@ public class RegistrationActivityTest {
         assertTrue(validator.isValidEmail("User@email.com")); //Valid
     }
 
+    /**
+     * test empty password
+     */
     @Test
     public void isEmptyPasswordTest(){
         assertTrue(validator.isEmptyPass(""));//empty
         assertFalse(validator.isEmptyPass("Password123!")); //Valid
     }
+
+    /**
+     * test valid password
+     */
     @Test
     public void isValidPasswordTest(){
         assertFalse(validator.isValidPass(""));//empty
@@ -58,6 +80,10 @@ public class RegistrationActivityTest {
         assertFalse(validator.isValidPass("Password123"));//missing special character
         assertTrue(validator.isValidPass("Password123!")); //Valid
     }
+
+    /**
+     * test valid role
+     */
     @Test
     public void isValidRoleTest(){
         assertFalse(validator.isValidRole("Select your role"));//invalid

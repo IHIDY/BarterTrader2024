@@ -48,6 +48,9 @@ public class MyOffersActivityUITest {
     public ActivityScenarioRule<MyOffersActivity> activityRule =
             new ActivityScenarioRule<>(MyOffersActivity.class);
 
+    /**
+     * before test
+     */
     @Before
     public void setup() {
         init();
@@ -71,11 +74,17 @@ public class MyOffersActivityUITest {
         ActivityScenario.launch(MyOffersActivity.class);
     }
 
+    /**
+     * after test
+     */
     @After
     public void tearDown() {
         release(); // Intents 释放
     }
 
+    /**
+     * test settings button
+     */
     @Test
     public void testGoToSettingsButton() {
         // Make sure the button exist
@@ -92,6 +101,9 @@ public class MyOffersActivityUITest {
                 .check(matches(isDisplayed()));
     }
 
+    /**
+     * test product item list display
+     */
     @Test
     public void testProductItemListDisplayed() {
         // Make sure the REcyclerView is displayed

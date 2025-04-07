@@ -35,6 +35,9 @@ public class SetPreferencesTest {
     public ActivityScenarioRule<SettingsActivity> activityRule =
             new ActivityScenarioRule<>(SettingsActivity.class);
 
+    /**
+     * before test
+     */
     @Before
     public void setUp() {
         FirebaseAuth.getInstance().signInWithEmailAndPassword("testemail@email.com", "Test@123")
@@ -47,6 +50,10 @@ public class SetPreferencesTest {
                 .savePreferredCategories(new HashSet<>());
     }
 
+    /**
+     * test preferences are displayed
+     * @throws InterruptedException
+     */
     @Test
     public void testPreferencesDisplay() throws InterruptedException {
         onView(withId(R.id.editPreferencesBtn)).perform(click());

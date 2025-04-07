@@ -23,6 +23,9 @@ public class GoogleMapUITest {
     public int TIME_OUT = 5000;
     UiDevice device;
 
+    /**
+     * before test
+     */
     @Before
     public void setup() {
         device = UiDevice.getInstance(getInstrumentation());
@@ -34,6 +37,10 @@ public class GoogleMapUITest {
         device.wait(Until.hasObject(By.pkg(launcherPackage).depth(0)), TIME_OUT);
     }
 
+    /**
+     * test map is displayed
+     * @throws UiObjectNotFoundException
+     */
     @Test
     public void testGoogleMapDisplayed() throws UiObjectNotFoundException {
         UiObject loginButtonOnRegister = device.findObject(new UiSelector().text("Login"));

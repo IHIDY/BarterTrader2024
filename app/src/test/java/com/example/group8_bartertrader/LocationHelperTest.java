@@ -7,6 +7,9 @@ import com.example.group8_bartertrader.utils.LocationHelper;
 
 public class LocationHelperTest {
 
+    /**
+     * test for location valid
+     */
     @Test
     public void testParseLatLngLocation_ValidInput() {
         String latLngLocation = "37.7749,-122.4194";
@@ -16,6 +19,9 @@ public class LocationHelperTest {
         assertEquals(-122.4194, result[1], 0.0001); // Longitude
     }
 
+    /**
+     * test for invalid location
+     */
     @Test
     public void testParseLatLngLocation_InvalidInput_MissingComma() {
         String latLngLocation = "37.7749-122.4194";
@@ -23,6 +29,9 @@ public class LocationHelperTest {
         assertNull(result);
     }
 
+    /**
+     * test for invalid location
+     */
     @Test
     public void testParseLatLngLocation_InvalidInput_NonNumeric() {
         String latLngLocation = "invalid,input";
@@ -30,12 +39,18 @@ public class LocationHelperTest {
         assertNull(result);
     }
 
+    /**
+     * test for null input
+     */
     @Test
     public void testParseLatLngLocation_NullInput() {
         double[] result = LocationHelper.parseLatLngLocation(null);
         assertNull(result);
     }
 
+    /**
+     * test for empty input
+     */
     @Test
     public void testParseLatLngLocation_EmptyInput() {
         String latLngLocation = "";
@@ -43,6 +58,9 @@ public class LocationHelperTest {
         assertNull(result);
     }
 
+    /**
+     * test within range
+     */
     @Test
     public void testIsWithinRange_WithinRange() {
         double userLat = 37.7749;
@@ -53,6 +71,9 @@ public class LocationHelperTest {
         assertTrue(LocationHelper.isWithinRange(userLat, userLong, productLat, productLong));
     }
 
+    /**
+     * test outside range
+     */
     @Test
     public void testIsWithinRange_OutsideRange() {
         double userLat = 37.7749;
@@ -63,6 +84,9 @@ public class LocationHelperTest {
         assertFalse(LocationHelper.isWithinRange(userLat, userLong, productLat, productLong));
     }
 
+    /**
+     * test calculate distance valid
+     */
     @Test
     public void testCalculateDistance_ValidCoordinates() {
         double lat1 = 37.7749;
@@ -74,6 +98,9 @@ public class LocationHelperTest {
         assertEquals(1.41, distance, 0.1); // Allow for minor floating-point differences
     }
 
+    /**
+     * test calculate distance invalid
+     */
     @Test
     public void testCalculateDistance_SameCoordinates() {
         double lat1 = 37.7749;

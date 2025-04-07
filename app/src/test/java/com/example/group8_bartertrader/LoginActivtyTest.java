@@ -13,6 +13,9 @@ public class LoginActivtyTest {
     CredentialsValidator validator;
     LoginActivity loginActivity;
 
+    /**
+     * before test
+     */
     @Before
     public void setup(){
         System.setProperty("isUnitTest", "true");
@@ -20,6 +23,9 @@ public class LoginActivtyTest {
     }
 
 
+    /**
+     * check valid email
+     */
     @Test
     public void checkValidEmails() {
 
@@ -28,6 +34,9 @@ public class LoginActivtyTest {
         assertTrue(validator.isValidEmail("hello.world@domain.org"));
     }
 
+    /**
+     * check invalid email
+     */
     @Test
     public void checkInvalidEmails() {
         assertFalse(validator.isValidEmail("invalidemail"));

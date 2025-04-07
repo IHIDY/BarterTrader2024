@@ -13,12 +13,18 @@ public class ProductDetailsTest {
     ProductCRUD crud;
     ArrayList<Product> products;
 
+    /**
+     * before test
+     */
     @Before
     public void setup() {
         crud = new ProductCRUD();
         products = crud.collectProducts();
     }
 
+    /**
+     * test product name
+     */
     @Test
     public void testProductName() {
         Product firstProd = crud.deliverTopProduct(products);
@@ -29,6 +35,9 @@ public class ProductDetailsTest {
         Assert.assertEquals("Black Sunglasses", thirdProd.getName());
     }
 
+    /**
+     * test product category
+     */
     @Test
     public void testProductCategory() {
         Product firstProd = crud.deliverTopProduct(products);
@@ -39,6 +48,9 @@ public class ProductDetailsTest {
         Assert.assertEquals("Accesories", thirdProd.getCategory());
     }
 
+    /**
+     * test product description
+     */
     @Test
     public void testProductDescription() {
         Product firstProd = crud.deliverTopProduct(products);
@@ -49,6 +61,9 @@ public class ProductDetailsTest {
         Assert.assertEquals("Fashionable Sunglasses", thirdProd.getDescription());
     }
 
+    /**
+     * test product location
+     */
     @Test
     public void testProductLocation() {
         Product firstProd = crud.deliverTopProduct(products);

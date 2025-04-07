@@ -9,11 +9,17 @@ import com.example.group8_bartertrader.utils.CredentialsValidator;
 public class ResetPasswordActivityTest {
     CredentialsValidator validator;
 
+    /**
+     * before test
+     */
     @Before
     public void setup(){
         validator = new CredentialsValidator();
     }
 
+    /**
+     * test email
+     */
     @Test
     public void testEmail(){
         assertFalse(validator.isValidEmail("")); //empty
@@ -23,6 +29,9 @@ public class ResetPasswordActivityTest {
         assertTrue(validator.isValidEmail("User@email.com")); //Valid
     }
 
+    /**
+     * test password
+     */
     @Test
     public void testPassword(){
         assertFalse(validator.isValidPass(""));//empty

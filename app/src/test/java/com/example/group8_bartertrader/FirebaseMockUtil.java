@@ -9,6 +9,10 @@ import com.google.firebase.database.*;
 import java.util.concurrent.Executor;
 
 public class FirebaseMockUtil {
+    /**
+     * mock database for test
+     * @return
+     */
     public static DatabaseReference mockDatabaseReference() {
         DatabaseReference mockDatabaseReference = mock(DatabaseReference.class);
         Query mockQuery = mock(Query.class);
@@ -26,11 +30,21 @@ public class FirebaseMockUtil {
     }
 
     // Mock 成功的 Task<Void>（用于 setValue）
+
+    /**
+     * mock successful task
+     * @return
+     */
     private static Task<Void> mockSuccessTask() {
         return Tasks.forResult(null);
     }
 
     // Mock 失败的 Task<DataSnapshot>（用于 get）
+
+    /**
+     * mock failure task
+     * @return
+     */
     private static Task<DataSnapshot> mockFailureTask() {
         return Tasks.forException(new Exception("Query failed"));
     }

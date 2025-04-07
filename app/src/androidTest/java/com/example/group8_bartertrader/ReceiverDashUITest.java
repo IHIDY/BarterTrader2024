@@ -23,11 +23,18 @@ public class ReceiverDashUITest {
 
     private UiDevice device;
 
+    /**
+     * before test
+     */
     @Before
     public void setUp() {
         device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
     }
 
+    /**
+     * test location is displayed
+     * @throws UiObjectNotFoundException
+     */
     @Test
     public void testLocationTextView_InitialState() throws UiObjectNotFoundException {
         // Grant permission
@@ -38,7 +45,11 @@ public class ReceiverDashUITest {
         }
     }
 
-        @Test
+    /**
+     * test title text view is displayed
+     * @throws UiObjectNotFoundException
+     */
+    @Test
         public void testTitleTextView_Displayed () throws UiObjectNotFoundException {
             // Launch the activity
             ActivityScenario.launch(ReceiverDash.class);
@@ -53,7 +64,11 @@ public class ReceiverDashUITest {
                     .check(ViewAssertions.matches(ViewMatchers.withText("Receiver Dashboard")));
         }
 
-        @Test
+    /**
+     * test recycler view is displayed
+     * @throws UiObjectNotFoundException
+     */
+    @Test
         public void testRecyclerView_Displayed () throws UiObjectNotFoundException {
             // Launch the activity
             ActivityScenario.launch(ReceiverDash.class);
@@ -67,7 +82,11 @@ public class ReceiverDashUITest {
                     .check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
         }
 
-        @Test
+    /**
+     * test settings button click
+     * @throws UiObjectNotFoundException
+     */
+    @Test
         public void testSettingsButton_Click () throws UiObjectNotFoundException {
             // Launch the activity
             ActivityScenario.launch(ReceiverDash.class);
@@ -86,6 +105,10 @@ public class ReceiverDashUITest {
 
         }
 
+    /**
+     * test search by category
+     * @throws UiObjectNotFoundException
+     */
     @Test
     public void testSearchByCategory() throws UiObjectNotFoundException {
         ActivityScenario.launch(ReceiverDash.class);
@@ -99,6 +122,10 @@ public class ReceiverDashUITest {
         Espresso.onView(ViewMatchers.withId(R.id.productRecyclerView)).check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
     }
 
+    /**
+     * test search by distance
+     * @throws UiObjectNotFoundException
+     */
     @Test
     public void testSearchByDistance() throws UiObjectNotFoundException {
         ActivityScenario.launch(ReceiverDash.class);
@@ -111,6 +138,10 @@ public class ReceiverDashUITest {
         Espresso.onView(ViewMatchers.withId(R.id.productRecyclerView)).check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
     }
 
+    /**
+     * test search by keyword
+     * @throws UiObjectNotFoundException
+     */
     @Test
     public void testSearchByKeyword() throws UiObjectNotFoundException {
         ActivityScenario.launch(ReceiverDash.class);

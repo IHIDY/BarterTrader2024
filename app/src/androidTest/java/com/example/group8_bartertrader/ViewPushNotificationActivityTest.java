@@ -19,6 +19,9 @@ import static androidx.test.espresso.matcher.ViewMatchers.*;
 @RunWith(AndroidJUnit4.class)
 public class ViewPushNotificationActivityTest {
 
+    /**
+     * test
+     */
     @Test
     public void testNotificationDataDisplayedCorrectly() {
         Intent intent = new Intent(ApplicationProvider.getApplicationContext(), ViewPushNotificationActivity.class);
@@ -35,6 +38,9 @@ public class ViewPushNotificationActivityTest {
         }
     }
 
+    /**
+     * test
+     */
     @Test
     public void testMissingExtrasHandledGracefully() {
         Intent intent = new Intent(ApplicationProvider.getApplicationContext(), ViewPushNotificationActivity.class);

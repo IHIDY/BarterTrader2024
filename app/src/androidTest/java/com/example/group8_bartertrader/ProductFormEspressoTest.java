@@ -24,6 +24,9 @@ import static androidx.test.espresso.matcher.ViewMatchers.withText;
 @LargeTest
 public class ProductFormEspressoTest {
 
+    /**
+     * test snackbar incomplete
+     */
     @Test
     public void testSnackbarMessageForIncompleteFields() {
         // Launch the activity
@@ -37,6 +40,9 @@ public class ProductFormEspressoTest {
         }
     }
 
+    /**
+     * test snackbar success
+     */
     @Test
     public void testSnackbarMessageForSuccess() {
         // Launch the activity

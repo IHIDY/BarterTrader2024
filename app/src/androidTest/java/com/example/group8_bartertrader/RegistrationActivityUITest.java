@@ -28,6 +28,9 @@ public class RegistrationActivityUITest {
 
     public ActivityScenario<RegistrationActivity> scenario;
 
+    /**
+     * before test
+     */
     @Before
     public void setup(){
         scenario = ActivityScenario.launch(RegistrationActivity.class);
@@ -37,6 +40,9 @@ public class RegistrationActivityUITest {
         });
     }
 
+    /**
+     * test empty email
+     */
     @Test
     public void isEmptyEmailTest(){
         onView(withId(R.id.fName)).perform(replaceText("First"));
@@ -49,6 +55,10 @@ public class RegistrationActivityUITest {
         onView(withId(R.id.statusLabel)).check(matches(withText(R.string.EMPTY_EMAIL_ADDRESS)));
 
     }
+
+    /**
+     * test valid email
+     */
     @Test
     public void isNotValidEmailTest(){
         onView(withId(R.id.fName)).perform(replaceText("First"));
@@ -61,6 +71,10 @@ public class RegistrationActivityUITest {
         onView(withId(R.id.statusLabel)).check(matches(withText(R.string.INVALID_EMAIL_ADDRESS)));
 
     }
+
+    /**
+     * test empty first name
+     */
     @Test
     public void isEmptyFirstNameTest(){
         onView(withId(R.id.fName)).perform(replaceText(""));
@@ -73,6 +87,10 @@ public class RegistrationActivityUITest {
         onView(withId(R.id.statusLabel)).check(matches(withText(R.string.EMPTY_FNAME)));
 
     }
+
+    /**
+     * test empty last name
+     */
     @Test
     public void isEmptyLastNameTest(){
         onView(withId(R.id.fName)).perform(replaceText("First"));
@@ -85,6 +103,10 @@ public class RegistrationActivityUITest {
         onView(withId(R.id.statusLabel)).check(matches(withText(R.string.EMPTY_LNAME)));
 
     }
+
+    /**
+     * test empty password
+     */
     @Test
     public void isEmptyPasswordTest(){
         onView(withId(R.id.fName)).perform(replaceText("First"));
@@ -98,6 +120,9 @@ public class RegistrationActivityUITest {
 
     }
 
+    /**
+     * test empty role
+     */
     @Test
     public void isEmptyRoleTest(){
         onView(withId(R.id.fName)).perform(replaceText("First"));
@@ -111,6 +136,9 @@ public class RegistrationActivityUITest {
 
     }
 
+    /**
+     * test invalid password
+     */
     @Test
     public void isNotValidPasswordTest(){
         onView(withId(R.id.fName)).perform(replaceText("First"));
@@ -124,6 +152,10 @@ public class RegistrationActivityUITest {
 
     }
     //Test will fail since the user has already been created and is in the database
+
+    /**
+     * test registration
+     */
     @Test
     public void registrationTest(){
         onView(withId(R.id.fName)).perform(replaceText("First"));

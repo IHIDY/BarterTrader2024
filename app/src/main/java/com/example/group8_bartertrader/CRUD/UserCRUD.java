@@ -18,26 +18,66 @@ public class UserCRUD {
     private FirebaseAuth mAuth;
     private DatabaseReference databaseReference;
 
+    /**
+     * constructor for user
+     */
     public UserCRUD() {
         this.mAuth = FirebaseAuth.getInstance();
         this.databaseReference = FirebaseDatabase.getInstance().getReference("Users");
     }
 
     // Interface for callbacks
+
+    /**
+     * interface for callbacks
+     */
     public interface LoginCallback {
+        /**
+         * when successful
+         * @param role
+         */
         void onSuccess(String role);
+
+        /**
+         * when failed
+         * @param message
+         */
         void onFailure(String message);
     }
     // Interface for callback on user registration result
+
+    /**
+     * interface for registration result
+     */
     public interface RegisterCallback {
+        /**
+         * on success
+         * @param message
+         */
         void onSuccess(String message);
+
+        /**
+         * on failure
+         * @param error
+         */
         void onFailure(String error);
     }
 
     // Login Method
+
+    /**
+     * logs in the user
+     * @param email
+     * @param password
+     * @param callback
+     */
     public void loginUser(String email, String password, LoginCallback callback) {
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    /**
+                     * when complete
+                     * @param task
+                     */
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
@@ -55,9 +95,19 @@ public class UserCRUD {
     }
 
     // Retrieve User Details
+
+    /**
+     * gets the user details
+     * @param email
+     * @param callback
+     */
     private void getUserDetails(String email, LoginCallback callback) {
         databaseReference.orderByChild("email").equalTo(email)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
+                    /**
+                     * when data changes
+                     * @param dataSnapshot The current data at the location
+                     */
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         if (dataSnapshot.exists()) {
@@ -70,6 +120,10 @@ public class UserCRUD {
                         }
                     }
 
+                    /**
+                     * when cancelled
+                     * @param databaseError A description of the error that occurred
+                     */
                     @Override
                     public void onCancelled(@NonNull DatabaseError databaseError) {
                         callback.onFailure("Database error: " + databaseError.getMessage());
@@ -78,6 +132,17 @@ public class UserCRUD {
     }
 
     // Save user details to the database
+
+    /**
+     * saves the user to the database
+      * @param uid
+     * @param email
+     * @param password
+     * @param role
+     * @param fname
+     * @param lname
+     * @param callback
+     */
     private void saveUserToDatabase(String uid, String email, String password, String role, String fname, String lname, final RegisterCallback callback) {
         User user = new User(email, password, role, fname, lname);
         databaseReference.child(uid).setValue(user)
@@ -91,6 +156,16 @@ public class UserCRUD {
     }
 
     // Register and save user
+
+    /**
+     * registers the user
+     * @param email
+     * @param password
+     * @param role
+     * @param fname
+     * @param lname
+     * @param callback
+     */
     public void registerUser(String email, String password, String role, String fname, String lname, final RegisterCallback callback) {
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {

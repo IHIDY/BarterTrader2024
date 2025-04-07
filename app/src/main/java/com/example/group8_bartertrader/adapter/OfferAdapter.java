@@ -23,11 +23,23 @@ public class OfferAdapter extends RecyclerView.Adapter<OfferAdapter.OfferViewHol
 
     private List<Offer> offerList;
 
+    /**
+     * adapter for offer
+     * @param offerList
+     * @param context
+     */
     public OfferAdapter(List<Offer> offerList, Context context) {
         this.context = context;
         this.offerList = offerList;
     }
 
+    /**
+     * created view
+     * @param parent   The ViewGroup into which the new View will be added after it is bound to
+     *                 an adapter position.
+     * @param viewType The view type of the new View.
+     * @return
+     */
     @NonNull
     @Override
     public OfferViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -36,6 +48,12 @@ public class OfferAdapter extends RecyclerView.Adapter<OfferAdapter.OfferViewHol
         return new OfferViewHolder(view);
     }
 
+    /**
+     * view holder
+     * @param holder   The ViewHolder which should be updated to represent the contents of the
+     *                 item at the given position in the data set.
+     * @param position The position of the item within the adapter's data set.
+     */
     @Override
     public void onBindViewHolder(@NonNull OfferViewHolder holder, int position) {
         Offer offer = offerList.get(position);
@@ -65,17 +83,24 @@ public class OfferAdapter extends RecyclerView.Adapter<OfferAdapter.OfferViewHol
         }
     }
 
+    /**
+     * item count getter
+     * @return
+     */
     @Override
     public int getItemCount() {
         return offerList.size();
     }
-
     public static class OfferViewHolder extends RecyclerView.ViewHolder {
         TextView offeredItemName, offeredItemDescription, offeredItemCategory, offeredItemLocation;
         TextView targetItemName, targetItemDescription, targetItemCategory, targetItemLocation;
         TextView status;
         Button chatButton;
 
+        /**
+         * holds offer view
+         * @param itemView
+         */
         public OfferViewHolder(View itemView) {
             super(itemView);
             offeredItemName = itemView.findViewById(R.id.productName);

@@ -20,16 +20,29 @@ public class EspressoUtils {
             this.millis = millis;
         }
 
+        /**
+         * returns the root
+         * @return
+         */
         @Override
         public Matcher<View> getConstraints() {
             return isRoot();
         }
 
+        /**
+         * description getter
+         * @return
+         */
         @Override
         public String getDescription() {
             return "Wait for " + millis + " milliseconds.";
         }
 
+        /**
+         * performs controller
+         * @param uiController the controller to use to interact with the UI.
+         * @param view the view to act upon. never null.
+         */
         @Override
         public void perform(UiController uiController, View view) {
             uiController.loopMainThreadForAtLeast(millis);

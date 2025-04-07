@@ -43,6 +43,10 @@ import static org.mockito.Mockito.when;
 public class SubmitFormUITest {
     private ActivityScenario<SubmitForm> scenario;
 
+    /**
+     * before test
+     * @throws InterruptedException
+     */
     @Before
     public void setup() throws InterruptedException {
         // Set up the Mock user
@@ -81,6 +85,10 @@ public class SubmitFormUITest {
     public ActivityScenarioRule<SubmitForm> activityRule =
             new ActivityScenarioRule<>(SubmitForm.class);
 
+    /**
+     * test submit offer
+     * @throws InterruptedException
+     */
     @Test
     public void testSubmitOffer() throws InterruptedException {
         // Make sure the intent is passed correctly
@@ -111,6 +119,10 @@ public class SubmitFormUITest {
                 .check(matches(isDisplayed()));
     }
 
+    /**
+     * test submit duplicate offer
+     * @throws InterruptedException
+     */
     @Test
     public void testSubmitDuplicateOffer() throws InterruptedException {
         // Make sure the intent is passed correctly
