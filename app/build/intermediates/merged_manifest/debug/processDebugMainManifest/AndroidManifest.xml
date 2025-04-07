@@ -73,9 +73,6 @@
             android:name="com.example.group8_bartertrader.MyOffersActivity"
             android:exported="true" />
         <activity
-            android:name="com.example.group8_bartertrader.OfferDetailsActivity"
-            android:exported="true" />
-        <activity
             android:name="com.example.group8_bartertrader.SearchProductActivity"
             android:exported="true" />
         <activity
