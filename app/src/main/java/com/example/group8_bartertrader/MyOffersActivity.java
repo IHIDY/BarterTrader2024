@@ -139,7 +139,7 @@ public class MyOffersActivity extends AppCompatActivity {
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 Log.w("MyOffersActivity", "loadOffers:onCancelled", databaseError.toException());
-                Toast.makeText(MyOffersActivity.this, "Failed to load offers.", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MyOffersActivity.this, "Failed to load offers.", Toast.LENGTH_SHORT).show();
             }
         });
     }
