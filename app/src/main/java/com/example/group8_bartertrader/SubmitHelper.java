@@ -11,16 +11,38 @@ import com.google.firebase.database.DatabaseReference;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
-
+/**
+ * Helper class for submitting offers to the Firebase database.
+ */
 public class SubmitHelper {
     private DatabaseReference databaseReference;
     private FirebaseAuth mAuth;
-
+    /**
+     * Constructor to initialize the SubmitHelper with a database reference and FirebaseAuth instance.
+     *
+     * @param databaseReference The reference to the Firebase database.
+     * @param mAuth The Firebase authentication instance.
+     */
     public SubmitHelper(DatabaseReference databaseReference, FirebaseAuth mAuth) {
         this.databaseReference = databaseReference;
         this.mAuth = mAuth;
     }
-
+    /**
+     * Submits a new offer if all fields are valid and the offer doesn't already exist.
+     *
+     * @param name The name of the offered product.
+     * @param category The category of the offered product.
+     * @param description The description of the offered product.
+     * @param location The location of the offered product.
+     * @param currentUserEmail The email of the current user submitting the offer.
+     * @param targetProductId The ID of the target product.
+     * @param targetProductName The name of the target product.
+     * @param targetProductCategory The category of the target product.
+     * @param targetProductDescription The description of the target product.
+     * @param targetProductLocation The location of the target product.
+     * @param targetProviderEmail The email of the product provider.
+     * @param callback The callback to handle the result of the offer submission.
+     */
     public void submitOffer(String name, String category, String description, String location, String currentUserEmail,
                             String targetProductId, String targetProductName, String targetProductCategory,
                             String targetProductDescription, String targetProductLocation, String targetProviderEmail, SubmitCallback callback) {
@@ -62,7 +84,22 @@ public class SubmitHelper {
                     targetProductId, targetProductName, targetProductCategory, targetProductDescription, targetProductLocation, targetProviderEmail, callback);
         });
     }
-
+    /**
+     * Submits a new offer to the Firebase database.
+     *
+     * @param name The name of the offered product.
+     * @param category The category of the offered product.
+     * @param description The description of the offered product.
+     * @param location The location of the offered product.
+     * @param currentUserEmail The email of the current user submitting the offer.
+     * @param targetProductId The ID of the target product.
+     * @param targetProductName The name of the target product.
+     * @param targetProductCategory The category of the target product.
+     * @param targetProductDescription The description of the target product.
+     * @param targetProductLocation The location of the target product.
+     * @param targetProviderEmail The email of the product provider.
+     * @param callback The callback to handle the result of the offer submission.
+     */
     private void submitNewOffer(String name, String category, String description, String location, String currentUserEmail,
                                 String targetProductId, String targetProductName, String targetProductCategory,
                                 String targetProductDescription, String targetProductLocation, String targetProviderEmail, SubmitCallback callback) {
@@ -93,6 +130,9 @@ public class SubmitHelper {
         });
     }
 
+    /**
+     * Interface for handling the result of the offer submission.
+     */
     public interface SubmitCallback {
         void onSubmissionResult(boolean success);
     }

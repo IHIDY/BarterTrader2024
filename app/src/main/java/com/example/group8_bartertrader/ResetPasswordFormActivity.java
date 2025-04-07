@@ -17,6 +17,10 @@ public class ResetPasswordFormActivity extends AppCompatActivity {
     private EditText confirmPasswordEditText;
     private Button resetPasswordButton;
 
+    /**
+     * Called when the activity is created. Initializes the UI elements and sets up listeners for password reset.
+     * @param savedInstanceState The saved instance state.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +57,11 @@ public class ResetPasswordFormActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Updates the user's password if the new password is valid and confirmed correctly.
+     * If the update is successful, the user is redirected to the login activity.
+     * @param newPassword The new password entered by the user.
+     */
     private void updatePassword(String newPassword) {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 

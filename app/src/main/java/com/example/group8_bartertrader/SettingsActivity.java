@@ -53,7 +53,10 @@ public class SettingsActivity extends AppCompatActivity {
     private PreferencesManager preferencesManager;
     private TextView preferencesSummary;
     private String role;
-
+    /**
+     * Initializes the activity, sets up the UI, handles Firebase authentication,
+     * and sets listeners for various buttons.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -157,7 +160,9 @@ public class SettingsActivity extends AppCompatActivity {
             finish();
         });
     }
-
+    /**
+     * Loads and displays the user's preferences from Firebase and updates the UI.
+     */
     private void loadAndDisplayPreferences() {
         if (preferencesManager != null && preferencesSummary != null) {
             preferencesManager.loadPreferencesFromFirebase((categories, locations) -> {
@@ -173,7 +178,10 @@ public class SettingsActivity extends AppCompatActivity {
             });
         }
     }
-
+    /**
+     * Sets up the UI for the "Receiver" role, displaying preferences and enabling
+     * the option to edit preferences.
+     */
     private void setupReceiverUI() {
         preferencesSummary = findViewById(R.id.preferencesSummary);
         Button editPreferencesBtn = findViewById(R.id.editPreferencesBtn);
@@ -185,7 +193,10 @@ public class SettingsActivity extends AppCompatActivity {
 
         loadAndDisplayPreferences();
     }
-
+    /**
+     * Sets up the UI for the "Provider" role, hiding the edit preferences button
+     * and displaying a message indicating that preferences are unavailable.
+     */
     private void setupProviderUI() {
         Button editPreferencesBtn = findViewById(R.id.editPreferencesBtn);
         preferencesSummary = findViewById(R.id.preferencesSummary);
@@ -199,6 +210,9 @@ public class SettingsActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Displays a confirmation dialog when the user attempts to log out.
+     */
     private void showLogoutConfirmation() {
         new AlertDialog.Builder(this)
                 .setTitle("Confirm Logout")
@@ -215,7 +229,10 @@ public class SettingsActivity extends AppCompatActivity {
                 .setNegativeButton("Cancel", (dialog, which) -> dialog.dismiss())
                 .show();
     }
-
+    /**
+     * Displays a dialog for the user to edit their preferences, allowing them to
+     * input new categories and locations.
+     */
     private void showEditPreferencesDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         View dialogView = getLayoutInflater().inflate(R.layout.dialog_edit_preferences, null);
@@ -259,7 +276,13 @@ public class SettingsActivity extends AppCompatActivity {
                 .create()
                 .show();
     }
-
+    /**
+     * Saves the user's preferences to Firebase, including the selected category and location.
+     *
+     * @param email The user's email address.
+     * @param preferredCategory The preferred category set by the user.
+     * @param preferredLocation The preferred location set by the user.
+     */
     private void savePreferencesToFirebase(String email, String preferredCategory, String preferredLocation) {
         DatabaseReference preferencesRef = FirebaseDatabase.getInstance().getReference("Preferences")
                 .child(FirebaseAuth.getInstance().getCurrentUser().getUid());

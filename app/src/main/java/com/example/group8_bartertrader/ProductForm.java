@@ -70,6 +70,10 @@ public class ProductForm extends AppCompatActivity {
         backButton.setOnClickListener(v -> onBackPressed());
     }
 
+    /**
+     * Sets up the spinners for selecting product category and condition.
+     * Populates the spinners with predefined categories and conditions.
+     */
     private void setupSpinners() {
         String[] categories = {"Select Category", "Electronics", "Furniture", "Clothing & Accessories", "Books", "Toys & Games",
                 "Sports & Outdoors", "Baby & Kids", "Home Improvement", "Vehicles", "Health & Beauty",
@@ -158,7 +162,9 @@ public class ProductForm extends AppCompatActivity {
             }
         });
     }
-
+    /**
+     * Populates the product data into the form fields when editing an existing product.
+     */
     private void populateProductData() {
         databaseReference.child(productId).get().addOnSuccessListener(dataSnapshot -> {
             if (dataSnapshot.exists()) {
@@ -182,7 +188,10 @@ public class ProductForm extends AppCompatActivity {
                 Toast.makeText(ProductForm.this, "Failed to load product", Toast.LENGTH_SHORT).show());
     }
 
-    // Method to handle new product submission
+    /**
+     * Handles the submission of a new product to the Firebase database.
+     * Validates input fields and then adds the new product data to the database.
+     */
     private void submitNewProduct() {
         String name = productName.getText().toString().trim();
         String category = selectedCategory;
@@ -224,7 +233,10 @@ public class ProductForm extends AppCompatActivity {
         });
     }
 
-    // Method to handle updating an existing product
+    /**
+     * Handles updating an existing product in the Firebase database.
+     * Validates input fields and updates the product data in the database.
+     */
     private void updateProduct() {
         String name = productName.getText().toString().trim();
         String category = selectedCategory;

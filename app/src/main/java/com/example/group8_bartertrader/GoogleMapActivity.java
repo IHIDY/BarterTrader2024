@@ -6,9 +6,14 @@ import android.util.Log;
 import android.widget.Toast;
 
 import androidx.fragment.app.FragmentActivity;
-
+/**
+ * Activity to open Google Maps with a location search query.
+ */
 public class GoogleMapActivity extends FragmentActivity {
 
+    /**
+     * Initializes the activity and opens Google Maps with a location search if available.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +35,9 @@ public class GoogleMapActivity extends FragmentActivity {
         }
     }
 
+    /**
+     * Opens Google Maps with the specified location search query.
+     */
     private void openGoogleMapsWithSearch(String locationString) {
         // Create a URI to search for the location
         String uri = "geo:0,0?q=" + locationString;
