@@ -22,6 +22,12 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
     private List<Message> messageList;
     private String currentUserId;
 
+    /**
+     * adapts the messages
+     * @param context
+     * @param messageList
+     * @param currentUserId
+     */
     public MessageAdapter(Context context, List<Message> messageList, String currentUserId) {
         this.context = context;
         this.messageList = messageList;
@@ -33,6 +39,10 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
         LinearLayout messageContainer;
         TextView timeStamp;
 
+        /**
+         * creates the item view
+         * @param itemView
+         */
         public MessageViewHolder(@NonNull View itemView) {
             super(itemView);
             messageTextView = itemView.findViewById(R.id.messageTextView);
@@ -41,6 +51,13 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
         }
     }
 
+    /**
+     *message view holder
+     * @param parent   The ViewGroup into which the new View will be added after it is bound to
+     *                 an adapter position.
+     * @param viewType The view type of the new View.
+     * @return
+     */
     @NonNull
     @Override
     public MessageViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -48,6 +65,12 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
         return new MessageViewHolder(view);
     }
 
+    /**
+     *holds the content at the given time/position
+     * @param holder   The ViewHolder which should be updated to represent the contents of the
+     *                 item at the given position in the data set.
+     * @param position The position of the item within the adapter's data set.
+     */
     @Override
     public void onBindViewHolder(@NonNull MessageViewHolder holder, int position) {
         Message message = messageList.get(position);
@@ -66,6 +89,10 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
         }
     }
 
+    /**
+     * returns the item count
+     * @return
+     */
     @Override
     public int getItemCount() {
         return messageList.size();

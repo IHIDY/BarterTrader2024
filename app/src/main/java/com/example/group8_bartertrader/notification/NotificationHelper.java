@@ -30,11 +30,19 @@ public class NotificationHelper {
     private final RequestQueue requestQueue;
     private final Context context;
 
+    /**
+     * helper for notification contructor
+     * @param context
+     */
     public NotificationHelper(Context context) {
         this.context = context;
         this.requestQueue = Volley.newRequestQueue(context);
     }
 
+    /**
+     * sends the notification to the user
+     * @param message
+     */
     public void sendNotificationToTopic(String message) {
         getAccessToken(new AccessTokenListener() {
             @Override
@@ -50,6 +58,10 @@ public class NotificationHelper {
         });
     }
 
+    /**
+     * gets the access token
+     * @param listener
+     */
     private void getAccessToken(AccessTokenListener listener) {
         ExecutorService executorService = Executors.newSingleThreadExecutor();
         executorService.execute(() -> {
@@ -66,6 +78,11 @@ public class NotificationHelper {
         executorService.shutdown();
     }
 
+    /**
+     * sends the notification
+     * @param authToken
+     * @param notificationMessage
+     */
     private void sendNotification(String authToken, String notificationMessage) {
         try {
             JSONObject notification = new JSONObject();
@@ -110,6 +127,10 @@ public class NotificationHelper {
     }
 
     // Interface for access token callback
+
+    /**
+     * access token listener
+     */
     interface AccessTokenListener {
         void onAccessTokenReceived(String token);
         void onAccessTokenError(Exception exception);

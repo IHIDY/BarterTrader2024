@@ -25,12 +25,20 @@ public class LocationHelper {
     FusedLocationProviderClient fusedLocationClient;
     private OnLocationFetchListener listener;
 
+    /**
+     * location helper constructor
+     * @param context
+     */
     public LocationHelper(Context context) {
         this.context = context;
         this.fusedLocationClient = LocationServices.getFusedLocationProviderClient(context);
     }
 
 
+    /**
+     * location getter
+     * @param listener
+     */
     public void getCurrentLocation(OnLocationFetchListener listener) {
         this.listener = listener;
 
@@ -45,6 +53,12 @@ public class LocationHelper {
     }
 
     //separate latlng value
+
+    /**
+     * separate for latlng
+     * @param latLngLocation
+     * @return
+     */
     public static double[] parseLatLngLocation(String latLngLocation) {
         if (latLngLocation == null || latLngLocation.isEmpty()) {
             return null;
@@ -64,6 +78,13 @@ public class LocationHelper {
 
 
     //Handles the result of the permission request.
+
+    /**
+     * when location permissions are requested
+     * @param requestCode
+     * @param permissions
+     * @param grantResults
+     */
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         if (requestCode == 1) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
@@ -78,6 +99,9 @@ public class LocationHelper {
 
     //Fetches the location using FusedLocationProviderClient.
 
+    /**
+     * fetches the location
+     */
     void fetchLocation() {
         if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
@@ -89,6 +113,10 @@ public class LocationHelper {
 
         fusedLocationClient.getLastLocation()
                 .addOnSuccessListener(new OnSuccessListener<Location>() {
+                    /**
+                     * if the location was successfully fetched
+                     * @param location
+                     */
                     @Override
                     public void onSuccess(Location location) {
                         if (location != null) {
@@ -106,6 +134,13 @@ public class LocationHelper {
     }
 
     // Convert Latitude and Longitude to City Name
+
+    /**
+     * gets the city name
+     * @param lat
+     * @param lon
+     * @return
+     */
     public static String getCityName(double lat, double lon) {
         Geocoder geocoder = new Geocoder(context, Locale.getDefault());
         try {
@@ -127,12 +162,28 @@ public class LocationHelper {
         return "Location: Not available";
     }
 
+    /**
+     * if something is within the 10 km range
+     * @param userLat
+     * @param userLong
+     * @param productLat
+     * @param productLong
+     * @return
+     */
     public static boolean isWithinRange(double userLat, double userLong, double productLat, double productLong) {
         final int RADIUS = 10; // Radius in kilometers
         double distance = calculateDistance(userLat, userLong, productLat, productLong);
         return distance <= RADIUS;
     }
 
+    /**
+     * calculates the distances between two lats
+     * @param lat1
+     * @param lon1
+     * @param lat2
+     * @param lon2
+     * @return
+     */
     public static double calculateDistance(double lat1, double lon1, double lat2, double lon2) {
         final int R = 6371; // Radius of the Earth in km
         double latDistance = Math.toRadians(lat2 - lat1);
@@ -144,6 +195,9 @@ public class LocationHelper {
         return R * c;
     }
 
+    /**
+     * fetches the listener
+     */
     public interface OnLocationFetchListener {
         void onLocationFetched(double latitude, double longitude);
         void onLocationFetchFailed(String errorMessage);

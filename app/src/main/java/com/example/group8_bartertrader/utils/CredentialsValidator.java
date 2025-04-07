@@ -11,20 +11,37 @@ public class CredentialsValidator {
     private FirebaseAuth mAuth;
     private DatabaseReference databaseReference;
 
+    /**
+     * credentials constructor
+     */
     public CredentialsValidator() {
 //        if (!unitTestRunning()) {
 //            this.mAuth = FirebaseAuth.getInstance();
 //        }
     }
 
+    /**
+     * when a unit test is running
+     * @return
+     */
     private boolean unitTestRunning() {
         return "true".equals(System.getProperty("isUnitTest"));
     }
 
+    /**
+     * checks if the email is empty
+     * @param email
+     * @return
+     */
     public boolean isEmptyEmail(String email) {
         return email.trim().isEmpty();
     }
 
+    /**
+     * checks if the email is valid
+     * @param email
+     * @return
+     */
     public boolean isValidEmail(String email) {
         if (email == null || email.trim().isEmpty()) {
             return false;
@@ -39,10 +56,20 @@ public class CredentialsValidator {
         return m.matches();
     }
 
+    /**
+     * checks for an empty password
+     * @param pass
+     * @return
+     */
     public boolean isEmptyPass(String pass) {
         return pass.trim().isEmpty();
     }
 
+    /**
+     * checks if the password is valid
+     * @param pass
+     * @return
+     */
     public boolean isValidPass(String pass) {
         if (pass == null || pass.trim().isEmpty()) {
             return false;
@@ -55,14 +82,29 @@ public class CredentialsValidator {
         return m.matches();
     }
 
+    /**
+     * checks if the role is selected
+     * @param role
+     * @return
+     */
     public boolean isValidRole(String role) {
         return role.equals("Provider") || role.equals("Receiver");
     }
 
+    /**
+     * checks if the first name is empty
+     * @param fname
+     * @return
+     */
     public boolean isFnameEmpty(String fname) {
         return fname == null || fname.trim().isEmpty();
     }
 
+    /**
+     * checks if the last name is empty
+     * @param lname
+     * @return
+     */
     public boolean isLnameEmpty(String lname) {
         return lname == null || lname.trim().isEmpty();
     }

@@ -36,6 +36,13 @@ public class ProviderProductList extends AppCompatActivity implements ProductAda
     private FirebaseUser currentUser;
     private ProgressBar loadingIndicator;
 
+    /**
+     * when the provider product list is created
+     * @param savedInstanceState If the activity is being re-initialized after
+     *     previously being shut down then this Bundle contains the data it most
+     *     recently supplied in {@link #onSaveInstanceState}.  <b><i>Note: Otherwise it is null.</i></b>
+     *
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +61,9 @@ public class ProviderProductList extends AppCompatActivity implements ProductAda
         fetchProductsFromFirebase();
     }
 
+    /**
+     * gets the list of products from the database
+     */
     private void fetchProductsFromFirebase() {
         if (currentUser == null) {
             Toast.makeText(this, "User not logged in", Toast.LENGTH_SHORT).show();
@@ -69,6 +79,10 @@ public class ProviderProductList extends AppCompatActivity implements ProductAda
         loadingIndicator.setVisibility(View.VISIBLE);
 
         productsRef.addValueEventListener(new ValueEventListener() {
+            /**
+             * when the products are changed
+             * @param dataSnapshot The current data at the location
+             */
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 productList.clear();
@@ -85,6 +99,10 @@ public class ProviderProductList extends AppCompatActivity implements ProductAda
                 loadingIndicator.setVisibility(View.GONE);
             }
 
+            /**
+             * when the request is cancelled
+             * @param databaseError A description of the error that occurred
+             */
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 Log.w("ProviderProductList", "loadProducts:onCancelled", databaseError.toException());
@@ -94,6 +112,10 @@ public class ProviderProductList extends AppCompatActivity implements ProductAda
         });
     }
 
+    /**
+     * when edit is clicked
+     * @param product
+     */
     @Override
     public void onEditClick(Product product) {
         // Handle Edit action
@@ -103,6 +125,10 @@ public class ProviderProductList extends AppCompatActivity implements ProductAda
     }
 
 
+    /**
+     * when delete is clicked
+     * @param product
+     */
     @Override
     public void onDeleteClick(Product product) {
         new androidx.appcompat.app.AlertDialog.Builder(this)

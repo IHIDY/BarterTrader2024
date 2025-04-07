@@ -58,6 +58,13 @@ public class NotificationActivity extends AppCompatActivity {
     private RequestQueue requestQueue;
     private View rootView;
 
+    /**
+     * when the notification activity is created
+     * @param savedInstanceState If the activity is being re-initialized after
+     *     previously being shut down then this Bundle contains the data it most
+     *     recently supplied in {@link #onSaveInstanceState}.  <b><i>Note: Otherwise it is null.</i></b>
+     *
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,6 +81,10 @@ public class NotificationActivity extends AppCompatActivity {
         init();
         setListeners();
     }
+
+    /**
+     * creates the notification channel
+     */
     private void createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             CharSequence name = "Barter Trader Notifications";
@@ -88,6 +99,11 @@ public class NotificationActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * gets the access token
+     * @param context
+     * @param listener
+     */
     private void getAccessToken(Context context, AccessTokenListener listener) {
         ExecutorService executorService = Executors.newSingleThreadExecutor();
         executorService.execute(() -> {
@@ -107,6 +123,10 @@ public class NotificationActivity extends AppCompatActivity {
         });
         executorService.shutdown();
     }
+
+    /**
+     * checks notificaiton permissions
+     */
     private void checkNotificationPermission() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
@@ -121,7 +141,9 @@ public class NotificationActivity extends AppCompatActivity {
     }
 
 
-
+    /**
+     * initiates notification
+     */
     private void init() {
 
         sendNotificationBtn = findViewById(R.id.sendNotificationBtn);
@@ -134,6 +156,9 @@ public class NotificationActivity extends AppCompatActivity {
         FirebaseMessaging.getInstance().subscribeToTopic("jobs");
     }
 
+    /**
+     * notification listeners
+     */
     private void setListeners() {
         sendNotificationBtn.setOnClickListener(view -> {
             // Attempt to get the access token
@@ -158,6 +183,9 @@ public class NotificationActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * shows the local notifications
+     */
     private void showLocalNotification() {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setSmallIcon(R.drawable.ic_launcher_foreground) // Make sure you have this icon
@@ -174,6 +202,10 @@ public class NotificationActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * sends the notifications
+     * @param authToken
+     */
     private void sendNotification(String authToken) {
         try {
             // Build the notification payload
@@ -234,6 +266,9 @@ public class NotificationActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * access token interface
+     */
     interface AccessTokenListener {
         void onAccessTokenReceived(String token);
         void onAccessTokenError(Exception exception);
