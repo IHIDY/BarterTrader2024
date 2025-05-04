@@ -60,4 +60,4 @@ This experience enhanced my skills in **team-based software development, agile p
 
 ## 📷 Demo
 
-[Download the presentation](./Barter Trader - Group 8.pptx)
+[Download the presentation](./Barter_Trader_Group_8.pptx)
